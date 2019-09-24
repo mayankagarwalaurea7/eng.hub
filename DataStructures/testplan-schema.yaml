@@ -1,0 +1,22 @@
+version: v1
+testPlan:
+  product:
+    name:
+    attributes:
+        - secure:
+            description: The capability must ensure the access to the rightful users. 
+        - traceable:
+            description: The capability must trace the source of errors and changes to the data.
+        - fast:
+            description: The capability must demonstrate a measurable performance metric. 
+        - consistent:
+            description: The capability must consistently give the same deterministic output when the same input is given.
+        - accessible:
+            description: The capability must be reachable by users.
+    components:
+        - name:
+    capabilities:
+        - name:
+            linkToAttribute: "<attribute name>"
+            linkToComponent: "<component name>"
+            linkToEndToEndTest: "<http link>"
