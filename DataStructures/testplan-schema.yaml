@@ -14,9 +14,35 @@ testPlan:
         - accessible:
             description: The capability must be reachable by users.
     components:
-        - name:
+        - component: !!str name            
     capabilities:
-        - name:
-            linkToAttribute: "<attribute name>"
-            linkToComponent: "<component name>"
-            linkToEndToEndTest: "<http link>"
+        - capability: !!str name
+            attributeLink: !!str <attribute name>
+            componentLink: !!str <component name>
+            testLink: !!str <http link>
+            test:
+                businessGoal:
+                preconditions:
+                    environments:
+                        - environment: !!str a link to the environment
+                            setupScript: !!str // anything
+                    systemSettings:
+                        - systemDescription: !! str // Sstem Software requirements like OS name and version, DB server configuration, additional tools and or system settings required by the product
+                            systemBuildUpScript: !!str // anything
+                    applicationConfiguration:
+                        - productFeature: !! str
+                            configurationScript: !! str
+                    dataPrerequisites:
+                        - databaseSetup: !!str
+                            scripts: !!str
+                    userCredentials:  
+                        - userName: !!str
+                            password: !!str
+                    userPermissions:
+                        -role: !!str
+                            setupScript: !!str
+                userInteractionSequence:
+                    steps:
+                        - stepNo: !!str
+                            userAction: !!str
+                            expectedOutcome: !!str
