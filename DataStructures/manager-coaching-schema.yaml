@@ -1,0 +1,10 @@
+manager: <manager name>
+teamroom: <teamroom name>
+direct reports: <direct report count>
+- IC:
+  IC name: <IC name>
+  date: <date>
+  unit: <Jira link>
+  coaching: <free text coaching>
+  perfrormanceAssessment: highPerformer | averagePerformer | lowPerformer
+  continueCoaching: yes | no
