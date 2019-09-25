@@ -8,6 +8,7 @@ units:
   unit 5: <link>
 recomnmendation: 
   eliminate waste | improve quality bar
+  product agnostic | product specific: product 
   description: <string>
   effort: <int> days
   impact: <%> at teamroom level
