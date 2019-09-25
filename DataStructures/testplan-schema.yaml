@@ -1,48 +1,54 @@
 version: v1
-testPlan:
+test plan:
   product:
     name:
     attributes:
-        - secure:
+        secure:
             description: The capability must ensure the access to the rightful users. 
-        - traceable:
+        traceable:
             description: The capability must trace the source of errors and changes to the data.
-        - fast:
+        fast:
             description: The capability must demonstrate a measurable performance metric. 
-        - consistent:
+        consistent:
             description: The capability must consistently give the same deterministic output when the same input is given.
-        - accessible:
+        accessible:
             description: The capability must be reachable by users.
     components:
-        - component: !!str name            
+        - component: !!str #name            
     capabilities:
-        - capability: !!str name
-            attributeLink: !!str <attribute name>
-            componentLink: !!str <component name>
-            testLink: !!str <http link>
+        - capability: !!str #name
+            attributeLink: !!str #attribute name
+            componentLink: !!str #component name
+            testLink: !!str #http link
             test:
-                businessGoal:
+                business goal:
                 preconditions:
                     environments:
-                        - environment: !!str a link to the environment
-                            setupScript: !!str // anything
-                    systemSettings:
-                        - systemDescription: !! str // Sstem Software requirements like OS name and version, DB server configuration, additional tools and or system settings required by the product
-                            systemBuildUpScript: !!str // anything
-                    applicationConfiguration:
-                        - productFeature: !! str
-                            configurationScript: !! str
-                    dataPrerequisites:
-                        - databaseSetup: !!str
+                        - #sequence of mappings
+                            environment: !!str #a link to the environment
+                            setup script: !!str # anything
+                    system settings: !!seq
+                        - 
+                            system description: !! str # Sstem Software requirements like OS name and version, DB server configuration, additional tools and or system settings required by the product
+                            system buildup script: !!str # anything
+                    application configuration: !!seq
+                        - 
+                            product feature: !! str
+                            configuration script: !! str
+                    dataPrerequisites: !!seq
+                        - 
+                            database setup: !!str
                             scripts: !!str
-                    userCredentials:  
-                        - userName: !!str
+                    userCredentials:  !!seq
+                        - 
+                            userName: !!str
                             password: !!str
-                    userPermissions:
-                        -role: !!str
+                    user permissions: !!seq
+                        -
+                            role: !!str
                             setupScript: !!str
-                userInteractionSequence:
-                    steps:
-                        - stepNo: !!str
-                            userAction: !!str
-                            expectedOutcome: !!str
+                user interaction sequence: !!seq
+                    - steps: !!map
+                        stepNo: !!str
+                        userAction: !!str
+                        expectedOutcome: !!str

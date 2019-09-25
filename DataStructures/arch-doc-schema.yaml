@@ -1,43 +1,44 @@
 version: v1
-architectureDocument:
-  productArchitecture:
+architecture document:
+  product architecture:
     context:
-        C4-systemContextDiagram:             
-          diagramLink:
-          systemDescription:
+        C4 system context diagram:             
+          diagram link:
+          system description:
         containers:
-          - C4-systemContainerDiagram:
+          - C4 system container diagram:
               name:
-              diagramLink:
-              containerDescription: 
+              diagram link:
+              container description: 
         components:
-          - C4-systemComponentDiagram:
+          - C4 system component diagram:
               name:
-              diagramLink:
+              diagram link:
               container:
-              componentDescription:
+              component description:
         classes:
-          - C4-codeDiagram:
+          - C4 code diagram:
               name:
-              diagramLink:
+              diagram link:
               component: "<name>"
-              classDescription: //define class
-        systemApis:
+              class description: //define class
+        system APIs:
           - api:
-              swaggerLink:
-              wsdlLink:
-        dataView:
-          dbSchema:
-            - diagram:
+              swagger link:
+              wsdl link:
+        data view:
+          db schemas:
+            - 
+                diagram:
                 link:
-        3rdPartySoftware: //externalComponents
-          linkToComponent:
-          licensingModel:
-          renewalPolicy:
-        securityModel:
-        cicdYAML:
-    infrastructureArchitecture: 
-      deployementView:
+        3rd party software: //externalComponents
+          link to component:
+          licensing model:
+          renewal policy:
+        security model:
+        CICD YAML:
+    infrastructure architecture: 
+      deployement view:
         monitoringDesign:
         recoveryRunbooks: 
           

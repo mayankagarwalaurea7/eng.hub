@@ -1,10 +1,11 @@
-manager: <manager name>
-teamroom: <teamroom name>
+manager: !!str #<manager name>
+teamroom: !!str #<teamroom name>
 direct reports: <direct report count>
-- IC:
-  IC name: <IC name>
-  date: <date>
-  unit: <Jira link>
-  coaching: <free text coaching>
-  perfrormanceAssessment: highPerformer | averagePerformer | lowPerformer
-  continueCoaching: yes | no
+ICs: !!seq
+    - IC: !!map
+        IC name: !!str #<IC name>
+        date: !!str #<date>
+        unit: !!str #<Jira link>
+        coaching: !!str #<free text coaching>
+        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
+        continueCoaching: !!bool #yes | no
