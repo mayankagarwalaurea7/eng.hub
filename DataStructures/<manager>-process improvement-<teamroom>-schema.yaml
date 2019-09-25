@@ -1,0 +1,13 @@
+manager: <manager name>
+teamroom: <teamroom name>
+units:
+  unit 1: <link>
+  unit 2: <link>
+  unit 3: <link>
+  unit 4: <link>
+  unit 5: <link>
+recomnmendation: 
+  eliminate waste | improve quality bar
+  description: <string>
+  effort: <int> days
+  impact: <%> at teamroom level
