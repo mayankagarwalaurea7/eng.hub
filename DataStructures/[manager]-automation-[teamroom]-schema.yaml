@@ -1,13 +1,11 @@
-manager: <manager name>
-teamroom: <teamroom name>
-units:
-  unit 1: <link>
-  unit 2: <link>
-  unit 3: <link>
-  unit 4: <link>
-  unit 5: <link>
-automation: 
-  product agnostic | product specific: product 
-  description: <string>
-  effort: <int> days
-  impact: <%> at teamroom level
+manager: !!str #<manager name>
+teamroom: !!str #<teamroom name>
+units: !!seq
+    - unit: !!str #<link>
+automation: !!map
+    product agnostic: !!bool #boolean
+    product specific: !!seq
+        - product name: !!str #product names
+    description: !!str
+    effort: !!int #days
+    impact: !!float #<%> at teamroom level
