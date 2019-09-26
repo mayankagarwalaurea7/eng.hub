@@ -1,0 +1,32 @@
+manager: Carlos Eduardo Witte
+teamroom: Eng.DevSpacesImport
+direct reports: 4
+ICs:
+    - IC: 
+        IC name: David Popiashvilli
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/DVSPIMP-4670
+        coaching: Ticket has no comments showing import history and decisions. Poor documentation.
+        perfrormanceAssessment: highPerformer
+        continueCoaching: yes
+    - IC: 
+        IC name: Pinkal Vansia
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/TBGTM-6456
+        coaching: Excelent import documentation on ticket, perfect quality assessment with no issues.
+        perfrormanceAssessment: highPerformer
+        continueCoaching: yes
+    - IC: 
+        IC name: Rafael Bogaveev
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/SLIAO-6921
+        coaching: Perfect quality assessment, good enough import documentation on ticket.
+        perfrormanceAssessment: highPerformer
+        continueCoaching: yes
+    - IC: 
+        IC name: Stefan Stanca
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/SLIAO-6974
+        coaching: Some warnings in quality assessment, poor documentation but at least showing decisions.
+        perfrormanceAssessment: highPerformer
+        continueCoaching: yes

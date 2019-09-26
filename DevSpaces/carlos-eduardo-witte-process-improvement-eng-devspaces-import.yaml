@@ -1,0 +1,13 @@
+manager: Carlos Eduardo Witte
+teamroom: Eng.DevSpacesImport
+units: 
+    - unit: https://app.crossover.com/x/dashboard/team/2678/1661414/team-metrics
+recomnmendation: 
+    eliminate waste: no 
+    improve quality bar: yes 
+    product agnostic: yes
+    product specific: 
+        - product name: null 
+    description: Create specific tags to identity decision history and closing comments.
+    effort: 2
+    impact: 0.01

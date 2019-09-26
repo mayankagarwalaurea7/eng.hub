@@ -1,0 +1,13 @@
+manager: Carlos Eduardo Witte
+teamroom: Eng.DevSpacesImport.QE
+units: 
+    - unit: https://app.crossover.com/x/dashboard/team/3230/1661414/team-metrics
+recomnmendation: 
+    eliminate waste: yes 
+    improve quality bar: yes 
+    product agnostic: yes
+    product specific: 
+        - product name: null 
+    description: Change process to allow PCAs to delegate Pull Request reviews and merges of devspaces artifacts to Eng.DevSpacesImport.QE.
+    effort: 1
+    impact: 0.20
