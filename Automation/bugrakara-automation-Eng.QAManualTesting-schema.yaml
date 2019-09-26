@@ -3,9 +3,10 @@ teamroom: !!str Eng.QAManualTesting
 units: !!seq
     - unit: !!str https://jira.devfactory.com/browse/AUTO-1971
 automation: !!map
-    product agnostic: !!bool #boolean
+    product agnostic: !!bool Y
     product specific: !!seq
-        - product name: !!str #product names
+        - product name: !!str GFI Archiver
+        - product name: !!str Manuscript
     description: !!str
-    effort: !!int #days
-    impact: !!float #<%> at teamroom level
+    effort: !!int 5
+    impact: !!float 10%
