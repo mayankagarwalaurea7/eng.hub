@@ -6,6 +6,6 @@ ICs:
         IC name: Otávio Calaça Xavier
         date: 2019-09-26
         unit: https://jira.devfactory.com/browse/JCLDALL-34528?focusedCommentId=4397811&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-4397811
-        coaching: Excellent quality of QEPA reports in automated reviews. Color usage makes it clear.
+        coaching: Excellent quality of QEPA reports in automated reviews. Color usage makes it clearer.
         perfrormanceAssessment: highPerformer # no rank info in R&R, but he is above the metric target
-        continueCoaching: yes
+        continueCoaching: true

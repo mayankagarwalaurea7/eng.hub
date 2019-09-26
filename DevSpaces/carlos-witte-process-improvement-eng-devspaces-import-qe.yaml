@@ -1,11 +1,11 @@
 manager: Carlos Witte
 teamroom: Eng.DevSpacesImport.QE
 units: 
-    - unit: https://app.crossover.com/x/dashboard/team/3230/1661414/team-metrics
+    - unit: https://jira.devfactory.com/issues/?filter=94040
 recomnmendation: 
-    eliminate waste: yes 
-    improve quality bar: yes 
-    product agnostic: yes
+    eliminate waste: true 
+    improve quality bar: true 
+    product agnostic: true
     product specific: 
         - product name: null 
     description: Change process to allow PCAs to delegate Pull Request reviews and merges of devspaces artifacts to Eng.DevSpacesImport.QE.

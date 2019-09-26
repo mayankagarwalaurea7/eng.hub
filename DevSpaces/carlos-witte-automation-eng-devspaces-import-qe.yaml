@@ -1,9 +1,9 @@
 manager: Carlos Witte
 teamroom: Eng.DevSpacesImport.QE
 units: 
-    - unit: https://app.crossover.com/x/dashboard/team/3230/1661414/team-metrics
+    - unit: https://jira.devfactory.com/issues/?filter=94040
 automation: 
-    product agnostic: yes
+    product agnostic: true
     product specific: 
         - product name: null
     description: Add QEPA feature to automatically reject or approve some tickets based on quality thresholds.
