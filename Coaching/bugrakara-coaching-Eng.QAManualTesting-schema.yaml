@@ -1,14 +1,14 @@
 manager: !!str Bugra Kara
 teamroom: !!str Eng.QAManualTesting
-direct reports: <direct report count>
+direct reports: 11
 ICs: !!seq
     - IC: !!map
-        IC name: !!str #<IC name>
-        date: !!str #<date>
-        unit: !!str #<Jira link>
-        coaching: !!str #<free text coaching>
-        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
-        continueCoaching: !!bool #yes | no
+        IC name: !!str Amrit Chaswal
+        date: !!str 09.26.2019
+        unit: !!str https://testrail.devfactory.com//index.php?/tests/view/1304775200#testChange-41661892
+        coaching: !!str On track for the week with 100% FTAR. Current coaching for Amrit is to keep up the pace, ensure self-reviews are continued to avoid having FTAR failures.
+        perfrormanceAssessment: !!str averagePerformer
+        continueCoaching: !!bool yes
     - IC: !!map
         IC name: !!str #<IC name>
         date: !!str #<date>
