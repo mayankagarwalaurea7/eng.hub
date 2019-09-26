@@ -1,0 +1,14 @@
+manager: Radhesh Radhakrishnan
+teamroom: Eng.ProductCA
+units: 
+    - unit: https://jira.devfactory.com/browse/FIRM58-12705
+    - unit: https://jira.devfactory.com/browse/FIRM58-12933
+    - unit: https://jira.devfactory.com/browse/FIRM58-13039
+    - unit: https://jira.devfactory.com/browse/FIRM58-12922
+recomnmendation: 
+    eliminate waste: true
+    improve quality bar: true 
+    product agnostic: true
+    description: outage RCA work-package should include all required prerequisites, such as Runbooks or Arch Docs and should appear on top of the queue just above the RCA ticket itself. The current implementation results in inventory pile-up which defeats the primary single-piece flow objective of the work-queue.
+    effort: 1
+    impact: 5
