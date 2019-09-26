@@ -7,5 +7,5 @@ ICs: !!seq
         date: !!str #<date>
         unit: !!str #<Jira link>
         coaching: !!str #<free text coaching>
-        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
+        performanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
         continueCoaching: !!bool #yes | no
