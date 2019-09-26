@@ -1,0 +1,11 @@
+manager: Despot Jakimovski
+teamroom: Eng.Architecture
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Mehdi Rizvi
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/ARCH-1158
+        coaching: Even though the P1 requirement is to build a reusable control, and the control is used on multiple screens, as per our playbook rule "Every capability MUST target a single screen.", you need to split 1 FS per screen.
+        performance assessment: highPerformer
+        continue coaching: false
