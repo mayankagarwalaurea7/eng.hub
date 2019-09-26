@@ -1,0 +1,60 @@
+manager: !!str Bugra Kara
+teamroom: !!str Eng.QAManualTesting
+direct reports: <direct report count>
+ICs: !!seq
+    - IC: !!map
+        IC name: !!str #<IC name>
+        date: !!str #<date>
+        unit: !!str #<Jira link>
+        coaching: !!str #<free text coaching>
+        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
+        continueCoaching: !!bool #yes | no
+    - IC: !!map
+        IC name: !!str #<IC name>
+        date: !!str #<date>
+        unit: !!str #<Jira link>
+        coaching: !!str #<free text coaching>
+        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
+        continueCoaching: !!bool #yes | no
+    - IC: !!map
+        IC name: !!str #<IC name>
+        date: !!str #<date>
+        unit: !!str #<Jira link>
+        coaching: !!str #<free text coaching>
+        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
+        continueCoaching: !!bool #yes | no
+    - IC: !!map
+        IC name: !!str #<IC name>
+        date: !!str #<date>
+        unit: !!str #<Jira link>
+        coaching: !!str #<free text coaching>
+        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
+        continueCoaching: !!bool #yes | no
+    - IC: !!map
+        IC name: !!str #<IC name>
+        date: !!str #<date>
+        unit: !!str #<Jira link>
+        coaching: !!str #<free text coaching>
+        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
+        continueCoaching: !!bool #yes | no
+    - IC: !!map
+        IC name: !!str #<IC name>
+        date: !!str #<date>
+        unit: !!str #<Jira link>
+        coaching: !!str #<free text coaching>
+        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
+        continueCoaching: !!bool #yes | no
+    - IC: !!map
+        IC name: !!str #<IC name>
+        date: !!str #<date>
+        unit: !!str #<Jira link>
+        coaching: !!str #<free text coaching>
+        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
+        continueCoaching: !!bool #yes | no
+    - IC: !!map
+        IC name: !!str #<IC name>
+        date: !!str #<date>
+        unit: !!str #<Jira link>
+        coaching: !!str #<free text coaching>
+        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
+        continueCoaching: !!bool #yes | no
