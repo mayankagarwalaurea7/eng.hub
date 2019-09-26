@@ -1,0 +1,11 @@
+manager: Radhesh Radhakrishnan
+teamroom: Eng.ProductCA
+units:
+    - unit: https://jira.devfactory.com/browse/OLIVES-13748
+automation: 
+    product agnostic: false
+    product specific: 
+        - product name: Olive-DigitalEdition
+    description: Post production deployment Customer Skin updates  to be automated saving several hours of manual click-and-verification effort.
+    effort: 2
+    impact: 5 #real value is impact is outside of TR (SaaS, PS)
