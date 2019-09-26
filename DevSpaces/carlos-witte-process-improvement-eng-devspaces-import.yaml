@@ -1,4 +1,4 @@
-manager: Carlos Eduardo Witte
+manager: Carlos Witte
 teamroom: Eng.DevSpacesImport
 units: 
     - unit: https://app.crossover.com/x/dashboard/team/2678/1661414/team-metrics
@@ -8,6 +8,6 @@ recomnmendation:
     product agnostic: yes
     product specific: 
         - product name: null 
-    description: Create specific tags to identity decision history and closing comments.
+    description: Create specific tags to better identity decisions and closing comments in tickets.
     effort: 2
-    impact: 0.01
+    impact: 0.05
