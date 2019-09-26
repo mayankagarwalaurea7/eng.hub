@@ -1,0 +1,11 @@
+manager: !!str Stelian Moldovan
+teamroom: !!str Eng.ProductCA
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/BOINT-11979
+automation: !!map
+    product agnostic: !!bool false
+    product specific: !!seq
+        - product name: !!str Bonzai Intranet
+    description: !!str Eliminate the need for manual editing the deployment parameters at production deployment time
+    effort: !!int 1
+    impact: !!float 5
