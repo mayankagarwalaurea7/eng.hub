@@ -2,7 +2,7 @@ manager: !!str #<manager name>
 teamroom: !!str #<teamroom name>
 units: !!seq
     - unit: !!str #<link>
-recomnmendation: !!map
+recommendation: !!map
     eliminate waste: !!bool 
     improve quality bar: !!bool 
     product agnostic: !!bool #boolean
