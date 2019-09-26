@@ -1,0 +1,7 @@
+{
+    "yaml.schemas": {
+      "DataStructures/automation-schema.json": "/Managers/Luis-Castillero-automation-Eng.QAIntegrationMaintenance*",
+      "DataStructures/coaching-schema.json":   "/Managers/Luis-Castillero-coaching-Eng.QAIntegrationMaintenance*",
+      "DataStructures/process-improvement-schema.json": "/Managers/Luis-Castillero-process-improvement-Eng.QAIntegrationMaintenance*"
+    }
+}
