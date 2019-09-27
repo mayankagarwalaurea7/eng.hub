@@ -1,0 +1,13 @@
+manager: Gowtham Sen Potnuru
+teamroom: Eng.QAManualTesting
+units: 1
+    - unit: https://jira.devfactory.com/browse/CSRV-4787
+recommendation:
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    product specific:
+        - product name: Any
+    description: Suggested a new InputQB to review E2E tickets by the QA Team. It is under review by PCA QE VP. This gives direct impact to Business goals in terms of quality releases and avoid unwanted QA efforts.
+    effort: 1
+    impact: 0.33%

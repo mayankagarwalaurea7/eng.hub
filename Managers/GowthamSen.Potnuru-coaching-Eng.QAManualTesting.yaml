@@ -1,0 +1,53 @@
+manager: Gowtham Sen Potnuru
+teamroom: Eng.QAManualTesting
+direct reports: 7
+ICs:
+    - IC: 1
+        IC name: Bhagyashri Chechani
+        date: 2019-09-27
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1306480041#testChange-41679748
+        coaching: IC didn't follow all the test case steps as specified. Coached IC to follow each step as specified in the test case and do the self-review.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 2
+        IC name: Janani R
+        date: 2019-09-26
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1304756168#testChange-41591165
+        coaching: The screenshots attached to the test step doesn't match as the installation was done before. Coached IC to mark the test case as SKIPPED with valid reason in case the execution is reuiqred.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 3
+        IC name: Shekara KN
+        date: 2019-09-25
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1304932074#testChange-41604376
+        coaching: IC attached the screenshots while performing the steps isntead of taking screenshots in the verification. Coached IC to do self-review and created daily activities sheet to guide the IC to meet 100% FTAR.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 4
+        IC name: Veena Mohan
+        date: 2019-09-25
+        unit: https://jira.devfactory.com/browse/JCLDALL-16859
+        coaching: The E2E ticket has incorrect precondition E2E reference. As IC has product knowledge, IC executed with the actual steps. Coached IC to strick the process and avoid taking own decisions. Coached IC to set such E2E tickets as FailedQB.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 5
+        IC name: Ratna Harika
+        date: 2019-09-25
+        unit: <All units are good>
+        coaching: Created a good-to-do activities for an IC and asked the IC to follow the same to maintain 100% FTAR. Link: https://confluence.devfactory.com/display/QMT/QA+Good+To+Do+-+Activities
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 6
+        IC name: Lavi Kumar Shukla
+        date: 2019-09-25
+        unit: <All units are good>
+        coaching: Created a good-to-do activities for an IC and asked the IC to follow the same to maintain 100% FTAR. Link: https://confluence.devfactory.com/display/QMT/QA+Good+To+Do+-+Activities
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 7
+        IC name: Samreen Khan
+        date: 2019-09-25
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1305507077#testChange-41615049
+        coaching: IC didn't raise a defect in case the message is different considering the message displayed is similar. Coached IC to stick to the test case steps and should validate the verification points as is.
+        performance assessment: highPerformer
+        continue coaching: true
