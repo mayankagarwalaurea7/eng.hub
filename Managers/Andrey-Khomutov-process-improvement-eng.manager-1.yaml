@@ -1,0 +1,13 @@
+manager: Andrey Khomutov
+teamroom: Eng.Feature
+units: 
+    - unit: https://jira.devfactory.com/browse/ACID-26042 
+
+recommendation:
+    eliminate waste: true
+    improve quality bar: true 
+    product agnostic: false
+    product specific: true
+    description: fix the issue with E2E inconsistent with FSs
+    effort: 10
+    impact: 10
