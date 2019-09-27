@@ -1,0 +1,29 @@
+manager: !!str Jacek Kaczynski #<manager name>
+teamroom: !!str Eng.Manager #<teamroom name>
+direct reports: 4
+ICs: !!seq
+    - IC: !!map
+        IC name: !!str Ahmet Ercin #<IC name>
+        date: !!str 24-Sep-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/CONTROL-30784 #<Jira link>
+        coaching: !!str Proactively address automated test environment issues #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: !!bool false #true | false
+        IC name: !!str Dmytro Khaynas #<IC name>
+        date: !!str 25-Sep-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/KMAN-5609 #<Jira link>
+        coaching: !!str Communicate to product management about features broken due to 3rd party changes #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPe$
+        continue coaching: !!bool false #true | false
+        IC name: !!str Ozgun Toptas #<IC name>
+        date: !!str 25-Sep-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/CONTROL-30814 #<Jira link>
+        coaching: !!str Keep product wiki in synv with Gdoc test environment documentation #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPe$
+        continue coaching: !!bool false #true | false
+        IC name: !!str Zoltan Blenessy #<IC name>
+        date: !!str 23-Sep-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/EXOS-10661 #<Jira link>
+        coaching: !!str Simplify test scenario making it easy to understand for QA #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPe$
+        continue coaching: !!bool false #true | false
