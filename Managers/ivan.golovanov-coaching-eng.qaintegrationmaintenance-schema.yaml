@@ -1,0 +1,11 @@
+manager: Ivan Golovanov
+teamroom: Eng.QAIntegrationMaintenance
+direct reports: 1
+ICs:
+    - IC: 
+        IC name: Dan Adera
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/NORTHP-20245
+        coaching: Work with PCA via Eng Problems on resolving missing test data 
+        performance assessment: averagePerformer
+        continue coaching: true
