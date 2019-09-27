@@ -1,0 +1,25 @@
+manager: !!str Pavel Gorbel
+teamroom: !!str Eng.ProductCA
+direct reports: 3
+ICs: !!seq
+    - IC: !!map
+        IC name: !!str Oleg Krekov
+        date: !!str 2019-09-27
+        unit: !!str https://jira.devfactory.com/browse/GFIFM-4282
+        coaching: !!str E2E is needed to be defined assuming no human visually watches the execution but the result should be checked in the Server's log. -> this will let us to avoid fake TCs failures and consequent actions.
+        perfrormanceAssessment: !!str highPerformer #| averagePerformer | lowPerformer
+        continueCoaching: !!bool yes #| no
+    - IC: !!map
+        IC name: !!str Vasiliy Molaev
+        date: !!str 2019-09-27
+        unit: !!str https://jira.devfactory.com/browse/CONNECT-74981
+        coaching: !!str During the triage of the ticket PCA has to put in some comments which conclude the outcome of that activity. 
+        perfrormanceAssessment: !!str highPerformer #| averagePerformer | lowPerformer
+        continueCoaching: !!bool yes #| no
+    - IC: !!map
+        IC name: !!str Rupendra Singh
+        date: !!str 2019-09-27
+        unit: !!str https://jira.devfactory.com/browse/GFIA-12360
+        coaching: !!str Named version doesn't match with the content of versions in the document.
+        perfrormanceAssessment: !!str averagePerformer #highPerformer | averagePerformer | lowPerformer
+        continueCoaching: !!bool yes #| no      
