@@ -9,7 +9,8 @@ recommendation:
     eliminate waste: true
     improve quality bar: false 
     product agnostic: true
-    product specific: false
+    product specific:
+        - product name: N/A
     description: Tag all Feature ICs according to their technology/product expertise. When a team lacking certain expertise picks up a challenging spec assign corresponding ICs as navigators for the spec. Could be particularly valuable for Rewrite/Rebuild specs.
     effort: 2
     impact: 3
