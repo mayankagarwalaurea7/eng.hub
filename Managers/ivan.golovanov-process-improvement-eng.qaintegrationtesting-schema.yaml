@@ -1,0 +1,13 @@
+manager: Ivan Golovanov
+teamroom: Eng.QAIntegrationTesting
+units:
+    - unit: https://jira.devfactory.com/browse/AESCIS-40865
+recommendation:
+    eliminate waste: true 
+    improve quality bar: false
+    product agnostic: true
+    product specific: 
+        - product name: AES CIS
+    description: Create a queue for re-review PRs
+    effort: 1
+    impact: 1

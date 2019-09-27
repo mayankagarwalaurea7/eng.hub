@@ -1,0 +1,10 @@
+manager: Dmytro Malenko
+teamroom: Eng.Feature
+units: 
+    - unit: https://jira.devfactory.com/browse/JCLDALL-16710
+automation: 
+    product agnostic: true
+    product specific: false
+    description: Block transition of Feature Story tickets to review if necessary fields/links/comments were not added to the ticket.
+    effort: 3
+    impact: 15

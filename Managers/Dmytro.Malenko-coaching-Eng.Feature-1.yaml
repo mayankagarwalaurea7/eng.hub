@@ -1,0 +1,11 @@
+manager: Dmytro Malenko
+teamroom: Eng.Feature
+direct reports: 3
+ICs:
+    - IC: 
+        IC name: Mohamed Atef Khafaga
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/JCLDALL-16998
+        coaching: Monitor updates to IQBs and ensure Feature Story demos comply with current IQBs
+        performance assessment: averagePerformer
+        continue coaching: true
