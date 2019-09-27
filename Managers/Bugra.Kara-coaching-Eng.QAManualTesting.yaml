@@ -1,0 +1,11 @@
+manager: Bugra Kara
+teamroom: Eng.QAManualTesting
+direct reports: 11
+ICs:
+    - IC:
+        IC name: Nishita Bhatt
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/CONNECT-68050
+        coaching: On track for the week with 100% FTAR and 85 units. Process coaching was provided for a unique case where E2E (CONNECT-68050) was found insufficient during "In Execution" phase.
+        performance assessment: highPerformer
+        continue coaching: true
