@@ -1,0 +1,11 @@
+manager: !!str Bugra Kara
+teamroom: !!str Eng.QAManualTesting
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/AUTO-1970
+automation: !!map
+    product agnostic: !!bool Y
+    product specific: !!seq
+        - product name: !!str ALL PRODUCTS
+    description: !!str
+    effort: !!int 4
+    impact: !!float 5.6%
