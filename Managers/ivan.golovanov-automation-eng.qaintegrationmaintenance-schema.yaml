@@ -3,7 +3,7 @@ teamroom: Eng.QAIntegrationMaintenance
 units:
     - unit: https://jira.devfactory.com/browse/NORTHP-20245
 automation:
-    product agnostic: yes
+    product agnostic: true
     product specific:
         - product name: Northplains-Telescope
     description: Trigger full build after every merge to dev branch
