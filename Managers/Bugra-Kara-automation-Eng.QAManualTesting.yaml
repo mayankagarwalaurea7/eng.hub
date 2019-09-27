@@ -2,9 +2,9 @@ manager: Bugra Kara
 teamroom: Eng.QAManualTesting
 units:
     - unit: https://jira.devfactory.com/browse/AUTO-1971
-automation: !!map
+automation:
     product agnostic: true
     product specific: false
-    description: !!str Delink Invalid Test Cases
+    description: Delink Invalid Test Cases
     effort: 3
     impact: 10
