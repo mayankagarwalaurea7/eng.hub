@@ -10,12 +10,12 @@ ICs: !!seq
         perfrormanceAssessment: !!str averagePerformer
         continueCoaching: !!bool yes
     - IC: !!map
-        IC name: !!str #<IC name>
-        date: !!str #<date>
-        unit: !!str #<Jira link>
-        coaching: !!str #<free text coaching>
-        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
-        continueCoaching: !!bool #yes | no
+        IC name: !!str Nishita Bhatt
+        date: !!str 09.26.2019
+        unit: !!str https://testrail.devfactory.com//index.php?/tests/view/1307964141#testChange-41782927
+        coaching: !!str On track for the week with 100% FTAR and 85 units. Process coaching is provided for a unique case where E2E was found insufficient during "In Execution" phase.
+        perfrormanceAssessment: !!str highPerformer
+        continueCoaching: !!bool yes
     - IC: !!map
         IC name: !!str #<IC name>
         date: !!str #<date>
