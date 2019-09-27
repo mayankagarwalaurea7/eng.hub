@@ -1,0 +1,11 @@
+manager: Gowtham Sen Potnuru
+teamroom: Eng.QAManualTesting
+units: 1
+    - unit: https://jira.devfactory.com/browse/ECPA-
+automation:
+    product agnostic: true
+    product specific: N/A
+        - product name: N/A
+    description: Automated Self-review bot helps IC to maintain 100% FTAR. 60% of QB items are automated.
+    effort: 2
+    impact: 1.5%

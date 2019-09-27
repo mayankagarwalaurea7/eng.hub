@@ -1,0 +1,10 @@
+manager: Gaston Real
+teamroom: Eng.Architecture
+units:
+    - unit: https://jira.devfactory.com/browse/ARCH-1183
+automation:
+    product agnostic: true
+    product specific: false
+    description: Automate the creation of Feature Stories in JIRA from the FS Breakdown matrix using Google Scripts
+    effort: 3 #days
+    impact: 0.02

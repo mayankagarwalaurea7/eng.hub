@@ -1,0 +1,11 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+units:
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36898
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Restrict FS transitions to review if PR didn't pass CI build yet or is unavailable.
+    effort: 3
+    impact: 32

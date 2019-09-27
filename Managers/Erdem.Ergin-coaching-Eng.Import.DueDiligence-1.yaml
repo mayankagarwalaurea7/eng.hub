@@ -1,0 +1,32 @@
+manager: Erdem Ergin
+teamroom: Eng.Import.DueDiligence
+direct reports: 4
+ICs: 
+    - IC: 
+        IC name: Anton Belousov
+        date: 26-Sep-2019
+        unit: N/A
+        coaching: Joined the team this week, first time executing Due Diligence process. Provided coaching on CTO Meeting task. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Hudson Tavares
+        date: 26-Sep-2019
+        unit: N/A
+        coaching: Provided coaching on how to generate CTO meeting agenda
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Ricardo Cunha
+        date: 26-Sep-2019
+        unit: N/A
+        coaching: Provided coaching on how to perform people assessment
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Asad Ali
+        date: 26-Sep-2019
+        unit: https://jira.devfactory.com/browse/ENGDD-2676
+        coaching: Provided coaching on how to handle Objective-C Header files on Code Analysis reports
+        performance assessment: averagePerformer
+        continue coaching: true

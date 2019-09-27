@@ -1,0 +1,15 @@
+manager: Anil Bahceevli #<manager name>
+teamroom: Eng.CodeCleanup #<teamroom name>
+units:
+    - unit: https://jira.devfactory.com/browse/CC-835020 #<Jira link>
+    - unit: https://jira.devfactory.com/browse/CC-834958 #<Jira link>
+    - unit: https://jira.devfactory.com/browse/CC-834957 #<Jira link>
+    - unit: https://jira.devfactory.com/browse/CC-834924 #<Jira link>
+    - unit: https://jira.devfactory.com/browse/CC-834660 #<Jira link>
+automation:
+    product agnostic: true #true | false
+    product specific:
+        - product name:  #product names
+    description: Change PR status from Draft to Open automatically once Autofix Pr is approved.
+    effort: 3 #days
+    impact: %50 #<%> at teamroom level

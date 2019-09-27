@@ -1,0 +1,18 @@
+﻿manager: Rafiq Raja
+teamroom: Eng.YAML
+direct reports: 2
+ICs:
+    - IC:
+        IC name: Muhammad Faisal Hameed
+        date: 2019-09-27
+        unit: all
+        coaching: Explained Real vs Billed WorkSmart Time Tracking Guidelines
+        performance assessment: highPerformer
+        continue coaching: false
+    - IC:
+        IC name: Ukbe Akdogan
+        date: 2019-09-27
+        unit: all
+        coaching: Explained the need for Camshots not to have kids or pets, to stay focused
+        performance assessment: highPerformer
+        continue coaching: false
