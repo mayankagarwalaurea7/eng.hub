@@ -1,0 +1,39 @@
+manager: Azmathulla Khan
+teamroom: Eng.UnitTest
+direct reports: 5
+ICs: 
+    - IC: 
+        IC name: Mayur Patel
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/TBGTM-6071
+        coaching: Not to modify the build.xml file as per review done based on TBGTM-6071 & TBGTM-6069 and to revert back all the changes done to address the Quality.
+        performance assessment: averagePerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Pranati Jaiswal
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/TBGTM-6775
+        coaching: In TBGTM-6775 review found that the test prefix is specific to JUnit 3, while @Test is specific to JUnit 4 and deprecates the former. It could be a good approach to remove this prefix and avoid redundancy. It is recommended to follow the Java naming conventions for method's names and remove the underscore characters. For test methods, the underscores can be replaced with BDD format (Given, When, Then).  
+        performance assessment: averagePerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Hamza Raza
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/TBGTM-6575
+        coaching: In TBGTM-6575 review found that line of code exceeds >120 columns and is to be revised in order to be readable and avoid horizontal scroll. Consider using the 'line-wrapping' technique to format this line of code in multiple shorter lines. Try as much as possible to avoid lines longer than 120 columns, since they're not handled well by many terminals and tools. 
+        performance assessment: highPerformer
+        continueCoaching: true   
+    - IC: 
+        IC name: Sibhani Sankar Pradhan
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/FIRSTRAIN-27108
+        coaching: In FR-27108, found that twitterSpecData** is a simple pojo class. Coached IC to NOT add verify on simple pojo classes.
+        performance assessment: averagePerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Deepali Kathotia
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/FIRSTRAIN-25946
+        coaching: In FR-25946, found that the number of lines added in this PR is more than 1.5K. Coached the IC to split the PR if LOCs exceed >1.5K.
+        performance assessment: highPerformer
+        continueCoaching: true
