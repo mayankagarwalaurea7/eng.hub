@@ -5,7 +5,7 @@ units:
 automation:
     product agnostic: true
     product specific:
-        - product name:
+        - product name: null
     description: Git hooks to automate the creation of PRs. In implementation.
     effort: 4
     impact: 15.0

@@ -3,8 +3,8 @@ teamroom: Eng.QAIntegrationTesting
 units:
     - unit: https://jira.devfactory.com/browse/PROLOGICCID-5444
 recommendation:
-    eliminate waste: yes
-    improve quality bar: yes
+    eliminate waste: true
+    improve quality bar: false
     product agnostic: false
     product specific:
         - product name: ProLogic 

@@ -8,25 +8,25 @@ ICs:
         unit: https://jira.devfactory.com/browse/SBM-55857
         coaching: Coach on how to find previous automation
         performance assessment: highPerformer
-        continue coaching: no
+        continue coaching: false
     - IC:
         IC name: Rogelio Nastor 
         date: 09/26/2019
         unit: https://jira.devfactory.com/browse/EVCID-9695
         coaching: Coach on how to review precondition
         performance assessment: averagePerformer
-        continue coaching: no
+        continue coaching: false
     - IC:
         IC name: Jose Velasquez 
         date: 09/26/2019
         unit: https://jira.devfactory.com/browse/GFIA-6886
         coaching: Coach on how to raise Eng Problem issues
         performance assessment: lowPerformer
-        continue coaching: no
+        continue coaching: false
     - IC:
         IC name: Marcos Cesar
         date: 09/26/2019
         unit: https://jira.devfactory.com/browse/GFIME-6933
         coaching: Coach on how to get existing screenshots of the TC
         performance assessment: averagePerformer
-        continue coaching: no
+        continue coaching: false
