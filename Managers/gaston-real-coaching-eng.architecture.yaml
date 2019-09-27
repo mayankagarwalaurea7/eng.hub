@@ -1,0 +1,25 @@
+manager: Gaston Real
+teamroom: Eng.Architecture
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Andrey Artyukhov
+        date: 9/26/2019
+        unit: https://jira.devfactory.com/browse/ARCH-1752
+        coaching: Please apply deep dive on the codebase analysis to provide more and better insights. The new decisions should have a clear expected % of improvement, not random ideas.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Ignacio Larrañaga
+        date: 9/26/2019
+        unit: https://jira.devfactory.com/browse/ARCH-1473
+	coaching: Feature Stories should be always functional and not technical (OCE-10409). Always apply the rule either using the E2E or the P1 spec as the source of functional definitions 
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Raul Guerrero
+        date: 9/26/2019
+        unit: https://jira.devfactory.com/browse/ARCH-1522
+	coaching: Apply the new process to remove the E2E blocker 
+        performance assessment: highPerformer
+        continue coaching: true
