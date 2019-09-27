@@ -3,7 +3,7 @@ teamroom: Eng.QAIntegrationTesting
 units:
     - unit: https://jira.devfactory.com/browse/AESCIS-40865
 automation:
-    product agnostic: yes
+    product agnostic: true
     product specific:
         - product name: AES CIS
     description: Create testing tickets automaticly for every TC
