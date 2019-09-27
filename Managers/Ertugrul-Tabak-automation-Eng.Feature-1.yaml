@@ -1,0 +1,13 @@
+manager: Ertugrul Tabak
+teamroom: Eng.Feature
+units:
+  - unit: CODEFIX - cannot check - JIRA is down
+automation:
+  product agnostic: true
+  description: >
+    Force the validity of "stakeholder" field of JIRA Feature Epics, if it is not correct,
+    wrong person is notified and precious time is wasted.
+    Note that, this proposal is to shorten the delivery times, not directly related with
+    productivity.
+  effort: 1
+  impact: 5.0
