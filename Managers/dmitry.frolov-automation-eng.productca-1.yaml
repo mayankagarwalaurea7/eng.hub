@@ -1,0 +1,13 @@
+manager: Dmitry Frolov #<manager name>
+teamroom: Eng.Manager #<teamroom name>
+units: 
+    - unit: jira ticket is not created yet for this #<link>
+automation: simplify PSEM yaml creation
+    product agnostic: false #boolean
+    product specific: 
+        - product name: all #product names
+    description: develop a simple front end to create yaml files for managers
+      this should save 30s-1minute from each yaml, which is about 5k$ savings
+      on a year for 36 people and 30s saving - 2 weeks of 1 SEM 
+    effort: 1
+    impact: 0.11  #<%> at teamroom level
