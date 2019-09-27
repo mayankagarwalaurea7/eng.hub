@@ -1,47 +1,47 @@
-manager: Dmitry Frolov #<manager name>
-teamroom: Eng.ProductCA #<teamroom name>
+manager: Dmitry Frolov
+teamroom: Eng.ProductCA
 direct reports: 3
 ICs:
     - IC: Norman Artavia
-        IC name: Norman Artavia #<IC name>
-        date: '2019.09.26' #<date>
-        unit: https://jira.devfactory.com/browse/SLIFRONT-3583 #<Jira link>
+        IC name: Norman Artavia
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/SLIFRONT-3583
         coaching: we already have health tests, there is no need to make this unit another health test, 
           good enough that it check the attribute otherwise unit is good
-          Ensure that every item done gets a unit closed immediately after it #<free text coaching>
-        perfrormanceAssessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
-        continueCoaching: true #yes | no
+          Ensure that every item done gets a unit closed immediately after it
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: true
     - IC: Norman Artavia
-        IC name: 'Norman Artavia' #<IC name>
-        date: '2019.09.26' #<date>
-        unit: 'https://jira.devfactory.com/browse/SLIFRONT-3712' #<Jira link>
+        IC name: 'Norman Artavia'
+        date: 2019-09-26
+        unit: 'https://jira.devfactory.com/browse/SLIFRONT-3712'
         coaching: 1. system landscape diagram was supposed to be updated with the new links and systems so other people have access to this info 
           2. the links to the structurizr diagram should be done from the shared access link and look like https://structurizr.com/share/..... #<free  text coaching>
-        perfrormanceAssessment: !!str #highPerformer | averagePerformer | lowPerformer
-        continueCoaching: true #yes | no
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: true
     - IC: Haci Burak
-        IC name: Haci Burak #<IC name>
-        date: 2019-09-26 #<date>
-        unit: https://jira.devfactory.com/browse/SLISEARCH-3159 #<Jira link>
+        IC name: Haci Burak
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/SLISEARCH-3159
         coaching: accessible for fresh deploy(we already have health tests, there is no need to make this unit another health test, 
-          good enough that it check the attribute otherwise unit is good #<free text coaching>
-        perfrormanceAssessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
-        continueCoaching: true #yes | no
+          good enough that it check the attribute otherwise unit is good
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: true
     - IC: Haci Burak
-        IC name: Haci Burak #<IC name>
-        date: 2019-09-26 #<date>
-        unit: https://jira.devfactory.com/browse/SLISEARCH-3108 #<Jira link>
+        IC name: Haci Burak
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/SLISEARCH-3108
         coaching: C4 context diagram for Search cluster needs APE, commerce console, 
           needs changed to the description of the link between Client and Search cluster. 
           Rename "Downloaders" to "External Data sources". 
-          Advised to verify the diagram with changes done by other people (how do we ensure #<free text coaching>
-        perfrormanceAssessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
-        continueCoaching: true #yes | no
+          Advised to verify the diagram with changes done by other people (how do we ensure
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: true
     - IC: Abhinav Kansal
-        IC name: Abhinav Kansal #<IC name>
-        date: 2019-09-26 #<date>
-        unit: https://jira.devfactory.com/browse/SLIAO-7699 #<Jira link>
+        IC name: Abhinav Kansal
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/SLIAO-7699
         coaching: APE context and MERLIN software systems need to have theri descriptions changed the description of the APE 
-          and MERLIN as they do a same but slightly different job #<free text coaching>
-        perfrormanceAssessment: highPerformer #highPerformer | averagePerformer | lowPerformer
-        continueCoaching: true #yes | no
+          and MERLIN as they do a same but slightly different job
+        perfrormanceAssessment: highPerformer
+        continueCoaching: true
