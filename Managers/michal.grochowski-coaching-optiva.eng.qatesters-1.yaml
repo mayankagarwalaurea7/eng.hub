@@ -12,7 +12,7 @@ ICs:
     - IC:
         IC name: Mochamad Rahman
         date: 2019-09-27
-        unit: 
+        unit: https://jira.optiva.com/jira/browse/VDII-7841
         coaching: Gets easilly distracted by XOChat (his MM hours is x2 of top performer on the same account), he needs to follow daily plan with more attention
         performance assessment: averagePerformer
         continue coaching: yes
