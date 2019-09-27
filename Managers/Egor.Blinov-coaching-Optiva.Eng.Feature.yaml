@@ -1,0 +1,40 @@
+manager: Egor Blinov
+teamroom: Optiva.Eng.Feature
+direct reports: 5
+ICs:
+    - IC: 
+        IC name: Hardyan Eka Putra
+        date: 2019-09-27
+        unit: https://jira.optiva.com/jira/browse/MOB-570
+        coaching: Work with CSA and PCA in TMS mode to get max knowledge on particular area
+        performance assessment: topPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Vinod Ramu
+        date: 2019-09-27
+        unit: https://jira.optiva.com/jira/browse/MOB-164
+        coaching: Deep focus on code conditions and its sensivity within particular requirements
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Yaroslav Nikolaev
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/MOB-149
+        coaching: Conntinuous improvement on fringe cases while working with new DB entries
+        performance assessment: topPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Riki Rinaldo
+        date: 2019-09-27
+        unit: https://jira.optiva.com/jira/browse/OMNT-2888
+        coaching: L1 coverage extensions can not be interpreted in different ways - need to optimize code after testing to avoid performance issues
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Praveen Gurumurthy
+        date: 2019-09-27
+        unit: https://jira.optiva.com/jira/browse/VDSA-1000
+        coaching: Perform trace analysis in TMS mode rather than checking the unknownn area by yourself 
+        performance assessment: averagePerformer
+        continue coaching: true
+

@@ -1,0 +1,9 @@
+manager: Despot Jakimovski
+teamroom: Eng.Architecture
+units: 
+    - unit: https://jira.devfactory.com/browse/META-6045
+automation: 
+    product agnostic: true
+    description: on L1-Spec transition to "On Hold", in case there is an accompanying "Architectural Iteration" ticket in any state different than "Cancelled" or "Done", create an automation that will a) place a label OnHold. b) comment in "Architectural Iteration" ticket: "Placed on hold because of P1 On Hold." c) once the same P1 goes back again in "Engineering Backlog" or "Engineering Progress", the OnHold label is taken out from the "Architectural Iteration" ticket. d) comment in "Architectural Iteration" ticket: "Placed back in previous state, as P1 sent to Engineering again."
+    effort: 0.25
+    impact: 0.05
