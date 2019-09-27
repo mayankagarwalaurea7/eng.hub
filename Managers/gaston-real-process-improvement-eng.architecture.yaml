@@ -1,0 +1,15 @@
+manager: Gaston Real
+teamroom: Eng.Architecture
+units:
+    - unit: https://jira.devfactory.com/browse/ARCH-955
+    - unit: https://jira.devfactory.com/browse/ARCH-1522
+    - unit: https://jira.devfactory.com/browse/ARCH-1476
+    - unit: https://jira.devfactory.com/browse/ARCH-1548
+recommendation: 
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    product specific: 
+    description: The process is modified to eliminate the E2E upfront requirement. For non-functional P1s, existing test plan (E2Es) is used directly, and for functional P1s the stories will be created based on the P1 information, PCA will provide the E2Es after feature delivers
+    effort: 15 days
+    impact: .2
