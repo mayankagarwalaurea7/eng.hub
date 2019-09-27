@@ -1,0 +1,13 @@
+manager: !!str Bugra Kara
+teamroom: !!str Eng.QAManualTesting
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/CONNECT-68050
+recomnmendation: !!map
+    eliminate waste: !!bool yes
+    improve quality bar: !!bool yes
+    product agnostic: !!bool yes
+    product specific: !!seq
+        - product name: !!str ALL PRODUCTS
+    description: !!str Blocker guidelines updates. Item 9.1.
+    effort: !!int 1
+    impact: !!float 5%

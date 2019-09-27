@@ -12,8 +12,8 @@ ICs: !!seq
     - IC: !!map
         IC name: !!str Nishita Bhatt
         date: !!str 09.26.2019
-        unit: !!str https://testrail.devfactory.com//index.php?/tests/view/1307964141#testChange-41782927
-        coaching: !!str On track for the week with 100% FTAR and 85 units. Process coaching is provided for a unique case where E2E was found insufficient during "In Execution" phase.
+        unit: !!str https://jira.devfactory.com/browse/CONNECT-68050
+        coaching: !!str On track for the week with 100% FTAR and 85 units. Process coaching is provided for a unique case where E2E (CONNECT-68050) was found insufficient during "In Execution" phase.
         perfrormanceAssessment: !!str highPerformer
         continueCoaching: !!bool yes
     - IC: !!map
