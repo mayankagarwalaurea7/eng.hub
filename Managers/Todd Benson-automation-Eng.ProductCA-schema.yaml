@@ -1,0 +1,12 @@
+manager: Todd Benson
+teamroom: Eng.ProductCA
+units: 2
+    - unit: https://jira.devfactory.com/browse/CODEALIKE-4448
+    - unit: https://jira.devfactory.com/browse/STRONGTEST-36
+automation: 
+    product agnostic: true
+    product specific: 
+        - product name: Codealike, StrongTest
+    description: Currently E2E is manually created in JIRA, then a QA manually copies it into testrails.  So there is double work.  PCAs could create E2Es (TCs) directly in testrails and when it is approved, then an Eng.Problem ticket can be automatically created in JIRA for metric credit eliminating double work.  Also, Currently Eng.Problem ticket is manually created for each Arch doc update after the doc is updated.  Create a plugin that can be put into google docs so that you can highlight a portion of the architecture document and automatically create an Eng.Problem ticket for the work that you highlighted.
+    effort: 2
+    impact: 100
