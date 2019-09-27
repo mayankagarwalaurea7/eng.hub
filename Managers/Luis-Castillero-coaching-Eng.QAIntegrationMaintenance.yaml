@@ -1,0 +1,74 @@
+manager: Luis Castillero
+teamroom: Eng.QAIntegrationMaintenance
+direct reports: 9
+ICs: 
+    - IC: 
+        IC name: Abdalla Mahmoud
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/MANUSCRIPT-20106
+        coaching: Business value provided by our team depends on daily builds and FogBugz received and escalation due to this. Timeblock 30 minutes at the start of your day to check your product daily builds. Send me a screenshot of your calendar
+        performance assessment: lowPerformer
+        continueCoaching:  true
+    - IC: 
+        IC name: Banjo Mofesola Paul
+        date: 2019-09-26
+        unit: N/A
+        coaching: IC is on vacations
+        performance assessment: lowPerformer
+        continueCoaching: false
+    - IC: 
+        IC name: Dmitry Zhdakhin
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/TS-4807
+        coaching: Defects that are not confirmed by the PCA do not provide any metric. Before creating the Test Problem confirm with the PCA if the issue is really a defect. Read the playbook section again and confirm me when you finish. I will enforce it by gemba walks
+        performance assessment: highPerformer
+        continueCoaching: false
+    - IC: 
+        IC name: Evgeny Astafev
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/EXOS-12216
+        coaching: Exinda already reached the External QB threshold, as discuss focus on Acorn, which is below the threshold. Review the last Acorn execution and create a Failure Analysis doc and share it with me 
+        performance assessment: highPerformer
+        continueCoaching: false
+    - IC: 
+        IC name: Nabhan Nazar
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/BIZAPPS-16268
+        coaching: Tickets that blocks a project from reaching 98% pass rate should be daily followed up. That applies to Knova as well. Timeblock 30 minutes each day to review your tickets. And comment on the maintenance spreadsheet. 
+        performance assessment: averagePerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Naman Kumar
+        date: 2019-09-26
+        unit: N/A
+        coaching: First rain is not reaching 98 and you don't have any ticket in progress. Do a Failure Analysis document and share it with me. This will allow you to create the required tickets to understand your current workload 
+        performance assessment: averagePerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Shoaib Mansoor
+        date: 2019-09-26
+        unit: N/A
+        coaching: Your work has been focused on AlertFind but there is no ticket created for it. Create the required tickets based on the fixes you did and mention me on the comments   
+        performance assessment: averagePerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Sumaiya Kidwai
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/SKYVERA-8750
+        coaching: You found that Skyvera is blocked due to performance, create a Eng Problem for the PCA to resolve it and unblock you. Timeblock 15 minutes each day to follow up to get a solution as soon as possible. Mention me on each follow up. 
+        performance assessment: averagePerformer
+        continueCoaching: false
+    - IC: 
+        IC name: Vandana Pathak
+        date: 2019-09-26
+        unit: N/A
+        coaching: I assigned you Firm58 to fix the data issues, but yet, no ticket was created for this purpose. Create one based on the analysis and the conversation you had with the PCA and mention me on the ticket. 
+        performance assessment: lowPerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Zaur Kandokhov
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/EVCID-13899
+        coaching: You have tickets "In progress" on too many products, making your focus to be minimal. Focus on each product at a time and don't let it go until you get to 98%. I will daily check your ticket closed to ensure you do it. 
+        performance assessment: highPerformer
+        continueCoaching: false
