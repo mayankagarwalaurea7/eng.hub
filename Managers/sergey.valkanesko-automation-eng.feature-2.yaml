@@ -1,0 +1,12 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+units:
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36947
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36939
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Introduce a mandatory Timings field for FS to guarantee that demo timings are always provided prior to moving a FS to QE.
+    effort: 1
+    impact: 26
