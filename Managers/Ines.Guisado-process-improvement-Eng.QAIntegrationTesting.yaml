@@ -1,0 +1,13 @@
+manager: Ines Guisado
+teamroom: Eng.QAIntegrationTesting
+units:
+    - unit: https://jira.devfactory.com/browse/PROLOGICCID-5444
+recommendation:
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: false
+    product specific:
+        - product name: ProLogic 
+    description: Deprecate old sequence so we can save resources in Ts Portal
+    effort: 1
+    impact: 1
