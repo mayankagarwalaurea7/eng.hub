@@ -5,21 +5,7 @@ ICs:
     - IC:
         IC name: Vanitha DR
         date: 2019-09-27
-        unit: !!str #<Jira link>
+        unit: https://jira.optiva.com/jira/browse/VDII-7861
         coaching: Vanitha is involved in many Question / Answers sessions and spends a lot of time on MM due to this. It affects her personal performance. Limit MM time by redirecting request for knowladge to PCA / QA A
-        performance assessment: averagePerformer
-        continue coaching: yes
-    - IC:
-        IC name: Mochamad Rahman
-        date: 2019-09-27
-        unit: !!str #<Jira link>
-        coaching: 
-        performance assessment: averagePerformer
-        continue coaching: yes
-    - IC:
-        IC name: Sherzod Nurjonov
-        date: 2019-09-27
-        unit: !!str #<Jira link>
-        coaching: 
         performance assessment: averagePerformer
         continue coaching: yes
