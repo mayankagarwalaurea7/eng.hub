@@ -1,0 +1,13 @@
+﻿manager: Rafiq Raja
+teamroom: Eng.YAML
+units: 
+    - unit: N/A 
+
+recommendation:
+    eliminate waste: true
+    improve quality bar: true 
+    product agnostic: false
+    product specific: true
+    description: N/A
+    effort: N/A
+    impact: N/A
