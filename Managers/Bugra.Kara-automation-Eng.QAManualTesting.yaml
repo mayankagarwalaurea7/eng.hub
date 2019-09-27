@@ -4,7 +4,8 @@ units:
     - unit: https://jira.devfactory.com/browse/AUTO-1971
 automation:
     product agnostic: true
-    product specific: false
+    product specific:
+        - product name: N/A
     description: Delink Invalid Test Cases
     effort: 3
     impact: 10
