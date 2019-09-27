@@ -1,0 +1,13 @@
+manager: Carlos Witte
+teamroom: Eng.DevSpacesImport
+units: 
+    - unit: https://jira.devfactory.com/issues/?filter=94041
+recomnmendation: 
+    eliminate waste: false 
+    improve quality bar: true 
+    product agnostic: true
+    product specific: 
+        - product name: null 
+    description: Create specific tags to better identity decisions and closing comments in tickets.
+    effort: 2
+    impact: 0.05
