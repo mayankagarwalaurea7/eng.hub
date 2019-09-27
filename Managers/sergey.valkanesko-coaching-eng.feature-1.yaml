@@ -1,0 +1,11 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+direct reports: 2
+ICs:
+    - IC:
+        IC name: Adrian Iriciuc
+        date: 2019-09-25
+        unit: https://jira.devfactory.com/browse/MOAFCID-36898
+        coaching: Please apply both Code Review and Verification Review QBs as checklists before moving FS to QE. You would never send a FS without PR if you did so. 
+        performance assessment: averagePerformer
+        continue coaching: true

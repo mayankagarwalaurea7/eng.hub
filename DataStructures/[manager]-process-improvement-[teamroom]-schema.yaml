@@ -1,11 +1,11 @@
 manager: !!str #<manager name>
 teamroom: !!str #<teamroom name>
 units: !!seq
-    - unit: !!str #<link>
-recomnmendation: !!map
-    eliminate waste: !!bool 
-    improve quality bar: !!bool 
-    product agnostic: !!bool #boolean
+    - unit: !!str #<Jira link>
+recommendation: !!map
+    eliminate waste: !!bool #true | false
+    improve quality bar: !!bool #true | false
+    product agnostic: !!bool #true | false
     product specific: !!seq
         - product name: !!str #product names 
     description: !!str #<string>
