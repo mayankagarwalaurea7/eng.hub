@@ -1,0 +1,17 @@
+manager: Dmitry Frolov
+teamroom: ProductCA
+units:
+    - unit: jira ticket is not created for this
+recomnmendation: modify QB so we check that link to shared diagram is provided in architecture document
+    eliminate waste: true 
+    improve quality bar: true 
+    product agnostic: false
+    product specific:
+        - product name: all 
+    description: we need to mandate the use of the https://structurizr.com/share/... notation in the architecture documents 
+    to link the public C4 version of workspace diagram as it is not part of QB
+    this causes modification of each section of arch document for 1 SE7
+    request to modify QB is placed - https://docs.google.com/spreadsheets/d/1RbtMY6IDWltzZVavuh4WI6tGWrz037qBuF1sQzh1QXg/edit#gid=280752704 .
+    estimate impact as 1%
+    effort: 0
+    impact: 1
