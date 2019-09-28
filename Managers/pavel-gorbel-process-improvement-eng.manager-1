@@ -1,0 +1,13 @@
+manager: !!str Pavel Gorbel
+teamroom: !!str Eng.ProductCA
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/GFIFM-9927
+recommendation: !!map
+    eliminate waste: !!bool false
+    improve quality bar: !!bool true
+    product agnostic: !!bool true
+    product specific: !!seq
+        - product name: !!str GFIFM
+    description: !!str the outcome of the triage activity should be reflected in Jira Eng Problem ticket for quicker work done review and understanding.
+    effort: !!int 1 
+    impact: !!float 0.1
