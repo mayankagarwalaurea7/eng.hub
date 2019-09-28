@@ -1,0 +1,11 @@
+manager: Jarosław Karpiak
+teamroom: Eng.CodeReview
+units:
+    - unit: All
+recommendation: 
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    description: Remove approve step in the self-meta-reviewer flow and execute with default Approval settings.
+    effort: 2
+    impact: 2.5

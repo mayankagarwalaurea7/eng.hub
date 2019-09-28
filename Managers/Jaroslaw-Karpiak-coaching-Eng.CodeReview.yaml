@@ -1,0 +1,81 @@
+manager: Jarosław Karpiak
+teamroom: Eng.CodeReview
+direct reports: 11
+ICs: 
+    - IC:
+        IC name: Emil Cazacu
+        date: 09/27/2019
+        unit: CODEREVIEW-231582
+        coaching: Keep IDE configuration updated for all th projects reviewed, to avoid issues with findings.
+        performance assessment: averagePerformer
+        continue coaching: true
+     - IC:
+        IC name: Sergei Martynchuk
+        date: 09/27/2019
+        unit: CODEREVIEW-233402
+        coaching: Focus on quality and verify all the findings and not to miss anything. Quality over the speed.
+        performance assessment: highPerformer
+        continue coaching: true
+      - IC:
+        IC name: Dmitry Moskalets
+        date: 09/27/2019
+        unit: CODEREVIEW-233243
+        coaching: Check Serializable
+        performance assessment: highPerformer
+        continue coaching: true
+      - IC:
+        IC name: Yuriy Matyashev
+        date: 09/27/2019
+        unit: CODEREVIEW-232896
+        coaching: Finding ui doesn't work on large upland files, code analysis tools must be run locally then
+        performance assessment: highPerformer
+        continue coaching: true
+      - IC:
+        IC name: Alexey Udalykh
+        date: 09/27/2019
+        unit: all
+        coaching: Refresh the findings knowledge to get updated with the latest changes
+        performance assessment: highPerformer
+        continue coaching: true
+      - IC:
+        IC name: Oleksandr Opanasenko
+        date: 09/27/2019
+        unit: CODEREVIEW-233223
+        coaching: More carefully browse the list of files to review
+        performance assessment: highPerformer
+        continue coaching: true
+      - IC:
+        IC name: Donny Tian
+        date: 09/27/2019
+        unit: CODEREVIEW-231634
+        coaching: Always doube check the findings to avoid false positives
+        performance assessment: highPerformer
+        continue coaching: true
+      - IC:
+        IC name: Dmitriy Hunkin
+        date: 09/27/2019
+        unit: All blocked from Optiva
+        coaching: In case of any blockers with Optiva tickets, that require escalation reach out to the manager immediately.
+        performance assessment: averagePerformer
+        continue coaching: true
+      - IC:
+        IC name: Ufuk Aslan
+        date: 09/27/2019
+        unit: CODEREVIEW-232798
+        coaching: Always assure nothing is missed. Automate any missed findings if possible, to avoid missing it in the future.
+        performance assessment: averagePerformer
+        continue coaching: true
+      - IC:
+        IC name: Amr Elsehemy
+        date: 09/27/2019
+        unit: CODEREVIEW-232518
+        coaching: Always doube check the solution and finding before submitting it
+        performance assessment: averagePerformer
+        continue coaching: true
+      - IC:
+        IC name: Aniket Ramekar
+        date: 09/27/2019
+        unit: CODEREVIEW-230459
+        coaching: Check nested types for multple classes finding
+        performance assessment: averagePerformer
+        continue coaching: true
