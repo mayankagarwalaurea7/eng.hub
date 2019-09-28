@@ -1,0 +1,13 @@
+manager: Tomasz Boboli
+teamroom: Eng.Faster.QE
+units:
+    - unit: https://jira.devfactory.com/browse/CRM-69159
+recomnmendation: !!map
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    product specific:
+        - product name: n/a
+    description: Drop verification of improvement videos.
+    effort: 0
+    impact: 2.7

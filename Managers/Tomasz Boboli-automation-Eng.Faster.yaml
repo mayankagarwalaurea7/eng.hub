@@ -1,0 +1,24 @@
+manager: Tomasz Boboli
+teamroom: Eng.Faster
+units:
+    - unit: https://jira.devfactory.com/browse/CRM-63723
+    - unit: https://jira.devfactory.com/browse/AESCIS-36423
+    - unit: https://jira.devfactory.com/browse/DNN-29178
+    - unit: https://jira.devfactory.com/browse/SKYVERA-4570
+    - unit: https://jira.devfactory.com/browse/RESPTK-21114
+    - unit: https://jira.devfactory.com/browse/OLIVES-6702
+automation:
+    product agnostic: true
+    product specific: false
+        - product name: n/a
+    description: "Before adding an index to database it has to be checked if it provides expected improvement and doesn't have bad impact on other queries and basic operations. Following activities of the Faster proces can be automated:
+    - retrieving impacted queries from databse trace
+    - baseline: measure performance of queries before creation of an index
+    - create the proposed index
+    - improvement measurement: measure performance of impacted queries after creation of the index
+    - impact analysis: measure performance of insert, update, delete operations on the indexed table
+    - generate measurement tracker sheet
+    We have a successful POC on ACRM and now we want to roll out this automation to different products and database engines.
+    "
+    effort: 10
+    impact: 10%
