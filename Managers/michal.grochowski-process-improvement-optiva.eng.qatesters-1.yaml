@@ -1,0 +1,13 @@
+manager: Michal Grochowski
+teamroom: Optiva.Eng.QATesters
+units:
+    - unit: https://jira.optiva.com/jira/browse/SAAS-10990
+recommendation:
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific: false
+        - product name: 
+    description: Currently all QA tickets are created manually. That leads to delays. Creating them automatically when stories or defect lands on QA steps will make process easier and more organised.
+    effort: 0.2
+    impact: 1

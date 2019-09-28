@@ -1,0 +1,11 @@
+manager: Michal Grochowski
+teamroom: Optiva.Eng.QATesters
+units:
+    - unit: Not yet started
+automation:
+    product agnostic: true
+    product specific: true
+        - product name: Unified, OfferManager
+    description: "Offer Manager for unified is very slow, in bad scenario simple configuration can take up to 4h. More complex can take 8h and more. POC shows following improvement - login: x13.17, opening offer: x25.24" 
+    effort: 30
+    impact: 18.84
