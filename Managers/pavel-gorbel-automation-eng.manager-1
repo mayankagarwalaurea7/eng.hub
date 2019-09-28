@@ -1,0 +1,11 @@
+manager: !!str Pavel Gorbel
+teamroom: !!str Eng.ProductCA
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/GFIFM-9927
+automation: !!map
+    product agnostic: !!bool true
+    product specific: !!seq
+        - product name: !!str #product names
+    description: Create an automation for restricting the transition of Eng Problem for triage tickets of no activity result is set in Improvement field date!!str 2019-09-27
+    effort: !!int 1
+    impact: !!float 0.1
