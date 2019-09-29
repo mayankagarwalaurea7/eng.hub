@@ -1,0 +1,25 @@
+manager: Stelian Moldovan #<manager name>
+teamroom: Eng.Manager #<teamroom name>
+direct reports: 3
+ICs:
+    - IC:
+        IC name: Thabet Burias
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/BOINT-12039 #<Jira link>
+        coaching: Instead of closing this defect during triage just to open a different one when the spec is ready, better leave it open as it has already have BU followers that expect this to be released in 2.2.3
+        perfrormanceAssessment: highPerformer
+        continueCoaching: yes
+    - IC:
+        IC name: Konstantin Kotov
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/GFIL-10757 #<Jira link>
+        coaching: Do not try to do the RCA in code before being able to simulate the customer environment. In this ticket, the difference is made by the particularly unusual domain naming scheme which is not supported by our product gracefully. Use cmd tools such as nltest /dsgetdcname to determine where name resolutiom fails.
+        perfrormanceAssessment: lowPerformer
+        continueCoaching: yes
+    - IC:
+        IC name: Venkatesh Sundaresan
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/GFIME-11909
+        coaching: Rather than supplying answer to technical question directly in JIRA, please add it to the How To Confluence article and link to it from the main architecture document. The delivered information might be too detailed to place it in the main arch doc, but nothing is too detailed to add as How To if at least one person asked for it. Confluence is a much better tool to store knowledge, and who knows who will have the same question again.
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: yes
