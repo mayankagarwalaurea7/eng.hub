@@ -1,0 +1,13 @@
+manager: Stelian Moldovan
+teamroom: Eng.ProductCA
+units:
+    - unit: https://jira.devfactory.com/browse/GFIME-5348
+recomnmendation: 
+    eliminate waste: yes
+    improve quality bar: no
+    product agnostic: no
+    product specific:
+        - product name: 
+    description: The Work Queue gets complicated because the implementors are trying to model and include "depends on" E2Es in the Work Queue. This is useless and adds unneeded complexity and delays. Instead of struggling to add the depended on tickets in the queue in front of the dependent ones, just allow any ticket to be worked on if the Top priority one depends on it. This maintains alignment to the target of delivering the priority E2E, no matter how complicated it might be. It is similar to having a complex RCA which takes 3 days - you don't move away from it until you finalize it.
+    effort: 1
+    impact: 16 # save waiting for 4h until the queue is re-generated and work on the top priority item now
