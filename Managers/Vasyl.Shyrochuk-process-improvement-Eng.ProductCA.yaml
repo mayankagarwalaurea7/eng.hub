@@ -1,0 +1,13 @@
+manager: Vasyl Shyrochuk
+teamroom: Eng.ProductCA
+units: 
+    - unit: https://jira.devfactory.com/issues/?jql=assignee%20in%20(sshahzad%2Cgmilosavljevic%2Clbednorz)%20and%20%20issuetype%20%3D%22Eng%20Problem%22%20and%20status%20changed%20to%20%22In%20QE%20Review%22%20after%20startOfDay(-3d)
+recommendation: 
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    product specific: 
+        # - product name: !!str #product names 
+    description: PCA spend too much time on the transition of Eng Problem tickets from state to state (especially after recent increase of DVU target). Jira is slow, and it takes them a few hours per week to do that.  The simple solution is a decrease amount of states in Eng.Problem to 2-3 - this will save a huge amount of work hours for the company. 
+    effort: 1
+    impact: 5
