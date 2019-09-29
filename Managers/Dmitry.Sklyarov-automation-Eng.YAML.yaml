@@ -1,0 +1,11 @@
+manager: Dmitry Sklyarov
+teamroom: Eng.YAML
+units:
+    - unit: ALL
+automation:
+    product agnostic: true
+    product specific: false
+        - product name: SLI
+    description: Create a tool to automaticall verify YAML format
+    effort: 2
+    impact: 5
