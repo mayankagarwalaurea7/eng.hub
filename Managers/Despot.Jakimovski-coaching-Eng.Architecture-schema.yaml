@@ -1,6 +1,6 @@
 manager: Despot Jakimovski
 teamroom: Eng.Architecture
-direct reports: 3
+direct reports: 4
 ICs: 
     - IC: 
         IC name: Mehdi Rizvi
@@ -9,3 +9,10 @@ ICs:
         coaching: Even though the P1 requirement is to build a reusable control, and the control is used on multiple screens, as per our playbook rule "Every capability MUST target a single screen.", you need to split 1 FS per screen.
         performance assessment: highPerformer
         continue coaching: false
+    - IC: 
+        IC name: Turgay Kivrak
+        date: 2019-09-30
+        unit: https://jira.devfactory.com/browse/ARCH-1322
+        coaching: Although "should" keyword in TDDs has been missed in reviews in the past, please don't use it in future as we don't want to give the Feature IC the wrong impression that this is optional.
+        performance assessment: highPerformer
+        continue coaching: true
