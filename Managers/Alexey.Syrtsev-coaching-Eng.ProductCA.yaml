@@ -4,22 +4,22 @@ direct reports: 3
 ICs: 
     - IC: 
         IC name: Alaa Nassef
-        date: 2019-09-27
-        unit: https://jira.devfactory.com/browse/CSRV-13331
-        coaching: He is inaccurate with E2E update, hence got several rejections this week because of it. Will discuss with him to read accurately the whole E2E (and execute it when needed) before sending it to QE Review - even if an update is trivial. Also, will check an opportunity to extend our local automated E2E validator to catch non-parameterized URLs in E2E text
+        date: 2019-09-30
+        unit: https://jira.devfactory.com/browse/CSRV-13181
+        coaching: 1 EP was created by QA in improper format and linked to E2E. Then it was closed by PCA as invalid one. After some time it was re-opened when QA sent the updated E2E to Failed QB. Then, this EP was enqueued in WQ and sent to QE Review by PCA as already done. It was rejected by QE as improperly formatted and then closed by PCA once again. 3 things are to be improved here - 1. PCA should verify every EP even if he considers issue as already done; 2 - E2E shouldn't contain a bunch of linked EPs (ideally, only 1 E2E should be linked - check my process improvement suggestion); 3 - Failed QB should re-open only 1 EP
         performance assessment: highPerformer
         continue coaching: true
     - IC: 
         IC name: Boris Vanin
-        date: 2019-09-27
-        unit: !!str #<Jira link>
-        coaching: !!str #<free text coaching>
+        date: 2019-09-30
+        unit: https://jira.devfactory.com/browse/CODEGRAPH-5630
+        coaching: Found several cases where he mmoved EP tickets from In QE Review to Identified. Explained him that it drops his FTAR and asked him to perform Undo Transition instead.
         performance assessment: highPerformer
         continue coaching: true
     - IC:
         IC name: Nikolai Ligastaev
-        date: 2019-09-27
-        unit: https://jira.devfactory.com/browse/CODEGRAPH-5604
-        coaching: Still inaccurate with every QB verification. Will go through QBs list with him to ensure he know how to check every item. Also, he should start using our internal validator to reduce FTAR failure risk.
+        date: 2019-09-30
+        unit: no jira ticket
+        coaching: Found that he is inaccurate with logging all his CI CD tasks as jira tickets. Told him that he should create an Eng Problem for every CI CD planned update (link it as a blocker to other tasks in WQ if needed) and ping WQ team to update the WQ
         performance assessment: averagePerformer
         continue coaching: true
