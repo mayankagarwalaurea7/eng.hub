@@ -1,0 +1,11 @@
+manager: Cornel Baloleanu
+teamroom: Optiva.Eng.QAIntegrationTesting
+units: 1
+    - unit: https://jira.optiva.com/jira/browse/VDII-6267
+automation: 
+    product agnostic: true
+    product specific: false
+        - product name: OCE
+    description: Integrate Jira with Git. Automatically move Jira tickets through "Peer Review" and "PR" statuses by reading approvals on the PR from Git.
+    effort: 5
+    impact: 1
