@@ -16,3 +16,17 @@ ICs:
         coaching: Explained the need for Camshots not to have kids or pets, to stay focused
         performance assessment: highPerformer
         continue coaching: false
+    - IC:
+        IC name: Muhammad Faisal Hameed
+        date: 2019-09-30
+        unit: https://jira.devfactory.com/browse/TBGTM-6621
+        coaching: Explained the neeed for CICD YAML list being a direct co-relation of C4 YAML
+        performance assessment: highPerformer
+        continue coaching: false
+    - IC:
+        IC name: Ukbe Akdogan
+        date: 2019-09-30
+        unit: all
+        coaching: Explained the BU SaaS involvement to approve auto-provisioning of environments
+        performance assessment: highPerformer
+        continue coaching: false
