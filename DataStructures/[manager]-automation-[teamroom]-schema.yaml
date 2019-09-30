@@ -1,9 +1,9 @@
 manager: !!str #<manager name>
 teamroom: !!str #<teamroom name>
 units: !!seq
-    - unit: !!str #<link>
+    - unit: !!str #<Jira link>
 automation: !!map
-    product agnostic: !!bool #boolean
+    product agnostic: !!bool #true | false
     product specific: !!seq
         - product name: !!str #product names
     description: !!str

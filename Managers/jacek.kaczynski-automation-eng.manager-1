@@ -1,0 +1,11 @@
+manager: !!str Jacek Kaczynski #<manager name>
+teamroom: !!str Eng.Manager #<teamroom name>
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/CONTROL-28280 #<Jira link>
+automation: !!map
+    product agnostic: !!bool true #true | false
+    product specific: !!seq
+        - product name: !!str #product names
+    description: Prioritze PCA work queue based on the fixVersion release date!!str
+    effort: !!int 1 #days
+    impact: !!float 0.001 #<%> at teamroom level

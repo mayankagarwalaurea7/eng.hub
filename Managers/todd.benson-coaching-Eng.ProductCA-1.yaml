@@ -1,0 +1,18 @@
+manager: Todd Benson
+teamroom: Eng.ProductCA
+direct reports: 2
+ICs: 
+    - IC: 
+        IC name: Hugo Casco
+        date: 09/26/2019
+        unit: https://jira.devfactory.com/browse/CODEALIKE-4346
+        coaching: Need to setup basic monitoring on all systems so we can proactively deal with space, memory, networking, and cpu issues, etc.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Metin Yarci
+        date: 09/26/2019
+        unit: https://jira.devfactory.com/browse/STRONGTEST-1
+        coaching: Metin is new PCA.  He has only created Arch Doc tickets (40 of them).  I will coach him to create End-to-Ends and SE7 tickets.  He needs to write TCs and track the work he has done to create the 1 environment we have.
+        performance assessment: averagePerformer
+        continue coaching: true

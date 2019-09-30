@@ -1,0 +1,12 @@
+manager: Todd Benson
+teamroom: Eng.ProductCA
+units: 2
+    - unit: https://jira.devfactory.com/browse/CODEALIKE-5006
+    - unit: https://jira.devfactory.com/browse/CODEALIKE-5005
+automation: 
+    product agnostic: true
+    product specific: 
+        - product name: Codealike
+    description: When E2E is created, it puts the E2E is Open state and generates an EngProblem ticket of E2E type that is in Identified status.  EngProblem ticket is moved manually to In Implementation and then In QE Review.  Instead of having to manually move them, when E2E is moved into In E2E Review status, this should trigger the Eng Problem ticket to go into In QE Review status.  This will save time.
+    effort: 1
+    impact: 100

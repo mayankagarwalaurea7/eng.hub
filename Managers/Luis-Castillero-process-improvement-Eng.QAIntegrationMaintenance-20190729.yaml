@@ -1,0 +1,13 @@
+manager: Luis Castillero
+teamroom: Eng.QAIntegrationMaintenance
+units: 
+    - unit: N/A
+recommendation:
+    eliminate waste: true
+    improve quality bar: true 
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Process to remove products that are unable to reach 98 due to external reasons, which consume time from ICs that can be directed to provide business value on non blocked products
+    effort: 1
+    impact: 4.0

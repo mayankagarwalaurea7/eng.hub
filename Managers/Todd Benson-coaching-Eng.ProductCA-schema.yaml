@@ -1,0 +1,18 @@
+manager: Todd Benson
+teamroom: Eng.ProductCA
+direct reports: 2
+ICs: 
+    - IC: 
+        IC name: Hugo Casco
+        date: 09/27/2019
+        unit: https://jira.devfactory.com/browse/CODEALIKE-4404
+        coaching: Setup up automated script for local environment setup so that any IC that needs a local environment setup can do this in an automated fashion.  Also, do the same for AWS setup as well.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Metin Yarci
+        date: 09/27/2019
+        unit: https://jira.devfactory.com/browse/STRONGTEST-1
+        coaching: Same coaching as yesterday.  He will create E2E and SE7 tickets starting on Monday.
+        performance assessment: averagePerformer
+        continue coaching: true

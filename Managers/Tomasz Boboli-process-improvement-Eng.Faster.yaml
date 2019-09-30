@@ -1,0 +1,18 @@
+manager: Tomasz Boboli
+teamroom: Eng.Faster
+units:
+    - unit: https://jira.devfactory.com/browse/RESPTK-27502
+    - unit: https://jira.devfactory.com/browse/KAYAKO-17469
+    - unit: https://jira.devfactory.com/browse/OLIVES-12258
+    - unit: https://jira.devfactory.com/browse/GFIL-7612
+    - unit: https://jira.devfactory.com/browse/CRM-69159
+recommendation:
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    product specific:
+        - product name: n/a
+    description: Drop recording of improvement videos - nobody is watching them.
+    effort: 0
+    impact: 1.36
+

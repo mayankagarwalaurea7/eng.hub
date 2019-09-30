@@ -1,0 +1,26 @@
+manager: Dmitry Skorov
+teamroom: Eng.ProductCA
+direct reports: 3
+ICs:
+    - IC: Vyacheslav Karbovnichy
+        IC name: 'Vyacheslav Karbovnichy'
+        date: 2019-09-30
+        unit: 
+        coaching: prepare a list of issues which prevents you from fixing 1 E2E per 1-2 h.
+        performanceAssessment: topPerformer
+        continueCoaching: true
+    - IC: Ahmed Yasin Koculu
+        IC name: 'Ahmed Yasin Koculu'
+        date: 2019-09-30
+        unit: 
+        coaching: prepare list of E2Es to cover recently delivered Fasters
+        performanceAssessment: topPerformer
+        continueCoaching: true
+    - IC: Kiran Sunny
+        IC name: 'Kiran Sunny'
+        date: 2019-09-30
+        unit: 
+        coaching: CRM PCA needs help with writing E2Es for next release. after analysis of release scope half of tickets were descoped, 
+        others to be covered with E2Es
+        perfrormanceAssessment: topPerformer
+        continueCoaching: true

@@ -1,0 +1,18 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+direct reports: 2
+ICs:
+    - IC:
+        IC name: Adrian Iriciuc
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/MOAFCID-36936
+        coaching: Please follow a simple convention for naming API methods in AWS Cloud Formation files – <HTTP_METHOD><Endpoint>. StartImpersonate->PostImpersonate. This will improve readability of API definition.  
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Francisco Expósito Pequeño
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/MOAFCID-36949
+        coaching: Please always make sure that all resources that your sam.yaml depends on are defined in the file itself. E.g. af-lambda-cloudtrail bucket should be also defined ther instead of being left as pre-requisite only to fail the deployment if the bucket is not created manually prior to running it.
+        performance assessment: averagePerformer
+        continue coaching: true

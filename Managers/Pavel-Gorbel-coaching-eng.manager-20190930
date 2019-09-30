@@ -1,0 +1,25 @@
+manager: !!str Pavel Gorbel
+teamroom: !!str Eng.ProductCA
+direct reports: 3
+ICs: !!seq
+    - IC: !!map
+        IC name: !!str Oleg Krekov
+        date: !!str 2019-09-30
+        unit: !!str https://jira.devfactory.com/browse/GFIFM-9947
+        coaching: !!str if the environment created poorly due to VMWare issues (this was the concrete case issue of the deployment) PCA has to execute such tests himself or undertake preventive actions discussing this with PSEM and awoid extra effort of other teams.
+        perfrormanceAssessment: !!str highPerformer #| averagePerformer | lowPerformer
+        continueCoaching: !!bool yes #| no
+    - IC: !!map
+        IC name: !!str Vasiliy Molaev
+        date: !!str 2019-09-30
+        unit: !!str https://jira.devfactory.com/browse/CONNECT-73529
+        coaching: !!str the issue PCA believes is made in fix had to be found earlier during the code review phase. Furthermore in case of argues PSEM should be copied to CC of the ticket.
+        perfrormanceAssessment: !!str highPerformer #| averagePerformer | lowPerformer
+        continueCoaching: !!bool yes #| no
+    - IC: !!map
+        IC name: !!str Rupendra Singh
+        date: !!str 2019-09-27
+        unit: !!str https://jira.devfactory.com/browse/GFIA-12295
+        coaching: !!str Failed TCs should be sent to re-execution in case they were done with mistakes by QA
+        perfrormanceAssessment: !!str highPerformer #| averagePerformer | lowPerformer
+        continueCoaching: !!bool yes #| no      

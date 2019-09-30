@@ -1,0 +1,15 @@
+manager: Todd Benson
+teamroom: Eng.ProductCA
+units: 3
+    - https://jira.devfactory.com/browse/CODEALIKE-4789
+    - https://jira.devfactory.com/browse/CODEALIKE-4462
+    - https://jira.devfactory.com/browse/CODEALIKE-4461
+recommendation: 
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific:
+        - product name: Codealike 
+    description: PCAs sometimes need to perform tasks that fix environments or setup new environments. Currently, there appears to not be an Eng Problem ticket for this type of work, so PCA must use other types of tickets that don't quite fit this kind of work.  Also, it would be good to do review of tasks that PCAs do and add necessary, missing eng problem category types.
+    effort: 2
+    impact: 100

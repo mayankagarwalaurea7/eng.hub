@@ -1,0 +1,11 @@
+manager: Evgeny Babaev
+teamroom: Eng.ProductCA
+units: 
+    - unit:  !!str #<Jira link>
+automation:
+    product agnostic: true
+    product specific: 
+        ##- product name: !!str #product names
+    description: Give PSEM ability to send ANY item to the top of work-queue with the comment or attribute for the reason. add a report to see statistics.
+    effort: 1 #days
+    impact: 25

@@ -1,0 +1,16 @@
+manager: Todd Benson
+teamroom: Eng.ProductCA
+units: 3
+    - https://jira.devfactory.com/browse/CODEALIKE-4988
+    - https://jira.devfactory.com/browse/CODEALIKE-4987
+    - https://jira.devfactory.com/browse/CODEALIKE-4989
+recommendation: 
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: false
+    product specific:
+        - product name: Codealike
+        - product name: StrongTest 
+    description: Currently PCA must write E2Es (TCs) at $50/hr.  It would be better to hire QA architects that work together with PCA and PSEM to create awesome test plans and test cases.  This would allow PCA to focus more on code quality, defect fixing, a feature development and making sure these things are done rapidly and correctly.  You could also have QA architect be responsible for some documentation, especially user-related documentation.  I believe a good QA architect will improve the quality of code and test cases by allowing PCA to do what they do best which is focus on code, automations, etc.  Let good testers write and manage test plans closely with PCA, if desired.
+    effort: 10
+    impact: 100

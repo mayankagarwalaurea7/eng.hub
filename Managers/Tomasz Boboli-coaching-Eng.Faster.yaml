@@ -1,0 +1,32 @@
+manager: Tomasz Boboli
+teamroom: Eng.Faster
+direct reports: 4
+ICs:
+    - IC:
+        IC name: Lucas Bertoni
+        date: 2019-09-28
+        unit:  https://jira.devfactory.com/browse/CRM-68916
+        coaching: It takes too long for the Faster indexing automation to check all queries from trace file (around 2k queries)
+        perfrormanceAssessment: highPerformer
+        continueCoaching: yes
+    - IC:
+        IC name: Nadeem Akhtar
+        date: 2019-09-28
+        unit: https://jira.devfactory.com/browse/CRM-67056
+        coaching:  Corrected Nadeem to work on this unit using results from indexing automation which are already available. He shouldn't waste his time to repeat them manually.
+        perfrormanceAssessment: highPerformer
+        continueCoaching: yes
+    - IC:
+        IC name: Eugene Shalyuk
+        date: 2019-09-28
+        unit: https://jira.devfactory.com/browse/RESPTK-29110
+        coaching: While working on impact analysis, explore and check for any other use cases that could be improved by Faster. After getting approval from the Product team we can solve those issues very effectively because we have all environments ready and fresh knowledge about the product. This would also be a big contribution to product's quality.
+        perfrormanceAssessment: highPerformer
+        continueCoaching: yes
+    - IC:
+        IC name: Werner Garcia
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/DEV-40600
+        coaching: Remark for "reduce number of executions" type tickets. Instead of immediately trying to fix the problem by introducing caching, you need to find and try to address the root cause first. There is a "understand reason of current implementation" step in the Faster process for this reason. You need to analyse and understand why the particular query/stored procedure/function is called so many times from different places of an application and try to decrease it. Only on top of this, caching can be introduced as an additional improvement.
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: yes

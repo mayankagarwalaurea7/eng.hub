@@ -1,0 +1,39 @@
+manager: Viktor Kotsiuban
+teamroom: Eng.Feature
+direct reports: 5
+ICs:
+  - IC:
+      IC name: Kirill Lanchev
+      date: 2019-09-27
+      unit: PG-1181
+      coaching: Ticket is done with enough quality, move it forward
+      performance assessment: good
+      continue coaching: false
+  - IC:
+      IC name: Rizwan Hamid
+      date: 2019-09-27
+      unit: PG-1096
+      coaching: Issues with running Glue job. Find an expert in Glue and ask for advice.
+      performance assessment: good
+      continue coaching: false
+  - IC:
+      IC name: Dmitriy Elisov
+      date: 2019-09-27
+      unit: CODEALIKE-4853
+      coaching: Ticket is done with enough quality, move it forward
+      performance assessment: good
+      continue coaching: false
+  - IC:
+      IC name: Tengiz Merabishvilli
+      date: 2019-09-27
+      unit: CODEALIKE-4851
+      coaching: Ticket is done with enough quality, move it forward
+      performance assessment: good
+      continue coaching: false
+  - IC:
+      IC name: Muhammad Farooq
+      date: 2019-09-27
+      unit: JCLDALL-27682
+      coaching: Had issues with Java. Ask specific questions our top-performer to get unblocked.
+      performance assessment: bad
+      continue coaching: true

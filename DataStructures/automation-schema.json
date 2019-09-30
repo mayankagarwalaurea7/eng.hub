@@ -1,0 +1,59 @@
+{
+    "title": "Core SEM Automation",
+    "type": "object",
+    "required": [
+        "manager", "teamroom", "units", "automation"
+    ],
+    "properties": {
+        "manager": {
+            "type": "string"
+        },
+        "teamroom": {
+            "type": "string"
+        },
+        "units": {
+            "type": "array",
+            "required": ["unit"],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "unit": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                }
+            }
+        },
+        "automation": {
+            "type": "object",
+            "required": ["product agnostic", "product specific", "description", "effort", "impact"],
+            "properties": {
+                "product agnostic": {
+                    "type": "boolean"
+                },
+                "product specific": {
+                    "type": "array",
+                    "required": ["product name"],
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "product name": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "description": {
+                    "type": "string"
+                },
+                "effort": {
+                    "type": "integer"
+                },
+                "impact": {
+                    "type": "number"
+                }
+            }
+        },
+        "definitions": {}
+    }
+}

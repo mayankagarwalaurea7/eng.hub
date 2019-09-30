@@ -1,0 +1,11 @@
+manager: Alexey Syrtsev
+teamroom: Eng.ProductCA,Eng.ProductCA.QE
+units: 
+    - unit: https://jira.devfactory.com/issues/?jql=type%20%3D%20%22End-to-end%20Test%22%20
+automation:
+    product agnostic: true
+    product specific: 
+        ##- product name: !!str #product names
+    description: Verification of many E2E PCA QE Review QBs can be automated (verify links, format, dependencies etc). Automation can be shared within PCAs to perform verification locally or can be introduced on jira transition (in both cases an external service - like it is done for RDS generation - can be implemented. It will make this tool more flexible and tolerant to process changes. Also, it won't be consuming jira resources). Other context-specific QBs can be delegated to QAs (check my process improvement suggestion).  
+    effort: 3 #days
+    impact: 10

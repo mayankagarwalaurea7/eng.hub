@@ -1,0 +1,22 @@
+manager: Ertugrul Tabak
+teamroom: Eng.Feature
+units:
+  - unit: cannot check - JIRA is down
+recommendation:
+  eliminate waste: true
+  improve quality bar: false
+  product agnostic: true
+  description: >
+    Feature Epics stay at "In Implementation", if verification is blocked for some reason.
+    After all Feature Stories are verified, Eng.Feature need to return to record milestone
+    demonstrations (now E2E demos). If the verification takes some time, we have to de-staff the
+    team to another product (or another team), and when things are unblocked, we need to call
+    them back. For some cases, it is taking months to recover the state, and the same ICs may
+    not be available, the environment may have changed, and it shall consume a significant
+    amount of effort to complete the delivery.
+    The idea is to complete the work of Eng.Feature at once: Once all Feature Stories are pushed
+    forward and merged, continue with milestone completion activities: Record the necessary
+    final demonstrations.
+    This shall also provide a better visibility about the status of the orders.
+  effort: 5
+  impact: 30.0

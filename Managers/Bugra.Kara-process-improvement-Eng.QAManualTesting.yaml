@@ -1,0 +1,13 @@
+manager: Bugra Kara
+teamroom: Eng.QAManualTesting
+units:
+    - unit: https://jira.devfactory.com/browse/CONNECT-68050
+recommendation:
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Blocker guidelines updated after deep dive on CONNECT-68050. New blocker guidelines item created: 9.1.
+    effort: 1
+    impact: 5

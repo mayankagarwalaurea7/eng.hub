@@ -1,0 +1,17 @@
+manager: Anil Bahceevli #<manager name>
+teamroom: Eng.CodeCleanup #<teamroom name>
+units:
+    - unit:  https://jira.devfactory.com/browse/CC-832142
+    - unit:  https://jira.devfactory.com/browse/CC-832111
+    - unit:  https://jira.devfactory.com/browse/CC-832143
+    - unit:  https://jira.devfactory.com/browse/CC-834164
+    - unit:  https://jira.devfactory.com/browse/CC-834173
+recommendation:
+    eliminate waste: true #true | false
+    improve quality bar: true #true | false
+    product agnostic: true #true | false
+    product specific:
+        - product name:  #product names
+    description: For products that have CI issue, if PR meets expected Quality but only there is Product related CI issue, approve PR and automerge will anyways ensure not to merge it before seeing CI Green   #<string>
+    effort: 1 #<int> days
+    impact: %10 #<%> at teamroom level

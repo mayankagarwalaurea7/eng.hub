@@ -1,0 +1,32 @@
+manager: Anil Bahceevli #<manager name>
+teamroom: Eng.CodeCleanup #<teamroom name>
+direct reports: 2
+ICs:
+    - IC:
+        IC name: Nwachukwu Okafor #<IC name>
+        date: 2019/09/26 #<date>
+        unit: https://jira.devfactory.com/browse/CC-833454  #<Jira link>
+        coaching: Continue focusing on one product, and have second repo ready to be cleaned not to be effected in case any sudden hard stop happens for the Product. As a new joiner to Team, you currently only have 1 repo working at your local  #<free text coaching>
+        performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false
+    - IC:
+        IC name: Ibrahim Kayode Ajibade #<IC name>
+        date: 2019/09/26 #<date>
+        unit: https://jira.devfactory.com/browse/CC-833221 #<Jira link>
+        coaching: Make sure you have the resharper installed and the code cleanup setting is applied. This will list all the issues and fix those #<free text coaching>
+        performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false
+      - IC:
+          IC name: Nwachukwu Okafor #<IC name>
+          date: 2019/09/30 #<date>
+          unit: https://jira.devfactory.com/browse/CC-836391  #<Jira link>
+          coaching: Divert to different ticket types to increase business value you bring to repo  #<free text coaching>
+          performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+          continue coaching: true #true | false
+      - IC:
+          IC name: Ibrahim Kayode Ajibade #<IC name>
+          date: 2019/09/30 #<date>
+          unit: https://jira.devfactory.com/browse/CC-834116 #<Jira link>
+          coaching: If the duplication resides in the same class, then all similar issues within the class must be fixed #<free text coaching>
+          performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+          continue coaching: true #true | false

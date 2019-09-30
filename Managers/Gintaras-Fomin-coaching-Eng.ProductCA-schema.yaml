@@ -1,0 +1,32 @@
+manager: Gintaras Fomin
+teamroom: Eng.ProductCA
+direct reports: 3
+ICs:
+    - IC:
+        IC name: Essam Elsayed
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/SKYVERA-8687
+        coaching: Requested to leave some details regarding triage ticket closures, as it would improve verification and possible audit times.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Essam Elsayed
+        date: 2019-09-30
+        unit: 
+        coaching: Reminded to decrease amount of tracker stops to be 3 or less, as per WSPro Daily and Productivity Framework Playbook. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Sergiy Kachaniuk
+        date: 2019-09-30
+        unit: 
+        coaching: Reminded to decrease amount of tracker stops to be 3 or less, as per WSPro Daily and Productivity Framework Playbook. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Vladimir Pikalov
+        date: 2019-09-30
+        unit: 
+        coaching: Reminded about expectation to log 40 weekly compulsory hours and required notification to PSEM in case they could not be achieved. This is due to last week 36 logged hours without notification to PSEM. 
+        performance assessment: averagePerformer
+        continue coaching: true
