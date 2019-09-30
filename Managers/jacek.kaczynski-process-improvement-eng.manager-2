@@ -1,0 +1,13 @@
+manager: !!str Jacek Kaczynski #<manager name>
+teamroom: !!str Eng.Manager #<teamroom name>
+units: !!seq
+    - unit: !!str #<link>
+recommendation: !!map
+    eliminate waste: !!bool true
+    improve quality bar: !!bool false
+    product agnostic: !!bool true #boolean
+    product specific: !!seq
+        - product name: !!str #product names 
+    description: !!str Allow PCAs to write E2E test scenarios directly in TestRail  #<string>
+    effort: !!int 5 #<int> days
+    impact: !!float 0.001 #<%> at teamroom level

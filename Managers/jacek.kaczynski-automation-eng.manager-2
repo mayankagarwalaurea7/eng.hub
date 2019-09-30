@@ -1,0 +1,11 @@
+manager: !!str Jacek Kaczynski #<manager name>
+teamroom: !!str Eng.Manager #<teamroom name>
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/EXOS-11946 #<Jira link>
+automation: !!map
+    product agnostic: !!bool true #true | false
+    product specific: !!seq
+        - product name: !!str #product names
+    description: Automatically update test case status in Jira when the corresponding E2E ticket is moved to Automation Backlog !!str
+    effort: !!int 1 #days
+    impact: !!float 0.0001 #<%> at teamroom level
