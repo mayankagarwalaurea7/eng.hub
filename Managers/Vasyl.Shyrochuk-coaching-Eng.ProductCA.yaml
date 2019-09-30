@@ -1,0 +1,25 @@
+manager: Vasyl Shyrochuk
+teamroom: Eng.ProductCA
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Goran Milosavljevic
+        date: 2019-09-29
+        unit: https://jira.devfactory.com/issues/?jql=assignee%20in%20(gmilosavljevic)%20and%20%20issuetype%20%3D%22Eng%20Problem%22%20and%20status%20changed%20to%20%22In%20QE%20Review%22%20after%20startOfDay(-3d)
+        coaching: Some triage tickets for RCA are empty - we should use 5 Why technique for proper execution of Root cause analysis
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Leszek Bednorz
+        date: 2019-09-29
+        unit: https://jira.devfactory.com/issues/?jql=assignee%20in%20(lbednorz)%20and%20%20issuetype%20%3D%22Eng%20Problem%22%20and%20status%20changed%20to%20%22In%20QE%20Review%22%20after%20startOfDay(-3d)
+        coaching: Some tickets are still created in the old legacy projects - we should use eng.problems tickets only from new project JCLDALL
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Shakeel Shahzad
+        date: 2019-09-29
+        unit: https://jira.devfactory.com/issues/?jql=assignee%20in%20(sshahzad)%20and%20%20issuetype%20%3D%22Eng%20Problem%22%20and%20status%20changed%20to%20%22In%20QE%20Review%22%20after%20startOfDay(-3d)
+        coaching: Triage eng.problems for cherry-picking tickets contain no values - we should avoid creating them at all if triage was done for the original ticket
+        performance assessment: highPerformer
+        continue coaching: true
