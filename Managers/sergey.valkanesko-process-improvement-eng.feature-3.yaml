@@ -1,0 +1,16 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+units: 
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36904
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36940
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36898
+
+recommendation:
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Allow interdependent FS to be moved to QE review at the same time and to be verified sequentially. QE to hold FS and send them to PCA one by one.
+    effort: 1
+    impact: 3
