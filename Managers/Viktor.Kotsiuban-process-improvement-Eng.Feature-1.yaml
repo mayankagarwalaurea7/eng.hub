@@ -1,0 +1,14 @@
+manager: Viktor Kotsiuban
+teamroom: Eng.Feature
+units:
+  - unit: PG-1254
+recommendation:
+  eliminate waste: true
+  improve quality bar: false
+  product agnostic: true
+  description: >
+    There are 2 ways how can we record demo for story - based on E2E or based on Gherkin. This creates ambiguity and we don't have a 
+    clerly-defined flow. Gherkins required to be removed from stories. Also this is a creates a question whether we need demos for 
+    feature stories at all.
+  effort: 2
+  impact: 2.0
