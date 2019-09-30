@@ -1,0 +1,23 @@
+manager: Suresh Swaminathan
+teamroom: Eng.ProductSEM
+units: 
+    - unit: https://jira.devfactory.com/browse/MYAL-8633
+    - unit: https://jira.devfactory.com/browse/MYAL-8561
+    - unit: https://jira.devfactory.com/browse/MYAL-8493
+automation: 
+    product agnostic: false
+    product specific: 
+        - product name: MyAlerts
+    description: Run a cron job that will check for file feeds from customer on a daily basis and generate a report if there is no file feed
+    effort: 2
+    impact: 3
+units:
+    - unit: https://jira.devfactory.com/browse/KAYAKO-17790
+    - unit: https://jira.devfactory.com/browse/KAYAKO-17608
+automation: 
+    product agnostic: false
+    product specific: 
+        - product name: Kayako TNK
+    description: Create missing CICD jobs for deployment of TNK modules
+    effort: 4
+    impact: 5

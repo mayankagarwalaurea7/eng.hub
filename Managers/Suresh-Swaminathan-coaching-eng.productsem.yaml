@@ -1,0 +1,19 @@
+manager: Suresh Swaminathan
+teamroom: Eng.ProductSEM
+direct reports: 0
+ICs: 
+    - IC: 
+        IC name: Aleksey Leshchuk
+        date: 27.09.2019
+        unit: https://jira.devfactory.com/browse/MYAL-8633
+        coaching: Coach on how to convert requests for assistance into Architecture documents - using which the requestors can help themselves.
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: yes
+    - IC: 
+        IC name: Douglas Yau
+        date: 30.09.2019
+        unit: https://jira.devfactory.com/browse/KAYAKO-17686
+        coaching: Coach on how to convert questions from Clone Spec team into Architecture documents 
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: yes        
+    
