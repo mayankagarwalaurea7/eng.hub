@@ -1,0 +1,9 @@
+manager: Despot Jakimovski
+teamroom: Eng.Architecture
+units: 
+    - unit: https://jira.devfactory.com/browse/META-6045
+automation: 
+    product agnostic: true
+    description: verification inputs https://jira.devfactory.com/browse/META-6045?focusedCommentId=4474273&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-4474273
+    effort: 0.3
+    impact: 0.05
