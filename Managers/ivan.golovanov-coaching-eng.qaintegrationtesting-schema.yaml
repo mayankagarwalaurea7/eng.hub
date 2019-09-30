@@ -1,0 +1,18 @@
+manager: Ivan Golovanov
+teamroom: Eng.QAIntegrationTesting
+direct reports: 10
+ICs:
+    - IC: 
+        IC name: Ruben Dario Salazar
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/AESCIS-40865
+        coaching: Use re-review alert channel to speed up PR merge
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Viet Thanh Nguyen
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/CSRV-13484
+        coaching: Move E2Es in progress before starting automation, but after E2E review
+        performance assessment: highPerformer
+        continue coaching: no

@@ -1,0 +1,11 @@
+manager: Vasyl.Shyrochuk
+teamroom: Eng.ProductCA
+units: 
+    - unit: https://jira.devfactory.com/issues/?jql=assignee%20in%20(sshahzad%2Cgmilosavljevic%2Clbednorz)%20and%20%20issuetype%20%3D%22Eng%20Problem%22%20and%20status%20changed%20to%20%22In%20QE%20Review%22%20after%20startOfDay(-3d)
+automation:
+    product agnostic: true
+    product specific: 
+         product name: JCLDALL
+    description: Existing PCA queue mechanism doesn't work for big projects like Jive. Such projects should be either divided into many projects in Jira or PCA Queue should contain information about Component so it be clear what PCA should do what.   
+    effort: 1 #days
+    impact: 5

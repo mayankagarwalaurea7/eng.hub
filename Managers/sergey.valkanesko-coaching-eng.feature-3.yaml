@@ -1,0 +1,18 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+direct reports: 2
+ICs:
+    - IC:
+        IC name: Adrian Iriciuc
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/MOAFCID-36904
+        coaching: If you are making important changes that are out of scope for the current FS, make sure to create a dedicated sub-task on JIRA to track these changes and most importantly describe the problem addressed. Use an issue link of type 'will be delivered by' pointing to the FS if you are not putting the changes to a dedicated PR.  
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Francisco Expósito Pequeño
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/MOAFCID-36940
+        coaching: When you demonstrate that the links or IDs are the same in two places make sure to put them on screen at the same time and close to each other and leave this way for at least two seconds. This would make it significantly easier for QE to verify your tickets.
+        performance assessment: averagePerformer
+        continue coaching: true

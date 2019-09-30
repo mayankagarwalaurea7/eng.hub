@@ -1,0 +1,64 @@
+{
+    "title": "Core SEM Coaching",
+    "type": "object",
+    "required": [
+        "manager", "teamroom", "direct reports", "ICs"
+    ],
+    "properties": {
+        "manager": {
+            "type": "string"
+        },
+        "teamroom": {
+            "type": "string"
+        },
+        "direct reports": {
+            "type": "integer"
+        },
+        "ICs": {
+            "type": "array",
+            "required": ["IC"],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "IC": {
+                        "type": "object",
+                        "required": ["IC name", "date", "unit", "coaching", "performance assessment", "continueCoaching"],
+                        "properties": {
+                            "IC name": {
+                                "type": "string"
+                            },
+                            "date": {
+                                "type": "string"
+                            },
+                            "unit": {
+                                "oneOf":
+                                [
+                                    {
+                                    "type": "string",
+                                    "format": "uri"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "enum": ["N/A"]
+                                    }
+                                ]
+                            },
+                            "coaching": {
+                                "type": "string"
+                            },
+                            "performance assessment": {
+                                "type": "string",
+                                "enum": ["highPerformer","averagePerformer","lowPerformer"]
+                            },
+                            "continueCoaching": {
+                                "type": "boolean"
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    },
+    "definitions": {}
+}

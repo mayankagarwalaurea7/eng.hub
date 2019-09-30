@@ -1,0 +1,11 @@
+manager: Tomasz Boboli
+teamroom: Eng.Faster
+direct reports: 4
+ICs:
+    - IC:
+        IC name: Werner Garcia
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/DEV-40600
+        coaching: Remark for "reduce number of executions" type tickets. Instead of immediately trying to fix the problem by introducing caching, you need to find and try to address the root cause first. There is a "understand reason of current implementation" step in the Faster process for this reason. You need to analyse and understand why the particular query/stored procedure/function is called so many times from different places of an application and try to decrease it. Only on top of this, caching can be introduced as an additional improvement.
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: true

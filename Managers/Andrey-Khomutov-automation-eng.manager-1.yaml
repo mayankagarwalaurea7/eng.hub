@@ -1,0 +1,10 @@
+manager: Andrey Khomutov
+teamroom: Eng.Feature
+units:
+    - unit: https://jira.devfactory.com/browse/SPEC-17209
+automation:
+    product agnostic: false
+    product specific: true	
+    description: Cancel all feature stories linked to canceled Spec
+    effort: 10
+    impact: 10

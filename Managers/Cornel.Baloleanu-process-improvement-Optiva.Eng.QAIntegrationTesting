@@ -1,0 +1,13 @@
+manager: Cornel Baloleanu
+teamroom: Optiva.Eng.QAIntegrationTesting
+units: 1
+    - unit: https://jira.optiva.com/jira/browse/VDII-3375
+recommendation: 
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific: 
+        - product name: OCE
+    description: Link all automation tickets with TestRail, create a "Blocked" status with all tests not passing in TR and automatically move tickets to "Backlog" once tests are passing in TR.
+    effort: 3
+    impact: 2 

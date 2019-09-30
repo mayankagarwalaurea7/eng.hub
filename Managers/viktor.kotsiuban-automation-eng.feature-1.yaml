@@ -1,0 +1,11 @@
+manager: Viktor Kotsiuban
+teamroom: Eng.Feature
+units:
+    - unit: https://jira.devfactory.com/browse/PG-1237
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Restrict FS transitions to review if PR is not linked and field PR required is true.
+    effort: 3
+    impact: 10

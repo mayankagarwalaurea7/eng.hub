@@ -1,44 +1,69 @@
 version: v1
 architecture document:
-  product architecture:
     context:
-        C4 system context diagram:             
-          diagram link:
+      C4 L1 system context diagram:             
+        diagram link:
           system description:
-        containers:
-          - C4 system container diagram:
-              name:
-              diagram link:
-              container description: 
-        components:
-          - C4 system component diagram:
-              name:
-              diagram link:
-              container:
-              component description:
-        classes:
-          - C4 code diagram:
-              name:
-              diagram link:
-              component: "<name>"
-              class description: //define class
-        system APIs:
-          - api:
-              swagger link:
-              wsdl link:
-        data view:
-          db schemas:
-            - 
-                diagram:
-                link:
-        3rd party software: //externalComponents
-          link to component:
-          licensing model:
-          renewal policy:
-        security model:
-        CICD YAML:
-    infrastructure architecture: 
-      deployement view:
-        monitoringDesign:
-        recoveryRunbooks: 
+          internal QB:
+            Does the context diagram decribe the system in scope?: yes|no
+            Does the system in scope have interactions with all the users and external systems?: yes|no
+            Is the context diagram shareable with customers (no jargons, acronyms and internal links)?: yes|no
+            Is the C4 context YAML generated through Structurizr?: yes|no
+            Is the summary of the system scope described?: yes|no
+            Are all the external systems' responsibilities described?: yes|no
+            Are all the users' interactions described?: yes|no
+    containers:
+      - C4 L2 system container diagram:
+          name:
+          diagram link:
+          container description: 
+          internal QB:
+            Are all the containers deployable/executable units?: yes|no
+            Is the boundary established between internal and external containers? : yes|no
+            Is the technology of each container identified?: yes|no
+            Do all containers have at least on interaction?: yes|no
+            Is the C4 container YAML generated through Structurizr?: yes|no
+            Are interactions between containers only?: yes|no
+            Is the summary of all the container responsibilites documented?: yes|no
+            Are the technical details of each container described ?: yes|no                       
+    components:
+      - C4 L3 system component diagram:
+          name:
+          diagram link:
+          container:
+          component description:
+          internal QB:
+            Is the parent container depicted in the diagram?: yes|no
+            Do all the components have at least one interaction?: yes|no
+            Is the technology of each component identified?: yes|no
+            Is the boundary established between internal components and external containers?: yes|no
+            Are the technical details of each component documented?: yes|no
+     classes:
+      - C4 L4 code diagram:
+          name:
+          diagram link:
+          component: "<name>"
+          class description: //define class
+     deployement:
+      C4 deployment view:
+        name:
+        diagram link:
+        container:
+        component description:
+        internal QB:
+          wip 
+     system APIs:
+      - api:
+          swagger link:
+          wsdl link:
+     data view:
+       - db schemas:
+          diagram:
+     3rd party software:
+       link to component:
+       licensing model:
+       renewal policy:
+     security model:
+     monitoring design:
+     recovery runbooks:
           

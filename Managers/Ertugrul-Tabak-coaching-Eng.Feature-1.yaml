@@ -1,0 +1,75 @@
+manager: Ertugrul Tabak
+teamroom: Eng.Feature
+direct reports: 8
+ICs:
+  - IC:
+      IC name: Alexandre Monteiro Janoni
+      date: 2019-09-27
+      unit: CSRV - cannot check - JIRA is down
+      coaching: E2E ticket moved to 'Open' pick another ticket.
+      performance assessment: good
+      continue coaching: false
+  - IC:
+      IC name: Emin Sadiyev
+      date: 2019-09-27
+      unit: CSRV - cannot check - JIRA is down
+      coaching: Do not gold-plate. Do what is asked on the FS only.
+      performance assessment: good IC
+      continue coaching: false
+  - IC:
+      IC name: Hakan S. Kucuk
+      date: 2019-09-27
+      unit: CODEFIX - cannot check - JIRA is down
+      coaching: keep up the good work
+      performance assessment: good IC
+      continue coaching: false
+  - IC:
+      IC name: Jhon Alexander Holguin Barrera
+      date: 2019-09-27
+      unit: ADCM - cannot check - JIRA is down
+      coaching: >
+        if the requested code is not on github, create an Eng.Problem
+        ticket to PCA,
+        and move to a next ticket.
+      performance assessment: good IC
+      continue coaching: false
+  - IC:
+      IC name: Juan Camilo Rada Mesa
+      date: 2019-09-27
+      unit: CSRV - cannot check JIRA is down
+      coaching: >
+        The additional effort is required to deliver the current FS,
+        AU also accepted that, however it shall take time to create
+        additional tickets. Continue implementation of the current
+        ticket, include that effort.
+      performance assessment: good IC
+      continue coaching: false
+  - IC:
+      IC name: Nadir Alkan
+      date: 2019-09-27
+      unit: JIVE - cannot check JIRA is down
+      coaching: >
+        Jive milestone P1 TPM agreed that additional requests are not within
+        the scope of P1-spec, lets continue with milestone completion activities
+        next week. They may create additional P1-specs if needed.
+      performance assessment: good IC
+      continue coaching: false
+  - IC:
+      IC name: Samuel De Almeida Martinucci
+      date: 2019-09-27
+      unit: none
+      coaching: on vacation
+      performance assessment: good IC
+      continue coaching: false
+  - IC:
+      IC name: Thiago Luiz Alves
+      date: 2019-09-27
+      unit: CSRV - cannot check JIRA is down
+      coaching: >
+        It seems the unplanned additional efforts to create GH repo is required
+        and blocking all next tickets. Create an automation to duplicate an
+        existing large repo and find a way to modify/rewrite the commits to align
+        with the testbed requirements. This testbed creation may also be used in
+        other tickets.
+      performance assessment: good IC for SA level
+      continue coaching: false

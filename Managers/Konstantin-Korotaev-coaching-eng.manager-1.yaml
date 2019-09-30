@@ -1,0 +1,32 @@
+manager: Konstantin Korotaev
+teamroom: Eng.ProductCA
+direct reports: 4
+ICs: 
+    - IC: 
+        IC name: Alex Balandin
+        date: 26.09.2019
+        unit: https://jira.devfactory.com/browse/NORTHP-19884
+        coaching: Coach on how to handle blockers on E2Es writing if there are issues in the environment to escalate issues to import team.
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: true
+    - IC: 
+        IC name: Evgeny Udalov
+        date: 26.09.2019
+        unit: https://jira.devfactory.com/browse/ONESPOT-707
+        coaching: Coach how to improve C4 system diagram with parts of external systems
+        perfrormanceAssessment: lowPerformer
+        continueCoaching: true 
+    - IC: 
+        IC name: Kunal Ganglani
+        date: 26.09.2019
+        unit: https://jira.devfactory.com/browse/XINET-11633
+        coaching: Coach on how to provide progress on architecture docs to have a clear picture of import progress
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Oleg Trofimov
+        date: 26.09.2019
+        unit: https://jira.devfactory.com/browse/NORTHP-20066
+        coaching: Coach how to improve C4 container diagram with 3rd party containers that are needed in environment for deep testing of product features
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: true

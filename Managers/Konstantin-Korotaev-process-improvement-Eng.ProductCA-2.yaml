@@ -1,0 +1,16 @@
+manager: Konstantin Korotaev
+teamroom: Eng.ProductCA
+units: 
+    - unit: https://jira.devfactory.com/browse/NORTHP-19884
+    - unit: https://jira.devfactory.com/browse/NORTHP-19885
+    - unit: https://jira.devfactory.com/browse/NORTHP-19886
+    - unit: https://jira.devfactory.com/browse/NORTHP-19902
+recomnmendation: 
+    eliminate waste: true
+    improve quality bar: true 
+    product agnostic: true
+    product specific: 
+        - product name: Northplains Telescope
+    description: Detect prerequisites for PCA queue items and exclude blocked items from the queue. Example: FA has a link to YAML task that is deploying dependent component to environment, until this task is not done - FA and E2E are blocked and tasks don't show in the queue.
+    effort: 2
+    impact: 5

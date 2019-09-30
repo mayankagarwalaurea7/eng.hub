@@ -1,0 +1,13 @@
+manager: Dmytro Malenko
+teamroom: Eng.Feature
+units:
+    - unit: https://jira.devfactory.com/browse/JVMBL-8215
+recommendation: 
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Create boilerplate projects to bootstrap new components/applications even by ICs without deep knowledge of the technology of the new project. Such templates can be tech-specific (e.g. React Native mobile app) or product-specific (e.g. Jive microservice). Will be especially usefull for Rebuild specs.
+    effort: 5
+    impact: 20

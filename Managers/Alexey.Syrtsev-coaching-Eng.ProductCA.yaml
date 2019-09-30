@@ -1,0 +1,25 @@
+manager: Alexey Syrtsev
+teamroom: Eng.ProductCA
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Alaa Nassef
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/CSRV-13331
+        coaching: He is inaccurate with E2E update, hence got several rejections this week because of it. Will discuss with him to read accurately the whole E2E (and execute it when needed) before sending it to QE Review - even if an update is trivial. Also, will check an opportunity to extend our local automated E2E validator to catch non-parameterized URLs in E2E text
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Boris Vanin
+        date: 2019-09-27
+        unit: !!str #<Jira link>
+        coaching: !!str #<free text coaching>
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Nikolai Ligastaev
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/CODEGRAPH-5604
+        coaching: Still inaccurate with every QB verification. Will go through QBs list with him to ensure he know how to check every item. Also, he should start using our internal validator to reduce FTAR failure risk.
+        performance assessment: averagePerformer
+        continue coaching: true

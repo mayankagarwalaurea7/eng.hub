@@ -1,0 +1,81 @@
+manager: Bugra Kara
+teamroom: Eng.QAManualTesting
+direct reports: 11
+ICs:
+    - IC:
+        IC name: Nishita Bhatt
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/CONNECT-68050
+        coaching: On track for the week with 100% FTAR and 85 units. Process coaching was provided for a unique case where E2E (CONNECT-68050) was found insufficient during "In Execution" phase.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Shashika Lokuarachchi
+        date: 2019-09-27
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1282544600#testChange-41535751
+        coaching: On track for the week with 77 units passed QE. Good handling of the test process, especially in such a complex and lengthy scenario where the TC failed only in the final step (which could have been easily missed out by an inexperienced IC).
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Shilpa K
+        date: 2019-09-27
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1307710763#testChange-41741698
+        coaching: On track for the week with 74 units passed QE. One of the failures faced was due to precondition being executed after the main TC. The playbook has been updated to restrict this situation. TE tool also to be improved to enforce it automatically.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: FATHIMA NOOREIN
+        date: 2019-09-27
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1298551690#testChange-41519316
+        coaching: Deep-dive on one of the executions where IC was not sure how to handle a TC where its precondition TC was marked as Blocked.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Oindrilla Das
+        date: 2019-09-27
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1303661004#testChange-41545041
+        coaching: On track for the week with 79 units passed. Regular coaching as part of daily WSPro was provided.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Amrit Chaswal
+        date: 2019-09-27
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1303042665#testChange-41526962
+        coaching: On track for the week with 70 units passed.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Vidya RV
+        date: 2019-09-27
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1297550477#testChange-41530340
+        coaching: Coached IC in detail about the execution internal QB. On track for the week with 69 approved units.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Vridhi R
+        date: 2019-09-27
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1305611771#testChange-41622291
+        coaching: On track for the week with 66 units passed QE. 3 of her failures were due to precondition being executed after the main TC. The playbook has been updated to restrict this situation. TE tool also to be improved to enforce it automatically.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Sonia Shet
+        date: 2019-09-27
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1303449222#testChange-41537461
+        coaching: 67 units passed so far. Regular daily WSPro coaching was provided.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Divya Poddar
+        date: 2019-09-27
+        unit: N/A
+        coaching: On leave for the week.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Alican Aksoy
+        date: 2019-09-27
+        unit: N/A
+        coaching: On leave for the week.
+        performance assessment: averagePerformer
+        continue coaching: false

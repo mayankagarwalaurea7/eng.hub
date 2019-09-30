@@ -1,0 +1,16 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+units: 
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36936
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36950
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36949
+
+recommendation:
+    eliminate waste: false
+    improve quality bar: true
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Add the following IQB item - "Info in E2E, FS demo and JIRA comments on the FS is sufficient so that a person new to the product can easily execute the E2E".
+    effort: 1
+    impact: 1

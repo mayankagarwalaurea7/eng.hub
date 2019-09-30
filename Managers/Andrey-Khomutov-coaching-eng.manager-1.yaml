@@ -1,0 +1,11 @@
+manager: Andrey Khomutov
+teamroom: Eng.Feature
+direct reports: 9
+ICs:
+    - IC:
+        IC name: Rostislav Dublin
+        date: 2019-09-26
+        unit: all
+        coaching: terminate Rostislav's contract due to CCAT cheating, make KT to Jose Masaneda asap
+        performance assessment: average performer
+        continue coaching: false

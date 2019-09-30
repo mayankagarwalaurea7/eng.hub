@@ -1,0 +1,13 @@
+manager: !!str Jacek Kaczynski #<manager name>
+teamroom: !!str Eng.Manager #<teamroom name>
+units: !!seq
+    - unit: !!str #<link>
+recommendation: !!map
+    eliminate waste: !!bool true
+    improve quality bar: !!bool false
+    product agnostic: !!bool false #boolean
+    product specific: !!seq
+        - product name: !!str EXMC #product names 
+    description: !!str Implement log rotation to prevent test instances running out of space #<string>
+    effort: !!int 2 #<int> days
+    impact: !!float 0.0001 #<%> at teamroom level

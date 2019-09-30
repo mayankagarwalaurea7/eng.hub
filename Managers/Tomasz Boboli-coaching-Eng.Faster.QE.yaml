@@ -1,0 +1,11 @@
+manager: Tomasz Boboli
+teamroom: Eng.Faster.QE
+direct reports: 1
+ICs:
+    - IC:
+        IC name: Aleksandr Aniscenko
+        date: 2019-09-28
+        unit: https://jira.devfactory.com/browse/CRM-67651
+        coaching: On CRM-67651 it was found that IC provided incorrect version number. We already had the same problem with CRM-67762. You should update Faster Knowledge Library with clarification on how and when CRM versions should be increased.
+        perfrormanceAssessment: highPerformer
+        continueCoaching: yes

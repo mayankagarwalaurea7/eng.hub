@@ -1,0 +1,16 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+units: 
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36235
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36240
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36238
+
+recommendation:
+    eliminate waste: true
+    improve quality bar: false 
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Tag all Feature ICs according to their technology/product expertise. When a team lacking certain expertise picks up a challenging spec assign corresponding ICs as navigators for the spec. Could be particularly valuable for Rewrite/Rebuild specs.
+    effort: 2
+    impact: 3

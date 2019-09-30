@@ -1,0 +1,11 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+units:
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36940
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Check that a FS has N+1 demo files (where N is the number of rejections) and that the filename doesn't contain a different FS ID (sometimes wrong files are linked by mistake)
+    effort: 1
+    impact: 8

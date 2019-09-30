@@ -1,0 +1,18 @@
+manager: Ines Guisado
+teamroom: Eng.QAIntegrationTesting
+direct reports: 4
+ICs:
+    - IC:
+        IC name: David Gunadi 
+        date: 09/26/2019
+        unit: https://jira.devfactory.com/browse/SPC-7608
+        coaching: Coach on how to clone repo
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Jose Velasquez 
+        date: 09/26/2019
+        unit: https://jira.devfactory.com/browse/CONNECT-73920
+        coaching: Coach on how to distribute the tickets
+        performance assessment: lowPerformer
+        continue coaching: false

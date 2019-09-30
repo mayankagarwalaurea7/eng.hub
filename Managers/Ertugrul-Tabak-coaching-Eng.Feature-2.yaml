@@ -1,0 +1,32 @@
+manager: Viktor Kotsiuban
+teamroom: Eng.Feature
+direct reports: 6
+ICs:
+  - IC:
+      IC name: Dmitriy Elisov
+      date: 2019-09-30
+      unit: CODEALIKE-4853
+      coaching: Prepare next tickets before we have a meeting with Product site so you will be able to push them after
+      performance assessment: good
+      continue coaching: false
+  - IC:
+      IC name: Tengiz Merabishvilli
+      date: 2019-09-30
+      unit: CODEALIKE-4851
+      coaching: Prepare next tickets before we have a meeting with Product site so you will be able to push them after 
+      performance assessment: good
+      continue coaching: false
+  - IC:
+      IC name: Muhammad Farooq
+      date: 2019-09-30
+      unit: JCLDALL-27682
+      coaching: make the best solution you can and let's try to evaluate it together when you have something done
+      performance assessment: bad
+      continue coaching: true
+  - IC:
+      IC name: Alexey Kurilov
+      date: 2019-09-30
+      unit: PG-1250
+      coaching: try to record a demo in a same way as some of other ICs
+      performance assessment: good
+      continue coaching: false

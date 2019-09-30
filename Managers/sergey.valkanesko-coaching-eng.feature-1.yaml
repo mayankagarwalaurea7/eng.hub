@@ -1,0 +1,18 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+direct reports: 2
+ICs:
+    - IC:
+        IC name: Adrian Iriciuc
+        date: 2019-09-25
+        unit: https://jira.devfactory.com/browse/MOAFCID-36898
+        coaching: Please apply both Code Review and Verification Review QBs as checklists before moving FS to QE. You would never send a FS without PR if you did so. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Francisco Expósito Pequeño
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/MOAFCID-36950
+        coaching: Please always put yourself into QA shoes and make sure to demonstrate details which might prevent them from verifying the FS. In this case the original AU requirement was to "alter E2E step accordingly". This statement is vague so please always demonstrate in the video the exact changes made to *IT.json files.  
+        performance assessment: averagePerformer
+        continue coaching: true

@@ -1,0 +1,11 @@
+﻿manager: Rafiq Raja
+teamroom: Eng.YAML
+units:
+    - unit: ALL
+automation:
+    product agnostic: true
+    product specific: false
+        - product name: N/A
+    description: Create a tool for Auto Split of Legacy Repos
+    effort: 3
+    impact: 20
