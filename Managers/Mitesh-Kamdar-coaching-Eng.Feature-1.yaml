@@ -9,4 +9,3 @@ ICs:
          coaching: Coached IC to ensure to remove unused imports from the code, use single quotes for the string as per the guidelines set by QE and ensure complete coverage for unit tests
          performance assessment: highPerformer
          continue coaching: true
-         
