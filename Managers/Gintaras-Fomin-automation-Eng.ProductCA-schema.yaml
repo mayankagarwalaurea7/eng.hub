@@ -1,0 +1,9 @@
+manager: Gintaras Fomin
+teamroom: Eng.ProductCA
+units:
+    - unit: N/A
+automation: 
+    product agnostic: false
+    description: Move release tickets to Released when SE7 ticket is moved to Released rather than blocking transition and enforcing manual transition of related tickets. 
+    effort: 0.5
+    impact: 100
