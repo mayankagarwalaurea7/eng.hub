@@ -1,0 +1,25 @@
+manager: Radhesh Radhakrishnan
+teamroom: Eng.ProductCA
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Gaurav Kohli
+        date: 26.09.2019
+        unit: https://jira.devfactory.com/browse/FIRM58-13039
+        coaching: Blocking old RCAs for silly and unattainable cause just unnecessarily increases WIP inventory - proceed with available info or close and move on. 
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: yes
+    - IC: 
+        IC name: Yilmaz Yavuz
+        date: 26.09.2019
+        unit: https://jira.devfactory.com/browse/OLIVES-8515
+        coaching: Spending time on old RCAs that does not generate new insights or improvement to the product or process is a waste to be eliminated. 
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: yes 
+    - IC: 
+        IC name: Golam Kibria
+        date: 26.09.2019
+        unit: https://jira.devfactory.com/browse/KMECN-28193
+        coaching: Standardize SE7 staging as a miniature replica of PROD to enable SaaS updates testing through SE7
+        perfrormanceAssessment: topPerformer
+        continueCoaching: yes
