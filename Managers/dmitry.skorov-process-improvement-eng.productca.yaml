@@ -1,0 +1,16 @@
+manager: Dmitry Skorov
+teamroom: ProductCA
+units:
+    - unit: jira ticket is not created for this
+recommendation: add a column to RDS > Test Suite sheet table to denote number of defects linked to each FA
+    eliminate waste: true 
+    improve quality bar: true 
+    product agnostic: true
+    product specific:
+        - product name: all 
+    description: when PSEM is planning a new release one of the most important things for him to do is 
+    to ensure blast radius is as small as possible while release scope is as big as possible. Broken E2Es VS CDs matrix can do the trick:
+    PSEM will see the "price" of adding this or that ticket to release which would make his planning activities easier. Impact is not 100% because
+    some PSEMs have a very small number of tickets in backlog, or have all E2Es fixed etc, but 5-7 PSEM can be affected. The effort looks negligible. 
+    effort: 1
+    impact: 20%
