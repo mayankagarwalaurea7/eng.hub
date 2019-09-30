@@ -1,0 +1,11 @@
+manager: John Isaac
+teamroom: Eng.CodeReview.QC
+units: 
+    - unit: All
+recommendation: 
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    description: after the positive conclusion of second langugage expirment for QC, in case of high influx in a technology stack we can load balance the influx with other ICs based in this criteria JS can pick C#, C# can pick JS, Java can pick JS.
+    effort: 1
+    impact: 1
