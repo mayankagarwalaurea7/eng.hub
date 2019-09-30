@@ -1,0 +1,11 @@
+manager: Dmitry Skorov
+teamroom: Eng.Manager
+units: 
+    - unit: https://jira.devfactory.com/browse/DNN-33578
+automation: make QA env updates fully automatic
+    product agnostic: false
+    product specific: 
+        - product name: DNN
+    description: currently updates of DNN QA env are semi-manual. We need to finalize CICD automation to make them fully automated. First step is to create a technical plan for it.
+    effort: 2
+    impact: 3%
