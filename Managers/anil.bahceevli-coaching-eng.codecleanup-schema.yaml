@@ -16,3 +16,17 @@ ICs:
         coaching: Make sure you have the resharper installed and the code cleanup setting is applied. This will list all the issues and fix those #<free text coaching>
         performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
         continue coaching: true #true | false
+      - IC:
+          IC name: Nwachukwu Okafor #<IC name>
+          date: 2019/09/30 #<date>
+          unit: https://jira.devfactory.com/browse/CC-836391  #<Jira link>
+          coaching: Divert to different ticket types to increase business value you bring to repo  #<free text coaching>
+          performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+          continue coaching: true #true | false
+      - IC:
+          IC name: Ibrahim Kayode Ajibade #<IC name>
+          date: 2019/09/30 #<date>
+          unit: https://jira.devfactory.com/browse/CC-834116 #<Jira link>
+          coaching: If the duplication resides in the same class, then all similar issues within the class must be fixed #<free text coaching>
+          performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+          continue coaching: true #true | false
