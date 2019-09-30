@@ -1,11 +1,57 @@
 manager: Rohit Jain
-teamroom: !!str #<teamroom name>
-direct reports: <direct report count>
-ICs: !!seq
-    - IC: !!map
-        IC name: !!str #<IC name>
-        date: !!str #<date>
-        unit: !!str #<Jira link>
-        coaching: !!str #<free text coaching>
-        performance assessment: !!str #highPerformer | averagePerformer | lowPerformer
-        continue coaching: !!bool #true | false
+teamroom: Eng.QAManualTesting
+direct reports: 8
+ICs:
+     - IC:
+        IC name: Nalini K
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/EYPP-9832
+        coaching: Coached IC to follow internal QB and execute reference TC first before executing main TC, she got 4 failures due to this QB last week and we target to have 0 failures this week.
+        performance assessment: highPerformer
+        continue coaching: true
+- IC:
+   IC name: Angel Zelaya
+   date: 2019-09-27
+   unit: https://jira.devfactory.com/browse/EYPP-3658
+   coaching: Coached IC to execute reference TC. Angel missed executing reference TC in couple of executions and he was coached on same.
+   performance assessment: highPerformer
+   continue coaching: true
+
+  - IC:
+     IC name: David Elbeblawy
+     date: 2019-09-30
+     unit: https://jira.devfactory.com/browse/INFER-8649
+     coaching: Coached IC to on input QB bars for E2Es for failing and blocking E2Es if they do not meet the quality bars.
+     performance assessment: highPerformer
+     continue coaching: true
+
+- IC:
+        IC name: Khushboo Sinha
+        date: 2019-09-30
+        unit: https://jira.devfactory.com/browse/EYPP-3659
+        coaching: Coached IC to internal QBs related to SS. IC had 2 failure due to missing SS in one TC execution.
+        performance assessment: highPerformer
+        continue coaching: true
+
+- IC:
+        IC name: Meray Wafik
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/EYPP-4129
+        coaching: Coached IC on using TE execution tool for all executions which will help in improvment of metrics and FTAR by 15%.
+        performance assessment: averagePerformer
+        continue coaching: true
+- IC:
+        IC name: Randy Del
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/EVCID-10363
+        coaching: Coached IC on new project as his core project was running out of backlog.
+        performance assessment: highPerformer
+        continue coaching: true
+
+- IC:
+        IC name: Sharidas Haridas
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/SPC-22283
+        coaching: Coached IC on internal QBs related to failing and blocking TCs.
+        performance assessment: highPerformer
+        continue coaching: true
