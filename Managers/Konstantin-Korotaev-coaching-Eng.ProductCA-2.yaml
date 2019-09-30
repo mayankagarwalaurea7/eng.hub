@@ -1,0 +1,32 @@
+manager: Konstantin Korotaev
+teamroom: Eng.ProductCA
+direct reports: 4
+ICs: 
+    - IC: 
+        IC name: Alex Balandin
+        date: 30.09.2019
+        unit: 
+        coaching: 
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: yes
+    - IC: 
+        IC name: Evgeny Udalov
+        date: 30.09.2019
+        unit: https://jira.devfactory.com/browse/ONESPOT-747
+        coaching: Discussed how to use PCA working queue as PCA is newcomer and need to learn how to write E2Es 
+        perfrormanceAssessment: lowPerformer
+        continueCoaching: yes 
+    - IC: 
+        IC name: Kunal Ganglani
+        date: 30.09.2019
+        unit: 
+        coaching: 
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: yes
+    - IC: 
+        IC name: Oleg Trofimov
+        date: 30.09.2019
+        unit: 
+        coaching: 
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: yes
