@@ -1,0 +1,13 @@
+manager: !!str Pavel Gorbel
+teamroom: !!str Eng.ProductCA
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/GFIA-12295
+recommendation: !!map
+    eliminate waste: !!bool false
+    improve quality bar: !!bool true
+    product agnostic: !!bool true
+    product specific: !!seq
+        - product name: !!str GFIFM
+    description: !!str Change the process for QA team results processsing by PCA: to move corresponding TCs to re-execution state once the corresponding Eng Problem for triage is done with a specific result like "wrong execution"
+    effort: !!int 1 
+    impact: !!float 0.1
