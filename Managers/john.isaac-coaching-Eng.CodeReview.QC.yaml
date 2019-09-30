@@ -1,0 +1,55 @@
+manager: John Isaac
+teamroom: Eng.CodeReview.QC
+direct reports: 8
+ICs: 
+    - IC: 
+        IC name: Alexander Chernyshev
+        date: 09/30/2019
+        unit: CODEREVIEW-234139
+        coaching: focus on why the developer did not take our recommendation to fix 2 red findings.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Cristian Stancalau
+        date: 09/30/2019
+        unit: CODEREVIEW-234666
+        coaching: Support JS team members in dual language tickets which contains Java as a secondary language
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Evgeniy Kotelnikov
+        date: 09/30/2019
+        unit: CODEREVIEW-234425
+        coaching: Support JS team members in dual language tickets which contains Java as a secondary language.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Yauhen Pyl
+        date: 09/30/2019
+        unit: CODEREVIEW-184443
+        coaching: Avoid being blocked for Reporter while resolving Investigations by getting approvals in a passive manner.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Vinicius Defeo
+        date: 09/30/2019
+        unit: https://github.com/trilogy-group/coderead-toolset/wiki/Decouple-Jira-Dependency
+        coaching: persist messages in another queue in a fan-out style https://stackoverflow.com/questions/54419062/how-to-fan-out-sqs
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Amit Chaurasia
+        date: 09/30/2019
+        unit: CODEREVIEW-235149
+        coaching: consuming from Java queues tickets with JS+Java <if no JS tickets in the queue> and ask for Java support.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Muhammad Jahanzeb
+        date: 09/30/2019
+        unit: https://github.com/trilogy-group/coderead-companion-api/issues/61
+        coaching: as PCA for companion API it is his responsibility to cleanup the backlog.
+        performance assessment: averagePerformer
+        continue coaching: true
+
+
