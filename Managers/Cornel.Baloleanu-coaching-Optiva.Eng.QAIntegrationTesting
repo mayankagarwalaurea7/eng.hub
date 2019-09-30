@@ -1,0 +1,25 @@
+manager: Cornel Baloleanu
+teamroom: Optiva.Eng.QAIntegrationTesting
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Pinkee Kumari
+        date: 2019-09-27
+        unit: https://jira.optiva.com/jira/browse/VDII-6167
+        coaching: Focus on tests that are already done in order to maximize the impact of the effort spent.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Vishnu Shankar
+        date: 2019-09-27
+        unit: https://jira.optiva.com/jira/browse/VDII-3376
+        coaching: Was waiting for a new base step that was very easy to implement. Discussed with him to take ownership of his tickets and if easy fixes are there, to make them without waiting for others.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Ahmed Hassanein
+        date: 2019-09-27
+        unit: https://jira.optiva.com/jira/browse/VDII-3433
+        coaching: Help other teams with dependencies required to make progress on our tickets, especially when we are blocked for a longer period of time and we have the capacity to do this.
+        performance assessment: topPerformer
+        continue coaching: true
