@@ -1,0 +1,12 @@
+manager: !!str Pavel Gorbel
+teamroom: !!str Eng.ProductCA
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/GFIA-12295
+automation: !!map
+    product agnostic: !!bool true
+    product specific: !!seq
+        - product name: !!str #product names
+    description: Create an automation for moving corresponding TCs to re-execution state once the corresponding Eng Problem for triage is done with a specific result like "wrong execution"
+	!!str 2019-09-30
+    effort: !!int 1
+    impact: !!float 0.1
