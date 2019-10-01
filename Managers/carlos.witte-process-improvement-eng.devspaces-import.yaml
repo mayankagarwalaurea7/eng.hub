@@ -8,6 +8,6 @@ recomnmendation:
     product agnostic: true
     product specific: 
         - product name: null 
-    description: Create specific tags to better identity decisions and closing comments in tickets.
-    effort: 2
-    impact: 0.05
+    description: Improve our Playbook's IQB to make us independent from Devhub's IOW as input source.
+    effort: 8
+    impact: 0.10
