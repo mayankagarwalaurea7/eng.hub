@@ -1,0 +1,32 @@
+manager: Konstantin Korotaev
+teamroom: Eng.ProductCA
+direct reports: 4
+ICs: 
+    - IC: 
+        IC name: Alex Balandin
+        date: 01.10.2019
+        unit: https://jira.devfactory.com/browse/NORTHP-19929
+        coaching: Coach how to separate issues one from another and create a ticket for each to identify who will fix it and when.
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: yes
+    - IC: 
+        IC name: Evgeny Udalov
+        date: 01.10.2019
+        unit: https://jira.devfactory.com/browse/ONESPOT-865
+        coaching: Coached to use more strict QB when QB changes after process improvement.
+        perfrormanceAssessment: lowPerformer
+        continueCoaching: yes 
+    - IC: 
+        IC name: Kunal Ganglani
+        date: 01.10.2019
+        unit: https://jira.devfactory.com/browse/XINET-11729
+        coaching: Reworking estimation on architecture docs as requirements have changed and reevalution is needed.
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: yes
+    - IC: 
+        IC name: Oleg Trofimov
+        date: 01.10.2019
+        unit: https://jira.devfactory.com/browse/NORTHP-20372
+        coaching: Discuss how to use Eng.Hub for YAML diagrams.
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: yes
