@@ -1,0 +1,11 @@
+manager: Edouard Napolov
+teamroom: Eng.Manager
+direct reports: 3
+ICs:
+    - IC:
+        IC name: Virendra Patidar
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/MOAFCID-34999
+        coaching: Provide link to the outage ticket in RCA document.
+        perfrormanceAssessment: TopPerformer
+        continueCoaching: true
