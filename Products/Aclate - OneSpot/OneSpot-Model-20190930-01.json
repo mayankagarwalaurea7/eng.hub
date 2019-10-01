@@ -1,0 +1,994 @@
+{
+    "model": {
+        "people": [
+            {
+                "id": "7",
+                "tags": "Element,Person",
+                "name": "Email Viewer",
+                "relationships": [
+                    {
+                        "id": "67",
+                        "tags": "Relationship",
+                        "sourceId": "7",
+                        "destinationId": "66",
+                        "description": "interacts with",
+                        "technology": "Web Browser",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "146",
+                        "tags": "Relationship",
+                        "sourceId": "7",
+                        "destinationId": "131",
+                        "description": "interacts with",
+                        "technology": "Web Browser",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "27",
+                "tags": "Element,Person",
+                "name": "Insights User",
+                "relationships": [
+                    {
+                        "id": "183",
+                        "tags": "Relationship",
+                        "sourceId": "27",
+                        "destinationId": "166",
+                        "description": "interacts with",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "80",
+                        "tags": "Relationship",
+                        "sourceId": "27",
+                        "destinationId": "1",
+                        "description": "interacts with",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "28",
+                "tags": "Element,Person",
+                "name": "Website Viewer",
+                "relationships": [
+                    {
+                        "id": "185",
+                        "tags": "Relationship",
+                        "sourceId": "28",
+                        "destinationId": "167",
+                        "description": "interacts with",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "182",
+                        "tags": "Relationship",
+                        "sourceId": "28",
+                        "destinationId": "1",
+                        "description": "interacts with",
+                        "technology": "Web Browser",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            }
+        ],
+        "softwareSystems": [
+            {
+                "id": "104",
+                "tags": "Element,Software System",
+                "name": "AWS Elasticache",
+                "description": "A fully managed in-memory data store and cache service by AWS. The service improves the performance of web applications by retrieving information from managed in-memory caches, instead of relying entirely on slower disk-based databases.",
+                "location": "External",
+                "containers": [
+                    {
+                        "id": "128",
+                        "tags": "Element,Container",
+                        "name": "AWS Elasticache",
+                        "description": "In-memory data store; stores cache of Diffbot responses",
+                        "technology": "Cloud Storage - a fully managed in-memory data store and cache service by AWS."
+                    }
+                ]
+            },
+            {
+                "id": "20",
+                "tags": "Element,Software System",
+                "name": "Cloudinary",
+                "description": "Cloud-based image and video management solution (SaaS). It enables users to upload, store, manage, manipulate and deliver images and video for websites and apps",
+                "location": "External",
+                "containers": [
+                    {
+                        "id": "129",
+                        "tags": "Element,Container",
+                        "name": "Cloudinary",
+                        "description": "Image assets and management",
+                        "technology": "Cloud-based asset storage"
+                    }
+                ]
+            },
+            {
+                "id": "105",
+                "tags": "Element,Software System",
+                "name": "Diffbot",
+                "description": "A 3rd-party system which provides the public APIs for extracting data from web pages / web scraping.",
+                "location": "External",
+                "containers": [
+                    {
+                        "id": "130",
+                        "tags": "Element,Container",
+                        "name": "Diffbot",
+                        "description": "Analyzes page for clean text",
+                        "technology": "Side web-service"
+                    }
+                ]
+            },
+            {
+                "id": "66",
+                "tags": "Element,Software System",
+                "name": "Email Client",
+                "description": "Renders and displays email messages",
+                "relationships": [
+                    {
+                        "id": "70",
+                        "tags": "Relationship",
+                        "sourceId": "66",
+                        "destinationId": "1",
+                        "description": "retrieves optimized and cropped image asset",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "68",
+                        "tags": "Relationship",
+                        "sourceId": "66",
+                        "destinationId": "1",
+                        "description": "calls API for individualization",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "69",
+                        "tags": "Relationship",
+                        "sourceId": "66",
+                        "destinationId": "22",
+                        "description": "opens email generated from ESP",
+                        "technology": "IMAP",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "External",
+                "containers": [
+                    {
+                        "id": "131",
+                        "tags": "Element,Container",
+                        "name": "Email Client",
+                        "description": "Any email client, e.g. Gmail",
+                        "relationships": [
+                            {
+                                "id": "147",
+                                "tags": "Relationship",
+                                "sourceId": "131",
+                                "destinationId": "13",
+                                "description": "retrieves optimized and cropped image asset",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "149",
+                                "tags": "Relationship",
+                                "sourceId": "131",
+                                "destinationId": "23",
+                                "description": "opens email generated from ESP",
+                                "technology": "IMAP",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "148",
+                                "tags": "Relationship",
+                                "sourceId": "131",
+                                "destinationId": "4",
+                                "description": "calls API for individualization",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "IMAP, POP"
+                    }
+                ]
+            },
+            {
+                "id": "22",
+                "tags": "Element,Software System",
+                "name": "Email Service Provider",
+                "description": "Does the mass emailing",
+                "relationships": [
+                    {
+                        "id": "71",
+                        "tags": "Relationship",
+                        "sourceId": "22",
+                        "destinationId": "1",
+                        "description": "sends records of message opens",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "65",
+                        "tags": "Relationship",
+                        "sourceId": "22",
+                        "destinationId": "1",
+                        "description": "calls API for individualization",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "External",
+                "containers": [
+                    {
+                        "id": "23",
+                        "tags": "Element,Container",
+                        "name": "Email Message Generator",
+                        "description": "Does the mass emailing",
+                        "relationships": [
+                            {
+                                "id": "96",
+                                "tags": "Relationship",
+                                "sourceId": "23",
+                                "destinationId": "11",
+                                "description": "sends records of message opens",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "97",
+                                "tags": "Relationship",
+                                "sourceId": "23",
+                                "destinationId": "4",
+                                "description": "calls API for individualization",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "N/A"
+                    }
+                ]
+            },
+            {
+                "id": "25",
+                "tags": "Element,Software System",
+                "name": "Imply managed OneSpot AWS",
+                "description": "Analytics data store",
+                "location": "External",
+                "containers": [
+                    {
+                        "id": "26",
+                        "tags": "Element,Container",
+                        "name": "Analytics Data Store",
+                        "description": "Analytics (OLAP) store for web traffic; stores Insights app data",
+                        "technology": "Apache Druid (OLAP database)"
+                    }
+                ]
+            },
+            {
+                "id": "1",
+                "tags": "Element,Software System",
+                "name": "OneSpot",
+                "description": "Saas recommendation engine",
+                "relationships": [
+                    {
+                        "id": "78",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "19",
+                        "description": "retrieves listing of content and detailed content information for inspection in content browser and detailed page",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "79",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "20",
+                        "description": "Origin",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "74",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "18",
+                        "description": "pulls user history",
+                        "technology": "JDBC",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "110",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "105",
+                        "description": "calls API to analyze page",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "115",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "19",
+                        "description": "indexes newly discovered pages",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "75",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "19",
+                        "description": "queries for model results",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "109",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "104",
+                        "description": "checks for cached Diffbot response prior to calling Diffbot API",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "108",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "20",
+                        "description": "calls API to persist scrapped image",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "77",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "25",
+                        "description": "Imports CSV into Druid",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "73",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "18",
+                        "description": "exports CSV data into S3",
+                        "technology": "SQL",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "76",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "25",
+                        "description": "queries and aggregates web traffic",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "15",
+                        "tags": "Element,Container",
+                        "name": "AWS Cloudfront 1: recs for email",
+                        "description": "Rendered recommendations for use in email; Cloudfront for Images generated by the AWS Lambda Container and stored in S3; contains image binaries",
+                        "technology": "Origin: S3",
+                        "components": [
+                            {
+                                "id": "163",
+                                "tags": "Element,Component",
+                                "name": "Distribution from S3",
+                                "description": "This Cloudfront distribution retrieves and caches the images from the S3 (no changes on the images)",
+                                "technology": "HTTPS",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "12",
+                        "tags": "Element,Container",
+                        "name": "AWS Cloudfront 2: static recs",
+                        "description": "Static recommendations stored in S3 - used as fallbacks in case of service issues. Only JSON here; image binaries are in Cloudinary",
+                        "relationships": [
+                            {
+                                "id": "171",
+                                "tags": "Relationship",
+                                "sourceId": "12",
+                                "destinationId": "170",
+                                "description": "invokes AWS Lambda function",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Origin: S3",
+                        "components": [
+                            {
+                                "id": "164",
+                                "tags": "Element,Component",
+                                "name": "AWS Lambda function",
+                                "description": "Function: east-1:457442207269:function:serverless-static-rec-filter-production-staticRecFilter. Does the recommendation field filtering",
+                                "technology": "N/A",
+                                "size": 0
+                            },
+                            {
+                                "id": "165",
+                                "tags": "Element,Component",
+                                "name": "Distribution from AWS Lambda",
+                                "description": "This Cloudfront distribution uses the AWS lambda function which takes the recommendations  from the S3 and filter the fields",
+                                "technology": "HTTPS",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "13",
+                        "tags": "Element,Container",
+                        "name": "AWS Cloudfront 3: Cloudinary",
+                        "description": "Image assets used in recommendations",
+                        "relationships": [
+                            {
+                                "id": "142",
+                                "tags": "Relationship",
+                                "sourceId": "13",
+                                "destinationId": "129",
+                                "description": "requests",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Origin: Cloudinary",
+                        "components": [
+                            {
+                                "id": "162",
+                                "tags": "Element,Component",
+                                "name": "Distribution from Cloudinary",
+                                "description": "This Cloudfront distribution retrieves and caches the images from the Cloudinary, which allows the image manipulations (i.e. resizing) during the request time",
+                                "url": "https://cloudinary.com/",
+                                "technology": "HTTPS",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "166",
+                        "tags": "Element,Container",
+                        "name": "AWS Cloudfront 4: Insights",
+                        "description": "Stores  the Insights Web App client application (JavaScript files)",
+                        "relationships": [
+                            {
+                                "id": "184",
+                                "tags": "Relationship",
+                                "sourceId": "166",
+                                "destinationId": "159",
+                                "description": "Transmits the requests to and caches responses",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Origin: Custom",
+                        "components": [
+                            {
+                                "id": "168",
+                                "tags": "Element,Component",
+                                "name": "Custom distributions",
+                                "description": "Work in progress...",
+                                "technology": "HTTPS",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "167",
+                        "tags": "Element,Container",
+                        "name": "AWS Cloudfront 5: OnSite",
+                        "description": "Stores immutable and mutable OnSite JavaScript files. which integrate into customer web sites",
+                        "relationships": [
+                            {
+                                "id": "187",
+                                "tags": "Relationship",
+                                "sourceId": "167",
+                                "destinationId": "176",
+                                "description": "Transmits the requests to and caches responses",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Origin: S3",
+                        "components": [
+                            {
+                                "id": "169",
+                                "tags": "Element,Component",
+                                "name": "Distribution from S3",
+                                "description": "Stores the JavaScript sripts for customer web sites",
+                                "technology": "HTTPS",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "17",
+                        "tags": "Element,Container",
+                        "name": "AWS Lambda",
+                        "description": "Renders inbox units as images for open time personalization",
+                        "relationships": [
+                            {
+                                "id": "45",
+                                "tags": "Relationship",
+                                "sourceId": "17",
+                                "destinationId": "15",
+                                "description": "stores rendered unit for retrival",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "46",
+                                "tags": "Relationship",
+                                "sourceId": "17",
+                                "destinationId": "13",
+                                "description": "retrieves optimized and cropped image asset",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "PhantomJS"
+                    },
+                    {
+                        "id": "14",
+                        "tags": "Element,Container,Storage",
+                        "name": "Configuration Store",
+                        "description": "Datastore for OnSite filter configuration",
+                        "technology": "RDS PostgreSQL"
+                    },
+                    {
+                        "id": "11",
+                        "tags": "Element,Container",
+                        "name": "Data Collector",
+                        "description": "Data collection endpoint for events",
+                        "relationships": [
+                            {
+                                "id": "125",
+                                "tags": "Relationship",
+                                "sourceId": "11",
+                                "destinationId": "37",
+                                "description": "logs page view events to Kafka for scraping",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Scala, Snowplow Analytics"
+                    },
+                    {
+                        "id": "50",
+                        "tags": "Element,Container",
+                        "name": "ETL scheduler",
+                        "description": "Cron job that exports CSV data to S3 and imports it into Druid",
+                        "relationships": [
+                            {
+                                "id": "172",
+                                "tags": "Relationship",
+                                "sourceId": "50",
+                                "destinationId": "134",
+                                "description": "exports CSV data into S3",
+                                "technology": "SQL",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "52",
+                                "tags": "Relationship",
+                                "sourceId": "50",
+                                "destinationId": "26",
+                                "description": "imports CSV data into Druid",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Cron jobs"
+                    },
+                    {
+                        "id": "30",
+                        "tags": "Element,Container",
+                        "name": "Insights Web App Backend",
+                        "description": "Web application for the OneSpot Dashboard: Backend",
+                        "relationships": [
+                            {
+                                "id": "54",
+                                "tags": "Relationship",
+                                "sourceId": "30",
+                                "destinationId": "26",
+                                "description": "queries and aggregates web traffic",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "126",
+                                "tags": "Relationship",
+                                "sourceId": "30",
+                                "destinationId": "25",
+                                "description": "queries and aggregates web traffic",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "174",
+                                "tags": "Relationship",
+                                "sourceId": "30",
+                                "destinationId": "132",
+                                "description": "retrieves listing of content and detailed content information for inspection in content browser and detailed page",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "156",
+                                "tags": "Relationship",
+                                "sourceId": "30",
+                                "destinationId": "4",
+                                "description": "uses in content detail pages",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JavaScript, Node"
+                    },
+                    {
+                        "id": "159",
+                        "tags": "Element,Container",
+                        "name": "Insights Web App Frontend",
+                        "description": "Web application for the OneSpot Dashboard: Frontend",
+                        "relationships": [
+                            {
+                                "id": "161",
+                                "tags": "Relationship",
+                                "sourceId": "159",
+                                "destinationId": "30",
+                                "description": "interacts with",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JavaScript, React"
+                    },
+                    {
+                        "id": "37",
+                        "tags": "Element,Container",
+                        "name": "Kafka",
+                        "description": "Streaming log of inbox unit configurations",
+                        "relationships": [
+                            {
+                                "id": "44",
+                                "tags": "Relationship",
+                                "sourceId": "37",
+                                "destinationId": "12",
+                                "description": "enriches unit configuration with static recommendations",
+                                "technology": "Kafka Stream",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Confluent 4.0.0"
+                    },
+                    {
+                        "id": "112",
+                        "tags": "Element,Container",
+                        "name": "Kafka Rest Proxy",
+                        "description": "Rest based Kafka producer",
+                        "relationships": [
+                            {
+                                "id": "121",
+                                "tags": "Relationship",
+                                "sourceId": "112",
+                                "destinationId": "37",
+                                "description": "logs sitemap event to Kafka broker",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Confluent 4.0.0"
+                    },
+                    {
+                        "id": "111",
+                        "tags": "Element,Container",
+                        "name": "Kafka stream",
+                        "description": "Processes sitemap and page view topics for scrapping",
+                        "relationships": [
+                            {
+                                "id": "124",
+                                "tags": "Relationship",
+                                "sourceId": "111",
+                                "destinationId": "37",
+                                "description": "pulls sitemap and page view topics for scraping",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "123",
+                                "tags": "Relationship",
+                                "sourceId": "111",
+                                "destinationId": "103",
+                                "description": "sends scraping request",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "140",
+                                "tags": "Relationship",
+                                "sourceId": "111",
+                                "destinationId": "132",
+                                "description": "indexes newly discovered pages",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "122",
+                                "tags": "Relationship",
+                                "sourceId": "111",
+                                "destinationId": "14",
+                                "description": "persists scrapped page data",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Confluent 4.0.0"
+                    },
+                    {
+                        "id": "176",
+                        "tags": "Element,Container",
+                        "name": "OnSite Client",
+                        "description": "Provides display integration with  website along with behavioral tracking",
+                        "relationships": [
+                            {
+                                "id": "180",
+                                "tags": "Relationship",
+                                "sourceId": "176",
+                                "destinationId": "4",
+                                "description": "calls with full unit configuration for individualization",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "178",
+                                "tags": "Relationship",
+                                "sourceId": "176",
+                                "destinationId": "11",
+                                "description": "sends page views, clicks, records, recommendations and other behavioral events",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "177",
+                                "tags": "Relationship",
+                                "sourceId": "176",
+                                "destinationId": "12",
+                                "description": "uses after timeout",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "179",
+                                "tags": "Relationship",
+                                "sourceId": "176",
+                                "destinationId": "13",
+                                "description": "retrieves optimized and cropped image asset",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JavaScript"
+                    },
+                    {
+                        "id": "170",
+                        "tags": "Element,Container",
+                        "name": "OnSite Lambda Rec Filter",
+                        "description": "The AWS Lambda takes the recommendations in JSON format from S3 and filter its fields",
+                        "technology": "JavaScript"
+                    },
+                    {
+                        "id": "16",
+                        "tags": "Element,Container,Storage",
+                        "name": "Recommendation Store",
+                        "description": "Record of recommendations to be used for a specific message",
+                        "technology": "Aurora MySQL"
+                    },
+                    {
+                        "id": "4",
+                        "tags": "Element,Container",
+                        "name": "Recommending Service and Inbox API",
+                        "description": "Provides rationalization of the web experience; Inbox API co-residents with Recommending Service, breaking out as corollary to OnSite Script",
+                        "relationships": [
+                            {
+                                "id": "173",
+                                "tags": "Relationship",
+                                "sourceId": "4",
+                                "destinationId": "134",
+                                "description": "pulls user history from",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "41",
+                                "tags": "Relationship",
+                                "sourceId": "4",
+                                "destinationId": "16",
+                                "description": "uses for what recommendation to return for message; first writer wins",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "175",
+                                "tags": "Relationship",
+                                "sourceId": "4",
+                                "destinationId": "132",
+                                "description": "queries for model results",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "39",
+                                "tags": "Relationship",
+                                "sourceId": "4",
+                                "destinationId": "17",
+                                "description": "requests rendering of inbox unit and storage",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "43",
+                                "tags": "Relationship",
+                                "sourceId": "4",
+                                "destinationId": "15",
+                                "description": "returns redirects to images of recommended items",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "40",
+                                "tags": "Relationship",
+                                "sourceId": "4",
+                                "destinationId": "11",
+                                "description": "sends records of message opens",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "38",
+                                "tags": "Relationship",
+                                "sourceId": "4",
+                                "destinationId": "37",
+                                "description": "pulls enriched inbox unit configuration",
+                                "technology": "HTTP",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "155",
+                                "tags": "Relationship",
+                                "sourceId": "4",
+                                "destinationId": "14",
+                                "description": "retrieves unit and filter configuration",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Java, Amazon Corretto 11.0.3"
+                    },
+                    {
+                        "id": "103",
+                        "tags": "Element,Container",
+                        "name": "Scrapper",
+                        "description": "Web service that manages requests for scrapping content",
+                        "relationships": [
+                            {
+                                "id": "143",
+                                "tags": "Relationship",
+                                "sourceId": "103",
+                                "destinationId": "129",
+                                "description": "calls API to persist scrapped image",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "144",
+                                "tags": "Relationship",
+                                "sourceId": "103",
+                                "destinationId": "128",
+                                "description": "checks for cached Diffbot response prior to calling Diffbot API",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "145",
+                                "tags": "Relationship",
+                                "sourceId": "103",
+                                "destinationId": "130",
+                                "description": "calls API to analyze page",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Java"
+                    }
+                ]
+            },
+            {
+                "id": "19",
+                "tags": "Element,Software System",
+                "name": "QBox Elasticsearch",
+                "description": "Qbox.io hosted Elasticsearch service",
+                "location": "External",
+                "containers": [
+                    {
+                        "id": "132",
+                        "tags": "Element,Container",
+                        "name": "QBox Elasticsearch",
+                        "description": "Serving layer for recommendation model",
+                        "technology": "Elasticsearch"
+                    }
+                ]
+            },
+            {
+                "id": "113",
+                "tags": "Element,Software System",
+                "name": "ScrapingHub",
+                "description": "External system that schedules our sitemap crawling",
+                "relationships": [
+                    {
+                        "id": "114",
+                        "tags": "Relationship",
+                        "sourceId": "113",
+                        "destinationId": "1",
+                        "description": "calls API to record sitemap entry for site",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "External",
+                "containers": [
+                    {
+                        "id": "133",
+                        "tags": "Element,Container",
+                        "name": "ScrapingHub",
+                        "description": "External system that schedules our sitemap crawling",
+                        "relationships": [
+                            {
+                                "id": "135",
+                                "tags": "Relationship",
+                                "sourceId": "133",
+                                "destinationId": "112",
+                                "description": "calls API to record sitemap entry for site",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "External web service"
+                    }
+                ]
+            },
+            {
+                "id": "18",
+                "tags": "Element,Software System,Storage",
+                "name": "Snowflake",
+                "description": "A cloud-based data storage and analytics service, generally termed \"data warehouse-as-a-service\"",
+                "location": "External",
+                "containers": [
+                    {
+                        "id": "134",
+                        "tags": "Element,Container,Storage",
+                        "name": "Snowflake Storage",
+                        "description": "Managed relational data warehouse with modeled business events",
+                        "technology": "Snowflake"
+                    }
+                ]
+            }
+        ],
+        "deploymentNodes": []
+    },
+    "documentation": {
+        "sections": [],
+        "decisions": [],
+        "images": []
+    }
+}
