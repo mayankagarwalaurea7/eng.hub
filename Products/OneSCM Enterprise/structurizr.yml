@@ -1,0 +1,2472 @@
+{
+    "id": 47251,
+    "name": "OneSCM Enterprise Workspace",
+    "revision": 40,
+    "lastModifiedDate": "2019-09-29T20:08:29Z",
+    "lastModifiedUser": "artur.ampilogov@gmail.com",
+    "lastModifiedAgent": "structurizr-web/1623",
+    "model": {
+        "people": [
+            {
+                "id": "1",
+                "tags": "Element,Person",
+                "name": "Host Partner",
+                "description": "Purchasing or Sales specialist from the host company",
+                "relationships": [
+                    {
+                        "id": "7",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "4",
+                        "description": "views documents and reviews supply chain transactions",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "115",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "12",
+                        "description": "views documents and reviews supply chain transactions",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "External"
+            },
+            {
+                "id": "3",
+                "tags": "Element,Person,person",
+                "name": "System Administrator",
+                "description": "Administrator user to configure the system",
+                "relationships": [
+                    {
+                        "id": "112",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "107",
+                        "description": "sets up",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "5",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "4",
+                        "description": "configures",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "113",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "106",
+                        "description": "sets up",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "117",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "12",
+                        "description": "configures the system",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "51",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "43",
+                        "description": "UI action, setup system",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "2",
+                "tags": "Element,Person,person",
+                "name": "Trading Partner",
+                "description": "Purchasing or Sales specialist from the trading partner",
+                "relationships": [
+                    {
+                        "id": "116",
+                        "tags": "Relationship",
+                        "sourceId": "2",
+                        "destinationId": "12",
+                        "description": "views documents and creates supply chain transactions",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "6",
+                        "tags": "Relationship",
+                        "sourceId": "2",
+                        "destinationId": "4",
+                        "description": "views documents and creates supply transactions",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            }
+        ],
+        "softwareSystems": [
+            {
+                "id": "36",
+                "tags": "Element,Software System,queue",
+                "name": "AWS SQS",
+                "description": "message queues",
+                "location": "External"
+            },
+            {
+                "id": "68",
+                "tags": "Element,Software System,ftp",
+                "name": "BrickFTP",
+                "description": "External SFTP service",
+                "location": "Unspecified"
+            },
+            {
+                "id": "9",
+                "tags": "Element,Software System,system",
+                "name": "Destination Software System",
+                "description": "Software system used by Customer to send or receive document (ERP, FTP or custom made software)",
+                "relationships": [
+                    {
+                        "id": "50",
+                        "tags": "Relationship",
+                        "sourceId": "9",
+                        "destinationId": "44",
+                        "description": "confirms the document",
+                        "technology": "HTTP/RNIF",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "External"
+            },
+            {
+                "id": "62",
+                "tags": "Element,Software System",
+                "name": "EasyPost API",
+                "description": "HTTPS API",
+                "relationships": [
+                    {
+                        "id": "75",
+                        "tags": "Relationship",
+                        "sourceId": "62",
+                        "destinationId": "74",
+                        "description": "callback on a shipment movement update",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "4",
+                "tags": "Element,Software System",
+                "name": "OneSCM Enterprise",
+                "description": "Allows users to view procurement or order data and take actions, communicates with external software systems and processes incoming and outgoing data",
+                "relationships": [
+                    {
+                        "id": "11",
+                        "tags": "Relationship",
+                        "sourceId": "4",
+                        "destinationId": "9",
+                        "description": "sends the processed document",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "21",
+                        "tags": "Element,Container",
+                        "name": "AS2UploadPages",
+                        "description": "Internal Web API that handles documents coming via AS2 protocol",
+                        "relationships": [
+                            {
+                                "id": "34",
+                                "tags": "Relationship",
+                                "sourceId": "21",
+                                "destinationId": "32",
+                                "description": "puts a message to process a document",
+                                "technology": "HTTP",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "108",
+                                "tags": "Relationship",
+                                "sourceId": "21",
+                                "destinationId": "22",
+                                "description": "get certifciates",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "41",
+                                "tags": "Relationship",
+                                "sourceId": "21",
+                                "destinationId": "15",
+                                "description": "reads, saves a document",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "ASP.NET MVC, HTTP, AS2"
+                    },
+                    {
+                        "id": "74",
+                        "tags": "Element,Container",
+                        "name": "CarrierIntegration",
+                        "description": "Web API listening EastyPost callback",
+                        "relationships": [
+                            {
+                                "id": "118",
+                                "tags": "Relationship",
+                                "sourceId": "74",
+                                "destinationId": "13",
+                                "description": "update ASN record",
+                                "technology": "WCF.NET",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "76",
+                                "tags": "Relationship",
+                                "sourceId": "74",
+                                "destinationId": "14",
+                                "description": "update ASN documents",
+                                "technology": "SOAP WCF.NET",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "ASP.NET MVC API"
+                    },
+                    {
+                        "id": "15",
+                        "tags": "Element,Container,database",
+                        "name": "OneSCM DB",
+                        "description": "The main database",
+                        "technology": "MS SQL"
+                    },
+                    {
+                        "id": "12",
+                        "tags": "Element,Container",
+                        "name": "OneSCM Website",
+                        "description": "The main public website for the system communication",
+                        "relationships": [
+                            {
+                                "id": "24",
+                                "tags": "Relationship",
+                                "sourceId": "12",
+                                "destinationId": "14",
+                                "description": "calls",
+                                "technology": "SOAP WCF.NET",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "23",
+                                "tags": "Relationship",
+                                "sourceId": "12",
+                                "destinationId": "13",
+                                "description": "calls",
+                                "technology": "SOAP WCF.NET",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "103",
+                                "tags": "Relationship",
+                                "sourceId": "12",
+                                "destinationId": "100",
+                                "description": "redirects to the help pages",
+                                "technology": "HTTP",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "ASP.NET MVC ASPX"
+                    },
+                    {
+                        "id": "101",
+                        "tags": "Element,Container",
+                        "name": "OneSCMWebHelp",
+                        "description": "static HTML web site, auto generated",
+                        "technology": "HTML"
+                    },
+                    {
+                        "id": "100",
+                        "tags": "Element,Container",
+                        "name": "OneSCMWebHelpShell",
+                        "description": "A public website wrapper checking credentials and redirecting requests to OneSCMWebHelp static web site",
+                        "relationships": [
+                            {
+                                "id": "102",
+                                "tags": "Relationship",
+                                "sourceId": "100",
+                                "destinationId": "101",
+                                "description": "redirects",
+                                "technology": "HTTP",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "ASP.NET"
+                    },
+                    {
+                        "id": "14",
+                        "tags": "Element,Container",
+                        "name": "Resonance.EngineWS",
+                        "description": "Internal WCF.NET service working with supply chain documents",
+                        "relationships": [
+                            {
+                                "id": "39",
+                                "tags": "Relationship",
+                                "sourceId": "14",
+                                "destinationId": "32",
+                                "description": "puts a message to process a document",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "28",
+                                "tags": "Relationship",
+                                "sourceId": "14",
+                                "destinationId": "15",
+                                "description": "reads, saves a document",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "WCF.NET"
+                    },
+                    {
+                        "id": "105",
+                        "tags": "Element,Container",
+                        "name": "Resonance.SCWS",
+                        "description": "Internal WCF service setting up the workflow",
+                        "relationships": [
+                            {
+                                "id": "114",
+                                "tags": "Relationship",
+                                "sourceId": "105",
+                                "destinationId": "15",
+                                "description": "updates the runpath and workflow",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "WCF.NET"
+                    },
+                    {
+                        "id": "104",
+                        "tags": "Element,Container",
+                        "name": "Resonance.SCWS.Proxy",
+                        "description": "Public proxy WCF service for Workflow set up",
+                        "relationships": [
+                            {
+                                "id": "110",
+                                "tags": "Relationship",
+                                "sourceId": "104",
+                                "destinationId": "105",
+                                "description": "redirects requests",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "WCF.NET"
+                    },
+                    {
+                        "id": "13",
+                        "tags": "Element,Container",
+                        "name": "Resonance.WS",
+                        "description": "Internal WCF.NET service providing data to OneSCM Website",
+                        "relationships": [
+                            {
+                                "id": "29",
+                                "tags": "Relationship",
+                                "sourceId": "13",
+                                "destinationId": "16",
+                                "description": "reads RNIF send status",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "38",
+                                "tags": "Relationship",
+                                "sourceId": "13",
+                                "destinationId": "32",
+                                "description": "puts a message to process a document",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "27",
+                                "tags": "Relationship",
+                                "sourceId": "13",
+                                "destinationId": "15",
+                                "description": "reads/updates UI data",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "WCF.NET"
+                    },
+                    {
+                        "id": "57",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "ResonanceErpInqueue",
+                        "description": "windows service processing messages incoming ERP systems",
+                        "relationships": [
+                            {
+                                "id": "91",
+                                "tags": "Relationship",
+                                "sourceId": "57",
+                                "destinationId": "32",
+                                "description": "dequeue",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "84",
+                                "tags": "Relationship",
+                                "sourceId": "57",
+                                "destinationId": "15",
+                                "description": "reads/updates",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": ".NET"
+                    },
+                    {
+                        "id": "59",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "ResonanceErpOutqueue",
+                        "description": "windows service sending documents to the host's ERP system",
+                        "relationships": [
+                            {
+                                "id": "90",
+                                "tags": "Relationship",
+                                "sourceId": "59",
+                                "destinationId": "9",
+                                "description": "sends a document to the destination ERP system",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "83",
+                                "tags": "Relationship",
+                                "sourceId": "59",
+                                "destinationId": "15",
+                                "description": "reads/updates",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": ".NET"
+                    },
+                    {
+                        "id": "56",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "ResonanceFileListener",
+                        "description": "windows service importing files",
+                        "relationships": [
+                            {
+                                "id": "70",
+                                "tags": "Relationship",
+                                "sourceId": "56",
+                                "destinationId": "68",
+                                "description": "listens and downloads a document",
+                                "technology": "SFTP",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "92",
+                                "tags": "Relationship",
+                                "sourceId": "56",
+                                "destinationId": "32",
+                                "description": "dequeue",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "82",
+                                "tags": "Relationship",
+                                "sourceId": "56",
+                                "destinationId": "15",
+                                "description": "reads/updates",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "72",
+                                "tags": "Relationship",
+                                "sourceId": "56",
+                                "destinationId": "19",
+                                "description": "send a document to process",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": ".NET"
+                    },
+                    {
+                        "id": "58",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "ResonanceInqueue",
+                        "description": "windows service processing incoming messages from trading partners",
+                        "relationships": [
+                            {
+                                "id": "81",
+                                "tags": "Relationship",
+                                "sourceId": "58",
+                                "destinationId": "15",
+                                "description": "reads/updates",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": ".NET"
+                    },
+                    {
+                        "id": "60",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "ResonanceOutqueue",
+                        "description": "windows service sending documents to trading partners",
+                        "relationships": [
+                            {
+                                "id": "88",
+                                "tags": "Relationship",
+                                "sourceId": "60",
+                                "destinationId": "44",
+                                "description": "sends a message for further deliver via RNIF",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "80",
+                                "tags": "Relationship",
+                                "sourceId": "60",
+                                "destinationId": "15",
+                                "description": "reads/updates",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "89",
+                                "tags": "Relationship",
+                                "sourceId": "60",
+                                "destinationId": "9",
+                                "description": "sends document to the destination",
+                                "technology": "HTTP/HTTPS, FTP/SFTP",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "71",
+                                "tags": "Relationship",
+                                "sourceId": "60",
+                                "destinationId": "19",
+                                "description": "sends document for AS2 communication",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "93",
+                                "tags": "Relationship",
+                                "sourceId": "60",
+                                "destinationId": "32",
+                                "description": "dequeue",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": ".NET"
+                    },
+                    {
+                        "id": "66",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "ResonanceParkAndRetryService",
+                        "description": "windows service that parks documents coming out of sequence and resumes the workflow process when the sequence is restored",
+                        "relationships": [
+                            {
+                                "id": "94",
+                                "tags": "Relationship",
+                                "sourceId": "66",
+                                "destinationId": "32",
+                                "description": "dequeue",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "79",
+                                "tags": "Relationship",
+                                "sourceId": "66",
+                                "destinationId": "15",
+                                "description": "reads/updates",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": ".NET"
+                    },
+                    {
+                        "id": "67",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "ResonanceWatcher",
+                        "description": "technical windows service that monitors the health of other windows services",
+                        "relationships": [
+                            {
+                                "id": "95",
+                                "tags": "Relationship",
+                                "sourceId": "67",
+                                "destinationId": "32",
+                                "description": "dequeue",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "78",
+                                "tags": "Relationship",
+                                "sourceId": "67",
+                                "destinationId": "15",
+                                "description": "reads/updates",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": ".NET"
+                    },
+                    {
+                        "id": "65",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "ResonanceWorfklow",
+                        "description": "windows service that processes the workflow for each document",
+                        "relationships": [
+                            {
+                                "id": "96",
+                                "tags": "Relationship",
+                                "sourceId": "65",
+                                "destinationId": "32",
+                                "description": "dequeue",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "77",
+                                "tags": "Relationship",
+                                "sourceId": "65",
+                                "destinationId": "15",
+                                "description": "reads/updates",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": ".NET"
+                    },
+                    {
+                        "id": "16",
+                        "tags": "Element,Container,database",
+                        "name": "RNIF DB",
+                        "description": "database for RNIF transactions",
+                        "technology": "MS SQL"
+                    },
+                    {
+                        "id": "44",
+                        "tags": "Element,Container",
+                        "name": "RNIFAdapter",
+                        "description": "Public Web API listening for a message confirmation",
+                        "relationships": [
+                            {
+                                "id": "53",
+                                "tags": "Relationship",
+                                "sourceId": "44",
+                                "destinationId": "45",
+                                "description": "redirects HTTP/RNIF",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "ASP.NET ASPX, HTTP, RNIF"
+                    },
+                    {
+                        "id": "42",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "RNIFAsynchService",
+                        "description": "a windows service responsible for sending RNIF messages",
+                        "relationships": [
+                            {
+                                "id": "48",
+                                "tags": "Relationship",
+                                "sourceId": "42",
+                                "destinationId": "16",
+                                "description": "read/update the document",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "49",
+                                "tags": "Relationship",
+                                "sourceId": "42",
+                                "destinationId": "9",
+                                "description": "sends a document",
+                                "technology": "RNIF",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "47",
+                                "tags": "Relationship",
+                                "sourceId": "42",
+                                "destinationId": "46",
+                                "description": "dequeue a message to process",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "RNIF, .NET"
+                    },
+                    {
+                        "id": "43",
+                        "tags": "Element,Container",
+                        "name": "RNIFConfig",
+                        "description": "internal website for RNIF system configuration",
+                        "relationships": [
+                            {
+                                "id": "52",
+                                "tags": "Relationship",
+                                "sourceId": "43",
+                                "destinationId": "16",
+                                "description": "reads UI data, puts a request for processing",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "ASP.NET ASPX"
+                    },
+                    {
+                        "id": "45",
+                        "tags": "Element,Container",
+                        "name": "RNIFInterface",
+                        "description": "internal web API to handle HTTP/RNIF communications",
+                        "relationships": [
+                            {
+                                "id": "54",
+                                "tags": "Relationship",
+                                "sourceId": "45",
+                                "destinationId": "46",
+                                "description": "sends a message to process",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "55",
+                                "tags": "Relationship",
+                                "sourceId": "45",
+                                "destinationId": "16",
+                                "description": "saves a document for processing",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "ASP.NET ASPX, HTTP/RNIF"
+                    },
+                    {
+                        "id": "106",
+                        "tags": "Element,Container",
+                        "name": "RunPathDesigner",
+                        "description": "Windows UI tool to set up run path for the document",
+                        "relationships": [
+                            {
+                                "id": "109",
+                                "tags": "Relationship",
+                                "sourceId": "106",
+                                "destinationId": "104",
+                                "description": "calls",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Windows Forms .NET"
+                    },
+                    {
+                        "id": "61",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "ShipmentStatusProcessor",
+                        "description": "windows service that tracks shipping status",
+                        "relationships": [
+                            {
+                                "id": "85",
+                                "tags": "Relationship",
+                                "sourceId": "61",
+                                "destinationId": "15",
+                                "description": "reads/updates",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "73",
+                                "tags": "Relationship",
+                                "sourceId": "61",
+                                "destinationId": "62",
+                                "description": "sends a shipment number to track",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": ".NET"
+                    },
+                    {
+                        "id": "20",
+                        "tags": "Element,Container",
+                        "name": "UploadPages",
+                        "description": "Internal Web API to handle incoming documents",
+                        "relationships": [
+                            {
+                                "id": "40",
+                                "tags": "Relationship",
+                                "sourceId": "20",
+                                "destinationId": "15",
+                                "description": "reads, saves a document",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "33",
+                                "tags": "Relationship",
+                                "sourceId": "20",
+                                "destinationId": "32",
+                                "description": "puts a message to process a document",
+                                "technology": "HTTP",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "ASP.NET MVC"
+                    },
+                    {
+                        "id": "32",
+                        "tags": "Element,Container",
+                        "name": "UploadPagesMVC",
+                        "description": "internal API, a wrapper for AWS SQS",
+                        "relationships": [
+                            {
+                                "id": "37",
+                                "tags": "Relationship",
+                                "sourceId": "32",
+                                "destinationId": "36",
+                                "description": "puts, gets, deletes a message",
+                                "technology": "AWS SQS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "ASP.NET MVC API"
+                    },
+                    {
+                        "id": "19",
+                        "tags": "Element,Container",
+                        "name": "UploadRes",
+                        "description": "The main public Web API",
+                        "relationships": [
+                            {
+                                "id": "30",
+                                "tags": "Relationship",
+                                "sourceId": "19",
+                                "destinationId": "20",
+                                "description": "redirects HTTP request",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "31",
+                                "tags": "Relationship",
+                                "sourceId": "19",
+                                "destinationId": "21",
+                                "description": "redirects http (AS2) request",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "ASP.NET ASPX"
+                    },
+                    {
+                        "id": "64",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "WFScheduler",
+                        "description": "windows service running scheduled jobs",
+                        "relationships": [
+                            {
+                                "id": "97",
+                                "tags": "Relationship",
+                                "sourceId": "64",
+                                "destinationId": "32",
+                                "description": "dequeue",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "86",
+                                "tags": "Relationship",
+                                "sourceId": "64",
+                                "destinationId": "15",
+                                "description": "reads/updates",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": ".NET"
+                    },
+                    {
+                        "id": "63",
+                        "tags": "Element,Container,windowsservice",
+                        "name": "WFSmtpSend",
+                        "description": "a windows service that sends emails and attachments via SMTP protocol",
+                        "relationships": [
+                            {
+                                "id": "87",
+                                "tags": "Relationship",
+                                "sourceId": "63",
+                                "destinationId": "15",
+                                "description": "reads/updates",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "98",
+                                "tags": "Relationship",
+                                "sourceId": "63",
+                                "destinationId": "32",
+                                "description": "dequeue",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": ".NET"
+                    },
+                    {
+                        "id": "107",
+                        "tags": "Element,Container",
+                        "name": "WorkflowModeller",
+                        "description": "Windows UI tool to set up the document workflow",
+                        "relationships": [
+                            {
+                                "id": "111",
+                                "tags": "Relationship",
+                                "sourceId": "107",
+                                "destinationId": "104",
+                                "description": "calls",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Windows Forms .NET"
+                    }
+                ]
+            },
+            {
+                "id": "46",
+                "tags": "Element,Software System,queue",
+                "name": "RNIF message queue",
+                "description": "MSMQ",
+                "location": "External"
+            },
+            {
+                "id": "8",
+                "tags": "Element,Software System,system",
+                "name": "Source Software System",
+                "description": "Software system used by Customer to send or receive document (ERP, FTP or custom made software)",
+                "relationships": [
+                    {
+                        "id": "10",
+                        "tags": "Relationship",
+                        "sourceId": "8",
+                        "destinationId": "4",
+                        "description": "provides documents",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "69",
+                        "tags": "Relationship",
+                        "sourceId": "8",
+                        "destinationId": "68",
+                        "description": "uploads documents",
+                        "technology": "SFTP",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "99",
+                        "tags": "Relationship",
+                        "sourceId": "8",
+                        "destinationId": "19",
+                        "description": "sends a document",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "22",
+                "tags": "Element,Software System",
+                "name": "Windows Certificate Store",
+                "description": "local certificate storage",
+                "location": "Unspecified"
+            }
+        ],
+        "deploymentNodes": []
+    },
+    "documentation": {
+        "sections": [],
+        "decisions": [],
+        "images": []
+    },
+    "views": {
+        "systemContextViews": [
+            {
+                "softwareSystemId": "4",
+                "key": "OneSCMEnterpriseContextDiagram",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "4"
+                        ],
+                        "relationships": []
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "2"
+                        ],
+                        "relationships": [
+                            "6"
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "elements": [
+                            "1",
+                            "3"
+                        ],
+                        "relationships": [
+                            "5",
+                            "7"
+                        ]
+                    },
+                    {
+                        "order": 4,
+                        "elements": [
+                            "8",
+                            "9"
+                        ],
+                        "relationships": [
+                            "11",
+                            "10"
+                        ]
+                    }
+                ],
+                "enterpriseBoundaryVisible": true,
+                "elements": [
+                    {
+                        "id": "1",
+                        "x": 245,
+                        "y": 910
+                    },
+                    {
+                        "id": "2",
+                        "x": 1905,
+                        "y": 935
+                    },
+                    {
+                        "id": "3",
+                        "x": 1010,
+                        "y": 915
+                    },
+                    {
+                        "id": "4",
+                        "x": 1005,
+                        "y": 360
+                    },
+                    {
+                        "id": "8",
+                        "x": 160,
+                        "y": 200
+                    },
+                    {
+                        "id": "9",
+                        "x": 1885,
+                        "y": 210
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "5"
+                    },
+                    {
+                        "id": "6"
+                    },
+                    {
+                        "id": "11"
+                    },
+                    {
+                        "id": "7"
+                    },
+                    {
+                        "id": "10"
+                    }
+                ]
+            }
+        ],
+        "containerViews": [
+            {
+                "softwareSystemId": "4",
+                "description": "OneSCM Web API",
+                "key": "OneSCMWebAPI",
+                "paperSize": "A4_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "22",
+                            "36",
+                            "15",
+                            "19",
+                            "8",
+                            "62",
+                            "74",
+                            "20",
+                            "21"
+                        ],
+                        "relationships": [
+                            "99",
+                            "108",
+                            "40",
+                            "30",
+                            "41",
+                            "31",
+                            "75"
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "32"
+                        ],
+                        "relationships": [
+                            "33",
+                            "34",
+                            "37"
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "elements": [
+                            "13"
+                        ],
+                        "relationships": [
+                            "27",
+                            "38"
+                        ]
+                    }
+                ],
+                "elements": [
+                    {
+                        "id": "22",
+                        "x": 75,
+                        "y": 1630
+                    },
+                    {
+                        "id": "13",
+                        "x": 2495,
+                        "y": 1085
+                    },
+                    {
+                        "id": "36",
+                        "x": 3045,
+                        "y": 1870
+                    },
+                    {
+                        "id": "15",
+                        "x": 1300,
+                        "y": 1905
+                    },
+                    {
+                        "id": "19",
+                        "x": 1265,
+                        "y": 555
+                    },
+                    {
+                        "id": "8",
+                        "x": 100,
+                        "y": 40
+                    },
+                    {
+                        "id": "62",
+                        "x": 2450,
+                        "y": 40
+                    },
+                    {
+                        "id": "74",
+                        "x": 2485,
+                        "y": 550
+                    },
+                    {
+                        "id": "20",
+                        "x": 1575,
+                        "y": 1065
+                    },
+                    {
+                        "id": "21",
+                        "x": 845,
+                        "y": 1065
+                    },
+                    {
+                        "id": "32",
+                        "x": 2245,
+                        "y": 1880
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "40"
+                    },
+                    {
+                        "id": "41"
+                    },
+                    {
+                        "id": "75"
+                    },
+                    {
+                        "id": "31"
+                    },
+                    {
+                        "id": "30"
+                    },
+                    {
+                        "id": "108"
+                    },
+                    {
+                        "id": "118"
+                    },
+                    {
+                        "id": "27"
+                    },
+                    {
+                        "id": "37"
+                    },
+                    {
+                        "id": "34"
+                    },
+                    {
+                        "id": "33"
+                    },
+                    {
+                        "id": "99"
+                    },
+                    {
+                        "id": "38"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "4",
+                "description": "Main Engine",
+                "key": "OneSCMEngine",
+                "paperSize": "A3_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "66",
+                            "56",
+                            "67",
+                            "68",
+                            "57",
+                            "36",
+                            "58",
+                            "59",
+                            "8",
+                            "9",
+                            "60",
+                            "61",
+                            "62",
+                            "63",
+                            "64",
+                            "65"
+                        ],
+                        "relationships": [
+                            "89",
+                            "69",
+                            "90",
+                            "70",
+                            "73"
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "13",
+                            "14",
+                            "15",
+                            "105",
+                            "20",
+                            "32"
+                        ],
+                        "relationships": [
+                            "27",
+                            "28",
+                            "114",
+                            "91",
+                            "92",
+                            "93",
+                            "94",
+                            "95",
+                            "96",
+                            "97",
+                            "98",
+                            "33",
+                            "77",
+                            "78",
+                            "79",
+                            "37",
+                            "38",
+                            "39",
+                            "80",
+                            "81",
+                            "82",
+                            "83",
+                            "40",
+                            "84",
+                            "85",
+                            "86",
+                            "87"
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "elements": [
+                            "21"
+                        ],
+                        "relationships": [
+                            "34",
+                            "41"
+                        ]
+                    }
+                ],
+                "elements": [
+                    {
+                        "id": "66",
+                        "x": 4235,
+                        "y": 1150
+                    },
+                    {
+                        "id": "56",
+                        "x": 2375,
+                        "y": 730
+                    },
+                    {
+                        "id": "67",
+                        "x": 4250,
+                        "y": 1465
+                    },
+                    {
+                        "id": "68",
+                        "x": 980,
+                        "y": 60
+                    },
+                    {
+                        "id": "13",
+                        "x": 660,
+                        "y": 995
+                    },
+                    {
+                        "id": "57",
+                        "x": 3200,
+                        "y": 740
+                    },
+                    {
+                        "id": "36",
+                        "x": 40,
+                        "y": 2965
+                    },
+                    {
+                        "id": "14",
+                        "x": 665,
+                        "y": 650
+                    },
+                    {
+                        "id": "58",
+                        "x": 3740,
+                        "y": 1465
+                    },
+                    {
+                        "id": "15",
+                        "x": 1950,
+                        "y": 2375
+                    },
+                    {
+                        "id": "59",
+                        "x": 3690,
+                        "y": 735
+                    },
+                    {
+                        "id": "105",
+                        "x": 1190,
+                        "y": 995
+                    },
+                    {
+                        "id": "8",
+                        "x": 65,
+                        "y": 30
+                    },
+                    {
+                        "id": "9",
+                        "x": 4215,
+                        "y": 30
+                    },
+                    {
+                        "id": "60",
+                        "x": 4240,
+                        "y": 745
+                    },
+                    {
+                        "id": "61",
+                        "x": 3260,
+                        "y": 2385
+                    },
+                    {
+                        "id": "62",
+                        "x": 3280,
+                        "y": 2955
+                    },
+                    {
+                        "id": "63",
+                        "x": 3240,
+                        "y": 1130
+                    },
+                    {
+                        "id": "20",
+                        "x": 75,
+                        "y": 660
+                    },
+                    {
+                        "id": "64",
+                        "x": 3740,
+                        "y": 1140
+                    },
+                    {
+                        "id": "21",
+                        "x": 80,
+                        "y": 990
+                    },
+                    {
+                        "id": "65",
+                        "x": 3245,
+                        "y": 1465
+                    },
+                    {
+                        "id": "32",
+                        "x": 85,
+                        "y": 1775
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "70"
+                    },
+                    {
+                        "id": "93"
+                    },
+                    {
+                        "id": "94"
+                    },
+                    {
+                        "id": "91"
+                    },
+                    {
+                        "id": "92"
+                    },
+                    {
+                        "id": "97"
+                    },
+                    {
+                        "id": "73"
+                    },
+                    {
+                        "id": "98"
+                    },
+                    {
+                        "id": "95"
+                    },
+                    {
+                        "id": "96"
+                    },
+                    {
+                        "id": "90"
+                    },
+                    {
+                        "id": "28"
+                    },
+                    {
+                        "id": "27"
+                    },
+                    {
+                        "id": "69"
+                    },
+                    {
+                        "id": "89"
+                    },
+                    {
+                        "id": "114"
+                    },
+                    {
+                        "id": "82"
+                    },
+                    {
+                        "id": "83"
+                    },
+                    {
+                        "id": "80"
+                    },
+                    {
+                        "id": "81"
+                    },
+                    {
+                        "id": "40"
+                    },
+                    {
+                        "id": "86"
+                    },
+                    {
+                        "id": "41"
+                    },
+                    {
+                        "id": "87"
+                    },
+                    {
+                        "id": "84"
+                    },
+                    {
+                        "id": "85"
+                    },
+                    {
+                        "id": "37"
+                    },
+                    {
+                        "id": "34"
+                    },
+                    {
+                        "id": "33"
+                    },
+                    {
+                        "id": "78"
+                    },
+                    {
+                        "id": "77"
+                    },
+                    {
+                        "id": "79"
+                    },
+                    {
+                        "id": "38"
+                    },
+                    {
+                        "id": "39"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "4",
+                "description": "OneSCM Web applications",
+                "key": "OneSCMWebApplications",
+                "paperSize": "A4_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "1",
+                            "12",
+                            "100",
+                            "2",
+                            "101",
+                            "13",
+                            "3",
+                            "36",
+                            "14",
+                            "15",
+                            "16"
+                        ],
+                        "relationships": [
+                            "23",
+                            "24",
+                            "102",
+                            "103",
+                            "27",
+                            "28",
+                            "29"
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "32"
+                        ],
+                        "relationships": [
+                            "37",
+                            "38",
+                            "39"
+                        ]
+                    }
+                ],
+                "elements": [
+                    {
+                        "id": "12",
+                        "x": 550,
+                        "y": 670
+                    },
+                    {
+                        "id": "13",
+                        "x": 845,
+                        "y": 1210
+                    },
+                    {
+                        "id": "36",
+                        "x": 2625,
+                        "y": 1935
+                    },
+                    {
+                        "id": "14",
+                        "x": 305,
+                        "y": 1215
+                    },
+                    {
+                        "id": "15",
+                        "x": 390,
+                        "y": 1955
+                    },
+                    {
+                        "id": "16",
+                        "x": 1075,
+                        "y": 1965
+                    },
+                    {
+                        "id": "1",
+                        "x": 75,
+                        "y": 20
+                    },
+                    {
+                        "id": "100",
+                        "x": 1880,
+                        "y": 670
+                    },
+                    {
+                        "id": "2",
+                        "x": 575,
+                        "y": 20
+                    },
+                    {
+                        "id": "101",
+                        "x": 1885,
+                        "y": 1195
+                    },
+                    {
+                        "id": "3",
+                        "x": 1175,
+                        "y": 25
+                    },
+                    {
+                        "id": "32",
+                        "x": 1890,
+                        "y": 1930
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "29"
+                    },
+                    {
+                        "id": "28"
+                    },
+                    {
+                        "id": "27"
+                    },
+                    {
+                        "id": "37"
+                    },
+                    {
+                        "id": "24"
+                    },
+                    {
+                        "id": "23"
+                    },
+                    {
+                        "id": "102"
+                    },
+                    {
+                        "id": "115"
+                    },
+                    {
+                        "id": "38"
+                    },
+                    {
+                        "id": "103"
+                    },
+                    {
+                        "id": "39"
+                    },
+                    {
+                        "id": "117"
+                    },
+                    {
+                        "id": "116"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "4",
+                "key": "OneSCMWorfklowContainer",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "3",
+                            "15",
+                            "104",
+                            "105",
+                            "106",
+                            "107"
+                        ],
+                        "relationships": [
+                            "110",
+                            "111",
+                            "112",
+                            "113",
+                            "114",
+                            "109"
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "65"
+                        ],
+                        "relationships": [
+                            "77"
+                        ]
+                    }
+                ],
+                "elements": [
+                    {
+                        "id": "3",
+                        "x": 15,
+                        "y": 285
+                    },
+                    {
+                        "id": "15",
+                        "x": 1320,
+                        "y": 1260
+                    },
+                    {
+                        "id": "104",
+                        "x": 1310,
+                        "y": 295
+                    },
+                    {
+                        "id": "105",
+                        "x": 1310,
+                        "y": 795
+                    },
+                    {
+                        "id": "106",
+                        "x": 615,
+                        "y": 115
+                    },
+                    {
+                        "id": "107",
+                        "x": 615,
+                        "y": 570
+                    },
+                    {
+                        "id": "65",
+                        "x": 2000,
+                        "y": 1265
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "109"
+                    },
+                    {
+                        "id": "111"
+                    },
+                    {
+                        "id": "77"
+                    },
+                    {
+                        "id": "110"
+                    },
+                    {
+                        "id": "113"
+                    },
+                    {
+                        "id": "112"
+                    },
+                    {
+                        "id": "114"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "4",
+                "key": "OneSCMContainer",
+                "paperSize": "A2_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "22",
+                            "44",
+                            "12",
+                            "45",
+                            "13",
+                            "46",
+                            "14",
+                            "36",
+                            "15",
+                            "16",
+                            "19",
+                            "1",
+                            "2",
+                            "3",
+                            "8",
+                            "9",
+                            "20",
+                            "42",
+                            "21",
+                            "32",
+                            "43"
+                        ],
+                        "relationships": [
+                            "23",
+                            "24",
+                            "47",
+                            "48",
+                            "27",
+                            "49",
+                            "28",
+                            "29",
+                            "50",
+                            "51",
+                            "30",
+                            "52",
+                            "31",
+                            "53",
+                            "54",
+                            "33",
+                            "55",
+                            "99",
+                            "34",
+                            "37",
+                            "38",
+                            "39",
+                            "108",
+                            "40",
+                            "41"
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "66",
+                            "56",
+                            "67",
+                            "57",
+                            "68",
+                            "58",
+                            "59",
+                            "60",
+                            "61",
+                            "62",
+                            "63",
+                            "74",
+                            "64",
+                            "65"
+                        ],
+                        "relationships": [
+                            "88",
+                            "89",
+                            "69",
+                            "90",
+                            "91",
+                            "70",
+                            "92",
+                            "71",
+                            "93",
+                            "72",
+                            "94",
+                            "73",
+                            "95",
+                            "96",
+                            "75",
+                            "97",
+                            "76",
+                            "98",
+                            "77",
+                            "78",
+                            "79",
+                            "80",
+                            "81",
+                            "82",
+                            "83",
+                            "84",
+                            "85",
+                            "86",
+                            "87"
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "elements": [
+                            "100",
+                            "101",
+                            "104",
+                            "105",
+                            "106",
+                            "107"
+                        ],
+                        "relationships": [
+                            "110",
+                            "111",
+                            "102",
+                            "103",
+                            "109"
+                        ]
+                    }
+                ],
+                "elements": [
+                    {
+                        "id": "66",
+                        "x": 175,
+                        "y": 1435
+                    },
+                    {
+                        "id": "44",
+                        "x": 5970,
+                        "y": 785
+                    },
+                    {
+                        "id": "22",
+                        "x": 825,
+                        "y": 4555
+                    },
+                    {
+                        "id": "67",
+                        "x": 175,
+                        "y": 1100
+                    },
+                    {
+                        "id": "45",
+                        "x": 6220,
+                        "y": 1760
+                    },
+                    {
+                        "id": "68",
+                        "x": 3390,
+                        "y": 230
+                    },
+                    {
+                        "id": "46",
+                        "x": 5645,
+                        "y": 4565
+                    },
+                    {
+                        "id": "74",
+                        "x": 2465,
+                        "y": 775
+                    },
+                    {
+                        "id": "32",
+                        "x": 2355,
+                        "y": 3960
+                    },
+                    {
+                        "id": "12",
+                        "x": 1765,
+                        "y": 745
+                    },
+                    {
+                        "id": "56",
+                        "x": 3195,
+                        "y": 785
+                    },
+                    {
+                        "id": "13",
+                        "x": 1605,
+                        "y": 1320
+                    },
+                    {
+                        "id": "57",
+                        "x": 185,
+                        "y": 3810
+                    },
+                    {
+                        "id": "36",
+                        "x": 1690,
+                        "y": 4555
+                    },
+                    {
+                        "id": "14",
+                        "x": 2180,
+                        "y": 1330
+                    },
+                    {
+                        "id": "58",
+                        "x": 185,
+                        "y": 3505
+                    },
+                    {
+                        "id": "15",
+                        "x": 3865,
+                        "y": 3775
+                    },
+                    {
+                        "id": "59",
+                        "x": 180,
+                        "y": 3180
+                    },
+                    {
+                        "id": "16",
+                        "x": 6515,
+                        "y": 3940
+                    },
+                    {
+                        "id": "19",
+                        "x": 4405,
+                        "y": 795
+                    },
+                    {
+                        "id": "1",
+                        "x": 235,
+                        "y": 140
+                    },
+                    {
+                        "id": "100",
+                        "x": 800,
+                        "y": 750
+                    },
+                    {
+                        "id": "2",
+                        "x": 660,
+                        "y": 140
+                    },
+                    {
+                        "id": "101",
+                        "x": 805,
+                        "y": 1165
+                    },
+                    {
+                        "id": "3",
+                        "x": 5870,
+                        "y": 140
+                    },
+                    {
+                        "id": "104",
+                        "x": 4965,
+                        "y": 2895
+                    },
+                    {
+                        "id": "105",
+                        "x": 4975,
+                        "y": 3740
+                    },
+                    {
+                        "id": "106",
+                        "x": 4685,
+                        "y": 2355
+                    },
+                    {
+                        "id": "8",
+                        "x": 2630,
+                        "y": 180
+                    },
+                    {
+                        "id": "107",
+                        "x": 5215,
+                        "y": 2365
+                    },
+                    {
+                        "id": "9",
+                        "x": 4965,
+                        "y": 185
+                    },
+                    {
+                        "id": "60",
+                        "x": 175,
+                        "y": 2845
+                    },
+                    {
+                        "id": "61",
+                        "x": 180,
+                        "y": 2500
+                    },
+                    {
+                        "id": "62",
+                        "x": 1795,
+                        "y": 195
+                    },
+                    {
+                        "id": "63",
+                        "x": 200,
+                        "y": 4130
+                    },
+                    {
+                        "id": "42",
+                        "x": 5675,
+                        "y": 1760
+                    },
+                    {
+                        "id": "20",
+                        "x": 3755,
+                        "y": 1780
+                    },
+                    {
+                        "id": "64",
+                        "x": 175,
+                        "y": 1780
+                    },
+                    {
+                        "id": "21",
+                        "x": 4250,
+                        "y": 1785
+                    },
+                    {
+                        "id": "65",
+                        "x": 170,
+                        "y": 2135
+                    },
+                    {
+                        "id": "43",
+                        "x": 6470,
+                        "y": 795
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "70"
+                    },
+                    {
+                        "id": "93"
+                    },
+                    {
+                        "id": "72"
+                    },
+                    {
+                        "id": "91"
+                    },
+                    {
+                        "id": "51"
+                    },
+                    {
+                        "id": "97"
+                    },
+                    {
+                        "id": "53"
+                    },
+                    {
+                        "id": "76"
+                    },
+                    {
+                        "id": "95"
+                    },
+                    {
+                        "id": "30"
+                    },
+                    {
+                        "id": "29"
+                    },
+                    {
+                        "id": "27"
+                    },
+                    {
+                        "id": "23"
+                    },
+                    {
+                        "id": "111"
+                    },
+                    {
+                        "id": "69"
+                    },
+                    {
+                        "id": "88"
+                    },
+                    {
+                        "id": "113"
+                    },
+                    {
+                        "id": "48"
+                    },
+                    {
+                        "id": "115"
+                    },
+                    {
+                        "id": "117"
+                    },
+                    {
+                        "id": "83"
+                    },
+                    {
+                        "id": "81"
+                    },
+                    {
+                        "id": "41"
+                    },
+                    {
+                        "id": "87"
+                    },
+                    {
+                        "id": "85"
+                    },
+                    {
+                        "id": "109"
+                    },
+                    {
+                        "id": "34"
+                    },
+                    {
+                        "id": "55"
+                    },
+                    {
+                        "id": "78"
+                    },
+                    {
+                        "id": "99"
+                    },
+                    {
+                        "id": "38"
+                    },
+                    {
+                        "id": "103"
+                    },
+                    {
+                        "id": "94"
+                    },
+                    {
+                        "id": "50"
+                    },
+                    {
+                        "id": "71"
+                    },
+                    {
+                        "id": "92"
+                    },
+                    {
+                        "id": "52"
+                    },
+                    {
+                        "id": "73"
+                    },
+                    {
+                        "id": "98"
+                    },
+                    {
+                        "id": "54"
+                    },
+                    {
+                        "id": "75"
+                    },
+                    {
+                        "id": "96"
+                    },
+                    {
+                        "id": "31"
+                    },
+                    {
+                        "id": "90"
+                    },
+                    {
+                        "id": "28"
+                    },
+                    {
+                        "id": "118"
+                    },
+                    {
+                        "id": "24",
+                        "vertices": [
+                            {
+                                "x": 3540,
+                                "y": 1730
+                            }
+                        ]
+                    },
+                    {
+                        "id": "110"
+                    },
+                    {
+                        "id": "47"
+                    },
+                    {
+                        "id": "89"
+                    },
+                    {
+                        "id": "112"
+                    },
+                    {
+                        "id": "49"
+                    },
+                    {
+                        "id": "114"
+                    },
+                    {
+                        "id": "116"
+                    },
+                    {
+                        "id": "82"
+                    },
+                    {
+                        "id": "80"
+                    },
+                    {
+                        "id": "40"
+                    },
+                    {
+                        "id": "86"
+                    },
+                    {
+                        "id": "84"
+                    },
+                    {
+                        "id": "108"
+                    },
+                    {
+                        "id": "37"
+                    },
+                    {
+                        "id": "33"
+                    },
+                    {
+                        "id": "77"
+                    },
+                    {
+                        "id": "102"
+                    },
+                    {
+                        "id": "79"
+                    },
+                    {
+                        "id": "39"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "4",
+                "key": "RNIFContainer",
+                "paperSize": "A4_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "44",
+                            "45",
+                            "13",
+                            "46",
+                            "3",
+                            "16",
+                            "9",
+                            "42",
+                            "43"
+                        ],
+                        "relationships": [
+                            "55",
+                            "47",
+                            "48",
+                            "49",
+                            "29",
+                            "50",
+                            "51",
+                            "52",
+                            "53",
+                            "54"
+                        ]
+                    }
+                ],
+                "elements": [
+                    {
+                        "id": "44",
+                        "x": 2265,
+                        "y": 820
+                    },
+                    {
+                        "id": "45",
+                        "x": 2255,
+                        "y": 1380
+                    },
+                    {
+                        "id": "13",
+                        "x": 185,
+                        "y": 705
+                    },
+                    {
+                        "id": "46",
+                        "x": 1350,
+                        "y": 2075
+                    },
+                    {
+                        "id": "3",
+                        "x": 830,
+                        "y": 100
+                    },
+                    {
+                        "id": "16",
+                        "x": 680,
+                        "y": 1535
+                    },
+                    {
+                        "id": "9",
+                        "x": 1625,
+                        "y": 170
+                    },
+                    {
+                        "id": "42",
+                        "x": 1290,
+                        "y": 1095
+                    },
+                    {
+                        "id": "43",
+                        "x": 840,
+                        "y": 705
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "29"
+                    },
+                    {
+                        "id": "50"
+                    },
+                    {
+                        "id": "51"
+                    },
+                    {
+                        "id": "52"
+                    },
+                    {
+                        "id": "53"
+                    },
+                    {
+                        "id": "54"
+                    },
+                    {
+                        "id": "55"
+                    },
+                    {
+                        "id": "47"
+                    },
+                    {
+                        "id": "48"
+                    },
+                    {
+                        "id": "49"
+                    }
+                ]
+            }
+        ],
+        "configuration": {
+            "branding": {},
+            "styles": {
+                "elements": [
+                    {
+                        "tag": "Person",
+                        "background": "#0000a0",
+                        "color": "#ffffff",
+                        "shape": "Person"
+                    },
+                    {
+                        "tag": "database",
+                        "background": "#ff8040",
+                        "color": "#ffffff",
+                        "shape": "Cylinder"
+                    },
+                    {
+                        "tag": "queue",
+                        "background": "#400040",
+                        "color": "#ffffff",
+                        "shape": "Pipe"
+                    },
+                    {
+                        "tag": "system",
+                        "background": "#804000",
+                        "color": "#ffffff",
+                        "shape": "Hexagon"
+                    },
+                    {
+                        "tag": "windowsservice",
+                        "background": "#004000",
+                        "color": "#ffffff"
+                    }
+                ],
+                "relationships": []
+            },
+            "terminology": {},
+            "lastSavedView": "OneSCMWorfklowContainer"
+        },
+        "systemLandscapeViews": [],
+        "componentViews": [],
+        "dynamicViews": [],
+        "deploymentViews": [],
+        "filteredViews": []
+    }
+}
