@@ -1,0 +1,11 @@
+manager: Luis Castillero
+teamroom: Eng.QAIntegrationMaintenance
+units: 
+    - unit: https://jira.devfactory.com/browse/QAP-8513
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Create an automation to check new tests failing in less than 2w
+    effort: 1
+    impact: 5.0

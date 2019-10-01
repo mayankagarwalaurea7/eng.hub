@@ -1,0 +1,81 @@
+manager: Luis Castillero
+teamroom: Eng.QAIntegrationMaintenance
+direct reports: 10
+ICs: 
+    - IC: 
+        IC name: Abdalla Mahmoud
+        date: 2019-10-01
+        unit: N/A
+        coaching: Lyris does not have any build this week. You need to check this everyday, just before filling the CiC as it is part of what need to write. Get this scheduled on your calendar.
+        performance assessment: lowPerformer
+        continueCoaching:  true
+    - IC: 
+        IC name: Banjo Mofesola Paul
+        date: 2019-10-01
+        unit: N/A
+        coaching: IC is on vacations. Marked to S2G
+        performance assessment: lowPerformer
+        continueCoaching: false
+    - IC:
+        IC name: Dan Adera
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/EXMC-3141
+        coaching: When you have blockers such as EXMC-3141 you need to escalate as soon as possible. This type of blockers require a daily follow up. Please start doing so each day and mention me on each follow up.
+        performance assessment: averagePerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Dmitry Zhdakhin
+        date: 2019-10-01
+        unit: N/A
+        coaching: Good work on the license issue on TsPortal. Now spread the knownledge through out the team. Do a session to do the transfer.
+        performance assessment: highPerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Evgeny Astafev
+        date: 2019-10-01
+        unit: N/A
+        coaching: No ticket was created today, and you have products that have less than 98%. Exinda is the best example. Please create a analysis of the few failures that it has and create the appropiate tickets.
+        performance assessment: highPerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Nabhan Nazar
+        date: 2019-10-01
+        unit: N/A
+        coaching:  BizApps job was stuck, this is something you need to check each day. Please schedule this activity on your start of the day and put the result on the CiC app.
+        performance assessment: averagePerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Naman Kumar
+        date: 2019-10-01
+        unit: N/A
+        coaching: Your current products have high pass rate, but your metric is really low. Start looking at ways for the QA automation to have better quality by removal static waits or data generation.  
+        performance assessment: highPerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Shoaib Mansoor
+        date: 2019-10-01
+        unit: N/A
+        coaching: Your current products have high pass rate, but your metric is really low. Start looking at ways for the QA automation to have better quality by removal static waits or data generation.
+        performance assessment: highPerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Sumaiya Kidwai
+        date: 2019-10-01
+        unit: N/A
+        coaching: JiveHOP is a company wide priority. You need to be more proactive on getting it working. Although we were waiting for the PCA response, I was the one following the issue up. Understand your priorities to avoid these situations.  
+        performance assessment: averagePerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Vandana Pathak
+        date: 2019-10-01
+        unit: N/A
+        coaching: There has been little improvement on your products this week and Kayako that used to be stabilized it had the pass rate dropped. You should check this daily and start creating tickets for the fixes you apply daily. Please schedule this review on your calendar and add it to your CiC app. 
+        performance assessment: lowPerformer
+        continueCoaching: true
+    - IC: 
+        IC name: Zaur Kandokhov
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/EVCID-13899
+        coaching: You have several products that do not have a report on TR at the moment of this writting. Make this as a habit to check and fix these cases. Please add this to your start of the day and add it to your CiC app. 
+        performance assessment: averagePerformer
+        continueCoaching: true
