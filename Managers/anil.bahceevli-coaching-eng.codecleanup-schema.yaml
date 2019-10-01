@@ -30,3 +30,17 @@ ICs:
           coaching: If the duplication resides in the same class, then all similar issues within the class must be fixed #<free text coaching>
           performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
           continue coaching: true #true | false
+        - IC:
+            IC name: Nwachukwu Okafor #<IC name>
+            date: 2019/10/01 #<date>
+            unit:  https://jira.devfactory.com/browse/CC-840658 #<Jira link>
+            coaching: Align with new QE Reviewer, don't let your PRs effected with new QE Reviewer by following Internal IQBs
+            performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+            continue coaching: true #true | false
+        - IC:
+            IC name: Ibrahim Kayode Ajibade #<IC name>
+            date: 2019/10/01 #<date>
+            unit: https://jira.devfactory.com/browse/CC-840770 #<Jira link>
+            coaching: After getting Formatting BRP merged, divert to Dead Code, Dupliate Code and Memory Leak ticket types to increase business value
+            performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+            continue coaching: true #true | false
