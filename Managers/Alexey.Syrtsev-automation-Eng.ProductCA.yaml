@@ -1,11 +1,11 @@
 manager: Alexey Syrtsev
-teamroom: Eng.ProductCA,Eng.ProductCA.QE
+teamroom: Eng.ProductCA
 units: 
-    - unit: https://jira.devfactory.com/issues/?jql=type%20%3D%20%22End-to-end%20Test%22%20
+    - unit: https://jira.devfactory.com/issues/?jql=type%20%3D%20%22Eng%20Problem%22%20and%20%22Eng.Problem%20Category%22%20%3D%20%22Architecture%20doc%22%20
 automation:
     product agnostic: true
     product specific: 
         ##- product name: !!str #product names
-    description: Verification of many E2E PCA QE Review QBs can be automated (verify links, format, dependencies etc). Automation can be shared within PCAs to perform verification locally or can be introduced on jira transition (in both cases an external service - like it is done for RDS generation - can be implemented. It will make this tool more flexible and tolerant to process changes. Also, it won't be consuming jira resources). Other context-specific QBs can be delegated to QAs (check my process improvement suggestion).  
-    effort: 3 #days
-    impact: 10
+    description: Arch docs should be linked to the product structure. So, Arch Docs generation shouldn't go in 'Deliver anything 5 times' direction. PCA should define a product structure yaml file. Then, each arch doc should be generated to cover an aspect of an item in that file. Once coverage is done, product is considered as documented. Once PCA changes yaml file (because of new feature or discovered gap) - a new bunch of Arch Doc tasks can be generated 
+    effort: 5 #days
+    impact: 15 #or more - depending on product structure definition
