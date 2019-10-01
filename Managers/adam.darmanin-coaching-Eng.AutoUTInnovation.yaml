@@ -1,0 +1,18 @@
+manager: Adam Darmanin #<manager name>
+teamroom: Eng.AutoUTInnovation #<teamroom name>
+direct reports: 2
+ICs:
+    - IC:
+        IC name: Glauco Acquino #<IC name>
+        date: 2019/10/01 #<date>
+        unit: https://confluence.devfactory.com/display/AUTT/2019-10-01+W39+Retrospective  #<Jira link>
+        coaching: Retrospective of where tool can be improved. We discovered several improvements we can undertake later on.  #<free text coaching>
+        performance assessment: highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false
+    - IC:
+        IC name: Konstantinos Papakonstantinou #<IC name>
+        date: 2019/10/01 #<date>
+        unit: https://confluence.devfactory.com/display/AUTT/2019-10-01+W39+Retrospective  #<Jira link>
+        coaching: We identified MVP for a HUT-ready tool. Our features will be template generation, styled using AUT to fit resharper styles with resolution of fakes and references. #<free text coaching>
+        performance assessment: highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false

@@ -1,0 +1,19 @@
+manager: Adam Darmanin #<manager name>
+teamroom: Eng.UnitTest.QE #<teamroom name>
+units:
+    - unit: AUTEST-5761
+    - unit: AUTEST-5426
+    - unit: AUTEST-4982
+    - unit: AUTEST-4978
+    - unit: AUTEST-4975
+    - unit: AUTEST-4980
+    - unit: AUTEST-4977
+    - unit: AUTEST-4971
+    - unit: AUTEST-4983
+    - unit: AUTEST-4981
+product agnostic: true #true | false
+product specific:
+    - product name:  #product names
+description: Created a new concept for automating assertions within our HUT templates. ICs run this tool and their selected class members get automatically asserted.
+effort: 20 #days
+impact: %30 #<%> at teamroom level

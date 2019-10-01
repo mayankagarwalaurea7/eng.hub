@@ -1,0 +1,13 @@
+manager: Adam Darmanin #<manager name>
+teamroom: Eng.UnitTest.QE #<teamroom name>
+units:
+    - https://jira.devfactory.com/secure/Dashboard.jspa?selectPageId=52609
+recommendation:
+    eliminate waste: true #true | false
+    improve quality bar: false #true | false
+    product agnostic: true #true | false
+    product specific:
+        - product name:  #product names
+    description: Created whole system to process and track orders and delivery on JIRA for ease of use and automation.   #<string>
+    effort: 14 #<int> days
+    impact: %10 #<%> at teamroom level
