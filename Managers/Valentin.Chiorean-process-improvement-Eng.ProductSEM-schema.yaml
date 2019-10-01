@@ -1,0 +1,14 @@
+manager: Valentin Chiorean
+teamroom: Eng.ProductSEM
+units:
+  - unit: https://jira.devfactory.com/issues/?filter=91710&jql=(type%20%3D%20%22Eng%20Problem%22%20AND%20status%20in%20(%22Identified%22%2C%20%22Approve%20Work%22%2C%20%22In%20Study%22%2C%20%22Solution%20Definition%22%2C%20%22In%20Implementation%22%2C%20Blocked)%20OR%20type%20%3D%20%22Product%20Commit%20QE%20Review%22%20AND%20status%20in%20(Open))%20AND%20AutoRank%20is%20not%20EMPTY%20AND%20AutoRank%20%3E%3D%20201900000%20AND%20project%20%3D%20JVCLD%20ORDER%20BY%20project%2C%20AutoRank
+recommendation:
+  eliminate waste: true
+  improve quality bar: true
+  product agnostic: false
+  product specific: true
+                      - product name: Jive Cloud Core (JVCLD)
+  description: AL, support and other parties are still creating Eng Problems in JVCLD, which generates issues for visibility, as we are watching only tickets in JCLDALL.
+  Move all tickets created in JVCLD to JCLDALL and remove write permissions for other people than PSEM + VP, to avoid this in the future
+  effort: 1
+  impact: 1

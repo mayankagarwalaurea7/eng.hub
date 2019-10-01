@@ -1,0 +1,48 @@
+manager: Valentin Chiorean
+teamroom: Eng.Manager
+direct reports: 2
+ICs:
+  - IC:
+      IC name: Laszlo Robert Albert
+      date: 2019-09-30
+      unit: https://jira.devfactory.com/browse/JCLDALL-30479
+      coaching: Ticket will be taken out of 2019.2.4 release and added to Micro-2.2.0 to avoid mixing multitenant with not multi tenant releases.
+      performance assessment: highPerformer
+      continue coaching: true
+
+      IC name: Rares Zehan
+      date: 2019-09-30
+      unit: https://jira.devfactory.com/browse/JVMBL-7079
+      coaching: Do not close this ticket unless it's confirmed it is no longer needd. BAS integration might not be required but it has to be confirmed by Gowtham Ramachandra
+      performance assessment: averagePerformer
+      continue coaching: true
+
+      # Oct 1
+
+      IC name: Laszlo Robert Albert
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/JCLDALL-34023
+        coaching: Ticket staying too long in review. To reach out to https://xo.chat.crossover.com/core/channels/eng_productca_qe_sup to ask QE review to review, and follow up on the group after 2-3 hours
+        performance assessment: averagePerformer
+        continue coaching: true
+
+      IC name: Laszlo Robert Albert
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/JCLDALL-30678
+        coaching: Ticket staying too long in review. To reach out to https://xo.chat.crossover.com/core/channels/eng_productca_qe_sup to ask QE review to review, and follow up on the group after 2-3 hours
+        performance assessment: averagePerformer
+        continue coaching: true
+
+      IC name: Laszlo Robert Albert
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/JCLDALL-34940
+        coaching: To add Core component, so that we can reduce level of nclarity in JCLDALL project. This should apply to all Eng Problems that Robert works on
+        performance assessment: averagePerformer
+        continue coaching: true
+
+      IC name: Laszlo Robert Albert
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/JVCLD-36010
+        coaching: When he sees tickets created in JVCLD to escalate to PSEM andmove tickets to JCLDALL + notify the reporter, as there was a decision few months back to stop using JVCLD project.
+        performance assessment: averagePerformer
+        continue coaching: true
