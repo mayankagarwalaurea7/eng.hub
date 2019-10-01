@@ -1,0 +1,46 @@
+manager: Erdem Ergin
+teamroom: Eng.Import.DueDiligence
+direct reports: 4
+ICs: 
+    - IC: 
+        IC name: Anton Belousov
+        date: 30-Sep-2019
+        unit: https://jira.devfactory.com/browse/ENGDD-2699
+        coaching: >
+          Ensure the quality of the documents generated. 
+          All links should be working and all files should be shared as Anyone with the link can comment. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Hudson Tavares
+        date: 30-Sep-2019
+        unit: https://jira.devfactory.com/browse/ENGDD-2360
+        coaching: >
+          Provided coaching on how to prepare People Grid report and how to use templates
+
+          We should consider all the data available and make best use of it. Specifically since we know jira project 
+          product mapping on Accuris, we should utilize this information to identify the most active IC's on products.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Ricardo Cunha
+        date: 30-Sep-2019
+        unit: https://jira.devfactory.com/browse/ENGDD-2310
+        coaching: >
+          Pay attention to English usage on reports
+
+          Focus on the importance of a code piece instead of LoC. 
+          LoC could be used for comparing languages among a codebase but will not present value on its own.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Asad Ali
+        date: 30-Sep-2019
+        unit: https://jira.devfactory.com/browse/ENGDD-2460
+        coaching: >
+          Absolute parameterized URL's (with ${ ... }) should be categorized as Undefined.
+
+          We need to start utilizing Jira WorkLog feature to record efforts on tickets.
+          Create task for improvement activities and log time directly on order tickets for report generation activities.     
+        performance assessment: averagePerformer
+        continue coaching: true
