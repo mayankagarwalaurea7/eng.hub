@@ -1,0 +1,348 @@
+---
+id: 47160
+name: Beckon
+revision: 17
+lastModifiedDate: '2019-10-01T18:02:06Z'
+lastModifiedUser: daniel.farenzena@trilogy.com
+lastModifiedAgent: structurizr-web/1624
+model:
+  people:
+  - id: '70'
+    tags: Element,Person
+    name: Customer Success Staff
+    location: Internal
+  - id: '71'
+    tags: Element,Person
+    name: Professional Services Staff
+    location: Internal
+  - id: '38'
+    tags: Element,Person
+    name: User
+    relationships:
+    - id: '66'
+      tags: Relationship
+      sourceId: '38'
+      destinationId: '10'
+      description: Logins by SSO
+      interactionStyle: Synchronous
+    - id: '65'
+      tags: Relationship
+      sourceId: '38'
+      destinationId: '8'
+      description: Interacts with
+      interactionStyle: Synchronous
+    location: External
+  softwareSystems:
+  - id: '52'
+    tags: Element,Software System,external
+    name: 3rd party cloud information system
+    location: External
+  - id: '5'
+    tags: Element,Software System
+    name: Analytics
+    location: Internal
+    containers:
+    - id: '11'
+      tags: Element,Container
+      name: analytics2
+      technology: Java
+    - id: '9'
+      tags: Element,Container
+      name: app
+      relationships:
+      - id: '43'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '24'
+        description: Requests Data
+        interactionStyle: Synchronous
+      - id: '16'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '7'
+        description: Manages
+        interactionStyle: Synchronous
+      - id: '44'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '11'
+        description: Requests Data
+        interactionStyle: Synchronous
+      - id: '39'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '18'
+        description: Manages
+        interactionStyle: Synchronous
+      - id: '42'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '23'
+        description: Requests Data
+        interactionStyle: Synchronous
+      - id: '45'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '31'
+        description: Manages
+        interactionStyle: Synchronous
+      - id: '41'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '21'
+        description: Manages
+        interactionStyle: Synchronous
+      - id: '13'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '6'
+        description: Defines email
+        interactionStyle: Synchronous
+      - id: '40'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '19'
+        description: Manages
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '10'
+      tags: Element,Container
+      name: auth
+      relationships:
+      - id: '50'
+        tags: Relationship
+        sourceId: '10'
+        destinationId: '49'
+        description: Requests
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '6'
+      tags: Element,Container
+      name: Email Sender
+      relationships:
+      - id: '64'
+        tags: Relationship
+        sourceId: '6'
+        destinationId: '38'
+        description: Sends email
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '7'
+      tags: Element,Container
+      name: scheduledReportServer
+      description: Defines email
+      relationships:
+      - id: '12'
+        tags: Relationship
+        sourceId: '7'
+        destinationId: '6'
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '8'
+      tags: Element,Container
+      name: Single-Page Application
+      relationships:
+      - id: '46'
+        tags: Relationship
+        sourceId: '8'
+        destinationId: '9'
+        description: Request by REST API
+        interactionStyle: Synchronous
+      technology: Javascript
+  - id: '1'
+    tags: Element,Software System
+    name: Analytics manipulations with existing data
+    location: Internal
+    containers:
+    - id: '20'
+      tags: Element,Container
+      name: accountHardDeletion
+    - id: '21'
+      tags: Element,Container
+      name: dimensionDeletion
+    - id: '18'
+      tags: Element,Container
+      name: export
+    - id: '19'
+      tags: Element,Container
+      name: export2
+  - id: '51'
+    tags: Element,Software System,external
+    name: Customer Information System
+    relationships:
+    - id: '67'
+      tags: Relationship
+      sourceId: '51'
+      destinationId: '26'
+      description: Pushes data
+      interactionStyle: Synchronous
+    - id: '69'
+      tags: Relationship
+      sourceId: '51'
+      destinationId: '28'
+      description: Pushes data
+      interactionStyle: Synchronous
+    - id: '68'
+      tags: Relationship
+      sourceId: '51'
+      destinationId: '27'
+      description: Pushes data
+      interactionStyle: Synchronous
+    location: External
+  - id: '49'
+    tags: Element,Software System,external
+    name: Customer SSO provider
+    location: External
+  - id: '22'
+    tags: Element,Software System
+    name: Data Monitoring
+    location: Internal
+    containers:
+    - id: '23'
+      tags: Element,Container
+      name: accountMonitor
+    - id: '24'
+      tags: Element,Container
+      name: queuemetric
+  - id: '25'
+    tags: Element,Software System
+    name: Import
+    location: Internal
+    containers:
+    - id: '26'
+      tags: Element,Container
+      name: api
+      relationships:
+      - id: '47'
+        tags: Relationship
+        sourceId: '26'
+        destinationId: '31'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '36'
+      tags: Element,Container
+      name: cachegeneration
+      relationships:
+      - id: '62'
+        tags: Relationship
+        sourceId: '36'
+        destinationId: '36'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '34'
+      tags: Element,Container
+      name: compact
+      relationships:
+      - id: '61'
+        tags: Relationship
+        sourceId: '34'
+        destinationId: '35'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '30'
+      tags: Element,Container
+      name: connector
+      relationships:
+      - id: '56'
+        tags: Relationship
+        sourceId: '30'
+        destinationId: '27'
+        description: Pulls data
+        interactionStyle: Synchronous
+      - id: '57'
+        tags: Relationship
+        sourceId: '30'
+        destinationId: '31'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '29'
+      tags: Element,Container
+      name: connectorDownload
+      relationships:
+      - id: '53'
+        tags: Relationship
+        sourceId: '29'
+        destinationId: '51'
+        description: Pulls data
+        interactionStyle: Synchronous
+      - id: '55'
+        tags: Relationship
+        sourceId: '29'
+        destinationId: '31'
+        description: Pushes data
+        interactionStyle: Synchronous
+      - id: '54'
+        tags: Relationship
+        sourceId: '29'
+        destinationId: '52'
+        description: Pulls data
+        interactionStyle: Synchronous
+    - id: '32'
+      tags: Element,Container
+      name: import
+      relationships:
+      - id: '59'
+        tags: Relationship
+        sourceId: '32'
+        destinationId: '33'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '33'
+      tags: Element,Container
+      name: import2
+      relationships:
+      - id: '60'
+        tags: Relationship
+        sourceId: '33'
+        destinationId: '34'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '35'
+      tags: Element,Container
+      name: indexer
+      relationships:
+      - id: '63'
+        tags: Relationship
+        sourceId: '35'
+        destinationId: '37'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '28'
+      tags: Element,Container
+      name: Mailbox at Google Apps
+    - id: '27'
+      tags: Element,Container
+      name: sftp
+    - id: '31'
+      tags: Element,Container
+      name: txform
+      relationships:
+      - id: '58'
+        tags: Relationship
+        sourceId: '31'
+        destinationId: '31'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '37'
+      tags: Element,Container
+      name: unmappedgeneration
+  deploymentNodes: []
+documentation:
+  sections: []
+  decisions: []
+  images: []
+views:
+  configuration:
+    branding: {}
+    styles:
+      elements: []
+      relationships: []
+    terminology: {}
+    lastSavedView: wefwfw
+  systemLandscapeViews: []
+  systemContextViews: []
+  containerViews: []
+  componentViews: []
+  dynamicViews: []
+  deploymentViews: []
+  filteredViews: []
