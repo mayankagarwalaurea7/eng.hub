@@ -3,15 +3,15 @@ architecture document:
     context:
       C4 L1 system context diagram:             
         diagram link:
-          system description:
-          internal QB:
-            Does the context diagram decribe the system in scope?: yes|no
-            Does the system in scope have interactions with all the users and external systems?: yes|no
-            Is the context diagram shareable with customers (no jargons, acronyms and internal links)?: yes|no
-            Is the C4 context YAML generated through Structurizr?: yes|no
-            Is the summary of the system scope described?: yes|no
-            Are all the external systems' responsibilities described?: yes|no
-            Are all the users' interactions described?: yes|no
+        system description:
+        internal QB:
+          Does the context diagram decribe the system in scope?: yes|no
+          Does the system in scope have interactions with all the users and external systems?: yes|no
+          Is the context diagram shareable with customers (no jargons, acronyms and internal links)?: yes|no
+          Is the C4 context YAML generated through Structurizr?: yes|no
+          Is the summary of the system scope described?: yes|no
+          Are all the external systems' responsibilities described?: yes|no
+          Are all the users' interactions described?: yes|no
     containers:
       - C4 L2 system container diagram:
           name:
