@@ -4,15 +4,15 @@ direct reports: 2
 ICs: 
     - IC: 
         IC name: Hugo Casco
-        date: 09/27/2019
-        unit: https://jira.devfactory.com/browse/CODEALIKE-4404
-        coaching: Setup up automated script for local environment setup so that any IC that needs a local environment setup can do this in an automated fashion.  Also, do the same for AWS setup as well.
+        date: 09/30/2019
+        unit: https://jira.devfactory.com/browse/CODEALIKE-5451
+        coaching: This test case has all 5 ACCs linked to it, but I don't how it achieves all of these in this 1 TC.  Please mark parts of the TC that meet each item.
         performance assessment: averagePerformer
         continue coaching: true
     - IC: 
         IC name: Metin Yarci
-        date: 09/27/2019
-        unit: https://jira.devfactory.com/browse/STRONGTEST-1
-        coaching: Same coaching as yesterday.  He will create E2E and SE7 tickets starting on Monday.
+        date: 09/30/2019
+        unit: All JIRA units have been Arch docs until now.
+        coaching: Coach IC on how and when to create CICD (env setup) and End-to-End tests now.  Also, I will get work queue setup for him.  Will speak with Raghu about this.
         performance assessment: averagePerformer
         continue coaching: true
