@@ -1,11 +1,11 @@
 manager: Alexey Syrtsev
-teamroom: Eng.ProductCA
+teamroom: Eng.Product,Eng.Feature,Eng.Maintenance,Eng.Faster
 units: 
-    - unit: https://jira.devfactory.com/issues/?jql=type%20%3D%20%22Eng%20Problem%22%20and%20%22Eng.Problem%20Category%22%20%3D%20%22Architecture%20doc%22%20
+    - unit: https://jira.devfactory.com/issues/?jql=type%20in%20(%22Feature%20Story%22%2C%22Faster%20Story%22%2C%22Customer%20Defect%22%2CDefect)
 automation:
     product agnostic: true
     product specific: 
         ##- product name: !!str #product names
-    description: Arch docs should be linked to the product structure. So, Arch Docs generation shouldn't go in 'Deliver anything 5 times' direction. PCA should define a product structure yaml file. Then, each arch doc should be generated to cover an aspect of an item in that file. Once coverage is done, product is considered as documented. Once PCA changes yaml file (because of new feature or discovered gap) - a new bunch of Arch Doc tasks can be generated 
-    effort: 5 #days
-    impact: 15 #or more - depending on product structure definition
+    description: We should change our delivery approach from 'Release what is delivered' to 'Deliver what is planned to be released'. Hence, work queues for Feature, Maintenance and Faster should be introduced and prioritized (with Due Dates) according to fixVersions. FixVersions can be defined by PSEMs/PCAs only. It should help Product temas to keep core teams focused on planned deliverables rather than on Core SEMs personal preferences
+    effort: 10 #days
+    impact: 10 #or more - depending on product structure definition
