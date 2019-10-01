@@ -1,0 +1,1713 @@
+---
+model:
+  people:
+  - id: '4'
+    tags: Element,Person,* Users rights * Users management * Access management * Workflow
+      Management * Store rules management
+    name: Admin user
+    description: Allows admins to manage users(create, delete, drop from the system,
+      provide rights, rules and limits). Allows admins to create workflows, migration
+      policies, etc...)
+    relationships:
+    - id: '7'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '1'
+      description: "* Users rights * Users management * Access management * Workflow
+        Management * Store rules management"
+      technology: HTTP
+      interactionStyle: Synchronous
+    - id: '242'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '88'
+      description: Uploads/Downloads assets to the Telescope
+      technology: API
+      interactionStyle: Synchronous
+    - id: '245'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '243'
+      description: Adobe Illustrator Asset processing
+      technology: Adobe API
+      interactionStyle: Synchronous
+    - id: '239'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '237'
+      description: Adobe InDesign Asset processing
+      technology: Adobe API
+      interactionStyle: Synchronous
+    - id: '40'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '23'
+      description: Allows admins to manage users(create, delete, drop from the system,
+        provide rights, rules and limits). Allows admins to create workflows, migration
+        policies, etc...)
+      technology: HTTP
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '5'
+    tags: Element,Person
+    name: System Admin user
+    description: Allows sysadmins to manage licenses, system components, database
+      connections, users connections
+    relationships:
+    - id: '6'
+      tags: Relationship
+      sourceId: '5'
+      destinationId: '1'
+      description: "* License management * DB management * Users connections * Status
+        of components"
+      technology: HTTP
+      interactionStyle: Synchronous
+    - id: '41'
+      tags: Relationship
+      sourceId: '5'
+      destinationId: '23'
+      description: Allows sysadmins to manage licenses, system components, database
+        connections, users connections
+      technology: HTTP
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '2'
+    tags: Element,Person
+    name: User
+    description: Users/Admin users/System users
+    relationships:
+    - id: '3'
+      tags: Relationship
+      sourceId: '2'
+      destinationId: '1'
+      description: "* Upload/download assets * Share, convert assets * Messaging *
+        Execute workflows"
+      technology: HTTP
+      interactionStyle: Synchronous
+    - id: '42'
+      tags: Relationship
+      sourceId: '2'
+      destinationId: '23'
+      description: Allows customers to upload, download, store, manage assets. Provides
+        ability to convert, preview, messaging
+      technology: HTTP
+      interactionStyle: Synchronous
+    - id: '240'
+      tags: Relationship
+      sourceId: '2'
+      destinationId: '237'
+      description: Adobe InDesign Asset processing
+      technology: Adobe API
+      interactionStyle: Synchronous
+    - id: '244'
+      tags: Relationship
+      sourceId: '2'
+      destinationId: '243'
+      description: Adobe Illustrator Asset processing
+      technology: Adobe API
+      interactionStyle: Synchronous
+    - id: '89'
+      tags: Relationship
+      sourceId: '2'
+      destinationId: '88'
+      description: Uploads/Downloads assets to the Telescope
+      interactionStyle: Synchronous
+    location: Unspecified
+  softwareSystems:
+  - id: '20'
+    tags: Element,Software System,ExternalSystem
+    name: Active Directory Server
+    description: Is used for LDAP authentication
+    relationships:
+    - id: '22'
+      tags: Relationship
+      sourceId: '20'
+      destinationId: '1'
+      description: AD server is used to provide LDAP authentication
+      technology: LDAP
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '58'
+      tags: Element,Container,ExternalSystem
+      name: LDAP Service
+      description: Lightweight Directory Access Protocol (LDAP) is an internet protocol
+        used by email and other programs to store and access data from a central server.
+      technology: LDAP
+  - id: '18'
+    tags: Element,Software System,ExternalSystem
+    name: Adobe InDesign System
+    description: Adobe InDesign server integration used to handle INDD assets, make
+      preview and conversions
+    relationships:
+    - id: '19'
+      tags: Relationship
+      sourceId: '18'
+      destinationId: '1'
+      description: Used to store assets, handle conversions for INDD files. PLugin
+        is deployen on the Server and uses API, CORBA is used to communicate with
+        Telescope
+      technology: CORBA
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '57'
+      tags: Element,Container,ExternalSystem
+      name: Adobe InDesign Server
+      description: InDesign Server is a server-side document-processing engine, provided
+        by Adobe. It provides an API by which it can be remotely instructed to open,
+        modify, convert, extract information from, and save InDesign files.
+      technology: InDesign API, C++
+  - id: '12'
+    tags: Element,Software System,ExternalSystem
+    name: Aspera System
+    description: Third party server provides ability to speedup uloading/downloading
+      assets
+    relationships:
+    - id: '52'
+      tags: Relationship
+      sourceId: '12'
+      destinationId: '1'
+      description: Aspera server is used to speedup upload/downloads from customer
+      technology: FASP
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '37'
+      tags: Element,Container,AsperaSystem
+      name: Aspera Proxy
+      description: Aspera FASP Proxy enables the transparent pass-through of FASP
+        transfer sessions across a secure DMZ without impeding transfer speeds or
+        compromising the security of internal networks
+      relationships:
+      - id: '78'
+        tags: Relationship
+        sourceId: '37'
+        destinationId: '36'
+        description: Aspera Proxy can function either as a 6 Aspera Overview forward
+          or reverse proxy, so can be configured to allow organizations to push files
+          across firewalls, both incoming (ingest) and outgoing (download)
+        technology: TCP 9092, TCP and UDP 33001
+        interactionStyle: Synchronous
+      technology: FASP
+    - id: '36'
+      tags: Element,Container,AsperaSystem
+      name: Aspera Server
+      description: Aspera server used to handle user uploading/downloading
+      relationships:
+      - id: '87'
+        tags: Relationship
+        sourceId: '36'
+        destinationId: '1'
+        description: Uploads/Downloads asset to/from Telescope
+        technology: FASP, TCP
+        interactionStyle: Synchronous
+      technology: FASP
+  - id: '73'
+    tags: Element,Software System,ExternalSystem
+    name: Chalex Smartflo
+    description: A 3rd party integration into Telescope via SOAP API that provides
+      workflow processes to be built, applies those processes to project management.
+    relationships:
+    - id: '74'
+      tags: Relationship
+      sourceId: '73'
+      destinationId: '1'
+      description: SOAP API is used to integrate Chalex SmartFlo to the Telescope
+        System
+      technology: SOAP
+      interactionStyle: Synchronous
+    - id: '165'
+      tags: Relationship
+      sourceId: '73'
+      destinationId: '103'
+      description: Integrates to the Telescope System using SOAP API
+      technology: SOAP
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '162'
+      tags: Element,Container,ExternalSystem
+      name: Chalex SmartFlo server
+      description: Chalex SmartFlo server
+      relationships:
+      - id: '163'
+        tags: Relationship
+        sourceId: '162'
+        destinationId: '103'
+        description: Integrates to the Telescope System using SOAP API
+        technology: SOAP
+        interactionStyle: Synchronous
+      - id: '164'
+        tags: Relationship
+        sourceId: '162'
+        destinationId: '1'
+        description: Integrates to the Telescope System using SOAP API
+        technology: SOAP
+        interactionStyle: Synchronous
+      technology: Third party server
+  - id: '49'
+    tags: Element,Software System,ExternalSystem
+    name: Cross-Platform Networking
+    description: Provides ability to store assent on cross-platform shares
+    location: Unspecified
+    containers:
+    - id: '51'
+      tags: Element,Container,CrossPlatformNetworking
+      name: AppleShare server
+      description: MacOS Network disk or directory shared to Telescope a
+      relationships:
+      - id: '210'
+        tags: Relationship
+        sourceId: '51'
+        destinationId: '204'
+        description: Uploads/Downloads assets to the file share
+        technology: API
+        interactionStyle: Synchronous
+      technology: AppleShare, TCP
+    - id: '204'
+      tags: Element,Container,CrossPlatformNetworking,FileSystem
+      name: File System - Apple File System
+      description: File system to store assets
+      technology: Apple file system
+    - id: '205'
+      tags: Element,Container,CrossPlatformNetworking,FileSystem
+      name: File System - Windows File System
+      description: Windows file system to store assets
+      technology: File System
+    - id: '50'
+      tags: Element,Container,CrossPlatformNetworking
+      name: Windows File Server
+      description: Windows Network disk or directory shared to Telescope
+      relationships:
+      - id: '211'
+        tags: Relationship
+        sourceId: '50'
+        destinationId: '205'
+        description: Uploads/Downloads assets to the file share
+        technology: API
+        interactionStyle: Synchronous
+      technology: TCP
+  - id: '8'
+    tags: Element,Software System,ExternalSystem
+    name: Mail Service
+    description: Mail Service is used to send mails to users and other persons
+    relationships:
+    - id: '11'
+      tags: Relationship
+      sourceId: '8'
+      destinationId: '2'
+      description: Sends e-mails
+      interactionStyle: Synchronous
+    - id: '10'
+      tags: Relationship
+      sourceId: '8'
+      destinationId: '4'
+      description: Sends e-mails
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '212'
+      tags: Element,Container,ExternalSystem
+      name: Mail Server
+      description: SMTP mail server
+      relationships:
+      - id: '213'
+        tags: Relationship
+        sourceId: '212'
+        destinationId: '4'
+        description: Sends e-mails
+        interactionStyle: Synchronous
+      - id: '214'
+        tags: Relationship
+        sourceId: '212'
+        destinationId: '2'
+        description: Sends e-mails
+        interactionStyle: Synchronous
+      technology: Third party library, SMTP
+  - id: '14'
+    tags: Element,Software System,ExternalSystem
+    name: MassStore service
+    description: MassStore Server storage
+    relationships:
+    - id: '105'
+      tags: Relationship
+      sourceId: '14'
+      destinationId: '103'
+      description: Integrates to the Telescope System using SOAP API
+      technology: SOAP
+      interactionStyle: Synchronous
+    - id: '15'
+      tags: Relationship
+      sourceId: '14'
+      destinationId: '1'
+      description: Media assets storage system
+      technology: SOAP
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '59'
+      tags: Element,Container,ExternalSystem
+      name: MassStore Server
+      description: MassStore Server application is used to store and manage video
+        assets
+      relationships:
+      - id: '217'
+        tags: Relationship
+        sourceId: '59'
+        destinationId: '1'
+        description: Integrates to the Telescope System using SOAP API
+        technology: SOAP
+        interactionStyle: Synchronous
+      - id: '104'
+        tags: Relationship
+        sourceId: '59'
+        destinationId: '103'
+        description: Integrates to the Telescope System using SOAP API
+        technology: SOAP
+        interactionStyle: Synchronous
+      technology: MassStore, SOAP
+  - id: '47'
+    tags: Element,Software System,ExternalSystem
+    name: SSO - OpenAM
+    description: OpenAM  third party server
+    location: Unspecified
+    containers:
+    - id: '60'
+      tags: Element,Container,ExternalSystem
+      name: OpenAM application
+      description: OpenAM application can use SSO authentication
+      technology: SSO
+  - id: '43'
+    tags: Element,Software System,ExternalSystem
+    name: SSO - PingFederate
+    description: Third party application - PingFederate SSO client
+    location: Unspecified
+    containers:
+    - id: '61'
+      tags: Element,Container,ExternalSystem
+      name: PingFederate application
+      description: PingFederate application can use SSO authentication
+      technology: SSO
+  - id: '45'
+    tags: Element,Software System,ExternalSystem
+    name: SSO - SiteMinder
+    description: SSO - SiteMinder
+    location: Unspecified
+    containers:
+    - id: '62'
+      tags: Element,Container,ExternalSystem
+      name: SiteMinder application
+      description: SiteMinder application can use SSO authentication
+      technology: SSO
+  - id: '1'
+    tags: Element,Software System,TelescopeSystem
+    name: Telescope Asset Management System
+    description: Asset Management System, provides ability to store/manage/share asset
+      technology
+    relationships:
+    - id: '220'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '45'
+      description: SSO authentication
+      technology: SSO
+      interactionStyle: Synchronous
+    - id: '219'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '43'
+      description: SSO authentication
+      technology: SSO
+      interactionStyle: Synchronous
+    - id: '9'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '8'
+      description: Sends request to mail service to send e-mails to users
+      technology: SMTP
+      interactionStyle: Synchronous
+    - id: '208'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '51'
+      description: Network shares are used to store assets
+      technology: AppleShare
+      interactionStyle: Synchronous
+    - id: '222'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '61'
+      description: SSO authentication
+      technology: SSO
+      interactionStyle: Synchronous
+    - id: '223'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '62'
+      description: SSO authentication
+      technology: SSO
+      interactionStyle: Synchronous
+    - id: '202'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '58'
+      description: LDAP integration, retrieve users and group
+      technology: LDAP
+      interactionStyle: Synchronous
+    - id: '218'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '47'
+      description: SSO authentication
+      technology: SSO
+      interactionStyle: Synchronous
+    - id: '13'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '12'
+      description: Uploading/downloading are gone through the Aspera to user
+      technology: FASP
+      interactionStyle: Synchronous
+    - id: '203'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '57'
+      description: InDesign Broker communicates with InDesign Server through the Adobe
+        API
+      technology: API
+      interactionStyle: Synchronous
+    - id: '206'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '49'
+      description: Network shares are used to store assets
+      technology: TCP/IP, AppleShare
+      interactionStyle: Synchronous
+    - id: '201'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '37'
+      description: Uploading/downloading are gone through the Aspera to user
+      technology: FASP
+      interactionStyle: Synchronous
+    - id: '236'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '63'
+      description: Uploads files
+      technology: CORBA
+      interactionStyle: Synchronous
+    - id: '209'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '50'
+      description: Network shares are used to store assets
+      technology: TCP/IP
+      interactionStyle: Synchronous
+    - id: '221'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '60'
+      description: SSO authentication
+      technology: SSO
+      interactionStyle: Synchronous
+    - id: '233'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '16'
+      description: Uploads files
+      technology: CORBA
+      interactionStyle: Synchronous
+    - id: '216'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '212'
+      description: Sends request to mail service to send e-mails to users
+      technology: SMTP
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '190'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Adobe InDesign Broker
+      description: This component enables access to the InDesign Server at ingest
+        time to gather the information necessary to create COVs
+      relationships:
+      - id: '193'
+        tags: Relationship
+        sourceId: '190'
+        destinationId: '18'
+        description: Connects to InDesign Server to get extra information for INDD
+          files
+        technology: API
+        interactionStyle: Synchronous
+      - id: '192'
+        tags: Relationship
+        sourceId: '190'
+        destinationId: '97'
+        description: Access to the DB thgough the Connection Broker
+        technology: CORBA, SQL
+        interactionStyle: Synchronous
+      - id: '194'
+        tags: Relationship
+        sourceId: '190'
+        destinationId: '57'
+        description: Connects to InDesign Server to get extra information for INDD
+          files
+        technology: API
+        interactionStyle: Synchronous
+      - id: '279'
+        tags: Relationship
+        sourceId: '190'
+        destinationId: '272'
+        description: Get DB connections, subscribe on events
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: C/C++, Adobe API
+    - id: '98'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Authentication Broker
+      description: Provides authentication and user management for Telescope
+      relationships:
+      - id: '182'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '47'
+        description: SSO integration
+        technology: SSO
+        interactionStyle: Synchronous
+      - id: '106'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '58'
+        description: Retrieves information from the LDAP server regarding users
+        technology: LDAP
+        interactionStyle: Synchronous
+      - id: '282'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '272'
+        description: Get DB connections, subscribe on events
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '147'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '97'
+        description: Retrieves access to the DBs through the Connection Broker
+        technology: SQL, CORBA
+        interactionStyle: Synchronous
+      - id: '185'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '61'
+        description: SSO integration
+        technology: SSO
+        interactionStyle: Synchronous
+      - id: '109'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '20'
+        description: Retrieves information from the LDAP server regarding users
+        technology: LDAP
+        interactionStyle: Synchronous
+      - id: '187'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '62'
+        description: SSO integration
+        technology: SSO
+        interactionStyle: Synchronous
+      - id: '184'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '43'
+        description: SSO integration
+        technology: SSO
+        interactionStyle: Synchronous
+      - id: '186'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '45'
+        description: SSO integration
+        technology: SSO
+        interactionStyle: Synchronous
+      - id: '298'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '258'
+        description: CORBA Initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '231'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '61'
+        description: SSO authentication
+        technology: SSO
+        interactionStyle: Synchronous
+      - id: '183'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '60'
+        description: SSO integration
+        technology: SSO
+        interactionStyle: Synchronous
+      - id: '232'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '62'
+        description: SSO authentication
+        technology: SSO
+        interactionStyle: Synchronous
+      - id: '297'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '96'
+        description: Uses session through the Session Broker
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: JAVA
+      components:
+      - id: '293'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - Authentication Component
+        description: Provides and handles authentication for users
+        relationships:
+        - id: '295'
+          tags: Relationship
+          sourceId: '293'
+          destinationId: '289'
+          description: Requests for user's info, writes users info to DB
+          technology: JAVA
+          interactionStyle: Synchronous
+        - id: '304'
+          tags: Relationship
+          sourceId: '293'
+          destinationId: '62'
+          description: SSO Integration
+          technology: SSO
+          interactionStyle: Synchronous
+        - id: '302'
+          tags: Relationship
+          sourceId: '293'
+          destinationId: '60'
+          description: SSO Integration
+          technology: SSO
+          interactionStyle: Synchronous
+        - id: '303'
+          tags: Relationship
+          sourceId: '293'
+          destinationId: '61'
+          description: SSO Integration
+          technology: SSO
+          interactionStyle: Synchronous
+        - id: '294'
+          tags: Relationship
+          sourceId: '293'
+          destinationId: '58'
+          description: Get users for authentication
+          technology: LDAP
+          interactionStyle: Synchronous
+        - id: '296'
+          tags: Relationship
+          sourceId: '293'
+          destinationId: '96'
+          description: Uses session through the Session Broker
+          technology: CORBA
+          interactionStyle: Synchronous
+        technology: Java
+        size: 0
+      - id: '291'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - Config Initialization
+        description: Parses config file and setup Authentication Broker
+        relationships:
+        - id: '292'
+          tags: Relationship
+          sourceId: '291'
+          destinationId: '289'
+          description: Provides info regarding connections
+          technology: JAVA, XML
+          interactionStyle: Synchronous
+        technology: Java
+        size: 0
+      - id: '289'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - Connection Manager
+        description: Stores DB connections
+        relationships:
+        - id: '290'
+          tags: Relationship
+          sourceId: '289'
+          destinationId: '97'
+          description: Requests DB connections from the Connection Broker
+          technology: CORBA
+          interactionStyle: Synchronous
+        technology: JAVA
+        size: 0
+      - id: '300'
+        tags: Element,Component,TelesocpeSystem,Components
+        name: CORBA initialization
+        description: Initialize CORBA protocol
+        relationships:
+        - id: '301'
+          tags: Relationship
+          sourceId: '300'
+          destinationId: '258'
+          description: CORBA initialization
+          technology: CORBA
+          interactionStyle: Synchronous
+        technology: CORBA, Java
+        size: 0
+    - id: '132'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Child Indexing Broker
+      description: it Executes indexing and this container is controlled by Indexing
+        Broker
+      relationships:
+      - id: '136'
+        tags: Relationship
+        sourceId: '132'
+        destinationId: '26'
+        description: Indexes Database
+        technology: SQL
+        interactionStyle: Synchronous
+      - id: '137'
+        tags: Relationship
+        sourceId: '132'
+        destinationId: '81'
+        description: Indexes Database
+        technology: SQL
+        interactionStyle: Synchronous
+      - id: '139'
+        tags: Relationship
+        sourceId: '132'
+        destinationId: '68'
+        description: Pushes indexed data for the future search
+        technology: SOLR API
+        interactionStyle: Synchronous
+      technology: Java
+      components:
+      - id: '246'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - Config Initialization
+        description: Parses config file and setup Child Indexer Broker
+        relationships:
+        - id: '252'
+          tags: Relationship
+          sourceId: '246'
+          destinationId: '247'
+          description: Configures the Database to be indexed
+          technology: Java
+          interactionStyle: Synchronous
+        - id: '253'
+          tags: Relationship
+          sourceId: '246'
+          destinationId: '248'
+          description: Configures the SOLR destination to be updated
+          technology: JAVA
+          interactionStyle: Synchronous
+        technology: JAVA
+        size: 0
+      - id: '255'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - CORBA Initialization
+        description: Initialize CORBA communication protocol
+        relationships:
+        - id: '299'
+          tags: Relationship
+          sourceId: '255'
+          destinationId: '258'
+          description: CORBA initialization
+          technology: CORBA
+          interactionStyle: Synchronous
+        technology: JAVA, CORBA
+        size: 0
+      - id: '247'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - DataBase Indexer
+        description: Connects to Database and gets records
+        relationships:
+        - id: '249'
+          tags: Relationship
+          sourceId: '247'
+          destinationId: '248'
+          description: Sends indexed data to SOLR Writer
+          technology: Java
+          interactionStyle: Synchronous
+        - id: '250'
+          tags: Relationship
+          sourceId: '247'
+          destinationId: '97'
+          description: Access to Database through the Connection Broker
+          technology: CORBA, SQL
+          interactionStyle: Synchronous
+        technology: Java, SQL
+        size: 0
+      - id: '248'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - SOLR Writer
+        description: Writes records from DataBase to SOLR server
+        relationships:
+        - id: '251'
+          tags: Relationship
+          sourceId: '248'
+          destinationId: '68'
+          description: Writes indexed data to SOLR server
+          technology: SOLR API
+          interactionStyle: Synchronous
+        technology: Java
+        size: 0
+    - id: '97'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Connection Broker
+      description: is a centralized repository of database connection information
+        and a “name service” for this connection information. The Connection Broker
+        is also responsible for synchronization services at the record_id level for
+        Telescope databases.
+      relationships:
+      - id: '141'
+        tags: Relationship
+        sourceId: '97'
+        destinationId: '26'
+        description: reads/writes data
+        technology: SQL
+        interactionStyle: Synchronous
+      - id: '259'
+        tags: Relationship
+        sourceId: '97'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '142'
+        tags: Relationship
+        sourceId: '97'
+        destinationId: '81'
+        description: reads/writes data
+        technology: SQL
+        interactionStyle: Synchronous
+      technology: Java, , CORBA interface is used to communicate with other brokers
+      components:
+      - id: '271'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - Config Initialization
+        description: Parses config files and registry and setup Connection broker
+        relationships:
+        - id: '284'
+          tags: Relationship
+          sourceId: '271'
+          destinationId: '272'
+          description: DB controller initialization
+          technology: JAVA
+          interactionStyle: Synchronous
+        - id: '285'
+          tags: Relationship
+          sourceId: '271'
+          destinationId: '256'
+          description: CORBA config
+          technology: Java
+          interactionStyle: Synchronous
+        technology: JAVA
+        size: 0
+      - id: '256'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - CORBA Initialization
+        description: Initialize CORBA communication protocol
+        relationships:
+        - id: '286'
+          tags: Relationship
+          sourceId: '256'
+          destinationId: '258'
+          description: Initialization request
+          technology: CORBA, Java
+          interactionStyle: Synchronous
+        - id: '280'
+          tags: Relationship
+          sourceId: '256'
+          destinationId: '258'
+          description: Initialize CORBA
+          technology: CORBA
+          interactionStyle: Synchronous
+        technology: JAVA, CORBA
+        size: 0
+      - id: '272'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - DB Connections Controller
+        description: Stores DB connections list with parameters, provides DB connections,
+          sends events  about connection changes
+        technology: JAVA, CORBA
+        size: 0
+    - id: '156'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Distribution Broker
+      description: The Distribution Broker automates and regulates file distribution,
+        file duplication, and file conversion in Telescope
+      relationships:
+      - id: '172'
+        tags: Relationship
+        sourceId: '156'
+        destinationId: '157'
+        description: Sends messages through the Message Broker
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '171'
+        tags: Relationship
+        sourceId: '156'
+        destinationId: '100'
+        description: Access to assets through the File Brokers
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '260'
+        tags: Relationship
+        sourceId: '156'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: JAVA, CORBA interface is used to communicate with other brokers
+    - id: '101'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Graphics Broker
+      description: Handles the generation of thumbnails and extended views for graphic
+        files, and generates component object views (COVs) for some file types using
+        the appropriate I-Pieces
+      relationships:
+      - id: '155'
+        tags: Relationship
+        sourceId: '101'
+        destinationId: '97'
+        description: Provides preview data to SQL through the Connection Broker
+        technology: SQL, CORBA
+        interactionStyle: Synchronous
+      - id: '261'
+        tags: Relationship
+        sourceId: '101'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '160'
+        tags: Relationship
+        sourceId: '101'
+        destinationId: '100'
+        description: Retrieves previews from the File Broker
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: C/C++, CORBA interface is used to communicate with other brokers
+    - id: '131'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Indexing Broker
+      description: Provides indexing of Database
+      relationships:
+      - id: '134'
+        tags: Relationship
+        sourceId: '131'
+        destinationId: '26'
+        description: Indexes Database
+        technology: SQL
+        interactionStyle: Synchronous
+      - id: '262'
+        tags: Relationship
+        sourceId: '131'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '133'
+        tags: Relationship
+        sourceId: '131'
+        destinationId: '132'
+        description: Distributes indexing to all available Child Indexing Brokers
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '138'
+        tags: Relationship
+        sourceId: '131'
+        destinationId: '68'
+        description: Pushes indexed data for the future search
+        technology: SOLR API
+        interactionStyle: Synchronous
+      - id: '135'
+        tags: Relationship
+        sourceId: '131'
+        destinationId: '81'
+        description: Indexes Database
+        technology: SQL
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '102'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Ingest Broker
+      description: Is used to move files to the servers and to offload some of the
+        processing required to generate thumbnails and extended view
+      relationships:
+      - id: '264'
+        tags: Relationship
+        sourceId: '102'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '152'
+        tags: Relationship
+        sourceId: '102'
+        destinationId: '100'
+        description: Uploads files
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '151'
+        tags: Relationship
+        sourceId: '102'
+        destinationId: '101'
+        description: Request to provide preview and get file properties
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '154'
+        tags: Relationship
+        sourceId: '102'
+        destinationId: '63'
+        description: Uploads files
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '103'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Integration broker
+      description: Provides a Web Services (SOAP) API into the Telescope application
+      relationships:
+      - id: '200'
+        tags: Relationship
+        sourceId: '103'
+        destinationId: '96'
+        description: SOAP request are transformed to CORBA requests
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '263'
+        tags: Relationship
+        sourceId: '103'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '288'
+        tags: Relationship
+        sourceId: '103'
+        destinationId: '272'
+        description: Get DB connections
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: SOAP API, CORBA interface is used to communicate with other brokers
+    - id: '95'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Lookup broker
+      description: The Lookup Broker is used to search internal and external data
+        sources and select values to populate Telescope database fields
+      relationships:
+      - id: '265'
+        tags: Relationship
+        sourceId: '95'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '179'
+        tags: Relationship
+        sourceId: '95'
+        destinationId: '26'
+        description: Read/Write access
+        technology: SQL
+        interactionStyle: Synchronous
+      - id: '181'
+        tags: Relationship
+        sourceId: '95'
+        destinationId: '97'
+        description: Access to DB through the Connection Broker
+        technology: CORBA, SQL
+        interactionStyle: Synchronous
+      - id: '277'
+        tags: Relationship
+        sourceId: '95'
+        destinationId: '272'
+        description: Get DB connections, subscribe on events
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '180'
+        tags: Relationship
+        sourceId: '95'
+        destinationId: '81'
+        description: Read/Write access to DB
+        technology: SQL
+        interactionStyle: Synchronous
+      technology: Java
+      components:
+      - id: '307'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - Config Initialization
+        description: Parses config files and registry and setup Lookup broker, configures
+          External database and lookup fields
+        relationships:
+        - id: '309'
+          tags: Relationship
+          sourceId: '307'
+          destinationId: '308'
+          description: Configures the Lookup core, initializes the DB, table and fields  to
+            be integrated
+          technology: Java
+          interactionStyle: Synchronous
+        technology: JAVA, XML
+        size: 0
+      - id: '305'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - CORBA Initialization
+        description: CORBA protocol initialization
+        relationships:
+        - id: '313'
+          tags: Relationship
+          sourceId: '305'
+          destinationId: '308'
+          description: Provides CORBA interface
+          technology: CORBA, JAVA
+          interactionStyle: Synchronous
+        - id: '306'
+          tags: Relationship
+          sourceId: '305'
+          destinationId: '258'
+          description: CORBA Initialization request
+          technology: CORBA
+          interactionStyle: Synchronous
+        technology: JAVA, CORBA
+        size: 0
+      - id: '308'
+        tags: Element,Component,TelescopeSystem,Components
+        name: Component - Lookup Core
+        description: Integrates with external(internal) DBs, handles seraches
+        relationships:
+        - id: '312'
+          tags: Relationship
+          sourceId: '308'
+          destinationId: '97'
+          description: Uses CB to get DB Connections list
+          technology: CORBA
+          interactionStyle: Synchronous
+        - id: '311'
+          tags: Relationship
+          sourceId: '308'
+          destinationId: '81'
+          description: Sync with Database
+          technology: SQL
+          interactionStyle: Synchronous
+        - id: '310'
+          tags: Relationship
+          sourceId: '308'
+          destinationId: '26'
+          description: Sync with Database
+          technology: SQL
+          interactionStyle: Synchronous
+        technology: Java, SQL
+        size: 0
+    - id: '157'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Message Broker
+      description: Message Broker is typically installed on the Telescope Hub machine.
+        It handles sending, reading and responding to messages from the Telescope
+        system
+      relationships:
+      - id: '158'
+        tags: Relationship
+        sourceId: '157'
+        destinationId: '97'
+        description: Access to DB through the Connection Broker
+        technology: SQL, CORBA
+        interactionStyle: Synchronous
+      - id: '215'
+        tags: Relationship
+        sourceId: '157'
+        destinationId: '212'
+        description: Sends request to mail service to send e-mails to users
+        technology: SMTP
+        interactionStyle: Synchronous
+      - id: '159'
+        tags: Relationship
+        sourceId: '157'
+        destinationId: '8'
+        description: Sends emails
+        technology: SMTP
+        interactionStyle: Synchronous
+      - id: '283'
+        tags: Relationship
+        sourceId: '157'
+        destinationId: '272'
+        description: Get DB connections, subscribe on events
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '266'
+        tags: Relationship
+        sourceId: '157'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '100'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - NTFS File Broker
+      description: manages the check out and check in functions, reports file locations
+        to the database, and manages location links. It also manages the Conversion
+        Broker and Conversion I-Pieces that convert files to other file types.
+      relationships:
+      - id: '196'
+        tags: Relationship
+        sourceId: '100'
+        destinationId: '16'
+        description: Uploads files
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '199'
+        tags: Relationship
+        sourceId: '100'
+        destinationId: '49'
+        description: Uploads files
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      - id: '267'
+        tags: Relationship
+        sourceId: '100'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '161'
+        tags: Relationship
+        sourceId: '100'
+        destinationId: '27'
+        description: Requests for conversions and retrieve converted files
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '189'
+        tags: Relationship
+        sourceId: '100'
+        destinationId: '188'
+        description: Stores and manages files
+        technology: API
+        interactionStyle: Synchronous
+      - id: '176'
+        tags: Relationship
+        sourceId: '100'
+        destinationId: '99'
+        description: Retrieve state of the files
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '197'
+        tags: Relationship
+        sourceId: '100'
+        destinationId: '63'
+        description: Uploads files
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '195'
+        tags: Relationship
+        sourceId: '100'
+        destinationId: '51'
+        description: Uploads files
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      - id: '198'
+        tags: Relationship
+        sourceId: '100'
+        destinationId: '50'
+        description: Uploads files
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      technology: C++
+    - id: '96'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Session Broker
+      description: It provides real-time monitoring for all user actions and server
+        component states
+      relationships:
+      - id: '287'
+        tags: Relationship
+        sourceId: '96'
+        destinationId: '271'
+        description: Provides Session for Connection broker
+        technology: CORBA, JAVA
+        interactionStyle: Synchronous
+      - id: '268'
+        tags: Relationship
+        sourceId: '96'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '170'
+        tags: Relationship
+        sourceId: '96'
+        destinationId: '97'
+        description: Access to DB through the Connection Broker
+        technology: CORBA, SQL
+        interactionStyle: Synchronous
+      - id: '169'
+        tags: Relationship
+        sourceId: '96'
+        destinationId: '102'
+        description: Users action to Upload/Download/Manage assets
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: C/C++
+    - id: '99'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - State Broker
+      description: Synchronizes file access operations among multiple file brokers
+        and provides global data storage
+      relationships:
+      - id: '177'
+        tags: Relationship
+        sourceId: '99'
+        destinationId: '97'
+        description: Access to DB through the Connection Broker
+        technology: CORBA, SQL
+        interactionStyle: Synchronous
+      - id: '269'
+        tags: Relationship
+        sourceId: '99'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '281'
+        tags: Relationship
+        sourceId: '99'
+        destinationId: '272'
+        description: Get DB connections, subscribe on events
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: C/C++
+    - id: '94'
+      tags: Element,Container,TelescopeSystem,Brokers
+      name: Broker - Zoom Broker (including Zoom builder)
+      description: The Zoom Broker is an optional Telescope component that allows
+        users to view large images at multiple levels of magnification, using the
+        Tiled Pyramidal TIFF model to generate images at different resolutions
+      relationships:
+      - id: '173'
+        tags: Relationship
+        sourceId: '94'
+        destinationId: '100'
+        description: Access to assets through the File Broker
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '270'
+        tags: Relationship
+        sourceId: '94'
+        destinationId: '258'
+        description: CORBA component initialization
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '174'
+        tags: Relationship
+        sourceId: '94'
+        destinationId: '97'
+        description: Access to DB through the Connection Broker
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '278'
+        tags: Relationship
+        sourceId: '94'
+        destinationId: '272'
+        description: Get DB connections, subscribe on events
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: C/C++
+    - id: '188'
+      tags: Element,Container,TelescopeSystem,FileSystem
+      name: File System
+      description: File System used by the File Broker to store assets
+      technology: Windows File System
+    - id: '26'
+      tags: Element,Container,TelescopeSystem,DataBase
+      name: MSSQL DataBase Server
+      description: Used to store critical data
+      technology: SQL, MSSQL
+    - id: '258'
+      tags: Element,Container,TelescopeSystem
+      name: NameServer
+      description: CORBA main entry point
+      technology: CORBA, third party library
+    - id: '81'
+      tags: Element,Container,TelescopeSystem,DataBase
+      name: Oracle DataBase Server
+      description: Used to store critical data
+      technology: SQL, Oracle
+    - id: '243'
+      tags: Element,Container,TelescopeSystem,Plugins
+      name: Plugin - Adobe Illustrator Plugin
+      description: Plugin used for extra processing
+      technology: Adobe API, C/C++
+    - id: '237'
+      tags: Element,Container,TelescopeSystem,Plugins
+      name: Plugins - InDesign Plugins
+      description: Adobe InDesignPlugins is used to get extended information from
+        the Adobe Assets
+      relationships:
+      - id: '238'
+        tags: Relationship
+        sourceId: '237'
+        destinationId: '88'
+        description: Client Uploads processed asset
+        technology: HTTP
+        interactionStyle: Synchronous
+      technology: Adobe API, C/C++
+    - id: '68'
+      tags: Element,Container,TelescopeSystem
+      name: SOLR server
+      description: Solr Search performs fast searches without affecting the performance
+        of the Telescope SQL database, by using the Apache Solr search platform running
+        on a separate Solr database.
+      technology: SOLR, SQL, Thirdparty server
+    - id: '88'
+      tags: Element,Container,TelescopeSystem
+      name: Telescope Uploader
+      description: Desktop application is used for Uploading/Downloading assets
+      relationships:
+      - id: '91'
+        tags: Relationship
+        sourceId: '88'
+        destinationId: '23'
+        description: Uploads/Downloads assets to the Telescope System
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '93'
+        tags: Relationship
+        sourceId: '88'
+        destinationId: '37'
+        description: Uploads/Downloads assets
+        technology: FASP
+        interactionStyle: Synchronous
+      - id: '92'
+        tags: Relationship
+        sourceId: '88'
+        destinationId: '12'
+        description: Uploads/Downloads assets
+        technology: FASP
+        interactionStyle: Synchronous
+      technology: C++, HTTP
+    - id: '27'
+      tags: Element,Container,TelescopeSystem
+      name: Transformation Platform
+      description: Used to convert media assets to other formats
+      technology: C++, Java, CORBA
+    - id: '23'
+      tags: Element,Container,TelescopeSystem
+      name: Web Server
+      description: IIS Web server is used as a gateway to Web Applications
+      relationships:
+      - id: '115'
+        tags: Relationship
+        sourceId: '23'
+        destinationId: '114'
+        description: Redirects Users request to the DLManager application, handles
+          request for downloading assets
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '113'
+        tags: Relationship
+        sourceId: '23'
+        destinationId: '111'
+        description: Redirects Users request to the TSWeb application
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '130'
+        tags: Relationship
+        sourceId: '23'
+        destinationId: '116'
+        description: UI interface for users to control applications
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '112'
+        tags: Relationship
+        sourceId: '23'
+        destinationId: '110'
+        description: Redirects Users request to the TSAdmin application
+        technology: HTTP
+        interactionStyle: Synchronous
+      technology: IIS, HTML, JS
+    - id: '114'
+      tags: Element,Container,TelescopeSystem
+      name: WebApplication - DLManager
+      description: Download Manager application
+      relationships:
+      - id: '257'
+        tags: Relationship
+        sourceId: '114'
+        destinationId: '36'
+        description: Files are gone through the Aspera Server
+        technology: FASP, TCP/IP
+        interactionStyle: Synchronous
+      - id: '276'
+        tags: Relationship
+        sourceId: '114'
+        destinationId: '272'
+        description: Get DB connections, subscribe on events
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '143'
+        tags: Relationship
+        sourceId: '114'
+        destinationId: '97'
+        description: Sends requests to the DB
+        technology: SQL, CORBA
+        interactionStyle: Synchronous
+      - id: '178'
+        tags: Relationship
+        sourceId: '114'
+        destinationId: '96'
+        description: Requests for Downloading
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: Java, WebObjects
+    - id: '117'
+      tags: Element,Container,TelescopeSystem
+      name: WebApplication - SiteManager
+      description: SiteManager makes Database available to Telescope sites and connections
+      relationships:
+      - id: '275'
+        tags: Relationship
+        sourceId: '117'
+        destinationId: '272'
+        description: Get DB connections, subscribe on events
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '144'
+        tags: Relationship
+        sourceId: '117'
+        destinationId: '97'
+        description: Sends requests to the DB through the Connection Broker
+        technology: SQL, CORBA
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '110'
+      tags: Element,Container,TelescopeSystem
+      name: WebApplication - TSAdmin
+      description: Application provides interface to Admin Portal
+      relationships:
+      - id: '273'
+        tags: Relationship
+        sourceId: '110'
+        destinationId: '272'
+        description: Get DB connections, subscribe on events
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '168'
+        tags: Relationship
+        sourceId: '110'
+        destinationId: '96'
+        description: All user actions are gone through the Session Broker
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '145'
+        tags: Relationship
+        sourceId: '110'
+        destinationId: '97'
+        description: Sends requests to the DB through the Connection Broker
+        technology: SQL, CORBA
+        interactionStyle: Synchronous
+      technology: Java, JavaScript
+    - id: '111'
+      tags: Element,Container,TelescopeSystem
+      name: WebApplication - TSWeb
+      description: WebApplication Server, handles users request related to general
+        workflow (assets management)
+      relationships:
+      - id: '175'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '94'
+        description: Request for zooming
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '274'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '272'
+        description: Get DB connections, subscribe on events
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '167'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '96'
+        description: All user actions are gone through the Session Broker
+        technology: CORBA
+        interactionStyle: Synchronous
+      - id: '140'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '68'
+        description: Request indexed results
+        technology: SOLR API
+        interactionStyle: Synchronous
+      - id: '146'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '97'
+        description: Sends requests to the DB through the Connection Broker
+        technology: SQL, CORBA
+        interactionStyle: Synchronous
+      - id: '166'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '131'
+        description: Sends a changes to the indexing broker to make it indexed
+        technology: CORBA
+        interactionStyle: Synchronous
+      technology: Java, WebObjects
+    - id: '116'
+      tags: Element,Container,TelescopeSystem
+      name: WebApplication - WebObjects Monitor
+      description: Interface to control all WebApplications
+      relationships:
+      - id: '129'
+        tags: Relationship
+        sourceId: '116'
+        destinationId: '111'
+        description: Manages WebApplication
+        technology: API
+        interactionStyle: Synchronous
+      - id: '126'
+        tags: Relationship
+        sourceId: '116'
+        destinationId: '114'
+        description: Manages WebApplication
+        technology: API
+        interactionStyle: Synchronous
+      - id: '128'
+        tags: Relationship
+        sourceId: '116'
+        destinationId: '110'
+        description: Manages WebApplication
+        technology: API
+        interactionStyle: Synchronous
+      - id: '127'
+        tags: Relationship
+        sourceId: '116'
+        destinationId: '117'
+        description: Manages WebApplication
+        technology: API
+        interactionStyle: Synchronous
+      technology: Java
+  - id: '16'
+    tags: Element,Software System,ExternalSystem
+    name: Xinet File System
+    description: Linux file system integration, implemented via Xinet Broker
+    location: Unspecified
+    containers:
+    - id: '63'
+      tags: Element,Container,TelescopeSystem,ExternalSystem
+      name: Xinet Broker application
+      description: Application is used to be integrated as an external storage to
+        the Telescope System
+      technology: C++, COBRA
+  deploymentNodes: []
