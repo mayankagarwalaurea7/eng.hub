@@ -1,0 +1,9 @@
+manager: Jarosław Karpiak
+teamroom: Eng.CodeReview
+units: 
+    - unit: All
+automation: 
+    product agnostic: true
+    description: Decouple CodeReview team tools from JIRA
+    effort: 30
+    impact: 18.75 to 25 (around 2-3 min. per unit)
