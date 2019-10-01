@@ -1,0 +1,11 @@
+manager: Edouard Napolov
+teamroom: Eng.Manager
+direct reports: 3
+ICs:
+    - IC:
+        IC name: Onkar Singh Rathore
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/MOEMSCID-41281
+        coaching: Instead of reopening ticket, use Undo Transition functionality to avoid FTAR hit
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: true

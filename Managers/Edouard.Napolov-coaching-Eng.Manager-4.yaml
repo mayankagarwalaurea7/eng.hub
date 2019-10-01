@@ -1,0 +1,11 @@
+manager: Edouard Napolov
+teamroom: Eng.Manager
+direct reports: 3
+ICs:
+    - IC:
+        IC name: Ilker KONAR
+        date: 2019-09-26
+        unit: https://jira.devfactory.com/browse/ADCM-18739
+        coaching: Instead of reopening ticket, use Undo Transition functionality to avoid FTAR hit
+        perfrormanceAssessment: topPerformer
+        continueCoaching: true
