@@ -2,8 +2,8 @@
 id: 47094
 name: Workspace 47094
 description: An empty workspace.
-revision: 40
-lastModifiedDate: '2019-10-01T18:22:52Z'
+revision: 44
+lastModifiedDate: '2019-10-01T19:48:16Z'
 lastModifiedUser: kunal.ganglani@aurea.com
 lastModifiedAgent: structurizr-web/1624
 model:
@@ -14,18 +14,18 @@ model:
     description: Manages Users, Groups, Logs, Database, Custom Fields, Metadata, Site
       Configuration
     relationships:
+    - id: '115'
+      tags: Relationship
+      sourceId: '7'
+      destinationId: '111'
+      description: Customizes and configures
+      interactionStyle: Synchronous
     - id: '12'
       tags: Relationship
       sourceId: '7'
       destinationId: '1'
       description: Manages User rights, Access, Groups, Store Rules, Metadata on
       technology: HTTP
-      interactionStyle: Synchronous
-    - id: '69'
-      tags: Relationship
-      sourceId: '7'
-      destinationId: '57'
-      description: Administers Xinet Server via
       interactionStyle: Synchronous
     - id: '30'
       tags: Relationship
@@ -254,18 +254,18 @@ model:
         description: Makes REST API Calls to
         technology: HTTP
         interactionStyle: Synchronous
+      - id: '114'
+        tags: Relationship
+        sourceId: '17'
+        destinationId: '111'
+        description: Makes Rest API calls to
+        technology: HTTP
+        interactionStyle: Synchronous
       - id: '62'
         tags: Relationship
         sourceId: '17'
         destinationId: '46'
         description: uses
-        interactionStyle: Synchronous
-      - id: '68'
-        tags: Relationship
-        sourceId: '17'
-        destinationId: '56'
-        description: makes API calls to
-        technology: HTTP
         interactionStyle: Synchronous
       technology: PHP
       components:
@@ -357,153 +357,10 @@ model:
         size: 0
     - id: '18'
       tags: Element,Container,ProjectID:XIN
-      name: XINET Server
+      name: XINET Server oold
       description: Ingests Assets, Generates Preview, Allow Transformations, Metadata
         Tagging, Manages Assets on File system (volumes)
-      relationships:
-      - id: '33'
-        tags: Relationship
-        sourceId: '18'
-        destinationId: '26'
-        description: Reads/ Writes Asset (Files) to
-        interactionStyle: Synchronous
-      - id: '103'
-        tags: Relationship
-        sourceId: '18'
-        destinationId: '99'
-        description: send email via
-        technology: SMTP
-        interactionStyle: Synchronous
       technology: C/C++
-      components:
-      - id: '64'
-        tags: Element,Component,ProjectID:XIN
-        name: Actions
-        description: Predefines Actions based on Asset
-        relationships:
-        - id: '77'
-          tags: Relationship
-          sourceId: '64'
-          destinationId: '15'
-          description: Sends mail using
-          interactionStyle: Synchronous
-        technology: C/C++
-        size: 0
-      - id: '59'
-        tags: Element,Component,ProjectID:XIN
-        name: dblogd
-        description: Read files events and updates mySQL and Solr, Also checks triggers
-          and call actions
-        relationships:
-        - id: '76'
-          tags: Relationship
-          sourceId: '59'
-          destinationId: '72'
-          description: Reads/ Writes to
-          interactionStyle: Synchronous
-        - id: '75'
-          tags: Relationship
-          sourceId: '59'
-          destinationId: '73'
-          description: Reads events from
-          interactionStyle: Synchronous
-        - id: '71'
-          tags: Relationship
-          sourceId: '59'
-          destinationId: '63'
-          description: Sends events from assets to
-          interactionStyle: Synchronous
-        technology: C/C++
-        size: 0
-      - id: '67'
-        tags: Element,Component,ProjectID:XIN
-        name: FPOD
-        description: Manages Queue used to generate previews and FPO Versions of assets
-        technology: C/C++
-        size: 0
-      - id: '61'
-        tags: Element,Component,ProjectID:XIN
-        name: Hot Folders
-        description: Turns a directory into special folder where events are triggered
-          when files are placed on it
-        relationships:
-        - id: '79'
-          tags: Relationship
-          sourceId: '61'
-          destinationId: '26'
-          description: watches folders (hot folders) on file system
-          interactionStyle: Synchronous
-        technology: C/C++
-        size: 0
-      - id: '54'
-        tags: Element,Component,ProjectID:XIN
-        name: Image Order
-        description: Provides Image transformation options via PortalDI
-        technology: C/C++
-        size: 0
-      - id: '60'
-        tags: Element,Component,ProjectID:XIN
-        name: kshare (KSD)
-        description: Standard Network filesystem service for macOS
-        technology: C/C++
-        size: 0
-      - id: '55'
-        tags: Element,Component,ProjectID:XIN
-        name: Login
-        description: Provides Login for Admin
-        technology: C/C++
-        size: 0
-      - id: '56'
-        tags: Element,Component,ProjectID:XIN
-        name: PortalDI
-        description: Rest Based API available for Portal
-        relationships:
-        - id: '70'
-          tags: Relationship
-          sourceId: '56'
-          destinationId: '63'
-          description: Executes Searches on
-          interactionStyle: Synchronous
-        technology: C/C++
-        size: 0
-      - id: '65'
-        tags: Element,Component,ProjectID:XIN
-        name: SMB
-        description: Provides access to XINET Volumes through SMB Protocol
-        technology: C/C++
-        size: 0
-      - id: '63'
-        tags: Element,Component,ProjectID:XIN
-        name: Solr Util
-        description: Solr Integration Application
-        relationships:
-        - id: '78'
-          tags: Relationship
-          sourceId: '63'
-          destinationId: '74'
-          description: makes API calls to
-          technology: HTTP
-          interactionStyle: Synchronous
-        technology: C/C++
-        size: 0
-      - id: '58'
-        tags: Element,Component,ProjectID:XIN
-        name: Spool Service
-        description: C/C++
-        technology: Allows users to manage files on print queues
-        size: 0
-      - id: '66'
-        tags: Element,Component,ProjectID:XIN
-        name: Video Module
-        description: Libs to Provide Video Capabilities
-        technology: C/C++
-        size: 0
-      - id: '57'
-        tags: Element,Component,ProjectID:XIN
-        name: Web
-        description: XINET Admin UI
-        technology: JavaScript, C/C++
-        size: 0
   - id: '95'
     tags: Element,Software System
     name: Safari Web Brower
@@ -517,6 +374,33 @@ model:
     tags: Element,Software System
     name: webDBLog
     location: Unspecified
+  - id: '110'
+    tags: Element,Software System,ProjectID:XIN
+    name: Xinet Server
+    description: Ingests Assets, Generates Preview, Allow Transformations, Metadata
+      Tagging, Manages Assets on File system (volumes)
+    location: Unspecified
+    containers:
+    - id: '111'
+      tags: Element,Container
+      name: XINET Server
+      description: Ingests Assets, Generates Preview, Allow Transformations, Metadata
+        Tagging, Manages Assets on File system (volumes)
+      relationships:
+      - id: '113'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '99'
+        description: send email via
+        technology: SMTP
+        interactionStyle: Synchronous
+      - id: '112'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '102'
+        description: Reads/ Writes Asset (Files) to
+        interactionStyle: Synchronous
+      technology: C/C++
   deploymentNodes: []
 documentation:
   sections: []
@@ -588,15 +472,12 @@ views:
       - '2'
       - '17'
       - '7'
-      - '18'
       - '19'
       - '20'
       relationships:
       - '23'
       - '24'
-      - '25'
       - '29'
-      - '30'
       - '31'
       - '32'
     - order: 2
@@ -606,8 +487,7 @@ views:
     - order: 3
       elements:
       - '99'
-      relationships:
-      - '103'
+      relationships: []
     - order: 4
       elements:
       - '102'
@@ -619,49 +499,65 @@ views:
       relationships:
       - '107'
       - '108'
+    - order: 6
+      elements:
+      - '111'
+      relationships:
+      - '112'
+      - '113'
     elements:
     - id: '99'
-      x: 2825
-      y: 1455
+      x: 2805
+      y: 1780
     - id: '100'
-      x: 2620
-      y: 115
+      x: 140
+      y: 85
     - id: '34'
-      x: 45
-      y: 715
+      x: 155
+      y: 980
+    - id: '111'
+      x: 1340
+      y: 1800
     - id: '2'
-      x: 1185
-      y: 55
+      x: 1395
+      y: 35
     - id: '102'
-      x: 730
-      y: 1910
+      x: 155
+      y: 1840
     - id: '17'
-      x: 1370
-      y: 1010
+      x: 1355
+      y: 955
     - id: '7'
-      x: 445
-      y: 80
-    - id: '18'
-      x: 450
-      y: 1420
+      x: 2605
+      y: 30
     - id: '19'
-      x: 2215
-      y: 735
+      x: 2800
+      y: 1245
     - id: '20'
-      x: 2215
-      y: 1080
+      x: 2815
+      y: 650
     relationships:
+    - id: '32'
+    - id: '31'
+      vertices:
+      - x: 2430
+        y: 765
     - id: '29'
     - id: '108'
     - id: '107'
-    - id: '25'
     - id: '24'
+      vertices:
+      - x: 2245
+        y: 1410
     - id: '23'
-    - id: '32'
-    - id: '31'
-    - id: '30'
+    - id: '113'
+    - id: '112'
     - id: '104'
-    - id: '103'
+    - id: '115'
+      vertices:
+      - x: 2560
+        y: 1485
+    - id: '114'
   componentViews:
   - softwareSystemId: '1'
     key: XinetPortalComponentView
@@ -790,124 +686,6 @@ views:
     relationships:
     - id: '97'
     - id: '96'
-  - softwareSystemId: '1'
-    key: XinetServerComponentView
-    paperSize: A3_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '55'
-      - '66'
-      - '56'
-      - '67'
-      - '57'
-      - '58'
-      - '59'
-      - '60'
-      - '61'
-      - '63'
-      - '64'
-      - '54'
-      - '65'
-      relationships:
-      - '70'
-      - '71'
-    - order: 2
-      elements:
-      - '17'
-      relationships:
-      - '68'
-    - order: 3
-      elements:
-      - '7'
-      relationships:
-      - '69'
-    - order: 4
-      elements:
-      - '26'
-      - '15'
-      relationships:
-      - '77'
-    - order: 5
-      elements:
-      - '72'
-      - '73'
-      - '74'
-      relationships:
-      - '75'
-      - '76'
-    containerId: '18'
-    elements:
-    - id: '55'
-      x: 1200
-      y: 2815
-    - id: '66'
-      x: 2585
-      y: 2810
-    - id: '56'
-      x: 2245
-      y: 1155
-    - id: '67'
-      x: 3210
-      y: 2820
-    - id: '57'
-      x: 1185
-      y: 2215
-    - id: '58'
-      x: 3220
-      y: 2245
-    - id: '26'
-      x: 370
-      y: 1050
-    - id: '15'
-      x: 380
-      y: 1695
-    - id: '59'
-      x: 3200
-      y: 1660
-    - id: '17'
-      x: 2235
-      y: 445
-    - id: '7'
-      x: 390
-      y: 2165
-    - id: '60'
-      x: 2605
-      y: 2250
-    - id: '61'
-      x: 1895
-      y: 1665
-    - id: '72'
-      x: 3915
-      y: 2170
-    - id: '73'
-      x: 3890
-      y: 1660
-    - id: '63'
-      x: 2550
-      y: 1670
-    - id: '74'
-      x: 3895
-      y: 1075
-    - id: '64'
-      x: 1160
-      y: 1675
-    - id: '54'
-      x: 1900
-      y: 2210
-    - id: '65'
-      x: 1910
-      y: 2805
-    relationships:
-    - id: '70'
-    - id: '71'
-    - id: '76'
-    - id: '75'
-    - id: '78'
-    - id: '77'
-    - id: '69'
-    - id: '68'
-    - id: '79'
   configuration:
     branding: {}
     styles:
@@ -926,7 +704,7 @@ views:
         shape: Box
       relationships: []
     terminology: {}
-    lastSavedView: XinetPortal
+    lastSavedView: XINETContainerView
   systemLandscapeViews: []
   dynamicViews: []
   deploymentViews: []
