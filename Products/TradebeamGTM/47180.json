@@ -1,0 +1,1418 @@
+{
+    "id": 47180,
+    "name": "Tradebeam",
+    "description": "Tradebeam workspace",
+    "revision": 40,
+    "lastModifiedDate": "2019-09-30T09:13:22Z",
+    "lastModifiedUser": "erdem.yilmaz@trilogy.com",
+    "lastModifiedAgent": "structurizr-web/1623",
+    "model": {
+        "people": [
+            {
+                "id": "24",
+                "tags": "Element,Person",
+                "name": "Administrator",
+                "description": "user that perform administration of system",
+                "relationships": [
+                    {
+                        "id": "59",
+                        "tags": "Relationship",
+                        "sourceId": "24",
+                        "destinationId": "21",
+                        "description": "uses",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "43",
+                        "tags": "Relationship",
+                        "sourceId": "24",
+                        "destinationId": "19",
+                        "description": "uses",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "27",
+                "tags": "Element,Person",
+                "name": "Manager",
+                "description": "user that perform management of an Enterprise/Company",
+                "relationships": [
+                    {
+                        "id": "42",
+                        "tags": "Relationship",
+                        "sourceId": "27",
+                        "destinationId": "19",
+                        "description": "uses",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "60",
+                        "tags": "Relationship",
+                        "sourceId": "27",
+                        "destinationId": "21",
+                        "description": "uses",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "31",
+                "tags": "Element,Person",
+                "name": "User",
+                "description": "user that perform day-to-day operations",
+                "relationships": [
+                    {
+                        "id": "57",
+                        "tags": "Relationship",
+                        "sourceId": "31",
+                        "destinationId": "21",
+                        "description": "uses",
+                        "technology": "HTTP",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "32",
+                        "tags": "Relationship",
+                        "sourceId": "31",
+                        "destinationId": "13",
+                        "description": "uses",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "41",
+                        "tags": "Relationship",
+                        "sourceId": "31",
+                        "destinationId": "19",
+                        "description": "uses",
+                        "technology": "HTTPS",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            }
+        ],
+        "softwareSystems": [
+            {
+                "id": "18",
+                "tags": "Element,Software System,External",
+                "name": "3rd Party Integration System",
+                "description": "SOAP/Rest Client",
+                "relationships": [
+                    {
+                        "id": "23",
+                        "tags": "Relationship",
+                        "sourceId": "18",
+                        "destinationId": "13",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "17",
+                "tags": "Element,Software System,External",
+                "name": "3rd Party System (Customer ERP)",
+                "description": "ERP system that Customer have to access GTM integration point",
+                "relationships": [
+                    {
+                        "id": "30",
+                        "tags": "Relationship",
+                        "sourceId": "17",
+                        "destinationId": "26",
+                        "description": "uses",
+                        "technology": "EDI",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "85",
+                        "tags": "Relationship",
+                        "sourceId": "17",
+                        "destinationId": "84",
+                        "description": "exchange files (EDI)",
+                        "technology": "SFTP",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "16",
+                "tags": "Element,Software System,External",
+                "name": "E-mail System",
+                "description": "e-mailing system",
+                "location": "Unspecified"
+            },
+            {
+                "id": "13",
+                "tags": "Element,Software System",
+                "name": "Tradebeam GTM",
+                "description": "Aptean TradeBeam is a global trade management (GTM) software-as-a-service (SaaS) solution that helps companies engaged in international trade streamline their operations, enhance supply chain visibility, and efficiently manage compliance with ever-changing global regulations.",
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "20",
+                        "tags": "Element,Container",
+                        "name": "App Server",
+                        "description": "No business logic (eg. change password)",
+                        "relationships": [
+                            {
+                                "id": "44",
+                                "tags": "Relationship",
+                                "sourceId": "20",
+                                "destinationId": "35",
+                                "description": "uses",
+                                "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JBoss Application Server 5.1.0",
+                        "components": [
+                            {
+                                "id": "63",
+                                "tags": "Element,Component",
+                                "name": "JBoss App Server",
+                                "description": "Dynamic Web Application",
+                                "relationships": [
+                                    {
+                                        "id": "65",
+                                        "tags": "Relationship",
+                                        "sourceId": "63",
+                                        "destinationId": "25",
+                                        "description": "read/write non-business logic",
+                                        "technology": "JDBC",
+                                        "interactionStyle": "Synchronous"
+                                    },
+                                    {
+                                        "id": "66",
+                                        "tags": "Relationship",
+                                        "sourceId": "63",
+                                        "destinationId": "35",
+                                        "description": "connect queues",
+                                        "technology": "JMS",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "JBoss Application Server 5.1.0",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "33",
+                        "tags": "Element,Container",
+                        "name": "Biz Server",
+                        "description": "core business logic",
+                        "relationships": [
+                            {
+                                "id": "45",
+                                "tags": "Relationship",
+                                "sourceId": "33",
+                                "destinationId": "35",
+                                "description": "uses",
+                                "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JBoss Application Server 5.1.0",
+                        "components": [
+                            {
+                                "id": "68",
+                                "tags": "Element,Component",
+                                "name": "Biz Server Message Driven Beans (EJB)",
+                                "description": "Message Driven Beans for JMS queue and topics",
+                                "relationships": [
+                                    {
+                                        "id": "70",
+                                        "tags": "Relationship",
+                                        "sourceId": "68",
+                                        "destinationId": "35",
+                                        "description": "connect queue/topics",
+                                        "technology": "JMS",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "EJB",
+                                "size": 0
+                            },
+                            {
+                                "id": "67",
+                                "tags": "Element,Component",
+                                "name": "Biz Server Session Beans (EJB)",
+                                "description": "Stateless Session beans",
+                                "relationships": [
+                                    {
+                                        "id": "69",
+                                        "tags": "Relationship",
+                                        "sourceId": "67",
+                                        "destinationId": "25",
+                                        "description": "read/write data",
+                                        "technology": "JDBC",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "EJB",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "48",
+                        "tags": "Element,Container",
+                        "name": "DFS Server",
+                        "description": "Data Feed server",
+                        "relationships": [
+                            {
+                                "id": "49",
+                                "tags": "Relationship",
+                                "sourceId": "48",
+                                "destinationId": "35",
+                                "description": "uses",
+                                "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JBoss Application Server 5.1.0",
+                        "components": [
+                            {
+                                "id": "81",
+                                "tags": "Element,Component",
+                                "name": "DFS Message Driven Beans (EJB)",
+                                "description": "mdb",
+                                "relationships": [
+                                    {
+                                        "id": "83",
+                                        "tags": "Relationship",
+                                        "sourceId": "81",
+                                        "destinationId": "35",
+                                        "description": "connects queue/topics",
+                                        "technology": "JMS",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "EJB",
+                                "size": 0
+                            },
+                            {
+                                "id": "80",
+                                "tags": "Element,Component",
+                                "name": "DFS Stateless Session Beans (EJB)",
+                                "description": "session beans",
+                                "relationships": [
+                                    {
+                                        "id": "82",
+                                        "tags": "Relationship",
+                                        "sourceId": "80",
+                                        "destinationId": "25",
+                                        "description": "read/writes data",
+                                        "technology": "JDBC",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "EJB",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "50",
+                        "tags": "Element,Container",
+                        "name": "FTP Server",
+                        "description": "Client integration with EDI - sftp/ftp interface",
+                        "relationships": [
+                            {
+                                "id": "56",
+                                "tags": "Relationship",
+                                "sourceId": "50",
+                                "destinationId": "51",
+                                "description": "uses",
+                                "technology": "NFS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "SFTP/FTP",
+                        "components": [
+                            {
+                                "id": "84",
+                                "tags": "Element,Component",
+                                "name": "FTP Server",
+                                "description": "Ftp server to exchange files with customer ERP systems",
+                                "technology": "FTP",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "19",
+                        "tags": "Element,Container",
+                        "name": "Http Server",
+                        "description": "Proxy requests to App and Web Service servers",
+                        "relationships": [
+                            {
+                                "id": "40",
+                                "tags": "Relationship",
+                                "sourceId": "19",
+                                "destinationId": "20",
+                                "description": "proxy requests",
+                                "technology": "HTTP",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "64",
+                                "tags": "Relationship",
+                                "sourceId": "19",
+                                "destinationId": "63",
+                                "description": "uses",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Apache HTTP Server",
+                        "components": [
+                            {
+                                "id": "21",
+                                "tags": "Element,Component",
+                                "name": "Apache Http Server",
+                                "description": "Proxy requests to App and Web Service servers",
+                                "relationships": [
+                                    {
+                                        "id": "61",
+                                        "tags": "Relationship",
+                                        "sourceId": "21",
+                                        "destinationId": "20",
+                                        "description": "proxy requests",
+                                        "interactionStyle": "Synchronous"
+                                    },
+                                    {
+                                        "id": "58",
+                                        "tags": "Relationship",
+                                        "sourceId": "21",
+                                        "destinationId": "22",
+                                        "description": "uses",
+                                        "interactionStyle": "Synchronous"
+                                    },
+                                    {
+                                        "id": "62",
+                                        "tags": "Relationship",
+                                        "sourceId": "21",
+                                        "destinationId": "36",
+                                        "description": "proxy requests",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "Apache HTTP Server",
+                                "size": 0
+                            },
+                            {
+                                "id": "22",
+                                "tags": "Element,Component",
+                                "name": "Static Resources",
+                                "description": "js, css and WSDL files",
+                                "technology": "Filesystem",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "51",
+                        "tags": "Element,Container",
+                        "name": "Installer Server",
+                        "description": "File sharing server for deployment and WebMethods Server",
+                        "technology": "NFS"
+                    },
+                    {
+                        "id": "37",
+                        "tags": "Element,Container,Database",
+                        "name": "JDBC_CONTENT_DS",
+                        "description": "Main Storage for regularly updated data",
+                        "technology": "Oracle"
+                    },
+                    {
+                        "id": "25",
+                        "tags": "Element,Container,Database",
+                        "name": "JDBC_COOKED_DS",
+                        "description": "Main storage for Application",
+                        "technology": "Oracle"
+                    },
+                    {
+                        "id": "38",
+                        "tags": "Element,Container,Database",
+                        "name": "JDBC_MESSAGING_DS",
+                        "description": "Main storage for Messaging",
+                        "technology": "Oracle"
+                    },
+                    {
+                        "id": "39",
+                        "tags": "Element,Container,Database",
+                        "name": "JDBC_QUARTZ_DS",
+                        "description": "Main storage for scheduling Jobs",
+                        "technology": "Oracle"
+                    },
+                    {
+                        "id": "35",
+                        "tags": "Element,Container",
+                        "name": "JMS Server - App",
+                        "description": "Application Queue & Topic",
+                        "technology": "JBoss Application Server 5.1.0",
+                        "components": [
+                            {
+                                "id": "52",
+                                "tags": "Element,Component",
+                                "name": "JMS Server - Queue & Topic",
+                                "description": "JMS interface",
+                                "relationships": [
+                                    {
+                                        "id": "54",
+                                        "tags": "Relationship",
+                                        "sourceId": "52",
+                                        "destinationId": "53",
+                                        "description": "store JMS messages",
+                                        "technology": "JDBC",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "JBoss Application Server 5.1.0",
+                                "size": 0
+                            },
+                            {
+                                "id": "53",
+                                "tags": "Element,Component,Database",
+                                "name": "Mysql Server Database",
+                                "description": "Storage for JMS messaging",
+                                "technology": "Database",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "86",
+                        "tags": "Element,Container",
+                        "name": "JMS Server - Msg"
+                    },
+                    {
+                        "id": "36",
+                        "tags": "Element,Container",
+                        "name": "Public Webservices Server",
+                        "description": "Publish and connect applications through WS.",
+                        "relationships": [
+                            {
+                                "id": "47",
+                                "tags": "Relationship",
+                                "sourceId": "36",
+                                "destinationId": "35",
+                                "description": "uses",
+                                "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JBoss Application Server 5.1.0",
+                        "components": [
+                            {
+                                "id": "72",
+                                "tags": "Element,Component",
+                                "name": "Web Services Server Message Driven Beans (EJB)",
+                                "description": "MDBs for queue and topics",
+                                "relationships": [
+                                    {
+                                        "id": "75",
+                                        "tags": "Relationship",
+                                        "sourceId": "72",
+                                        "destinationId": "35",
+                                        "description": "connect queue/topics",
+                                        "technology": "JMS",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "JMS",
+                                "size": 0
+                            },
+                            {
+                                "id": "71",
+                                "tags": "Element,Component",
+                                "name": "Web Services Server Session Beans (EJB)",
+                                "description": "session beans",
+                                "relationships": [
+                                    {
+                                        "id": "73",
+                                        "tags": "Relationship",
+                                        "sourceId": "71",
+                                        "destinationId": "25",
+                                        "description": "read/writes data",
+                                        "technology": "JDBC",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "EJB",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "34",
+                        "tags": "Element,Container",
+                        "name": "TForm Server",
+                        "description": "Scheduled Jobs",
+                        "relationships": [
+                            {
+                                "id": "46",
+                                "tags": "Relationship",
+                                "sourceId": "34",
+                                "destinationId": "35",
+                                "description": "uses",
+                                "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JBoss Application Server 5.1.0",
+                        "components": [
+                            {
+                                "id": "77",
+                                "tags": "Element,Component",
+                                "name": "TForm Message Driven Beans (EJB)",
+                                "description": "mdb",
+                                "relationships": [
+                                    {
+                                        "id": "79",
+                                        "tags": "Relationship",
+                                        "sourceId": "77",
+                                        "destinationId": "35",
+                                        "description": "connect queue/topics",
+                                        "technology": "JMS",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "EJB",
+                                "size": 0
+                            },
+                            {
+                                "id": "76",
+                                "tags": "Element,Component",
+                                "name": "TForm Stateless Session Beans (EJB)",
+                                "description": "session beans",
+                                "relationships": [
+                                    {
+                                        "id": "78",
+                                        "tags": "Relationship",
+                                        "sourceId": "76",
+                                        "destinationId": "25",
+                                        "description": "read/writes data",
+                                        "technology": "JDBC",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "EJB",
+                                "size": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "26",
+                "tags": "Element,Software System,External",
+                "name": "WebMethods Integration Server",
+                "description": "Webmethods integration for customer ERP systems",
+                "relationships": [
+                    {
+                        "id": "55",
+                        "tags": "Relationship",
+                        "sourceId": "26",
+                        "destinationId": "51",
+                        "description": "uses",
+                        "technology": "NFS",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            }
+        ],
+        "deploymentNodes": []
+    },
+    "documentation": {
+        "sections": [],
+        "decisions": [],
+        "images": []
+    },
+    "views": {
+        "systemContextViews": [
+            {
+                "softwareSystemId": "13",
+                "key": "GTMContextDiagram",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "13"
+                        ],
+                        "relationships": []
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "26",
+                            "17"
+                        ],
+                        "relationships": [
+                            "30"
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "elements": [
+                            "31"
+                        ],
+                        "relationships": [
+                            "32"
+                        ]
+                    },
+                    {
+                        "order": 4,
+                        "elements": [
+                            "18"
+                        ],
+                        "relationships": [
+                            "23"
+                        ]
+                    }
+                ],
+                "enterpriseBoundaryVisible": true,
+                "elements": [
+                    {
+                        "id": "13",
+                        "x": 1060,
+                        "y": 705
+                    },
+                    {
+                        "id": "26",
+                        "x": 1060,
+                        "y": 220
+                    },
+                    {
+                        "id": "17",
+                        "x": 170,
+                        "y": 220
+                    },
+                    {
+                        "id": "18",
+                        "x": 170,
+                        "y": 705
+                    },
+                    {
+                        "id": "31",
+                        "x": 260,
+                        "y": 1075
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "23"
+                    },
+                    {
+                        "id": "32"
+                    },
+                    {
+                        "id": "30"
+                    }
+                ]
+            }
+        ],
+        "containerViews": [
+            {
+                "softwareSystemId": "13",
+                "key": "GTMContainerDiagram",
+                "paperSize": "A4_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "24",
+                            "25",
+                            "27",
+                            "19",
+                            "20",
+                            "31"
+                        ],
+                        "relationships": [
+                            "40",
+                            "41",
+                            "42",
+                            "43"
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "33",
+                            "34",
+                            "35",
+                            "36",
+                            "37",
+                            "38",
+                            "39"
+                        ],
+                        "relationships": [
+                            "44",
+                            "45",
+                            "46",
+                            "47"
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "elements": [
+                            "48"
+                        ],
+                        "relationships": [
+                            "49"
+                        ]
+                    },
+                    {
+                        "order": 4,
+                        "elements": [
+                            "26"
+                        ],
+                        "relationships": []
+                    },
+                    {
+                        "order": 5,
+                        "elements": [
+                            "50",
+                            "51"
+                        ],
+                        "relationships": [
+                            "55",
+                            "56"
+                        ]
+                    },
+                    {
+                        "order": 6,
+                        "elements": [
+                            "17"
+                        ],
+                        "relationships": [
+                            "30"
+                        ]
+                    },
+                    {
+                        "order": 7,
+                        "elements": [
+                            "86"
+                        ],
+                        "relationships": []
+                    }
+                ],
+                "elements": [
+                    {
+                        "id": "33",
+                        "x": 125,
+                        "y": 965
+                    },
+                    {
+                        "id": "34",
+                        "x": 730,
+                        "y": 1370
+                    },
+                    {
+                        "id": "24",
+                        "x": 1730,
+                        "y": 20
+                    },
+                    {
+                        "id": "35",
+                        "x": 730,
+                        "y": 965
+                    },
+                    {
+                        "id": "25",
+                        "x": 1675,
+                        "y": 1880
+                    },
+                    {
+                        "id": "36",
+                        "x": 125,
+                        "y": 1370
+                    },
+                    {
+                        "id": "48",
+                        "x": 1320,
+                        "y": 1370
+                    },
+                    {
+                        "id": "37",
+                        "x": 625,
+                        "y": 1880
+                    },
+                    {
+                        "id": "26",
+                        "x": 2550,
+                        "y": 1370
+                    },
+                    {
+                        "id": "27",
+                        "x": 945,
+                        "y": 15
+                    },
+                    {
+                        "id": "38",
+                        "x": 110,
+                        "y": 1880
+                    },
+                    {
+                        "id": "17",
+                        "x": 2550,
+                        "y": 840
+                    },
+                    {
+                        "id": "39",
+                        "x": 1145,
+                        "y": 1880
+                    },
+                    {
+                        "id": "19",
+                        "x": 1305,
+                        "y": 510
+                    },
+                    {
+                        "id": "50",
+                        "x": 1905,
+                        "y": 965
+                    },
+                    {
+                        "id": "51",
+                        "x": 1905,
+                        "y": 1370
+                    },
+                    {
+                        "id": "31",
+                        "x": 1345,
+                        "y": 15
+                    },
+                    {
+                        "id": "20",
+                        "x": 1320,
+                        "y": 965
+                    },
+                    {
+                        "id": "86",
+                        "x": 730,
+                        "y": 620
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "40"
+                    },
+                    {
+                        "id": "41"
+                    },
+                    {
+                        "id": "42"
+                    },
+                    {
+                        "id": "43"
+                    },
+                    {
+                        "id": "30"
+                    },
+                    {
+                        "id": "44"
+                    },
+                    {
+                        "id": "55"
+                    },
+                    {
+                        "id": "45"
+                    },
+                    {
+                        "id": "56"
+                    },
+                    {
+                        "id": "46"
+                    },
+                    {
+                        "id": "47"
+                    },
+                    {
+                        "id": "49"
+                    }
+                ]
+            }
+        ],
+        "componentViews": [
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentJMS",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "52",
+                            "53"
+                        ],
+                        "relationships": [
+                            "54"
+                        ]
+                    }
+                ],
+                "containerId": "35",
+                "elements": [
+                    {
+                        "id": "52",
+                        "x": 970,
+                        "y": 285
+                    },
+                    {
+                        "id": "53",
+                        "x": 188,
+                        "y": 281
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "54"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentApp",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "63"
+                        ],
+                        "relationships": []
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "35",
+                            "25",
+                            "19"
+                        ],
+                        "relationships": []
+                    }
+                ],
+                "containerId": "20",
+                "elements": [
+                    {
+                        "id": "35",
+                        "x": 1070,
+                        "y": 1160
+                    },
+                    {
+                        "id": "25",
+                        "x": 80,
+                        "y": 1165
+                    },
+                    {
+                        "id": "19",
+                        "x": 605,
+                        "y": 70
+                    },
+                    {
+                        "id": "63",
+                        "x": 605,
+                        "y": 515
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "65"
+                    },
+                    {
+                        "id": "64"
+                    },
+                    {
+                        "id": "66"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentBiz",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "67",
+                            "68"
+                        ],
+                        "relationships": []
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "35",
+                            "25"
+                        ],
+                        "relationships": []
+                    }
+                ],
+                "containerId": "33",
+                "elements": [
+                    {
+                        "id": "67",
+                        "x": 1080,
+                        "y": 335
+                    },
+                    {
+                        "id": "35",
+                        "x": 385,
+                        "y": 930
+                    },
+                    {
+                        "id": "68",
+                        "x": 385,
+                        "y": 335
+                    },
+                    {
+                        "id": "25",
+                        "x": 1080,
+                        "y": 935
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "70"
+                    },
+                    {
+                        "id": "69"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentFTP",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "17",
+                            "84"
+                        ],
+                        "relationships": [
+                            "85"
+                        ]
+                    }
+                ],
+                "containerId": "50",
+                "elements": [
+                    {
+                        "id": "17",
+                        "x": 240,
+                        "y": 60
+                    },
+                    {
+                        "id": "84",
+                        "x": 240,
+                        "y": 810
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "85",
+                        "vertices": [
+                            {
+                                "x": 465,
+                                "y": 510
+                            },
+                            {
+                                "x": 465,
+                                "y": 660
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentDFS",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "35",
+                            "25",
+                            "80",
+                            "81"
+                        ],
+                        "relationships": [
+                            "82",
+                            "83"
+                        ]
+                    }
+                ],
+                "containerId": "48",
+                "elements": [
+                    {
+                        "id": "35",
+                        "x": 1260,
+                        "y": 980
+                    },
+                    {
+                        "id": "25",
+                        "x": 210,
+                        "y": 980
+                    },
+                    {
+                        "id": "80",
+                        "x": 210,
+                        "y": 230
+                    },
+                    {
+                        "id": "81",
+                        "x": 1260,
+                        "y": 230
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "82"
+                    },
+                    {
+                        "id": "83"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentHttp",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "22",
+                            "24",
+                            "27",
+                            "31",
+                            "20",
+                            "21"
+                        ],
+                        "relationships": []
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "36"
+                        ],
+                        "relationships": []
+                    }
+                ],
+                "containerId": "19",
+                "elements": [
+                    {
+                        "id": "22",
+                        "x": 1085,
+                        "y": 560
+                    },
+                    {
+                        "id": "24",
+                        "x": 65,
+                        "y": 35
+                    },
+                    {
+                        "id": "36",
+                        "x": 870,
+                        "y": 1140
+                    },
+                    {
+                        "id": "27",
+                        "x": 480,
+                        "y": 35
+                    },
+                    {
+                        "id": "31",
+                        "x": 900,
+                        "y": 35
+                    },
+                    {
+                        "id": "20",
+                        "x": 145,
+                        "y": 1140
+                    },
+                    {
+                        "id": "21",
+                        "x": 440,
+                        "y": 560
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "61"
+                    },
+                    {
+                        "id": "60"
+                    },
+                    {
+                        "id": "62"
+                    },
+                    {
+                        "id": "57"
+                    },
+                    {
+                        "id": "58"
+                    },
+                    {
+                        "id": "59"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentTForm",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "77",
+                            "35",
+                            "25",
+                            "76"
+                        ],
+                        "relationships": [
+                            "78",
+                            "79"
+                        ]
+                    }
+                ],
+                "containerId": "34",
+                "elements": [
+                    {
+                        "id": "77",
+                        "x": 1370,
+                        "y": 300
+                    },
+                    {
+                        "id": "35",
+                        "x": 1370,
+                        "y": 1050
+                    },
+                    {
+                        "id": "25",
+                        "x": 320,
+                        "y": 1050
+                    },
+                    {
+                        "id": "76",
+                        "x": 320,
+                        "y": 300
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "78"
+                    },
+                    {
+                        "id": "79"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentPublicWebServices",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "35",
+                            "25",
+                            "71",
+                            "72"
+                        ],
+                        "relationships": [
+                            "73",
+                            "75"
+                        ]
+                    }
+                ],
+                "containerId": "36",
+                "elements": [
+                    {
+                        "id": "35",
+                        "x": 170,
+                        "y": 920
+                    },
+                    {
+                        "id": "25",
+                        "x": 735,
+                        "y": 920
+                    },
+                    {
+                        "id": "71",
+                        "x": 735,
+                        "y": 260
+                    },
+                    {
+                        "id": "72",
+                        "x": 170,
+                        "y": 260
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "73"
+                    },
+                    {
+                        "id": "75"
+                    }
+                ]
+            }
+        ],
+        "configuration": {
+            "branding": {},
+            "styles": {
+                "elements": [
+                    {
+                        "tag": "Person",
+                        "width": 350,
+                        "background": "#08427b",
+                        "color": "#ffffff",
+                        "shape": "Person"
+                    },
+                    {
+                        "tag": "Container",
+                        "background": "#438dd5"
+                    },
+                    {
+                        "tag": "Database",
+                        "shape": "Cylinder"
+                    },
+                    {
+                        "tag": "External",
+                        "background": "#d8d8d8"
+                    },
+                    {
+                        "tag": "Software System",
+                        "background": "#4285f4"
+                    }
+                ],
+                "relationships": []
+            },
+            "terminology": {},
+            "lastSavedView": "GTMContainerDiagram"
+        },
+        "systemLandscapeViews": [],
+        "dynamicViews": [],
+        "deploymentViews": [],
+        "filteredViews": []
+    }
+}

@@ -1,0 +1,17 @@
+manager: Suresh Swaminathan
+teamroom: Eng.ProductCA
+units: 
+    - unit: https://jira.devfactory.com/browse/MYAL-8655
+    - unit: https://jira.devfactory.com/browse/MYAL-8671
+    - unit: https://jira.devfactory.com/browse/MYAL-8654
+    - unit: https://jira.devfactory.com/browse/MYAL-8557
+    - unit: https://jira.devfactory.com/browse/MYAL-8547
+recomnmendation: 
+    eliminate waste: true
+    improve quality bar: true 
+    product agnostic: false
+    product specific: 
+        - product name: MyAlerts
+    description:  Deployment CRs are rejected by CAB with the reason that the runbooks are in adequate for a product-agnostic person to execute them.  Back and forth conversations and escalations can be avoided if the runbook template is enhanced to mandate the following information: 1. conditions under which the runbook should be executed  2. Infrastructure and application permissions required to execute the runbook 3. pre-requisite knowledge of the product (links to arch docs/confluence pages) 4. How to health check after executing the runbook.
+    effort: 1
+    impact: 5

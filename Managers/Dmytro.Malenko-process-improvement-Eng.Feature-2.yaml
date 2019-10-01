@@ -1,0 +1,13 @@
+manager: Dmytro Malenko
+teamroom: Eng.Feature
+units:
+    - unit: https://jira.devfactory.com/browse/MFR-3225
+recommendation: 
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Improve Feature Story split rules to ensure that Feature Stories represent actual value delivered by the ICs through changes to the code base. The problematic situations that lead to waste and worse quality are (1) FS that is essentialy covered by the PR for a different FS; (2) FS that includes under-the-hood changes that are not adequately tested or planned for.
+    effort: 5
+    impact: 10

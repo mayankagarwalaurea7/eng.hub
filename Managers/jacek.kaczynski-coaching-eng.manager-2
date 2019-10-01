@@ -8,16 +8,16 @@ ICs: !!seq
         unit: !!str https://jira.devfactory.com/browse/CONTROL-27973 #<Jira link>
         coaching: !!str Proactively detect automated test environment issues #<free text coaching>
         performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPerformer
-        continue coaching: !!bool false #true | false
+        continue coaching: !!bool true #true | false
         IC name: !!str Dmytro Khaynas #<IC name>
         date: !!str 30-Sep-2019 #<date>
         unit: !!str https://jira.devfactory.com/browse/KMAN-7409 #<Jira link>
         coaching: !!str It is not feasible for QA to install Control license we have to take care of it ourselves #<free text coaching>
         performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPe$
-        continue coaching: !!bool false #true | false
+        continue coaching: !!bool true #true | false
         IC name: !!str Ozgun Toptas #<IC name>
         date: !!str 30-Sep-2019 #<date>
         unit: !!str https://jira.devfactory.com/browse/EXOS-12078 #<Jira link>
         coaching: !!str Proactively address Lab ESXI space issues #<free text coaching>
         performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPe$
-        continue coaching: !!bool false #true | false
+        continue coaching: !!bool true #true | false

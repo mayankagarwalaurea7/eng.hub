@@ -1,0 +1,25 @@
+manager: Dmytro Malenko
+teamroom: Eng.Feature
+direct reports: 3
+ICs:
+    - IC: 
+        IC name: Diego Demarziani
+        date: 2019-09-30
+        unit: https://jira.devfactory.com/browse/MFR-3225
+        coaching: Continue adding structured FS summary comment before sending an FS to QE to streamline the QE process.
+        performance assessment: topPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Nikolay Payussov
+        date: 2019-09-30
+        unit: https://jira.devfactory.com/browse/JVMBL-8643
+        coaching: Coach IC to add structured FS summary comment before sending to QE to avoid the need for Feature SEM to add a comment about an FS without PR, and to ensure that TC timings are present.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Mohamed Atef Khafaga
+        date: 2019-09-30
+        unit: https://jira.devfactory.com/browse/JCLDALL-16998
+        coaching: Consult with PCA on product-specific implementation guidelines when uncertain about implementation approach, especially, when it comes to implementation of a new component or a subsystem.
+        performance assessment: averagePerformer
+        continue coaching: true        
