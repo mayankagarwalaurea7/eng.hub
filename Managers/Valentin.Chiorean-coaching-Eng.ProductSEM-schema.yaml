@@ -46,3 +46,40 @@ ICs:
         coaching: When he sees tickets created in JVCLD to escalate to PSEM andmove tickets to JCLDALL + notify the reporter, as there was a decision few months back to stop using JVCLD project.
         performance assessment: averagePerformer
         continue coaching: true
+
+      IC name: Laszlo Robert Albert
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/secure/Dashboard.jspa?selectPageId=59000
+        coaching: PCA work queue seems to have been fixed for JCLDALL and PCAshould start picking up tickets from the top of the list
+        performance assessment: averagePerformer
+        continue coaching: true
+
+      IC name: Laszlo Robert Albert
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/JCLDALL-35051
+        coaching: Ticket is blocking Micro-2.2.0 release and has to be prioritized as high as possible. Requesting Robert to link ticket to the blocked CD in scope of release
+        performance assessment: highPerformer
+        continue coaching: true
+
+      IC name: Rares Zehan
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/JVMBL-10102
+        coaching: Ticket is in top of queue and has to be taken first before next item in the list
+        performance assessment: averagePerformer
+        continue coaching: true
+
+      IC name: Laszlo Robert Albert
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/JCLDALL-35058
+        coaching: Ticket not taken from the queue's top. Ticekts have to be taken from the queue
+        performance assessment: averagePerformer
+        continue coaching: true
+
+      IC name: Rares Zehan
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/JVMBL-7453
+        coaching: Not clear how to proceed as he's blocked by JCLDALL. PCA to block ticket and advance to next ticket in board
+        performance assessment: highPerformer
+        continue coaching: true
+
+
