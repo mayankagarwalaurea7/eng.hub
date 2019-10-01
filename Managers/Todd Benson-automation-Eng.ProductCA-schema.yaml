@@ -1,12 +1,13 @@
 manager: Todd Benson
 teamroom: Eng.ProductCA
-units: 2
-    - unit: https://jira.devfactory.com/browse/CODEALIKE-5006
-    - unit: https://jira.devfactory.com/browse/CODEALIKE-5005
+units: 3
+    - https://jira.devfactory.com/browse/STRONGTEST-48
+    - https://jira.devfactory.com/browse/STRONGTEST-49
+    - https://jira.devfactory.com/browse/STRONGTEST-50
 automation: 
     product agnostic: true
     product specific: 
-        - product name: Codealike
-    description: When E2E is created, it puts the E2E is Open state and generates an EngProblem ticket of E2E type that is in Identified status.  EngProblem ticket is moved manually to In Implementation and then In QE Review.  Instead of having to manually move them, when E2E is moved into In E2E Review status, this should trigger the Eng Problem ticket to go into In QE Review status.  This will save time.
-    effort: 1
-    impact: 100
+        - product name: StrongTest
+    description: To create documentation and get credit for, ICs currently manually update the documentation, then they create a Eng.Problem ticket and update it with information that was updated in the ticket.  We should create an automation so that user manually updates the documentation first, then they highlight what they have updated in doc, right click, see a menu that says something like "Create an Eng.Problem ticket of Arch doc type" and select this option.  This will create the Eng.Problem ticket, fill out all details and submit it for QE review.  This will save 5 minutes a ticket or 15 minutes a day and will help all PCAs save this time.
+    effort: 3 days
+    impact: 100% of PCAs can affected positively, saving 15 minutes a day.

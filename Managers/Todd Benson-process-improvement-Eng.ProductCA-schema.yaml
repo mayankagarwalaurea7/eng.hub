@@ -1,15 +1,13 @@
 manager: Todd Benson
 teamroom: Eng.ProductCA
-units: 3
-    - https://jira.devfactory.com/browse/CODEALIKE-4789
-    - https://jira.devfactory.com/browse/CODEALIKE-4462
-    - https://jira.devfactory.com/browse/CODEALIKE-4461
+units: 1
+    - https://jira.devfactory.com/browse/CODEALIKE-5451
 recommendation: 
-    eliminate waste: true
+    eliminate waste: false
     improve quality bar: true
     product agnostic: true
     product specific:
         - product name: Codealike 
-    description: PCAs sometimes need to perform tasks that fix environments or setup new environments. Currently, there appears to not be an Eng Problem ticket for this type of work, so PCA must use other types of tickets that don't quite fit this kind of work.  Also, it would be good to do review of tasks that PCAs do and add necessary, missing eng problem category types.
-    effort: 2
-    impact: 100
+    description: Currently IC just links TCs to ACC items, but doesn't indicate in the TC which steps achieve which ACC item.  IC should indicate next to each step what ACC item is achieves and how.  This will improve quality of TCs. 
+    effort: 1
+    impact: ICs need to be coached on doing this and QB bar changed.
