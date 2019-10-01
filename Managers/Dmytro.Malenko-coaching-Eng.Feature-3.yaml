@@ -1,0 +1,25 @@
+manager: Dmytro Malenko
+teamroom: Eng.Feature
+direct reports: 3
+ICs:
+    - IC: 
+        IC name: Diego Demarziani
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/JCLDALL-17495
+        coaching: When a new tool is used to solve a specific product-related task capture your experience and findings is a short document/Confluence page to facilitate sharing of the experience within the team.
+        performance assessment: topPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Nikolay Payussov
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/MFR-3191
+        coaching: Add structured comment with a summary of FS delivery including link to the PR and TC timings. This will help QE in reviewing the tickets and allow QE to process tickets faster.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Mohamed Atef Khafaga
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/JCLDALL-17000
+        coaching: Do not take requirements input from PCA or any other source different than the P1 spec. Escalate to SEM if PCA adds functional requirements on top of what is requested in P1.
+        performance assessment: averagePerformer
+        continue coaching: true        
