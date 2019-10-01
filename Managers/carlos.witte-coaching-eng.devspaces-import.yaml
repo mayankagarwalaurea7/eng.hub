@@ -1,0 +1,32 @@
+manager: Carlos Witte
+teamroom: Eng.DevSpacesImport
+direct reports: 4
+ICs:
+    - IC: 
+        IC name: David Popiashvilli
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/DVSPIMP-3578
+        coaching: Please make sure that all the Sub-Tasks are resolved before moving the ticket to Done status because this prevents us from closing the weekly Sprint.
+        perfrormanceAssessment: lowPerformer # source: XO's Rank & Review
+        continueCoaching: true
+    - IC: 
+        IC name: Pinkal Vansia
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/TBGTM-6455
+        coaching: Perfect QE Review with no warnings. Good job on informing the stakeholders on ticket completion. Not necessary, but welcome.
+        perfrormanceAssessment: highPerformer # source: XO's Rank & Review
+        continueCoaching: true
+    - IC: 
+        IC name: Rafael Bogaveev
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/SLIAO-6918
+        coaching: Perfect QE Review with no warnings, documentation is good enough, but can improve. Statement "PR has been merged" makes the value added clear for those who have no access to repo and PR.
+        perfrormanceAssessment: highPerformer # source: XO's Rank & Review
+        continueCoaching: true
+    - IC: 
+        IC name: Stefan Stanca
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/SLIAO-6971
+        coaching: Decision history is not clear, ticket probably lacks enough documentation. QE Review good enough to get approval, but better watch out because you are getting frequently flagged by QE due to issues with the Dockerfile Optimal Layers.
+        perfrormanceAssessment: lowPerformer # source: XO's Rank & Review
+        continueCoaching: true

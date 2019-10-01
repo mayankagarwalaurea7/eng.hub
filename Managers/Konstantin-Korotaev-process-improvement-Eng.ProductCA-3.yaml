@@ -1,0 +1,16 @@
+manager: Konstantin Korotaev
+teamroom: Eng.ProductCA
+units: 
+    - unit: https://jira.devfactory.com/browse/ONESPOT-747
+    - unit: https://jira.devfactory.com/browse/ONESPOT-748
+    - unit: https://jira.devfactory.com/browse/ONESPOT-749
+    - unit: https://jira.devfactory.com/browse/ONESPOT-750
+recomnmendation: 
+    eliminate waste: true
+    improve quality bar: true 
+    product agnostic: true
+    product specific: 
+        - product name: OneSpot
+    description: Add new status to functional area to identify that FA is accepted by PCA and he can start working on E2Es for imported products. Increase autorank to such E2Es in PCA working queue. 
+    effort: 1
+    impact: 2
