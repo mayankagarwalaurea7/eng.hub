@@ -1,0 +1,14 @@
+manager: Rohit Jain
+teamroom: Eng.QAManualTesting
+units:
+units:
+    - unit:
+recommendation:
+    eliminate waste: true
+    improve quality bar: False
+    product agnostic: true
+    product specific:
+        - product name: All products
+    description: Defined process to pick E2Es, changed it from manual to automation.
+    effort: 3 Days
+    impact: 5 %

@@ -1,0 +1,11 @@
+manager: Rohit Jain
+teamroom: Eng.QAManualTesting
+units: All E2Es
+          -unit: https://jira.devfactory.com/browse/ECPA-8061
+automation: !!map
+    product agnostic: !true
+    product specific:
+        - product name: For all products
+    description: Autoallocation of E2Es in jira for all ICs. This helped in ensuring ICs work on high priority E2Es and they don't have to spend time on finding backlog.
+    effort: 3 Days
+    impact: 5%
