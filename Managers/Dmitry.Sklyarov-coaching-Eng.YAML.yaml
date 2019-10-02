@@ -1,0 +1,11 @@
+manager: Dmitry Sklyarov
+teamroom: Eng.YAML
+direct reports: 2
+ICs:
+    - IC:
+        IC name: Andrey Ryaguzov
+        date: 2019-10-01
+        unit: all
+        coaching: Explained that we can use current staging environment to test provisioning ansible scripts for YAML files
+        performance assessment: highPerformer
+        continue coaching: false
