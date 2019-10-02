@@ -1,0 +1,13 @@
+manager: !!str Pavel Gorbel
+teamroom: !!str Eng.ProductCA
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/GFIA-12312
+recommendation: !!map
+    eliminate waste: !!bool true
+    improve quality bar: !!bool true
+    product agnostic: !!bool true
+    product specific: !!seq
+        - product name: !!str GFIA
+    description: !!str QA has to correct(delete or mark invalid) tickets which they created mistakenly. In current case they executed TC for E2E in Open state (this is wrong), created an invalid defect due to lack of proper details level in E2E and marked it then as passed. Thus mixed up everyone. This is what QA QE review should watch.
+    effort: !!int 1 
+    impact: !!float 0.2
