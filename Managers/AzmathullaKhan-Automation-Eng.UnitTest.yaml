@@ -1,11 +1,11 @@
 manager: Azmathulla Khan
-	teamroom: Eng.UnitTest
-	units: 
-	    - unit: https://jira.devfactory.com/browse/TBGTM-6075
-	automation:
-	    product agnostic: false
-	    product specific:
-	        - product name: Tradebeam
-	    description: Automate generation of templates for unit tests and in this case for HUTTadebeam.gtm.common.messaging.to.UserAdministrationMessageItemTO #989.
-	    effort: 1
-	    impact: 5%
+teamroom: Eng.UnitTest
+units:
+- unit: https://jira.devfactory.com/browse/TBGTM-6075
+automation: 
+product agnostic: false
+product specific:
+- product name: Tradebeam
+description: Automate generation of templates for unit tests and in this case for HUTTadebeam.gtm.common.messaging.to.UserAdministrationMessageItemTO #989.
+effort: 1
+impact: 5%
