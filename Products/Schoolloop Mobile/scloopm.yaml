@@ -2,8 +2,8 @@
 id: 47091
 name: Schoolloop mobile workspace
 description: Schoolloop mobile workspace
-revision: 67
-lastModifiedDate: '2019-09-30T22:06:48Z'
+revision: 73
+lastModifiedDate: '2019-10-02T00:23:32Z'
 lastModifiedUser: tahmid.mozaffar@aurea.com
 lastModifiedAgent: structurizr-web/1624
 model:
@@ -1168,7 +1168,263 @@ model:
       description: request to send push notification to iOS device
       interactionStyle: Synchronous
     location: External
-  deploymentNodes: []
+  deploymentNodes:
+  - id: '301'
+    name: Android Push notification
+    environment: Production
+    technology: Google Firebase Cloud Messaging Server
+    instances: 1
+    containerInstances:
+    - id: '302'
+      tags: Container Instance
+      relationships:
+      - id: '303'
+        sourceId: '302'
+        destinationId: '272'
+        description: sends push notifications to Android app users
+        interactionStyle: Synchronous
+        linkedRelationshipId: '219'
+      environment: Production
+      containerId: '216'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '300'
+    name: Apple push notification
+    environment: Production
+    technology: Apple Push Notification Server
+    instances: 1
+    containerInstances:
+    - id: '306'
+      tags: Container Instance
+      relationships:
+      - id: '307'
+        sourceId: '306'
+        destinationId: '274'
+        description: sends push notifications to iOS users
+        interactionStyle: Synchronous
+        linkedRelationshipId: '220'
+      environment: Production
+      containerId: '210'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '273'
+    name: Apple Store
+    environment: Production
+    instances: 1
+    containerInstances:
+    - id: '274'
+      tags: Container Instance
+      relationships:
+      - id: '282'
+        sourceId: '274'
+        destinationId: '280'
+        interactionStyle: Synchronous
+        linkedRelationshipId: '215'
+      environment: Production
+      containerId: '33'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '271'
+    name: Google Play Store
+    environment: Production
+    instances: 1
+    containerInstances:
+    - id: '272'
+      tags: Container Instance
+      relationships:
+      - id: '284'
+        sourceId: '272'
+        destinationId: '280'
+        interactionStyle: Synchronous
+        linkedRelationshipId: '218'
+      environment: Production
+      containerId: '34'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '279'
+    name: Web Server
+    environment: Production
+    instances: 1
+    containerInstances:
+    - id: '280'
+      tags: Container Instance
+      relationships:
+      - id: '309'
+        sourceId: '280'
+        destinationId: '306'
+        description: sends request to send push notifications to users
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '256'
+      - id: '304'
+        sourceId: '280'
+        destinationId: '302'
+        description: sends requests to send notifications to users
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '238'
+      - id: '308'
+        sourceId: '280'
+        destinationId: '306'
+        description: sends request for sending push notifications
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '221'
+      - id: '305'
+        sourceId: '280'
+        destinationId: '302'
+        description: sends request for sending push notifications
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '222'
+      - id: '281'
+        sourceId: '280'
+        destinationId: '274'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '214'
+      - id: '283'
+        sourceId: '280'
+        destinationId: '272'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '217'
+      environment: Production
+      containerId: '209'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '310'
+    name: Android push notification
+    environment: Test
+    technology: Google Firebase Cloud Messaging Server
+    instances: 1
+    containerInstances:
+    - id: '312'
+      tags: Container Instance
+      relationships:
+      - id: '313'
+        sourceId: '312'
+        destinationId: '277'
+        description: sends push notifications to Android app users
+        interactionStyle: Synchronous
+        linkedRelationshipId: '219'
+      environment: Test
+      containerId: '216'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '276'
+    name: HockeyApp
+    environment: Test
+    instances: 1
+    containerInstances:
+    - id: '278'
+      tags: Container Instance
+      relationships:
+      - id: '290'
+        sourceId: '278'
+        destinationId: '286'
+        interactionStyle: Synchronous
+        linkedRelationshipId: '215'
+      environment: Test
+      containerId: '33'
+      instanceId: 1
+      properties: {}
+    - id: '277'
+      tags: Container Instance
+      relationships:
+      - id: '288'
+        sourceId: '277'
+        destinationId: '286'
+        interactionStyle: Synchronous
+        linkedRelationshipId: '218'
+      environment: Test
+      containerId: '34'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '311'
+    name: iOS push notification
+    environment: Test
+    technology: Apple Push Notification Server
+    instances: 1
+    containerInstances:
+    - id: '316'
+      tags: Container Instance
+      relationships:
+      - id: '317'
+        sourceId: '316'
+        destinationId: '278'
+        description: sends push notifications to iOS users
+        interactionStyle: Synchronous
+        linkedRelationshipId: '220'
+      environment: Test
+      containerId: '210'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '285'
+    name: Web Server
+    environment: Test
+    instances: 1
+    containerInstances:
+    - id: '286'
+      tags: Container Instance
+      relationships:
+      - id: '315'
+        sourceId: '286'
+        destinationId: '312'
+        description: sends request for sending push notifications
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '222'
+      - id: '287'
+        sourceId: '286'
+        destinationId: '277'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '217'
+      - id: '319'
+        sourceId: '286'
+        destinationId: '316'
+        description: sends request to send push notifications to users
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '256'
+      - id: '314'
+        sourceId: '286'
+        destinationId: '312'
+        description: sends requests to send notifications to users
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '238'
+      - id: '318'
+        sourceId: '286'
+        destinationId: '316'
+        description: sends request for sending push notifications
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '221'
+      - id: '289'
+        sourceId: '286'
+        destinationId: '278'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '214'
+      environment: Test
+      containerId: '209'
+      instanceId: 1
+      properties: {}
+    children: []
 documentation:
   sections: []
   decisions: []
@@ -1277,219 +1533,6 @@ views:
     - id: '217'
     - id: '238'
   componentViews:
-  - softwareSystemId: '2'
-    key: '31'
-    paperSize: A3_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '55'
-      - '56'
-      - '57'
-      - '58'
-      - '59'
-      - '60'
-      - '61'
-      - '72'
-      - '62'
-      - '73'
-      - '54'
-      relationships:
-      - '74'
-    - order: 2
-      elements:
-      - '134'
-      - '135'
-      - '136'
-      - '137'
-      - '138'
-      - '139'
-      - '140'
-      relationships:
-      - '190'
-      - '191'
-      - '150'
-      - '151'
-      - '152'
-      - '153'
-      - '154'
-      - '155'
-      - '156'
-      - '157'
-      - '158'
-      - '159'
-      - '160'
-      - '161'
-      - '162'
-      - '163'
-      - '164'
-      - '165'
-      - '166'
-      - '167'
-      - '168'
-      - '169'
-      - '170'
-      - '171'
-      - '172'
-      - '173'
-      - '174'
-      - '175'
-      - '176'
-      - '177'
-      - '178'
-      - '179'
-      - '180'
-      - '181'
-      - '182'
-      - '183'
-      - '184'
-      - '185'
-      - '142'
-      - '186'
-      - '143'
-      - '187'
-      - '144'
-      - '188'
-      - '145'
-      - '189'
-      - '147'
-      - '148'
-      - '149'
-    - order: 3
-      elements:
-      - '210'
-      - '209'
-      relationships: []
-    containerId: '33'
-    elements:
-    - id: '55'
-      x: 140
-      y: 1275
-    - id: '56'
-      x: 670
-      y: 2750
-    - id: '57'
-      x: 1300
-      y: 2760
-    - id: '58'
-      x: 1885
-      y: 2785
-    - id: '59'
-      x: 2475
-      y: 2785
-    - id: '140'
-      x: 1690
-      y: 2005
-    - id: '210'
-      x: 4350
-      y: 1115
-    - id: '134'
-      x: 1115
-      y: 1355
-    - id: '135'
-      x: 2260
-      y: 2010
-    - id: '136'
-      x: 1110
-      y: 910
-    - id: '137'
-      x: 1150
-      y: 2000
-    - id: '138'
-      x: 3495
-      y: 2015
-    - id: '139'
-      x: 2890
-      y: 2005
-    - id: '60'
-      x: 3080
-      y: 2735
-    - id: '61'
-      x: 3660
-      y: 2725
-    - id: '72'
-      x: 1205
-      y: 80
-    - id: '209'
-      x: 4250
-      y: 90
-    - id: '73'
-      x: 2080
-      y: 95
-    - id: '62'
-      x: 4225
-      y: 2690
-    - id: '54'
-      x: 145
-      y: 350
-    relationships:
-    - id: '172'
-    - id: '174'
-    - id: '74'
-    - id: '153'
-    - id: '191'
-    - id: '151'
-    - id: '170'
-    - id: '253'
-    - id: '255'
-    - id: '257'
-    - id: '251'
-    - id: '157'
-    - id: '155'
-    - id: '176'
-    - id: '159'
-    - id: '178'
-    - id: '160'
-    - id: '183'
-    - id: '185'
-    - id: '164'
-    - id: '162'
-    - id: '181'
-    - id: '243'
-    - id: '245'
-    - id: '247'
-    - id: '241'
-    - id: '145'
-    - id: '168'
-    - id: '143'
-    - id: '166'
-    - id: '149'
-    - id: '187'
-    - id: '147'
-    - id: '189'
-    - id: '173'
-    - id: '175'
-    - id: '152'
-    - id: '190'
-    - id: '150'
-    - id: '171'
-    - id: '254'
-    - id: '256'
-    - id: '258'
-    - id: '250'
-    - id: '252'
-    - id: '156'
-    - id: '154'
-    - id: '177'
-    - id: '158'
-    - id: '179'
-    - id: '184'
-    - id: '186'
-    - id: '142'
-    - id: '163'
-    - id: '180'
-    - id: '161'
-    - id: '182'
-    - id: '242'
-    - id: '244'
-    - id: '246'
-    - id: '248'
-    - id: '167'
-    - id: '144'
-    - id: '165'
-    - id: '188'
-    - id: '148'
-    - id: '169'
   - softwareSystemId: '2'
     key: '30'
     paperSize: A3_Landscape
@@ -1706,6 +1749,309 @@ views:
     - id: '79'
     - id: '104'
     - id: '106'
+  - softwareSystemId: '2'
+    key: '31'
+    paperSize: A3_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '55'
+      - '56'
+      - '57'
+      - '58'
+      - '59'
+      - '60'
+      - '61'
+      - '72'
+      - '62'
+      - '73'
+      - '54'
+      relationships:
+      - '74'
+    - order: 2
+      elements:
+      - '134'
+      - '135'
+      - '136'
+      - '137'
+      - '138'
+      - '139'
+      - '140'
+      relationships:
+      - '190'
+      - '191'
+      - '150'
+      - '151'
+      - '152'
+      - '153'
+      - '154'
+      - '155'
+      - '156'
+      - '157'
+      - '158'
+      - '159'
+      - '160'
+      - '161'
+      - '162'
+      - '163'
+      - '164'
+      - '165'
+      - '166'
+      - '167'
+      - '168'
+      - '169'
+      - '170'
+      - '171'
+      - '172'
+      - '173'
+      - '174'
+      - '175'
+      - '176'
+      - '177'
+      - '178'
+      - '179'
+      - '180'
+      - '181'
+      - '182'
+      - '183'
+      - '184'
+      - '185'
+      - '142'
+      - '186'
+      - '143'
+      - '187'
+      - '144'
+      - '188'
+      - '145'
+      - '189'
+      - '147'
+      - '148'
+      - '149'
+    - order: 3
+      elements:
+      - '210'
+      - '209'
+      relationships: []
+    containerId: '33'
+    elements:
+    - id: '55'
+      x: 140
+      y: 1275
+    - id: '56'
+      x: 670
+      y: 2750
+    - id: '57'
+      x: 1300
+      y: 2760
+    - id: '58'
+      x: 1885
+      y: 2785
+    - id: '59'
+      x: 2475
+      y: 2785
+    - id: '140'
+      x: 1690
+      y: 2005
+    - id: '210'
+      x: 4350
+      y: 1115
+    - id: '134'
+      x: 1115
+      y: 1355
+    - id: '135'
+      x: 2260
+      y: 2010
+    - id: '136'
+      x: 1110
+      y: 910
+    - id: '137'
+      x: 1150
+      y: 2000
+    - id: '138'
+      x: 3495
+      y: 2015
+    - id: '139'
+      x: 2890
+      y: 2005
+    - id: '60'
+      x: 3080
+      y: 2735
+    - id: '61'
+      x: 3660
+      y: 2725
+    - id: '72'
+      x: 1205
+      y: 80
+    - id: '209'
+      x: 4250
+      y: 90
+    - id: '73'
+      x: 2080
+      y: 95
+    - id: '62'
+      x: 4225
+      y: 2690
+    - id: '54'
+      x: 145
+      y: 350
+    relationships:
+    - id: '172'
+    - id: '174'
+    - id: '74'
+    - id: '153'
+    - id: '191'
+    - id: '151'
+    - id: '170'
+    - id: '253'
+    - id: '255'
+    - id: '257'
+    - id: '251'
+    - id: '157'
+    - id: '155'
+    - id: '176'
+    - id: '159'
+    - id: '178'
+    - id: '160'
+    - id: '183'
+    - id: '185'
+    - id: '164'
+    - id: '162'
+    - id: '181'
+    - id: '243'
+    - id: '245'
+    - id: '247'
+    - id: '241'
+    - id: '145'
+    - id: '168'
+    - id: '143'
+    - id: '166'
+    - id: '149'
+    - id: '187'
+    - id: '147'
+    - id: '189'
+    - id: '173'
+    - id: '175'
+    - id: '152'
+    - id: '190'
+    - id: '150'
+    - id: '171'
+    - id: '254'
+    - id: '256'
+    - id: '258'
+    - id: '250'
+    - id: '252'
+    - id: '156'
+    - id: '154'
+    - id: '177'
+    - id: '158'
+    - id: '179'
+    - id: '184'
+    - id: '186'
+    - id: '142'
+    - id: '163'
+    - id: '180'
+    - id: '161'
+    - id: '182'
+    - id: '242'
+    - id: '244'
+    - id: '246'
+    - id: '248'
+    - id: '167'
+    - id: '144'
+    - id: '165'
+    - id: '188'
+    - id: '148'
+    - id: '169'
+  deploymentViews:
+  - softwareSystemId: '2'
+    key: deployment
+    paperSize: A4_Landscape
+    environment: Production
+    elements:
+    - id: '300'
+      x: 0
+      y: 0
+    - id: '279'
+      x: 0
+      y: 0
+    - id: '301'
+      x: 0
+      y: 0
+    - id: '302'
+      x: 2405
+      y: 1605
+    - id: '306'
+      x: 2370
+      y: 235
+    - id: '280'
+      x: 1285
+      y: 935
+    - id: '271'
+      x: 0
+      y: 0
+    - id: '272'
+      x: 200
+      y: 1665
+    - id: '273'
+      x: 0
+      y: 0
+    - id: '274'
+      x: 190
+      y: 235
+    relationships:
+    - id: '281'
+    - id: '304'
+    - id: '303'
+    - id: '284'
+    - id: '282'
+    - id: '283'
+    - id: '309'
+    - id: '305'
+    - id: '308'
+    - id: '307'
+  - softwareSystemId: '2'
+    key: testdeploymentview
+    paperSize: A4_Landscape
+    environment: Test
+    elements:
+    - id: '286'
+      x: 1415
+      y: 920
+    - id: '276'
+      x: 0
+      y: 0
+    - id: '277'
+      x: 245
+      y: 200
+    - id: '310'
+      x: 0
+      y: 0
+    - id: '278'
+      x: 220
+      y: 1655
+    - id: '311'
+      x: 0
+      y: 0
+    - id: '312'
+      x: 2475
+      y: 220
+    - id: '316'
+      x: 2495
+      y: 1645
+    - id: '285'
+      x: 0
+      y: 0
+    relationships:
+    - id: '313'
+    - id: '290'
+    - id: '315'
+    - id: '314'
+    - id: '288'
+    - id: '289'
+    - id: '287'
+    - id: '317'
+    - id: '319'
+    - id: '318'
   configuration:
     branding: {}
     styles:
@@ -1723,8 +2069,7 @@ views:
       relationships:
       - tag: Relationship
     terminology: {}
-    lastSavedView: '1'
+    lastSavedView: deployment
   systemLandscapeViews: []
   dynamicViews: []
-  deploymentViews: []
   filteredViews: []
