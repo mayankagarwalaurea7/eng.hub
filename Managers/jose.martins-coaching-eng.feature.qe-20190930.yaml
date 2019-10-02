@@ -4,21 +4,21 @@ direct reports: 3
 ICs:
     - IC:
         IC name: Diego Sal Diaz
-        date: 2019-09-30
+        date: 2019/09/30
         unit: https://jira.devfactory.com/browse/CSRV-11087
         coaching: Review was correctly done. 
         performance assessment: highPerformer
         continue coaching: true
     - IC:
         IC name: Rafael Carlos Rosa
-        date: 2019-09-30
+        date: 2019/09/30
         unit: https://jira.devfactory.com/browse/SONIC-20363
         coaching: Double check review comment, to ensure is well formed (Jira link tag was broken).  
         performance assessment: highPerformer
         continue coaching: true
     - IC:
         IC name: Vasile Irimia
-        date: 2019-09-30
+        date: 2019/09/30
         unit: https://jira.devfactory.com/browse/JVHOPST-10246
         coaching: Improve comment details. Not specified which Feature Stories were not in the correct status at the time of review. 
         performance assessment: highPerformer
