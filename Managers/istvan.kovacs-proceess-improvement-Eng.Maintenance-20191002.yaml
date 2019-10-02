@@ -1,7 +1,7 @@
 manager: Istvan Kovacs
 teamroom: Eng.Maintenance
-units: 3
-    - https://jira.optiva.com/jira/browse/BHTE-5
+units: 
+    - "https://jira.optiva.com/jira/browse/BHTE-5"
 recommendation: 
     eliminate waste: true
     improve quality bar: false

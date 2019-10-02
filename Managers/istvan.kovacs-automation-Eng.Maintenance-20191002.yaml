@@ -1,0 +1,18 @@
+manager: Istvan Kovacs
+teamroom: Eng.Maintenance
+units:
+- unit: "https://jira.optiva.com/jira/browse/VDTZ-1048"
+- unit: "https://jira.optiva.com/jira/browse/TIMB-32"
+automation:
+  product agnostic: true
+  product specific:
+  #- product name: All Optiva products
+  description: 'Affects Versions field of jira is not used correctly in Optiva as it cannot store all versions of all products, modules, components that are installed
+    on the customer and QA systems.    Proposal is to add 2 custom fields. A dropdown
+    wihere reporter chooses where the issue is being reported from (Customer Production,
+    Customer Test, Customer DR, Optiva Test). A multi-line text field where exact
+    product versions can be enumerated. The above can be enforced when ticket comes
+    to maintenance and will eliminate the waste of asking and claifying versions on
+    specific tickets.'
+  effort: 0.5
+  impact: 5

@@ -1,0 +1,69 @@
+#Istvan Kovacs note 1: highPerformer | averagePerformer | lowPerformer is assumed to be purely matematical split of the ICs meaning top 33%, middle 33% and bottom 33%. This is in no way implying that lowPerformers are bad and need to be terminated.
+#Istvan Kovacs note 2: the following ICs were transferred to me TODAY and have no coaching: Alexey Rokhin, Andrei Lobont, Cengiz Erdogan, Emanuel Petre, Saurabh Mittal
+manager: Istvan Kovacs #<manager name>
+teamroom: Eng.Maintenance #<teamroom name>
+direct reports: 14 #<direct report count>
+ICs: 
+    - IC: 
+        IC name: Ahmet Akyun #<IC name>
+        date: 2019-10-02 #<date>
+        unit: "https://jira.optiva.com/jira/browse/DIGVEN-1" #<Jira link>
+        coaching: We are proposing DB operations to be executed on client system to solve a defect. Provide rollback script. #<free text coaching>
+        performance assessment: highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false
+    - IC: 
+        IC name: Andrey Galysh #<IC name>
+        date: 2019-10-02 #<date>
+        unit: "https://jira.optiva.com/jira/browse/VDII-8075" #<Jira link>
+        coaching: "We came to the same conclusion on the Customer Defect ticket as the PCA on the main EMCY ticket. Suspect is Load Balancer. Proposed to sync with PCA and organize a PairWork call with PCA, Support and known Load Balancer Expert to formulate next steps on the ticket. IF this will not happen in this week, I'll organize the call for next week myself." #<free text coaching>
+        performance assessment: highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false
+    - IC: 
+        IC name: Andreas Arifin #<IC name>
+        date: 2019-10-02 #<date>
+        unit: "https://jira.optiva.com/jira/browse/OMNT-3251" #<Jira link>
+        coaching: "We came to the conclusion that this ticket is Functions as Designed case. Andreas already wrote this on the main ticket. I've asked him to wait with the formal KB document creation and ticket closure until next day to let stakeholders reply on the Jira ticket and avoid unnecessary FTAR hit." #<free text coaching>
+        performance assessment: highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false   
+    - IC: 
+        IC name: Jose Torres #<IC name>
+        date: 2019-10-02 #<date>
+        unit: "https://jira.optiva.com/jira/browse/COTE-707" #<Jira link>
+        coaching: "We got a generic but escalated case. Guidance/coachign is to ask for individual work units. As a result https://jira.optiva.com/jira/browse/COTE-715 was created that will give work not only to Jose but also to Andrei, allowing better work tracking and validation." #<free text coaching>
+        performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false 
+    - IC: 
+        IC name: Mohammad Juned Khan #<IC name>
+        date: 2019-10-02 #<date>
+        unit: "https://jira.optiva.com/jira/browse/VDTZ-1048" #<Jira link>
+        coaching: "We have this long running ticket, and Juned gave a status update on it in a Jira comment. On the same comment thread there was a question from Care Manager and 2 questions from PCA. Juned did not answer any of them in his comment. The guidance here is to first answer all questions from a thread and only after then go ahead and give updates or share new information." #<free text coaching>
+        performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false            
+    - IC: 
+        IC name: Fernando Barbat #<IC name>
+        date: 2019-10-02 #<date>
+        unit: "https://jira.optiva.com/jira/browse/BEST-1" #<Jira link>
+        coaching: "We have 2 options to fix the customer issue with slightly different results and implications. Fernando wanted to ask customer to choose an option. This would have introduced and unknown amount of waiting time. By questioning Fernando he knows which solution is better and safer from the technical point of view. My coaching was to go ahead with that solution and let PCA decide in code review if it's OK or NOK as we cannot afford to wait for customer response cycle." #<free text coaching>
+        performance assessment: lowPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false 
+    - IC: 
+        IC name: Sarat Kumar #<IC name>
+        date: 2019-10-02 #<date>
+        unit: "https://jira.optiva.com/jira/browse/VDII-5079" #<Jira link>
+        coaching: "We have received new traces from QA for the issue. QA is saying issue is still there but we are not seeing the same from the traces. Guidance here is to reach out to QA to ensure we are not missing anythign, and by doing so reach a common decision to close the ticket." #<free text coaching>
+        performance assessment: lowPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false 
+    - IC: 
+        IC name: Farhan Raja #<IC name>
+        date: 2019-10-02 #<date>
+        unit: "https://jira.optiva.com/jira/browse/OMNT-3102" #<Jira link>
+        coaching: "Chinese whispers is happening on the ticket: Feature team is complaining to QA that something is not working, QA is raising the ticket and when it comes to maintenance the scenario seems to be wroking fine. Suggested to have a call with all 3 funcitons present to clarify the ticket and reach a decision. Alternative was comments in Jira and XO chat which are time robbers." #<free text coaching>
+        performance assessment: lowPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false 
+    - IC: 
+        IC name: Everton Cândido De Sousa Santos #<IC name>
+        date: 2019-10-02 #<date>
+        unit: "https://jira.optiva.com/jira/browse/CST-12468" #<Jira link>
+        coaching: "This is a cross-training ticket. Everton needs to become an expert on DCRM in 10 days. I made this crystal clear to him from the beginning and will follow up in CiCs. We created training plan and 2-3 hours common pair work time with Alexey to do the KT." #<free text coaching>
+        performance assessment: lowPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false 
