@@ -1,0 +1,48 @@
+manager: Erdem Ergin
+teamroom: Eng.Import.DueDiligence
+direct reports: 4
+ICs: 
+    - IC: 
+        IC name: Anton Belousov
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/ENGDD-2642
+        coaching: >
+          People grid should not have any empty cells. If there is no special knowledge to capture it should be speficied.
+          No need to list all technologies such as programming languages since there is no special knowledge around them.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Hudson Tavares
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/ENGDD-2374
+        coaching: >
+           Instead of pointing out the circumstantial issues, just point the root cause.
+           In AccuProfile HP-UX is not the actual problem we have but the Telelogic SDL generator is,
+           where if we manage to run Telelogic SDL generator on a linux machine, HP-UX will not be needed anymore. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Ricardo Cunha
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/ENGDD-2312
+        coaching: >
+          Weak test means a unit test which does not check the result of the execution
+          Suppressed unit test means a unit test which will not be executed once you run the UT suite
+          We should follow this definitions while preparing the code quality pillar.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Asad Ali
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/ENGDD-2705
+        coaching: >
+          HardCoded references reports need to be reviewed manually for:
+          - If the absolute file paths are correctly identified
+          - If the listed domains are accurate
+          Priority List:
+          Fix NorthPlains reports
+          Change CAFlow to support multiple revision ids for the same repo/branch/commit
+          Complete StreetSmart migration and trigger Codefix
+          Migrate at least 1 Aspira Repo
+        performance assessment: averagePerformer
+        continue coaching: true
