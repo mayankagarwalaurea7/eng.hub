@@ -1,0 +1,13 @@
+manager: Naaliel Mendes
+teamroom: Optiva.Eng.ProductCA
+units: 7
+    - unit: https://jira.optiva.com/jira/browse/VDII-8079
+recommendation: 
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: false
+    product specific: 
+        - product name: OCE 
+    description: Customer, feature, Eng.Problems tickets with wrong status, specially for Vodafone India releases (for example, still on Verification Pending whereas release was already done to SI team). Plan in place to fix it on existing releases and alignment already done with QA Team manager.
+    effort: 5
+    impact: 1
