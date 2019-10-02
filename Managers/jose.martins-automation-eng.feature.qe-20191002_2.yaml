@@ -8,4 +8,4 @@ automation:
         - product name: N/A
     description: Automatically restrict transition on Jira, if tickets are on the wrong status.
     effort: 1
-    impact: 1
+    impact: 0.8
