@@ -9,6 +9,7 @@ improve quality bar: true
 product agnostic: false
 product specific:
 - product name:  Tradebeam
-description: Process Improvements recommended: variable should be used in asset part as well instead of literal values for all getters and setters and when we are assigning the values at the same line and not modifying then set it as final. This can save approx.16-20 hours as it is taking too much to fix them and this impact is on every PR which was set up using AUT for Tradebeam where every Getter Setter has the same issue. The second process improvement recommendation is it never uses NotNullValue() function in assertion and it is suggested to use real value instead. It was given as feedback to apply these changes in the PR https://github.com/trilogy-group/avolin-tradebeam-gtm/pull/1101
+description: Process Improvements recommended is variable should be used in asset part as well instead of literal values for all getters and setters and when we are assigning the values at the same line and not modifying then set it as final and This can save approx 20 hours as it is taking too much to fix them and this impact is on every PR which was set up using AUT for Tradebeam where every Getter Setter has the same issue. The second process improvement recommendation is it never uses NotNullValue() function in assertion and it is suggested to use real value instead. It was given as feedback to apply these changes in the PR 1101
 effort: 2
-impact: %10 
+impact: 10% 
+
