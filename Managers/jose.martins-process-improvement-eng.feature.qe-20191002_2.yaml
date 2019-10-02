@@ -11,4 +11,4 @@ recommendation:
         - product name: N/A
     description: Add rule to ensure status of Epic, AU and Spec tickets, is consistent
     effort: 0
-    impact: 1
+    impact: 0.8
