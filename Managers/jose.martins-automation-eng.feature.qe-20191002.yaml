@@ -11,4 +11,4 @@ automation:
         - product name: N/A
     description: Automatically add review comment on tickets, based on review checklist.
     effort: 10
-    impact: 10
+    impact: 8.3
