@@ -1,0 +1,10 @@
+manager: Evgeny Babaev
+teamroom: Eng.ProductCA
+units: 
+    - unit: 
+automation:
+    product agnostic: true
+    product specific: 
+    description: Add QB version field to E2E tickets. PCA will specify whcih QB version he is using when writing e2e. Later it will help with updating those e2es which are outdated. Why - QB used to change quite often and it was not clear which e2es are refreshed and which are not. Having QB version will allow to even automate reopening of e2es.
+    effort: 1 #days
+    impact: 100
