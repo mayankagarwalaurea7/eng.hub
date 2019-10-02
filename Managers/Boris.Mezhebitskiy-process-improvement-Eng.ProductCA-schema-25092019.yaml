@@ -1,0 +1,15 @@
+manager: Boris Mezhebitskiy 
+teamroom: Eng.ProductCA, Eng.CentralQA
+units: 
+    - unit: https://jira.devfactory.com/browse/ACTA-49299
+    - unit: https://jira.devfactory.com/browse/ACTA-51023
+    - unit: https://jira.devfactory.com/browse/ACTA-51518 
+recommendation:
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific: !!seq
+        - product name: !!str #product names 
+    description: Currently QA ICs fail items without giving clear and detailed explaination on fail reason. So PCA has to pull out those details by asking additional questions. We can save PCA time by getting more detailed QA problems initial descriptions.
+    effort: 7 
+    impact: 20 

@@ -1,0 +1,25 @@
+manager: Boris Mezhebitskiy 
+teamroom: Eng.ProductCA
+direct reports: 3
+ICs: 
+    - IC: !!map
+        IC name: Mehmet Sunkur
+        date: 27/09/2019
+        unit: all pending eng probblems 
+        coaching: Work queue alignment coaching - make sure PCA creates Eng.Problems and waiting for them to be prioritized before starting work instead of previous work model (get work done and then log eng problems for it). 
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: !!map
+        IC name: Amit Goyal
+        date: 27/09/2019
+        unit: all pending eng probblems 
+        coaching: Work queue alignment coaching - make sure PCA creates Eng.Problems and waiting for them to be prioritized before starting work instead of previous work model (get work done and then log eng problems for it). 
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: !!map
+        IC name: Thien Tran
+        date: 27/09/2019
+        unit: all pending eng probblems 
+        coaching: Work queue alignment coaching - make sure PCA creates Eng.Problems and waiting for them to be prioritized before starting work instead of previous work model (get work done and then log eng problems for it). 
+        performance assessment: highPerformer
+        continue coaching: true
