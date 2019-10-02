@@ -1,0 +1,11 @@
+manager: Ivan Golovanov
+teamroom: Eng.QAIntegrationTesting
+units:
+    - unit: https://jira.devfactory.com/browse/FIRM58-8791
+automation:
+    product agnostic: true
+    product specific:
+        - product name: FIRM58
+    description: Create automation to change statuses to Pending TC Replacement for old E2Es with more that 1 TC linked
+    effort: 3
+    impact: 1
