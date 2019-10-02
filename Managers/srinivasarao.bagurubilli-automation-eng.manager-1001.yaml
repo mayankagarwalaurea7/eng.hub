@@ -1,0 +1,11 @@
+manager: srinivasarao.bagurubilli
+teamroom: Eng.ProductCA
+units: 
+    - unit: 
+automation: 
+    product agnostic: false
+    product specific: true
+        - product name: Supportsoft,SupportSoft Analyst,SupportSoft Client,Pivotal,Pivotal Legacy,Pivotal Apps
+    description: No dedicated PCA for any of the above products, one CA was being evaluated for Pivotal(Pivotal Web).
+    effort: 0
+    impact: 0
