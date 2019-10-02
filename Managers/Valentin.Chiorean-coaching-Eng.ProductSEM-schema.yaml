@@ -17,7 +17,7 @@ ICs:
       performance assessment: averagePerformer
       continue coaching: true
 
-      # Oct 1
+      # Oct 1 ---------------------------------------------------------------------------------------
 
       IC name: Laszlo Robert Albert
         date: 2019-10-01
@@ -82,4 +82,25 @@ ICs:
         performance assessment: highPerformer
         continue coaching: true
 
+      # Oct 2 ----------------------------------------------------------------
 
+      IC name: Laszlo Robert Albert
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/JCLDALL-25159
+        coaching: Linked to related tickets, but not the correct ones.
+        performance assessment: highPerformer
+        continue coaching: true
+
+      IC name: Laszlo Robert Albert
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/secure/Dashboard.jspa?selectPageId=59000
+        coaching: No unblocked tickets appearing on the queue. PCA to take on from Priorities list in shared Workflowy: 'https://workflowy.com/#/f9252f93325a'
+        performance assessment: highPerformer
+        continue coaching: true
+
+      IC name: Rares Zehan
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/JVMBL-6172
+        coaching: This can be unblocked. Has to be picked up and start investigation + propose and implement solution
+        performance assessment: highPerformer
+        continue coaching: true
