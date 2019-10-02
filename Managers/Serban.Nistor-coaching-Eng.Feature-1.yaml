@@ -8,7 +8,7 @@ ICs: !!seq
         unit: !!str https://jira.devfactory.com/browse/SCALEARC-8861
         coaching: !!str Keep applying best practices to avoid rejections from FQE and PCA
         performance assessment: !!str averagePerformer
-        continue coaching: !!bool false
+        continue coaching: !!bool true
     - IC: !!map
           IC name: !!str Ankit Shah
           date: !!str 2019-09-30
@@ -22,28 +22,28 @@ ICs: !!seq
           unit: !!str https://jira.devfactory.com/browse/ORMS-1028
           coaching: !!str Keep applying best practices and sync with PCA whenever unsure to continue avoiding rejections on PRs
           performance assessment: !!str averagePerformer
-          continue coaching: !!bool false
+          continue coaching: !!bool true
     - IC: !!map
           IC name: !!str Gergo Gera
           date: !!str 2019-09-30
           unit: !!str https://jira.devfactory.com/browse/ORMS-650
           coaching: !!str Keep applying best practices to avoid rejections and keep focus and intensity scores high to achieve TPG
           performance assessment: !!str highPerformer
-          continue coaching: !!bool false
+          continue coaching: !!bool true
     - IC: !!map
           IC name: !!str Judit Gera-Kapinya
           date: !!str 2019-09-30
           unit: !!str https://jira.devfactory.com/browse/ORMS-654
           coaching: !!str Keep applying best practices to avoid rejections and keep focus and intensity scores high to achieve TPG
           performance assessment: !!str highPerformer
-          continue coaching: !!bool false
+          continue coaching: !!bool true
     - IC: !!map
           IC name: !!str Paulo Kinjo
           date: !!str 2019-09-30
           unit: !!str https://jira.devfactory.com/browse/ORMS-1580
           coaching: !!str Keep syncing with PCA wherever unclear and apply best practices to avoid PR rejections
           performance assessment: !!str highPerformer
-          continue coaching: !!bool false
+          continue coaching: !!bool true
     - IC: !!map
           IC name: !!str Saulo Nardin
           date: !!str 2019-09-30
@@ -57,4 +57,4 @@ ICs: !!seq
           unit: !!str https://jira.devfactory.com/browse/SCALEARC-11122
           coaching: !!str Keep escalating each time a new AI is needed or ITD does not correspond to reality in the code
           performance assessment: !!str highPerformer
-          continue coaching: !!bool false
+          continue coaching: !!bool true
