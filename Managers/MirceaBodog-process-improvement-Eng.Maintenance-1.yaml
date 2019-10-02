@@ -1,0 +1,13 @@
+manager: Mircea Bodog
+teamroom: Eng.Maintenance
+units: 
+    - unit: https://jira.devfactory.com/browse/XTP-5151
+recommendation:
+    eliminate waste: false
+    improve quality bar: true
+    product agnostic: true
+    product specific: !!seq
+        ##- product name: !!str #product names 
+    description: When an XTP session is done for understanding code and modules, the focus must be on the areas where the first 2 defects will be fixed. The Defects must be identified before the session and a solution agreed with the navigator in the session. The XTSession ticket is to be closed with a comment that includes which defects were discussed and what is the agreed fix. Maint playbook will be updated with this approach.
+    effort: 1
+    impact: 1
