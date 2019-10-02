@@ -8,14 +8,14 @@ ICs:
       unit: CODEALIKE-4853
       coaching: Prepare next tickets before we have a meeting with Product site so you will be able to push them after
       performance assessment: good
-      continue coaching: false
+      continue coaching: true
   - IC:
       IC name: Tengiz Merabishvilli
       date: 2019-09-30
       unit: CODEALIKE-4851
       coaching: Prepare next tickets before we have a meeting with Product site so you will be able to push them after 
       performance assessment: good
-      continue coaching: false
+      continue coaching: true
   - IC:
       IC name: Muhammad Farooq
       date: 2019-09-30
@@ -29,4 +29,4 @@ ICs:
       unit: PG-1250
       coaching: try to record a demo in a same way as some of other ICs
       performance assessment: good
-      continue coaching: false
+      continue coaching: true
