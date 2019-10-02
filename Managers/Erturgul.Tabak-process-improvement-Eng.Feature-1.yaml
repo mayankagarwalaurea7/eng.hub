@@ -1,11 +1,13 @@
 manager: Ertugrul Tabak
 teamroom: Eng.Feature
 units:
-  - unit: cannot check - JIRA is down
+  - unit: https://jira.devfactory.com/browse/CSRV-9726
 recommendation:
   eliminate waste: true
   improve quality bar: false
   product agnostic: true
+  product specific:
+    - product name: all
   description: >
     Feature Epics stay at "In Implementation", if verification is blocked for some reason.
     After all Feature Stories are verified, Eng.Feature need to return to record milestone
