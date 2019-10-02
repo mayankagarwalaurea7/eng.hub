@@ -9,4 +9,4 @@ automation:
         - product name: N/A
     description: Automatically add PR comments, when a method or class size rule, is exceeded.
     effort: 5
-    impact: 8
+    impact: 5
