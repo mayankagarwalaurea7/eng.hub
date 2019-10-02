@@ -1,0 +1,18 @@
+manager: Engin Onder #<manager name>
+teamroom: Eng.ProductCA #<teamroom name>
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Anderson Junqueira #<IC name>
+        date: 2019/10/01 #<date>
+        unit: https://jira.devfactory.com/browse/SPC-22367 #<Jira link>
+        coaching: Product Commit QE Review tickets should be closed upon review & merge completion. Missed here. #<free text coaching>
+        performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false
+    - IC: 
+        IC name: Aleksandr Shevchenko #<IC name>
+        date: 2019/10/01 #<date>
+        unit: https://jira.devfactory.com/browse/HAND-1907 #<Jira link>
+        coaching: Attributes should be defined and linked to all E2Es as per declared process. All new E2Es created from now on should be linked, and all existing ones should be linked during upcoming RDS work.  #<free text coaching>
+        performance assessment: highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false

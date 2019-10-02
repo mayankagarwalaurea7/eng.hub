@@ -1,0 +1,11 @@
+manager: Carlos Witte
+teamroom: Eng.DevSpacesImport.QE
+direct reports: 1
+ICs: 
+    - IC: 
+        IC name: Otávio Calaça Xavier
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/SLIAO-7721
+        coaching: The QE Review process is very well documented in the Import ticket, but QE tickets of type "Product Commit QE Review" are empty. We should at least reference/link the QE Review process in its own tickets. 
+        perfrormanceAssessment: highPerformer # no rank info in R&R, but he is above the metric target
+        continueCoaching: true

@@ -1,0 +1,13 @@
+manager: Todd Benson
+teamroom: Eng.ProductCA
+units: 1
+    - https://jira.devfactory.com/browse/STRONGTEST-75
+recommendation: 
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific:
+        - product name: Strongtest 
+    description: Currently QA is performed on all End to End and Arch doc updates.  QA on tickets could be performed on a random basis lowering the number of tickets to be QA'd and not compromising the quality if it is done in a truly random manner.  This would free up some QE resources to return to activities that lead directly to business value.  So develop a system that randomly selects units to be QA'd.  Also, the QB bars are too long or have too many items to them.  A better QB bar should be 5 items or less. 
+    effort: 3
+    impact: Reduce number of QEs needed and improve quality by making QB simpler and clearer.

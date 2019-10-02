@@ -1,0 +1,3070 @@
+---
+model:
+  people:
+  - id: '19'
+    tags: Element,Person
+    name: Insights Advanced Admin user
+    description: User Administares Insights Advanced
+    relationships:
+    - id: '126'
+      tags: Relationship
+      sourceId: '19'
+      destinationId: '64'
+      description: Uses
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '49'
+      tags: Relationship
+      sourceId: '19'
+      destinationId: '10'
+      description: Administers
+      interactionStyle: Synchronous
+    - id: '140'
+      tags: Relationship
+      sourceId: '19'
+      destinationId: '69'
+      description: Checking workers stats
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '18'
+    tags: Element,Person
+    name: Insigths Advanced User
+    description: User uses Insights Advanced
+    relationships:
+    - id: '48'
+      tags: Relationship
+      sourceId: '18'
+      destinationId: '10'
+      description: Uses
+      interactionStyle: Synchronous
+    - id: '125'
+      tags: Relationship
+      sourceId: '18'
+      destinationId: '63'
+      description: Uses
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '16'
+    tags: Element,Person
+    name: Jive Admin User
+    description: Users administer Jive Cloud
+    relationships:
+    - id: '42'
+      tags: Relationship
+      sourceId: '16'
+      destinationId: '1'
+      description: Administers
+      interactionStyle: Synchronous
+    - id: '374'
+      tags: Relationship
+      sourceId: '16'
+      destinationId: '54'
+      description: Administers
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '17'
+    tags: Element,Person
+    name: Jive Mobile User
+    description: Regular user uses mobile app
+    relationships:
+    - id: '145'
+      tags: Relationship
+      sourceId: '17'
+      destinationId: '143'
+      description: Uses
+      technology: native application
+      interactionStyle: Synchronous
+    - id: '146'
+      tags: Relationship
+      sourceId: '17'
+      destinationId: '144'
+      description: Uses
+      technology: native application
+      interactionStyle: Synchronous
+    - id: '43'
+      tags: Relationship
+      sourceId: '17'
+      destinationId: '2'
+      description: Uses
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '470'
+    tags: Element,Person
+    name: Jive StreamOnce Administrator
+    description: Administers StreamOnce installation
+    relationships:
+    - id: '471'
+      tags: Relationship
+      sourceId: '470'
+      destinationId: '111'
+      description: Administers
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '15'
+    tags: Element,Person
+    name: Jive User
+    description: Regular user uses Jive through UI
+    relationships:
+    - id: '326'
+      tags: Relationship
+      sourceId: '15'
+      destinationId: '98'
+      description: Uses Jive
+      interactionStyle: Synchronous
+    - id: '28'
+      tags: Relationship
+      sourceId: '15'
+      destinationId: '3'
+      description: Requests Information
+      interactionStyle: Synchronous
+    - id: '270'
+      tags: Relationship
+      sourceId: '15'
+      destinationId: '116'
+      description: Administrates
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '375'
+      tags: Relationship
+      sourceId: '15'
+      destinationId: '54'
+      description: Works with
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '60'
+    tags: Element,Person
+    name: R2E2 Admin User
+    description: User allowed to login to R2E2 Console
+    relationships:
+    - id: '257'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '174'
+      description: Administers
+      interactionStyle: Synchronous
+    - id: '407'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '182'
+      description: Uses
+      interactionStyle: Synchronous
+    - id: '191'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '180'
+      description: Initiates sync between 2 clusters
+      technology: UI, Upena, REST API
+      interactionStyle: Synchronous
+    - id: '260'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '201'
+      description: Sets R2E2 White List
+      technology: DynamoDB
+      interactionStyle: Synchronous
+    - id: '258'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '19'
+      description: Sets R2E2 Kinesis White List
+      interactionStyle: Synchronous
+    - id: '362'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '172'
+      description: Manages
+      technology: UI
+      interactionStyle: Synchronous
+    - id: '61'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '38'
+      description: Administers
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '221'
+    tags: Element,Person
+    name: Search Admin User
+    description: Technical user for setting up Search services configuration
+    relationships:
+    - id: '508'
+      tags: Relationship
+      sourceId: '221'
+      destinationId: '501'
+      description: Update whitelists
+      technology: DynamoDB
+      interactionStyle: Synchronous
+    - id: '435'
+      tags: Relationship
+      sourceId: '221'
+      destinationId: '5'
+      description: Configures
+      technology: SSH+Redis
+      interactionStyle: Synchronous
+    - id: '223'
+      tags: Relationship
+      sourceId: '221'
+      destinationId: '118'
+      description: Update tenant metadata
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+  softwareSystems:
+  - id: '378'
+    tags: Element,Software System,external
+    name: Alertfind
+    description: Notification service
+    location: Unspecified
+  - id: '150'
+    tags: Element,Software System,external
+    name: Apple Push Notification Service
+    description: Sends Push Notifications to user's mobiles
+    relationships:
+    - id: '158'
+      tags: Relationship
+      sourceId: '150'
+      destinationId: '2'
+      description: Push Notifications
+      interactionStyle: Synchronous
+    - id: '154'
+      tags: Relationship
+      sourceId: '150'
+      destinationId: '144'
+      description: Push Notifications
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '39'
+    tags: Element,Software System,external
+    name: AWS Managed Services
+    description: Amazon Web Services
+    location: Unspecified
+  - id: '307'
+    tags: Element,Software System,external
+    name: Embed.ly
+    description: 3rd Party embed video provider
+    location: Unspecified
+  - id: '14'
+    tags: Element,Software System,external
+    name: External Systems at Client sites
+    description: Systems at clients connects to Jive installations
+    relationships:
+    - id: '52'
+      tags: Relationship
+      sourceId: '14'
+      destinationId: '1'
+      description: Uses
+      interactionStyle: Synchronous
+    - id: '53'
+      tags: Relationship
+      sourceId: '14'
+      destinationId: '9'
+      description: Integrates through
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '484'
+      tags: Element,Container,external,Storage
+      name: Box
+      description: Storage Cloud Service
+      technology: Box native
+    - id: '109'
+      tags: Element,Container,external
+      name: External storage providers
+      description: Adhoc and unknowm storage providers
+      technology: Native
+    - id: '110'
+      tags: Element,Container,external
+      name: External Web Conferencing providers
+      description: Adhoc and unknown web conferencing providers
+      technology: Native
+    - id: '422'
+      tags: Element,Container,external
+      name: Google Translation Service
+      description: Translation Service
+      technology: Google Translation native
+    - id: '420'
+      tags: Element,Container,external
+      name: Lionbridge
+      description: Translation Provider
+      technology: Lionbridge native
+    - id: '421'
+      tags: Element,Container,external
+      name: Microsoft Azure Translation
+      description: Microsoft Translation Service
+      technology: Microsoft Translation native
+    - id: '385'
+      tags: Element,Container,external
+      name: MS Office
+      description: Microsoft office suite
+      technology: ".NET"
+    - id: '490'
+      tags: Element,Container,external
+      name: MS Outlook
+      description: Microsoft Outlook
+      technology: Native
+    - id: '386'
+      tags: Element,Container,external
+      name: Office365
+      description: Microsoft Office365 suite
+      relationships:
+      - id: '489'
+        tags: Relationship
+        sourceId: '386'
+        destinationId: '113'
+        description: Webhooks back
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: ".NET"
+    - id: '481'
+      tags: Element,Container,external,Storage
+      name: Sharepoint on-premise
+      description: Customer-based Microsoft Sharepoint installation v3/5/2010/2016
+      technology: Sharepoint native
+  - id: '149'
+    tags: Element,Software System,external
+    name: Google Android Push Notification Service
+    description: Sends Push Notifications to user's mobiles
+    relationships:
+    - id: '159'
+      tags: Relationship
+      sourceId: '149'
+      destinationId: '2'
+      description: Push Notifications
+      interactionStyle: Synchronous
+    - id: '160'
+      tags: Relationship
+      sourceId: '149'
+      destinationId: '143'
+      description: Push Notifications
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '10'
+    tags: Element,Software System,Multitenant
+    name: Insights Advanced
+    description: Advanced Analytics service
+    relationships:
+    - id: '51'
+      tags: Relationship
+      sourceId: '10'
+      destinationId: '8'
+      description: Fetches data from
+      interactionStyle: Synchronous
+    - id: '50'
+      tags: Relationship
+      sourceId: '10'
+      destinationId: '1'
+      description: Fetches data from
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '65'
+      tags: Element,Container,JIA
+      name: celery-beat
+      description: Scheduling background worked service
+      relationships:
+      - id: '138'
+        tags: Relationship
+        sourceId: '65'
+        destinationId: '124'
+        description: Schedule task
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      - id: '129'
+        tags: Relationship
+        sourceId: '65'
+        destinationId: '123'
+        description: Workers Schedule
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      technology: Python, Celery
+    - id: '69'
+      tags: Element,Container,JIA
+      name: celery-flower
+      description: Monitoring Celery tasks status
+      relationships:
+      - id: '139'
+        tags: Relationship
+        sourceId: '69'
+        destinationId: '124'
+        description: Task status
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      technology: Python, Celery
+    - id: '66'
+      tags: Element,Container,JIA
+      name: celery-worker-analysis
+      description: Text analysis and content preprocessing
+      relationships:
+      - id: '130'
+        tags: Relationship
+        sourceId: '66'
+        destinationId: '123'
+        description: Analysis Data
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      - id: '137'
+        tags: Relationship
+        sourceId: '66'
+        destinationId: '124'
+        description: Get schedule
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      technology: Python, Celery
+    - id: '68'
+      tags: Element,Container,JIA
+      name: celery-worker-default
+      description: Scraping background service
+      relationships:
+      - id: '135'
+        tags: Relationship
+        sourceId: '68'
+        destinationId: '124'
+        description: Get Schedule
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      - id: '438'
+        tags: Relationship
+        sourceId: '68'
+        destinationId: '81'
+        description: Fetches
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '132'
+        tags: Relationship
+        sourceId: '68'
+        destinationId: '123'
+        description: Jive content
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      - id: '520'
+        tags: Relationship
+        sourceId: '68'
+        destinationId: '80'
+        description: Fetches
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '437'
+        tags: Relationship
+        sourceId: '68'
+        destinationId: '54'
+        description: Fetches content
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Python, Celery
+    - id: '67'
+      tags: Element,Container,JIA
+      name: celery-worker-sentiment
+      description: Sentiment analysis preprocessing
+      relationships:
+      - id: '136'
+        tags: Relationship
+        sourceId: '67'
+        destinationId: '124'
+        description: Get schedule
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      - id: '131'
+        tags: Relationship
+        sourceId: '67'
+        destinationId: '123'
+        description: Sentiment Analysis
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      technology: Python, Celery
+    - id: '123'
+      tags: Element,Container,EC2,JIA,Storage
+      name: Insights Advanced MongoDB
+      description: General Insights Advanced storage
+      technology: TCP/IP
+    - id: '124'
+      tags: Element,Container,EC2,JIA
+      name: Insights Advanced RabbitMQ
+      description: Insights advanced task broker
+      technology: TCP/IP
+    - id: '72'
+      tags: Element,Container,JIA
+      name: jive-resonata-compressor
+      description: Compressing Jive documents content in MongoDB
+      relationships:
+      - id: '134'
+        tags: Relationship
+        sourceId: '72'
+        destinationId: '123'
+        description: Compressed content
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      technology: Python
+    - id: '71'
+      tags: Element,Container,JIA
+      name: jive-resonata-dexter
+      description: Indexing Jive Documents in MongoDB
+      relationships:
+      - id: '133'
+        tags: Relationship
+        sourceId: '71'
+        destinationId: '123'
+        description: Indexed content
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      technology: Python
+    - id: '73'
+      tags: Element,Container,JIA
+      name: jive-resonata-hurricane
+      description: Search Engine
+      relationships:
+      - id: '436'
+        tags: Relationship
+        sourceId: '73'
+        destinationId: '123'
+        description: Queries
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      technology: Python, CPython, CherryPy
+    - id: '64'
+      tags: Element,Container,JIA
+      name: jive-resonata-mgmt
+      description: Admin panel
+      relationships:
+      - id: '128'
+        tags: Relationship
+        sourceId: '64'
+        destinationId: '123'
+        description: Stores/Fetches configs
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      technology: Python, Pyramid, JS
+    - id: '63'
+      tags: Element,Container,JIA
+      name: jive-resonata-portal
+      description: Main UI
+      relationships:
+      - id: '127'
+        tags: Relationship
+        sourceId: '63'
+        destinationId: '73'
+        description: Calls
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Python, Pyramid, JS
+  - id: '12'
+    tags: Element,Software System,external
+    name: JCX
+    description: Orchestration management for Jive Cloud Core
+    relationships:
+    - id: '20'
+      tags: Relationship
+      sourceId: '12'
+      destinationId: '1'
+      description: Orchestrates
+      technology: K8S
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '8'
+    tags: Element,Software System,Multitenant
+    name: Jive Analytics
+    description: Standard Usage Analytics subsystem
+    relationships:
+    - id: '56'
+      tags: Relationship
+      sourceId: '8'
+      destinationId: '39'
+      description: Uses
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '444'
+      tags: Element,Container,external,Storage
+      name: Analytics AWS DynamoDB
+      description: Configuration storage
+      technology: AWS DynamoDB
+    - id: '443'
+      tags: Element,Container,external
+      name: Analytics AWS Firehose
+      description: Stream managing
+      relationships:
+      - id: '473'
+        tags: Relationship
+        sourceId: '443'
+        destinationId: '446'
+        description: Notifies
+        technology: AWS Native
+        interactionStyle: Synchronous
+      - id: '456'
+        tags: Relationship
+        sourceId: '443'
+        destinationId: '445'
+        description: Propagates
+        technology: AWS Native
+        interactionStyle: Synchronous
+      technology: AWS Firehose
+    - id: '442'
+      tags: Element,Container,external
+      name: Analytics AWS Kinesis
+      description: Event Queue dispatching
+      relationships:
+      - id: '453'
+        tags: Relationship
+        sourceId: '442'
+        destinationId: '75'
+        description: Propagates
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '452'
+        tags: Relationship
+        sourceId: '442'
+        destinationId: '77'
+        description: Propagates
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '451'
+        tags: Relationship
+        sourceId: '442'
+        destinationId: '76'
+        description: Propagates
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '454'
+        tags: Relationship
+        sourceId: '442'
+        destinationId: '78'
+        description: Propagates
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '455'
+        tags: Relationship
+        sourceId: '442'
+        destinationId: '443'
+        description: Propagates
+        technology: AWS Native
+        interactionStyle: Synchronous
+      technology: AWS Kinesis
+    - id: '446'
+      tags: Element,Container,external,Storage
+      name: Analytics AWS Redshift
+      description: Event Storage
+      relationships:
+      - id: '474'
+        tags: Relationship
+        sourceId: '446'
+        destinationId: '445'
+        description: Fetches from
+        technology: AWS Native
+        interactionStyle: Synchronous
+      technology: AWS Redshift
+    - id: '445'
+      tags: Element,Container,external,Storage
+      name: Analytics AWS S3
+      description: Intermediate S3
+      technology: AWS S3
+    - id: '274'
+      tags: Element,Container,EC2
+      name: Analytics CA ElasticSearch
+      description: Cloudalytics Storage
+      technology: ElasticSearch
+    - id: '275'
+      tags: Element,Container,EC2
+      name: Analytics IM Elasticsearch
+      description: Impact Metrics ElasticSearch
+      technology: ElasticSearch
+    - id: '475'
+      tags: Element,Container,external,Storage,Generated
+      name: Analytics Personal AWS S3
+      description: Per-tenant data storage
+      technology: AWS S3
+    - id: '76'
+      tags: Element,Container,Analytics
+      name: ca-consumer-es-ca
+      description: Cloudalytics ElasticSearch index
+      relationships:
+      - id: '277'
+        tags: Relationship
+        sourceId: '76'
+        destinationId: '274'
+        description: Stores data
+        technology: Elasticsearch native
+        interactionStyle: Synchronous
+      technology: Docker, Java, Dropwizard
+    - id: '77'
+      tags: Element,Container,Analytics
+      name: ca-consumer-es-im
+      description: Impact Metrics ElasticSearch index
+      relationships:
+      - id: '282'
+        tags: Relationship
+        sourceId: '77'
+        destinationId: '275'
+        description: Queries data
+        technology: ElasticSearch native
+        interactionStyle: Synchronous
+      technology: Docker, Java, Dropwizard
+    - id: '75'
+      tags: Element,Container,Analytics
+      name: ca-consumer-ki-pl
+      description: push events to Playbox stream
+      relationships:
+      - id: '480'
+        tags: Relationship
+        sourceId: '75'
+        destinationId: '477'
+        description: Pushes events
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Docker, Java, Dropwizard
+    - id: '78'
+      tags: Element,Container,Analytics
+      name: ca-consumer-s3
+      description: storing data in S3
+      relationships:
+      - id: '476'
+        tags: Relationship
+        sourceId: '78'
+        destinationId: '475'
+        description: Generates and Operates
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Docker, Java, Dropwizard
+    - id: '80'
+      tags: Element,Container,Analytics
+      name: ca-des
+      description: Data Export Service
+      relationships:
+      - id: '278'
+        tags: Relationship
+        sourceId: '80'
+        destinationId: '274'
+        description: Reads events
+        technology: Elasticsearch native
+        interactionStyle: Synchronous
+      technology: Docker, Java, Dropwizard
+    - id: '74'
+      tags: Element,Container,Analytics
+      name: ca-ingress
+      description: Incoming events processing
+      relationships:
+      - id: '458'
+        tags: Relationship
+        sourceId: '74'
+        destinationId: '444'
+        description: Reads/Writes
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '450'
+        tags: Relationship
+        sourceId: '74'
+        destinationId: '442'
+        description: Pushes data
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Docker, Java, Dropwiard
+    - id: '79'
+      tags: Element,Container,Analytics
+      name: ca-ingress-redshift
+      description: redshift data processing
+      relationships:
+      - id: '459'
+        tags: Relationship
+        sourceId: '79'
+        destinationId: '446'
+        description: Fetches data
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Docker, Java, Dropwizard
+    - id: '81'
+      tags: Element,Container,Analytics
+      name: ca-query
+      description: Queries for Impact Metrics, Community Analytics, Place Analytics
+        and Personal Insights
+      relationships:
+      - id: '279'
+        tags: Relationship
+        sourceId: '81'
+        destinationId: '274'
+        description: Queries data
+        technology: ElasticSearch native
+        interactionStyle: Synchronous
+      - id: '280'
+        tags: Relationship
+        sourceId: '81'
+        destinationId: '275'
+        description: Reads IM data
+        technology: ElasticSearch native
+        interactionStyle: Synchronous
+      technology: Docker, Java, Dropwizard
+    - id: '82'
+      tags: Element,Container,Analytics
+      name: ca-query-redshift
+      description: Redshift queries for community analytics
+      relationships:
+      - id: '460'
+        tags: Relationship
+        sourceId: '82'
+        destinationId: '446'
+        description: Fetches data
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Docker, Java, Dropwizard
+  - id: '4'
+    tags: Element,Software System,Multitenant
+    name: Jive CDM
+    description: Common Multitenant UI Components and video service
+    relationships:
+    - id: '272'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '116'
+      description: Fetches data
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '57'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '39'
+      description: Uses
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '31'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '1'
+      description: Requests Data
+      interactionStyle: Synchronous
+    - id: '433'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '307'
+      description: Calls
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '448'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '11'
+      description: Fetches data for UI
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '434'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '306'
+      description: Stores/Fetches video
+      technology: Binary
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '91'
+      tags: Element,Container,CDM
+      name: aurea-jive-cloud-cdm-chrome
+      description: Routes to appropriate UI service, proxies to other services based
+        on request data
+      relationships:
+      - id: '296'
+        tags: Relationship
+        sourceId: '91'
+        destinationId: '54'
+        description: Request Data
+        interactionStyle: Synchronous
+      - id: '300'
+        tags: Relationship
+        sourceId: '91'
+        destinationId: '92'
+        description: Forwards Request
+        interactionStyle: Synchronous
+      - id: '299'
+        tags: Relationship
+        sourceId: '91'
+        destinationId: '93'
+        description: Forwards Request
+        interactionStyle: Synchronous
+      - id: '301'
+        tags: Relationship
+        sourceId: '91'
+        destinationId: '94'
+        description: Forwards Request
+        interactionStyle: Synchronous
+      - id: '304'
+        tags: Relationship
+        sourceId: '91'
+        destinationId: '83'
+        description: Forwards Request
+        interactionStyle: Synchronous
+      - id: '297'
+        tags: Relationship
+        sourceId: '91'
+        destinationId: '95'
+        description: Forwards Request
+        interactionStyle: Synchronous
+      - id: '303'
+        tags: Relationship
+        sourceId: '91'
+        destinationId: '84'
+        description: Forwards Request
+        interactionStyle: Synchronous
+      - id: '298'
+        tags: Relationship
+        sourceId: '91'
+        destinationId: '96'
+        description: Forwards Request
+        interactionStyle: Synchronous
+      - id: '302'
+        tags: Relationship
+        sourceId: '91'
+        destinationId: '85'
+        description: Forwards Request
+        interactionStyle: Synchronous
+      technology: NodeJS, React
+    - id: '95'
+      tags: Element,Container,CDM
+      name: aurea-jive-cloud-cdm-phrases
+      description: Phrase substitution module
+      relationships:
+      - id: '312'
+        tags: Relationship
+        sourceId: '95'
+        destinationId: '101'
+        description: Requests substituted phrases
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: NodeJS, React
+    - id: '96'
+      tags: Element,Container,CDM
+      name: aurea-jive-cloud-cdm-userpanel
+      description: User Panel module
+      technology: NodeJS, React
+    - id: '93'
+      tags: Element,Container,CDM
+      name: aurea-jive-cloud-cdm-video-browse
+      description: Handles browsing of uploaded videos
+      technology: NodeJS, React
+    - id: '92'
+      tags: Element,Container,CDM
+      name: aurea-jive-cloud-cdm-video-create
+      description: Handles UI for creation-upload
+      technology: NodeJS, React
+    - id: '94'
+      tags: Element,Container,CDM
+      name: aurea-jive-cloud-cdm-video-playback
+      description: Handle UI for video playback
+      technology: NodeJS, React
+    - id: '85'
+      tags: Element,Container,CDM
+      name: jive-analytics-mitui-cloudalytics
+      description: UI for analytics
+      relationships:
+      - id: '329'
+        tags: Relationship
+        sourceId: '85'
+        destinationId: '82'
+        description: Queries data from
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '330'
+        tags: Relationship
+        sourceId: '85'
+        destinationId: '54'
+        description: Verifies security
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '328'
+        tags: Relationship
+        sourceId: '85'
+        destinationId: '81'
+        description: Queries data from
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Docker, NodeJS
+    - id: '84'
+      tags: Element,Container,CDM
+      name: jive-analytics-mitui-cloudalytics-personal-insights
+      description: Insights UI
+      relationships:
+      - id: '332'
+        tags: Relationship
+        sourceId: '84'
+        destinationId: '81'
+        description: Query data
+        interactionStyle: Synchronous
+      - id: '331'
+        tags: Relationship
+        sourceId: '84'
+        destinationId: '54'
+        description: Verifies security
+        interactionStyle: Synchronous
+      technology: Docker, NodeJS
+    - id: '83'
+      tags: Element,Container,CDM
+      name: jive-analytics-mitui-des-explorer
+      description: DES frontend
+      relationships:
+      - id: '439'
+        tags: Relationship
+        sourceId: '83'
+        destinationId: '82'
+        description: Fetches
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '334'
+        tags: Relationship
+        sourceId: '83'
+        destinationId: '54'
+        description: Verifies security
+        interactionStyle: Synchronous
+      - id: '333'
+        tags: Relationship
+        sourceId: '83'
+        destinationId: '80'
+        description: Queries data
+        interactionStyle: Synchronous
+      technology: Docker, NodeJS
+    - id: '86'
+      tags: Element,Container,CDM
+      name: jive-cdm-dc-cloud
+      description: Converts Office and PDF files and generates HTML preview
+      technology: Java, Dropwizard, Libreoffice
+    - id: '295'
+      tags: Element,Container
+      name: jive-cdm-deployment-script
+      description: Jive CDM deployment script
+      relationships:
+      - id: '322'
+        tags: Relationship
+        sourceId: '295'
+        destinationId: '98'
+        description: Pushes statics
+        interactionStyle: Synchronous
+      - id: '321'
+        tags: Relationship
+        sourceId: '295'
+        destinationId: '97'
+        description: Pushes statics
+        interactionStyle: Synchronous
+      technology: JS/Grunt
+    - id: '97'
+      tags: Element,Container,CDM
+      name: jive-cdm-mitui-cdnservice
+      description: Exposes interface for publishing assets to S3 bucket
+      relationships:
+      - id: '323'
+        tags: Relationship
+        sourceId: '97'
+        destinationId: '292'
+        description: Puts statics
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '89'
+      tags: Element,Container,CDM
+      name: jive-cdm-video-download
+      description: Manages video download
+      relationships:
+      - id: '319'
+        tags: Relationship
+        sourceId: '89'
+        destinationId: '306'
+        description: Downloads video
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '90'
+      tags: Element,Container,CDM
+      name: jive-cdm-video-embed
+      description: provides HTML for embedding video into Jive content
+      relationships:
+      - id: '325'
+        tags: Relationship
+        sourceId: '90'
+        destinationId: '307'
+        description: Creates embedded video
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '313'
+      tags: Element,Container,Storage,external
+      name: jive-cdm-video-queue
+      description: Metadata of active video coversions
+      technology: SQS
+    - id: '88'
+      tags: Element,Container,CDM
+      name: jive-cdm-video-regauth
+      description: Handles token authorization (creation and validation) for managing
+        video entities
+      relationships:
+      - id: '318'
+        tags: Relationship
+        sourceId: '88'
+        destinationId: '306'
+        description: Manages tokens
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '87'
+      tags: Element,Container,CDM
+      name: jive-cdm-video-status
+      description: Queries video provider for video status
+      relationships:
+      - id: '315'
+        tags: Relationship
+        sourceId: '87'
+        destinationId: '313'
+        description: Writes/reads
+        interactionStyle: Synchronous
+      - id: '316'
+        tags: Relationship
+        sourceId: '87'
+        destinationId: '314'
+        description: Writes/reads
+        interactionStyle: Synchronous
+      - id: '317'
+        tags: Relationship
+        sourceId: '87'
+        destinationId: '306'
+        description: Checks status
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '314'
+      tags: Element,Container,external,Storage
+      name: jive-cdm-video-status-db
+      description: Storage for processed video metadata information
+      technology: AWS DynamoDB
+  - id: '1'
+    tags: Element,Software System,Singletenant
+    name: Jive Cloud Core
+    description: Jive Cloud Core Application
+    relationships:
+    - id: '36'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '5'
+      description: Uses
+      interactionStyle: Synchronous
+    - id: '40'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '38'
+      description: Uses
+      interactionStyle: Synchronous
+    - id: '271'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '116'
+      description: Request data
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '37'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '11'
+      description: Uses
+      interactionStyle: Synchronous
+    - id: '230'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '214'
+      description: Index and fetch Users
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '228'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '118'
+      description: Send new activity data/index rebuild data
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '227'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '121'
+      description: URL/MLT/Content/Place search or synonym set update
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '33'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '8'
+      description: Uses
+      interactionStyle: Synchronous
+    - id: '34'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '9'
+      description: Uses
+      interactionStyle: Synchronous
+    - id: '32'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '4'
+      description: Uses Video Subsystem of
+      interactionStyle: Synchronous
+    - id: '41'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '39'
+      description: Uses
+      interactionStyle: Synchronous
+    - id: '35'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '7'
+      description: Uses
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '353'
+      tags: Element,Container,external,Storage
+      name: AWS RDS
+      description: Database storage
+      technology: JDBC
+    - id: '352'
+      tags: Element,Container,external,Storage
+      name: AWS S3
+      description: Statics storage
+      technology: HTTPS
+    - id: '54'
+      tags: Element,Container
+      name: cloud-application
+      description: Jive Cloud Core Application
+      relationships:
+      - id: '336'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '165'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '371'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '214'
+        description: Queries/Pushes User profiles
+        technology: ElasticSearch Native
+        interactionStyle: Synchronous
+      - id: '376'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '113'
+        description: Synchronize content
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '370'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '108'
+        description: Fetches add-ons
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '368'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '118'
+        description: Pushes content to ingress
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '259'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '166'
+        description: Pushes Activities
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '373'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '81'
+        description: Queries events
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '361'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '106'
+        description: Logs security breach info
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '310'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '89'
+        description: Requests video to download
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '359'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '101'
+        description: Fetch/Update substitutions
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '190'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '163'
+        description: Requests recommendations
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '338'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '167'
+        description: uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '151'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '107'
+        description: Sends push notification data
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '369'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '112'
+        description: Pushes notifications
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '358'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '103'
+        description: Translates content
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '367'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '121'
+        description: Queries indexed content
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '377'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '102'
+        description: Checks content for Spam
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '308'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '87'
+        description: Requests Video Status
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '354'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '100'
+        description: Checks for viruses
+        technology: Binary
+        interactionStyle: Synchronous
+      - id: '311'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '90'
+        description: Requests HTML to embed Video
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '189'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '162'
+        description: Stores content changes
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '305'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '86'
+        description: Requests conversion
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '357'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '104'
+        description: Signs S3 URLS
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '488'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '386'
+        description: Configures webhooks
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '360'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '111'
+        description: Data synchronization
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '188'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '161'
+        description: Store Follows and Stream definitions
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '365'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '353'
+        description: Stores data
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '472'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '80'
+        description: Creates credentials
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '366'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '352'
+        description: Fetches/Stores statics
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '372'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '74'
+        description: Pushes events
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '335'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '164'
+        description: uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '337'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '166'
+        description: uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '355'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '116'
+        description: Fetch statistics, manage
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '485'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '484'
+        description: Stores/Fetches data
+        technology: Box native
+        interactionStyle: Synchronous
+      - id: '309'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '88'
+        description: Requests token
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '356'
+        tags: Relationship
+        sourceId: '54'
+        destinationId: '105'
+        description: Service Discovery
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Java, Spring, Docker
+  - id: '2'
+    tags: Element,Software System,Singleuser
+    name: Jive Cloud Mobile
+    description: Jive Cloud Mobile Application - Apps for using Jive on Mobiles
+    relationships:
+    - id: '44'
+      tags: Relationship
+      sourceId: '2'
+      destinationId: '1'
+      description: Uses
+      interactionStyle: Synchronous
+    - id: '45'
+      tags: Relationship
+      sourceId: '2'
+      destinationId: '8'
+      description: Uses
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '143'
+      tags: Element,Container,MobileApp,singleuser
+      name: JiveDaily Android
+      description: Android version of the mobile app for Jive
+      relationships:
+      - id: '148'
+        tags: Relationship
+        sourceId: '143'
+        destinationId: '54'
+        description: Pushes/Fetches information
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '144'
+      tags: Element,Container,MobileApp,singleuser
+      name: JiveDaily iOS
+      description: iOS version of the mobile app for Jive
+      relationships:
+      - id: '147'
+        tags: Relationship
+        sourceId: '144'
+        destinationId: '54'
+        description: Fetches/pushes information
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: ObjectiveC
+  - id: '3'
+    tags: Element,Software System,Multitenant
+    name: Jive Content Delivery Network (CDN)
+    description: OPtimized delivery of the content for geographical usage
+    relationships:
+    - id: '30'
+      tags: Relationship
+      sourceId: '3'
+      destinationId: '4'
+      description: Requests Data
+      interactionStyle: Synchronous
+    - id: '29'
+      tags: Relationship
+      sourceId: '3'
+      destinationId: '19'
+      description: Requests data
+      interactionStyle: Synchronous
+    - id: '449'
+      tags: Relationship
+      sourceId: '3'
+      destinationId: '1'
+      description: Passes requests
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '98'
+      tags: Element,Container,external
+      name: Akamai
+      description: Akamai CDN and Storage service
+      relationships:
+      - id: '327'
+        tags: Relationship
+        sourceId: '98'
+        destinationId: '291'
+        description: Forwards request
+        interactionStyle: Synchronous
+      technology: Akamai
+    - id: '99'
+      tags: Element,Container,External
+      name: AWS Cloudfront
+      description: CDN service
+      relationships:
+      - id: '324'
+        tags: Relationship
+        sourceId: '99'
+        destinationId: '292'
+        description: Reads
+        interactionStyle: Synchronous
+      technology: Cloudfront
+    - id: '292'
+      tags: Element,Container,Storage,external
+      name: cloudfornt-s3
+      description: S3 bucket for CLoudFront
+      technology: AWS S3
+    - id: '291'
+      tags: Element,Container
+      name: FrontDoor
+      description: Routing engine between Cloud Core and MitUI Chrome
+      relationships:
+      - id: '293'
+        tags: Relationship
+        sourceId: '291'
+        destinationId: '54'
+        description: Forwards request
+        interactionStyle: Synchronous
+      - id: '294'
+        tags: Relationship
+        sourceId: '291'
+        destinationId: '91'
+        description: Forwards Request
+        interactionStyle: Synchronous
+      technology: ngnx
+  - id: '11'
+    tags: Element,Software System,Multitenant
+    name: Jive Core Support Microservices
+    description: Small microservices supports core
+    relationships:
+    - id: '156'
+      tags: Relationship
+      sourceId: '11'
+      destinationId: '149'
+      description: Provides Push Notification
+      interactionStyle: Synchronous
+    - id: '58'
+      tags: Relationship
+      sourceId: '11'
+      destinationId: '14'
+      description: Uses
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '157'
+      tags: Relationship
+      sourceId: '11'
+      destinationId: '150'
+      description: Provides Push Notification
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '415'
+      tags: Element,Container,external
+      name: Akismet
+      description: Spam prevention service
+      technology: Akismet native
+    - id: '419'
+      tags: Element,Container,external,Storage
+      name: Global Registry AWS RDS
+      description: Add-ons storage
+      technology: AWS RDS Postgres
+    - id: '100'
+      tags: Element,Container,Support
+      name: jive-antivirus
+      description: Content antivirus checks
+      technology: ClamAV
+    - id: '101'
+      tags: Element,Container,Support
+      name: jive-cloud-phrase-substitution
+      description: Phrase substitution engine
+      relationships:
+      - id: '426'
+        tags: Relationship
+        sourceId: '101'
+        destinationId: '416'
+        description: Store and fetches substitutions
+        technology: JDBC
+        interactionStyle: Synchronous
+      technology: Dropwizard, Java
+    - id: '102'
+      tags: Element,Container,Support
+      name: jive-cloud-spam-prevention
+      description: Content checks for spam
+      relationships:
+      - id: '424'
+        tags: Relationship
+        sourceId: '102'
+        destinationId: '415'
+        description: Requests to spam
+        technology: Akismet native
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '103'
+      tags: Element,Container,Support
+      name: jive-cloud-translation
+      description: Links to multiple translation servics
+      relationships:
+      - id: '427'
+        tags: Relationship
+        sourceId: '103'
+        destinationId: '422'
+        description: Calls for Translation
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '428'
+        tags: Relationship
+        sourceId: '103'
+        destinationId: '421'
+        description: Calls for Translation
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '429'
+        tags: Relationship
+        sourceId: '103'
+        destinationId: '420'
+        description: Calls for Translation
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '107'
+      tags: Element,Container,Support
+      name: jive-daily-push-service
+      description: Push notifications for mobile devices
+      relationships:
+      - id: '153'
+        tags: Relationship
+        sourceId: '107'
+        destinationId: '149'
+        description: Pushes notification data
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '152'
+        tags: Relationship
+        sourceId: '107'
+        destinationId: '150'
+        description: Pushes notification data
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '108'
+      tags: Element,Container,Support
+      name: jive-hop-global-registry
+      description: Add-on storage and management
+      relationships:
+      - id: '425'
+        tags: Relationship
+        sourceId: '108'
+        destinationId: '419'
+        description: Stores and fetches add-ons
+        technology: JDBC
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '104'
+      tags: Element,Container,Support
+      name: jive-infrastructure-s3-broker
+      description: S3 access signing service
+      relationships:
+      - id: '430'
+        tags: Relationship
+        sourceId: '104'
+        destinationId: '417'
+        description: Sign URL
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '105'
+      tags: Element,Container,Support
+      name: jive-infrastructure-tenancy-service
+      description: discovery services
+      relationships:
+      - id: '423'
+        tags: Relationship
+        sourceId: '105'
+        destinationId: '418'
+        description: Stores Secrets
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '106'
+      tags: Element,Container,Support
+      name: jive-security-service
+      description: session swap logging
+      technology: Java, Dropwizard
+    - id: '416'
+      tags: Element,Container,external,Storage
+      name: Phrase Substitution AWS RDS
+      description: Phrase Substitution storage
+      technology: AWS RDS Postgres
+    - id: '417'
+      tags: Element,Container,external
+      name: S3 Broker AWS S3
+      description: S3 URL Signing service
+      technology: AWS S3
+    - id: '418'
+      tags: Element,Container,external,Storage
+      name: Tenancy Service DynamoDB
+      description: Jive Secrets Storage
+      technology: AWS DynamoDB
+  - id: '9'
+    tags: Element,Software System,Multitenant
+    name: Jive Integrations
+    description: Integrations to other systems
+    relationships:
+    - id: '432'
+      tags: Relationship
+      sourceId: '9'
+      destinationId: '378'
+      description: Pushes updates
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '486'
+      tags: Element,Container,Plugin
+      name: Integrations Office Plugin
+      description: Jive integrations for MS Office
+      relationships:
+      - id: '487'
+        tags: Relationship
+        sourceId: '486'
+        destinationId: '385'
+        description: Installs onto
+        technology: ".NET"
+        interactionStyle: Synchronous
+      technology: ".NET"
+    - id: '383'
+      tags: Element,Container,Plugin
+      name: Integrations Outlook Plugin
+      description: MS Office Enhancement for Jive
+      relationships:
+      - id: '491'
+        tags: Relationship
+        sourceId: '383'
+        destinationId: '490'
+        description: Installs onto
+        technology: ".NET"
+        interactionStyle: Synchronous
+      technology: ".NET"
+    - id: '111'
+      tags: Element,Container,Integrations
+      name: jive-integrations-framework-streamonce
+      description: Support for different external data providers
+      relationships:
+      - id: '380'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '109'
+        description: Synchronizes data
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '467'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '462'
+        description: Caches data
+        technology: Redisson
+        interactionStyle: Synchronous
+      - id: '381'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '110'
+        description: Establishes communication
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '466'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '463'
+        description: Stores resources
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '465'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '461'
+        description: Stores data
+        technology: JDBC
+        interactionStyle: Synchronous
+      - id: '468'
+        tags: Relationship
+        sourceId: '111'
+        destinationId: '108'
+        description: Uploads addons
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '112'
+      tags: Element,Container,Integrations
+      name: jive-integrations-framework-urgent-notifications
+      description: Integration with AlertFind
+      relationships:
+      - id: '379'
+        tags: Relationship
+        sourceId: '112'
+        destinationId: '378'
+        description: Pushes data
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '469'
+        tags: Relationship
+        sourceId: '112'
+        destinationId: '464'
+        description: Stores configuration
+        technology: JDBC
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '113'
+      tags: Element,Container,Integrations
+      name: jive-storage-integrations-office365
+      description: Integration with Office365
+      technology: Java, Dropwizard
+    - id: '384'
+      tags: Element,Container,Plugin
+      name: Sharepoint on-prem WSP Plugin
+      description: Office365 Enhancement for Jive
+      relationships:
+      - id: '483'
+        tags: Relationship
+        sourceId: '384'
+        destinationId: '54'
+        description: Calls
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '482'
+        tags: Relationship
+        sourceId: '384'
+        destinationId: '481'
+        description: Installs onto
+        technology: WSP
+        interactionStyle: Synchronous
+      technology: WSP
+    - id: '462'
+      tags: Element,Container,external,Storage
+      name: StreamOnce AWS Elasticache
+      description: NoSQL storage
+      technology: AWS Elasticache Redis
+    - id: '461'
+      tags: Element,Container,external,Storage
+      name: Streamonce AWS RDS
+      description: AWS RDS MySQL
+      technology: MySQL
+    - id: '463'
+      tags: Element,Container,external,Storage
+      name: StreamOnce AWS S3
+      description: file storage
+      technology: AWS S3
+    - id: '464'
+      tags: Element,Container,external,Storage
+      name: Urgent Notifications AWS RDS
+      description: data storage
+      technology: AWS RDS Postgres
+  - id: '7'
+    tags: Element,Software System,Multitenant
+    name: Jive Playbox
+    description: Jive Gammification subsystem
+    relationships:
+    - id: '46'
+      tags: Relationship
+      sourceId: '7'
+      destinationId: '8'
+      description: Gets data from
+      interactionStyle: Synchronous
+    - id: '497'
+      tags: Relationship
+      sourceId: '7'
+      destinationId: '3'
+      description: Stores images
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '479'
+      tags: Element,Container,external,Storage
+      name: Playbox AWS Elasticache
+      description: caching data
+      technology: AWS Elasticache Redis
+    - id: '477'
+      tags: Element,Container,external
+      name: Playbox AWS Kinesis
+      description: Events streaming
+      technology: AWS Kinesis
+    - id: '478'
+      tags: Element,Container,external
+      name: Playbox AWS SQS
+      description: Processing Queue
+      technology: AWS SQS
+    - id: '265'
+      tags: Element,Container,EC2,Storage
+      name: Playbox MongoDB
+      description: Playbox Data storage
+      technology: MongoDB
+    - id: '115'
+      tags: Element,Container,playbox
+      name: playbox-engine
+      description: Playbox scoring engine
+      relationships:
+      - id: '269'
+        tags: Relationship
+        sourceId: '115'
+        destinationId: '39'
+        description: Uses Kinesis/Elasticache
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '494'
+        tags: Relationship
+        sourceId: '115'
+        destinationId: '479'
+        description: Caches into
+        technology: Jedis
+        interactionStyle: Synchronous
+      - id: '493'
+        tags: Relationship
+        sourceId: '115'
+        destinationId: '477'
+        description: Listens to
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '492'
+        tags: Relationship
+        sourceId: '115'
+        destinationId: '478'
+        description: Listens to
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '266'
+        tags: Relationship
+        sourceId: '115'
+        destinationId: '265'
+        description: Reads all, Writes rewards
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '116'
+      tags: Element,Container,playbox
+      name: playbox-service
+      description: Playbox interaction service
+      relationships:
+      - id: '495'
+        tags: Relationship
+        sourceId: '116'
+        destinationId: '478'
+        description: Pushes to
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '496'
+        tags: Relationship
+        sourceId: '116'
+        destinationId: '292'
+        description: Stores icons in
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '268'
+        tags: Relationship
+        sourceId: '116'
+        destinationId: '39'
+        description: AWS SQS
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '267'
+        tags: Relationship
+        sourceId: '116'
+        destinationId: '265'
+        description: Reads all, Writes configurations
+        technology: TCP/IP
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+  - id: '38'
+    tags: Element,Software System,Multitenant
+    name: Jive R2E2
+    description: Recommendation and Activity Engine Sub-System
+    relationships:
+    - id: '59'
+      tags: Relationship
+      sourceId: '38'
+      destinationId: '39'
+      description: Streams Data
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '166'
+      tags: Element,Container
+      name: r2e2-activity
+      description: Rest API for adding activity
+      relationships:
+      - id: '395'
+        tags: Relationship
+        sourceId: '166'
+        destinationId: '178'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '340'
+        tags: Relationship
+        sourceId: '166'
+        destinationId: '169'
+        description: Writes activities
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '399'
+        tags: Relationship
+        sourceId: '166'
+        destinationId: '165'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '396'
+        tags: Relationship
+        sourceId: '166'
+        destinationId: '161'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '398'
+        tags: Relationship
+        sourceId: '166'
+        destinationId: '172'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '397'
+        tags: Relationship
+        sourceId: '166'
+        destinationId: '162'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '200'
+        tags: Relationship
+        sourceId: '166'
+        destinationId: '177'
+        description: Pushing Activity data
+        interactionStyle: Synchronous
+      - id: '203'
+        tags: Relationship
+        sourceId: '166'
+        destinationId: '201'
+        description: Gets Whitelist data
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '168'
+      tags: Element,Container
+      name: r2e2-amza
+      description: Key-value store
+      technology: Java
+    - id: '175'
+      tags: Element,Container
+      name: r2e2-amza-sync
+      description: Sync data between two AMZA instances in separate R2E2 Environments
+        (can be used for migration)
+      relationships:
+      - id: '197'
+        tags: Relationship
+        sourceId: '175'
+        destinationId: '168'
+        description: Gets/pushes data
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '196'
+        tags: Relationship
+        sourceId: '175'
+        destinationId: '175'
+        description: Synchronizes between 2 Amza Nodes
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '202'
+      tags: Element,Container,external
+      name: r2e2-aws-kinesis-stream
+      description: Kinesis Stream to provide activity data for external parties
+      technology: AWS Kinesis stream
+    - id: '201'
+      tags: Element,Container,external,Storage
+      name: r2e2-aws-whitelist-dynamoDB
+      description: DynamoDB stores whitelist for r2e2 kinesis stream
+      technology: DynamoDB
+    - id: '162'
+      tags: Element,Container
+      name: r2e2-content
+      description: Rest API for content storage
+      relationships:
+      - id: '348'
+        tags: Relationship
+        sourceId: '162'
+        destinationId: '168'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '161'
+      tags: Element,Container
+      name: r2e2-follows
+      description: Rest API for Follows & Stream definition Storage
+      relationships:
+      - id: '347'
+        tags: Relationship
+        sourceId: '161'
+        destinationId: '168'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '177'
+      tags: Element,Container
+      name: r2e2-kinesis-bridge
+      description: Data pipelining to Kinesis
+      relationships:
+      - id: '204'
+        tags: Relationship
+        sourceId: '177'
+        destinationId: '202'
+        description: Pushes activity data to
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '183'
+      tags: Element,Container,unused
+      name: r2e2-miru-anomaly
+      description: Gathers all the metric from our cluster and lets us explore and
+        aggregate metrics
+      relationships:
+      - id: '206'
+        tags: Relationship
+        sourceId: '183'
+        destinationId: '172'
+        description: Uses
+        technology: RSET API
+        interactionStyle: Synchronous
+      - id: '205'
+        tags: Relationship
+        sourceId: '183'
+        destinationId: '170'
+        description: uses
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '173'
+      tags: Element,Container
+      name: r2e2-miru-catwalk
+      description: Machine learning tool for providing recommendations
+      relationships:
+      - id: '401'
+        tags: Relationship
+        sourceId: '173'
+        destinationId: '172'
+        description: Uses
+        interactionStyle: Synchronous
+      - id: '400'
+        tags: Relationship
+        sourceId: '173'
+        destinationId: '168'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '346'
+        tags: Relationship
+        sourceId: '173'
+        destinationId: '170'
+        description: Read data
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '172'
+      tags: Element,Container
+      name: r2e2-miru-manage
+      description: Management API for miru data source framework
+      relationships:
+      - id: '403'
+        tags: Relationship
+        sourceId: '172'
+        destinationId: '170'
+        description: Manages
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '402'
+        tags: Relationship
+        sourceId: '172'
+        destinationId: '171'
+        description: Manages
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '170'
+      tags: Element,Container
+      name: r2e2-miru-reader
+      description: Internal stream based search engine
+      relationships:
+      - id: '344'
+        tags: Relationship
+        sourceId: '170'
+        destinationId: '171'
+        description: Reds data
+        interactionStyle: Synchronous
+      - id: '404'
+        tags: Relationship
+        sourceId: '170'
+        destinationId: '173'
+        description: Starts
+        interactionStyle: Synchronous
+      - id: '343'
+        tags: Relationship
+        sourceId: '170'
+        destinationId: '172'
+        description: Gets WAL
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '181'
+      tags: Element,Container,unused
+      name: r2e2-miru-stumptown
+      description: Experimental log management solution caused performance problems
+        in production
+      relationships:
+      - id: '208'
+        tags: Relationship
+        sourceId: '181'
+        destinationId: '172'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '207'
+        tags: Relationship
+        sourceId: '181'
+        destinationId: '168'
+        description: uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '209'
+        tags: Relationship
+        sourceId: '181'
+        destinationId: '170'
+        description: Users
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '184'
+      tags: Element,Container
+      name: r2e2-miru-sync
+      description: Sync data between two Miru instances in separate R2E2 Environments
+        (can be used for migration)
+      relationships:
+      - id: '199'
+        tags: Relationship
+        sourceId: '184'
+        destinationId: '171'
+        description: Gets/Pushes data to synchronize
+        interactionStyle: Synchronous
+      - id: '195'
+        tags: Relationship
+        sourceId: '184'
+        destinationId: '184'
+        description: Synchronizes between 2 Miru Nodes
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '198'
+        tags: Relationship
+        sourceId: '184'
+        destinationId: '172'
+        description: Requesting index information
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '182'
+      tags: Element,Container
+      name: r2e2-miru-tools
+      description: Set of supporting miru features
+      relationships:
+      - id: '406'
+        tags: Relationship
+        sourceId: '182'
+        destinationId: '170'
+        description: Uses
+        interactionStyle: Synchronous
+      - id: '405'
+        tags: Relationship
+        sourceId: '182'
+        destinationId: '168'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '171'
+      tags: Element,Container
+      name: r2e2-miru-wal
+      description: Write Ahead Log for Activity
+      relationships:
+      - id: '414'
+        tags: Relationship
+        sourceId: '171'
+        destinationId: '172'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '169'
+      tags: Element,Container
+      name: r2e2-miru-writer
+      description: Activity ingress logic
+      relationships:
+      - id: '342'
+        tags: Relationship
+        sourceId: '169'
+        destinationId: '171'
+        description: Writes activites
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '341'
+        tags: Relationship
+        sourceId: '169'
+        destinationId: '172'
+        description: Gets WAL
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '164'
+      tags: Element,Container
+      name: r2e2-notify
+      description: Email notifications API
+      relationships:
+      - id: '408'
+        tags: Relationship
+        sourceId: '164'
+        destinationId: '178'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '350'
+        tags: Relationship
+        sourceId: '164'
+        destinationId: '168'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '178'
+      tags: Element,Container
+      name: r2e2-notify-queue
+      description: Queueing email notifications
+      relationships:
+      - id: '409'
+        tags: Relationship
+        sourceId: '178'
+        destinationId: '168'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '180'
+      tags: Element,Container
+      name: r2e2-orca
+      description: Index copy and sync management
+      relationships:
+      - id: '192'
+        tags: Relationship
+        sourceId: '180'
+        destinationId: '175'
+        description: Initiates sync
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '193'
+        tags: Relationship
+        sourceId: '180'
+        destinationId: '184'
+        description: Initiates Miru Sync
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '165'
+      tags: Element,Container
+      name: r2e2-realtime
+      description: Push notification storage API
+      relationships:
+      - id: '351'
+        tags: Relationship
+        sourceId: '165'
+        destinationId: '168'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '163'
+      tags: Element,Container
+      name: r2e2-reco
+      description: Rest API for Recommendation
+      relationships:
+      - id: '410'
+        tags: Relationship
+        sourceId: '163'
+        destinationId: '161'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '411'
+        tags: Relationship
+        sourceId: '163'
+        destinationId: '170'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '349'
+        tags: Relationship
+        sourceId: '163'
+        destinationId: '168'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '167'
+      tags: Element,Container
+      name: r2e2-reco-digest
+      description: Activity stream and Search API
+      relationships:
+      - id: '412'
+        tags: Relationship
+        sourceId: '167'
+        destinationId: '161'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '413'
+        tags: Relationship
+        sourceId: '167'
+        destinationId: '162'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '363'
+        tags: Relationship
+        sourceId: '167'
+        destinationId: '170'
+        description: Queries stream data
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '179'
+      tags: Element,Container,unused
+      name: r2e2-reco-dive
+      description: Non completed development for providing insigths and full text
+        search
+      relationships:
+      - id: '210'
+        tags: Relationship
+        sourceId: '179'
+        destinationId: '168'
+        description: Uses
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '185'
+      tags: Element,Container
+      name: r2e2-reco-social
+      description: Provides recommendation related weights for Search query service
+        provides ranking
+      relationships:
+      - id: '364'
+        tags: Relationship
+        sourceId: '185'
+        destinationId: '170'
+        description: Queries recommendations
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '176'
+      tags: Element,Container,unused
+      name: r2e2-reco-to-miru
+      description: Old interface for migration from EAE used by 2016.x versions of
+        Cloud
+      relationships:
+      - id: '390'
+        tags: Relationship
+        sourceId: '176'
+        destinationId: '168'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '394'
+        tags: Relationship
+        sourceId: '176'
+        destinationId: '169'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '393'
+        tags: Relationship
+        sourceId: '176'
+        destinationId: '170'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '391'
+        tags: Relationship
+        sourceId: '176'
+        destinationId: '161'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '392'
+        tags: Relationship
+        sourceId: '176'
+        destinationId: '172'
+        description: Uses
+        technology: REST API
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '174'
+      tags: Element,Container
+      name: r2e2-upena
+      description: Clustering Solution
+      relationships:
+      - id: '245'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '169'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '250'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '180'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '243'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '182'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '244'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '171'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '240'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '170'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '241'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '181'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '231'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '166'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '236'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '177'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '251'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '165'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '256'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '176'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '232'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '168'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '254'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '179'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '249'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '178'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '253'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '167'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '234'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '162'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '238'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '173'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '242'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '184'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '235'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '161'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '237'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '183'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '239'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '172'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '233'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '175'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '246'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '164'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '252'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '163'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      - id: '255'
+        tags: Relationship
+        sourceId: '174'
+        destinationId: '185'
+        description: Orchestrates
+        interactionStyle: Synchronous
+      technology: Java
+  - id: '5'
+    tags: Element,Software System,Multitenant
+    name: Jive Search
+    description: Search Subsystem
+    relationships:
+    - id: '431'
+      tags: Relationship
+      sourceId: '5'
+      destinationId: '224'
+      description: Calls
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '62'
+      tags: Relationship
+      sourceId: '5'
+      destinationId: '39'
+      description: Uses
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '521'
+      tags: Relationship
+      sourceId: '5'
+      destinationId: '11'
+      description: Requests OAUTH Tokens
+      technology: HTTPS
+      interactionStyle: Synchronous
+    - id: '47'
+      tags: Relationship
+      sourceId: '5'
+      destinationId: '38'
+      description: Uses
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '120'
+      tags: Element,Container,search
+      name: jive-search-bot
+      description: Health checking service
+      relationships:
+      - id: '220'
+        tags: Relationship
+        sourceId: '120'
+        destinationId: '121'
+        description: Search sample content
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '226'
+        tags: Relationship
+        sourceId: '120'
+        destinationId: '122'
+        description: Ingress sample content
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '117'
+      tags: Element,Container,search
+      name: jive-search-essp
+      description: Social Search
+      relationships:
+      - id: '339'
+        tags: Relationship
+        sourceId: '117'
+        destinationId: '185'
+        description: Requests personal recommendations
+        technology: REST API
+        interactionStyle: Synchronous
+      - id: '229'
+        tags: Relationship
+        sourceId: '117'
+        destinationId: '38'
+        description: Request social score
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '122'
+      tags: Element,Container,search
+      name: jive-search-ingress
+      description: ingressing into ElasticSearch
+      relationships:
+      - id: '217'
+        tags: Relationship
+        sourceId: '122'
+        destinationId: '213'
+        description: Uses
+        technology: Elasticsearch native
+        interactionStyle: Synchronous
+      - id: '216'
+        tags: Relationship
+        sourceId: '122'
+        destinationId: '212'
+        description: Uses
+        technology: Redis
+        interactionStyle: Synchronous
+      - id: '507'
+        tags: Relationship
+        sourceId: '122'
+        destinationId: '499'
+        description: Fetches
+        technology: S3
+        interactionStyle: Synchronous
+      - id: '506'
+        tags: Relationship
+        sourceId: '122'
+        destinationId: '498'
+        description: Fetches
+        technology: SQS
+        interactionStyle: Synchronous
+      technology: Jive, Dropwizard
+    - id: '118'
+      tags: Element,Container,search
+      name: jive-search-ingress-adapter
+      description: ingressing Jive content
+      relationships:
+      - id: '503'
+        tags: Relationship
+        sourceId: '118'
+        destinationId: '498'
+        description: Pushes data
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '504'
+        tags: Relationship
+        sourceId: '118'
+        destinationId: '499'
+        description: Pushes data
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '219'
+        tags: Relationship
+        sourceId: '118'
+        destinationId: '11'
+        description: Request tenant secret
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '510'
+        tags: Relationship
+        sourceId: '118'
+        destinationId: '509'
+        description: Pushes data
+        interactionStyle: Synchronous
+      - id: '502'
+        tags: Relationship
+        sourceId: '118'
+        destinationId: '105'
+        description: Request tenant secret
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '518'
+        tags: Relationship
+        sourceId: '118'
+        destinationId: '105'
+        description: Requests OAUTH token
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '499'
+      tags: Element,Container,Generated,Storage
+      name: jive-search-ingress-s3
+      description: Storing data for ingress messages payoad >256kB
+      technology: S3
+    - id: '498'
+      tags: Element,Container,Generated
+      name: jive-search-ingress-sqs
+      description: SQS queue for ingress messages
+      technology: SQS
+    - id: '509'
+      tags: Element,Container,Generated
+      name: jive-search-kinesis-stream
+      description: Kinesis stream for external integrations (unfinished)
+      technology: Kinesis
+    - id: '121'
+      tags: Element,Container,search
+      name: jive-search-query
+      description: Entry point for querying
+      relationships:
+      - id: '215'
+        tags: Relationship
+        sourceId: '121'
+        destinationId: '212'
+        description: Uses
+        technology: Jedis
+        interactionStyle: Synchronous
+      - id: '519'
+        tags: Relationship
+        sourceId: '121'
+        destinationId: '213'
+        description: Uses
+        technology: ElasticSeacrh native
+        interactionStyle: Synchronous
+      - id: '211'
+        tags: Relationship
+        sourceId: '121'
+        destinationId: '117'
+        description: Request Social Score
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '511'
+        tags: Relationship
+        sourceId: '121'
+        destinationId: '501'
+        description: Requets whitleis for Semantic
+        technology: DynamoDB
+        interactionStyle: Synchronous
+      - id: '225'
+        tags: Relationship
+        sourceId: '121'
+        destinationId: '224'
+        description: Enhance search query
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '517'
+        tags: Relationship
+        sourceId: '121'
+        destinationId: '105'
+        description: Requests OAUTH token
+        technology: HTTPS
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '500'
+      tags: Element,Container,Generated,Storage
+      name: jive-search-recovery-s3
+      description: S3 storage for storing ingress messages as recovery storage (incomplere)
+      technology: S3
+    - id: '119'
+      tags: Element,Container,search
+      name: jive-search-recovery-storage
+      description: Content storage into S3
+      relationships:
+      - id: '218'
+        tags: Relationship
+        sourceId: '119'
+        destinationId: '212'
+        description: Uses
+        technology: Jedis
+        interactionStyle: Synchronous
+      - id: '513'
+        tags: Relationship
+        sourceId: '119'
+        destinationId: '499'
+        description: Fetches
+        technology: S3
+        interactionStyle: Synchronous
+      - id: '512'
+        tags: Relationship
+        sourceId: '119'
+        destinationId: '500'
+        description: Stores
+        technology: S3
+        interactionStyle: Synchronous
+      - id: '514'
+        tags: Relationship
+        sourceId: '119'
+        destinationId: '498'
+        description: Fetches
+        technology: SQS
+        interactionStyle: Synchronous
+      technology: Java, Dropwizard
+    - id: '501'
+      tags: Element,Container,Storage,Generated
+      name: jive-search-whitelists-dynamodb
+      description: DynamoDB containing whitelists for semantic search and disabling
+        social search with optional DAX layer
+      technology: DynamoDB (with optional DAX layer)
+    - id: '213'
+      tags: Element,Container,EC2,Storage
+      name: Search Content Elasticsearch
+      description: Indexed content storage
+      technology: Elasticsearch
+    - id: '214'
+      tags: Element,Container,EC2,Storage
+      name: Search People Elasticsearch
+      description: Indexed User profiles
+      technology: Elasticsearch
+    - id: '212'
+      tags: Element,Container,EC2
+      name: Search Redis
+      description: Configuration storage
+      technology: Redis
+  - id: '13'
+    tags: Element,Software System,external
+    name: MAKO
+    description: Orchestration system for Jive Microservices
+    relationships:
+    - id: '24'
+      tags: Relationship
+      sourceId: '13'
+      destinationId: '9'
+      description: Orchestrates
+      technology: K8S
+      interactionStyle: Synchronous
+    - id: '22'
+      tags: Relationship
+      sourceId: '13'
+      destinationId: '8'
+      description: Orchestrates
+      technology: K8S
+      interactionStyle: Synchronous
+    - id: '21'
+      tags: Relationship
+      sourceId: '13'
+      destinationId: '10'
+      description: Orchestrates
+      technology: K8S
+      interactionStyle: Synchronous
+    - id: '27'
+      tags: Relationship
+      sourceId: '13'
+      destinationId: '11'
+      description: Orchestrates
+      technology: K8S
+      interactionStyle: Synchronous
+    - id: '26'
+      tags: Relationship
+      sourceId: '13'
+      destinationId: '5'
+      description: Orchestrates
+      technology: K8S
+      interactionStyle: Synchronous
+    - id: '23'
+      tags: Relationship
+      sourceId: '13'
+      destinationId: '4'
+      description: Orchestrates
+      technology: K8S
+      interactionStyle: Synchronous
+    - id: '25'
+      tags: Relationship
+      sourceId: '13'
+      destinationId: '7'
+      description: Orchestrates
+      technology: K8S
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '224'
+    tags: Element,Software System,external
+    name: Semantic Search
+    description: External system to merge results with
+    location: Unspecified
+  - id: '306'
+    tags: Element,Software System,external
+    name: Twistage Video Provider
+    description: 3rd party video provider service
+    location: Unspecified
+  deploymentNodes: []

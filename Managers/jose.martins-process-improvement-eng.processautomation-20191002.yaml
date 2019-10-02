@@ -1,0 +1,15 @@
+manager: José Martins
+teamroom: Eng.ProcessAutomation
+units:
+    - unit: https://jira.devfactory.com/browse/PA-703
+    - unit: https://jira.devfactory.com/browse/PA-689
+
+recommendation:
+    eliminate waste: true
+    improve quality bar: true 
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Add code review checklist to playbook. Add item about method size. Add rule about skinny controllers. This with personal coaching will help preventing both.
+    effort: 0
+    impact: 1.3

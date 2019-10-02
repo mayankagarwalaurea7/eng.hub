@@ -1,0 +1,17 @@
+manager: Adam Darmanin #<manager name>
+teamroom: Eng.AutoUTInnovation #<teamroom name>
+units:
+    - unit: AUTEST-4647
+    - unit: AUTEST-4648
+    - unit: AUTEST-5258
+    - unit: AUTEST-4646
+    - unit: AUTEST-4644
+recommendation:
+    eliminate waste: true #true | false
+    improve quality bar: false #true | false
+    product agnostic: true #true | false
+    product specific:
+        - product name:  #product names
+    description: Initiated a java pipeline for HUT to deliver generated tests.  #<string>
+    effort: 14 #days
+    impact: %60 #<%> at teamroom level

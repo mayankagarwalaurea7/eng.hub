@@ -1,0 +1,300 @@
+{
+    "id": 47489,
+    "name": "Everest Model",
+    "description": "Everest workspace.",
+    "revision": 5,
+    "lastModifiedDate": "2019-10-02T10:13:51Z",
+    "lastModifiedUser": "vladimir.pikalov@aurea.com",
+    "lastModifiedAgent": "structurizr-web/1624",
+    "model": {
+        "people": [
+            {
+                "id": "9",
+                "tags": "Element,Person",
+                "name": "User",
+                "relationships": [
+                    {
+                        "id": "11",
+                        "tags": "Relationship",
+                        "sourceId": "9",
+                        "destinationId": "1",
+                        "technology": "Uses",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            }
+        ],
+        "softwareSystems": [
+            {
+                "id": "1",
+                "tags": "Element,Software System",
+                "name": "Everest",
+                "description": "Allows to manage business activities (ERP system)",
+                "relationships": [
+                    {
+                        "id": "14",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "5",
+                        "description": "CC processing",
+                        "technology": "PF SDK",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "17",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "6",
+                        "description": "Send/receive emails",
+                        "technology": "Indy (Delphi lib)",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "12",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "4",
+                        "description": "CC processing",
+                        "technology": "REST API",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "16",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "7",
+                        "description": "Send/receive emails",
+                        "technology": "MAPI",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "13",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "3",
+                        "description": "CC processing",
+                        "technology": "PM SDK",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "15",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "8",
+                        "description": "Data sync (inventory, orders)",
+                        "technology": "REST API",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "6",
+                "tags": "Element,Software System,Ext",
+                "name": "External Email Service",
+                "description": "POP3 / SMTP",
+                "location": "External"
+            },
+            {
+                "id": "7",
+                "tags": "Element,Software System,Ext",
+                "name": "Local Email Service",
+                "description": "MAPI (Outlook)",
+                "location": "External"
+            },
+            {
+                "id": "8",
+                "tags": "Element,Software System,Ext",
+                "name": "Magento",
+                "description": "eCommerce Solution",
+                "relationships": [
+                    {
+                        "id": "18",
+                        "tags": "Relationship",
+                        "sourceId": "8",
+                        "destinationId": "1",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "External"
+            },
+            {
+                "id": "5",
+                "tags": "Element,Software System,Ext",
+                "name": "PayFlow Pro",
+                "description": "Payment Gateway",
+                "location": "External"
+            },
+            {
+                "id": "3",
+                "tags": "Element,Software System,Ext",
+                "name": "PayMover",
+                "description": "Payment Gateway",
+                "location": "External"
+            },
+            {
+                "id": "4",
+                "tags": "Element,Software System,Ext",
+                "name": "Verifone",
+                "description": "Payment Gateway",
+                "location": "External"
+            }
+        ],
+        "deploymentNodes": []
+    },
+    "documentation": {
+        "sections": [],
+        "decisions": [],
+        "images": []
+    },
+    "views": {
+        "systemContextViews": [
+            {
+                "softwareSystemId": "1",
+                "key": "key1",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "1"
+                        ],
+                        "relationships": []
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9"
+                        ],
+                        "relationships": []
+                    },
+                    {
+                        "order": 3,
+                        "elements": [
+                            "3"
+                        ],
+                        "relationships": []
+                    }
+                ],
+                "enterpriseBoundaryVisible": true,
+                "elements": [
+                    {
+                        "id": "1",
+                        "x": 825,
+                        "y": 925
+                    },
+                    {
+                        "id": "3",
+                        "x": 135,
+                        "y": 140
+                    },
+                    {
+                        "id": "4",
+                        "x": 130,
+                        "y": 530
+                    },
+                    {
+                        "id": "5",
+                        "x": 125,
+                        "y": 920
+                    },
+                    {
+                        "id": "6",
+                        "x": 1520,
+                        "y": 135
+                    },
+                    {
+                        "id": "7",
+                        "x": 1545,
+                        "y": 525
+                    },
+                    {
+                        "id": "8",
+                        "x": 1550,
+                        "y": 910
+                    },
+                    {
+                        "id": "9",
+                        "x": 845,
+                        "y": 155
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "18",
+                        "vertices": [
+                            {
+                                "x": 1370,
+                                "y": 1070
+                            }
+                        ]
+                    },
+                    {
+                        "id": "17"
+                    },
+                    {
+                        "id": "16"
+                    },
+                    {
+                        "id": "15"
+                    },
+                    {
+                        "id": "14"
+                    },
+                    {
+                        "id": "13"
+                    },
+                    {
+                        "id": "11"
+                    },
+                    {
+                        "id": "12"
+                    }
+                ]
+            }
+        ],
+        "configuration": {
+            "branding": {},
+            "styles": {
+                "elements": [
+                    {
+                        "tag": "Person",
+                        "background": "#08427b",
+                        "color": "#ffffff",
+                        "shape": "Person"
+                    },
+                    {
+                        "tag": "Software System",
+                        "background": "#1168bd",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "tag": "Ext",
+                        "background": "#eeeeee",
+                        "color": "#000000"
+                    }
+                ],
+                "relationships": [
+                    {
+                        "tag": "Relationship",
+                        "color": "#000000"
+                    }
+                ]
+            },
+            "terminology": {},
+            "lastSavedView": "key1"
+        },
+        "systemLandscapeViews": [],
+        "containerViews": [],
+        "componentViews": [],
+        "dynamicViews": [],
+        "deploymentViews": [],
+        "filteredViews": []
+    }
+}

@@ -1,0 +1,15 @@
+manager: Ertugrul Tabak
+teamroom: Eng.Feature
+units:
+  - unit: https://jira.devfactory.com/browse/CODEFIX-3455
+automation:
+  product agnostic: true
+  product specific:
+    - product name: all
+  description: >
+    Force the validity of "stakeholder" field of JIRA Feature Epics, if it is not correct,
+    wrong person is notified and precious time is wasted.
+    Note that, this proposal is to shorten the delivery times, not directly related with
+    productivity.
+  effort: 1
+  impact: 5.0

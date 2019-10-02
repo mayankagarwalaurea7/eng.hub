@@ -1,0 +1,25 @@
+manager: Boris Mezhebitskiy 
+teamroom: Eng.ProductCA
+direct reports: 3
+ICs: 
+    - IC: !!map
+        IC name: Mehmet Sunkur
+        date: 01/10/2019
+        unit: all pending CICD eng problems 
+        coaching: Prioritizing release CICD Eng Problems by linking them to tickets that are in release scope. There is a problem - CICD Eng.Problems are not getting enough auto rank despite the fact they are blocking the release. This happens because they are created apart from the release scope and work queue algorithm does not prioritize them. This can be fixed by linking CICD Eng Problem to one of tickets that are in release scope (for example customer defect).
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: !!map
+        IC name: Amit Goyal
+        date: 01/10/2019
+        unit: all pending CICD eng problems 
+        coaching: Prioritizing release CICD Eng Problems by linking them to tickets that are in release scope. There is a problem - CICD Eng.Problems are not getting enough auto rank despite the fact they are blocking the release. This happens because they are created apart from the release scope and work queue algorithm does not prioritize them. This can be fixed by linking CICD Eng Problem to one of tickets that are in release scope (for example customer defect).
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: !!map
+        IC name: Thien Tran
+        date: 01/10/2019
+        unit: all pending CICD eng problems 
+        coaching: Prioritizing release CICD Eng Problems by linking them to tickets that are in release scope. There is a problem - CICD Eng.Problems are not getting enough auto rank despite the fact they are blocking the release. This happens because they are created apart from the release scope and work queue algorithm does not prioritize them. This can be fixed by linking CICD Eng Problem to one of tickets that are in release scope (for example customer defect).
+        performance assessment: highPerformer
+        continue coaching: true

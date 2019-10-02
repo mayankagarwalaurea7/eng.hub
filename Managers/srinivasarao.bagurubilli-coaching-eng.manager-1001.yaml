@@ -1,0 +1,13 @@
+manager: srinivasarao.bagurubilli
+teamroom: Eng.ProductCA
+direct reports: 0
+ICs: 
+    - IC: 
+        IC name: Anton Razmakhnin
+        date: 01.10.2019
+        unit: On-boarding PCA
+        coaching: Coach on PCA responsibilites and Priortities and as well walk him through ACC model and E2E mappings with examples. Walk him through Arch docs creation process and C4 models. On-boarding CA on the responsible product (Pivotal Web).
+        perfrormanceAssessment: new 
+        continueCoaching: yes
+  
+

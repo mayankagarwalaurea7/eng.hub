@@ -1,0 +1,14 @@
+manager: Radhesh Radhakrishnan
+teamroom: Eng.ProductCA
+units: 
+    - unit: https://jira.devfactory.com/browse/FIRM58-14031
+    - unit: https://jira.devfactory.com/browse/FIRM58-14296
+    - unit: https://jira.devfactory.com/browse/FIRM58-12703
+    - unit: https://jira.devfactory.com/browse/FIRM58-12704
+recomnmendation: 
+    eliminate waste: true
+    improve quality bar: true 
+    product agnostic: true
+    description: Debugging PCA work-queue issues through XO channel and spreadhseets are not effective - move to Jira project. Issues reported since 1 week ago not addressed yet. 
+    effort: 1
+    impact: 5

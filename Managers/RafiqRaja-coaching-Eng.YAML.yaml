@@ -30,3 +30,31 @@ ICs:
         coaching: Explained the BU SaaS involvement to approve auto-provisioning of environments
         performance assessment: highPerformer
         continue coaching: false
+            - IC:
+        IC name: Muhammad Faisal Hameed
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/TBGTM-6621
+        coaching: Coached on how the First YAML delivery should be presented for review with Dimitris
+        performance assessment: highPerformer
+        continue coaching: false
+    - IC:
+        IC name: Ukbe Akdogan
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/SCLOOPW-10916
+        coaching: Shown the escalation matrix to get things done from EY Saas
+        performance assessment: averagePerformer
+        continue coaching: false
+            - IC:
+        IC name: Muhammad Faisal Hameed
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/TBGTM-6621
+        coaching: Deepdived on the learnings from previous review, and how the next YAML for CD should be progressed.
+        performance assessment: highPerformer
+        continue coaching: false
+    - IC:
+        IC name: Ukbe Akdogan
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/SCLOOPW-10916
+        coaching: Coached on the need for differentiating containers and their relation to environments/QA/Stage and nodes/VMS
+        performance assessment: highPerformer
+        continue coaching: false

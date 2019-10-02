@@ -1,0 +1,25 @@
+manager: Radhesh Radhakrishnan
+teamroom: Eng.ProductCA
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Gaurav Kohli
+        date: 01.10.2019
+        unit: https://jira.devfactory.com/browse/FIRM58-9238
+        coaching: Blocking EngProblems with no blockers linked defeats the single-piece-flow principles. Close WIP item and move on to next.
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: yes
+    - IC: 
+        IC name: Yilmaz Yavuz
+        date: 01.10.2019
+        unit: https://jira.devfactory.com/browse/OLIVES-13528
+        coaching: Runbook documentations must specify every single step in layman's terms. 
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: yes 
+    - IC: 
+        IC name: Golam Kibria
+        date: 01.10.2019
+        unit: https://jira.devfactory.com/browse/KMECN-28242
+        coaching: Follow PCA workflow - complete the Outage RCA before moving to the release activities
+        perfrormanceAssessment: highPerformer
+        continueCoaching: yes

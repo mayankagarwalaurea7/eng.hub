@@ -1,0 +1,13 @@
+manager: !!str Serban Nistor
+teamroom: !!str Eng.Feature
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/ORMS-1576
+recommendation: !!map
+    eliminate waste: !!bool true
+    improve quality bar: !!bool true
+    product agnostic: !!bool true
+    product specific: !!seq
+        - product name: !!str N/A
+    description: !!str Don't allow Jira transitions for Feature Story tickets to QE Verification if there is no PR linked
+    effort: !!int 1
+    impact: !!float 5.0

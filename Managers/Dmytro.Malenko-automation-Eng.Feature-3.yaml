@@ -1,0 +1,11 @@
+manager: Dmytro Malenko
+teamroom: Eng.Feature
+units: 
+    - unit: https://jira.devfactory.com/browse/JCLDALL-16998
+automation: 
+    product agnostic: true
+    product specific: false
+        - product name: N/A
+    description: Automate template for Feature Story summary comment that should be added when Feature Story is sent to QE
+    effort: 1
+    impact: 3

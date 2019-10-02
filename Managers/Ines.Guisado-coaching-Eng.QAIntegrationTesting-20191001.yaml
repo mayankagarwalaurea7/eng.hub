@@ -1,0 +1,18 @@
+manager: Ines Guisado
+teamroom: Eng.QAIntegrationTesting
+direct reports: 4
+ICs:
+    - IC:
+        IC name: David Gunadi 
+        date: 10/01/2019
+        unit: https://jira.devfactory.com/browse/SPC-7608
+        coaching: Coach on how to check if a web is angular using the Chrome tools
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Marcos Cesar
+        date: 10/01/2019
+        unit: https://jira.devfactory.com/browse/PROLOGICCID-7939
+        coaching: Coach on the importance to move ticket to In Progress when start working on automation
+        performance assessment: highPerformer
+        continue coaching: false

@@ -1,0 +1,60 @@
+manager: Azmathulla Khan
+teamroom: Eng.UnitTest
+direct reports: 8
+ICs: 
+-IC: 
+IC name: Waleed Mohsin
+date: 2019-10-01
+unit: https://jira.devfactory.com/browse/PIVOTAL-6308
+coaching: During our review of PIVOTAL-6308 found that only exception cases were covered in all methods & to consider in further cases.
+performance assessment: highPerformer
+continueCoaching: true
+-IC: 
+IC name: Sibhani Sankar Pradhan
+date: 2019-10-01
+unit: https://jira.devfactory.com/browse/FIRSTRAIN-27108
+coaching: In FR-27108, found that twitterSpecData** is a simple pojo class. Coached IC to NOT add verify on simple pojo classes.
+performance assessment: averagePerformer
+continueCoaching: true 
+-IC: 
+IC name: Moho Anayetul Samaun
+date: 2019-10-01
+unit: https://jira.devfactory.com/browse/OLIVES-13729
+coaching: In our review guided on missing Jenkins Code coverage and fixes in the reference PR 28 of Olive.
+performance assessment: lowPerformer
+continueCoaching: true
+-IC: 
+IC name: Amrulla Khan
+date: 2019-10-01
+unit: https://jira.devfactory.com/browse/PIVOTAL-8458
+coaching: In PIVOTAL-8458 review found that the Jenkins build is failing and fixes in the reference PR 25 of Pivotal.
+performance assessment: lowPerformer
+continueCoaching: true
+-IC: 
+IC name: Kerem Demirer
+date: 2019-10-01
+unit: https://jira.devfactory.com/browse/KMECN-28150
+coaching: In KMECN-28150 review found that In this snippet of code if an assert will fail then the test will fail which will abort the remaining assertions and the fix was applied in PR 8862 of KM.
+performance assessment: highPerformer
+continueCoaching: true   
+-IC: 
+IC name: Mayur Patel
+date: 2019-10-01
+unit: https://jira.devfactory.com/browse/TBGTM-6071
+coaching: Not to modify the build.xml file as per review done based on TBGTM-6071 & TBGTM-6069 and to revert back all the changes done to address the Quality.
+performance assessment: averagePerformer
+continueCoaching: true
+-IC: 
+IC name: Pranati Jaiswal
+date: 2019-10-01
+unit: https://jira.devfactory.com/browse/TBGTM-6775
+coaching: In TBGTM-6775 review found that the test prefix is specific to JUnit 3, while @Test is specific to JUnit 4 and deprecates the former. It could be a good approach to remove this prefix and avoid redundancy. It is recommended to follow the Java naming conventions for method's names and remove the underscore characters. For test methods, the underscores can be replaced with BDD format (Given, When, Then).  
+performance assessment: averagePerformer
+continueCoaching: true
+-IC: 
+IC name: Deepali Kathotia
+date: 2019-10-01
+unit: https://jira.devfactory.com/browse/FIRSTRAIN-25946
+coaching: In FR-25946, found that the number of lines added in this PR is more than 1.5K. Coached the IC to split the PR if LOCs exceed >1.5K.
+performance assessment: averagePerformer
+continueCoaching: true

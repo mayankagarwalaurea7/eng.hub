@@ -1,0 +1,12 @@
+manager: srinivasarao.bagurubilli
+teamroom: Eng.ProductCA
+units: 0
+    - unit: 
+recommendation: 
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    description: A standardized way to store information during imports regarding the products will save time in searching for the required info. e.g:- Knowledge sharing sessions were stored in different sections for different products and there is no standardized way to locate that information.  As i was trying to find info on the products for Avolin i had to spend lot of time in navigating that info. Defining the structure will greatly reduce the time to search.
+    effort: 1
+    impact: 20
+

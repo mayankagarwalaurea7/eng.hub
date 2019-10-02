@@ -1,0 +1,14 @@
+manager: José Martins
+teamroom: Eng.ProcessAutomation
+units:
+    - unit: https://jira.devfactory.com/browse/PA-702
+
+recommendation:
+    eliminate waste: true
+    improve quality bar: true 
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Create a concrete checklist to assert a successful EOM XO API Update, to allow other ICs to ramp up fast on activity.
+    effort: 0
+    impact: 0.6

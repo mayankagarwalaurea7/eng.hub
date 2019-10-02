@@ -1,0 +1,15 @@
+manager: Adam Darmanin #<manager name>
+teamroom: Eng.AutoUTInnovation #<teamroom name>
+units:
+    - unit: AUTEST-4647
+    - unit: AUTEST-4648
+    - unit: AUTEST-5258
+    - unit: AUTEST-4646
+    - unit: AUTEST-4644
+automation:
+    product agnostic: true #true | false
+    product specific:
+        - product name:  #product names
+    description: Automate the creation of PRs when bulk generating. PRs will contain all information required to assess the tests created. This is for JAVA pipeline.  #<string>
+    effort: 14 #days
+    impact: %60 #<%> at teamroom level

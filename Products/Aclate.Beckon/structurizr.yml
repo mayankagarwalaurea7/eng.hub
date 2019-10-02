@@ -1,0 +1,686 @@
+---
+id: 47160
+name: Beckon
+revision: 32
+lastModifiedDate: '2019-10-01T19:26:07Z'
+lastModifiedUser: daniel.farenzena@trilogy.com
+lastModifiedAgent: structurizr-web/1624
+model:
+  people:
+  - id: '38'
+    tags: Element,Person
+    name: Customer Organization Staff
+    relationships:
+    - id: '66'
+      tags: Relationship
+      sourceId: '38'
+      destinationId: '10'
+      description: Logins by SSO
+      interactionStyle: Synchronous
+    - id: '92'
+      tags: Relationship
+      sourceId: '38'
+      destinationId: '78'
+      description: Sees predefined Dashboards and Scorecards
+      interactionStyle: Synchronous
+    - id: '83'
+      tags: Relationship
+      sourceId: '38'
+      destinationId: '70'
+      description: Ask Questions
+      interactionStyle: Synchronous
+    - id: '96'
+      tags: Relationship
+      sourceId: '38'
+      destinationId: '78'
+      description: Sees dashboards and scorecards, creates own dashboards, scorecards,
+        scheduled reports, inputs data manually, adds new data connections, manages
+        data, defines transformers, exports data, monitors import problems, monitors
+        data completeness
+      interactionStyle: Synchronous
+    - id: '65'
+      tags: Relationship
+      sourceId: '38'
+      destinationId: '8'
+      description: Interacts with
+      interactionStyle: Synchronous
+    - id: '82'
+      tags: Relationship
+      sourceId: '38'
+      destinationId: '78'
+      description: Data Input
+      interactionStyle: Synchronous
+    - id: '101'
+      tags: Relationship
+      sourceId: '38'
+      destinationId: '78'
+      description: Manages users and groups, manages data permissions, views all data
+        and objects in account
+      interactionStyle: Synchronous
+    - id: '84'
+      tags: Relationship
+      sourceId: '38'
+      destinationId: '71'
+      description: Asks help for new kinds of connections and data formats
+      interactionStyle: Synchronous
+    location: External
+  - id: '70'
+    tags: Element,Person
+    name: Customer Success Staff
+    relationships:
+    - id: '102'
+      tags: Relationship
+      sourceId: '70'
+      destinationId: '78'
+      description: Access every account in the system, edits feature flag for an account,
+        applies Beckon Standard recipes, Creates Beckon Standard templates
+      interactionStyle: Synchronous
+    location: Internal
+  - id: '71'
+    tags: Element,Person
+    name: Professional Services Staff
+    relationships:
+    - id: '103'
+      tags: Relationship
+      sourceId: '71'
+      destinationId: '78'
+      description: Accesses App Tools, Edit users - their global permissions -reset
+        passwords, edits Beckon Standard entities and templates, Edits global taxonomy,
+        Crates Beckon Standard templates, Configures SSO for customers, Creates, disbles,
+        and deletes accounts, Edits system-wide alert, checks system health reports
+      interactionStyle: Synchronous
+    - id: '90'
+      tags: Relationship
+      sourceId: '71'
+      destinationId: '78'
+      description: Add custom connectors / transformers
+      interactionStyle: Synchronous
+    location: Internal
+  softwareSystems:
+  - id: '52'
+    tags: Element,Software System,external
+    name: 3rd party cloud information system
+    location: External
+  - id: '78'
+    tags: Element,Software System
+    name: Beckon App
+    relationships:
+    - id: '97'
+      tags: Relationship
+      sourceId: '78'
+      destinationId: '38'
+      description: Send event updates, Sends scheduled reports
+      interactionStyle: Synchronous
+    - id: '99'
+      tags: Relationship
+      sourceId: '78'
+      destinationId: '51'
+      description: Pulls data
+      interactionStyle: Synchronous
+    - id: '87'
+      tags: Relationship
+      sourceId: '78'
+      destinationId: '38'
+      description: Sends reports
+      interactionStyle: Synchronous
+    - id: '95'
+      tags: Relationship
+      sourceId: '78'
+      destinationId: '38'
+      description: Sends event updates, sends scheduled reports
+      interactionStyle: Synchronous
+    - id: '94'
+      tags: Relationship
+      sourceId: '78'
+      destinationId: '38'
+      description: Sees Dashboards and scorecards, Creates own Dashboards, Scorecards,
+        Scheduled Reports
+      interactionStyle: Synchronous
+    - id: '89'
+      tags: Relationship
+      sourceId: '78'
+      destinationId: '52'
+      description: Data pulling
+      interactionStyle: Synchronous
+    - id: '91'
+      tags: Relationship
+      sourceId: '78'
+      destinationId: '49'
+      description: Perform authentication
+      interactionStyle: Synchronous
+    - id: '93'
+      tags: Relationship
+      sourceId: '78'
+      destinationId: '38'
+      description: Sends scheduled reports
+      interactionStyle: Synchronous
+    - id: '86'
+      tags: Relationship
+      sourceId: '78'
+      destinationId: '38'
+      description: Present analytics information
+      interactionStyle: Synchronous
+    - id: '100'
+      tags: Relationship
+      sourceId: '78'
+      destinationId: '78'
+      description: Pulls data
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '20'
+      tags: Element,Container
+      name: accountHardDeletion
+    - id: '23'
+      tags: Element,Container
+      name: accountMonitor
+    - id: '11'
+      tags: Element,Container
+      name: analytics2
+      technology: Java
+      components:
+      - id: '75'
+        tags: Element,Component
+        name: AnalyticsServer2
+        size: 0
+      - id: '76'
+        tags: Element,Component,3rd-party-component
+        name: Lucene
+        technology: Lucene
+        size: 0
+    - id: '26'
+      tags: Element,Container
+      name: api
+      relationships:
+      - id: '47'
+        tags: Relationship
+        sourceId: '26'
+        destinationId: '31'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '9'
+      tags: Element,Container
+      name: app
+      relationships:
+      - id: '43'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '24'
+        description: Requests Data
+        interactionStyle: Synchronous
+      - id: '16'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '7'
+        description: Manages
+        interactionStyle: Synchronous
+      - id: '44'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '11'
+        description: Requests Data
+        interactionStyle: Synchronous
+      - id: '39'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '18'
+        description: Manages
+        interactionStyle: Synchronous
+      - id: '42'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '23'
+        description: Requests Data
+        interactionStyle: Synchronous
+      - id: '45'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '31'
+        description: Manages
+        interactionStyle: Synchronous
+      - id: '41'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '21'
+        description: Manages
+        interactionStyle: Synchronous
+      - id: '13'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '6'
+        description: Defines email
+        interactionStyle: Synchronous
+      - id: '40'
+        tags: Relationship
+        sourceId: '9'
+        destinationId: '19'
+        description: Manages
+        interactionStyle: Synchronous
+      technology: Java
+      components:
+      - id: '74'
+        tags: Element,Component
+        name: Application
+        size: 0
+    - id: '10'
+      tags: Element,Container
+      name: auth
+      relationships:
+      - id: '50'
+        tags: Relationship
+        sourceId: '10'
+        destinationId: '49'
+        description: Requests
+        interactionStyle: Synchronous
+      technology: Java
+      components:
+      - id: '77'
+        tags: Element,Component
+        name: auth
+        size: 0
+    - id: '81'
+      tags: Element,Container
+      name: AWS S3
+    - id: '80'
+      tags: Element,Container
+      name: AWS SQS
+    - id: '36'
+      tags: Element,Container
+      name: cachegeneration
+      relationships:
+      - id: '62'
+        tags: Relationship
+        sourceId: '36'
+        destinationId: '36'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '34'
+      tags: Element,Container
+      name: compact
+      relationships:
+      - id: '61'
+        tags: Relationship
+        sourceId: '34'
+        destinationId: '35'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '30'
+      tags: Element,Container
+      name: connector
+      relationships:
+      - id: '56'
+        tags: Relationship
+        sourceId: '30'
+        destinationId: '27'
+        description: Pulls data
+        interactionStyle: Synchronous
+      - id: '57'
+        tags: Relationship
+        sourceId: '30'
+        destinationId: '31'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '29'
+      tags: Element,Container
+      name: connectorDownload
+      relationships:
+      - id: '53'
+        tags: Relationship
+        sourceId: '29'
+        destinationId: '51'
+        description: Pulls data
+        interactionStyle: Synchronous
+      - id: '55'
+        tags: Relationship
+        sourceId: '29'
+        destinationId: '31'
+        description: Pushes data
+        interactionStyle: Synchronous
+      - id: '54'
+        tags: Relationship
+        sourceId: '29'
+        destinationId: '52'
+        description: Pulls data
+        interactionStyle: Synchronous
+    - id: '79'
+      tags: Element,Container
+      name: Database
+      technology: PostgreSQL
+    - id: '21'
+      tags: Element,Container
+      name: dimensionDeletion
+    - id: '6'
+      tags: Element,Container
+      name: Email Sender
+      relationships:
+      - id: '64'
+        tags: Relationship
+        sourceId: '6'
+        destinationId: '38'
+        description: Sends email
+        interactionStyle: Synchronous
+      technology: Java
+      components:
+      - id: '72'
+        tags: Element,Component
+        name: emailSender
+        size: 0
+    - id: '18'
+      tags: Element,Container
+      name: export
+    - id: '19'
+      tags: Element,Container
+      name: export2
+    - id: '32'
+      tags: Element,Container
+      name: import
+      relationships:
+      - id: '59'
+        tags: Relationship
+        sourceId: '32'
+        destinationId: '33'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '33'
+      tags: Element,Container
+      name: import2
+      relationships:
+      - id: '60'
+        tags: Relationship
+        sourceId: '33'
+        destinationId: '34'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '35'
+      tags: Element,Container
+      name: indexer
+      relationships:
+      - id: '63'
+        tags: Relationship
+        sourceId: '35'
+        destinationId: '37'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '28'
+      tags: Element,Container
+      name: Mailbox at Google Apps
+    - id: '24'
+      tags: Element,Container
+      name: queuemetric
+    - id: '7'
+      tags: Element,Container
+      name: scheduledReportServer
+      description: Defines email
+      relationships:
+      - id: '12'
+        tags: Relationship
+        sourceId: '7'
+        destinationId: '6'
+        interactionStyle: Synchronous
+      technology: Java
+    - id: '27'
+      tags: Element,Container
+      name: sftp
+    - id: '8'
+      tags: Element,Container
+      name: Single-Page Application
+      relationships:
+      - id: '46'
+        tags: Relationship
+        sourceId: '8'
+        destinationId: '9'
+        description: Request by REST API
+        interactionStyle: Synchronous
+      technology: Javascript
+    - id: '31'
+      tags: Element,Container
+      name: txform
+      relationships:
+      - id: '58'
+        tags: Relationship
+        sourceId: '31'
+        destinationId: '31'
+        description: Pushes data
+        interactionStyle: Synchronous
+    - id: '37'
+      tags: Element,Container
+      name: unmappedgeneration
+  - id: '51'
+    tags: Element,Software System,external
+    name: Customer Information System
+    relationships:
+    - id: '98'
+      tags: Relationship
+      sourceId: '51'
+      destinationId: '78'
+      description: Pushes data
+      interactionStyle: Synchronous
+    - id: '67'
+      tags: Relationship
+      sourceId: '51'
+      destinationId: '26'
+      description: Pushes data
+      interactionStyle: Synchronous
+    - id: '69'
+      tags: Relationship
+      sourceId: '51'
+      destinationId: '28'
+      description: Pushes data
+      interactionStyle: Synchronous
+    - id: '68'
+      tags: Relationship
+      sourceId: '51'
+      destinationId: '27'
+      description: Pushes data
+      interactionStyle: Synchronous
+    - id: '88'
+      tags: Relationship
+      sourceId: '51'
+      destinationId: '78'
+      description: Data pulling & pushing
+      interactionStyle: Synchronous
+    location: External
+  - id: '49'
+    tags: Element,Software System,external
+    name: Customer SSO provider
+    location: External
+  deploymentNodes: []
+documentation:
+  sections: []
+  decisions: []
+  images: []
+views:
+  systemLandscapeViews:
+  - key: L1
+    paperSize: A2_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '78'
+      - '38'
+      - '49'
+      - '70'
+      - '71'
+      - '51'
+      - '52'
+      relationships:
+      - '88'
+      - '89'
+      - '90'
+      - '91'
+      - '82'
+      - '83'
+      - '84'
+      - '86'
+      - '87'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '78'
+      x: 4533
+      y: 2030
+    - id: '38'
+      x: 4958
+      y: 2630
+    - id: '49'
+      x: 3908
+      y: 2630
+    - id: '70'
+      x: 1608
+      y: 3230
+    - id: '71'
+      x: 1608
+      y: 1430
+    - id: '51'
+      x: 4533
+      y: 1430
+    - id: '52'
+      x: 2858
+      y: 2630
+    relationships:
+    - id: '82'
+    - id: '93'
+    - id: '83'
+    - id: '94'
+    - id: '91'
+    - id: '92'
+    - id: '86'
+    - id: '97'
+    - id: '87'
+    - id: '98'
+    - id: '84'
+    - id: '95'
+    - id: '96'
+    - id: '90'
+    - id: '100'
+    - id: '88'
+    - id: '99'
+    - id: '102'
+    - id: '89'
+    - id: '101'
+    - id: '103'
+  systemContextViews:
+  - softwareSystemId: '78'
+    key: L2CustomerOrganizationStaff
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '78'
+      relationships: []
+    - order: 2
+      elements:
+      - '38'
+      relationships:
+      - '92'
+      - '93'
+      - '94'
+      - '95'
+      - '96'
+      - '86'
+      - '87'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '78'
+      x: 1529
+      y: 1390
+    - id: '38'
+      x: 1529
+      y: 790
+    relationships:
+    - id: '93'
+      vertices:
+      - x: 2660
+        y: 1160
+    - id: '94'
+      vertices:
+      - x: 770
+        y: 1210
+    - id: '92'
+      vertices:
+      - x: 1120
+        y: 1230
+    - id: '86'
+      vertices:
+      - x: 1600
+        y: 1215
+    - id: '87'
+      vertices:
+      - x: 2275
+        y: 1220
+    - id: '95'
+      vertices:
+      - x: 3015
+        y: 1140
+    - id: '96'
+      vertices:
+      - x: 280
+        y: 1200
+  - softwareSystemId: '78'
+    key: L2CustomerSuccessStaff
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '78'
+      relationships: []
+    - order: 2
+      elements:
+      - '70'
+      relationships:
+      - '102'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '78'
+      x: 1529
+      y: 1465
+    - id: '70'
+      x: 1529
+      y: 715
+    relationships:
+    - id: '102'
+      vertices:
+      - x: 1130
+        y: 1280
+  - softwareSystemId: '78'
+    key: L2ProfessionalServicesStaff
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '78'
+      relationships: []
+    - order: 2
+      elements:
+      - '71'
+      relationships:
+      - '103'
+      - '90'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '78'
+      x: 1529
+      y: 1465
+    - id: '71'
+      x: 1529
+      y: 715
+    relationships:
+    - id: '90'
+      vertices:
+      - x: 2615
+        y: 1225
+    - id: '103'
+      vertices:
+      - x: 810
+        y: 1345
+  configuration:
+    branding: {}
+    styles:
+      elements: []
+      relationships: []
+    terminology: {}
+    lastSavedView: L2ProfessionalServicesStaff
+  containerViews: []
+  componentViews: []
+  dynamicViews: []
+  deploymentViews: []
+  filteredViews: []

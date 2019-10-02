@@ -1,0 +1,12 @@
+manager: José Martins
+teamroom: Eng.ProcessAutomation
+units:
+    - unit: https://jira.devfactory.com/browse/PA-703
+    - unit: https://jira.devfactory.com/browse/PA-689
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Automatically add PR comments, when a method or class size rule, is exceeded.
+    effort: 5
+    impact: 5

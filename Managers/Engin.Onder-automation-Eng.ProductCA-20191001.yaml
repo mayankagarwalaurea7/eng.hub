@@ -1,0 +1,14 @@
+manager: Engin Onder #<manager name>
+teamroom: Eng.ProductCA #<teamroom name>
+units:
+    - unit: https://jira.devfactory.com/browse/SPC-15203 #<Jira link>
+    - unit: https://jira.devfactory.com/browse/SPC-15204 #<Jira link>
+    - unit: https://jira.devfactory.com/browse/SPC-15205 #<Jira link>
+    - unit: https://jira.devfactory.com/browse/SPC-15207 #<Jira link>
+automation: 
+    product agnostic: false #true | false
+    product specific: 
+        - product name: #product names
+    description: Automatic E2E and its correspoding Eng Problem creation should be removed for Faster stories, as in most cases, same 1-2 E2Es will be sufficient for all round stories under same Faster Epic. It pollutes Jira, and creates overhead to clean them.  
+    effort: 1 #days
+    impact: 5 #<%> at teamroom level

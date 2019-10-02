@@ -1,0 +1,18 @@
+manager: José Martins
+teamroom: Eng.ProcessAutomation
+direct reports: 4
+ICs:
+    - IC:
+        IC name: Umut Ozkan
+        date: 2019/09/31
+        unit: https://jira.devfactory.com/browse/PA-703
+        coaching: We need to avoid big methods and promote always SRP. We need to improve explanations on Central Code Review team, when we believe the hint is not bringing added value.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Vladislav Medvedev
+        date: 2019/09/31
+        unit: https://jira.devfactory.com/browse/PA-702
+        coaching: Create a concrete checklist to assert a successful Update. We need to have a concrete process so other people can also perform this task autonomously.
+        performance assessment: highPerformer
+        continue coaching: true

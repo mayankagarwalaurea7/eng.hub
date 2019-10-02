@@ -1,3 +1,11 @@
 manager: Gintaras Fomin
 teamroom: Eng.ProductCA
-units:
+units: 
+    - unit: https://jira.devfactory.com/issues/?jql=type%20%3D%20%22End-to-end%20Test%22%20
+recommendation: 
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    description: E2Es with "Blocked" prefix and Blocked status should get a higher priority as they are blocking QA test writing or execution and most likely are increasing the risk of next release delay.
+    effort: 0.5
+    impact: 100

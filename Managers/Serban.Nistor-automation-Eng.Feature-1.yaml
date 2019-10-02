@@ -1,0 +1,11 @@
+manager: !!str Serban Nistor
+teamroom: !!str Eng.Feature
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/ORMS-1576
+automation: !!map
+    product agnostic: !!bool true
+    product specific: !!seq
+        - product name: !!str N/A
+    description: !!str Automatically approve or reject Code Review subtasks for Feature Story tickets when corresponding PR is merged or rejected
+    effort: !!int 3
+    impact: !!float 10.0

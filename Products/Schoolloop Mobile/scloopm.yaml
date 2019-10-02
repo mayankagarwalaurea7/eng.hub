@@ -1,0 +1,2133 @@
+---
+id: 47091
+name: Schoolloop mobile workspace
+description: Schoolloop mobile workspace
+revision: 76
+lastModifiedDate: '2019-10-02T14:42:32Z'
+lastModifiedUser: tahmid.mozaffar@aurea.com
+lastModifiedAgent: structurizr-web/1624
+model:
+  people:
+  - id: '59'
+    tags: Element,Person
+    name: Afterschool Professionals
+    description: cannot access assignment and course
+    relationships:
+    - id: '187'
+      tags: Relationship
+      sourceId: '59'
+      destinationId: '135'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '191'
+      tags: Relationship
+      sourceId: '59'
+      destinationId: '140'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '100'
+      tags: Relationship
+      sourceId: '59'
+      destinationId: '42'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '190'
+      tags: Relationship
+      sourceId: '59'
+      destinationId: '139'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '96'
+      tags: Relationship
+      sourceId: '59'
+      destinationId: '41'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '98'
+      tags: Relationship
+      sourceId: '59'
+      destinationId: '63'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '188'
+      tags: Relationship
+      sourceId: '59'
+      destinationId: '137'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '189'
+      tags: Relationship
+      sourceId: '59'
+      destinationId: '138'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '99'
+      tags: Relationship
+      sourceId: '59'
+      destinationId: '35'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '97'
+      tags: Relationship
+      sourceId: '59'
+      destinationId: '64'
+      description: can use
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '61'
+    tags: Element,Person
+    name: Assistant Principal
+    description: cannot access assignment and course
+    relationships:
+    - id: '104'
+      tags: Relationship
+      sourceId: '61'
+      destinationId: '35'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '102'
+      tags: Relationship
+      sourceId: '61'
+      destinationId: '64'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '181'
+      tags: Relationship
+      sourceId: '61'
+      destinationId: '140'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '177'
+      tags: Relationship
+      sourceId: '61'
+      destinationId: '135'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '179'
+      tags: Relationship
+      sourceId: '61'
+      destinationId: '138'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '101'
+      tags: Relationship
+      sourceId: '61'
+      destinationId: '41'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '103'
+      tags: Relationship
+      sourceId: '61'
+      destinationId: '63'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '180'
+      tags: Relationship
+      sourceId: '61'
+      destinationId: '139'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '105'
+      tags: Relationship
+      sourceId: '61'
+      destinationId: '42'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '178'
+      tags: Relationship
+      sourceId: '61'
+      destinationId: '137'
+      description: can access
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '58'
+    tags: Element,Person
+    name: Associates
+    description: cannot access assignment and course
+    relationships:
+    - id: '186'
+      tags: Relationship
+      sourceId: '58'
+      destinationId: '140'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '182'
+      tags: Relationship
+      sourceId: '58'
+      destinationId: '135'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '106'
+      tags: Relationship
+      sourceId: '58'
+      destinationId: '41'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '108'
+      tags: Relationship
+      sourceId: '58'
+      destinationId: '63'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '184'
+      tags: Relationship
+      sourceId: '58'
+      destinationId: '138'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '185'
+      tags: Relationship
+      sourceId: '58'
+      destinationId: '139'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '110'
+      tags: Relationship
+      sourceId: '58'
+      destinationId: '42'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '183'
+      tags: Relationship
+      sourceId: '58'
+      destinationId: '137'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '107'
+      tags: Relationship
+      sourceId: '58'
+      destinationId: '64'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '109'
+      tags: Relationship
+      sourceId: '58'
+      destinationId: '35'
+      description: can access
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '55'
+    tags: Element,Person
+    name: Parent
+    description: with schedule
+    relationships:
+    - id: '79'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '40'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '76'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '42'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '155'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '139'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '78'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '63'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '80'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '41'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '153'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '137'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '85'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '43'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '154'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '138'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '77'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '35'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '151'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '135'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '152'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '136'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '150'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '134'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '156'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '140'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '75'
+      tags: Relationship
+      sourceId: '55'
+      destinationId: '64'
+      description: can use
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '73'
+    tags: Element,Person
+    name: Parent ( without schedule)
+    description: don't have any student assigned, cannot login in the app
+    location: Unspecified
+  - id: '60'
+    tags: Element,Person
+    name: Principal
+    description: cannot access assignment and course
+    relationships:
+    - id: '175'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '139'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '83'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '35'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '111'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '64'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '176'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '140'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '173'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '137'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '174'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '138'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '81'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '41'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '82'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '63'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '172'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '135'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '84'
+      tags: Relationship
+      sourceId: '60'
+      destinationId: '42'
+      description: can access
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '57'
+    tags: Element,Person
+    name: Staff
+    description: cannot access assignment and course
+    relationships:
+    - id: '171'
+      tags: Relationship
+      sourceId: '57'
+      destinationId: '140'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '168'
+      tags: Relationship
+      sourceId: '57'
+      destinationId: '137'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '169'
+      tags: Relationship
+      sourceId: '57'
+      destinationId: '138'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '92'
+      tags: Relationship
+      sourceId: '57'
+      destinationId: '42'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '167'
+      tags: Relationship
+      sourceId: '57'
+      destinationId: '135'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '89'
+      tags: Relationship
+      sourceId: '57'
+      destinationId: '41'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '91'
+      tags: Relationship
+      sourceId: '57'
+      destinationId: '63'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '90'
+      tags: Relationship
+      sourceId: '57'
+      destinationId: '35'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '170'
+      tags: Relationship
+      sourceId: '57'
+      destinationId: '139'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '95'
+      tags: Relationship
+      sourceId: '57'
+      destinationId: '64'
+      description: can use
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '54'
+    tags: Element,Person
+    name: Student
+    description: with schedule
+    relationships:
+    - id: '74'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '55'
+      description: is assigned to
+      interactionStyle: Synchronous
+    - id: '66'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '41'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '70'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '63'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '147'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '138'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '65'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '40'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '148'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '139'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '67'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '43'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '144'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '136'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '68'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '42'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '71'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '64'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '145'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '137'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '69'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '35'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '149'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '140'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '143'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '135'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '142'
+      tags: Relationship
+      sourceId: '54'
+      destinationId: '134'
+      description: can use
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '72'
+    tags: Element,Person
+    name: Student (without schedule)
+    description: not assigned to any parent. cannot login in the app.
+    location: Unspecified
+  - id: '62'
+    tags: Element,Person
+    name: System admin
+    description: cannot access assignment and course
+    relationships:
+    - id: '115'
+      tags: Relationship
+      sourceId: '62'
+      destinationId: '35'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '113'
+      tags: Relationship
+      sourceId: '62'
+      destinationId: '64'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '162'
+      tags: Relationship
+      sourceId: '62'
+      destinationId: '135'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '166'
+      tags: Relationship
+      sourceId: '62'
+      destinationId: '140'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '112'
+      tags: Relationship
+      sourceId: '62'
+      destinationId: '41'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '114'
+      tags: Relationship
+      sourceId: '62'
+      destinationId: '63'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '165'
+      tags: Relationship
+      sourceId: '62'
+      destinationId: '139'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '116'
+      tags: Relationship
+      sourceId: '62'
+      destinationId: '42'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '163'
+      tags: Relationship
+      sourceId: '62'
+      destinationId: '137'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '164'
+      tags: Relationship
+      sourceId: '62'
+      destinationId: '138'
+      description: can access
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '56'
+    tags: Element,Person
+    name: Teacher
+    description: cannot access assignment and course
+    relationships:
+    - id: '158'
+      tags: Relationship
+      sourceId: '56'
+      destinationId: '137'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '86'
+      tags: Relationship
+      sourceId: '56'
+      destinationId: '41'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '93'
+      tags: Relationship
+      sourceId: '56'
+      destinationId: '63'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '157'
+      tags: Relationship
+      sourceId: '56'
+      destinationId: '135'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '88'
+      tags: Relationship
+      sourceId: '56'
+      destinationId: '42'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '159'
+      tags: Relationship
+      sourceId: '56'
+      destinationId: '138'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '160'
+      tags: Relationship
+      sourceId: '56'
+      destinationId: '139'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '87'
+      tags: Relationship
+      sourceId: '56'
+      destinationId: '35'
+      description: can access
+      interactionStyle: Synchronous
+    - id: '94'
+      tags: Relationship
+      sourceId: '56'
+      destinationId: '64'
+      description: can use
+      interactionStyle: Synchronous
+    - id: '161'
+      tags: Relationship
+      sourceId: '56'
+      destinationId: '140'
+      description: can access
+      interactionStyle: Synchronous
+    location: Unspecified
+  - id: '1'
+    tags: Element,Person
+    name: User
+    description: Student, Parent, Teacher, Staff, Associates, Principal, Assistant
+      principal, System admin, After-school professionals
+    relationships:
+    - id: '50'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '34'
+      description: uses
+      interactionStyle: Synchronous
+    - id: '51'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '33'
+      description: uses
+      interactionStyle: Synchronous
+    - id: '12'
+      tags: Relationship
+      sourceId: '1'
+      destinationId: '2'
+      description: uses
+      interactionStyle: Synchronous
+    location: Unspecified
+  softwareSystems:
+  - id: '3'
+    tags: Element,Software System
+    name: Apple push notification service
+    description: Apple's service for handling push notification in iOS device
+    relationships:
+    - id: '23'
+      tags: Relationship
+      sourceId: '3'
+      destinationId: '2'
+      description: sends push notifications for user
+      interactionStyle: Synchronous
+    - id: '53'
+      tags: Relationship
+      sourceId: '3'
+      destinationId: '33'
+      description: send push notifications to
+      interactionStyle: Synchronous
+    - id: '206'
+      tags: Relationship
+      sourceId: '3'
+      destinationId: '138'
+      description: sends push notification about mail
+      interactionStyle: Synchronous
+    - id: '207'
+      tags: Relationship
+      sourceId: '3'
+      destinationId: '134'
+      description: sends push notifications about pending assignments
+      interactionStyle: Synchronous
+    location: External
+  - id: '4'
+    tags: Element,Software System
+    name: Firebase push notification service
+    description: Google's service for handling push notification in Android device
+    relationships:
+    - id: '24'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '2'
+      description: sends push notifications for user
+      interactionStyle: Synchronous
+    - id: '117'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '35'
+      description: sends notification about new mail
+      interactionStyle: Synchronous
+    - id: '118'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '43'
+      description: sends notification about pending assignments
+      interactionStyle: Synchronous
+    - id: '52'
+      tags: Relationship
+      sourceId: '4'
+      destinationId: '34'
+      description: send push notifications to
+      interactionStyle: Synchronous
+    location: External
+  - id: '2'
+    tags: Element,Software System,internal
+    name: SchoolLoop Mobile App
+    description: Android and iOS apps
+    relationships:
+    - id: '15'
+      tags: Relationship
+      sourceId: '2'
+      destinationId: '5'
+      description: communicate with SchoolLoop web server using
+      technology: HTTPS
+      interactionStyle: Synchronous
+    location: Unspecified
+    containers:
+    - id: '34'
+      tags: Element,Container,internal
+      name: Android App
+      description: Android version of Schoolloop Mobile
+      relationships:
+      - id: '49'
+        tags: Relationship
+        sourceId: '34'
+        destinationId: '5'
+        description: communicates with SchoolLoop server using
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '38'
+        tags: Relationship
+        sourceId: '34'
+        destinationId: '35'
+        interactionStyle: Synchronous
+      - id: '218'
+        tags: Relationship
+        sourceId: '34'
+        destinationId: '209'
+        interactionStyle: Synchronous
+      technology: Java, Javascript
+      components:
+      - id: '43'
+        tags: Element,Component,Android
+        name: Assignments
+        relationships:
+        - id: '232'
+          tags: Relationship
+          sourceId: '43'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+      - id: '41'
+        tags: Element,Component,Android
+        name: Calendar
+        relationships:
+        - id: '233'
+          tags: Relationship
+          sourceId: '41'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+      - id: '40'
+        tags: Element,Component,Android
+        name: Courses
+        relationships:
+        - id: '234'
+          tags: Relationship
+          sourceId: '40'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+      - id: '63'
+        tags: Element,Component,Android
+        name: Login
+        relationships:
+        - id: '235'
+          tags: Relationship
+          sourceId: '63'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        size: 0
+      - id: '35'
+        tags: Element,Component,Android
+        name: Loopmail
+        relationships:
+        - id: '236'
+          tags: Relationship
+          sourceId: '35'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+      - id: '42'
+        tags: Element,Component,Android
+        name: News
+        relationships:
+        - id: '237'
+          tags: Relationship
+          sourceId: '42'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+      - id: '64'
+        tags: Element,Component,Android
+        name: Slide Drawer Menu
+        relationships:
+        - id: '231'
+          tags: Relationship
+          sourceId: '64'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        size: 0
+    - id: '216'
+      tags: Element,Container
+      name: Android Push Notification Service
+      description: external container but need to be configured to work with SchoolLoop
+        Android app
+      relationships:
+      - id: '239'
+        tags: Relationship
+        sourceId: '216'
+        destinationId: '43'
+        description: sends notifications about pending assignments
+        interactionStyle: Synchronous
+      - id: '240'
+        tags: Relationship
+        sourceId: '216'
+        destinationId: '35'
+        description: sends notifications about new mails
+        interactionStyle: Synchronous
+      - id: '219'
+        tags: Relationship
+        sourceId: '216'
+        destinationId: '34'
+        description: sends push notifications to Android app users
+        interactionStyle: Synchronous
+      technology: Firebase
+    - id: '33'
+      tags: Element,Container,internal
+      name: iOS App
+      description: iOS version of Schoolloop Mobile
+      relationships:
+      - id: '48'
+        tags: Relationship
+        sourceId: '33'
+        destinationId: '5'
+        description: communicates with SchoolLoop server using
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '215'
+        tags: Relationship
+        sourceId: '33'
+        destinationId: '209'
+        interactionStyle: Synchronous
+      technology: Objective C, JavaScript
+      components:
+      - id: '134'
+        tags: Element,Component,iOS
+        name: Assignments
+        relationships:
+        - id: '250'
+          tags: Relationship
+          sourceId: '134'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+      - id: '135'
+        tags: Element,Component,iOS
+        name: Calendar
+        relationships:
+        - id: '251'
+          tags: Relationship
+          sourceId: '135'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+      - id: '136'
+        tags: Element,Component,iOS
+        name: Courses
+        relationships:
+        - id: '252'
+          tags: Relationship
+          sourceId: '136'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+      - id: '137'
+        tags: Element,Component,iOS
+        name: Login
+        relationships:
+        - id: '253'
+          tags: Relationship
+          sourceId: '137'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+      - id: '138'
+        tags: Element,Component,iOS
+        name: Loopmail
+        relationships:
+        - id: '254'
+          tags: Relationship
+          sourceId: '138'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+      - id: '139'
+        tags: Element,Component,iOS
+        name: News
+        relationships:
+        - id: '255'
+          tags: Relationship
+          sourceId: '139'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+      - id: '140'
+        tags: Element,Component,iOS
+        name: Slide Drawer Menu
+        relationships:
+        - id: '248'
+          tags: Relationship
+          sourceId: '140'
+          destinationId: '209'
+          interactionStyle: Synchronous
+        technology: Javascript
+        size: 0
+    - id: '210'
+      tags: Element,Container
+      name: iOS Push Notification Service
+      description: external container but need to be configured to work with SchoolLoop
+        iOS app
+      relationships:
+      - id: '257'
+        tags: Relationship
+        sourceId: '210'
+        destinationId: '134'
+        description: sends notifications about pending assignments
+        interactionStyle: Synchronous
+      - id: '220'
+        tags: Relationship
+        sourceId: '210'
+        destinationId: '33'
+        description: sends push notifications to iOS users
+        interactionStyle: Synchronous
+      - id: '258'
+        tags: Relationship
+        sourceId: '210'
+        destinationId: '138'
+        description: sends notifications about new mails
+        interactionStyle: Synchronous
+      technology: APN
+    - id: '209'
+      tags: Element,Container
+      name: SchoolLoop Web API
+      description: This is a part of Schoolloop Web, Mobile apps communicate with
+        web server using this API.
+      relationships:
+      - id: '246'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '139'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '245'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '138'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '244'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '137'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '243'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '136'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '242'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '135'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '241'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '134'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '228'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '35'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '238'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '216'
+        description: sends requests to send notifications to users
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '214'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '33'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '221'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '210'
+        description: sends request for sending push notifications
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '217'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '34'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '230'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '64'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '229'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '42'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '224'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '43'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '226'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '40'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '225'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '41'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '222'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '216'
+        description: sends request for sending push notifications
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '227'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '63'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '256'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '210'
+        description: sends request to send push notifications to users
+        technology: HTTP
+        interactionStyle: Synchronous
+      - id: '247'
+        tags: Relationship
+        sourceId: '209'
+        destinationId: '140'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+      technology: Java
+  - id: '5'
+    tags: Element,Software System
+    name: SchoolLoop Web API
+    description: This is a part of Schoolloop Web, Mobile apps communicate with web
+      server using this API.
+    relationships:
+    - id: '21'
+      tags: Relationship
+      sourceId: '5'
+      destinationId: '4'
+      description: request to send push notification to Android device
+      interactionStyle: Synchronous
+    - id: '141'
+      tags: Relationship
+      sourceId: '5'
+      destinationId: '3'
+      description: request to send push notification to iOS device
+      interactionStyle: Synchronous
+    location: External
+  deploymentNodes:
+  - id: '301'
+    name: Android Push notification
+    environment: Production
+    technology: Google Firebase Cloud Messaging Server
+    instances: 1
+    containerInstances:
+    - id: '302'
+      tags: Container Instance
+      relationships:
+      - id: '342'
+        sourceId: '302'
+        destinationId: '339'
+        description: sends push notifications to Android app users
+        interactionStyle: Synchronous
+        linkedRelationshipId: '219'
+      environment: Production
+      containerId: '216'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '300'
+    name: Apple push notification
+    environment: Production
+    technology: Apple Push Notification Server
+    instances: 1
+    containerInstances:
+    - id: '306'
+      tags: Container Instance
+      relationships:
+      - id: '336'
+        sourceId: '306'
+        destinationId: '333'
+        description: sends push notifications to iOS users
+        interactionStyle: Synchronous
+        linkedRelationshipId: '220'
+      environment: Production
+      containerId: '210'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '337'
+    name: User's Android Device
+    environment: Production
+    technology: Android
+    instances: 1
+    children:
+    - id: '338'
+      name: Google Play Store
+      environment: Production
+      instances: 1
+      containerInstances:
+      - id: '339'
+        tags: Container Instance
+        relationships:
+        - id: '340'
+          sourceId: '339'
+          destinationId: '280'
+          interactionStyle: Synchronous
+          linkedRelationshipId: '218'
+        environment: Production
+        containerId: '34'
+        instanceId: 1
+        properties: {}
+      children: []
+    containerInstances: []
+  - id: '331'
+    name: User's iOS Device
+    environment: Production
+    technology: iOS
+    instances: 1
+    children:
+    - id: '332'
+      name: Apple Store
+      environment: Production
+      instances: 1
+      containerInstances:
+      - id: '333'
+        tags: Container Instance
+        relationships:
+        - id: '334'
+          sourceId: '333'
+          destinationId: '280'
+          interactionStyle: Synchronous
+          linkedRelationshipId: '215'
+        environment: Production
+        containerId: '33'
+        instanceId: 1
+        properties: {}
+      children: []
+    containerInstances: []
+  - id: '279'
+    name: Web Server
+    environment: Production
+    instances: 1
+    containerInstances:
+    - id: '280'
+      tags: Container Instance
+      relationships:
+      - id: '309'
+        sourceId: '280'
+        destinationId: '306'
+        description: sends request to send push notifications to users
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '256'
+      - id: '304'
+        sourceId: '280'
+        destinationId: '302'
+        description: sends requests to send notifications to users
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '238'
+      - id: '335'
+        sourceId: '280'
+        destinationId: '333'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '214'
+      - id: '308'
+        sourceId: '280'
+        destinationId: '306'
+        description: sends request for sending push notifications
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '221'
+      - id: '305'
+        sourceId: '280'
+        destinationId: '302'
+        description: sends request for sending push notifications
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '222'
+      - id: '341'
+        sourceId: '280'
+        destinationId: '339'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '217'
+      environment: Production
+      containerId: '209'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '310'
+    name: Android push notification
+    environment: Test
+    technology: Google Firebase Cloud Messaging Server
+    instances: 1
+    containerInstances:
+    - id: '312'
+      tags: Container Instance
+      relationships:
+      - id: '349'
+        sourceId: '312'
+        destinationId: '346'
+        description: sends push notifications to Android app users
+        interactionStyle: Synchronous
+        linkedRelationshipId: '219'
+      environment: Test
+      containerId: '216'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '311'
+    name: iOS push notification
+    environment: Test
+    technology: Apple Push Notification Server
+    instances: 1
+    containerInstances:
+    - id: '316'
+      tags: Container Instance
+      relationships:
+      - id: '352'
+        sourceId: '316'
+        destinationId: '351'
+        description: sends push notifications to iOS users
+        interactionStyle: Synchronous
+        linkedRelationshipId: '220'
+      environment: Test
+      containerId: '210'
+      instanceId: 1
+      properties: {}
+    children: []
+  - id: '344'
+    name: User's Android Device
+    environment: Test
+    technology: Android
+    instances: 1
+    children:
+    - id: '345'
+      name: HockeyApp
+      environment: Test
+      instances: 1
+      containerInstances:
+      - id: '346'
+        tags: Container Instance
+        relationships:
+        - id: '347'
+          sourceId: '346'
+          destinationId: '286'
+          interactionStyle: Synchronous
+          linkedRelationshipId: '218'
+        environment: Test
+        containerId: '34'
+        instanceId: 1
+        properties: {}
+      children: []
+    containerInstances: []
+  - id: '343'
+    name: User's iOS Device
+    environment: Test
+    technology: iOS
+    instances: 1
+    children:
+    - id: '350'
+      name: HockeyApp
+      environment: Test
+      instances: 1
+      containerInstances:
+      - id: '351'
+        tags: Container Instance
+        relationships:
+        - id: '353'
+          sourceId: '351'
+          destinationId: '286'
+          interactionStyle: Synchronous
+          linkedRelationshipId: '215'
+        environment: Test
+        containerId: '33'
+        instanceId: 1
+        properties: {}
+      children: []
+    containerInstances: []
+  - id: '285'
+    name: Web Server
+    environment: Test
+    instances: 1
+    containerInstances:
+    - id: '286'
+      tags: Container Instance
+      relationships:
+      - id: '315'
+        sourceId: '286'
+        destinationId: '312'
+        description: sends request for sending push notifications
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '222'
+      - id: '319'
+        sourceId: '286'
+        destinationId: '316'
+        description: sends request to send push notifications to users
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '256'
+      - id: '314'
+        sourceId: '286'
+        destinationId: '312'
+        description: sends requests to send notifications to users
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '238'
+      - id: '354'
+        sourceId: '286'
+        destinationId: '351'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '214'
+      - id: '348'
+        sourceId: '286'
+        destinationId: '346'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '217'
+      - id: '318'
+        sourceId: '286'
+        destinationId: '316'
+        description: sends request for sending push notifications
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '221'
+      environment: Test
+      containerId: '209'
+      instanceId: 1
+      properties: {}
+    children: []
+documentation:
+  sections: []
+  decisions: []
+  images: []
+views:
+  systemContextViews:
+  - softwareSystemId: '2'
+    key: '1'
+    paperSize: A5_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '2'
+      relationships: []
+    - order: 2
+      elements:
+      - '1'
+      - '3'
+      - '4'
+      - '5'
+      relationships:
+      - '12'
+      - '13'
+      - '14'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '1'
+      x: 150
+      y: 60
+    - id: '2'
+      x: 550
+      y: 565
+    - id: '3'
+      x: 1860
+      y: 1330
+    - id: '4'
+      x: 245
+      y: 1310
+    - id: '5'
+      x: 1820
+      y: 105
+    relationships:
+    - id: '15'
+    - id: '141'
+    - id: '24'
+    - id: '12'
+    - id: '23'
+    - id: '21'
+  containerViews:
+  - softwareSystemId: '2'
+    key: '12'
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '1'
+      relationships: []
+    - order: 2
+      elements:
+      - '33'
+      - '34'
+      relationships:
+      - '50'
+      - '51'
+    - order: 3
+      elements:
+      - '210'
+      - '209'
+      relationships:
+      - '214'
+      - '215'
+    - order: 4
+      elements:
+      - '216'
+      relationships: []
+    elements:
+    - id: '33'
+      x: 940
+      y: 185
+    - id: '1'
+      x: 175
+      y: 835
+    - id: '34'
+      x: 940
+      y: 1565
+    - id: '210'
+      x: 2540
+      y: 185
+    - id: '216'
+      x: 2545
+      y: 1610
+    - id: '209'
+      x: 2280
+      y: 905
+    relationships:
+    - id: '215'
+    - id: '214'
+    - id: '50'
+    - id: '51'
+    - id: '220'
+    - id: '221'
+    - id: '222'
+    - id: '256'
+    - id: '219'
+    - id: '218'
+    - id: '217'
+    - id: '238'
+  componentViews:
+  - softwareSystemId: '2'
+    key: '30'
+    paperSize: A3_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '63'
+      - '64'
+      relationships: []
+    - order: 2
+      elements:
+      - '55'
+      - '56'
+      - '35'
+      - '57'
+      - '58'
+      - '59'
+      - '60'
+      - '61'
+      - '40'
+      - '62'
+      - '41'
+      - '42'
+      - '43'
+      - '54'
+      relationships:
+      - '88'
+      - '89'
+      - '110'
+      - '111'
+      - '112'
+      - '113'
+      - '114'
+      - '115'
+      - '116'
+      - '90'
+      - '91'
+      - '92'
+      - '93'
+      - '94'
+      - '95'
+      - '96'
+      - '97'
+      - '98'
+      - '99'
+      - '65'
+      - '66'
+      - '67'
+      - '68'
+      - '69'
+      - '70'
+      - '71'
+      - '74'
+      - '75'
+      - '76'
+      - '77'
+      - '78'
+      - '79'
+      - '100'
+      - '101'
+      - '102'
+      - '103'
+      - '104'
+      - '105'
+      - '106'
+      - '80'
+      - '107'
+      - '81'
+      - '108'
+      - '82'
+      - '109'
+      - '83'
+      - '84'
+      - '85'
+      - '86'
+      - '87'
+    - order: 3
+      elements:
+      - '72'
+      - '73'
+      relationships: []
+    - order: 4
+      elements:
+      - '216'
+      - '209'
+      relationships: []
+    containerId: '34'
+    elements:
+    - id: '55'
+      x: 150
+      y: 855
+    - id: '56'
+      x: 460
+      y: 2270
+    - id: '57'
+      x: 1700
+      y: 2265
+    - id: '35'
+      x: 2725
+      y: 1545
+    - id: '58'
+      x: 2895
+      y: 2240
+    - id: '59'
+      x: 3955
+      y: 2260
+    - id: '216'
+      x: 4280
+      y: 890
+    - id: '60'
+      x: 1090
+      y: 2270
+    - id: '61'
+      x: 3440
+      y: 2230
+    - id: '72'
+      x: 1270
+      y: 25
+    - id: '209'
+      x: 4030
+      y: 235
+    - id: '73'
+      x: 1750
+      y: 20
+    - id: '62'
+      x: 2365
+      y: 2270
+    - id: '40'
+      x: 1545
+      y: 1550
+    - id: '41'
+      x: 2715
+      y: 620
+    - id: '63'
+      x: 1530
+      y: 630
+    - id: '42'
+      x: 2720
+      y: 1130
+    - id: '64'
+      x: 2140
+      y: 640
+    - id: '54'
+      x: 150
+      y: 285
+    - id: '43'
+      x: 1515
+      y: 1110
+    relationships:
+    - id: '70'
+    - id: '93'
+    - id: '91'
+    - id: '74'
+    - id: '97'
+    - id: '76'
+    - id: '95'
+    - id: '232'
+    - id: '234'
+    - id: '236'
+    - id: '238'
+    - id: '230'
+    - id: '67'
+    - id: '111'
+    - id: '69'
+    - id: '88'
+    - id: '113'
+    - id: '115'
+    - id: '228'
+    - id: '83'
+    - id: '81'
+    - id: '87'
+    - id: '85'
+    - id: '224'
+    - id: '226'
+    - id: '107'
+    - id: '109'
+    - id: '78'
+    - id: '99'
+    - id: '101'
+    - id: '103'
+    - id: '105'
+    - id: '239'
+    - id: '94'
+    - id: '71'
+    - id: '92'
+    - id: '98'
+    - id: '75'
+    - id: '96'
+    - id: '231'
+    - id: '233'
+    - id: '235'
+    - id: '90'
+    - id: '237'
+    - id: '66'
+    - id: '110'
+    - id: '68'
+    - id: '89'
+    - id: '112'
+    - id: '114'
+    - id: '116'
+    - id: '82'
+    - id: '229'
+    - id: '80'
+    - id: '86'
+    - id: '65'
+    - id: '84'
+    - id: '225'
+    - id: '227'
+    - id: '108'
+    - id: '240'
+    - id: '100'
+    - id: '77'
+    - id: '102'
+    - id: '79'
+    - id: '104'
+    - id: '106'
+  - softwareSystemId: '2'
+    key: '31'
+    paperSize: A3_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '55'
+      - '56'
+      - '57'
+      - '58'
+      - '59'
+      - '60'
+      - '61'
+      - '72'
+      - '62'
+      - '73'
+      - '54'
+      relationships:
+      - '74'
+    - order: 2
+      elements:
+      - '134'
+      - '135'
+      - '136'
+      - '137'
+      - '138'
+      - '139'
+      - '140'
+      relationships:
+      - '190'
+      - '191'
+      - '150'
+      - '151'
+      - '152'
+      - '153'
+      - '154'
+      - '155'
+      - '156'
+      - '157'
+      - '158'
+      - '159'
+      - '160'
+      - '161'
+      - '162'
+      - '163'
+      - '164'
+      - '165'
+      - '166'
+      - '167'
+      - '168'
+      - '169'
+      - '170'
+      - '171'
+      - '172'
+      - '173'
+      - '174'
+      - '175'
+      - '176'
+      - '177'
+      - '178'
+      - '179'
+      - '180'
+      - '181'
+      - '182'
+      - '183'
+      - '184'
+      - '185'
+      - '142'
+      - '186'
+      - '143'
+      - '187'
+      - '144'
+      - '188'
+      - '145'
+      - '189'
+      - '147'
+      - '148'
+      - '149'
+    - order: 3
+      elements:
+      - '210'
+      - '209'
+      relationships: []
+    containerId: '33'
+    elements:
+    - id: '55'
+      x: 140
+      y: 1275
+    - id: '56'
+      x: 670
+      y: 2750
+    - id: '57'
+      x: 1300
+      y: 2760
+    - id: '58'
+      x: 1885
+      y: 2785
+    - id: '59'
+      x: 2475
+      y: 2785
+    - id: '140'
+      x: 1690
+      y: 2005
+    - id: '210'
+      x: 4350
+      y: 1115
+    - id: '134'
+      x: 1115
+      y: 1355
+    - id: '135'
+      x: 2260
+      y: 2010
+    - id: '136'
+      x: 1110
+      y: 910
+    - id: '137'
+      x: 1150
+      y: 2000
+    - id: '138'
+      x: 3495
+      y: 2015
+    - id: '139'
+      x: 2890
+      y: 2005
+    - id: '60'
+      x: 3080
+      y: 2735
+    - id: '61'
+      x: 3660
+      y: 2725
+    - id: '72'
+      x: 1205
+      y: 80
+    - id: '209'
+      x: 4250
+      y: 90
+    - id: '73'
+      x: 2080
+      y: 95
+    - id: '62'
+      x: 4225
+      y: 2690
+    - id: '54'
+      x: 145
+      y: 350
+    relationships:
+    - id: '172'
+    - id: '174'
+    - id: '74'
+    - id: '153'
+    - id: '191'
+    - id: '151'
+    - id: '170'
+    - id: '253'
+    - id: '255'
+    - id: '257'
+    - id: '251'
+    - id: '157'
+    - id: '155'
+    - id: '176'
+    - id: '159'
+    - id: '178'
+    - id: '160'
+    - id: '183'
+    - id: '185'
+    - id: '164'
+    - id: '162'
+    - id: '181'
+    - id: '243'
+    - id: '245'
+    - id: '247'
+    - id: '241'
+    - id: '145'
+    - id: '168'
+    - id: '143'
+    - id: '166'
+    - id: '149'
+    - id: '187'
+    - id: '147'
+    - id: '189'
+    - id: '173'
+    - id: '175'
+    - id: '152'
+    - id: '190'
+    - id: '150'
+    - id: '171'
+    - id: '254'
+    - id: '256'
+    - id: '258'
+    - id: '250'
+    - id: '252'
+    - id: '156'
+    - id: '154'
+    - id: '177'
+    - id: '158'
+    - id: '179'
+    - id: '184'
+    - id: '186'
+    - id: '142'
+    - id: '163'
+    - id: '180'
+    - id: '161'
+    - id: '182'
+    - id: '242'
+    - id: '244'
+    - id: '246'
+    - id: '248'
+    - id: '167'
+    - id: '144'
+    - id: '165'
+    - id: '188'
+    - id: '148'
+    - id: '169'
+  deploymentViews:
+  - softwareSystemId: '2'
+    key: deployment
+    paperSize: A4_Landscape
+    environment: Production
+    elements:
+    - id: '280'
+      x: 1285
+      y: 935
+    - id: '331'
+      x: 0
+      y: 0
+    - id: '332'
+      x: 0
+      y: 0
+    - id: '333'
+      x: 310
+      y: 210
+    - id: '300'
+      x: 0
+      y: 0
+    - id: '279'
+      x: 0
+      y: 0
+    - id: '301'
+      x: 0
+      y: 0
+    - id: '302'
+      x: 2405
+      y: 1605
+    - id: '337'
+      x: 0
+      y: 0
+    - id: '338'
+      x: 0
+      y: 0
+    - id: '306'
+      x: 2370
+      y: 235
+    - id: '339'
+      x: 305
+      y: 1585
+    relationships:
+    - id: '336'
+    - id: '304'
+    - id: '334'
+    - id: '335'
+    - id: '342'
+    - id: '341'
+    - id: '340'
+    - id: '309'
+    - id: '305'
+    - id: '308'
+  - softwareSystemId: '2'
+    key: testdeploymentview
+    paperSize: A4_Landscape
+    environment: Test
+    elements:
+    - id: '350'
+      x: 0
+      y: 0
+    - id: '351'
+      x: 315
+      y: 1620
+    - id: '285'
+      x: 0
+      y: 0
+    - id: '286'
+      x: 1415
+      y: 920
+    - id: '310'
+      x: 0
+      y: 0
+    - id: '343'
+      x: 0
+      y: 0
+    - id: '311'
+      x: 0
+      y: 0
+    - id: '344'
+      x: 0
+      y: 0
+    - id: '312'
+      x: 2475
+      y: 220
+    - id: '345'
+      x: 0
+      y: 0
+    - id: '346'
+      x: 265
+      y: 240
+    - id: '316'
+      x: 2495
+      y: 1645
+    relationships:
+    - id: '348'
+    - id: '347'
+    - id: '315'
+    - id: '314'
+    - id: '354'
+    - id: '353'
+    - id: '352'
+    - id: '319'
+    - id: '318'
+    - id: '349'
+  configuration:
+    branding: {}
+    styles:
+      elements:
+      - tag: Person
+        background: "#9aff86"
+        shape: Person
+      - tag: internal
+        background: "#214f9b"
+        color: "#ffffff"
+      - tag: Android
+        background: "#cbde16"
+      - tag: iOS
+        background: "#cbde16"
+      relationships:
+      - tag: Relationship
+    terminology: {}
+    lastSavedView: '1'
+  systemLandscapeViews: []
+  dynamicViews: []
+  filteredViews: []

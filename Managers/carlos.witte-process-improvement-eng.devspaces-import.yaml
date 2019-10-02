@@ -1,0 +1,13 @@
+manager: Carlos Witte
+teamroom: Eng.DevSpacesImport
+units: 
+    - unit: https://jira.devfactory.com/issues/?filter=94041
+recomnmendation: 
+    eliminate waste: false 
+    improve quality bar: true 
+    product agnostic: true
+    product specific: 
+        - product name: null 
+    description: Improve our Playbook's IQB to make us independent from Devhub's IOW as input source.
+    effort: 8
+    impact: 0.10

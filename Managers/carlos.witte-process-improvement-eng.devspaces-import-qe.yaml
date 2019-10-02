@@ -1,0 +1,13 @@
+manager: Carlos Witte
+teamroom: Eng.DevSpacesImport.QE
+units: 
+    - unit: https://jira.devfactory.com/issues/?filter=94040
+recomnmendation: 
+    eliminate waste: true 
+    improve quality bar: true 
+    product agnostic: true
+    product specific: 
+        - product name: null 
+    description: Rolling out "Add QEPA feature to automatically reject or approve some tickets based on quality thresholds"
+    effort: 1
+    impact: 0.15

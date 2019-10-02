@@ -1,0 +1,18 @@
+manager: José Martins
+teamroom: Eng.ProcessAutomation
+direct reports: 4
+ICs:
+    - IC:
+        IC name: Vladislav Medvedev
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/PA-699
+        coaching: Unit was correctly done. No coaching. 
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Milan Trninic
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/PA-712
+        coaching: Ensure that new QS Dashboards are accessible to relevant stakeholders out of the box.
+        performance assessment: highPerformer
+        continue coaching: true

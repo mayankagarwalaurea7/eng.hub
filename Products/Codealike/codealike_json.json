@@ -1,0 +1,1336 @@
+{
+    "id": 47113,
+    "name": "Workspace 47113",
+    "description": "An empty workspace.",
+    "revision": 40,
+    "lastModifiedDate": "2019-10-01T13:55:03Z",
+    "lastModifiedUser": "todd.benson@trilogy.com",
+    "lastModifiedAgent": "structurizr-web/1624",
+    "model": {
+        "people": [
+            {
+                "id": "5",
+                "tags": "Element,Person",
+                "name": "Admin",
+                "description": "System admin",
+                "relationships": [
+                    {
+                        "id": "37",
+                        "tags": "Relationship",
+                        "sourceId": "5",
+                        "destinationId": "18",
+                        "description": "uses",
+                        "technology": "script",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "38",
+                        "tags": "Relationship",
+                        "sourceId": "5",
+                        "destinationId": "13",
+                        "description": "uses",
+                        "technology": "http",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "24",
+                        "tags": "Relationship",
+                        "sourceId": "5",
+                        "destinationId": "1",
+                        "description": "performs administrative functions via web application",
+                        "technology": "http/https",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "3",
+                "tags": "Element,Person",
+                "name": "Developer",
+                "description": "Codes, debugs, builds code in IDEs and browses web via Google Chrome.",
+                "relationships": [
+                    {
+                        "id": "154",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "65",
+                        "description": "Configure settings",
+                        "technology": "json",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "36",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "13",
+                        "description": "uses",
+                        "technology": "http",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "33",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "12",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "144",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "59",
+                        "description": "Coding, Building, Debugging and other coding activities.",
+                        "technology": "Atom IDE",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "31",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "11",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "153",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "61",
+                        "description": "Browsing and debugging web pages",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "32",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "8",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "34",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "9",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "21",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "1",
+                        "description": "accesses web application",
+                        "technology": "http/https",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "145",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "55",
+                        "description": "Configure settings (e.g. Access Token)",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "30",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "10",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "20",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "2",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "35",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "7",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "6",
+                "tags": "Element,Person",
+                "name": "Enterprise Admin",
+                "description": "System administrator",
+                "relationships": [
+                    {
+                        "id": "39",
+                        "tags": "Relationship",
+                        "sourceId": "6",
+                        "destinationId": "13",
+                        "description": "uses",
+                        "technology": "http",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "23",
+                        "tags": "Relationship",
+                        "sourceId": "6",
+                        "destinationId": "1",
+                        "description": "performs team management activities via web application",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            }
+        ],
+        "softwareSystems": [
+            {
+                "id": "59",
+                "tags": "Element,Software System",
+                "name": "Atom IDE",
+                "description": "Atom IDE",
+                "relationships": [
+                    {
+                        "id": "150",
+                        "tags": "Relationship",
+                        "sourceId": "59",
+                        "destinationId": "56",
+                        "description": "Listen for all user events like coding, building, and debugging.",
+                        "technology": "Javascript",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "60",
+                "tags": "Element,Software System",
+                "name": "Eclipse IDE",
+                "description": "Eclipse IDE",
+                "location": "Unspecified"
+            },
+            {
+                "id": "4",
+                "tags": "Element,Software System",
+                "name": "External Email System",
+                "description": "Sends insight reports to users based on user configuration",
+                "relationships": [
+                    {
+                        "id": "29",
+                        "tags": "Relationship",
+                        "sourceId": "4",
+                        "destinationId": "6",
+                        "description": "Delivers insight reports via email",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "28",
+                        "tags": "Relationship",
+                        "sourceId": "4",
+                        "destinationId": "5",
+                        "description": "Delivers insight reports via email",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "27",
+                        "tags": "Relationship",
+                        "sourceId": "4",
+                        "destinationId": "3",
+                        "description": "Delivers insight reports via email",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "156",
+                        "tags": "Element,Container",
+                        "name": "External Email System",
+                        "description": "External Email System"
+                    }
+                ]
+            },
+            {
+                "id": "61",
+                "tags": "Element,Software System",
+                "name": "Google Chrome Browser",
+                "description": "Google Chrome Browser",
+                "relationships": [
+                    {
+                        "id": "155",
+                        "tags": "Relationship",
+                        "sourceId": "61",
+                        "destinationId": "66",
+                        "description": "Sending user events (browsing, debugging)",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "62",
+                "tags": "Element,Software System",
+                "name": "JetBrains IDE",
+                "description": "JetBrains IDE",
+                "location": "Unspecified"
+            },
+            {
+                "id": "63",
+                "tags": "Element,Software System",
+                "name": "Visual Studio 2017 IDE",
+                "description": "Visual Studio 2017 IDE",
+                "location": "Unspecified"
+            },
+            {
+                "id": "64",
+                "tags": "Element,Software System",
+                "name": "VS Code IDE",
+                "description": "VS Code IDE",
+                "location": "Unspecified"
+            },
+            {
+                "id": "2",
+                "tags": "Element,Software System",
+                "name": "WS IDE Plugins",
+                "description": "Logs developer's IDE activities",
+                "relationships": [
+                    {
+                        "id": "25",
+                        "tags": "Relationship",
+                        "sourceId": "2",
+                        "destinationId": "1",
+                        "description": "sends batch activity data",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "11",
+                        "tags": "Element,Container",
+                        "name": "Atom Plugin",
+                        "description": "Provides ability to track developer's activities through Atom IDE.",
+                        "relationships": [
+                            {
+                                "id": "44",
+                                "tags": "Relationship",
+                                "sourceId": "11",
+                                "destinationId": "19",
+                                "description": "sends IDE data",
+                                "technology": "json, http",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JavaScript",
+                        "components": [
+                            {
+                                "id": "56",
+                                "tags": "Element,Component",
+                                "name": "Event Listener",
+                                "description": "Listens to all user IDE activities such as coding, building, and debugging.",
+                                "relationships": [
+                                    {
+                                        "id": "147",
+                                        "tags": "Relationship",
+                                        "sourceId": "56",
+                                        "destinationId": "58",
+                                        "description": "Save user activities",
+                                        "technology": "json",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "Javascript",
+                                "size": 0
+                            },
+                            {
+                                "id": "55",
+                                "tags": "Element,Component",
+                                "name": "Extension Configurer",
+                                "description": "Configure the plugin settings like setting the account access token.",
+                                "relationships": [
+                                    {
+                                        "id": "151",
+                                        "tags": "Relationship",
+                                        "sourceId": "55",
+                                        "destinationId": "58",
+                                        "description": "Save settings",
+                                        "technology": "json",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "Javascript",
+                                "size": 0
+                            },
+                            {
+                                "id": "58",
+                                "tags": "Element,Component",
+                                "name": "Local Storage",
+                                "description": "Stores user settings and user tracked data.",
+                                "relationships": [
+                                    {
+                                        "id": "148",
+                                        "tags": "Relationship",
+                                        "sourceId": "58",
+                                        "destinationId": "57",
+                                        "description": "Read User Tracked Data",
+                                        "technology": "json",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "File System",
+                                "size": 0
+                            },
+                            {
+                                "id": "57",
+                                "tags": "Element,Component",
+                                "name": "Log Dispatcher",
+                                "description": "Authenticate the user and send the IDE tracked activities to API application.",
+                                "relationships": [
+                                    {
+                                        "id": "152",
+                                        "tags": "Relationship",
+                                        "sourceId": "57",
+                                        "destinationId": "19",
+                                        "description": "Send the tracked data",
+                                        "technology": "json, html",
+                                        "interactionStyle": "Synchronous"
+                                    },
+                                    {
+                                        "id": "149",
+                                        "tags": "Relationship",
+                                        "sourceId": "57",
+                                        "destinationId": "58",
+                                        "description": "Reset data after sending it",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ],
+                                "technology": "Javascript",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "8",
+                        "tags": "Element,Container",
+                        "name": "Eclipse plugin",
+                        "description": "Provides to track developer's activities through Eclipse IDE.",
+                        "relationships": [
+                            {
+                                "id": "45",
+                                "tags": "Relationship",
+                                "sourceId": "8",
+                                "destinationId": "19",
+                                "description": "sends IDE data",
+                                "technology": "json, http",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Java",
+                        "components": [
+                            {
+                                "id": "69",
+                                "tags": "Element,Component",
+                                "name": "Event Listener",
+                                "description": "Listens to all user IDE activities such as coding, building, and debugging.",
+                                "technology": "Java",
+                                "size": 0
+                            },
+                            {
+                                "id": "70",
+                                "tags": "Element,Component",
+                                "name": "Extension Configurer",
+                                "description": "Configure the plugin settings like setting the account access token.",
+                                "technology": "Java",
+                                "size": 0
+                            },
+                            {
+                                "id": "71",
+                                "tags": "Element,Component",
+                                "name": "Local Storage",
+                                "description": "Stores user settings and user tracked data.",
+                                "technology": "File System",
+                                "size": 0
+                            },
+                            {
+                                "id": "72",
+                                "tags": "Element,Component",
+                                "name": "Log Dispatcher",
+                                "description": "Authenticate the user and send the IDE tracked data to API application.",
+                                "technology": "Java",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "12",
+                        "tags": "Element,Container",
+                        "name": "Google Chrome plugin",
+                        "description": "Provides ability to track user's web activity.",
+                        "relationships": [
+                            {
+                                "id": "46",
+                                "tags": "Relationship",
+                                "sourceId": "12",
+                                "destinationId": "19",
+                                "description": "sends IDE data",
+                                "technology": "json/http",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JavaScript",
+                        "components": [
+                            {
+                                "id": "66",
+                                "tags": "Element,Component",
+                                "name": "Event Listener",
+                                "description": "Listen to all user events like browsing pages and debugging.",
+                                "technology": "Javascript",
+                                "size": 0
+                            },
+                            {
+                                "id": "65",
+                                "tags": "Element,Component",
+                                "name": "Extension Configurer",
+                                "description": "Configure the plugin settings like setting the account access token.",
+                                "technology": "Javascript",
+                                "size": 0
+                            },
+                            {
+                                "id": "67",
+                                "tags": "Element,Component",
+                                "name": "Google Chrome Storage",
+                                "description": "Stores user settings and user tracked data.",
+                                "technology": "Javascript",
+                                "size": 0
+                            },
+                            {
+                                "id": "68",
+                                "tags": "Element,Component",
+                                "name": "Log Dispatcher",
+                                "description": "Authenticate the user and send the tracked data to API application.",
+                                "technology": "Javascript",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "9",
+                        "tags": "Element,Container",
+                        "name": "JetBrains plugin",
+                        "description": "Provides ability to track developer's activities through JetBrains IDE.",
+                        "relationships": [
+                            {
+                                "id": "47",
+                                "tags": "Relationship",
+                                "sourceId": "9",
+                                "destinationId": "19",
+                                "description": "sends IDE data",
+                                "technology": "json, http",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Java",
+                        "components": [
+                            {
+                                "id": "74",
+                                "tags": "Element,Component",
+                                "name": "Event Listener",
+                                "description": "Listens to all user IDE activities such as coding, building, and debugging.",
+                                "technology": "Java",
+                                "size": 0
+                            },
+                            {
+                                "id": "73",
+                                "tags": "Element,Component",
+                                "name": "Extension Configurer",
+                                "description": "Configure the plugin settings like setting the account access token.",
+                                "technology": "Java",
+                                "size": 0
+                            },
+                            {
+                                "id": "75",
+                                "tags": "Element,Component",
+                                "name": "Local Storage",
+                                "description": "Stores user settings and user tracked data.",
+                                "technology": "File System",
+                                "size": 0
+                            },
+                            {
+                                "id": "76",
+                                "tags": "Element,Component",
+                                "name": "Log Dispatcher",
+                                "description": "Authenticate the user and send the IDE tracked data to API application.",
+                                "technology": "Java",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "7",
+                        "tags": "Element,Container",
+                        "name": "Visual Studio 2017 plugin",
+                        "description": "Provides ability to track developer's activities through Microsoft Visual Studio 2017 IDE",
+                        "relationships": [
+                            {
+                                "id": "48",
+                                "tags": "Relationship",
+                                "sourceId": "7",
+                                "destinationId": "19",
+                                "description": "sends IDE data",
+                                "technology": "json, http",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "C#",
+                        "components": [
+                            {
+                                "id": "78",
+                                "tags": "Element,Component",
+                                "name": "Event Listener",
+                                "description": "Listens to all user IDE activities such as coding, building, and debugging.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "77",
+                                "tags": "Element,Component",
+                                "name": "Extension Configurer",
+                                "description": "Configure the plugin settings like setting the account access token.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "79",
+                                "tags": "Element,Component",
+                                "name": "Local Storage",
+                                "description": "Stores user settings and user tracked data.",
+                                "technology": "File System",
+                                "size": 0
+                            },
+                            {
+                                "id": "80",
+                                "tags": "Element,Component",
+                                "name": "Log Dispatcher",
+                                "description": "Authenticate the user and send the IDE tracked data to API application.",
+                                "technology": "C#",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "10",
+                        "tags": "Element,Container",
+                        "name": "VS Code plugin",
+                        "description": "Provides ability to track developer's activities through VS Code IDE.",
+                        "relationships": [
+                            {
+                                "id": "49",
+                                "tags": "Relationship",
+                                "sourceId": "10",
+                                "destinationId": "19",
+                                "description": "sends IDE data",
+                                "technology": "json, http",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JavaScript",
+                        "components": [
+                            {
+                                "id": "82",
+                                "tags": "Element,Component",
+                                "name": "Event Configurer",
+                                "description": "Configure the plugin settings like setting the account access token.",
+                                "technology": "Javascript",
+                                "size": 0
+                            },
+                            {
+                                "id": "81",
+                                "tags": "Element,Component",
+                                "name": "Event Listener",
+                                "description": "Listens to all user IDE activities such as coding, building, and debugging.",
+                                "technology": "Javascript",
+                                "size": 0
+                            },
+                            {
+                                "id": "83",
+                                "tags": "Element,Component",
+                                "name": "Local Storage",
+                                "description": "Stores user settings and user tracked data.",
+                                "technology": "File System",
+                                "size": 0
+                            },
+                            {
+                                "id": "84",
+                                "tags": "Element,Component",
+                                "name": "Log Dispatcher",
+                                "description": "Authenticate the user and send the IDE tracked data to API application.",
+                                "technology": "Javascript",
+                                "size": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "1",
+                "tags": "Element,Software System",
+                "name": "WS IDE Sensor System",
+                "description": "Manages authentication of users and teams, receives IDE activity data and processes the raw data into meaningful insights.",
+                "url": "http://wside.crossover.com",
+                "relationships": [
+                    {
+                        "id": "26",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "4",
+                        "description": "sends report data",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "18",
+                        "tags": "Element,Container",
+                        "name": "Admin Tools",
+                        "description": "Script that can be run on demand to elevate privileges of any user account.  It can make a regular user into an admin user or enterprise admin user.",
+                        "relationships": [
+                            {
+                                "id": "54",
+                                "tags": "Relationship",
+                                "sourceId": "18",
+                                "destinationId": "16",
+                                "description": "uses",
+                                "technology": "http",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "C#",
+                        "components": [
+                            {
+                                "id": "90",
+                                "tags": "Element,Component",
+                                "name": "Annual Ranking",
+                                "description": "Calculate the annual ranking for all users.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "88",
+                                "tags": "Element,Component",
+                                "name": "Database Maintenance",
+                                "description": "Resolving conflicts and intializing memberships DB.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "89",
+                                "tags": "Element,Component",
+                                "name": "Solution Merger",
+                                "description": "Merging solutions",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "87",
+                                "tags": "Element,Component",
+                                "name": "User Roles",
+                                "description": "Setting or removing the user's role (Admin/Enterprise Admin)",
+                                "technology": "C#",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "19",
+                        "tags": "Element,Container",
+                        "name": "API Application",
+                        "description": "Handles all requests from plugins and website.",
+                        "relationships": [
+                            {
+                                "id": "50",
+                                "tags": "Relationship",
+                                "sourceId": "19",
+                                "destinationId": "16",
+                                "description": "uses",
+                                "technology": "http",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "C#",
+                        "components": [
+                            {
+                                "id": "98",
+                                "tags": "Element,Component",
+                                "name": "Account Controller",
+                                "description": "Handles Login, Register, Authorize, Get Profile, and Get Access Token.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "99",
+                                "tags": "Element,Component",
+                                "name": "Activity Controller",
+                                "description": "Receive and store the user's activity.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "100",
+                                "tags": "Element,Component",
+                                "name": "Events Controller",
+                                "description": "Receives and stores user events.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "105",
+                                "tags": "Element,Component",
+                                "name": "Facts Controller",
+                                "description": "Returns the user facts",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "106",
+                                "tags": "Element,Component",
+                                "name": "Health Controller",
+                                "description": "Contains some health tests.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "104",
+                                "tags": "Element,Component",
+                                "name": "Public Controller",
+                                "description": "Provies some generic APIs like getting plugin configuration",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "101",
+                                "tags": "Element,Component",
+                                "name": "Solution Controller",
+                                "description": "Provides functionality to add and retrieve solutions (getSolution)",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "102",
+                                "tags": "Element,Component",
+                                "name": "Version Controller",
+                                "description": "Returns the version of the specified component",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "103",
+                                "tags": "Element,Component",
+                                "name": "Web Activity Controller",
+                                "description": "Receive and store web browser events.",
+                                "technology": "C#",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "13",
+                        "tags": "Element,Container",
+                        "name": "Client-side web application",
+                        "description": "Provides website for users to view reports on their IDE behavior and for teams to be created and view team reports and insights.",
+                        "relationships": [
+                            {
+                                "id": "43",
+                                "tags": "Relationship",
+                                "sourceId": "13",
+                                "destinationId": "19",
+                                "description": "uses",
+                                "technology": "json, http",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "JavaScript, HTML",
+                        "components": [
+                            {
+                                "id": "111",
+                                "tags": "Element,Component",
+                                "name": "Behavior Page",
+                                "description": "Contains behavior report page front-end",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "117",
+                                "tags": "Element,Component",
+                                "name": "Code Tree Page",
+                                "description": "Contains Code Tree Report page front-end",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "115",
+                                "tags": "Element,Component",
+                                "name": "Code Usage Page",
+                                "description": "Contains Code Usage Report Page Front-End",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "119",
+                                "tags": "Element,Component",
+                                "name": "Compare Page",
+                                "description": "Contains Compare report page front-end",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "109",
+                                "tags": "Element,Component",
+                                "name": "Dashboard Page",
+                                "description": "Contains dashboard page front-end.",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "124",
+                                "tags": "Element,Component",
+                                "name": "Download Page",
+                                "description": "Contains downloadable plugins",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "110",
+                                "tags": "Element,Component",
+                                "name": "Facts Page",
+                                "description": "Contains facts page front-end.",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "108",
+                                "tags": "Element,Component",
+                                "name": "Home page",
+                                "description": "Contains home page front-end.",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "107",
+                                "tags": "Element,Component",
+                                "name": "Login Page",
+                                "description": "Contains login page front-end.",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "112",
+                                "tags": "Element,Component",
+                                "name": "Pivot Page",
+                                "description": "Contains pivot report page front-end.",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "121",
+                                "tags": "Element,Component",
+                                "name": "Pulse Panel Page",
+                                "description": "Contains Pulse Panel Page",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "118",
+                                "tags": "Element,Component",
+                                "name": "Ranking Page",
+                                "description": "Contains Ranking report page front-end",
+                                "technology": "Javascript/HTM",
+                                "size": 0
+                            },
+                            {
+                                "id": "114",
+                                "tags": "Element,Component",
+                                "name": "Sprint Analysis Page",
+                                "description": "Contains sprint analysis report page front-end",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "120",
+                                "tags": "Element,Component",
+                                "name": "Teams Page",
+                                "description": "Contains Teams Page",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "116",
+                                "tags": "Element,Component",
+                                "name": "Timeline Page",
+                                "description": "Contains the Timeline report page front-end",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "113",
+                                "tags": "Element,Component",
+                                "name": "Web Activity Page",
+                                "description": "Contains web activity report page front-end",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "122",
+                                "tags": "Element,Component",
+                                "name": "Your Facts Page",
+                                "description": "Contains Your facts page",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            },
+                            {
+                                "id": "123",
+                                "tags": "Element,Component",
+                                "name": "Your Pulse",
+                                "description": "Contains Your Pulse Page",
+                                "technology": "Javascript/HTML",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "16",
+                        "tags": "Element,Container",
+                        "name": "Database",
+                        "description": "Stores user authentications, registrations, and tracking data.",
+                        "technology": "ACID NoSQL, Raven DB"
+                    },
+                    {
+                        "id": "15",
+                        "tags": "Element,Container",
+                        "name": "Email Summary Service",
+                        "description": "Create and send reports to user via email based on user configurations.",
+                        "relationships": [
+                            {
+                                "id": "51",
+                                "tags": "Relationship",
+                                "sourceId": "15",
+                                "destinationId": "16",
+                                "description": "uses",
+                                "technology": "http",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "158",
+                                "tags": "Relationship",
+                                "sourceId": "15",
+                                "destinationId": "156",
+                                "description": "Requests to send email report to user",
+                                "technology": "report format",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "C#",
+                        "components": [
+                            {
+                                "id": "86",
+                                "tags": "Element,Component",
+                                "name": "Data Collection and Preparation",
+                                "description": "Getting the user data and preparing to send it via email.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "85",
+                                "tags": "Element,Component",
+                                "name": "Email Manipulations",
+                                "description": "Sending the summary emails to users using external email system per their configurations.",
+                                "technology": "C#",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "14",
+                        "tags": "Element,Container",
+                        "name": "Server-side web application",
+                        "description": "Backend application - provides web interface.",
+                        "relationships": [
+                            {
+                                "id": "41",
+                                "tags": "Relationship",
+                                "sourceId": "14",
+                                "destinationId": "13",
+                                "description": "delivers",
+                                "technology": "json",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "42",
+                                "tags": "Relationship",
+                                "sourceId": "14",
+                                "destinationId": "16",
+                                "description": "uses",
+                                "technology": "http",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "157",
+                                "tags": "Relationship",
+                                "sourceId": "14",
+                                "destinationId": "156",
+                                "description": "uses",
+                                "technology": "ASCII text",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "40",
+                                "tags": "Relationship",
+                                "sourceId": "14",
+                                "destinationId": "4",
+                                "description": "sends report data",
+                                "technology": "json",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "C#, Web API",
+                        "components": [
+                            {
+                                "id": "127",
+                                "tags": "Element,Component",
+                                "name": "Account Controller",
+                                "description": "User login, registration, password recovery, etc.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "130",
+                                "tags": "Element,Component",
+                                "name": "Admin Controller",
+                                "description": "Initialize users focus, create database index, etc.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "125",
+                                "tags": "Element,Component",
+                                "name": "Authentication",
+                                "description": "Check for user permission.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "128",
+                                "tags": "Element,Component",
+                                "name": "Dashboard Controller",
+                                "description": "Display the user activities, notifications, summaries, teams, etc.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "136",
+                                "tags": "Element,Component",
+                                "name": "Database Layer",
+                                "description": "Handle all DB requests",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "129",
+                                "tags": "Element,Component",
+                                "name": "Download Controller",
+                                "description": "The download page for all available plugins.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "134",
+                                "tags": "Element,Component",
+                                "name": "Error Controller",
+                                "description": "Handle errors and display the proper message to the user.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "133",
+                                "tags": "Element,Component",
+                                "name": "Helpers",
+                                "description": "Some helper classes used for facilitating some problems.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "126",
+                                "tags": "Element,Component",
+                                "name": "Home Controller",
+                                "description": "Contains the home page functionalities",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "135",
+                                "tags": "Element,Component",
+                                "name": "Logger",
+                                "description": "Logging module that is used to log actions, errors, etc.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "131",
+                                "tags": "Element,Component",
+                                "name": "Premium Controller",
+                                "description": "Subscribe/Cancel accounts to premium subscription, payment registration.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "132",
+                                "tags": "Element,Component",
+                                "name": "Profile Controller",
+                                "description": "User facts, mobile pulse, etc.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "143",
+                                "tags": "Element,Component",
+                                "name": "Proxy Controller",
+                                "description": "Handle HTTP content as an HTTPS tunnel while dealing with content that maybe served from external serevers without that support.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "138",
+                                "tags": "Element,Component",
+                                "name": "Ranking Controller",
+                                "description": "Display user's ranking.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "137",
+                                "tags": "Element,Component",
+                                "name": "Reports Controller",
+                                "description": "Handle all types of reports (Availability, Comparison, Behaviour, etc.)",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "139",
+                                "tags": "Element,Component",
+                                "name": "Settings Controller",
+                                "description": "User settings, generate API validation token, etc.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "140",
+                                "tags": "Element,Component",
+                                "name": "Solution Controller",
+                                "description": "Solution's information, actvities, interactions, etc.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "141",
+                                "tags": "Element,Component",
+                                "name": "Teams Controller",
+                                "description": "Creating teams, send invitations to join, accept, reject requests.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "142",
+                                "tags": "Element,Component",
+                                "name": "Validation Controller",
+                                "description": "Validate emails, tokens, solution GUID, etc.",
+                                "technology": "C#",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "17",
+                        "tags": "Element,Container",
+                        "name": "Services App",
+                        "description": "Runs in the backgrounds, interacts with the DB, analyzes and process raw data into useful insights and stores them back into the DB.",
+                        "relationships": [
+                            {
+                                "id": "53",
+                                "tags": "Relationship",
+                                "sourceId": "17",
+                                "destinationId": "16",
+                                "description": "uses",
+                                "technology": "http",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "C#",
+                        "components": [
+                            {
+                                "id": "95",
+                                "tags": "Element,Component",
+                                "name": "Account Merger",
+                                "description": "Handles the process of merging accounts including their data.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "91",
+                                "tags": "Element,Component",
+                                "name": "Account Removal",
+                                "description": "This is service that is run to remove all accounts thii",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "93",
+                                "tags": "Element,Component",
+                                "name": "Badges Calculator",
+                                "description": "Calculate the badges for all users.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "92",
+                                "tags": "Element,Component",
+                                "name": "Data Aggregator",
+                                "description": "Execute processing of raw data.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "94",
+                                "tags": "Element,Component",
+                                "name": "Focus Curve Calculator",
+                                "description": "Calculate the focus curve for all users.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "96",
+                                "tags": "Element,Component",
+                                "name": "Premium Subscription Removal",
+                                "description": "Executes the process of premium subscription removal.",
+                                "technology": "C#",
+                                "size": 0
+                            },
+                            {
+                                "id": "97",
+                                "tags": "Element,Component",
+                                "name": "Ranking Calculation",
+                                "description": "Calculates the ranking for all users.",
+                                "technology": "C#",
+                                "size": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

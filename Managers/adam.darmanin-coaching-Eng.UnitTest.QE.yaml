@@ -1,0 +1,18 @@
+manager: Adam Darmanin #<manager name>
+teamroom: Eng.UnitTest.QE #<teamroom name>
+direct reports: 2
+ICs:
+    - IC:
+        IC name: KAKANAKOU Migue #<IC name>
+        date: 2019/10/01 #<date>
+        unit: https://jira.devfactory.com/browse/TBGTM-2273
+        coaching: Through ANT we noticed coverage missing, we learned how to setup coverage.  #<free text coaching>
+        performance assessment: highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false
+    - IC:
+        IC name: Muhammad Daniyal Khan #<IC name>
+        date: 2019/10/01 #<date>
+        unit: https://jira.devfactory.com/browse/AUTEST-5987
+        coaching: ICs' feedback is that mutest creates too much code, we needed to redesign the mutest dyna assertions to reduce this. #<free text coaching>
+        performance assessment: highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false

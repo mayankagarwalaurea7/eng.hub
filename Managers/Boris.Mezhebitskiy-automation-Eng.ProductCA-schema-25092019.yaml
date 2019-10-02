@@ -1,0 +1,11 @@
+manager: Boris Mezhebitskiy 
+teamroom: Eng.ProductCA
+units: 
+    - unit: All eng problem units
+automation: 
+    product agnostic: true
+    product specific: !!seq
+        - product name: !!str #product names 
+    description: Curently work queue blocks PCA from working on urgent and suddenly appeared issues becasee it refreshes once a day. We need to allow PCA to retrigger work queue prioritization logic to be able pull newly created urgent tickets into the work Queue.
+    effort: 7
+    impact: 100

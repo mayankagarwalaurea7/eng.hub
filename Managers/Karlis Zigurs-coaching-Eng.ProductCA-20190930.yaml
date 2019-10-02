@@ -1,0 +1,33 @@
+manager: Karlis Zigurs
+teamroom: Eng.ProductCA
+direct reports: 4
+ICs:
+    - IC:
+        IC name: Anatoly Danilov
+        date: 20190930
+        unit: 
+        coaching: Discussed new coaching approach, communicated my expectations on preparing for quick CiCs from now on. Long discussion on AWA backlog and PCA tasks outstanding (mostly about CICD and ensuring we are progressing towards release in circa 4 weeks).
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Vlad Kuznetsov
+        date: 20190930
+        unit: 
+        coaching: Discussed getting last ANTP E2Es through QE, reviewed backlog and plans for current release. Action on me to chase QA Autorank not functioning properly in ANTP project for some reason. KT of FIRE project to Maruthi in progress.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Stefan Camilleri
+        date: 20190930
+        unit: 
+        coaching: Pair RCA on deleted DNS records for DVSP. Root cause found and in backlog to deal with. Discussion on DVSP macOS client install experience and prerequisites for us to make it friendlier (with less macOS warnings). Escalated to Rahul required certificates process kick-off.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Maruthi Janardhan
+        date: 20190930
+        unit: 
+        coaching: Re-starting as PCA after working elsewhere in the company and not aware of latest teamroom practices. Reviewed Work Queue, metrics and quality expectations and focus for the next few days (getting up to speed, identifying and requesting access, picking up ongoing tasks from Vlad).
+        performance assessment: averagePerformer
+        continue coaching: true
+

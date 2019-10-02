@@ -1,0 +1,13 @@
+manager: Dmytro Malenko
+teamroom: Eng.Feature
+units:
+    - unit: https://jira.devfactory.com/browse/JVMBL-8215
+recommendation: 
+    eliminate waste: false
+    improve quality bar: true
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Identify (and create if necessary) the Github repository (or repositories) that should be used for development of a particular P1/Epic. This information should come to Feature team as part of the input they receive when starting work.
+    effort: 1
+    impact: 5

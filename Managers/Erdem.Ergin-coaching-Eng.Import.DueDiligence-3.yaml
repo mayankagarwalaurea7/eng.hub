@@ -1,0 +1,57 @@
+manager: Erdem Ergin
+teamroom: Eng.Import.DueDiligence
+direct reports: 4
+ICs: 
+    - IC: 
+        IC name: Anton Belousov
+        date: 01-Oct-2019
+        unit: https://jira.devfactory.com/browse/ENGDD-2655
+        coaching: >
+          Ensure you read the playbook for each activity before working on it.
+          We did not have CTO Review Meeting but this task resolved and linked to the initial CTO Meeting.
+
+          Generally there are 2 prod specs written for each due diligence. One company wide and another product specific.
+          Check with IVP to get both of them.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Hudson Tavares
+        date: 01-Oct-2019
+        unit: https://jira.devfactory.com/browse/ENGDD-2358
+        coaching: >
+          Pay attention to order of information you want to convey first.
+          Important pieces should be the first things we need to put in the document, 
+          like not supported technologies should be at the top of the document.
+
+          While putting some text in your report, focus on the value it will bring. 
+          Providing a comment like Hadoop is used for Big data is stating the obvious, 
+          try to focus the relation of the technology with the product. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Ricardo Cunha
+        date: 01-Oct-2019
+        unit: https://jira.devfactory.com/browse/ENGDD-2285
+        coaching: >
+          Reports are our primary deliverables and we should pay great attention on them.
+          Zumobi Decision Framework file has issues like links are pointing to wrong ranges.
+          Even though this is not materially effecting your output, it is making your output look unprofessional.
+          Within the scope of Insight generation, go through your documentation and ensure quality.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Asad Ali
+        date: 01-Oct-2019
+        unit: N/A
+        coaching: >
+          Prioritized the tasks based on business criticality for the day as below:
+
+          Zumobi Code Analysis report
+          
+          Retrigger Accuris failed finders
+          
+          [Accuris-AccuProfile] Hardcoded References Report
+
+          Northplains HardCoded Orders     
+        performance assessment: averagePerformer
+        continue coaching: true

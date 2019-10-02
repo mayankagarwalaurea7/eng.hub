@@ -1,0 +1,12 @@
+manager: Karlis Zigurs
+teamroom: Eng.ProductCA
+units:
+    - unit: DVSP-19517
+    - unit: DVSP-18233
+recommendation:
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    description: Current End2End tests PCA responsibility ends when PCA QE has moved it to Backlog status and immediately starts for CQA team to attempt to write and execute it. This conflicts with requirement to write E2Es in advance for upcoming feature work. This leads to massive back and forth between PCA and CQA while End2Ends are ready, but not yet deployed and CQA repeatedly picking them up for writing and blocking creating new defects for triage and PCAs attention. Wasteful. Suggest adding explicit E2E stage before Backlog called "Reviewed" from which PCA would move E2E forward once content is delivered by AL and deployed on env used by CQA for writing and verification.
+    effort: 1
+    impact: 25

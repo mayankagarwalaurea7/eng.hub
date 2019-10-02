@@ -6,21 +6,21 @@ ICs:
         IC name: Moho Anayetul Samaun
         date: 2019-09-30
         unit: https://jira.devfactory.com/browse/OLIVES-13729
-        coaching: In our review guided on missing Jenkins Code coverage and fixes in the reference PR: olive-development-components/pull/28.
+        coaching: In our review guided on missing Jenkins Code coverage and fixes in the reference PR 28 of Olive.
         performance assessment: lowPerformer
         continueCoaching: true
     - IC: 
         IC name: Amrulla Khan
         date: 2019-09-30
         unit: https://jira.devfactory.com/browse/PIVOTAL-8458
-        coaching: In PIVOTAL-8458 review found that the Jenkins build is failing and fixes in the reference PR: avolin-pivotal-platform-pss/pull/25.
+        coaching: In PIVOTAL-8458 review found that the Jenkins build is failing and fixes in the reference PR 25 of Olive.
         performance assessment: lowPerformer
         continueCoaching: true
     - IC: 
         IC name: Kerem Demirer
         date: 2019-09-30
         unit: https://jira.devfactory.com/browse/KMECN-28150
-        coaching: In KMECN-28150 review found that In this snippet of code if an assert will fail then the test will fail which will abort the remaining assertions and the fix was applied in PR: km-all-projects/pull/8862.
+        coaching: In KMECN-28150 review found that In this snippet of code if an assert will fail then the test will fail which will abort the remaining assertions and the fix was applied in PR 8862 of KM.
         performance assessment: highPerformer
         continueCoaching: true   
     - IC: 
@@ -50,7 +50,7 @@ ICs:
         unit: https://jira.devfactory.com/browse/TBGTM-6575
         coaching: In TBGTM-6575 review found that line of code exceeds >120 columns and is to be revised in order to be readable and avoid horizontal scroll. Consider using the 'line-wrapping' technique to format this line of code in multiple shorter lines. Try as much as possible to avoid lines longer than 120 columns, since they're not handled well by many terminals and tools. 
         performance assessment: averagePerformer
-        continueCoaching: true   
+        continueCoaching: true    
     - IC: 
         IC name: Sibhani Sankar Pradhan
         date: 2019-09-30

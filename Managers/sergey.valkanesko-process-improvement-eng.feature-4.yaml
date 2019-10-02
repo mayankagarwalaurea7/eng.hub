@@ -1,0 +1,25 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+units: 
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36914
+recommendation:
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: false
+    product specific:
+        - product name: AlertFind
+        - product name: FogBugz
+        - product name: Jive Cloud
+        - product name: Jive Integrations Framework
+        - product name: Insights Advanced
+        - product name: Lithium
+        - product name: School Loop Product Suite
+        - product name: SenSage
+        - product name: Engage
+        - product name: Placeable
+        - product name: LyrisHQ
+        - product name: Verdiem
+        - product name: Crossover IDE Sensor
+    description: Publish reference serverless applications to AWS Serverless Application Repository to ensure that best practices are followed and accelerate development across all Feature teams doing 5k rewrite with AWS. Add a corresponding check to IQB.
+    effort: 1
+    impact: 1

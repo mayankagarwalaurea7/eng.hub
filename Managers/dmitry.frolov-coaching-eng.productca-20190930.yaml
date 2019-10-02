@@ -4,7 +4,7 @@ direct reports: 3
 ICs:
     - IC: Abhinav Kansal
         IC name: Abhinav Kansal
-        date: 2019-09-27
+        date: 2019-09-30
         unit: https://jira.devfactory.com/browse/SLIAO-7547
         coaching: where we find items during the process of attributes writing that 
           require changes for whichever reason please create the Product Request and
@@ -13,7 +13,7 @@ ICs:
         continueCoaching: true
     - IC: Haci Burak
         IC name: Haci Burak
-        date: 2019-09-27
+        date: 2019-09-30
         unit: https://jira.devfactory.com/browse/SLISEARCH-3112
         coaching: container diagram coaching -
           1. Great that previous coaching items were delivered 
@@ -24,7 +24,7 @@ ICs:
         continueCoaching: true    
     - IC: Norman Artavia
         IC name: Norman Artavia
-        date: 2019-09-27
+        date: 2019-09-30
         unit: https://jira.devfactory.com/browse/SLIFRONT-3487
         coaching: container diagram coaching - 
           1. make sure description of container describes the role in easy terms

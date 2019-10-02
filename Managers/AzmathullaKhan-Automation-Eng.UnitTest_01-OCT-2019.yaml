@@ -1,0 +1,11 @@
+manager: Azmathulla Khan
+teamroom: Eng.UnitTest
+units:
+- unit: https://jira.devfactory.com/browse/TBGTM-6449
+automation: 
+product agnostic: false
+product specific:
+- product name: Tradebeam
+description: Automate generation of templates for unit tests and in this case for HUT with AutoUT Tool com.tradebeam.gtm.common.compliance.to.ComplianceScreeningRequestTO #1101
+effort: 2
+impact: 10%

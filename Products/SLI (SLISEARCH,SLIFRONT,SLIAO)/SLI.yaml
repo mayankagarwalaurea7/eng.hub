@@ -2,9 +2,9 @@
 id: 46872
 name: SLI Systems
 description: SLI Systems workspace.
-revision: 540
-lastModifiedDate: '2019-10-01T13:24:55Z'
-lastModifiedUser: abhinav.kansal@trilogy.com
+revision: 581
+lastModifiedDate: '2019-10-02T13:24:15Z'
+lastModifiedUser: haci.burak@aurea.com
 lastModifiedAgent: structurizr-web/1624
 model:
   people:
@@ -18,6 +18,7 @@ model:
       sourceId: '3'
       destinationId: '292'
       description: Provides configuration to the Plugin
+      technology: GUI
       interactionStyle: Synchronous
     - id: '481'
       tags: Relationship
@@ -25,24 +26,28 @@ model:
       destinationId: '284'
       description: Performs variety of functions like accessing Analytics Reports,
         Perform Configuration and Tunings of search results etc
+      technology: GUI
       interactionStyle: Synchronous
     - id: '493'
       tags: Relationship
       sourceId: '3'
       destinationId: '293'
       description: Provides configuration to the Plugin
+      technology: GUI
       interactionStyle: Synchronous
     - id: '494'
       tags: Relationship
       sourceId: '3'
       destinationId: '294'
       description: Provides configuration to the Plugin
+      technology: GUI
       interactionStyle: Synchronous
     - id: '495'
       tags: Relationship
       sourceId: '3'
       destinationId: '295'
       description: Provides configuration to the Plugin
+      technology: GUI
       interactionStyle: Synchronous
     - id: '13'
       tags: Relationship
@@ -50,6 +55,7 @@ model:
       destinationId: '10'
       description: Performs variety of functions like accessing Analytics Reports,
         Perform Configuration and Tunings of search results etc
+      technology: GUI
       interactionStyle: Synchronous
     location: Unspecified
   - id: '357'
@@ -62,12 +68,14 @@ model:
       sourceId: '357'
       destinationId: '291'
       description: Maintain Customer Billing Schedules and configuration
+      technology: GUI
       interactionStyle: Synchronous
     - id: '360'
       tags: Relationship
       sourceId: '357'
       destinationId: '290'
       description: Maintain Customer Billing Schedules and configuration
+      technology: GUI
       interactionStyle: Synchronous
     location: Unspecified
   - id: '1'
@@ -92,18 +100,21 @@ model:
       sourceId: '4'
       destinationId: '294'
       description: Provides Custom configuration for the plugin
+      technology: GUI
       interactionStyle: Synchronous
     - id: '498'
       tags: Relationship
       sourceId: '4'
       destinationId: '295'
       description: Provides Custom configuration for the plugin
+      technology: GUI
       interactionStyle: Synchronous
     - id: '15'
       tags: Relationship
       sourceId: '4'
       destinationId: '10'
       description: Works for client to fix the client specific configs
+      technology: GUI
       interactionStyle: Synchronous
     - id: '557'
       tags: Relationship
@@ -117,30 +128,35 @@ model:
       sourceId: '4'
       destinationId: '11'
       description: Creates Wire-it diagrams to generate indexes
+      technology: GUI
       interactionStyle: Synchronous
     - id: '16'
       tags: Relationship
       sourceId: '4'
       destinationId: '6'
       description: Creates templates using template builder
+      technology: GUI
       interactionStyle: Synchronous
     - id: '371'
       tags: Relationship
       sourceId: '4'
       destinationId: '292'
       description: Provides Custom configuration for the plugin
+      technology: GUI
       interactionStyle: Synchronous
     - id: '496'
       tags: Relationship
       sourceId: '4'
       destinationId: '293'
       description: Provides Custom configuration for the plugin
+      technology: GUI
       interactionStyle: Synchronous
     - id: '482'
       tags: Relationship
       sourceId: '4'
       destinationId: '284'
       description: Works for client to fix the client specific configs
+      technology: GUI
       interactionStyle: Synchronous
     location: Unspecified
   softwareSystems:
@@ -160,19 +176,23 @@ model:
     - id: '163'
       tags: Element,Container,SLIAO
       name: Ape-dashboard-service
+      description: Shows dashboard for CFE
       relationships:
       - id: '417'
         tags: Relationship
         sourceId: '163'
         destinationId: '153'
         description: Proxies the internal API requests to avoid token exchange
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '418'
         tags: Relationship
         sourceId: '163'
         destinationId: '154'
         description: Proxies the internal API requests to avoid token exchange
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '412'
       tags: Element,Container,SLIAO
       name: Ape-heartbeat-requester
@@ -184,189 +204,232 @@ model:
         sourceId: '412'
         destinationId: '167'
         description: Inserts Heartbeat event into Mysql
+        technology: SQL
         interactionStyle: Synchronous
       - id: '415'
         tags: Relationship
         sourceId: '412'
         destinationId: '162'
         description: Sends heartbeat request
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '155'
       tags: Element,Container,SLIAO
       name: Ape-job-boughtalsobought
+      description: Calculates a learning strategy for boughtalsobought algorithm
       relationships:
       - id: '395'
         tags: Relationship
         sourceId: '155'
         destinationId: '351'
         description: Reads parsed Beacon logs
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '403'
         tags: Relationship
         sourceId: '155'
         destinationId: '321'
         description: Sends ram-files
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '387'
         tags: Relationship
         sourceId: '155'
         destinationId: '318'
         description: Reads raw localbrain logs
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '156'
       tags: Element,Container,SLIAO
       name: Ape-job-boughttogether
+      description: Calculates a learning strategy for boughttogether algorithm
       relationships:
       - id: '396'
         tags: Relationship
         sourceId: '156'
         destinationId: '351'
         description: Reads parsed Beacon logs
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '404'
         tags: Relationship
         sourceId: '156'
         destinationId: '321'
         description: Sends ram-files
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '388'
         tags: Relationship
         sourceId: '156'
         destinationId: '318'
         description: Reads raw localbrain logs
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '164'
       tags: Element,Container,SLIAO
       name: Ape-job-createskutable
+      description: Calculates a learning strategy for createskutable algorithm
       relationships:
       - id: '389'
         tags: Relationship
         sourceId: '164'
         destinationId: '318'
         description: Reads raw localbrain logs
+        technology: SQL
         interactionStyle: Synchronous
       - id: '397'
         tags: Relationship
         sourceId: '164'
         destinationId: '351'
         description: Reads parsed Beacon logs
+        technology: SQL
         interactionStyle: Synchronous
       - id: '405'
         tags: Relationship
         sourceId: '164'
         destinationId: '321'
         description: Sends ram-files
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '157'
       tags: Element,Container,SLIAO
       name: Ape-job-searchtermfrequency
+      description: Calculates a learning strategy for search term frequency algorithm
       relationships:
       - id: '398'
         tags: Relationship
         sourceId: '157'
         destinationId: '351'
         description: Reads parsed Beacon logs
+        technology: SQL
         interactionStyle: Synchronous
       - id: '406'
         tags: Relationship
         sourceId: '157'
         destinationId: '321'
         description: Sends ram-files
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '390'
         tags: Relationship
         sourceId: '157'
         destinationId: '318'
         description: Reads raw localbrain logs
+        technology: SQL
         interactionStyle: Synchronous
+      technology: Java
     - id: '158'
       tags: Element,Container,SLIAO
       name: Ape-job-topseller
+      description: Calculates a learning strategy for topseller algorithm
       relationships:
       - id: '407'
         tags: Relationship
         sourceId: '158'
         destinationId: '321'
         description: Sends ram-files
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '391'
         tags: Relationship
         sourceId: '158'
         destinationId: '318'
         description: Reads raw localbrain logs
+        technology: SQL
         interactionStyle: Synchronous
       - id: '399'
         tags: Relationship
         sourceId: '158'
         destinationId: '351'
         description: Reads parsed Beacon logs
+        technology: SQL
         interactionStyle: Synchronous
+      technology: Java
     - id: '159'
       tags: Element,Container,SLIAO
       name: Ape-job-trending
+      description: Calculates a learning strategy for trending algorithm
       relationships:
       - id: '408'
         tags: Relationship
         sourceId: '159'
         destinationId: '321'
         description: Sends ram-files
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '392'
         tags: Relationship
         sourceId: '159'
         destinationId: '318'
         description: Reads raw localbrain logs
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '400'
         tags: Relationship
         sourceId: '159'
         destinationId: '351'
         description: Reads parsed Beacon logs
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '160'
       tags: Element,Container,SLIAO
       name: Ape-job-viewalsobought
+      description: Calculates a learning strategy for viewalsobought algorithm
       relationships:
       - id: '401'
         tags: Relationship
         sourceId: '160'
         destinationId: '351'
         description: Reads parsed Beacon logs
+        technology: SQL
         interactionStyle: Synchronous
       - id: '409'
         tags: Relationship
         sourceId: '160'
         destinationId: '321'
         description: Sends ram-files
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '393'
         tags: Relationship
         sourceId: '160'
         destinationId: '318'
         description: Reads raw localbrain logs
+        technology: SQL
         interactionStyle: Synchronous
+      technology: Java
     - id: '161'
       tags: Element,Container,SLIAO
       name: Ape-job-viewalsoviewed
+      description: Calculates a learning strategy for viewalsoviewed algorithm
       relationships:
       - id: '410'
         tags: Relationship
         sourceId: '161'
         destinationId: '321'
         description: Sends ram-files
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '394'
         tags: Relationship
         sourceId: '161'
         destinationId: '318'
         description: Reads raw localbrain logs
+        technology: SQL
         interactionStyle: Synchronous
       - id: '402'
         tags: Relationship
         sourceId: '161'
         destinationId: '351'
         description: Reads parsed Beacon logs
+        technology: SQL
         interactionStyle: Synchronous
+      technology: Java
     - id: '424'
       tags: Element,Container,SLIAO
       name: Ape-Jobs
@@ -377,98 +440,130 @@ model:
         sourceId: '424'
         destinationId: '168'
         description: Writes Report Data
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '426'
         tags: Relationship
         sourceId: '424'
         destinationId: '350'
         description: Provides parsed logs on HDFS
+        technology: SQL
         interactionStyle: Synchronous
       - id: '427'
         tags: Relationship
         sourceId: '424'
         destinationId: '350'
         description: Read parsed Beacon logs
+        technology: SQL
         interactionStyle: Synchronous
       - id: '429'
         tags: Relationship
         sourceId: '424'
         destinationId: '351'
         description: Sends Parsed Beacon logs
+        technology: SQL
         interactionStyle: Synchronous
       - id: '425'
         tags: Relationship
         sourceId: '424'
         destinationId: '318'
         description: Archive Raw Logs
+        technology: SQL
         interactionStyle: Synchronous
+      technology: Java
     - id: '154'
       tags: Element,Container,SLIAO
       name: Ape-loader-service
+      description: service receives Localbrain or Beacon logs and writes them onto
+        HDFS.
       relationships:
       - id: '430'
         tags: Relationship
         sourceId: '154'
         destinationId: '424'
         description: Triggers Logs processing
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '353'
         tags: Relationship
         sourceId: '154'
         destinationId: '166'
         description: Provide Logs on HDFS
+        technology: SQL
         interactionStyle: Synchronous
+      technology: Java
     - id: '165'
       tags: Element,Container,SLIAO
       name: Ape-process-exceptions
+      description: This project contains the code for moving exception details from
+        APE's MapReduce jobs into MySQL database, which is used by a Web UI to display
+        exceptions across all MR nodes.
       relationships:
       - id: '421'
         tags: Relationship
         sourceId: '165'
         destinationId: '167'
         description: Sends Exceptions from Mapreduce jobs to MySQL DB
+        technology: SQL
         interactionStyle: Synchronous
+      technology: Java
     - id: '153'
       tags: Element,Container,SLIAO
       name: Ape-Report-Service
+      description: service allows querying of the aggregated reports that the APE
+        processing loop stores in Mongo cluster.
       relationships:
       - id: '352'
         tags: Relationship
         sourceId: '153'
         destinationId: '168'
         description: Query Report data
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '162'
       tags: Element,Container,SLIAO
       name: Ape-system-service
+      description: service provides various APIs to control APE processing. It also
+        provides the end-to-end heartbeat mechanism for APE.
       relationships:
       - id: '419'
         tags: Relationship
         sourceId: '162'
         destinationId: '163'
         description: Sends a request to process the heartbeat event
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '351'
       tags: Element,Container,3rdParty
       name: Hive
+      description: Stores raw beacon logs
       technology: Hive
     - id: '168'
       tags: Element,Container,3rdParty
       name: Mongo
+      description: Stores process APE reports
+      technology: Mongo
     - id: '167'
       tags: Element,Container,3rdParty
       name: MySQL
+      description: Stores APe heartbeat events
+      technology: MYSQL
     - id: '350'
       tags: Element,Container,3rdParty
       name: Parsed Logs
+      description: Stores Parsed localbrain logs
       technology: HDFS
     - id: '318'
       tags: Element,Container,3rdParty
       name: Raw Logs
+      description: Stores raw localbrain logs
       technology: HDFS
     - id: '166'
       tags: Element,Container,3rdParty
       name: Temporary Storage
+      description: Temporary Storage for raw  localbrain logs
       technology: HDFS
   - id: '431'
     tags: Element,Software System,SLIAO
@@ -563,62 +658,78 @@ model:
     - id: '433'
       tags: Element,Container,SLIAO
       name: aura-discovery
-      relationships:
-      - id: '443'
-        tags: Relationship
-        sourceId: '433'
-        destinationId: '432'
-        description: Discover service
-        interactionStyle: Synchronous
+      description: Resolves address service by name for aura
+      technology: Java
     - id: '434'
       tags: Element,Container,SLIAO
       name: aura-healthcheck
+      description: It is a service which is used to track health check information
+        of services deployed in same environment.
       relationships:
       - id: '447'
         tags: Relationship
         sourceId: '434'
         destinationId: '433'
         description: healthcheck other services using discovery
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '435'
       tags: Element,Container,SLIAO
       name: aura-service
+      description: It is a debug feature which allows developers to start a service
+        in their local and bind their locally running services to an environment trough
+        local service.
       relationships:
       - id: '444'
         tags: Relationship
         sourceId: '435'
         destinationId: '433'
         description: discovers other services using discovery service
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '438'
       tags: Element,Container,SLIAO
       name: aura-service-management-service
+      description: It is the first running service which is installed as rpm in a
+        new environment. It checks what is running in Docker and refer its database
+        to determine what should be run on this environment.
       relationships:
       - id: '449'
         tags: Relationship
         sourceId: '438'
         destinationId: '433'
         description: Managers discovery service
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '450'
         tags: Relationship
         sourceId: '438'
         destinationId: '437'
         description: Manages specification service
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '437'
       tags: Element,Container,SLIAO
       name: aura-specification
+      description: It basically documentation service which allows specifications
+        to be stored and viewed.
+      technology: Java
     - id: '436'
       tags: Element,Container,SLIAO
       name: aura-swagger
+      description: Swagger service aggregates the output of all other services.
       relationships:
       - id: '446'
         tags: Relationship
         sourceId: '436'
         destinationId: '433'
         description: Creates Swagger document using discovery services
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
   - id: '24'
     tags: Element,Software System,SLIFRONT
     name: Beacon Servers
@@ -629,18 +740,21 @@ model:
       sourceId: '24'
       destinationId: '1'
       description: Tracks web Activity from the Shopper
+      technology: JS/Http Request
       interactionStyle: Synchronous
     - id: '213'
       tags: Relationship
       sourceId: '24'
       destinationId: '187'
       description: 'Sends Shopper Activity Logs (POST: HTTPS)'
+      technology: gcloud bucket
       interactionStyle: Synchronous
     - id: '40'
       tags: Relationship
       sourceId: '24'
       destinationId: '7'
       description: 'Sends Shopper Activity Logs (POST: HTTPS)'
+      technology: gcloud bucket
       interactionStyle: Synchronous
     location: Unspecified
     containers:
@@ -654,24 +768,28 @@ model:
         sourceId: '183'
         destinationId: '154'
         description: Sends Shopper Activity Logs for Processing
+        technology: gcloud/bucket
         interactionStyle: Synchronous
       - id: '218'
         tags: Relationship
         sourceId: '183'
         destinationId: '191'
         description: Sends Shopper Activity Logs for Archiving
+        technology: gcloud/bucket
         interactionStyle: Synchronous
       - id: '217'
         tags: Relationship
         sourceId: '183'
         destinationId: '190'
         description: Sends Shopper Activity Logs for Processing
+        technology: gcloud/bucket
         interactionStyle: Synchronous
       - id: '489'
         tags: Relationship
         sourceId: '183'
         destinationId: '1'
         description: Tracks web Activity from the Shopper
+        technology: JS/pixel request
         interactionStyle: Synchronous
       technology: HTML/JS
       components:
@@ -715,25 +833,28 @@ model:
       sourceId: '10'
       destinationId: '11'
       description: Triggers Index generation and pulls index status
+      technology: RabbitMq
       interactionStyle: Synchronous
     - id: '240'
       tags: Relationship
       sourceId: '10'
       destinationId: '187'
       description: Requests reports/Config and send updates (json/https)
+      technology: API/Json
       interactionStyle: Synchronous
     - id: '37'
       tags: Relationship
       sourceId: '10'
       destinationId: '7'
       description: Requests reports/Config and send updates (json/https)
+      technology: API/Json
       interactionStyle: Synchronous
     - id: '365'
       tags: Relationship
       sourceId: '10'
       destinationId: '5'
       description: Push configuration and Pull preview of Search Tunings and configuration
-      technology: HTTP request
+      technology: API/Json
       interactionStyle: Synchronous
     location: Unspecified
     containers:
@@ -747,59 +868,63 @@ model:
         sourceId: '284'
         destinationId: '153'
         description: Queries Report Data
+        technology: API/Json
         interactionStyle: Synchronous
       - id: '308'
         tags: Relationship
         sourceId: '284'
         destinationId: '107'
         description: Retrieves Recommendations Data
+        technology: API/Json
         interactionStyle: Synchronous
       - id: '468'
         tags: Relationship
         sourceId: '284'
         destinationId: '303'
         description: Automate Marketing activites
+        technology: API/Json
         interactionStyle: Synchronous
       - id: '307'
         tags: Relationship
         sourceId: '284'
         destinationId: '111'
         description: Retrieves client specific Bruce configuration for Brutil
+        technology: API/Json
         interactionStyle: Synchronous
       - id: '478'
         tags: Relationship
         sourceId: '284'
         destinationId: '253'
         description: Embedded Visualization of Tune Results Customizations
+        technology: Http/s url
         interactionStyle: Synchronous
       - id: '471'
         tags: Relationship
         sourceId: '284'
         destinationId: '261'
         description: Push index processing tasks
+        technology: Rabbit MQ
         interactionStyle: Synchronous
       - id: '465'
         tags: Relationship
         sourceId: '284'
         destinationId: '296'
         description: Stores client details and configuration
+        technology: ODBC
         interactionStyle: Synchronous
       - id: '476'
         tags: Relationship
         sourceId: '284'
         destinationId: '120'
         description: Retrieves index build status, results and errors
-        interactionStyle: Synchronous
-      - id: '547'
-        tags: Relationship
-        sourceId: '284'
-        destinationId: '103'
+        technology: API/Json
         interactionStyle: Synchronous
       - id: '477'
         tags: Relationship
         sourceId: '284'
         destinationId: '120'
         description: Push index size error checks approvals
+        technology: API/Json, RabbitMQ
         interactionStyle: Synchronous
       - id: '475'
         tags: Relationship
@@ -808,41 +933,54 @@ model:
         description: Retrieves Realtime Search Activity Summary
         technology: API/Json
         interactionStyle: Synchronous
+      - id: '309'
+        tags: Relationship
+        sourceId: '284'
+        destinationId: '108'
+        description: Maintain Redirection Rules
+        technology: API/Json
+        interactionStyle: Synchronous
       - id: '469'
         tags: Relationship
         sourceId: '284'
         destinationId: '289'
         description: Embedded Real time activity Visualization
-        interactionStyle: Synchronous
-      - id: '309'
-        tags: Relationship
-        sourceId: '284'
-        destinationId: '108'
-        description: HTTP/S
+        technology: HTTP/S Url
         interactionStyle: Synchronous
       - id: '467'
         tags: Relationship
         sourceId: '284'
         destinationId: '302'
         description: Work Task Automation for Support Staff
+        technology: API/Jira
         interactionStyle: Synchronous
       - id: '466'
         tags: Relationship
         sourceId: '284'
         destinationId: '304'
         description: Retrieves google tracking and conversion data
+        technology: API/Google
         interactionStyle: Synchronous
       - id: '287'
         tags: Relationship
         sourceId: '284'
         destinationId: '207'
         description: Pull reports from merlin metric service
+        technology: API/Json
+        interactionStyle: Synchronous
+      - id: '547'
+        tags: Relationship
+        sourceId: '284'
+        destinationId: '103'
+        description: Retrieves Certificates status/push/publish clients certificates
+        technology: HTTP/s
         interactionStyle: Synchronous
       - id: '464'
         tags: Relationship
         sourceId: '284'
         destinationId: '297'
         description: Stores client configuration
+        technology: Mongodb
         interactionStyle: Synchronous
       technology: PHP/NodeJs
       components:
@@ -875,6 +1013,7 @@ model:
         sourceId: '289'
         destinationId: '301'
         description: Pulls Real time search Activity
+        technology: RabbitMq
         interactionStyle: Synchronous
       - id: '474'
         tags: Relationship
@@ -928,6 +1067,7 @@ model:
       sourceId: '9'
       destinationId: '10'
       description: Exposes Rest Services to Commerce Console
+      technology: API/Json
       interactionStyle: Synchronous
     - id: '334'
       tags: Relationship
@@ -946,68 +1086,89 @@ model:
     - id: '106'
       tags: Element,Container,SLIAO
       name: bruce-config-service
+      description: The Client Config service is responsible providing an API for client
+        configuration storage, update and retrieval. This is maintained in Brutil
+        and used by the Recommendations service.
+      technology: Java
     - id: '105'
       tags: Element,Container,SLIAO
       name: bruce-health-service
+      description: The Health service is an internal API responsible for executing
+        pre-configured tests against currently active strategies.
+      technology: Java
     - id: '107'
       tags: Element,Container,SLIAO
       name: bruce-recommender-service
+      description: The Recommendations Service (aka Recommender) is an externally
+        facing API which provides product recommendations based on a pre-configured
+        strategy.
       relationships:
-      - id: '313'
-        tags: Relationship
-        sourceId: '107'
-        destinationId: '110'
-        description: HTTP/S
-        interactionStyle: Synchronous
-      - id: '315'
-        tags: Relationship
-        sourceId: '107'
-        destinationId: '252'
-        description: HTTP/S calls to UberDory
-        interactionStyle: Synchronous
-      - id: '317'
-        tags: Relationship
-        sourceId: '107'
-        destinationId: '316'
-        description: Calls Dory locally
-        interactionStyle: Synchronous
       - id: '310'
         tags: Relationship
         sourceId: '107'
         destinationId: '106'
-        description: HTTP/S
+        description: Retrieves configs for client
+        technology: HTTP/S
+        interactionStyle: Synchronous
+      - id: '313'
+        tags: Relationship
+        sourceId: '107'
+        destinationId: '110'
+        description: Retrieves the templates for client
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '311'
         tags: Relationship
         sourceId: '107'
         destinationId: '109'
-        description: HTTP/S
+        description: Retrieves strategy for client
+        technology: HTTP/S
         interactionStyle: Synchronous
+      - id: '315'
+        tags: Relationship
+        sourceId: '107'
+        destinationId: '252'
+        description: Retrieves indexes for client
+        technology: HTTP/S,CLI
+        interactionStyle: Synchronous
+      technology: Java
     - id: '108'
       tags: Element,Container,SLIAO
       name: bruce-redirect-service
+      description: The Redirect service, along with the Recommender, is one of the
+        two client facing APIs that can be called by clients or the javascript widget.
       relationships:
       - id: '314'
         tags: Relationship
         sourceId: '108'
         destinationId: '111'
-        description: HTTP/S
+        description: fetches recommendation set
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '109'
       tags: Element,Container,SLIAO
       name: bruce-strategy-service
+      description: The Strategy service is responsible providing an API for client
+        strategy storage, update and retrieval.
+      technology: Java
     - id: '110'
       tags: Element,Container,SLIAO
       name: bruce-template-service
-    - id: '316'
-      tags: Element,Container,SLISEARCH
-      name: Dory
+      description: The Template service is responsible for performing sever-side rendering
+        of recommendations based on a given template.
+      technology: Java
     - id: '112'
       tags: Element,Container,SLIAO
       name: Graphite client
+      description: This repository holds the source for the graphite client used to
+        pull data from the cluster of production machines.
+      technology: Java
     - id: '111'
       tags: Element,Container,3rdParty
       name: Mongo Bruce
+      description: Stores recommendations for clients
+      technology: Java
   - id: '292'
     tags: Element,Software System,SLIFRONT
     name: Magento Plugin
@@ -1019,6 +1180,7 @@ model:
       sourceId: '292'
       destinationId: '41'
       description: Replaces Search Functionality to use Search Cluster
+      technology: PHP
       interactionStyle: Synchronous
     - id: '368'
       tags: Relationship
@@ -1039,6 +1201,7 @@ model:
         sourceId: '293'
         destinationId: '183'
         description: References Beacon Pixel for Tracking Activity
+        technology: HTTP/S
         interactionStyle: Synchronous
       technology: PHP
     - id: '294'
@@ -1051,6 +1214,7 @@ model:
         sourceId: '294'
         destinationId: '183'
         description: References Beacon Pixel for Tracking Activity
+        technology: HTTP/S
         interactionStyle: Synchronous
       technology: PHP
     - id: '295'
@@ -1063,6 +1227,7 @@ model:
         sourceId: '295'
         destinationId: '183'
         description: References Beacon Pixel for Tracking Activity
+        technology: HTTP/S
         interactionStyle: Synchronous
       technology: PHP
   - id: '187'
@@ -1081,291 +1246,375 @@ model:
     - id: '194'
       tags: Element,Container,3rdParty
       name: Audit Logs
+      description: Stores Audit logs
       technology: Big Query
     - id: '199'
       tags: Element,Container,3rdParty
       name: Learning History
+      description: Stores Learning history in google storage
       technology: GCS
     - id: '191'
       tags: Element,Container,3rdParty
       name: Log Archive Bucket
+      description: Stores Archived logs
       technology: GCS
     - id: '192'
       tags: Element,Container,3rdParty
       name: Log Corrupt Bucket
+      description: Stores corrupted log bucket
       technology: GCS
     - id: '190'
       tags: Element,Container,3rdParty
       name: Log Input Bucket
+      description: Stores Input Log Bucket
       technology: GCS
     - id: '193'
       tags: Element,Container,3rdParty
       name: Log Processed Bucket
+      description: Stores processed logs
       technology: GCS
     - id: '196'
       tags: Element,Container,3rdParty
       name: Logs beacon/LocalBrain
+      description: Stores beacon and localbrain logs
       technology: BigQuery
     - id: '197'
       tags: Element,Container,3rdParty
       name: Logs_clean Localbrain
+      description: Stores clean logs
       technology: BigQuery
     - id: '200'
       tags: Element,Container,SLIAO
       name: merlin-delete-client-metric-data
+      description: Cleans up metrics for APE
       relationships:
       - id: '250'
         tags: Relationship
         sourceId: '200'
         destinationId: '189'
         description: deletion of client's metric data
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '251'
         tags: Relationship
         sourceId: '200'
         destinationId: '188'
         description: deletion of client's metric data
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '201'
       tags: Element,Container,SLIAO
       name: merlin-learning
+      description: Runs machine learning algorithms
       relationships:
       - id: '231'
         tags: Relationship
         sourceId: '201'
         destinationId: '196'
         description: Read Logs
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '226'
         tags: Relationship
         sourceId: '201'
         destinationId: '198'
         description: Writes ram-files
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '227'
         tags: Relationship
         sourceId: '201'
         destinationId: '199'
         description: Reads/writes Learning history for incremental score updates
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '349'
         tags: Relationship
         sourceId: '201'
         destinationId: '321'
         description: Sends Ram Files
+        technology: HTTP/S
         interactionStyle: Synchronous
-      technology: 3rdParty
+      technology: Java
     - id: '202'
       tags: Element,Container,SLIAO
       name: merlin-log-parsers
+      description: Parses logs from clients
       relationships:
       - id: '224'
         tags: Relationship
         sourceId: '202'
         destinationId: '194'
         description: Writes Audit Logs
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '256'
         tags: Relationship
         sourceId: '202'
         destinationId: '190'
         description: Reads log files for parsing
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '342'
         tags: Relationship
         sourceId: '202'
         destinationId: '192'
         description: Move log files identified as 'corrupt'
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '344'
         tags: Relationship
         sourceId: '202'
         destinationId: '193'
         description: Move log files identified as 'processed'
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '230'
         tags: Relationship
         sourceId: '202'
         destinationId: '196'
         description: Writes parsed log data
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '343'
         tags: Relationship
         sourceId: '202'
         destinationId: '194'
         description: Check log files status
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '205'
       tags: Element,Container,SLIAO
       name: merlin-metric-learning-coverage
+      description: Facilitates machine learning algorithms
       relationships:
       - id: '245'
         tags: Relationship
         sourceId: '205'
         destinationId: '188'
         description: Push metrics
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '234'
         tags: Relationship
         sourceId: '205'
         destinationId: '196'
         description: Read logs
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '207'
       tags: Element,Container,SLIAO
       name: merlin-metric-service
+      description: New version of Analytics Process Engine
       relationships:
       - id: '238'
         tags: Relationship
         sourceId: '207'
         destinationId: '188'
         description: Reads aggregated metric data
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '239'
         tags: Relationship
         sourceId: '207'
         destinationId: '189'
         description: Reads aggregated metric data
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '208'
       tags: Element,Container,SLIAO
       name: merlin-spanner-backup
+      description: Backups data from Google spanner
       relationships:
       - id: '249'
         tags: Relationship
         sourceId: '208'
         destinationId: '188'
         description: BackUp the Spanner database
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '203'
       tags: Element,Container,SLIAO
       name: metric-billing
+      description: Calculates data for invoces for clientes (for William)
       relationships:
       - id: '243'
         tags: Relationship
         sourceId: '203'
         destinationId: '189'
         description: Push metrics
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '233'
         tags: Relationship
         sourceId: '203'
         destinationId: '196'
         description: Read Logs
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '204'
       tags: Element,Container,SLIAO
       name: metric-daily-search-counts
+      description: Calculates the amount of requests per day
       relationships:
       - id: '242'
         tags: Relationship
         sourceId: '204'
         destinationId: '189'
         description: Push metrics
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '244'
         tags: Relationship
         sourceId: '204'
         destinationId: '188'
         description: Push metrics
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '232'
         tags: Relationship
         sourceId: '204'
         destinationId: '196'
         description: Read Logs
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '206'
       tags: Element,Container,SLIAO
       name: metric-parsing-counts
+      description: Calculates the amount of parser runs per day
       relationships:
       - id: '247'
         tags: Relationship
         sourceId: '206'
         destinationId: '189'
         description: Push metrics
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '248'
         tags: Relationship
         sourceId: '206'
         destinationId: '196'
         description: Read Logs
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '189'
       tags: Element,Container,3rdParty
       name: Metrics Datastore
+      description: Stores the metrics in the google datastore
       technology: Google Datastore
     - id: '188'
       tags: Element,Container,3rdParty
       name: Metrics Spanner
+      description: stores metrics in spanner instance
       technology: Google Spanner
     - id: '209'
       tags: Element,Container,SLIAO
       name: spider-detection
+      description: Separates client searches from crowlers/bots searches
       relationships:
       - id: '236'
         tags: Relationship
         sourceId: '209'
         destinationId: '197'
         description: Write all logs, with spider flags if identified as such
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '235'
         tags: Relationship
         sourceId: '209'
         destinationId: '196'
         description: Read Logs
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '198'
       tags: Element,Container,3rdParty
       name: Temporary Ramfiles
+      description: temporarily stores ramfiles
       technology: GCS
     - id: '210'
       tags: Element,Container,SLIAO
       name: visitor-metrics
+      description: Creates metrics of sites visitors
       relationships:
       - id: '237'
         tags: Relationship
         sourceId: '210'
         destinationId: '197'
         description: Read recent days
+        technology: HTTP/S
         interactionStyle: Synchronous
       - id: '246'
         tags: Relationship
         sourceId: '210'
         destinationId: '188'
         description: Push metrics
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
   - id: '337'
     tags: Element,Software System,External
     name: Operations
     location: Unspecified
     containers:
+    - id: '559'
+      tags: Element,Container,3rdParty
+      name: FTP2
+      description: Receives and Stores Logs from log submitter clients
+      technology: FTP
     - id: '339'
       tags: Element,Container
       name: Jenkins
+      description: Automates the build and deploy process
+      technology: Jenkins
     - id: '341'
       tags: Element,Container,External
       name: Munin
+      description: networked resource monitoring tool that can help analyze resource
+        trends
+      technology: Munin
     - id: '340'
       tags: Element,Container,External
       name: Nagios
+      description: Nagios provides monitoring of all mission-critical infrastructure
+        components
       relationships:
       - id: '420'
         tags: Relationship
         sourceId: '340'
         destinationId: '412'
         description: Sends Heartbeat event to heartbeat requester
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Nagios
     - id: '338'
       tags: Element,Container,External
       name: Rundeck
+      description: Rundeck is an open source automation service with a web console,
+        command line tools and a WebAPI. It lets you easily run automation tasks across
+        a set of nodes.
       relationships:
       - id: '346'
         tags: Relationship
         sourceId: '338'
         destinationId: '202'
         description: Trigger Log Parsers
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Rundeck
+    - id: '560'
+      tags: Element,Container,External
+      name: SVN
+      description: stores template builder components and global functions
+      technology: SVN
   - id: '11'
     tags: Element,Software System,SLIAO
     name: Search Builder
@@ -1611,11 +1860,6 @@ model:
         technology: JMS
         interactionStyle: Synchronous
       technology: Java
-    - id: '276'
-      tags: Element,Container,3rdParty
-      name: SVN
-      description: Stores client specific functions
-      technology: SVN
     - id: '127'
       tags: Element,Container,SLIAO
       name: transfer
@@ -1648,10 +1892,10 @@ model:
         description: builds global functions
         technology: CLI
         interactionStyle: Synchronous
-      - id: '277'
+      - id: '561'
         tags: Relationship
         sourceId: '128'
-        destinationId: '276'
+        destinationId: '560'
         description: Pulls code to build client specific functions
         technology: HTTP/S
         interactionStyle: Synchronous
@@ -1679,6 +1923,7 @@ model:
       sourceId: '5'
       destinationId: '24'
       description: Localbrain sends pixel data to Beacon
+      technology: HTTP/S Requests
       interactionStyle: Synchronous
     - id: '319'
       tags: Relationship
@@ -1705,14 +1950,6 @@ model:
       tags: Element,Container,SLISEARCH
       name: Dory
       description: Builds/Search Indexes
-      relationships:
-      - id: '375'
-        tags: Relationship
-        sourceId: '252'
-        destinationId: '326'
-        description: Stores the index data and mount to Dory machines
-        technology: GFS2
-        interactionStyle: Synchronous
       technology: Solr/Lucene/java
       components:
       - id: '331'
@@ -1746,6 +1983,13 @@ model:
         destinationId: '327'
         description: Passes Dory commands
         technology: RabbitMQ
+        interactionStyle: Synchronous
+      - id: '563'
+        tags: Relationship
+        sourceId: '326'
+        destinationId: '252'
+        description: Stores the index data and mount to Dory machines
+        technology: GFS
         interactionStyle: Synchronous
       technology: GlusterFS
     - id: '253'
@@ -1837,6 +2081,10 @@ model:
         name: Apache HTTPD
         description: Access Control system for the Localbrain Apache Web Server
         size: 0
+      - id: '280'
+        tags: Element,Component,SLISEARCH
+        name: LocalBrain Log Submission Client
+        size: 0
       - id: '329'
         tags: Element,Component,SLISEARCH
         name: Localbrain-Modules
@@ -1846,10 +2094,6 @@ model:
         tags: Element,Component,SLISEARCH
         name: Localbrain-Service
         description: Main server for the Localbrain
-        size: 0
-      - id: '280'
-        tags: Element,Component,SLISEARCH
-        name: Log Submission Client
         size: 0
     - id: '323'
       tags: Element,Container,SLISEARCH
@@ -1948,6 +2192,7 @@ model:
     - id: '58'
       tags: Element,Container,SLIAO
       name: builder-service
+      description: Builds templatebuilder client
       relationships:
       - id: '527'
         tags: Relationship
@@ -2012,9 +2257,11 @@ model:
         description: pull tb.json
         technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '89'
       tags: Element,Container,SLIAO
       name: bundle-application
+      description: Applies bundles of components to clients
       relationships:
       - id: '541'
         tags: Relationship
@@ -2030,6 +2277,7 @@ model:
         description: pull bundle registry
         technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '80'
       tags: Element,Container,SLIAO
       name: bundleregistry
@@ -2043,6 +2291,7 @@ model:
     - id: '103'
       tags: Element,Container,SLIAO
       name: CertificateManagementService
+      description: Provides certificates for templatebuilder
       relationships:
       - id: '548'
         tags: Relationship
@@ -2051,6 +2300,7 @@ model:
         description: Calls KMS for encode and decode certificate keys
         technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '73'
       tags: Element,Container,SLIAO
       name: client-cache
@@ -2259,6 +2509,7 @@ model:
     - id: '94'
       tags: Element,Container,SLIAO
       name: componenttest
+      description: Runs the component testing
       relationships:
       - id: '538'
         tags: Relationship
@@ -2274,6 +2525,7 @@ model:
         description: mocks localbrain response
         technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '66'
       tags: Element,Container,SLIAO
       name: componentvalidator
@@ -2386,10 +2638,10 @@ model:
         description: deletes templatebuilder client
         technology: HTTP/S
         interactionStyle: Synchronous
-      - id: '550'
+      - id: '562'
         tags: Relationship
         sourceId: '68'
-        destinationId: '132'
+        destinationId: '560'
         description: Pulls client templates from SVN
         technology: HTTP/S
         interactionStyle: Synchronous
@@ -2420,11 +2672,6 @@ model:
       name: scm-workspace-manager
       description: Interacts with the SCM service and Workspace services
       technology: Java
-    - id: '132'
-      tags: Element,Container,3rdParty
-      name: SVN
-      description: Stores Template builder components and client specific configurations
-      technology: SVN
     - id: '451'
       tags: Element,Container,SLIAO
       name: tb-connector
@@ -2437,6 +2684,7 @@ model:
         description: Access other template builder services using proxy
         technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '62'
       tags: Element,Container,SLIAO
       name: virtualhost
@@ -2584,36 +2832,42 @@ model:
         sourceId: '291'
         destinationId: '284'
         description: Pulls client data
+        technology: API/Json
         interactionStyle: Synchronous
       - id: '483'
         tags: Relationship
         sourceId: '291'
         destinationId: '299'
         description: Stores Invoice Configuration and data
+        technology: Odbc
         interactionStyle: Synchronous
       - id: '486'
         tags: Relationship
         sourceId: '291'
         destinationId: '207'
         description: Pulls billable metrics data
+        technology: API/Json
         interactionStyle: Synchronous
       - id: '484'
         tags: Relationship
         sourceId: '291'
         destinationId: '153'
         description: Pulls billable metrics data
+        technology: API/Json
         interactionStyle: Synchronous
       - id: '487'
         tags: Relationship
         sourceId: '291'
         destinationId: '357'
         description: Provides Invoices and Invoice data in CSV Files
+        technology: File Download
         interactionStyle: Synchronous
       - id: '485'
         tags: Relationship
         sourceId: '291'
         destinationId: '203'
         description: Pulls billable metrics data
+        technology: API/Json
         interactionStyle: Synchronous
       technology: PHP
     - id: '299'
@@ -2789,90 +3043,6 @@ views:
     - id: '319'
     - id: '19'
   systemContextViews:
-  - softwareSystemId: '9'
-    key: BruceContext
-    paperSize: A5_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '9'
-      relationships: []
-    - order: 2
-      elements:
-      - '187'
-      - '5'
-      - '7'
-      - '10'
-      relationships:
-      - '212'
-      - '334'
-      - '19'
-      - '32'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '187'
-      x: 1020
-      y: 1290
-    - id: '5'
-      x: 1900
-      y: 700
-    - id: '7'
-      x: 960
-      y: 125
-    - id: '9'
-      x: 985
-      y: 690
-    - id: '10'
-      x: 70
-      y: 695
-    relationships:
-    - id: '334'
-    - id: '212'
-    - id: '32'
-    - id: '19'
-  - softwareSystemId: '290'
-    key: William
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '290'
-      relationships: []
-    - order: 2
-      elements:
-      - '187'
-      - '357'
-      - '7'
-      - '10'
-      relationships:
-      - '355'
-      - '356'
-      - '367'
-      - '360'
-      - '361'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '187'
-      x: 1528
-      y: 1740
-    - id: '357'
-      x: 1550
-      y: 200
-    - id: '7'
-      x: 690
-      y: 1740
-    - id: '290'
-      x: 1525
-      y: 945
-    - id: '10'
-      x: 2370
-      y: 1740
-    relationships:
-    - id: '356'
-    - id: '355'
-    - id: '361'
-    - id: '360'
-    - id: '367'
   - softwareSystemId: '10'
     description: Commerce Console Tools System Context
     key: CCTools
@@ -2948,6 +3118,204 @@ views:
     - id: '366'
     - id: '367'
     - id: '19'
+  - softwareSystemId: '9'
+    key: BruceContext
+    paperSize: A5_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '9'
+      relationships: []
+    - order: 2
+      elements:
+      - '187'
+      - '5'
+      - '7'
+      - '10'
+      relationships:
+      - '212'
+      - '334'
+      - '19'
+      - '32'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '187'
+      x: 1020
+      y: 1290
+    - id: '5'
+      x: 1900
+      y: 700
+    - id: '7'
+      x: 960
+      y: 125
+    - id: '9'
+      x: 985
+      y: 690
+    - id: '10'
+      x: 70
+      y: 695
+    relationships:
+    - id: '334'
+    - id: '212'
+    - id: '32'
+    - id: '19'
+  - softwareSystemId: '6'
+    key: TemplateBuilderContext
+    paperSize: A5_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '6'
+      relationships: []
+    - order: 2
+      elements:
+      - '5'
+      relationships:
+      - '23'
+    - order: 3
+      elements:
+      - '4'
+      - '10'
+      relationships:
+      - '366'
+      - '16'
+    - order: 4
+      elements:
+      - '11'
+      relationships:
+      - '27'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '11'
+      x: 900
+      y: 1270
+    - id: '4'
+      x: 870
+      y: 50
+    - id: '5'
+      x: 1795
+      y: 670
+    - id: '6'
+      x: 890
+      y: 695
+    - id: '10'
+      x: 90
+      y: 695
+    relationships:
+    - id: '16'
+    - id: '27'
+    - id: '23'
+    - id: '366'
+  - softwareSystemId: '431'
+    key: AuraContext
+    paperSize: A5_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '431'
+      relationships: []
+    - order: 2
+      elements:
+      - '6'
+      relationships:
+      - '440'
+      - '439'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '431'
+      x: 1125
+      y: 675
+    - id: '6'
+      x: 260
+      y: 160
+    relationships:
+    - id: '440'
+      vertices:
+      - x: 1340
+        y: 305
+    - id: '439'
+      vertices:
+      - x: 500
+        y: 830
+  - softwareSystemId: '24'
+    key: Beacon
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '24'
+      relationships: []
+    - order: 2
+      elements:
+      - '187'
+      - '1'
+      - '5'
+      - '7'
+      relationships:
+      - '213'
+      - '335'
+      - '40'
+      - '362'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '187'
+      x: 2290
+      y: 1650
+    - id: '1'
+      x: 915
+      y: 235
+    - id: '24'
+      x: 1595
+      y: 940
+    - id: '5'
+      x: 2290
+      y: 335
+    - id: '7'
+      x: 865
+      y: 1650
+    relationships:
+    - id: '213'
+    - id: '335'
+      vertices:
+      - x: 2180
+        y: 785
+    - id: '40'
+    - id: '362'
+  - softwareSystemId: '292'
+    key: Magento
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '292'
+      relationships: []
+    - order: 2
+      elements:
+      - '3'
+      - '4'
+      - '41'
+      relationships:
+      - '369'
+      - '370'
+      - '371'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '3'
+      x: 795
+      y: 290
+    - id: '4'
+      x: 2245
+      y: 290
+    - id: '292'
+      x: 1530
+      y: 960
+    - id: '41'
+      x: 1529
+      y: 1740
+    relationships:
+    - id: '370'
+    - id: '371'
+    - id: '369'
   - softwareSystemId: '11'
     key: SearchBuilderContext
     paperSize: A5_Landscape
@@ -3035,181 +3403,6 @@ views:
     - id: '212'
     - id: '240'
     - id: '320'
-  - softwareSystemId: '24'
-    key: Beacon
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '24'
-      relationships: []
-    - order: 2
-      elements:
-      - '187'
-      - '1'
-      - '5'
-      - '7'
-      relationships:
-      - '213'
-      - '335'
-      - '40'
-      - '362'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '187'
-      x: 2290
-      y: 1650
-    - id: '1'
-      x: 915
-      y: 235
-    - id: '24'
-      x: 1595
-      y: 940
-    - id: '5'
-      x: 2290
-      y: 335
-    - id: '7'
-      x: 865
-      y: 1650
-    relationships:
-    - id: '213'
-    - id: '335'
-    - id: '40'
-    - id: '362'
-  - softwareSystemId: '6'
-    key: TemplateBuilderContext
-    paperSize: A5_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '6'
-      relationships: []
-    - order: 2
-      elements:
-      - '5'
-      relationships:
-      - '23'
-    - order: 3
-      elements:
-      - '4'
-      - '10'
-      relationships:
-      - '366'
-      - '16'
-    - order: 4
-      elements:
-      - '11'
-      relationships:
-      - '27'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '11'
-      x: 900
-      y: 1270
-    - id: '4'
-      x: 870
-      y: 50
-    - id: '5'
-      x: 1795
-      y: 670
-    - id: '6'
-      x: 890
-      y: 695
-    - id: '10'
-      x: 90
-      y: 695
-    relationships:
-    - id: '16'
-    - id: '27'
-    - id: '23'
-    - id: '366'
-  - softwareSystemId: '431'
-    key: AuraContext
-    paperSize: A5_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '431'
-      relationships: []
-    - order: 2
-      elements:
-      - '6'
-      relationships:
-      - '440'
-      - '439'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '431'
-      x: 1125
-      y: 675
-    - id: '6'
-      x: 260
-      y: 160
-    relationships:
-    - id: '440'
-      vertices:
-      - x: 1340
-        y: 305
-    - id: '439'
-      vertices:
-      - x: 500
-        y: 830
-  - softwareSystemId: '7'
-    key: ApeContext
-    paperSize: A5_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '7'
-      relationships: []
-    - order: 2
-      elements:
-      - '9'
-      - '10'
-      relationships:
-      - '37'
-      - '32'
-    - order: 3
-      elements:
-      - '24'
-      relationships:
-      - '40'
-    - order: 4
-      elements:
-      - '5'
-      relationships:
-      - '319'
-    - order: 5
-      elements:
-      - '11'
-      relationships:
-      - '348'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '11'
-      x: 1875
-      y: 745
-    - id: '24'
-      x: 345
-      y: 55
-    - id: '5'
-      x: 1725
-      y: 40
-    - id: '7'
-      x: 1035
-      y: 710
-    - id: '9'
-      x: 180
-      y: 710
-    - id: '10'
-      x: 1035
-      y: 1375
-    relationships:
-    - id: '348'
-    - id: '37'
-    - id: '40'
-    - id: '32'
-    - id: '319'
   - softwareSystemId: '5'
     description: Serves the search results to shoppers
     key: SearchCluster
@@ -3303,211 +3496,308 @@ views:
     - id: '365'
     - id: '47'
     - id: '319'
-  - softwareSystemId: '292'
-    key: Magento
+  - softwareSystemId: '290'
+    key: William
     paperSize: A4_Landscape
     animations:
     - order: 1
       elements:
-      - '292'
+      - '290'
       relationships: []
     - order: 2
       elements:
-      - '3'
-      - '4'
-      - '41'
+      - '187'
+      - '357'
+      - '7'
+      - '10'
       relationships:
-      - '369'
-      - '370'
-      - '371'
+      - '355'
+      - '356'
+      - '367'
+      - '360'
+      - '361'
     enterpriseBoundaryVisible: true
     elements:
-    - id: '3'
-      x: 795
-      y: 290
-    - id: '4'
-      x: 2245
-      y: 290
-    - id: '292'
-      x: 1530
-      y: 960
-    - id: '41'
-      x: 1529
+    - id: '187'
+      x: 1528
+      y: 1740
+    - id: '357'
+      x: 1550
+      y: 200
+    - id: '7'
+      x: 690
+      y: 1740
+    - id: '290'
+      x: 1525
+      y: 945
+    - id: '10'
+      x: 2370
       y: 1740
     relationships:
-    - id: '370'
-    - id: '371'
-    - id: '369'
-  containerViews:
-  - softwareSystemId: '5'
-    description: Search Cluster Container View
-    key: SearchClusterContainer
-    paperSize: A2_Landscape
+    - id: '356'
+    - id: '355'
+    - id: '361'
+    - id: '360'
+    - id: '367'
+  - softwareSystemId: '7'
+    key: ApeContext
+    paperSize: A5_Landscape
     animations:
     - order: 1
       elements:
-      - '253'
-      - '323'
-      - '326'
-      - '327'
-      - '252'
-      relationships:
-      - '374'
-      - '375'
-      - '377'
-      - '378'
+      - '7'
+      relationships: []
     - order: 2
       elements:
-      - '41'
+      - '9'
+      - '10'
       relationships:
-      - '376'
+      - '37'
+      - '32'
     - order: 3
       elements:
-      - '154'
-      - '301'
-      - '127'
-      - '107'
-      - '190'
-      - '191'
-      - '183'
-      - '284'
-      - '120'
+      - '24'
       relationships:
-      - '476'
-      - '477'
-      - '499'
-      - '478'
-      - '315'
-      - '306'
-      - '282'
-      - '283'
-      - '372'
-      - '472'
+      - '40'
     - order: 4
       elements:
-      - '56'
-      relationships: []
+      - '5'
+      relationships:
+      - '319'
+    - order: 5
+      elements:
+      - '11'
+      relationships:
+      - '348'
+    enterpriseBoundaryVisible: true
     elements:
-    - id: '56'
-      x: 4510
+    - id: '11'
+      x: 1875
       y: 745
-    - id: '190'
-      x: 5535
-      y: 2115
-    - id: '191'
-      x: 5620
-      y: 2600
-    - id: '183'
-      x: 4535
-      y: 3625
-    - id: '284'
-      x: 1530
-      y: 575
-    - id: '120'
-      x: 985
-      y: 1975
-    - id: '252'
-      x: 2281
-      y: 2405
-    - id: '154'
-      x: 4530
-      y: 2905
-    - id: '253'
-      x: 3145
-      y: 1805
-    - id: '301'
-      x: 5535
-      y: 1615
-    - id: '323'
-      x: 3582
-      y: 3605
-    - id: '127'
-      x: 895
-      y: 3570
-    - id: '326'
-      x: 1675
-      y: 3190
-    - id: '107'
-      x: 655
-      y: 2645
-    - id: '327'
-      x: 2565
-      y: 3630
-    - id: '41'
-      x: 3585
-      y: 740
+    - id: '24'
+      x: 345
+      y: 55
+    - id: '5'
+      x: 1725
+      y: 40
+    - id: '7'
+      x: 1035
+      y: 710
+    - id: '9'
+      x: 180
+      y: 710
+    - id: '10'
+      x: 1035
+      y: 1375
     relationships:
-    - id: '477'
-      vertices:
-      - x: 1120
-        y: 1505
-      - x: 1120
-        y: 1655
+    - id: '348'
+    - id: '37'
+    - id: '40'
+    - id: '32'
+    - id: '319'
+  containerViews:
+  - softwareSystemId: '187'
+    key: Merlin
+    paperSize: A3_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '190'
+      - '191'
+      - '192'
+      - '193'
+      - '194'
+      - '196'
+      - '197'
+      - '198'
+      - '199'
+      - '188'
+      - '210'
+      - '200'
+      - '189'
+      - '201'
+      - '202'
+      - '203'
+      - '204'
+      - '205'
+      - '206'
+      - '207'
+      - '208'
+      - '209'
+      relationships:
+      - '250'
+      - '251'
+      - '230'
+      - '231'
+      - '232'
+      - '233'
+      - '234'
+      - '256'
+      - '235'
+      - '236'
+      - '237'
+      - '238'
+      - '239'
+      - '242'
+      - '243'
+      - '342'
+      - '244'
+      - '343'
+      - '245'
+      - '344'
+      - '224'
+      - '246'
+      - '247'
+      - '226'
+      - '248'
+      - '227'
+      - '249'
+    - order: 2
+      elements:
+      - '183'
+      relationships:
+      - '217'
+      - '218'
+    - order: 3
+      elements:
+      - '253'
+      relationships:
+      - '282'
+      - '283'
+    - order: 4
+      elements:
+      - '284'
+      relationships:
+      - '287'
+    - order: 5
+      elements:
+      - '338'
+      relationships:
+      - '346'
+    - order: 6
+      elements:
+      - '321'
+      relationships:
+      - '349'
+    elements:
+    - id: '190'
+      x: 1825
+      y: 615
+    - id: '191'
+      x: 1045
+      y: 625
+    - id: '192'
+      x: 65
+      y: 1355
+    - id: '193'
+      x: 160
+      y: 1920
+    - id: '194'
+      x: 930
+      y: 1945
+    - id: '196'
+      x: 1515
+      y: 1325
+    - id: '197'
+      x: 1495
+      y: 2840
+    - id: '198'
+      x: 3235
+      y: 880
+    - id: '253'
+      x: 1920
+      y: 100
+    - id: '199'
+      x: 3710
+      y: 685
+    - id: '210'
+      x: 2370
+      y: 2845
+    - id: '338'
+      x: 120
+      y: 55
+    - id: '183'
+      x: 745
+      y: 65
+    - id: '284'
+      x: 4050
+      y: 90
+    - id: '188'
+      x: 3135
+      y: 2840
+    - id: '200'
+      x: 3175
+      y: 1810
+    - id: '189'
+      x: 3230
+      y: 1220
+    - id: '321'
+      x: 4430
+      y: 515
+    - id: '201'
+      x: 2425
+      y: 525
+    - id: '202'
+      x: 760
+      y: 1330
+    - id: '203'
+      x: 2415
+      y: 1325
+    - id: '204'
+      x: 2420
+      y: 895
+    - id: '205'
+      x: 2410
+      y: 1750
+    - id: '206'
+      x: 2405
+      y: 2215
+    - id: '207'
+      x: 3875
+      y: 1790
+    - id: '208'
+      x: 3915
+      y: 2840
+    - id: '209'
+      x: 1525
+      y: 2145
+    relationships:
+    - id: '239'
+    - id: '231'
+    - id: '232'
+    - id: '233'
+    - id: '256'
+    - id: '234'
+    - id: '235'
+    - id: '236'
+    - id: '218'
+    - id: '237'
+    - id: '217'
+    - id: '238'
+    - id: '346'
+    - id: '250'
+    - id: '344'
+    - id: '343'
+    - id: '342'
+    - id: '230'
+    - id: '251'
+    - id: '349'
     - id: '478'
-      vertices:
-      - x: 4232
-        y: 1505
-      - x: 4232
-        y: 1655
     - id: '499'
-    - id: '476'
-      vertices:
-      - x: 807
-        y: 1505
-      - x: 807
-        y: 1655
-    - id: '372'
-      vertices:
-      - x: 2970
-        y: 2255
-    - id: '315'
-      vertices:
-      - x: 2570
-        y: 2255
+    - id: '242'
+    - id: '243'
+    - id: '244'
+    - id: '245'
+    - id: '287'
+    - id: '224'
+    - id: '247'
+    - id: '246'
+    - id: '226'
+    - id: '249'
+    - id: '227'
+    - id: '248'
     - id: '282'
-      vertices:
-      - x: 3795
-        y: 2255
-    - id: '502'
     - id: '283'
-      vertices:
-      - x: 3995
-        y: 2255
-    - id: '554'
-    - id: '374'
-      vertices:
-      - x: 3495
-        y: 3455
-      - x: 3495
-        y: 3155
-      - x: 3495
-        y: 2855
-    - id: '375'
-      vertices:
-      - x: 2157
-        y: 2855
-    - id: '472'
-      vertices:
-      - x: 3170
-        y: 2255
-    - id: '376'
-      vertices:
-      - x: 2170
-        y: 1505
-      - x: 2170
-        y: 1655
-    - id: '377'
-      vertices:
-      - x: 2770
-        y: 2255
-    - id: '306'
-      vertices:
-      - x: 1785
-        y: 3000
-    - id: '378'
-      vertices:
-      - x: 2157
-        y: 3455
   - softwareSystemId: '290'
     key: WilliamContainer
     paperSize: A5_Landscape
@@ -3688,7 +3978,6 @@ views:
       - '57'
       - '69'
       - '59'
-      - '132'
       - '102'
       - '103'
       - '104'
@@ -3705,7 +3994,6 @@ views:
       - '86'
       - '98'
       relationships:
-      - '550'
       - '540'
       - '551'
       - '541'
@@ -3740,6 +4028,16 @@ views:
       relationships:
       - '556'
       - '557'
+    - order: 19
+      elements:
+      - '253'
+      relationships:
+      - '502'
+    - order: 20
+      elements:
+      - '560'
+      relationships:
+      - '562'
     elements:
     - id: '88'
       x: 3680
@@ -3754,8 +4052,8 @@ views:
       x: 165
       y: 765
     - id: '90'
-      x: 1825
-      y: 625
+      x: 1820
+      y: 610
     - id: '91'
       x: 3300
       y: 1415
@@ -3767,7 +4065,7 @@ views:
       y: 2870
     - id: '94'
       x: 2595
-      y: 1515
+      y: 1520
     - id: '95'
       x: 175
       y: 4115
@@ -3787,20 +4085,23 @@ views:
       x: 1570
       y: 1155
     - id: '56'
-      x: 2095
-      y: 2060
+      x: 2005
+      y: 2530
     - id: '57'
-      x: 2605
-      y: 2050
+      x: 2675
+      y: 2020
     - id: '58'
       x: 4625
-      y: 520
+      y: 545
     - id: '59'
       x: 5225
       y: 1635
     - id: '284'
-      x: 6455
-      y: 2140
+      x: 6540
+      y: 2095
+    - id: '560'
+      x: 3715
+      y: 4590
     - id: '4'
       x: 220
       y: 45
@@ -3820,11 +4121,11 @@ views:
       x: 3965
       y: 1305
     - id: '65'
-      x: 3295
-      y: 525
+      x: 3290
+      y: 555
     - id: '66'
-      x: 5905
-      y: 525
+      x: 5900
+      y: 550
     - id: '67'
       x: 3995
       y: 1810
@@ -3832,11 +4133,11 @@ views:
       x: 4300
       y: 3515
     - id: '69'
-      x: 5910
-      y: 1145
-    - id: '132'
-      x: 4600
-      y: 2295
+      x: 5915
+      y: 995
+    - id: '253'
+      x: 1975
+      y: 4550
     - id: '451'
       x: 165
       y: 1370
@@ -3859,8 +4160,8 @@ views:
       x: 5290
       y: 2745
     - id: '76'
-      x: 5325
-      y: 525
+      x: 5375
+      y: 550
     - id: '77'
       x: 4925
       y: 4125
@@ -3890,16 +4191,16 @@ views:
       y: 2900
     - id: '81'
       x: 3910
-      y: 520
+      y: 570
     - id: '82'
       x: 175
       y: 3660
     - id: '83'
-      x: 5920
-      y: 1605
+      x: 5925
+      y: 1475
     - id: '84'
-      x: 2140
-      y: 2880
+      x: 1960
+      y: 1640
     - id: '85'
       x: 160
       y: 1735
@@ -3912,7 +4213,6 @@ views:
     relationships:
     - id: '462'
     - id: '531'
-    - id: '550'
     - id: '510'
     - id: '535'
     - id: '556'
@@ -3932,6 +4232,7 @@ views:
     - id: '540'
     - id: '523'
     - id: '546'
+    - id: '502'
     - id: '521'
     - id: '544'
     - id: '504'
@@ -3963,6 +4264,7 @@ views:
     - id: '541'
     - id: '524'
     - id: '545'
+    - id: '562'
     - id: '522'
     - id: '543'
     - id: '503'
@@ -3973,80 +4275,216 @@ views:
     - id: '547'
     - id: '507'
     - id: '509'
-  - softwareSystemId: '9'
-    key: Bruce
-    paperSize: A5_Landscape
+  - softwareSystemId: '5'
+    description: Search Cluster Container View
+    key: SearchClusterContainer
+    paperSize: A2_Landscape
     animations:
     - order: 1
       elements:
-      - '110'
-      - '111'
-      - '112'
-      - '105'
-      - '106'
-      - '107'
-      - '108'
-      - '109'
-      - '284'
-      relationships:
-      - '310'
-      - '311'
-      - '313'
-      - '314'
-      - '307'
-      - '308'
-      - '309'
-    - order: 2
-      elements:
-      - '316'
+      - '253'
+      - '323'
+      - '326'
+      - '327'
       - '252'
       relationships:
+      - '374'
+      - '563'
+      - '377'
+      - '378'
+      - '554'
+    - order: 2
+      elements:
+      - '41'
+      relationships:
+      - '376'
+    - order: 3
+      elements:
+      - '154'
+      - '301'
+      - '127'
+      - '107'
+      - '190'
+      - '191'
+      - '183'
+      - '284'
+      relationships:
+      - '499'
+      - '478'
       - '315'
-      - '317'
+      - '306'
+      - '282'
+      - '283'
+      - '372'
+      - '472'
+    - order: 4
+      elements:
+      - '56'
+      relationships:
+      - '502'
+    - order: 5
+      elements:
+      - '121'
+      relationships:
+      - '558'
     elements:
-    - id: '110'
-      x: 1785
-      y: 1205
-    - id: '111'
-      x: 395
-      y: 865
-    - id: '112'
-      x: 1245
-      y: 1210
-    - id: '105'
-      x: 140
-      y: 1200
-    - id: '106'
-      x: 695
-      y: 1205
-    - id: '107'
-      x: 940
-      y: 510
-    - id: '316'
-      x: 1800
-      y: 465
-    - id: '108'
-      x: 145
-      y: 460
-    - id: '109'
-      x: 1800
-      y: 820
+    - id: '56'
+      x: 4510
+      y: 745
+    - id: '190'
+      x: 5535
+      y: 2115
+    - id: '191'
+      x: 5620
+      y: 2600
+    - id: '183'
+      x: 4535
+      y: 3625
     - id: '284'
-      x: 650
-      y: 30
+      x: 1530
+      y: 575
     - id: '252'
-      x: 1230
-      y: 35
+      x: 2281
+      y: 2405
+    - id: '154'
+      x: 4530
+      y: 2905
+    - id: '121'
+      x: 595
+      y: 1435
+    - id: '253'
+      x: 3145
+      y: 1805
+    - id: '301'
+      x: 5535
+      y: 1615
+    - id: '323'
+      x: 3582
+      y: 3605
+    - id: '127'
+      x: 895
+      y: 3570
+    - id: '326'
+      x: 1675
+      y: 3190
+    - id: '107'
+      x: 655
+      y: 2645
+    - id: '327'
+      x: 2565
+      y: 3630
+    - id: '41'
+      x: 3585
+      y: 740
     relationships:
-    - id: '313'
+    - id: '478'
+      vertices:
+      - x: 4232
+        y: 1505
+      - x: 4232
+        y: 1655
+    - id: '499'
+    - id: '372'
+      vertices:
+      - x: 2970
+        y: 2255
     - id: '315'
-    - id: '314'
-    - id: '311'
-    - id: '310'
-    - id: '309'
-    - id: '317'
-    - id: '308'
-    - id: '307'
+      vertices:
+      - x: 2570
+        y: 2255
+    - id: '282'
+      vertices:
+      - x: 3795
+        y: 2255
+    - id: '502'
+    - id: '563'
+    - id: '283'
+      vertices:
+      - x: 3995
+        y: 2255
+    - id: '554'
+    - id: '374'
+      vertices:
+      - x: 3495
+        y: 3455
+      - x: 3495
+        y: 3155
+      - x: 3495
+        y: 2855
+    - id: '472'
+      vertices:
+      - x: 3170
+        y: 2255
+    - id: '376'
+      vertices:
+      - x: 2170
+        y: 1505
+      - x: 2170
+        y: 1655
+    - id: '377'
+      vertices:
+      - x: 2770
+        y: 2255
+    - id: '558'
+    - id: '306'
+      vertices:
+      - x: 1785
+        y: 3000
+    - id: '378'
+      vertices:
+      - x: 2157
+        y: 3455
+  - softwareSystemId: '292'
+    key: MagentoContainer
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '3'
+      - '4'
+      - '183'
+      - '293'
+      - '294'
+      - '295'
+      relationships:
+      - '495'
+      - '496'
+      - '497'
+      - '498'
+      - '490'
+      - '491'
+      - '492'
+      - '493'
+      - '494'
+    elements:
+    - id: '3'
+      x: 675
+      y: 141
+    - id: '4'
+      x: 2280
+      y: 191
+    - id: '183'
+      x: 1445
+      y: 1776
+    - id: '293'
+      x: 295
+      y: 1090
+    - id: '294'
+      x: 1420
+      y: 1090
+    - id: '295'
+      x: 2545
+      y: 1090
+    relationships:
+    - id: '498'
+    - id: '497'
+    - id: '496'
+    - id: '495'
+    - id: '494'
+    - id: '493'
+    - id: '492'
+    - id: '491'
+    - id: '490'
   - softwareSystemId: '10'
     description: Container view of Commerce Console Tools
     key: CCToolsContainer
@@ -4085,6 +4523,8 @@ views:
       - '287'
       - '411'
       - '308'
+      - '481'
+      - '482'
     - order: 3
       elements:
       - '253'
@@ -4094,6 +4534,7 @@ views:
       - '476'
       - '477'
       - '478'
+      - '480'
       - '472'
     elements:
     - id: '58'
@@ -4170,9 +4611,7 @@ views:
       vertices:
       - x: 3075
         y: 2320
-    - id: '486'
     - id: '473'
-    - id: '484'
     - id: '411'
       vertices:
       - x: 2745
@@ -4190,507 +4629,76 @@ views:
       vertices:
       - x: 2160
         y: 2180
-  - softwareSystemId: '187'
-    key: Merlin
-    paperSize: A3_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '190'
-      - '191'
-      - '192'
-      - '193'
-      - '194'
-      - '196'
-      - '197'
-      - '198'
-      - '199'
-      - '188'
-      - '210'
-      - '200'
-      - '189'
-      - '201'
-      - '202'
-      - '203'
-      - '204'
-      - '205'
-      - '206'
-      - '207'
-      - '208'
-      - '209'
-      relationships:
-      - '250'
-      - '251'
-      - '230'
-      - '231'
-      - '232'
-      - '233'
-      - '234'
-      - '256'
-      - '235'
-      - '236'
-      - '237'
-      - '238'
-      - '239'
-      - '242'
-      - '243'
-      - '342'
-      - '244'
-      - '343'
-      - '245'
-      - '344'
-      - '224'
-      - '246'
-      - '247'
-      - '226'
-      - '248'
-      - '227'
-      - '249'
-    - order: 2
-      elements:
-      - '183'
-      relationships:
-      - '217'
-      - '218'
-    - order: 3
-      elements:
-      - '253'
-      relationships:
-      - '282'
-      - '283'
-    - order: 4
-      elements:
-      - '284'
-      relationships:
-      - '287'
-    - order: 5
-      elements:
-      - '338'
-      relationships:
-      - '346'
-    - order: 6
-      elements:
-      - '321'
-      relationships:
-      - '349'
-    elements:
-    - id: '190'
-      x: 1825
-      y: 615
-    - id: '191'
-      x: 1045
-      y: 625
-    - id: '192'
-      x: 195
-      y: 1945
-    - id: '193'
-      x: 590
-      y: 2500
-    - id: '194'
-      x: 930
-      y: 1945
-    - id: '196'
-      x: 1515
-      y: 1325
-    - id: '197'
-      x: 1495
-      y: 2840
-    - id: '198'
-      x: 3850
-      y: 1220
-    - id: '253'
-      x: 1920
-      y: 100
-    - id: '199'
-      x: 3775
-      y: 760
-    - id: '210'
-      x: 2370
-      y: 2845
-    - id: '338'
-      x: 120
-      y: 55
-    - id: '183'
-      x: 745
-      y: 65
-    - id: '284'
-      x: 4495
-      y: 1820
-    - id: '188'
-      x: 3135
-      y: 2840
-    - id: '200'
-      x: 3175
-      y: 1810
-    - id: '189'
-      x: 3230
-      y: 1220
-    - id: '321'
-      x: 3420
-      y: 115
-    - id: '201'
-      x: 2425
-      y: 525
-    - id: '202'
-      x: 555
-      y: 1310
-    - id: '203'
-      x: 2415
-      y: 1325
-    - id: '204'
-      x: 2420
-      y: 895
-    - id: '205'
-      x: 2410
-      y: 1750
-    - id: '206'
-      x: 2405
-      y: 2215
-    - id: '207'
-      x: 3715
-      y: 1810
-    - id: '208'
-      x: 3915
-      y: 2840
-    - id: '209'
-      x: 1525
-      y: 2145
-    relationships:
-    - id: '239'
-    - id: '231'
-    - id: '232'
-    - id: '233'
-    - id: '256'
-    - id: '234'
-    - id: '235'
-    - id: '236'
-    - id: '218'
-    - id: '237'
-    - id: '217'
-    - id: '238'
-    - id: '346'
-    - id: '250'
-    - id: '344'
-    - id: '343'
-    - id: '342'
-    - id: '230'
-    - id: '251'
-    - id: '349'
-    - id: '478'
-    - id: '499'
-    - id: '242'
-    - id: '243'
-    - id: '244'
-    - id: '245'
-    - id: '287'
-    - id: '224'
-    - id: '247'
-    - id: '246'
-    - id: '226'
-    - id: '249'
-    - id: '227'
-    - id: '248'
-    - id: '282'
-    - id: '283'
-  - softwareSystemId: '11'
-    key: SearchBuilder
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '120'
-      - '121'
-      - '122'
-      - '123'
-      - '113'
-      - '114'
-      - '115'
-      - '116'
-      - '117'
-      - '118'
-      - '129'
-      - '119'
-      relationships:
-      - '258'
-    - order: 2
-      elements:
-      - '255'
-      relationships:
-      - '260'
-    - order: 3
-      elements:
-      - '124'
-      - '125'
-      - '126'
-      - '127'
-      - '128'
-      relationships:
-      - '279'
-    - order: 4
-      elements:
-      - '42'
-      relationships:
-      - '259'
-    - order: 5
-      elements:
-      - '261'
-      relationships:
-      - '270'
-      - '271'
-      - '272'
-      - '262'
-      - '273'
-      - '263'
-      - '274'
-      - '264'
-      - '265'
-      - '266'
-      - '267'
-      - '268'
-      - '269'
-    - order: 6
-      elements:
-      - '130'
-      relationships:
-      - '275'
-    - order: 7
-      elements:
-      - '276'
-      relationships:
-      - '277'
-    - order: 8
-      elements:
-      - '252'
-      relationships:
-      - '306'
-    elements:
-    - id: '261'
-      x: 730
-      y: 1230
-    - id: '120'
-      x: 115
-      y: 1225
-    - id: '252'
-      x: 2715
-      y: 1650
-    - id: '121'
-      x: 1775
-      y: 1650
-    - id: '122'
-      x: 115
-      y: 500
-    - id: '276'
-      x: 1940
-      y: 615
-    - id: '123'
-      x: 1140
-      y: 455
-    - id: '113'
-      x: 2190
-      y: 1965
-    - id: '124'
-      x: 120
-      y: 140
-    - id: '114'
-      x: 1215
-      y: 1950
-    - id: '125'
-      x: 115
-      y: 1580
-    - id: '115'
-      x: 115
-      y: 1935
-    - id: '126'
-      x: 120
-      y: 875
-    - id: '116'
-      x: 1770
-      y: 985
-    - id: '127'
-      x: 1770
-      y: 1315
-    - id: '117'
-      x: 1260
-      y: 785
-    - id: '128'
-      x: 1950
-      y: 130
-    - id: '118'
-      x: 635
-      y: 120
-    - id: '129'
-      x: 1155
-      y: 130
-    - id: '119'
-      x: 650
-      y: 1915
-    - id: '42'
-      x: 2725
-      y: 920
-    relationships:
-    - id: '265'
-    - id: '277'
-    - id: '264'
-    - id: '267'
-    - id: '266'
-    - id: '258'
-    - id: '269'
-    - id: '268'
-    - id: '279'
-    - id: '259'
-    - id: '270'
-    - id: '273'
-    - id: '274'
-    - id: '263'
-    - id: '271'
-    - id: '262'
-    - id: '272'
-    - id: '558'
-    - id: '306'
-  - softwareSystemId: '292'
-    key: MagentoContainer
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '3'
-      - '4'
-      - '183'
-      - '293'
-      - '294'
-      - '295'
-      relationships:
-      - '495'
-      - '496'
-      - '497'
-      - '498'
-      - '490'
-      - '491'
-      - '492'
-      - '493'
-      - '494'
-    elements:
-    - id: '3'
-      x: 675
-      y: 141
-    - id: '4'
-      x: 2280
-      y: 191
-    - id: '183'
-      x: 1445
-      y: 1776
-    - id: '293'
-      x: 295
-      y: 1090
-    - id: '294'
-      x: 1420
-      y: 1090
-    - id: '295'
-      x: 2545
-      y: 1090
-    relationships:
-    - id: '498'
-    - id: '497'
-    - id: '496'
-    - id: '495'
-    - id: '494'
-    - id: '493'
-    - id: '492'
-    - id: '491'
-    - id: '490'
-  - softwareSystemId: '24'
-    key: BeaconContainer
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '154'
-      - '1'
-      - '190'
-      - '191'
-      - '183'
-      relationships:
-      - '489'
-      - '217'
-      - '218'
-      - '373'
-    elements:
-    - id: '154'
-      x: 2385
-      y: 1695
-    - id: '1'
-      x: 1325
-      y: 145
-    - id: '190'
-      x: 285
-      y: 1695
-    - id: '191'
-      x: 1335
-      y: 1695
-    - id: '183'
-      x: 1290
-      y: 860
-    relationships:
-    - id: '489'
-    - id: '373'
-    - id: '218'
-    - id: '217'
-  - softwareSystemId: '431'
-    key: Aura
+  - softwareSystemId: '9'
+    key: Bruce
     paperSize: A5_Landscape
     animations:
     - order: 1
       elements:
-      - '432'
-      - '433'
-      - '434'
-      - '435'
-      - '436'
-      - '437'
-      - '438'
-      relationships: []
+      - '110'
+      - '111'
+      - '112'
+      - '105'
+      - '106'
+      - '107'
+      - '108'
+      - '109'
+      - '284'
+      relationships:
+      - '310'
+      - '311'
+      - '313'
+      - '314'
+      - '307'
+      - '308'
+      - '309'
+    - order: 2
+      elements:
+      - '316'
+      - '252'
+      relationships:
+      - '315'
+      - '317'
     elements:
-    - id: '432'
-      x: 105
-      y: 810
-    - id: '433'
-      x: 745
-      y: 555
-    - id: '434'
-      x: 120
-      y: 1175
-    - id: '435'
-      x: 1580
-      y: 540
-    - id: '436'
-      x: 1595
-      y: 900
-    - id: '437'
-      x: 1590
-      y: 45
-    - id: '438'
-      x: 745
-      y: 50
+    - id: '110'
+      x: 1785
+      y: 1205
+    - id: '111'
+      x: 395
+      y: 865
+    - id: '112'
+      x: 1245
+      y: 1210
+    - id: '105'
+      x: 140
+      y: 1200
+    - id: '106'
+      x: 695
+      y: 1205
+    - id: '107'
+      x: 940
+      y: 510
+    - id: '108'
+      x: 65
+      y: 380
+    - id: '109'
+      x: 1800
+      y: 820
+    - id: '284'
+      x: 650
+      y: 30
+    - id: '252'
+      x: 1230
+      y: 35
     relationships:
-    - id: '444'
-    - id: '447'
-      vertices:
-      - x: 970
-        y: 1325
-    - id: '446'
-      vertices:
-      - x: 970
-        y: 1070
-    - id: '441'
-      vertices:
-      - x: 350
-        y: 725
-    - id: '443'
-      vertices:
-      - x: 970
-        y: 965
-    - id: '450'
-    - id: '449'
+    - id: '313'
+    - id: '315'
+    - id: '314'
+    - id: '311'
+    - id: '310'
+    - id: '309'
+    - id: '308'
+    - id: '307'
   - softwareSystemId: '7'
     key: APE
     paperSize: A3_Landscape
@@ -4797,11 +4805,11 @@ views:
       x: 2340
       y: 2335
     - id: '154'
-      x: 1545
-      y: 1025
+      x: 1530
+      y: 740
     - id: '253'
-      x: 1285
-      y: 20
+      x: 110
+      y: 1720
     - id: '155'
       x: 3370
       y: 1870
@@ -4815,8 +4823,8 @@ views:
       x: 3380
       y: 2945
     - id: '412'
-      x: 775
-      y: 1015
+      x: 805
+      y: 385
     - id: '159'
       x: 3365
       y: 2595
@@ -4830,32 +4838,32 @@ views:
       x: 3365
       y: 1120
     - id: '183'
-      x: 1920
-      y: 25
+      x: 105
+      y: 745
     - id: '162'
-      x: 775
-      y: 1525
+      x: 785
+      y: 1675
     - id: '163'
-      x: 770
-      y: 2090
+      x: 775
+      y: 2220
     - id: '284'
-      x: 85
+      x: 100
       y: 2770
     - id: '164'
-      x: 3360
-      y: 375
+      x: 3365
+      y: 365
     - id: '340'
       x: 65
-      y: 1025
+      y: 370
     - id: '165'
       x: 2835
       y: 365
     - id: '166'
-      x: 2325
-      y: 995
+      x: 2345
+      y: 755
     - id: '167'
-      x: 775
-      y: 370
+      x: 1860
+      y: 365
     - id: '321'
       x: 4455
       y: 1800
@@ -4910,6 +4918,248 @@ views:
     - id: '396'
     - id: '399'
     - id: '398'
+  - softwareSystemId: '431'
+    key: Aura
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '432'
+      - '433'
+      - '434'
+      - '435'
+      - '436'
+      - '437'
+      - '438'
+      relationships:
+      - '441'
+      - '443'
+      - '444'
+      - '446'
+      - '447'
+      - '449'
+      - '450'
+    - order: 2
+      elements:
+      - '451'
+      relationships:
+      - '455'
+    elements:
+    - id: '451'
+      x: 45
+      y: 610
+    - id: '432'
+      x: 850
+      y: 625
+    - id: '433'
+      x: 1785
+      y: 640
+    - id: '434'
+      x: 1130
+      y: 1195
+    - id: '435'
+      x: 2680
+      y: 635
+    - id: '436'
+      x: 2660
+      y: 1265
+    - id: '437'
+      x: 2685
+      y: 80
+    - id: '438'
+      x: 1840
+      y: 85
+    relationships:
+    - id: '444'
+    - id: '455'
+    - id: '447'
+    - id: '446'
+    - id: '441'
+    - id: '450'
+    - id: '449'
+  - softwareSystemId: '11'
+    key: SearchBuilder
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '120'
+      - '121'
+      - '122'
+      - '123'
+      - '113'
+      - '114'
+      - '115'
+      - '116'
+      - '117'
+      - '118'
+      - '129'
+      - '119'
+      relationships:
+      - '258'
+    - order: 2
+      elements:
+      - '124'
+      - '125'
+      - '126'
+      - '127'
+      - '128'
+      relationships:
+      - '279'
+    - order: 3
+      elements:
+      - '42'
+      relationships:
+      - '259'
+    - order: 4
+      elements:
+      - '261'
+      relationships:
+      - '270'
+      - '271'
+      - '272'
+      - '262'
+      - '273'
+      - '263'
+      - '274'
+      - '264'
+      - '265'
+      - '266'
+      - '267'
+      - '268'
+      - '269'
+    - order: 5
+      elements:
+      - '252'
+      relationships:
+      - '558'
+      - '306'
+    - order: 6
+      elements:
+      - '560'
+      relationships:
+      - '561'
+    elements:
+    - id: '261'
+      x: 730
+      y: 1230
+    - id: '560'
+      x: 2810
+      y: 120
+    - id: '120'
+      x: 115
+      y: 1225
+    - id: '252'
+      x: 2715
+      y: 1650
+    - id: '121'
+      x: 1775
+      y: 1650
+    - id: '122'
+      x: 115
+      y: 500
+    - id: '123'
+      x: 1140
+      y: 455
+    - id: '113'
+      x: 2190
+      y: 1965
+    - id: '124'
+      x: 120
+      y: 140
+    - id: '114'
+      x: 1215
+      y: 1950
+    - id: '125'
+      x: 115
+      y: 1580
+    - id: '115'
+      x: 115
+      y: 1935
+    - id: '126'
+      x: 120
+      y: 875
+    - id: '116'
+      x: 1770
+      y: 985
+    - id: '127'
+      x: 1770
+      y: 1315
+    - id: '117'
+      x: 1260
+      y: 785
+    - id: '128'
+      x: 1950
+      y: 130
+    - id: '118'
+      x: 635
+      y: 120
+    - id: '129'
+      x: 1155
+      y: 130
+    - id: '119'
+      x: 650
+      y: 1915
+    - id: '42'
+      x: 2725
+      y: 920
+    relationships:
+    - id: '265'
+    - id: '264'
+    - id: '267'
+    - id: '266'
+    - id: '258'
+    - id: '269'
+    - id: '268'
+    - id: '279'
+    - id: '259'
+    - id: '270'
+    - id: '273'
+    - id: '561'
+    - id: '274'
+    - id: '263'
+    - id: '271'
+    - id: '262'
+    - id: '272'
+    - id: '558'
+    - id: '306'
+  - softwareSystemId: '24'
+    key: BeaconContainer
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '154'
+      - '1'
+      - '190'
+      - '191'
+      - '183'
+      relationships:
+      - '489'
+      - '217'
+      - '218'
+      - '373'
+    elements:
+    - id: '154'
+      x: 2385
+      y: 1695
+    - id: '1'
+      x: 1325
+      y: 145
+    - id: '190'
+      x: 285
+      y: 1695
+    - id: '191'
+      x: 1335
+      y: 1695
+    - id: '183'
+      x: 1290
+      y: 860
+    relationships:
+    - id: '489'
+    - id: '373'
+    - id: '218'
+    - id: '217'
   configuration:
     branding: {}
     styles:
@@ -4934,7 +5184,7 @@ views:
         shape: Ellipse
       relationships: []
     terminology: {}
-    lastSavedView: SearchBuilder
+    lastSavedView: SearchClusterContainer
   componentViews: []
   dynamicViews: []
   deploymentViews: []
