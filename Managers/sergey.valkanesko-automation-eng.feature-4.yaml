@@ -1,0 +1,11 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+units:
+    - unit: https://jira.devfactory.com/browse/MOAFCID-36948
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Warn a user that the FS she is about to submit to QE depends on another PR which is not merged yet.
+    effort: 3
+    impact: 35

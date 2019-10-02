@@ -1,0 +1,18 @@
+manager: Sergey Valkanesko
+teamroom: Eng.Feature
+direct reports: 2
+ICs:
+    - IC:
+        IC name: Adrian Iriciuc
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/MOAFCID-36914
+        coaching: Employ AWS Serverless Application Repository and reuse public serverless application templates to accelerate development.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Francisco Expósito Pequeño
+        date: 2019-09-27
+        unit: https://jira.devfactory.com/browse/MOAFCID-36948
+        coaching: Declare lambdas and other resources that you create as nested applications to avoid merge conflicts, improve change tracking and simplify reviews (https://aws.amazon.com/blogs/compute/announcing-nested-applications-for-aws-sam-and-the-aws-serverless-application-repository/).
+        performance assessment: averagePerformer
+        continue coaching: true
