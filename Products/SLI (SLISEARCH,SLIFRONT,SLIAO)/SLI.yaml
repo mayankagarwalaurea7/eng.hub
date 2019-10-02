@@ -2,9 +2,9 @@
 id: 46872
 name: SLI Systems
 description: SLI Systems workspace.
-revision: 572
-lastModifiedDate: '2019-10-02T09:57:58Z'
-lastModifiedUser: abhinav.kansal@trilogy.com
+revision: 581
+lastModifiedDate: '2019-10-02T13:24:15Z'
+lastModifiedUser: haci.burak@aurea.com
 lastModifiedAgent: structurizr-web/1624
 model:
   people:
@@ -659,14 +659,6 @@ model:
       tags: Element,Container,SLIAO
       name: aura-discovery
       description: Resolves address service by name for aura
-      relationships:
-      - id: '443'
-        tags: Relationship
-        sourceId: '433'
-        destinationId: '432'
-        description: Discover service
-        technology: HTTP/S
-        interactionStyle: Synchronous
       technology: Java
     - id: '434'
       tags: Element,Container,SLIAO
@@ -1581,19 +1573,28 @@ model:
     - id: '339'
       tags: Element,Container
       name: Jenkins
+      description: Automates the build and deploy process
+      technology: Jenkins
     - id: '341'
       tags: Element,Container,External
       name: Munin
+      description: networked resource monitoring tool that can help analyze resource
+        trends
+      technology: Munin
     - id: '340'
       tags: Element,Container,External
       name: Nagios
+      description: Nagios provides monitoring of all mission-critical infrastructure
+        components
       relationships:
       - id: '420'
         tags: Relationship
         sourceId: '340'
         destinationId: '412'
         description: Sends Heartbeat event to heartbeat requester
+        technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Nagios
     - id: '338'
       tags: Element,Container,External
       name: Rundeck
@@ -1610,7 +1611,7 @@ model:
         interactionStyle: Synchronous
       technology: Rundeck
     - id: '560'
-      tags: Element,Container,3rdParty
+      tags: Element,Container,External
       name: SVN
       description: stores template builder components and global functions
       technology: SVN
@@ -1949,14 +1950,6 @@ model:
       tags: Element,Container,SLISEARCH
       name: Dory
       description: Builds/Search Indexes
-      relationships:
-      - id: '375'
-        tags: Relationship
-        sourceId: '252'
-        destinationId: '326'
-        description: Stores the index data and mount to Dory machines
-        technology: GFS2
-        interactionStyle: Synchronous
       technology: Solr/Lucene/java
       components:
       - id: '331'
@@ -1990,6 +1983,13 @@ model:
         destinationId: '327'
         description: Passes Dory commands
         technology: RabbitMQ
+        interactionStyle: Synchronous
+      - id: '563'
+        tags: Relationship
+        sourceId: '326'
+        destinationId: '252'
+        description: Stores the index data and mount to Dory machines
+        technology: GFS
         interactionStyle: Synchronous
       technology: GlusterFS
     - id: '253'
@@ -2192,6 +2192,7 @@ model:
     - id: '58'
       tags: Element,Container,SLIAO
       name: builder-service
+      description: Builds templatebuilder client
       relationships:
       - id: '527'
         tags: Relationship
@@ -2256,9 +2257,11 @@ model:
         description: pull tb.json
         technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '89'
       tags: Element,Container,SLIAO
       name: bundle-application
+      description: Applies bundles of components to clients
       relationships:
       - id: '541'
         tags: Relationship
@@ -2274,6 +2277,7 @@ model:
         description: pull bundle registry
         technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '80'
       tags: Element,Container,SLIAO
       name: bundleregistry
@@ -2287,6 +2291,7 @@ model:
     - id: '103'
       tags: Element,Container,SLIAO
       name: CertificateManagementService
+      description: Provides certificates for templatebuilder
       relationships:
       - id: '548'
         tags: Relationship
@@ -2295,6 +2300,7 @@ model:
         description: Calls KMS for encode and decode certificate keys
         technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '73'
       tags: Element,Container,SLIAO
       name: client-cache
@@ -2503,6 +2509,7 @@ model:
     - id: '94'
       tags: Element,Container,SLIAO
       name: componenttest
+      description: Runs the component testing
       relationships:
       - id: '538'
         tags: Relationship
@@ -2518,6 +2525,7 @@ model:
         description: mocks localbrain response
         technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '66'
       tags: Element,Container,SLIAO
       name: componentvalidator
@@ -2664,11 +2672,6 @@ model:
       name: scm-workspace-manager
       description: Interacts with the SCM service and Workspace services
       technology: Java
-    - id: '132'
-      tags: Element,Container,3rdParty
-      name: SVN
-      description: Stores Template builder components and client specific configurations
-      technology: SVN
     - id: '451'
       tags: Element,Container,SLIAO
       name: tb-connector
@@ -2681,6 +2684,7 @@ model:
         description: Access other template builder services using proxy
         technology: HTTP/S
         interactionStyle: Synchronous
+      technology: Java
     - id: '62'
       tags: Element,Container,SLIAO
       name: virtualhost
@@ -3039,6 +3043,169 @@ views:
     - id: '319'
     - id: '19'
   systemContextViews:
+  - softwareSystemId: '10'
+    description: Commerce Console Tools System Context
+    key: CCTools
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '10'
+      relationships: []
+    - order: 2
+      elements:
+      - '187'
+      - '11'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '9'
+      - '290'
+      relationships:
+      - '363'
+      - '364'
+      - '13'
+      - '365'
+      - '366'
+      - '15'
+      - '37'
+      - '336'
+      - '19'
+      - '240'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '187'
+      x: 1240
+      y: 1925
+    - id: '11'
+      x: 2760
+      y: 1925
+    - id: '3'
+      x: 695
+      y: 115
+    - id: '4'
+      x: 1595
+      y: 115
+    - id: '5'
+      x: 2760
+      y: 215
+    - id: '6'
+      x: 1995
+      y: 1925
+    - id: '7'
+      x: 460
+      y: 1925
+    - id: '9'
+      x: 2760
+      y: 1070
+    - id: '290'
+      x: 460
+      y: 1035
+    - id: '10'
+      x: 1560
+      y: 1045
+    relationships:
+    - id: '336'
+    - id: '15'
+    - id: '37'
+    - id: '13'
+    - id: '240'
+    - id: '364'
+    - id: '363'
+    - id: '365'
+    - id: '366'
+    - id: '367'
+    - id: '19'
+  - softwareSystemId: '9'
+    key: BruceContext
+    paperSize: A5_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '9'
+      relationships: []
+    - order: 2
+      elements:
+      - '187'
+      - '5'
+      - '7'
+      - '10'
+      relationships:
+      - '212'
+      - '334'
+      - '19'
+      - '32'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '187'
+      x: 1020
+      y: 1290
+    - id: '5'
+      x: 1900
+      y: 700
+    - id: '7'
+      x: 960
+      y: 125
+    - id: '9'
+      x: 985
+      y: 690
+    - id: '10'
+      x: 70
+      y: 695
+    relationships:
+    - id: '334'
+    - id: '212'
+    - id: '32'
+    - id: '19'
+  - softwareSystemId: '6'
+    key: TemplateBuilderContext
+    paperSize: A5_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '6'
+      relationships: []
+    - order: 2
+      elements:
+      - '5'
+      relationships:
+      - '23'
+    - order: 3
+      elements:
+      - '4'
+      - '10'
+      relationships:
+      - '366'
+      - '16'
+    - order: 4
+      elements:
+      - '11'
+      relationships:
+      - '27'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '11'
+      x: 900
+      y: 1270
+    - id: '4'
+      x: 870
+      y: 50
+    - id: '5'
+      x: 1795
+      y: 670
+    - id: '6'
+      x: 890
+      y: 695
+    - id: '10'
+      x: 90
+      y: 695
+    relationships:
+    - id: '16'
+    - id: '27'
+    - id: '23'
+    - id: '366'
   - softwareSystemId: '431'
     key: AuraContext
     paperSize: A5_Landscape
@@ -3070,6 +3237,172 @@ views:
       vertices:
       - x: 500
         y: 830
+  - softwareSystemId: '24'
+    key: Beacon
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '24'
+      relationships: []
+    - order: 2
+      elements:
+      - '187'
+      - '1'
+      - '5'
+      - '7'
+      relationships:
+      - '213'
+      - '335'
+      - '40'
+      - '362'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '187'
+      x: 2290
+      y: 1650
+    - id: '1'
+      x: 915
+      y: 235
+    - id: '24'
+      x: 1595
+      y: 940
+    - id: '5'
+      x: 2290
+      y: 335
+    - id: '7'
+      x: 865
+      y: 1650
+    relationships:
+    - id: '213'
+    - id: '335'
+      vertices:
+      - x: 2180
+        y: 785
+    - id: '40'
+    - id: '362'
+  - softwareSystemId: '292'
+    key: Magento
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '292'
+      relationships: []
+    - order: 2
+      elements:
+      - '3'
+      - '4'
+      - '41'
+      relationships:
+      - '369'
+      - '370'
+      - '371'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '3'
+      x: 795
+      y: 290
+    - id: '4'
+      x: 2245
+      y: 290
+    - id: '292'
+      x: 1530
+      y: 960
+    - id: '41'
+      x: 1529
+      y: 1740
+    relationships:
+    - id: '370'
+    - id: '371'
+    - id: '369'
+  - softwareSystemId: '11'
+    key: SearchBuilderContext
+    paperSize: A5_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '11'
+      relationships: []
+    - order: 2
+      elements:
+      - '4'
+      - '5'
+      - '28'
+      - '42'
+      relationships:
+      - '14'
+      - '30'
+      - '21'
+      - '43'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '11'
+      x: 890
+      y: 725
+    - id: '4'
+      x: 895
+      y: 25
+    - id: '5'
+      x: 1575
+      y: 1250
+    - id: '42'
+      x: 110
+      y: 1250
+    relationships:
+    - id: '14'
+    - id: '43'
+    - id: '21'
+  - softwareSystemId: '187'
+    key: MerlinContext
+    paperSize: A5_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '187'
+      relationships: []
+    - order: 2
+      elements:
+      - '24'
+      - '9'
+      - '10'
+      relationships:
+      - '212'
+      - '213'
+      - '240'
+    - order: 3
+      elements:
+      - '11'
+      - '5'
+      relationships:
+      - '320'
+      - '347'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '11'
+      x: 340
+      y: 1110
+    - id: '187'
+      x: 935
+      y: 555
+    - id: '24'
+      x: 165
+      y: 285
+    - id: '5'
+      x: 990
+      y: 25
+    - id: '9'
+      x: 1765
+      y: 255
+    - id: '10'
+      x: 1620
+      y: 1115
+    relationships:
+    - id: '347'
+    - id: '213'
+    - id: '212'
+    - id: '240'
+    - id: '320'
   - softwareSystemId: '5'
     description: Serves the search results to shoppers
     key: SearchCluster
@@ -3163,6 +3496,49 @@ views:
     - id: '365'
     - id: '47'
     - id: '319'
+  - softwareSystemId: '290'
+    key: William
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '290'
+      relationships: []
+    - order: 2
+      elements:
+      - '187'
+      - '357'
+      - '7'
+      - '10'
+      relationships:
+      - '355'
+      - '356'
+      - '367'
+      - '360'
+      - '361'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '187'
+      x: 1528
+      y: 1740
+    - id: '357'
+      x: 1550
+      y: 200
+    - id: '7'
+      x: 690
+      y: 1740
+    - id: '290'
+      x: 1525
+      y: 945
+    - id: '10'
+      x: 2370
+      y: 1740
+    relationships:
+    - id: '356'
+    - id: '355'
+    - id: '361'
+    - id: '360'
+    - id: '367'
   - softwareSystemId: '7'
     key: ApeContext
     paperSize: A5_Landscape
@@ -3219,849 +3595,209 @@ views:
     - id: '40'
     - id: '32'
     - id: '319'
-  - softwareSystemId: '9'
-    key: BruceContext
-    paperSize: A5_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '9'
-      relationships: []
-    - order: 2
-      elements:
-      - '187'
-      - '5'
-      - '7'
-      - '10'
-      relationships:
-      - '212'
-      - '334'
-      - '19'
-      - '32'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '187'
-      x: 1020
-      y: 1290
-    - id: '5'
-      x: 1900
-      y: 700
-    - id: '7'
-      x: 960
-      y: 125
-    - id: '9'
-      x: 985
-      y: 690
-    - id: '10'
-      x: 70
-      y: 695
-    relationships:
-    - id: '334'
-    - id: '212'
-    - id: '32'
-    - id: '19'
-  - softwareSystemId: '11'
-    key: SearchBuilderContext
-    paperSize: A5_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '11'
-      relationships: []
-    - order: 2
-      elements:
-      - '4'
-      - '5'
-      - '28'
-      - '42'
-      relationships:
-      - '14'
-      - '30'
-      - '21'
-      - '43'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '11'
-      x: 890
-      y: 725
-    - id: '4'
-      x: 895
-      y: 25
-    - id: '5'
-      x: 1575
-      y: 1250
-    - id: '42'
-      x: 110
-      y: 1250
-    relationships:
-    - id: '14'
-    - id: '43'
-    - id: '21'
-  - softwareSystemId: '10'
-    description: Commerce Console Tools System Context
-    key: CCTools
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '10'
-      relationships: []
-    - order: 2
-      elements:
-      - '187'
-      - '11'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
-      - '7'
-      - '9'
-      - '290'
-      relationships:
-      - '363'
-      - '364'
-      - '13'
-      - '365'
-      - '366'
-      - '15'
-      - '37'
-      - '336'
-      - '19'
-      - '240'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '187'
-      x: 1240
-      y: 1925
-    - id: '11'
-      x: 2760
-      y: 1925
-    - id: '3'
-      x: 695
-      y: 115
-    - id: '4'
-      x: 1595
-      y: 115
-    - id: '5'
-      x: 2760
-      y: 215
-    - id: '6'
-      x: 1995
-      y: 1925
-    - id: '7'
-      x: 460
-      y: 1925
-    - id: '9'
-      x: 2760
-      y: 1070
-    - id: '290'
-      x: 460
-      y: 1035
-    - id: '10'
-      x: 1560
-      y: 1045
-    relationships:
-    - id: '336'
-    - id: '15'
-    - id: '37'
-    - id: '13'
-    - id: '240'
-    - id: '364'
-    - id: '363'
-    - id: '365'
-    - id: '366'
-    - id: '367'
-    - id: '19'
-  - softwareSystemId: '187'
-    key: MerlinContext
-    paperSize: A5_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '187'
-      relationships: []
-    - order: 2
-      elements:
-      - '24'
-      - '9'
-      - '10'
-      relationships:
-      - '212'
-      - '213'
-      - '240'
-    - order: 3
-      elements:
-      - '11'
-      - '5'
-      relationships:
-      - '320'
-      - '347'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '11'
-      x: 340
-      y: 1110
-    - id: '187'
-      x: 935
-      y: 555
-    - id: '24'
-      x: 165
-      y: 285
-    - id: '5'
-      x: 990
-      y: 25
-    - id: '9'
-      x: 1765
-      y: 255
-    - id: '10'
-      x: 1620
-      y: 1115
-    relationships:
-    - id: '347'
-    - id: '213'
-    - id: '212'
-    - id: '240'
-    - id: '320'
-  - softwareSystemId: '290'
-    key: William
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '290'
-      relationships: []
-    - order: 2
-      elements:
-      - '187'
-      - '357'
-      - '7'
-      - '10'
-      relationships:
-      - '355'
-      - '356'
-      - '367'
-      - '360'
-      - '361'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '187'
-      x: 1528
-      y: 1740
-    - id: '357'
-      x: 1550
-      y: 200
-    - id: '7'
-      x: 690
-      y: 1740
-    - id: '290'
-      x: 1525
-      y: 945
-    - id: '10'
-      x: 2370
-      y: 1740
-    relationships:
-    - id: '356'
-    - id: '355'
-    - id: '361'
-    - id: '360'
-    - id: '367'
-  - softwareSystemId: '292'
-    key: Magento
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '292'
-      relationships: []
-    - order: 2
-      elements:
-      - '3'
-      - '4'
-      - '41'
-      relationships:
-      - '369'
-      - '370'
-      - '371'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '3'
-      x: 795
-      y: 290
-    - id: '4'
-      x: 2245
-      y: 290
-    - id: '292'
-      x: 1530
-      y: 960
-    - id: '41'
-      x: 1529
-      y: 1740
-    relationships:
-    - id: '370'
-    - id: '371'
-    - id: '369'
-  - softwareSystemId: '6'
-    key: TemplateBuilderContext
-    paperSize: A5_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '6'
-      relationships: []
-    - order: 2
-      elements:
-      - '5'
-      relationships:
-      - '23'
-    - order: 3
-      elements:
-      - '4'
-      - '10'
-      relationships:
-      - '366'
-      - '16'
-    - order: 4
-      elements:
-      - '11'
-      relationships:
-      - '27'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '11'
-      x: 900
-      y: 1270
-    - id: '4'
-      x: 870
-      y: 50
-    - id: '5'
-      x: 1795
-      y: 670
-    - id: '6'
-      x: 890
-      y: 695
-    - id: '10'
-      x: 90
-      y: 695
-    relationships:
-    - id: '16'
-    - id: '27'
-    - id: '23'
-    - id: '366'
-  - softwareSystemId: '24'
-    key: Beacon
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '24'
-      relationships: []
-    - order: 2
-      elements:
-      - '187'
-      - '1'
-      - '5'
-      - '7'
-      relationships:
-      - '213'
-      - '335'
-      - '40'
-      - '362'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '187'
-      x: 2290
-      y: 1650
-    - id: '1'
-      x: 915
-      y: 235
-    - id: '24'
-      x: 1595
-      y: 940
-    - id: '5'
-      x: 2290
-      y: 335
-    - id: '7'
-      x: 865
-      y: 1650
-    relationships:
-    - id: '213'
-    - id: '335'
-      vertices:
-      - x: 2180
-        y: 785
-    - id: '40'
-    - id: '362'
   containerViews:
-  - softwareSystemId: '7'
-    key: APE
+  - softwareSystemId: '187'
+    key: Merlin
     paperSize: A3_Landscape
     animations:
     - order: 1
       elements:
-      - '160'
-      - '161'
-      - '162'
-      - '163'
-      - '164'
-      - '153'
-      - '154'
-      - '165'
-      - '155'
-      - '166'
-      - '167'
-      - '156'
-      - '168'
-      - '157'
-      - '158'
-      - '159'
-      - '318'
+      - '190'
+      - '191'
+      - '192'
+      - '193'
+      - '194'
+      - '196'
+      - '197'
+      - '198'
+      - '199'
+      - '188'
+      - '210'
+      - '200'
+      - '189'
+      - '201'
+      - '202'
+      - '203'
+      - '204'
+      - '205'
+      - '206'
+      - '207'
+      - '208'
+      - '209'
       relationships:
-      - '390'
-      - '391'
-      - '392'
-      - '393'
-      - '394'
-      - '352'
-      - '353'
-      - '387'
-      - '388'
-      - '421'
-      - '389'
-      - '417'
-      - '418'
-      - '419'
+      - '250'
+      - '251'
+      - '230'
+      - '231'
+      - '232'
+      - '233'
+      - '234'
+      - '256'
+      - '235'
+      - '236'
+      - '237'
+      - '238'
+      - '239'
+      - '242'
+      - '243'
+      - '342'
+      - '244'
+      - '343'
+      - '245'
+      - '344'
+      - '224'
+      - '246'
+      - '247'
+      - '226'
+      - '248'
+      - '227'
+      - '249'
     - order: 2
       elements:
-      - '253'
       - '183'
       relationships:
-      - '372'
-      - '373'
+      - '217'
+      - '218'
     - order: 3
       elements:
-      - '350'
-      - '351'
+      - '253'
       relationships:
-      - '396'
-      - '397'
-      - '398'
-      - '399'
-      - '400'
-      - '401'
-      - '402'
-      - '395'
+      - '282'
+      - '283'
     - order: 4
+      elements:
+      - '284'
+      relationships:
+      - '287'
+    - order: 5
+      elements:
+      - '338'
+      relationships:
+      - '346'
+    - order: 6
       elements:
       - '321'
       relationships:
-      - '410'
-      - '403'
-      - '404'
-      - '405'
-      - '406'
-      - '407'
-      - '408'
-      - '409'
-    - order: 5
-      elements:
-      - '284'
-      relationships:
-      - '411'
-    - order: 6
-      elements:
-      - '412'
-      relationships:
-      - '423'
-      - '415'
-    - order: 7
-      elements:
-      - '340'
-      relationships:
-      - '420'
-    - order: 8
-      elements:
-      - '424'
-      relationships:
-      - '425'
-      - '426'
-      - '427'
-      - '428'
-      - '429'
+      - '349'
     elements:
-    - id: '350'
-      x: 2325
-      y: 1835
-    - id: '153'
-      x: 775
-      y: 2760
-    - id: '351'
-      x: 2340
-      y: 2335
-    - id: '154'
-      x: 1530
-      y: 740
-    - id: '253'
-      x: 110
-      y: 1720
-    - id: '155'
-      x: 3370
-      y: 1870
-    - id: '156'
-      x: 3360
-      y: 2230
-    - id: '157'
-      x: 3370
-      y: 1500
-    - id: '158'
-      x: 3380
-      y: 2945
-    - id: '412'
-      x: 805
-      y: 385
-    - id: '159'
-      x: 3365
-      y: 2595
-    - id: '318'
-      x: 2330
-      y: 1395
-    - id: '160'
-      x: 3365
-      y: 725
-    - id: '161'
-      x: 3365
-      y: 1120
-    - id: '183'
-      x: 105
-      y: 745
-    - id: '162'
-      x: 785
-      y: 1675
-    - id: '163'
-      x: 775
-      y: 2220
-    - id: '284'
-      x: 100
-      y: 2770
-    - id: '164'
-      x: 3365
-      y: 365
-    - id: '340'
+    - id: '190'
+      x: 1825
+      y: 615
+    - id: '191'
+      x: 1045
+      y: 625
+    - id: '192'
       x: 65
-      y: 370
-    - id: '165'
-      x: 2835
-      y: 365
-    - id: '166'
-      x: 2345
-      y: 755
-    - id: '167'
-      x: 1860
-      y: 365
-    - id: '321'
-      x: 4455
-      y: 1800
-    - id: '168'
-      x: 2345
-      y: 2755
-    - id: '424'
+      y: 1355
+    - id: '193'
+      x: 160
+      y: 1920
+    - id: '194'
+      x: 930
+      y: 1945
+    - id: '196'
       x: 1515
-      y: 1880
+      y: 1325
+    - id: '197'
+      x: 1495
+      y: 2840
+    - id: '198'
+      x: 3235
+      y: 880
+    - id: '253'
+      x: 1920
+      y: 100
+    - id: '199'
+      x: 3710
+      y: 685
+    - id: '210'
+      x: 2370
+      y: 2845
+    - id: '338'
+      x: 120
+      y: 55
+    - id: '183'
+      x: 745
+      y: 65
+    - id: '284'
+      x: 4050
+      y: 90
+    - id: '188'
+      x: 3135
+      y: 2840
+    - id: '200'
+      x: 3175
+      y: 1810
+    - id: '189'
+      x: 3230
+      y: 1220
+    - id: '321'
+      x: 4430
+      y: 515
+    - id: '201'
+      x: 2425
+      y: 525
+    - id: '202'
+      x: 760
+      y: 1330
+    - id: '203'
+      x: 2415
+      y: 1325
+    - id: '204'
+      x: 2420
+      y: 895
+    - id: '205'
+      x: 2410
+      y: 1750
+    - id: '206'
+      x: 2405
+      y: 2215
+    - id: '207'
+      x: 3875
+      y: 1790
+    - id: '208'
+      x: 3915
+      y: 2840
+    - id: '209'
+      x: 1525
+      y: 2145
     relationships:
-    - id: '423'
-    - id: '425'
-    - id: '403'
-    - id: '402'
-    - id: '401'
-    - id: '420'
-    - id: '400'
-    - id: '421'
-    - id: '407'
-    - id: '406'
-    - id: '405'
-    - id: '404'
-    - id: '426'
-    - id: '427'
-    - id: '409'
-    - id: '428'
-    - id: '408'
-    - id: '429'
-    - id: '387'
-    - id: '388'
-    - id: '389'
-    - id: '410'
-    - id: '391'
-    - id: '390'
+    - id: '239'
+    - id: '231'
+    - id: '232'
+    - id: '233'
+    - id: '256'
+    - id: '234'
+    - id: '235'
+    - id: '236'
+    - id: '218'
+    - id: '237'
+    - id: '217'
+    - id: '238'
+    - id: '346'
+    - id: '250'
+    - id: '344'
+    - id: '343'
+    - id: '342'
+    - id: '230'
+    - id: '251'
+    - id: '349'
     - id: '478'
     - id: '499'
-    - id: '393'
-    - id: '392'
-    - id: '430'
-    - id: '372'
-    - id: '395'
-    - id: '373'
-    - id: '394'
-    - id: '411'
-    - id: '418'
-    - id: '417'
-    - id: '415'
-    - id: '419'
-    - id: '353'
-    - id: '352'
-    - id: '397'
-    - id: '396'
-    - id: '399'
-    - id: '398'
-  - softwareSystemId: '24'
-    key: BeaconContainer
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '154'
-      - '1'
-      - '190'
-      - '191'
-      - '183'
-      relationships:
-      - '489'
-      - '217'
-      - '218'
-      - '373'
-    elements:
-    - id: '154'
-      x: 2385
-      y: 1695
-    - id: '1'
-      x: 1325
-      y: 145
-    - id: '190'
-      x: 285
-      y: 1695
-    - id: '191'
-      x: 1335
-      y: 1695
-    - id: '183'
-      x: 1290
-      y: 860
-    relationships:
-    - id: '489'
-    - id: '373'
-    - id: '218'
-    - id: '217'
-  - softwareSystemId: '9'
-    key: Bruce
-    paperSize: A5_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '110'
-      - '111'
-      - '112'
-      - '105'
-      - '106'
-      - '107'
-      - '108'
-      - '109'
-      - '284'
-      relationships:
-      - '310'
-      - '311'
-      - '313'
-      - '314'
-      - '307'
-      - '308'
-      - '309'
-    - order: 2
-      elements:
-      - '316'
-      - '252'
-      relationships:
-      - '315'
-      - '317'
-    elements:
-    - id: '110'
-      x: 1785
-      y: 1205
-    - id: '111'
-      x: 395
-      y: 865
-    - id: '112'
-      x: 1245
-      y: 1210
-    - id: '105'
-      x: 140
-      y: 1200
-    - id: '106'
-      x: 695
-      y: 1205
-    - id: '107'
-      x: 940
-      y: 510
-    - id: '108'
-      x: 65
-      y: 380
-    - id: '109'
-      x: 1800
-      y: 820
-    - id: '284'
-      x: 650
-      y: 30
-    - id: '252'
-      x: 1230
-      y: 35
-    relationships:
-    - id: '313'
-    - id: '315'
-    - id: '314'
-    - id: '311'
-    - id: '310'
-    - id: '309'
-    - id: '308'
-    - id: '307'
-  - softwareSystemId: '10'
-    description: Container view of Commerce Console Tools
-    key: CCToolsContainer
-    paperSize: A3_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '297'
-      - '289'
-      - '301'
-      - '302'
-      - '303'
-      - '304'
-      - '291'
-      - '284'
-      - '296'
-      relationships:
-      - '473'
-      - '474'
-      - '464'
-      - '475'
-      - '465'
-      - '466'
-      - '467'
-      - '468'
-      - '479'
-      - '469'
-    - order: 2
-      elements:
-      - '3'
-      - '4'
-      - '107'
-      - '207'
-      - '153'
-      relationships:
-      - '287'
-      - '411'
-      - '308'
-      - '481'
-      - '482'
-    - order: 3
-      elements:
-      - '253'
-      - '58'
-      - '120'
-      relationships:
-      - '476'
-      - '477'
-      - '478'
-      - '480'
-      - '472'
-    elements:
-    - id: '58'
-      x: 855
-      y: 2575
-    - id: '291'
-      x: 3810
-      y: 480
-    - id: '284'
-      x: 2205
-      y: 1165
-    - id: '153'
-      x: 3165
-      y: 2545
-    - id: '296'
-      x: 1555
-      y: 1825
-    - id: '120'
-      x: 3830
-      y: 2435
-    - id: '297'
-      x: 3440
-      y: 1895
-    - id: '253'
-      x: 725
-      y: 450
-    - id: '3'
-      x: 1780
-      y: 350
-    - id: '289'
-      x: 1180
-      y: 1320
-    - id: '4'
-      x: 2855
-      y: 365
-    - id: '301'
-      x: 760
-      y: 1825
-    - id: '302'
-      x: 3850
-      y: 1595
-    - id: '303'
-      x: 3855
-      y: 1230
-    - id: '304'
-      x: 3830
-      y: 880
-    - id: '107'
-      x: 1650
-      y: 2550
-    - id: '207'
-      x: 2335
-      y: 2545
-    relationships:
-    - id: '468'
-    - id: '479'
-    - id: '469'
-    - id: '466'
-    - id: '477'
-      vertices:
-      - x: 3120
-        y: 2100
-      - x: 3945
-        y: 2490
-    - id: '467'
-    - id: '478'
-      vertices:
-      - x: 1240
-        y: 1045
-    - id: '464'
-    - id: '475'
-    - id: '465'
-    - id: '476'
-      vertices:
-      - x: 3075
-        y: 2320
-    - id: '473'
-    - id: '411'
-      vertices:
-      - x: 2745
-        y: 2285
-    - id: '474'
+    - id: '242'
+    - id: '243'
+    - id: '244'
+    - id: '245'
     - id: '287'
-    - id: '482'
-    - id: '472'
-    - id: '480'
-      vertices:
-      - x: 1860
-        y: 2450
-    - id: '481'
-    - id: '308'
-      vertices:
-      - x: 2160
-        y: 2180
+    - id: '224'
+    - id: '247'
+    - id: '246'
+    - id: '226'
+    - id: '249'
+    - id: '227'
+    - id: '248'
+    - id: '282'
+    - id: '283'
   - softwareSystemId: '290'
     key: WilliamContainer
     paperSize: A5_Landscape
@@ -4117,285 +3853,6 @@ views:
     - id: '484'
     - id: '485'
     - id: '483'
-  - softwareSystemId: '431'
-    key: Aura
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '432'
-      - '433'
-      - '434'
-      - '435'
-      - '436'
-      - '437'
-      - '438'
-      relationships:
-      - '441'
-      - '443'
-      - '444'
-      - '446'
-      - '447'
-      - '449'
-      - '450'
-    - order: 2
-      elements:
-      - '451'
-      relationships:
-      - '455'
-    elements:
-    - id: '451'
-      x: 25
-      y: 600
-    - id: '432'
-      x: 810
-      y: 600
-    - id: '433'
-      x: 1840
-      y: 590
-    - id: '434'
-      x: 1130
-      y: 1195
-    - id: '435'
-      x: 2675
-      y: 575
-    - id: '436'
-      x: 2030
-      y: 1215
-    - id: '437'
-      x: 2685
-      y: 80
-    - id: '438'
-      x: 1840
-      y: 85
-    relationships:
-    - id: '444'
-    - id: '455'
-    - id: '447'
-    - id: '446'
-    - id: '441'
-      vertices:
-      - x: 1550
-        y: 870
-    - id: '443'
-      vertices:
-      - x: 1570
-        y: 565
-    - id: '450'
-    - id: '449'
-  - softwareSystemId: '5'
-    description: Search Cluster Container View
-    key: SearchClusterContainer
-    paperSize: A2_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '253'
-      - '323'
-      - '326'
-      - '327'
-      - '252'
-      relationships:
-      - '374'
-      - '375'
-      - '377'
-      - '378'
-      - '554'
-    - order: 2
-      elements:
-      - '41'
-      relationships:
-      - '376'
-    - order: 3
-      elements:
-      - '154'
-      - '301'
-      - '127'
-      - '107'
-      - '190'
-      - '191'
-      - '183'
-      - '284'
-      relationships:
-      - '499'
-      - '478'
-      - '315'
-      - '306'
-      - '282'
-      - '283'
-      - '372'
-      - '472'
-    - order: 4
-      elements:
-      - '56'
-      relationships:
-      - '502'
-    - order: 5
-      elements:
-      - '121'
-      relationships:
-      - '558'
-    elements:
-    - id: '56'
-      x: 4510
-      y: 745
-    - id: '190'
-      x: 5535
-      y: 2115
-    - id: '191'
-      x: 5620
-      y: 2600
-    - id: '183'
-      x: 4535
-      y: 3625
-    - id: '284'
-      x: 1530
-      y: 575
-    - id: '252'
-      x: 2281
-      y: 2405
-    - id: '154'
-      x: 4530
-      y: 2905
-    - id: '121'
-      x: 595
-      y: 1435
-    - id: '253'
-      x: 3145
-      y: 1805
-    - id: '301'
-      x: 5535
-      y: 1615
-    - id: '323'
-      x: 3582
-      y: 3605
-    - id: '127'
-      x: 895
-      y: 3570
-    - id: '326'
-      x: 1675
-      y: 3190
-    - id: '107'
-      x: 655
-      y: 2645
-    - id: '327'
-      x: 2565
-      y: 3630
-    - id: '41'
-      x: 3585
-      y: 740
-    relationships:
-    - id: '478'
-      vertices:
-      - x: 4232
-        y: 1505
-      - x: 4232
-        y: 1655
-    - id: '499'
-    - id: '372'
-      vertices:
-      - x: 2970
-        y: 2255
-    - id: '315'
-      vertices:
-      - x: 2570
-        y: 2255
-    - id: '282'
-      vertices:
-      - x: 3795
-        y: 2255
-    - id: '502'
-    - id: '283'
-      vertices:
-      - x: 3995
-        y: 2255
-    - id: '554'
-    - id: '374'
-      vertices:
-      - x: 3495
-        y: 3455
-      - x: 3495
-        y: 3155
-      - x: 3495
-        y: 2855
-    - id: '375'
-      vertices:
-      - x: 2157
-        y: 2855
-    - id: '472'
-      vertices:
-      - x: 3170
-        y: 2255
-    - id: '376'
-      vertices:
-      - x: 2170
-        y: 1505
-      - x: 2170
-        y: 1655
-    - id: '377'
-      vertices:
-      - x: 2770
-        y: 2255
-    - id: '558'
-    - id: '306'
-      vertices:
-      - x: 1785
-        y: 3000
-    - id: '378'
-      vertices:
-      - x: 2157
-        y: 3455
-  - softwareSystemId: '292'
-    key: MagentoContainer
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '3'
-      - '4'
-      - '183'
-      - '293'
-      - '294'
-      - '295'
-      relationships:
-      - '495'
-      - '496'
-      - '497'
-      - '498'
-      - '490'
-      - '491'
-      - '492'
-      - '493'
-      - '494'
-    elements:
-    - id: '3'
-      x: 675
-      y: 141
-    - id: '4'
-      x: 2280
-      y: 191
-    - id: '183'
-      x: 1445
-      y: 1776
-    - id: '293'
-      x: 295
-      y: 1090
-    - id: '294'
-      x: 1420
-      y: 1090
-    - id: '295'
-      x: 2545
-      y: 1090
-    relationships:
-    - id: '498'
-    - id: '497'
-    - id: '496'
-    - id: '495'
-    - id: '494'
-    - id: '493'
-    - id: '492'
-    - id: '491'
-    - id: '490'
   - softwareSystemId: '6'
     key: TemplateBuilder
     paperSize: A2_Landscape
@@ -4818,6 +4275,708 @@ views:
     - id: '547'
     - id: '507'
     - id: '509'
+  - softwareSystemId: '5'
+    description: Search Cluster Container View
+    key: SearchClusterContainer
+    paperSize: A2_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '253'
+      - '323'
+      - '326'
+      - '327'
+      - '252'
+      relationships:
+      - '374'
+      - '563'
+      - '377'
+      - '378'
+      - '554'
+    - order: 2
+      elements:
+      - '41'
+      relationships:
+      - '376'
+    - order: 3
+      elements:
+      - '154'
+      - '301'
+      - '127'
+      - '107'
+      - '190'
+      - '191'
+      - '183'
+      - '284'
+      relationships:
+      - '499'
+      - '478'
+      - '315'
+      - '306'
+      - '282'
+      - '283'
+      - '372'
+      - '472'
+    - order: 4
+      elements:
+      - '56'
+      relationships:
+      - '502'
+    - order: 5
+      elements:
+      - '121'
+      relationships:
+      - '558'
+    elements:
+    - id: '56'
+      x: 4510
+      y: 745
+    - id: '190'
+      x: 5535
+      y: 2115
+    - id: '191'
+      x: 5620
+      y: 2600
+    - id: '183'
+      x: 4535
+      y: 3625
+    - id: '284'
+      x: 1530
+      y: 575
+    - id: '252'
+      x: 2281
+      y: 2405
+    - id: '154'
+      x: 4530
+      y: 2905
+    - id: '121'
+      x: 595
+      y: 1435
+    - id: '253'
+      x: 3145
+      y: 1805
+    - id: '301'
+      x: 5535
+      y: 1615
+    - id: '323'
+      x: 3582
+      y: 3605
+    - id: '127'
+      x: 895
+      y: 3570
+    - id: '326'
+      x: 1675
+      y: 3190
+    - id: '107'
+      x: 655
+      y: 2645
+    - id: '327'
+      x: 2565
+      y: 3630
+    - id: '41'
+      x: 3585
+      y: 740
+    relationships:
+    - id: '478'
+      vertices:
+      - x: 4232
+        y: 1505
+      - x: 4232
+        y: 1655
+    - id: '499'
+    - id: '372'
+      vertices:
+      - x: 2970
+        y: 2255
+    - id: '315'
+      vertices:
+      - x: 2570
+        y: 2255
+    - id: '282'
+      vertices:
+      - x: 3795
+        y: 2255
+    - id: '502'
+    - id: '563'
+    - id: '283'
+      vertices:
+      - x: 3995
+        y: 2255
+    - id: '554'
+    - id: '374'
+      vertices:
+      - x: 3495
+        y: 3455
+      - x: 3495
+        y: 3155
+      - x: 3495
+        y: 2855
+    - id: '472'
+      vertices:
+      - x: 3170
+        y: 2255
+    - id: '376'
+      vertices:
+      - x: 2170
+        y: 1505
+      - x: 2170
+        y: 1655
+    - id: '377'
+      vertices:
+      - x: 2770
+        y: 2255
+    - id: '558'
+    - id: '306'
+      vertices:
+      - x: 1785
+        y: 3000
+    - id: '378'
+      vertices:
+      - x: 2157
+        y: 3455
+  - softwareSystemId: '292'
+    key: MagentoContainer
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '3'
+      - '4'
+      - '183'
+      - '293'
+      - '294'
+      - '295'
+      relationships:
+      - '495'
+      - '496'
+      - '497'
+      - '498'
+      - '490'
+      - '491'
+      - '492'
+      - '493'
+      - '494'
+    elements:
+    - id: '3'
+      x: 675
+      y: 141
+    - id: '4'
+      x: 2280
+      y: 191
+    - id: '183'
+      x: 1445
+      y: 1776
+    - id: '293'
+      x: 295
+      y: 1090
+    - id: '294'
+      x: 1420
+      y: 1090
+    - id: '295'
+      x: 2545
+      y: 1090
+    relationships:
+    - id: '498'
+    - id: '497'
+    - id: '496'
+    - id: '495'
+    - id: '494'
+    - id: '493'
+    - id: '492'
+    - id: '491'
+    - id: '490'
+  - softwareSystemId: '10'
+    description: Container view of Commerce Console Tools
+    key: CCToolsContainer
+    paperSize: A3_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '297'
+      - '289'
+      - '301'
+      - '302'
+      - '303'
+      - '304'
+      - '291'
+      - '284'
+      - '296'
+      relationships:
+      - '473'
+      - '474'
+      - '464'
+      - '475'
+      - '465'
+      - '466'
+      - '467'
+      - '468'
+      - '479'
+      - '469'
+    - order: 2
+      elements:
+      - '3'
+      - '4'
+      - '107'
+      - '207'
+      - '153'
+      relationships:
+      - '287'
+      - '411'
+      - '308'
+      - '481'
+      - '482'
+    - order: 3
+      elements:
+      - '253'
+      - '58'
+      - '120'
+      relationships:
+      - '476'
+      - '477'
+      - '478'
+      - '480'
+      - '472'
+    elements:
+    - id: '58'
+      x: 855
+      y: 2575
+    - id: '291'
+      x: 3810
+      y: 480
+    - id: '284'
+      x: 2205
+      y: 1165
+    - id: '153'
+      x: 3165
+      y: 2545
+    - id: '296'
+      x: 1555
+      y: 1825
+    - id: '120'
+      x: 3830
+      y: 2435
+    - id: '297'
+      x: 3440
+      y: 1895
+    - id: '253'
+      x: 725
+      y: 450
+    - id: '3'
+      x: 1780
+      y: 350
+    - id: '289'
+      x: 1180
+      y: 1320
+    - id: '4'
+      x: 2855
+      y: 365
+    - id: '301'
+      x: 760
+      y: 1825
+    - id: '302'
+      x: 3850
+      y: 1595
+    - id: '303'
+      x: 3855
+      y: 1230
+    - id: '304'
+      x: 3830
+      y: 880
+    - id: '107'
+      x: 1650
+      y: 2550
+    - id: '207'
+      x: 2335
+      y: 2545
+    relationships:
+    - id: '468'
+    - id: '479'
+    - id: '469'
+    - id: '466'
+    - id: '477'
+      vertices:
+      - x: 3120
+        y: 2100
+      - x: 3945
+        y: 2490
+    - id: '467'
+    - id: '478'
+      vertices:
+      - x: 1240
+        y: 1045
+    - id: '464'
+    - id: '475'
+    - id: '465'
+    - id: '476'
+      vertices:
+      - x: 3075
+        y: 2320
+    - id: '473'
+    - id: '411'
+      vertices:
+      - x: 2745
+        y: 2285
+    - id: '474'
+    - id: '287'
+    - id: '482'
+    - id: '472'
+    - id: '480'
+      vertices:
+      - x: 1860
+        y: 2450
+    - id: '481'
+    - id: '308'
+      vertices:
+      - x: 2160
+        y: 2180
+  - softwareSystemId: '9'
+    key: Bruce
+    paperSize: A5_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '110'
+      - '111'
+      - '112'
+      - '105'
+      - '106'
+      - '107'
+      - '108'
+      - '109'
+      - '284'
+      relationships:
+      - '310'
+      - '311'
+      - '313'
+      - '314'
+      - '307'
+      - '308'
+      - '309'
+    - order: 2
+      elements:
+      - '316'
+      - '252'
+      relationships:
+      - '315'
+      - '317'
+    elements:
+    - id: '110'
+      x: 1785
+      y: 1205
+    - id: '111'
+      x: 395
+      y: 865
+    - id: '112'
+      x: 1245
+      y: 1210
+    - id: '105'
+      x: 140
+      y: 1200
+    - id: '106'
+      x: 695
+      y: 1205
+    - id: '107'
+      x: 940
+      y: 510
+    - id: '108'
+      x: 65
+      y: 380
+    - id: '109'
+      x: 1800
+      y: 820
+    - id: '284'
+      x: 650
+      y: 30
+    - id: '252'
+      x: 1230
+      y: 35
+    relationships:
+    - id: '313'
+    - id: '315'
+    - id: '314'
+    - id: '311'
+    - id: '310'
+    - id: '309'
+    - id: '308'
+    - id: '307'
+  - softwareSystemId: '7'
+    key: APE
+    paperSize: A3_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '160'
+      - '161'
+      - '162'
+      - '163'
+      - '164'
+      - '153'
+      - '154'
+      - '165'
+      - '155'
+      - '166'
+      - '167'
+      - '156'
+      - '168'
+      - '157'
+      - '158'
+      - '159'
+      - '318'
+      relationships:
+      - '390'
+      - '391'
+      - '392'
+      - '393'
+      - '394'
+      - '352'
+      - '353'
+      - '387'
+      - '388'
+      - '421'
+      - '389'
+      - '417'
+      - '418'
+      - '419'
+    - order: 2
+      elements:
+      - '253'
+      - '183'
+      relationships:
+      - '372'
+      - '373'
+    - order: 3
+      elements:
+      - '350'
+      - '351'
+      relationships:
+      - '396'
+      - '397'
+      - '398'
+      - '399'
+      - '400'
+      - '401'
+      - '402'
+      - '395'
+    - order: 4
+      elements:
+      - '321'
+      relationships:
+      - '410'
+      - '403'
+      - '404'
+      - '405'
+      - '406'
+      - '407'
+      - '408'
+      - '409'
+    - order: 5
+      elements:
+      - '284'
+      relationships:
+      - '411'
+    - order: 6
+      elements:
+      - '412'
+      relationships:
+      - '423'
+      - '415'
+    - order: 7
+      elements:
+      - '340'
+      relationships:
+      - '420'
+    - order: 8
+      elements:
+      - '424'
+      relationships:
+      - '425'
+      - '426'
+      - '427'
+      - '428'
+      - '429'
+    elements:
+    - id: '350'
+      x: 2325
+      y: 1835
+    - id: '153'
+      x: 775
+      y: 2760
+    - id: '351'
+      x: 2340
+      y: 2335
+    - id: '154'
+      x: 1530
+      y: 740
+    - id: '253'
+      x: 110
+      y: 1720
+    - id: '155'
+      x: 3370
+      y: 1870
+    - id: '156'
+      x: 3360
+      y: 2230
+    - id: '157'
+      x: 3370
+      y: 1500
+    - id: '158'
+      x: 3380
+      y: 2945
+    - id: '412'
+      x: 805
+      y: 385
+    - id: '159'
+      x: 3365
+      y: 2595
+    - id: '318'
+      x: 2330
+      y: 1395
+    - id: '160'
+      x: 3365
+      y: 725
+    - id: '161'
+      x: 3365
+      y: 1120
+    - id: '183'
+      x: 105
+      y: 745
+    - id: '162'
+      x: 785
+      y: 1675
+    - id: '163'
+      x: 775
+      y: 2220
+    - id: '284'
+      x: 100
+      y: 2770
+    - id: '164'
+      x: 3365
+      y: 365
+    - id: '340'
+      x: 65
+      y: 370
+    - id: '165'
+      x: 2835
+      y: 365
+    - id: '166'
+      x: 2345
+      y: 755
+    - id: '167'
+      x: 1860
+      y: 365
+    - id: '321'
+      x: 4455
+      y: 1800
+    - id: '168'
+      x: 2345
+      y: 2755
+    - id: '424'
+      x: 1515
+      y: 1880
+    relationships:
+    - id: '423'
+    - id: '425'
+    - id: '403'
+    - id: '402'
+    - id: '401'
+    - id: '420'
+    - id: '400'
+    - id: '421'
+    - id: '407'
+    - id: '406'
+    - id: '405'
+    - id: '404'
+    - id: '426'
+    - id: '427'
+    - id: '409'
+    - id: '428'
+    - id: '408'
+    - id: '429'
+    - id: '387'
+    - id: '388'
+    - id: '389'
+    - id: '410'
+    - id: '391'
+    - id: '390'
+    - id: '478'
+    - id: '499'
+    - id: '393'
+    - id: '392'
+    - id: '430'
+    - id: '372'
+    - id: '395'
+    - id: '373'
+    - id: '394'
+    - id: '411'
+    - id: '418'
+    - id: '417'
+    - id: '415'
+    - id: '419'
+    - id: '353'
+    - id: '352'
+    - id: '397'
+    - id: '396'
+    - id: '399'
+    - id: '398'
+  - softwareSystemId: '431'
+    key: Aura
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '432'
+      - '433'
+      - '434'
+      - '435'
+      - '436'
+      - '437'
+      - '438'
+      relationships:
+      - '441'
+      - '443'
+      - '444'
+      - '446'
+      - '447'
+      - '449'
+      - '450'
+    - order: 2
+      elements:
+      - '451'
+      relationships:
+      - '455'
+    elements:
+    - id: '451'
+      x: 45
+      y: 610
+    - id: '432'
+      x: 850
+      y: 625
+    - id: '433'
+      x: 1785
+      y: 640
+    - id: '434'
+      x: 1130
+      y: 1195
+    - id: '435'
+      x: 2680
+      y: 635
+    - id: '436'
+      x: 2660
+      y: 1265
+    - id: '437'
+      x: 2685
+      y: 80
+    - id: '438'
+      x: 1840
+      y: 85
+    relationships:
+    - id: '444'
+    - id: '455'
+    - id: '447'
+    - id: '446'
+    - id: '441'
+    - id: '450'
+    - id: '449'
   - softwareSystemId: '11'
     key: SearchBuilder
     paperSize: A4_Landscape
@@ -4964,208 +5123,43 @@ views:
     - id: '272'
     - id: '558'
     - id: '306'
-  - softwareSystemId: '187'
-    key: Merlin
-    paperSize: A3_Landscape
+  - softwareSystemId: '24'
+    key: BeaconContainer
+    paperSize: A4_Landscape
     animations:
     - order: 1
       elements:
+      - '154'
+      - '1'
       - '190'
       - '191'
-      - '192'
-      - '193'
-      - '194'
-      - '196'
-      - '197'
-      - '198'
-      - '199'
-      - '188'
-      - '210'
-      - '200'
-      - '189'
-      - '201'
-      - '202'
-      - '203'
-      - '204'
-      - '205'
-      - '206'
-      - '207'
-      - '208'
-      - '209'
-      relationships:
-      - '250'
-      - '251'
-      - '230'
-      - '231'
-      - '232'
-      - '233'
-      - '234'
-      - '256'
-      - '235'
-      - '236'
-      - '237'
-      - '238'
-      - '239'
-      - '242'
-      - '243'
-      - '342'
-      - '244'
-      - '343'
-      - '245'
-      - '344'
-      - '224'
-      - '246'
-      - '247'
-      - '226'
-      - '248'
-      - '227'
-      - '249'
-    - order: 2
-      elements:
       - '183'
       relationships:
+      - '489'
       - '217'
       - '218'
-    - order: 3
-      elements:
-      - '253'
-      relationships:
-      - '282'
-      - '283'
-    - order: 4
-      elements:
-      - '284'
-      relationships:
-      - '287'
-    - order: 5
-      elements:
-      - '338'
-      relationships:
-      - '346'
-    - order: 6
-      elements:
-      - '321'
-      relationships:
-      - '349'
+      - '373'
     elements:
+    - id: '154'
+      x: 2385
+      y: 1695
+    - id: '1'
+      x: 1325
+      y: 145
     - id: '190'
-      x: 1825
-      y: 615
+      x: 285
+      y: 1695
     - id: '191'
-      x: 1045
-      y: 625
-    - id: '192'
-      x: 65
-      y: 1355
-    - id: '193'
-      x: 160
-      y: 1920
-    - id: '194'
-      x: 930
-      y: 1945
-    - id: '196'
-      x: 1515
-      y: 1325
-    - id: '197'
-      x: 1495
-      y: 2840
-    - id: '198'
-      x: 3235
-      y: 880
-    - id: '253'
-      x: 1920
-      y: 100
-    - id: '199'
-      x: 3710
-      y: 685
-    - id: '210'
-      x: 2370
-      y: 2845
-    - id: '338'
-      x: 120
-      y: 55
+      x: 1335
+      y: 1695
     - id: '183'
-      x: 745
-      y: 65
-    - id: '284'
-      x: 4050
-      y: 90
-    - id: '188'
-      x: 3135
-      y: 2840
-    - id: '200'
-      x: 3175
-      y: 1810
-    - id: '189'
-      x: 3230
-      y: 1220
-    - id: '321'
-      x: 4430
-      y: 515
-    - id: '201'
-      x: 2425
-      y: 525
-    - id: '202'
-      x: 760
-      y: 1330
-    - id: '203'
-      x: 2415
-      y: 1325
-    - id: '204'
-      x: 2420
-      y: 895
-    - id: '205'
-      x: 2410
-      y: 1750
-    - id: '206'
-      x: 2405
-      y: 2215
-    - id: '207'
-      x: 3875
-      y: 1790
-    - id: '208'
-      x: 3915
-      y: 2840
-    - id: '209'
-      x: 1525
-      y: 2145
+      x: 1290
+      y: 860
     relationships:
-    - id: '239'
-    - id: '231'
-    - id: '232'
-    - id: '233'
-    - id: '256'
-    - id: '234'
-    - id: '235'
-    - id: '236'
+    - id: '489'
+    - id: '373'
     - id: '218'
-    - id: '237'
     - id: '217'
-    - id: '238'
-    - id: '346'
-    - id: '250'
-    - id: '344'
-    - id: '343'
-    - id: '342'
-    - id: '230'
-    - id: '251'
-    - id: '349'
-    - id: '478'
-    - id: '499'
-    - id: '242'
-    - id: '243'
-    - id: '244'
-    - id: '245'
-    - id: '287'
-    - id: '224'
-    - id: '247'
-    - id: '246'
-    - id: '226'
-    - id: '249'
-    - id: '227'
-    - id: '248'
-    - id: '282'
-    - id: '283'
   configuration:
     branding: {}
     styles:
@@ -5190,7 +5184,7 @@ views:
         shape: Ellipse
       relationships: []
     terminology: {}
-    lastSavedView: TemplateBuilder
+    lastSavedView: SearchClusterContainer
   componentViews: []
   dynamicViews: []
   deploymentViews: []
