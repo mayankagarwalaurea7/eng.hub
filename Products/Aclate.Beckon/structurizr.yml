@@ -1,8 +1,9 @@
 ---
 id: 47160
 name: Beckon
-revision: 32
-lastModifiedDate: '2019-10-01T19:26:07Z'
+description: Digital Marketing data ingestion, analysis and presentation
+revision: 34
+lastModifiedDate: '2019-10-02T17:19:46Z'
 lastModifiedUser: daniel.farenzena@trilogy.com
 lastModifiedAgent: structurizr-web/1624
 model:
@@ -102,8 +103,9 @@ model:
     name: 3rd party cloud information system
     location: External
   - id: '78'
-    tags: Element,Software System
+    tags: Element,Software System,Java Lucene PSQL Spark Web
     name: Beckon App
+    description: Digital Marketing data ingestion, analysis and presentation
     relationships:
     - id: '97'
       tags: Relationship
@@ -166,17 +168,26 @@ model:
       destinationId: '78'
       description: Pulls data
       interactionStyle: Synchronous
-    location: Unspecified
+    location: Internal
     containers:
     - id: '20'
       tags: Element,Container
       name: accountHardDeletion
+      description: Service to permanently delete all data for a specific account.
+        Given the scale at which Beckon ingests and maintains data, such a separate,
+        dedicated service is required.
+      technology: Java
     - id: '23'
       tags: Element,Container
       name: accountMonitor
+      description: Service to monitor the data ingestion for each account (customer).
+      technology: Java
     - id: '11'
       tags: Element,Container
       name: analytics2
+      description: Analytics clusters for running queries (currently 5 independently
+        scalable clusters). They are allocated per customer groups and can be enabled
+        or disabled on-demand.
       technology: Java
       components:
       - id: '75'
@@ -191,6 +202,9 @@ model:
     - id: '26'
       tags: Element,Container
       name: api
+      description: Separate domain for api (api.beckon.com). Provides a RESTful API
+        for systems integration. Can be used to query and manage data. Cannot be used
+        for system wide administrative tasks or manipulate graphs.
       relationships:
       - id: '47'
         tags: Relationship
@@ -198,9 +212,13 @@ model:
         destinationId: '31'
         description: Pushes data
         interactionStyle: Synchronous
+      technology: Java
     - id: '9'
       tags: Element,Container
       name: app
+      description: The main application servers (app.beckon.com). This is a web application
+        and provides a UI to to manage the web site and, most importantly, configure
+        dashboards, scorecards and data management operations.
       relationships:
       - id: '43'
         tags: Relationship
@@ -265,6 +283,8 @@ model:
     - id: '10'
       tags: Element,Container
       name: auth
+      description: Separate domain for SAML (auth.beckon.com). Is used to support
+        alternative authentication mechanisms based on SAML.
       relationships:
       - id: '50'
         tags: Relationship
@@ -287,6 +307,8 @@ model:
     - id: '36'
       tags: Element,Container
       name: cachegeneration
+      description: Generates caches used by menu filtering in the application. Therefore,
+        it is not cache for querying.
       relationships:
       - id: '62'
         tags: Relationship
@@ -294,9 +316,13 @@ model:
         destinationId: '36'
         description: Pushes data
         interactionStyle: Synchronous
+      technology: Java+PSQL
     - id: '34'
       tags: Element,Container
       name: compact
+      description: Handles compaction of the versioned delta files created by import2
+        service. On Beckon, data is versioned each time data is ingested in the system,
+        and it does so in batches. Every batch is assigned a new version.
       relationships:
       - id: '61'
         tags: Relationship
@@ -304,9 +330,12 @@ model:
         destinationId: '35'
         description: Pushes data
         interactionStyle: Synchronous
+      technology: Java
     - id: '30'
       tags: Element,Container
       name: connector
+      description: Handles scheduling for connectors (see ConnectorDownload above).
+        Basically, a cron service with an UI.
       relationships:
       - id: '56'
         tags: Relationship
@@ -320,9 +349,13 @@ model:
         destinationId: '31'
         description: Pushes data
         interactionStyle: Synchronous
+      technology: Java
     - id: '29'
       tags: Element,Container
       name: connectorDownload
+      description: Service for connecting to marketing APIs. Supports a variety of
+        connection targets, such as Facebook, Twitter, YouTube, Google Analytics,
+        etc. Used to poll data from source and ingest into Beckon
       relationships:
       - id: '53'
         tags: Relationship
@@ -342,6 +375,7 @@ model:
         destinationId: '52'
         description: Pulls data
         interactionStyle: Synchronous
+      technology: Java
     - id: '79'
       tags: Element,Container
       name: Database
@@ -349,9 +383,15 @@ model:
     - id: '21'
       tags: Element,Container
       name: dimensionDeletion
+      description: Deletes dimensions not referenced in the data. While data might
+        be unmapped, this async service will cleanup unused data (but not the raw
+        data acquired previously).
+      technology: Java
     - id: '6'
       tags: Element,Container
       name: Email Sender
+      description: As email send requests are received, this component will contact
+        external email servers to deliver the content.
       relationships:
       - id: '64'
         tags: Relationship
@@ -368,12 +408,20 @@ model:
     - id: '18'
       tags: Element,Container
       name: export
+      description: Bulk export of various entities (raw data, analyzed data, logs,
+        etc).
+      technology: Java
     - id: '19'
       tags: Element,Container
       name: export2
+      description: Exports the normalized data, therefore data that has been processed
+        through Beckon.
+      technology: Java
     - id: '32'
       tags: Element,Container
       name: import
+      description: Handles bulk update of various entities, it is the first step of
+        ingesting data into Beckon.
       relationships:
       - id: '59'
         tags: Relationship
@@ -381,9 +429,12 @@ model:
         destinationId: '33'
         description: Pushes data
         interactionStyle: Synchronous
+      technology: Java
     - id: '33'
       tags: Element,Container
       name: import2
+      description: Main service for importing marketing data, used after bulk import
+        is done. Part of the data ingestion process.
       relationships:
       - id: '60'
         tags: Relationship
@@ -391,9 +442,12 @@ model:
         destinationId: '34'
         description: Pushes data
         interactionStyle: Synchronous
+      technology: Java
     - id: '35'
       tags: Element,Container
       name: indexer
+      description: Builds the indexes used by analytics services to query data. The
+        indexing is necessary to allow faster data querying.
       relationships:
       - id: '63'
         tags: Relationship
@@ -401,12 +455,12 @@ model:
         destinationId: '37'
         description: Pushes data
         interactionStyle: Synchronous
-    - id: '28'
-      tags: Element,Container
-      name: Mailbox at Google Apps
+      technology: Java
     - id: '24'
       tags: Element,Container
       name: queuemetric
+      description: Reports CloudMetrics to enable smarter auto-scaling on AWS.
+      technology: Java
     - id: '7'
       tags: Element,Container
       name: scheduledReportServer
@@ -421,9 +475,16 @@ model:
     - id: '27'
       tags: Element,Container
       name: sftp
+      description: SFTP server integrated with user management. Used to allow customers
+        to actively deliver data files to the system, instead of waiting Beckon to
+        activate the connectors to query the data sources.
+      technology: Linux-based SFTP server
     - id: '8'
       tags: Element,Container
       name: Single-Page Application
+      description: It is responsible for rendering client-side the contents of App.
+        Normally part of App, this system contains many custom-made, frontend, client-side
+        components that interact with App via async calls.
       relationships:
       - id: '46'
         tags: Relationship
@@ -435,6 +496,8 @@ model:
     - id: '31'
       tags: Element,Container
       name: txform
+      description: Service for running the transformer rules. Takes raw data and transform
+        to prepare for Beckon ingestion.
       relationships:
       - id: '58'
         tags: Relationship
@@ -442,9 +505,14 @@ model:
         destinationId: '31'
         description: Pushes data
         interactionStyle: Synchronous
+      technology: Java
     - id: '37'
       tags: Element,Container
       name: unmappedgeneration
+      description: Generates list of unmapped values, so customers understand that
+        after transformation, indexing and compacting, some data might still be used
+        for operations.
+      technology: Java
   - id: '51'
     tags: Element,Software System,external
     name: Customer Information System
@@ -459,12 +527,6 @@ model:
       tags: Relationship
       sourceId: '51'
       destinationId: '26'
-      description: Pushes data
-      interactionStyle: Synchronous
-    - id: '69'
-      tags: Relationship
-      sourceId: '51'
-      destinationId: '28'
       description: Pushes data
       interactionStyle: Synchronous
     - id: '68'
@@ -560,6 +622,32 @@ views:
     - id: '103'
   systemContextViews:
   - softwareSystemId: '78'
+    key: L2CustomerSuccessStaff
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '78'
+      relationships: []
+    - order: 2
+      elements:
+      - '70'
+      relationships:
+      - '102'
+    enterpriseBoundaryVisible: true
+    elements:
+    - id: '78'
+      x: 1529
+      y: 1465
+    - id: '70'
+      x: 1529
+      y: 715
+    relationships:
+    - id: '102'
+      vertices:
+      - x: 1130
+        y: 1280
+  - softwareSystemId: '78'
     key: L2CustomerOrganizationStaff
     paperSize: A4_Landscape
     animations:
@@ -615,32 +703,6 @@ views:
       vertices:
       - x: 280
         y: 1200
-  - softwareSystemId: '78'
-    key: L2CustomerSuccessStaff
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '78'
-      relationships: []
-    - order: 2
-      elements:
-      - '70'
-      relationships:
-      - '102'
-    enterpriseBoundaryVisible: true
-    elements:
-    - id: '78'
-      x: 1529
-      y: 1465
-    - id: '70'
-      x: 1529
-      y: 715
-    relationships:
-    - id: '102'
-      vertices:
-      - x: 1130
-        y: 1280
   - softwareSystemId: '78'
     key: L2ProfessionalServicesStaff
     paperSize: A4_Landscape
