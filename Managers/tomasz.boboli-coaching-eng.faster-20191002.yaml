@@ -1,0 +1,25 @@
+manager: Tomasz Boboli
+teamroom: Eng.Faster
+direct reports: 4
+ICs:
+    - IC:
+        IC name: Nadeem Akhtar
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/CRM-68910
+        coaching: Nadeem could not work today on results from automated measurements tool run overnight because his on-demand VDI instance was shut down due to expiration. The coaching is that before running long running automation tools overnight one should always check how much time left a particular VDI instance has.
+        performanceAssessment: highPerformer
+        continueCoaching: true
+    - IC:
+        IC name: Eugene Shalyuk
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/RESPTK-29110
+        coaching: If an use case B impacted by Faster improvement on use case B can or should be improved more, with additional Faster work, it should be moved to separate Faster Epic.
+        performanceAssessment: highPerformer
+        continueCoaching: true
+    - IC:
+        IC name: Werner Garcia
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/DEV-40600
+        coaching: Werner should follow the Faster process thoroughly, without jumping between process steps. This way his analysis and improvement will be complete and he would be able to precisely report status of his work. For "decrease number of executions" ticket he should follow "Faster database improvements playbook", chapter "Type of tickets - Decreasing number of executions"
+        performanceAssessment: averagePerformer
+        continueCoaching: true
