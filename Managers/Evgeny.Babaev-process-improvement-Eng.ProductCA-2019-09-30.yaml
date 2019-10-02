@@ -1,0 +1,11 @@
+manager: Evgeny Babaev
+teamroom: Eng.ProductCA
+units: 
+    - unit:  !!str #<Jira link>
+automation:
+    product agnostic: true
+    product specific: 
+        ##- product name: !!str #product names
+    description: Enforce responsibility for reviewing process improvements and automations by VPs / SVPs. Introduce process flow for these items, so each item should be either done or rejected
+    effort: 10 #days
+    impact: 100
