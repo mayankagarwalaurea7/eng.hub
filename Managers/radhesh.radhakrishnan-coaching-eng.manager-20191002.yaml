@@ -1,0 +1,25 @@
+manager: Radhesh Radhakrishnan
+teamroom: Eng.ProductCA
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Gaurav Kohli
+        date: 02.10.2019
+        unit: https://jira.devfactory.com/browse/FIRM58-13668
+        coaching: Runbook created was found to be specific to a Customer and SaaS Incident. Such runbooks are not re-usable. Change the format and content such that all Runbooks created are generic and can be used across the customers for similar incidents.
+        performance assessment: averagePerformer 
+        continue coaching: yes
+    - IC: 
+        IC name: Yilmaz Yavuz
+        date: 02.10.2019
+        unit: https://jira.devfactory.com/browse/OLIVES-13066
+        coaching: CD caused by the self-hosted client operating on an older version of the component. Maint IC was proceeding in a wrong direction with the CD. The correct recommendation was provided later by the PCA to upgrade the component to latest version. Coached PCA to ensure such checks are included as RCA triage itself to avoid slipping it downstream in the process.
+        performance assessment: averagePerformer
+        continue coaching: yes 
+    - IC: 
+        IC name: Golam Kibria
+        date: 02.10.2019
+        unit: Ticket to be created
+        coaching: Daily 8 SaaS incidents are created for Geocoding errors and bounce-delay alerts. They are auto-resolved in all cases but is an unnecessary distraction for SaaSOps. Change the priority of alerts to medium to avoid creation of unnecessary SS SaaS Incidents and to eliminate distraction.
+        performance assessment: highPerformer
+        continue coaching: yes
