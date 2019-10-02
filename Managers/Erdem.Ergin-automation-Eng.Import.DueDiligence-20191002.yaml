@@ -1,0 +1,13 @@
+manager: Erdem Ergin
+teamroom: Eng.Import.DueDiligence
+units:
+    - unit: https://jira.devfactory.com/browse/ENGDD-2702
+automation:
+    product agnostic: true
+    product specific:
+      #  - product name: Unified
+    description: >
+      Add a tab to all code analysis report to list the number of repos so customer can ensure full scope covered 
+    effort: 4
+    impact: 0.1
+
