@@ -1,9 +1,11 @@
 manager: Ertugrul Tabak
 teamroom: Eng.Feature
 units:
-  - unit: CODEFIX - cannot check - JIRA is down
+  - unit: https://jira.devfactory.com/browse/CODEFIX-3455
 automation:
   product agnostic: true
+  product specific:
+    - product name: all
   description: >
     Force the validity of "stakeholder" field of JIRA Feature Epics, if it is not correct,
     wrong person is notified and precious time is wasted.
