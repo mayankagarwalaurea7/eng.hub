@@ -1,0 +1,11 @@
+manager: Todd Benson
+teamroom: Eng.ProductCA
+units: 1
+    - https://jira.devfactory.com/browse/CODEALIKE-5417
+automation: 
+    product agnostic: true
+    product specific: 
+        - product name: Codealike, StrongTest
+    description: Currently test cases are written in JIRA as End-to-End tests, then manually copied to testrails manually.  Either automate the test case creation in testrails from JIRA or automate creation of JIRA ticket from testrails, but both should not be manually entered.  This adds no value to the business.
+    effort: 5 days
+    impact: 100% of PCAs can affected positively, saving on average 15 minutes of manual test case creation.
