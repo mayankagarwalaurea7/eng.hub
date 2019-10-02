@@ -8,7 +8,7 @@ ICs:
         unit: https://jira.devfactory.com/browse/CSRV-11087
         coaching: Review was correctly done. 
         performance assessment: highPerformer
-        continue coaching: false
+        continue coaching: true
     - IC:
         IC name: Rafael Carlos Rosa
         date: 2019-09-30
