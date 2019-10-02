@@ -1,0 +1,11 @@
+manager: !!str Pavel Gorbel
+teamroom: !!str Eng.ProductCA
+units: !!seq
+    - unit: !!str https://jira.devfactory.com/browse/GFIA-12312
+automation: !!map
+    product agnostic: !!bool true
+    product specific: !!seq
+        - product name: !!str GFIA #product names
+    description: Defects with the TC results as passed should be moved to auto-closed state within 3 days with pre-warning to stakeholders.
+    effort: !!int 1
+    impact: !!float 0.1
