@@ -1,0 +1,11 @@
+manager: Dmytro Malenko
+teamroom: Eng.Feature
+units: 
+    - unit: https://jira.devfactory.com/browse/JVMBL-8215
+automation: 
+    product agnostic: true
+    product specific: false
+        - product name: N/A
+    description: Automatically calculate ETA for Eng Problem tickets delivery by PCAs. It can be calculated based on AR, metric target, queue length and will help other teams (Eng.Feature in particular) to better plan their work to minimize blocking and increase productivity. 
+    effort: 2
+    impact: 5

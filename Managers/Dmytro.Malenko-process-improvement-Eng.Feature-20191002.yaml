@@ -1,0 +1,13 @@
+manager: Dmytro Malenko
+teamroom: Eng.Feature
+units:
+    - unit: https://jira.devfactory.com/browse/JVMBL-8215
+recommendation: 
+    eliminate waste: false
+    improve quality bar: false
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Visualize the queue of items to be processed by PCA for the external teams. This will allow Feature ICs to better plan their work if they have blockers or dependencies on results of Eng Problems.
+    effort: 2
+    impact: 5

@@ -1,0 +1,25 @@
+manager: Dmytro Malenko
+teamroom: Eng.Feature
+direct reports: 3
+ICs:
+    - IC: 
+        IC name: Diego Demarziani
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/JCLDALL-17489
+        coaching: When faced with a blocker related to environment, keep looking for alternative ways achieve what is necessary. E.g. when you need access to an instance to check logs, you can ask someone with necessary access to provide you the logs for analysis.
+        performance assessment: topPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Nikolay Payussov
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/JCLDALL-16710
+        coaching: Ensure that a new demo is recorded or an explicit comment about the video is added when a Feature Story is submitted to QE after QE rejection.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Mohamed Atef Khafaga
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/JCLDALL-17000
+        coaching: Ask for peer review from team members or PCA, if he is available to do that, to check your implementation even before you are ready to submit PR. This will allow to spot issues early in the process and minimize rework and increase quality.
+        performance assessment: averagePerformer
+        continue coaching: true        
