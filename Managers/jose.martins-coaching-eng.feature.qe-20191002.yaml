@@ -4,21 +4,21 @@ direct reports: 3
 ICs:
     - IC:
         IC name: Diego Sal Diaz
-        date: 2019-10-02
+        date: 2019/10/02
         unit: https://jira.devfactory.com/browse/ACID-25619
         coaching: The class has weak assertion. IC coached to enforce a more OOP approach to this problem with concrete examples.
         performance assessment: highPerformer
         continue coaching: true
     - IC:
         IC name: Rafael Carlos Rosa
-        date: 2019-10-02
+        date: 2019/10/02
         unit: https://jira.devfactory.com/browse/MFR-3903
         coaching: Magic number found on PR. Explained the concept of the rule, and coached for more attention to details.  
         performance assessment: highPerformer
         continue coaching: true
     - IC:
         IC name: Vasile Irimia
-        date: 2019-10-02
+        date: 2019/10/02
         unit: https://jira.devfactory.com/browse/CSRV-13554
         coaching: Review was correctly done. 
         performance assessment: highPerformer
