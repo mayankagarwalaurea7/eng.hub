@@ -4,21 +4,21 @@ direct reports: 3
 ICs:
     - IC:
         IC name: Diego Sal Diaz
-        date: 2019-09-31
+        date: 2019/09/31
         unit: https://jira.devfactory.com/browse/OCE-7397
         coaching: Do not provide uncontext feedback, without proper supporting it with examples, to avoid miscommunication. 
         performance assessment: highPerformer
         continue coaching: true
     - IC:
         IC name: Rafael Carlos Rosa
-        date: 2019-09-31
+        date: 2019/09/31
         unit: https://jira.devfactory.com/browse/DVSP-17243
         coaching: Provide more details on review comment. In this case, add time so IC can faster understand where he failed on demo video.  
         performance assessment: highPerformer
         continue coaching: true
     - IC:
         IC name: Vasile Irimia
-        date: 2019-09-31
+        date: 2019/09/31
         unit: https://jira.devfactory.com/browse/ARCH-1522
         coaching: Ensure that a valid Epic link exists on AU, so that automations depending on this, continue to work. 
         performance assessment: highPerformer
