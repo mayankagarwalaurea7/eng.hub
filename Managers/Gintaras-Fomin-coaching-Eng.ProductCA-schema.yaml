@@ -1,6 +1,6 @@
 manager: Gintaras Fomin
 teamroom: Eng.ProductCA
-direct reports: 3
+direct reports: 2
 ICs:
     - IC:
         IC name: Essam Elsayed
@@ -28,5 +28,33 @@ ICs:
         date: 2019-09-30
         unit: 
         coaching: Reminded about expectation to log 40 weekly compulsory hours and required notification to PSEM in case they could not be achieved. This is due to last week 36 logged hours without notification to PSEM. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Essam Elsayed
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/SKYVERA-4886
+        coaching: Informed IC to avoid doing transitions of Eng.Problems from "In QE review" to "Identified" as it ruins their FTAR, but rather create a new Eng.Problem. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Sergiy Kachaniuk
+        date: 2019-10-01
+        unit: https://jira.devfactory.com/browse/PROLOGICCID-10033
+        coaching: Informed IC to avoid doing transitions of Eng.Problems from "In QE review" to "Identified" as it ruins their FTAR, but rather create a new Eng.Problem.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Essam Elsayed
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/MONITOR-84878
+        coaching: Informed IC that monitoring request should be created as Monitor Request in MONITOR project and environment details should be specified. This time moved ticket to the right project and type for him to avoid waste of effort. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Sergiy Kachaniuk
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/PROLOGICCID-11767 
+        coaching: Requested to change generated arch doc title to represent the actual change done to the arch doc to easier identify and search the change. 
         performance assessment: averagePerformer
         continue coaching: true
