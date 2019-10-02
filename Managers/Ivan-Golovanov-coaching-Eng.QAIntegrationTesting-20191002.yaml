@@ -1,0 +1,81 @@
+manager: Ivan Golovanov
+teamroom: Eng.QAIntegrationTesting
+direct reports: 11
+ICs:
+    - IC: 
+        IC name: Prasanna Chowdry
+        date: 2019/10/02
+        unit: N/A
+        coaching: Use vacation tracker gsheet for vacations and day offs planning
+        performance assessment: highPerformer 
+        continue coaching: true
+    - IC: 
+        IC name: Loganayagi Madesh
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/FIRM58-14401
+        coaching: Fill in TMS gsheet for every unit produced until special notification to stop
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Mohamed Ezzat
+        date: 2019/10/02
+        unit: N/A
+        coaching: IC should immidiatly let SEM know if he is blocked in any way
+        performance assessment: lowPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Yomara Mora
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/VERD-3979
+        coaching: When switching to new project as a first thing to do is to create a request for an access rights for CI execution
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Nitesh Kumar
+        date: 2019/10/02
+        unit: n\a
+        coaching: n\a
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Poojan Trivedi
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/FIRM58-14455
+        coaching: If IC is of track because if complex tasks, the he should provide a links to exact tasks which slows him down
+        performance assessment: averagePerformer 
+        continue coaching: true
+    - IC: 
+        IC name: Radhika Sivaraj
+        date: 2019/10/02
+        unit: n\a
+        coaching: On sick leave
+        performance assessment: lowPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Tuan Tran
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/EYPP-11274
+        coaching: Let SEM know if any infrastructure changes required for a project 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Viet Thanh Nguyen
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/ACTA-51062
+        coaching: Good example of working as a team, by doing peer review for new-joiners
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Ruben Dario Salazar Romero
+        date: 2019/10/02
+        unit: N/A
+        coaching: Let SEM know if any infrastructure changes required for a project 
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Nilesh Chaudhari
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/ACTA-51062
+        coaching: IC should move E2E to IN AUTOMATION before he starts an automation. Reason - Integration Test ticket will be created in Jira
+        performance assessment: averagePerformer
+        continue coaching: true

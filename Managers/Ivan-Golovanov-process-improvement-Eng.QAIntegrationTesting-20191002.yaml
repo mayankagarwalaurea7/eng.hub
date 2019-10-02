@@ -1,0 +1,13 @@
+manager: Ivan Golovanov
+teamroom: Eng.QAIntegrationTesting
+units:
+    - unit: https://jira.devfactory.com/browse/FIRM58-14455
+recommendation:
+    eliminate waste: true 
+    improve quality bar: false
+    product agnostic: true
+    product specific: 
+        - product name: FIRM58
+    description: Add a custom filed E2E with a weight value depending from number of steps in TCs. This can be one way of measuring complexity of automation and will help to distribute backlog fair between ICs. 
+    effort: 5
+    impact: 3 
