@@ -1,0 +1,18 @@
+manager: Engin Onder #<manager name>
+teamroom: Eng.ProductCA #<teamroom name>
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Anderson Junqueira #<IC name>
+        date: 2019/09/30 #<date>
+        unit: https://jira.devfactory.com/browse/SPC-23532 #<Jira link>
+        coaching: Triaging closure should be done with clear explanation/actions in RCA section. 5 Why methodology should be followed in needed cases. Any E2E improvement done should be explained. #<free text coaching>
+        performance assessment: averagePerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false
+    - IC: 
+        IC name: Sergei Narozhnyi #<IC name>
+        date: 2019/09/30 #<date>
+        unit: https://jira.devfactory.com/browse/SPC-21224 #<Jira link>
+        coaching: Triaging closure should be done with clear explanation/actions in RCA section. 5 Why methodology should be followed in needed cases. Any E2E improvement done should be explained. #<free text coaching>
+        performance assessment: highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #true | false
