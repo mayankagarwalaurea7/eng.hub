@@ -1,0 +1,13 @@
+manager: Dmitry Sklyarov
+teamroom: Eng.YAML
+units: 
+    - unit: N/A
+
+recommendation:
+    eliminate waste: true
+    improve quality bar: false 
+    product agnostic: true
+    product specific: false
+    description: C4Model should contain links to every component with links to repos, it will facilitate YAML file creation
+    effort: 1
+    impact: 2
