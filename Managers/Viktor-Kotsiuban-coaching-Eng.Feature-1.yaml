@@ -8,28 +8,28 @@ ICs:
       unit: PG-1181
       coaching: Ticket is done with enough quality, move it forward
       performance assessment: good
-      continue coaching: false
+      continue coaching: true
   - IC:
       IC name: Rizwan Hamid
       date: 2019-09-27
       unit: PG-1096
       coaching: Issues with running Glue job. Find an expert in Glue and ask for advice.
       performance assessment: good
-      continue coaching: false
+      continue coaching: true
   - IC:
       IC name: Dmitriy Elisov
       date: 2019-09-27
       unit: CODEALIKE-4853
       coaching: Ticket is done with enough quality, move it forward
       performance assessment: good
-      continue coaching: false
+      continue coaching: true
   - IC:
       IC name: Tengiz Merabishvilli
       date: 2019-09-27
       unit: CODEALIKE-4851
       coaching: Ticket is done with enough quality, move it forward
       performance assessment: good
-      continue coaching: false
+      continue coaching: true
   - IC:
       IC name: Muhammad Farooq
       date: 2019-09-27
