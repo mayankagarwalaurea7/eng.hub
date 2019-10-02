@@ -1,0 +1,32 @@
+manager: Ines Guisado
+teamroom: Eng.QAIntegrationTesting
+direct reports: 4
+ICs:
+    - IC:
+        IC name: David Gunadi 
+        date: 10/02/2019
+        unit: https://jira.devfactory.com/browse/SPC-7608
+        coaching: Coach on how to look for existing helpers
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Jose Velasquez 
+        date: 10/02/2019
+        unit: https://jira.devfactory.com/browse/SBM-63003
+        coaching: Coach about creating an Eng Problem issue when there is a data issue in a TC
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Marcos Cesar
+        date: 10/02/2019
+        unit: N/A
+        coaching: Reminded IC to fill in the daily cic
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Rogelio 
+        date: 10/02/2019
+        unit: https://jira.devfactory.com/browse/SBM-63330
+        coaching: Coach on the importance of moving the tickets to In Progress when you start automating them
+        performance assessment: averagePerformer
+        continue coaching: true

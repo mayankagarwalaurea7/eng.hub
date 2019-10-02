@@ -1,0 +1,11 @@
+manager: Ines Guisado
+teamroom: Eng.QAIntegrationTesting
+units:
+    - unit: https://jira.devfactory.com/browse/QAP-8621
+automation:
+    product agnostic: true
+    product specific:
+        - product name: null
+    description: Git hooks to automate the creation of PRs. In implementation.
+    effort: 6
+    impact: 15.0
