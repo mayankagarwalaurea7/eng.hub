@@ -1,0 +1,13 @@
+manager: Azmathulla Khan
+teamroom: Eng.UnitTest
+units: 
+    - unit: https://jira.devfactory.com/browse/TBGTM-6069
+recommendation: 
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific: 
+        # - product name: !!str #product names 
+    description: This process improvement is recommended to be applied for every PR going forward which will save atleast 20 hours every month where it is recommended to fix the variable to be used in asset part instead of literal values for all getters and setters and To never uses NotNullValue function in assertion and it is suggested to use real value instead.  
+    effort: 5
+    impact: 15%
