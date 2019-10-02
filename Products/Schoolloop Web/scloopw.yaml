@@ -1,0 +1,2571 @@
+{
+    "id": 47137,
+    "name": "Schoolloop Web",
+    "description": "Schoolloop Web workspace.",
+    "revision": 55,
+    "lastModifiedDate": "2019-10-01T23:35:29Z",
+    "lastModifiedUser": "peter.escamilla@aurea.com",
+    "lastModifiedAgent": "structurizr-web/1624",
+    "model": {
+        "people": [
+            {
+                "id": "18",
+                "tags": "Element,Person",
+                "name": "August Angst Agent (1)",
+                "relationships": [
+                    {
+                        "id": "109",
+                        "tags": "Relationship",
+                        "sourceId": "18",
+                        "destinationId": "108",
+                        "description": "Checks the district information using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "129",
+                        "tags": "Relationship",
+                        "sourceId": "18",
+                        "destinationId": "117",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "44",
+                        "tags": "Relationship",
+                        "sourceId": "18",
+                        "destinationId": "35",
+                        "description": "Checks the district information using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "124",
+                        "tags": "Relationship",
+                        "sourceId": "18",
+                        "destinationId": "114",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "86",
+                        "tags": "Relationship",
+                        "sourceId": "18",
+                        "destinationId": "19",
+                        "description": "Checks the district information using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "119",
+                        "tags": "Relationship",
+                        "sourceId": "18",
+                        "destinationId": "118",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "17",
+                "tags": "Element,Person",
+                "name": "August Angst Agent (2)",
+                "relationships": [
+                    {
+                        "id": "85",
+                        "tags": "Relationship",
+                        "sourceId": "17",
+                        "destinationId": "19",
+                        "description": "Checks information about district and school status, can update the sites info",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "141",
+                        "tags": "Relationship",
+                        "sourceId": "17",
+                        "destinationId": "93",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "143",
+                        "tags": "Relationship",
+                        "sourceId": "17",
+                        "destinationId": "115",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "142",
+                        "tags": "Relationship",
+                        "sourceId": "17",
+                        "destinationId": "116",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "125",
+                        "tags": "Relationship",
+                        "sourceId": "17",
+                        "destinationId": "114",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "110",
+                        "tags": "Relationship",
+                        "sourceId": "17",
+                        "destinationId": "108",
+                        "description": "Checks the district information using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "130",
+                        "tags": "Relationship",
+                        "sourceId": "17",
+                        "destinationId": "117",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "43",
+                        "tags": "Relationship",
+                        "sourceId": "17",
+                        "destinationId": "35",
+                        "description": "Checks information about district and school status, can update the sites info",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "120",
+                        "tags": "Relationship",
+                        "sourceId": "17",
+                        "destinationId": "118",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "16",
+                "tags": "Element,Person",
+                "name": "August Angst Developer (3)",
+                "relationships": [
+                    {
+                        "id": "42",
+                        "tags": "Relationship",
+                        "sourceId": "16",
+                        "destinationId": "35",
+                        "description": "Makes modification to august angst applications",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "126",
+                        "tags": "Relationship",
+                        "sourceId": "16",
+                        "destinationId": "114",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "139",
+                        "tags": "Relationship",
+                        "sourceId": "16",
+                        "destinationId": "115",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "144",
+                        "tags": "Relationship",
+                        "sourceId": "16",
+                        "destinationId": "93",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "84",
+                        "tags": "Relationship",
+                        "sourceId": "16",
+                        "destinationId": "19",
+                        "description": "Makes modification to august angst applications",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "121",
+                        "tags": "Relationship",
+                        "sourceId": "16",
+                        "destinationId": "118",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "111",
+                        "tags": "Relationship",
+                        "sourceId": "16",
+                        "destinationId": "108",
+                        "description": "Checks the district information using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "140",
+                        "tags": "Relationship",
+                        "sourceId": "16",
+                        "destinationId": "116",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "131",
+                        "tags": "Relationship",
+                        "sourceId": "16",
+                        "destinationId": "117",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "15",
+                "tags": "Element,Person",
+                "name": "August Angst Developer+ (4)",
+                "relationships": [
+                    {
+                        "id": "41",
+                        "tags": "Relationship",
+                        "sourceId": "15",
+                        "destinationId": "35",
+                        "description": "Uploads information from schoolloop, makes modifications",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "83",
+                        "tags": "Relationship",
+                        "sourceId": "15",
+                        "destinationId": "19",
+                        "description": "Uploads information from schoolloop, makes modifications",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "127",
+                        "tags": "Relationship",
+                        "sourceId": "15",
+                        "destinationId": "114",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "138",
+                        "tags": "Relationship",
+                        "sourceId": "15",
+                        "destinationId": "93",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "122",
+                        "tags": "Relationship",
+                        "sourceId": "15",
+                        "destinationId": "118",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "132",
+                        "tags": "Relationship",
+                        "sourceId": "15",
+                        "destinationId": "117",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "112",
+                        "tags": "Relationship",
+                        "sourceId": "15",
+                        "destinationId": "108",
+                        "description": "Checks the district information using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "137",
+                        "tags": "Relationship",
+                        "sourceId": "15",
+                        "destinationId": "116",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "135",
+                        "tags": "Relationship",
+                        "sourceId": "15",
+                        "destinationId": "115",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "14",
+                "tags": "Element,Person",
+                "name": "August Angst God (10)",
+                "description": "User that can create reports, see reports, access schoolloop utilities platform",
+                "relationships": [
+                    {
+                        "id": "94",
+                        "tags": "Relationship",
+                        "sourceId": "14",
+                        "destinationId": "93",
+                        "description": "Edits other users, adds users, deletes users using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "123",
+                        "tags": "Relationship",
+                        "sourceId": "14",
+                        "destinationId": "118",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "82",
+                        "tags": "Relationship",
+                        "sourceId": "14",
+                        "destinationId": "19",
+                        "description": "Adds, removes, edits users using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "133",
+                        "tags": "Relationship",
+                        "sourceId": "14",
+                        "destinationId": "117",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "134",
+                        "tags": "Relationship",
+                        "sourceId": "14",
+                        "destinationId": "116",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "38",
+                        "tags": "Relationship",
+                        "sourceId": "14",
+                        "destinationId": "35",
+                        "description": "Adds, removes, edits users using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "136",
+                        "tags": "Relationship",
+                        "sourceId": "14",
+                        "destinationId": "115",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "113",
+                        "tags": "Relationship",
+                        "sourceId": "14",
+                        "destinationId": "108",
+                        "description": "Checks the district information, user can create reports, see reports, access schoolloop utilities platform using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "128",
+                        "tags": "Relationship",
+                        "sourceId": "14",
+                        "destinationId": "114",
+                        "description": "uses",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "2",
+                "tags": "Element,Person",
+                "name": "District Admin",
+                "description": "Rights of this role include user account management for all users at all sites in the district. District admins with webmaster rights for the district site will have webmaster rights at all school sites.",
+                "relationships": [
+                    {
+                        "id": "55",
+                        "tags": "Relationship",
+                        "sourceId": "2",
+                        "destinationId": "19",
+                        "description": "Auto login into any district account, updates district information, manages feature settings using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "90",
+                        "tags": "Relationship",
+                        "sourceId": "2",
+                        "destinationId": "25",
+                        "description": "Auto login into any district account, updates district information, manages feature settings using",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "4",
+                "tags": "Element,Person",
+                "name": "District Associate",
+                "description": "This account type was designed as way to bring non-district employees such as the PTSA president into the Loop. This role has limited rights to Groups",
+                "relationships": [
+                    {
+                        "id": "89",
+                        "tags": "Relationship",
+                        "sourceId": "4",
+                        "destinationId": "25",
+                        "description": "Accesses dashboard, manages personal locker, manages personal calendar, manages personal groups, manages news, manages personal website",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "88",
+                        "tags": "Relationship",
+                        "sourceId": "4",
+                        "destinationId": "19",
+                        "description": "Accesses dashboard, manages personal locker, manages personal calendar, manages personal groups, manages news, manages personal website",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "3",
+                "tags": "Element,Person",
+                "name": "District Staff",
+                "description": "All district employees who do not receive an admin account should be registered with this role.",
+                "relationships": [
+                    {
+                        "id": "92",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "25",
+                        "description": "Accesses dashboard, manages personal locker, manages personal calendar, manages personal groups, manages news, manages personal website",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "91",
+                        "tags": "Relationship",
+                        "sourceId": "3",
+                        "destinationId": "19",
+                        "description": "Accesses dashboard, manages personal locker, manages personal calendar, manages personal groups, manages news, manages personal website",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "13",
+                "tags": "Element,Person",
+                "name": "Parent",
+                "description": "Parents and other adults also self register, but these account are subject to administrative approval as well as a challenge system designed to identify and deny parent accounts to unauthorized individuals. An optional, more restrictive, setting requires approval for both parents and students before they are allowed to log in.",
+                "relationships": [
+                    {
+                        "id": "53",
+                        "tags": "Relationship",
+                        "sourceId": "13",
+                        "destinationId": "19",
+                        "description": "Sees student grades using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "87",
+                        "tags": "Relationship",
+                        "sourceId": "13",
+                        "destinationId": "25",
+                        "description": "Sees student grades using",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "11",
+                "tags": "Element,Person",
+                "name": "School Afterschool Professional",
+                "description": "This account type was designed for those not employed by the school, but who are charged with helping students to succeed and need access to the student's calendar of assignments. Examples might include professional tutors, social workers and community center staff. The rights of this role allow an individual to view the assigned work for the specific students, but in no case are they allowed to view grades (except in the case of Advanced Afterschool Professionals that have rights to view their students' grades). This account also has access to LoopMail, Groups, and the Education Team of the student. A registered and approved parent of the student must approve the Afterschool Professional before they can view that student's assignments. If there are no registered parents, then an administrator may approve the account.",
+                "relationships": [
+                    {
+                        "id": "71",
+                        "tags": "Relationship",
+                        "sourceId": "11",
+                        "destinationId": "19",
+                        "description": "Accesses system, accesses loopmain, adds students to his dashboard, joins and creates groups, accesses classrooms and websites for his students using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "70",
+                        "tags": "Relationship",
+                        "sourceId": "11",
+                        "destinationId": "25",
+                        "description": "Accesses system, accesses loopmain, adds students to his dashboard, joins and creates groups, accesses classrooms and websites for his students using",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "10",
+                "tags": "Element,Person",
+                "name": "School Associate",
+                "description": "This account type was designed as way to bring non-school employees such as the PTSA president or off campus coaches into the Loop. This role has limited rights to Groups and, in Plus, no rights to view student information.",
+                "relationships": [
+                    {
+                        "id": "68",
+                        "tags": "Relationship",
+                        "sourceId": "10",
+                        "destinationId": "25",
+                        "description": "Manages personal loopmail, personal locker, personal calendar, personal website, manages his groups, creates and sees news, manages personal discussions, accesses any school classroom general information like calendar, news, locker, curriculum that is accesible to him",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "67",
+                        "tags": "Relationship",
+                        "sourceId": "10",
+                        "destinationId": "19",
+                        "description": "Manages personal loopmail, personal locker, personal calendar, personal website, manages his groups, creates and sees news, manages personal discussions, accesses any school classroom general information like calendar, news, locker, curriculum that is accesible to him",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "7",
+                "tags": "Element,Person",
+                "name": "School Associate Principal",
+                "description": "These accounts include user account management rights (the ability to access and edit all account types) and should be reserved for school administrators. Principals and APs can Auto Login to teacher accounts and view (but not edit) teacher gradebooks. These roles also have access to all student records. Other than the account title, there is no difference between this role and Principals.",
+                "relationships": [
+                    {
+                        "id": "51",
+                        "tags": "Relationship",
+                        "sourceId": "7",
+                        "destinationId": "19",
+                        "description": "Auto login into other school accounts, create and sees news, adds and views events using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "72",
+                        "tags": "Relationship",
+                        "sourceId": "7",
+                        "destinationId": "25",
+                        "description": "Auto login into other school accounts, create and sees news, adds and views events using",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "6",
+                "tags": "Element,Person",
+                "name": "School Principal",
+                "description": "These accounts include user account management rights (the ability to access and edit all account types) and should be reserved for school administrators. Principals and APs can Auto Login to teacher accounts and view (but not edit) teacher gradebooks. These roles also have access to all student records. Other than the account title, there is no difference between this role and Associate Principals",
+                "relationships": [
+                    {
+                        "id": "50",
+                        "tags": "Relationship",
+                        "sourceId": "6",
+                        "destinationId": "19",
+                        "description": "Auto login into other school accounts, create and sees news, adds and views events using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "73",
+                        "tags": "Relationship",
+                        "sourceId": "6",
+                        "destinationId": "25",
+                        "description": "Auto login into other school accounts, create and sees news, adds and views events using",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "9",
+                "tags": "Element,Person",
+                "name": "School Staff",
+                "description": "School employees who do not fit into one of the above roles should be given a Staff account. Administrative secretaries, counselors, school psychologists and the registrar are examples of those typically assigned a Staff account.",
+                "relationships": [
+                    {
+                        "id": "59",
+                        "tags": "Relationship",
+                        "sourceId": "9",
+                        "destinationId": "27",
+                        "description": "Requests site content",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "66",
+                        "tags": "Relationship",
+                        "sourceId": "9",
+                        "destinationId": "19",
+                        "description": "Requests site content",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "12",
+                "tags": "Element,Person",
+                "name": "School Student",
+                "description": "Students with an active schedule of classes can self register for an account.",
+                "relationships": [
+                    {
+                        "id": "74",
+                        "tags": "Relationship",
+                        "sourceId": "12",
+                        "destinationId": "25",
+                        "description": "Sees his personal grades, uploads documents to assignments, checks the news, approves parents using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "49",
+                        "tags": "Relationship",
+                        "sourceId": "12",
+                        "destinationId": "19",
+                        "description": "Sees his personal grades, uploads documents to assignments, checks the news, approves parents using",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "8",
+                "tags": "Element,Person",
+                "name": "School System Admin",
+                "description": "This role is for those who require the same account management rights as the Principal and AP roles. Site techs and other users who are charged with support and training are typically assigned System Admin accounts. Mentor teachers who take on a support role may have a System Admin account as a second account.",
+                "relationships": [
+                    {
+                        "id": "48",
+                        "tags": "Relationship",
+                        "sourceId": "8",
+                        "destinationId": "19",
+                        "description": "Autologin to other school users, edits news, groups using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "75",
+                        "tags": "Relationship",
+                        "sourceId": "8",
+                        "destinationId": "25",
+                        "description": "Autologin to other school users, edits news, groups using",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "5",
+                "tags": "Element,Person",
+                "name": "School Teacher",
+                "description": "The publishing rights for this account type include the ability to assign work to a calendar.",
+                "relationships": [
+                    {
+                        "id": "46",
+                        "tags": "Relationship",
+                        "sourceId": "5",
+                        "destinationId": "19",
+                        "description": "Updates assignments, news, creates user sites using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "76",
+                        "tags": "Relationship",
+                        "sourceId": "5",
+                        "destinationId": "25",
+                        "description": "Updates assignments, news, creates user sites using",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            },
+            {
+                "id": "1",
+                "tags": "Element,Person",
+                "name": "Top Level Admin",
+                "description": "User with the highest privileges, can auto login into any district or school account, and can modify district and school features, it’s an account reserved for schoolloop staff",
+                "relationships": [
+                    {
+                        "id": "23",
+                        "tags": "Relationship",
+                        "sourceId": "1",
+                        "destinationId": "19",
+                        "description": "Auto Login to other users, edits district features using",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified"
+            }
+        ],
+        "softwareSystems": [
+            {
+                "id": "151",
+                "tags": "Element,Software System",
+                "name": "Cloudfare",
+                "description": "Cloudflare protects against DDoS attacks, serves as an SSL termination point and creates on-the-fly SSL certificates",
+                "relationships": [
+                    {
+                        "id": "157",
+                        "tags": "Relationship",
+                        "sourceId": "151",
+                        "destinationId": "19",
+                        "description": "protects against DDoS attacks, serves as an SSL termination point and creates on-the-fly SSL certificates",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "152",
+                        "tags": "Element,Container",
+                        "name": "Cloudflare",
+                        "description": "Cloudflare protects against DDoS attacks, serves as an SSL termination point and creates on-the-fly SSL certificates",
+                        "relationships": [
+                            {
+                                "id": "158",
+                                "tags": "Relationship",
+                                "sourceId": "152",
+                                "destinationId": "25",
+                                "description": "protects against DDoS attacks, serves as an SSL termination point and creates on-the-fly SSL certificates",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "SaaS"
+                    }
+                ]
+            },
+            {
+                "id": "60",
+                "tags": "Element,Software System",
+                "name": "Google Classroom",
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "95",
+                        "tags": "Element,Container",
+                        "name": "Google Classroom",
+                        "technology": "SaaS"
+                    }
+                ]
+            },
+            {
+                "id": "61",
+                "tags": "Element,Software System",
+                "name": "Google Drive",
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "96",
+                        "tags": "Element,Container",
+                        "name": "Google Drive",
+                        "technology": "SaaS"
+                    }
+                ]
+            },
+            {
+                "id": "37",
+                "tags": "Element,Software System",
+                "name": "LDAP District Server",
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "97",
+                        "tags": "Element,Container",
+                        "name": "LDAP District Server",
+                        "technology": "LDAP"
+                    }
+                ]
+            },
+            {
+                "id": "153",
+                "tags": "Element,Software System",
+                "name": "Nagios",
+                "description": "provides hardware, network, server monitoring, and alerting",
+                "relationships": [
+                    {
+                        "id": "156",
+                        "tags": "Relationship",
+                        "sourceId": "153",
+                        "destinationId": "19",
+                        "description": "provides hardware, network, server monitoring, and alerting",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "154",
+                        "tags": "Element,Container",
+                        "name": "Nagios",
+                        "description": "provides hardware, network, server monitoring, and alerting",
+                        "relationships": [
+                            {
+                                "id": "155",
+                                "tags": "Relationship",
+                                "sourceId": "154",
+                                "destinationId": "25",
+                                "description": "provides hardware, network, server monitoring, and alerting",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "SaaS"
+                    }
+                ]
+            },
+            {
+                "id": "20",
+                "tags": "Element,Software System",
+                "name": "SchoolLoop Mobile",
+                "relationships": [
+                    {
+                        "id": "47",
+                        "tags": "Relationship",
+                        "sourceId": "20",
+                        "destinationId": "19",
+                        "description": "Sends loopmail, checks assignments, grades using",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "99",
+                        "tags": "Element,Container",
+                        "name": "SchoolLoop Mobile",
+                        "description": "Client application used by customers in IOS or Android",
+                        "relationships": [
+                            {
+                                "id": "105",
+                                "tags": "Relationship",
+                                "sourceId": "99",
+                                "destinationId": "25",
+                                "description": "Sends loopmail, checks assignments, grades using",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Mobile App"
+                    }
+                ]
+            },
+            {
+                "id": "19",
+                "tags": "Element,Software System",
+                "name": "SchoolLoop Web",
+                "relationships": [
+                    {
+                        "id": "40",
+                        "tags": "Relationship",
+                        "sourceId": "19",
+                        "destinationId": "37",
+                        "description": "Checks if AD credentials are valid using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "79",
+                        "tags": "Relationship",
+                        "sourceId": "19",
+                        "destinationId": "60",
+                        "description": "Imports and exports grades using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "32",
+                        "tags": "Relationship",
+                        "sourceId": "19",
+                        "destinationId": "31",
+                        "description": "Sends external email using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "69",
+                        "tags": "Relationship",
+                        "sourceId": "19",
+                        "destinationId": "61",
+                        "description": "Adds google drive documents to assignments using",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "149",
+                        "tags": "Relationship",
+                        "sourceId": "19",
+                        "destinationId": "147",
+                        "description": "Requests media content to",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "22",
+                        "tags": "Relationship",
+                        "sourceId": "19",
+                        "destinationId": "21",
+                        "description": "Sends SMS messages using",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "35",
+                        "tags": "Element,Container",
+                        "name": "August Angst",
+                        "description": "Utility app for keeping information about rolling districts and schools process",
+                        "relationships": [
+                            {
+                                "id": "39",
+                                "tags": "Relationship",
+                                "sourceId": "35",
+                                "destinationId": "25",
+                                "description": "Provides in app help links texts",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "PHP",
+                        "components": [
+                            {
+                                "id": "108",
+                                "tags": "Element,Component",
+                                "name": "aa",
+                                "technology": "PHP",
+                                "size": 0
+                            },
+                            {
+                                "id": "114",
+                                "tags": "Element,Component",
+                                "name": "forms",
+                                "technology": "PHP",
+                                "size": 0
+                            },
+                            {
+                                "id": "115",
+                                "tags": "Element,Component",
+                                "name": "inapp",
+                                "technology": "PHP",
+                                "size": 0
+                            },
+                            {
+                                "id": "116",
+                                "tags": "Element,Component",
+                                "name": "juju",
+                                "technology": "PHP",
+                                "size": 0
+                            },
+                            {
+                                "id": "93",
+                                "tags": "Element,Component",
+                                "name": "Lamp",
+                                "technology": "PHP",
+                                "size": 0
+                            },
+                            {
+                                "id": "117",
+                                "tags": "Element,Component",
+                                "name": "sloopify",
+                                "technology": "PHP",
+                                "size": 0
+                            },
+                            {
+                                "id": "118",
+                                "tags": "Element,Component",
+                                "name": "web",
+                                "technology": "PHP",
+                                "size": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": "159",
+                        "tags": "Element,Container,Database",
+                        "name": "August Angst Database",
+                        "description": "Database containing the information for august angst utility",
+                        "relationships": [
+                            {
+                                "id": "161",
+                                "tags": "Relationship",
+                                "sourceId": "159",
+                                "destinationId": "35",
+                                "description": "Provides data information to",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "postgresql"
+                    },
+                    {
+                        "id": "26",
+                        "tags": "Element,Container",
+                        "name": "Core",
+                        "description": "Base service that is in charge of handling the core part of schoolloop web",
+                        "technology": "Java"
+                    },
+                    {
+                        "id": "27",
+                        "tags": "Element,Container",
+                        "name": "dns",
+                        "description": "service in charge of forwarding the petition to the different schoolloop web portals",
+                        "relationships": [
+                            {
+                                "id": "56",
+                                "tags": "Relationship",
+                                "sourceId": "27",
+                                "destinationId": "25",
+                                "description": "Provides content requested using",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Java"
+                    },
+                    {
+                        "id": "28",
+                        "tags": "Element,Container",
+                        "name": "email",
+                        "description": "service in charge or receiving the email petitions and forward them externally",
+                        "relationships": [
+                            {
+                                "id": "102",
+                                "tags": "Relationship",
+                                "sourceId": "28",
+                                "destinationId": "100",
+                                "description": "Sends external email using",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "java"
+                    },
+                    {
+                        "id": "29",
+                        "tags": "Element,Container",
+                        "name": "hit",
+                        "description": "service in charge of receiving all the registry petitions from other services about any action by the users",
+                        "technology": "java"
+                    },
+                    {
+                        "id": "25",
+                        "tags": "Element,Container",
+                        "name": "Portal",
+                        "description": "Service that manages the web interface of schoolloop web",
+                        "relationships": [
+                            {
+                                "id": "52",
+                                "tags": "Relationship",
+                                "sourceId": "25",
+                                "destinationId": "28",
+                                "description": "Sends email information to be sent to external emails using",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "33",
+                                "tags": "Relationship",
+                                "sourceId": "25",
+                                "destinationId": "29",
+                                "description": "Register usage on database using",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "104",
+                                "tags": "Relationship",
+                                "sourceId": "25",
+                                "destinationId": "97",
+                                "description": "Checks if AD credentials are valid using",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "106",
+                                "tags": "Relationship",
+                                "sourceId": "25",
+                                "destinationId": "96",
+                                "description": "Adds google drive documents to assignments using",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "107",
+                                "tags": "Relationship",
+                                "sourceId": "25",
+                                "destinationId": "98",
+                                "description": "Sends SMS messages using",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "34",
+                                "tags": "Relationship",
+                                "sourceId": "25",
+                                "destinationId": "30",
+                                "description": "Gets internacionalized texts using",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "54",
+                                "tags": "Relationship",
+                                "sourceId": "25",
+                                "destinationId": "26",
+                                "description": "Updates news, assignments, sites using",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "150",
+                                "tags": "Relationship",
+                                "sourceId": "25",
+                                "destinationId": "148",
+                                "description": "Requests media content to",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "103",
+                                "tags": "Relationship",
+                                "sourceId": "25",
+                                "destinationId": "95",
+                                "description": "Imports and exports grades using",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "java"
+                    },
+                    {
+                        "id": "160",
+                        "tags": "Element,Container,Database",
+                        "name": "Postgresql database",
+                        "description": "Database that has all the information about portals, core, hits, schoolloop web in general",
+                        "relationships": [
+                            {
+                                "id": "162",
+                                "tags": "Relationship",
+                                "sourceId": "160",
+                                "destinationId": "25",
+                                "description": "Provides data information to",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "postgresql"
+                    },
+                    {
+                        "id": "36",
+                        "tags": "Element,Container",
+                        "name": "Sloopy",
+                        "description": "On premise service to import data from SIS to Schoolloop",
+                        "relationships": [
+                            {
+                                "id": "45",
+                                "tags": "Relationship",
+                                "sourceId": "36",
+                                "destinationId": "19",
+                                "description": "Imports data from the SIS using",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "77",
+                                "tags": "Relationship",
+                                "sourceId": "36",
+                                "destinationId": "25",
+                                "description": "Imports data from the SIS using",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "Java"
+                    },
+                    {
+                        "id": "30",
+                        "tags": "Element,Container",
+                        "name": "strings",
+                        "description": "Service in charge of providing internacionalized labels",
+                        "technology": "Java"
+                    }
+                ]
+            },
+            {
+                "id": "31",
+                "tags": "Element,Software System",
+                "name": "Strongmail",
+                "relationships": [
+                    {
+                        "id": "146",
+                        "tags": "Relationship",
+                        "sourceId": "31",
+                        "destinationId": "1",
+                        "description": "Sends two factor authentication code to",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "100",
+                        "tags": "Element,Container",
+                        "name": "Strongmail",
+                        "description": "External service used for sending emails massively",
+                        "relationships": [
+                            {
+                                "id": "145",
+                                "tags": "Relationship",
+                                "sourceId": "100",
+                                "destinationId": "1",
+                                "description": "Sends two factor authentication code to",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "SaaS"
+                    }
+                ]
+            },
+            {
+                "id": "21",
+                "tags": "Element,Software System",
+                "name": "Twilio",
+                "relationships": [
+                    {
+                        "id": "57",
+                        "tags": "Relationship",
+                        "sourceId": "21",
+                        "destinationId": "1",
+                        "description": "Sends two factor authentication code to",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "98",
+                        "tags": "Element,Container",
+                        "name": "Twilio",
+                        "description": "External service used for sending emails massively",
+                        "relationships": [
+                            {
+                                "id": "101",
+                                "tags": "Relationship",
+                                "sourceId": "98",
+                                "destinationId": "1",
+                                "description": "Sends two factor authentication code to",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "SaaS"
+                    }
+                ]
+            },
+            {
+                "id": "147",
+                "tags": "Element,Software System",
+                "name": "Verizon-Edgecast CDN",
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "148",
+                        "tags": "Element,Container",
+                        "name": "Verizon-Edgecast CDN",
+                        "description": "External CDN service",
+                        "technology": "SaaS"
+                    }
+                ]
+            }
+        ],
+        "deploymentNodes": []
+    },
+    "documentation": {
+        "sections": [],
+        "decisions": [],
+        "images": []
+    },
+    "views": {
+        "systemContextViews": [
+            {
+                "softwareSystemId": "19",
+                "key": "context",
+                "paperSize": "A2_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "15",
+                            "37",
+                            "16",
+                            "17",
+                            "18",
+                            "19",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "20",
+                            "31",
+                            "10",
+                            "21"
+                        ],
+                        "relationships": [
+                            "22",
+                            "66",
+                            "88",
+                            "23",
+                            "67",
+                            "46",
+                            "47",
+                            "48",
+                            "49",
+                            "91",
+                            "71",
+                            "50",
+                            "51",
+                            "53",
+                            "32",
+                            "55",
+                            "57",
+                            "146",
+                            "82",
+                            "83",
+                            "40",
+                            "84",
+                            "85",
+                            "86"
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "60",
+                            "61"
+                        ],
+                        "relationships": [
+                            "79",
+                            "69"
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "elements": [
+                            "147",
+                            "151",
+                            "153"
+                        ],
+                        "relationships": [
+                            "156",
+                            "157",
+                            "149"
+                        ]
+                    }
+                ],
+                "enterpriseBoundaryVisible": true,
+                "elements": [
+                    {
+                        "id": "151",
+                        "x": 3385,
+                        "y": 150
+                    },
+                    {
+                        "id": "153",
+                        "x": 4155,
+                        "y": 105
+                    },
+                    {
+                        "id": "31",
+                        "x": 4870,
+                        "y": 2955
+                    },
+                    {
+                        "id": "10",
+                        "x": 1085,
+                        "y": 50
+                    },
+                    {
+                        "id": "11",
+                        "x": 950,
+                        "y": 3190
+                    },
+                    {
+                        "id": "12",
+                        "x": 2750,
+                        "y": 25
+                    },
+                    {
+                        "id": "13",
+                        "x": 2030,
+                        "y": 25
+                    },
+                    {
+                        "id": "14",
+                        "x": 2650,
+                        "y": 4120
+                    },
+                    {
+                        "id": "15",
+                        "x": 760,
+                        "y": 1555
+                    },
+                    {
+                        "id": "37",
+                        "x": 5380,
+                        "y": 790
+                    },
+                    {
+                        "id": "16",
+                        "x": 275,
+                        "y": 2080
+                    },
+                    {
+                        "id": "17",
+                        "x": 1755,
+                        "y": 4000
+                    },
+                    {
+                        "id": "18",
+                        "x": 825,
+                        "y": 4365
+                    },
+                    {
+                        "id": "19",
+                        "x": 3355,
+                        "y": 1745
+                    },
+                    {
+                        "id": "1",
+                        "x": 5070,
+                        "y": 4370
+                    },
+                    {
+                        "id": "2",
+                        "x": 3145,
+                        "y": 4530
+                    },
+                    {
+                        "id": "3",
+                        "x": 4485,
+                        "y": 4405
+                    },
+                    {
+                        "id": "4",
+                        "x": 3865,
+                        "y": 4450
+                    },
+                    {
+                        "id": "147",
+                        "x": 4725,
+                        "y": 95
+                    },
+                    {
+                        "id": "5",
+                        "x": 820,
+                        "y": 2450
+                    },
+                    {
+                        "id": "6",
+                        "x": 225,
+                        "y": 3085
+                    },
+                    {
+                        "id": "7",
+                        "x": 195,
+                        "y": 420
+                    },
+                    {
+                        "id": "8",
+                        "x": 1985,
+                        "y": 4470
+                    },
+                    {
+                        "id": "9",
+                        "x": 245,
+                        "y": 1010
+                    },
+                    {
+                        "id": "60",
+                        "x": 5435,
+                        "y": 1285
+                    },
+                    {
+                        "id": "61",
+                        "x": 5420,
+                        "y": 1755
+                    },
+                    {
+                        "id": "20",
+                        "x": 5295,
+                        "y": 305
+                    },
+                    {
+                        "id": "21",
+                        "x": 5525,
+                        "y": 2450
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "91"
+                    },
+                    {
+                        "id": "50"
+                    },
+                    {
+                        "id": "71"
+                    },
+                    {
+                        "id": "51"
+                    },
+                    {
+                        "id": "53"
+                    },
+                    {
+                        "id": "32"
+                    },
+                    {
+                        "id": "23"
+                    },
+                    {
+                        "id": "22"
+                    },
+                    {
+                        "id": "67"
+                    },
+                    {
+                        "id": "157"
+                    },
+                    {
+                        "id": "66"
+                    },
+                    {
+                        "id": "156"
+                    },
+                    {
+                        "id": "46"
+                    },
+                    {
+                        "id": "69"
+                    },
+                    {
+                        "id": "88"
+                    },
+                    {
+                        "id": "47"
+                    },
+                    {
+                        "id": "48"
+                    },
+                    {
+                        "id": "49"
+                    },
+                    {
+                        "id": "82"
+                    },
+                    {
+                        "id": "83"
+                    },
+                    {
+                        "id": "40"
+                    },
+                    {
+                        "id": "86"
+                    },
+                    {
+                        "id": "84"
+                    },
+                    {
+                        "id": "85"
+                    },
+                    {
+                        "id": "55"
+                    },
+                    {
+                        "id": "146"
+                    },
+                    {
+                        "id": "57"
+                    },
+                    {
+                        "id": "79"
+                    },
+                    {
+                        "id": "149"
+                    }
+                ]
+            }
+        ],
+        "containerViews": [
+            {
+                "softwareSystemId": "19",
+                "key": "container",
+                "paperSize": "A2_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "25",
+                            "26",
+                            "27",
+                            "28",
+                            "29",
+                            "30",
+                            "10",
+                            "11",
+                            "12",
+                            "35",
+                            "13",
+                            "14",
+                            "36",
+                            "15",
+                            "16",
+                            "17",
+                            "18",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9"
+                        ],
+                        "relationships": [
+                            "44",
+                            "89",
+                            "68",
+                            "90",
+                            "70",
+                            "92",
+                            "72",
+                            "73",
+                            "52",
+                            "74",
+                            "75",
+                            "54",
+                            "76",
+                            "33",
+                            "77",
+                            "34",
+                            "56",
+                            "59",
+                            "38",
+                            "39",
+                            "41",
+                            "42",
+                            "43",
+                            "87"
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "99",
+                            "154",
+                            "100",
+                            "148",
+                            "95",
+                            "96",
+                            "97",
+                            "152",
+                            "98"
+                        ],
+                        "relationships": [
+                            "155",
+                            "101",
+                            "145",
+                            "102",
+                            "103",
+                            "158",
+                            "104",
+                            "105",
+                            "106",
+                            "107",
+                            "150"
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "elements": [
+                            "159",
+                            "160"
+                        ],
+                        "relationships": []
+                    }
+                ],
+                "elements": [
+                    {
+                        "id": "25",
+                        "x": 1610,
+                        "y": 1440
+                    },
+                    {
+                        "id": "26",
+                        "x": 3025,
+                        "y": 590
+                    },
+                    {
+                        "id": "27",
+                        "x": 3380,
+                        "y": 2405
+                    },
+                    {
+                        "id": "28",
+                        "x": 3380,
+                        "y": 2030
+                    },
+                    {
+                        "id": "29",
+                        "x": 2635,
+                        "y": 2255
+                    },
+                    {
+                        "id": "152",
+                        "x": 4355,
+                        "y": 1220
+                    },
+                    {
+                        "id": "154",
+                        "x": 4355,
+                        "y": 1680
+                    },
+                    {
+                        "id": "159",
+                        "x": 2105,
+                        "y": 2755
+                    },
+                    {
+                        "id": "95",
+                        "x": 2730,
+                        "y": 170
+                    },
+                    {
+                        "id": "96",
+                        "x": 4355,
+                        "y": 405
+                    },
+                    {
+                        "id": "30",
+                        "x": 1465,
+                        "y": 605
+                    },
+                    {
+                        "id": "97",
+                        "x": 3290,
+                        "y": 165
+                    },
+                    {
+                        "id": "10",
+                        "x": 760,
+                        "y": 2815
+                    },
+                    {
+                        "id": "98",
+                        "x": 4355,
+                        "y": 2035
+                    },
+                    {
+                        "id": "11",
+                        "x": 760,
+                        "y": 1795
+                    },
+                    {
+                        "id": "99",
+                        "x": 4355,
+                        "y": 65
+                    },
+                    {
+                        "id": "12",
+                        "x": 115,
+                        "y": 655
+                    },
+                    {
+                        "id": "13",
+                        "x": 115,
+                        "y": 90
+                    },
+                    {
+                        "id": "35",
+                        "x": 1560,
+                        "y": 2240
+                    },
+                    {
+                        "id": "14",
+                        "x": 2600,
+                        "y": 4330
+                    },
+                    {
+                        "id": "36",
+                        "x": 2045,
+                        "y": 565
+                    },
+                    {
+                        "id": "15",
+                        "x": 1390,
+                        "y": 4330
+                    },
+                    {
+                        "id": "16",
+                        "x": 150,
+                        "y": 4330
+                    },
+                    {
+                        "id": "17",
+                        "x": 1955,
+                        "y": 3615
+                    },
+                    {
+                        "id": "18",
+                        "x": 745,
+                        "y": 4330
+                    },
+                    {
+                        "id": "160",
+                        "x": 3380,
+                        "y": 1175
+                    },
+                    {
+                        "id": "1",
+                        "x": 4760,
+                        "y": 3460
+                    },
+                    {
+                        "id": "100",
+                        "x": 4015,
+                        "y": 2465
+                    },
+                    {
+                        "id": "2",
+                        "x": 3945,
+                        "y": 4330
+                    },
+                    {
+                        "id": "3",
+                        "x": 3425,
+                        "y": 4330
+                    },
+                    {
+                        "id": "4",
+                        "x": 4495,
+                        "y": 4330
+                    },
+                    {
+                        "id": "5",
+                        "x": 760,
+                        "y": 1195
+                    },
+                    {
+                        "id": "148",
+                        "x": 4355,
+                        "y": 755
+                    },
+                    {
+                        "id": "6",
+                        "x": 115,
+                        "y": 1515
+                    },
+                    {
+                        "id": "7",
+                        "x": 780,
+                        "y": 90
+                    },
+                    {
+                        "id": "8",
+                        "x": 115,
+                        "y": 2960
+                    },
+                    {
+                        "id": "9",
+                        "x": 4200,
+                        "y": 3460
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "70"
+                    },
+                    {
+                        "id": "72"
+                    },
+                    {
+                        "id": "92"
+                    },
+                    {
+                        "id": "74",
+                        "vertices": [
+                            {
+                                "x": 2065,
+                                "y": 1425
+                            }
+                        ]
+                    },
+                    {
+                        "id": "52"
+                    },
+                    {
+                        "id": "73"
+                    },
+                    {
+                        "id": "76",
+                        "vertices": [
+                            {
+                                "x": 1330,
+                                "y": 1320
+                            },
+                            {
+                                "x": 1120,
+                                "y": 1325
+                            }
+                        ]
+                    },
+                    {
+                        "id": "54"
+                    },
+                    {
+                        "id": "75"
+                    },
+                    {
+                        "id": "150"
+                    },
+                    {
+                        "id": "90"
+                    },
+                    {
+                        "id": "44"
+                    },
+                    {
+                        "id": "155"
+                    },
+                    {
+                        "id": "68"
+                    },
+                    {
+                        "id": "89"
+                    },
+                    {
+                        "id": "158"
+                    },
+                    {
+                        "id": "41"
+                    },
+                    {
+                        "id": "87"
+                    },
+                    {
+                        "id": "42",
+                        "vertices": [
+                            {
+                                "x": 1460,
+                                "y": 3180
+                            }
+                        ]
+                    },
+                    {
+                        "id": "162"
+                    },
+                    {
+                        "id": "43"
+                    },
+                    {
+                        "id": "161"
+                    },
+                    {
+                        "id": "107"
+                    },
+                    {
+                        "id": "34"
+                    },
+                    {
+                        "id": "33"
+                    },
+                    {
+                        "id": "145"
+                    },
+                    {
+                        "id": "56"
+                    },
+                    {
+                        "id": "77"
+                    },
+                    {
+                        "id": "102"
+                    },
+                    {
+                        "id": "101"
+                    },
+                    {
+                        "id": "59"
+                    },
+                    {
+                        "id": "104"
+                    },
+                    {
+                        "id": "38"
+                    },
+                    {
+                        "id": "103"
+                    },
+                    {
+                        "id": "39"
+                    },
+                    {
+                        "id": "106"
+                    },
+                    {
+                        "id": "105"
+                    }
+                ]
+            }
+        ],
+        "componentViews": [
+            {
+                "softwareSystemId": "19",
+                "key": "generalcomponent",
+                "paperSize": "A2_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "25",
+                            "26",
+                            "27",
+                            "28",
+                            "29",
+                            "93",
+                            "30",
+                            "10",
+                            "11",
+                            "12",
+                            "13",
+                            "14",
+                            "36",
+                            "15",
+                            "16",
+                            "17",
+                            "18",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9"
+                        ],
+                        "relationships": [
+                            "33",
+                            "77",
+                            "34",
+                            "56",
+                            "89",
+                            "68",
+                            "59",
+                            "141",
+                            "144",
+                            "138",
+                            "90",
+                            "70",
+                            "92",
+                            "72",
+                            "94",
+                            "73",
+                            "52",
+                            "74",
+                            "75",
+                            "54",
+                            "76",
+                            "87"
+                        ]
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "114",
+                            "115",
+                            "116",
+                            "117",
+                            "118",
+                            "108"
+                        ],
+                        "relationships": [
+                            "130",
+                            "131",
+                            "110",
+                            "132",
+                            "111",
+                            "133",
+                            "112",
+                            "134",
+                            "113",
+                            "135",
+                            "136",
+                            "137",
+                            "139",
+                            "119",
+                            "140",
+                            "120",
+                            "142",
+                            "121",
+                            "143",
+                            "122",
+                            "123",
+                            "124",
+                            "125",
+                            "126",
+                            "127",
+                            "128",
+                            "129",
+                            "109"
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "elements": [
+                            "99",
+                            "154",
+                            "100",
+                            "148",
+                            "95",
+                            "96",
+                            "97",
+                            "152",
+                            "98"
+                        ],
+                        "relationships": [
+                            "155",
+                            "101",
+                            "145",
+                            "102",
+                            "103",
+                            "158",
+                            "104",
+                            "105",
+                            "106",
+                            "107",
+                            "150"
+                        ]
+                    }
+                ],
+                "containerId": "35",
+                "elements": [
+                    {
+                        "id": "25",
+                        "x": 1285,
+                        "y": 595
+                    },
+                    {
+                        "id": "26",
+                        "x": 850,
+                        "y": 60
+                    },
+                    {
+                        "id": "27",
+                        "x": 690,
+                        "y": 2955
+                    },
+                    {
+                        "id": "28",
+                        "x": 3380,
+                        "y": 195
+                    },
+                    {
+                        "id": "29",
+                        "x": 2040,
+                        "y": 20
+                    },
+                    {
+                        "id": "152",
+                        "x": 4035,
+                        "y": 1005
+                    },
+                    {
+                        "id": "154",
+                        "x": 2915,
+                        "y": 2320
+                    },
+                    {
+                        "id": "114",
+                        "x": 4375,
+                        "y": 2815
+                    },
+                    {
+                        "id": "115",
+                        "x": 4985,
+                        "y": 2845
+                    },
+                    {
+                        "id": "116",
+                        "x": 5620,
+                        "y": 2330
+                    },
+                    {
+                        "id": "117",
+                        "x": 4650,
+                        "y": 3235
+                    },
+                    {
+                        "id": "118",
+                        "x": 5615,
+                        "y": 3275
+                    },
+                    {
+                        "id": "93",
+                        "x": 4950,
+                        "y": 2380
+                    },
+                    {
+                        "id": "95",
+                        "x": 3750,
+                        "y": 1390
+                    },
+                    {
+                        "id": "96",
+                        "x": 4380,
+                        "y": 1890
+                    },
+                    {
+                        "id": "30",
+                        "x": 2880,
+                        "y": 475
+                    },
+                    {
+                        "id": "97",
+                        "x": 1400,
+                        "y": 30
+                    },
+                    {
+                        "id": "10",
+                        "x": 2280,
+                        "y": 4240
+                    },
+                    {
+                        "id": "98",
+                        "x": 3545,
+                        "y": 730
+                    },
+                    {
+                        "id": "11",
+                        "x": 55,
+                        "y": 2860
+                    },
+                    {
+                        "id": "99",
+                        "x": 2725,
+                        "y": 65
+                    },
+                    {
+                        "id": "12",
+                        "x": 50,
+                        "y": 3865
+                    },
+                    {
+                        "id": "13",
+                        "x": 1550,
+                        "y": 4235
+                    },
+                    {
+                        "id": "14",
+                        "x": 4535,
+                        "y": 4125
+                    },
+                    {
+                        "id": "36",
+                        "x": 1865,
+                        "y": 1080
+                    },
+                    {
+                        "id": "15",
+                        "x": 5205,
+                        "y": 4100
+                    },
+                    {
+                        "id": "16",
+                        "x": 5800,
+                        "y": 4130
+                    },
+                    {
+                        "id": "17",
+                        "x": 6385,
+                        "y": 4140
+                    },
+                    {
+                        "id": "18",
+                        "x": 65,
+                        "y": 15
+                    },
+                    {
+                        "id": "1",
+                        "x": 4735,
+                        "y": 635
+                    },
+                    {
+                        "id": "100",
+                        "x": 4235,
+                        "y": 240
+                    },
+                    {
+                        "id": "2",
+                        "x": 3370,
+                        "y": 4175
+                    },
+                    {
+                        "id": "3",
+                        "x": 2845,
+                        "y": 4220
+                    },
+                    {
+                        "id": "4",
+                        "x": 3945,
+                        "y": 4130
+                    },
+                    {
+                        "id": "5",
+                        "x": 100,
+                        "y": 1780
+                    },
+                    {
+                        "id": "148",
+                        "x": 4485,
+                        "y": 1415
+                    },
+                    {
+                        "id": "6",
+                        "x": 795,
+                        "y": 4140
+                    },
+                    {
+                        "id": "7",
+                        "x": 75,
+                        "y": 575
+                    },
+                    {
+                        "id": "8",
+                        "x": 100,
+                        "y": 2285
+                    },
+                    {
+                        "id": "9",
+                        "x": 355,
+                        "y": 4300
+                    },
+                    {
+                        "id": "108",
+                        "x": 5590,
+                        "y": 2830
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "70"
+                    },
+                    {
+                        "id": "72"
+                    },
+                    {
+                        "id": "74"
+                    },
+                    {
+                        "id": "130"
+                    },
+                    {
+                        "id": "76"
+                    },
+                    {
+                        "id": "119"
+                    },
+                    {
+                        "id": "111"
+                    },
+                    {
+                        "id": "134"
+                    },
+                    {
+                        "id": "113"
+                    },
+                    {
+                        "id": "132"
+                    },
+                    {
+                        "id": "155"
+                    },
+                    {
+                        "id": "138"
+                    },
+                    {
+                        "id": "136"
+                    },
+                    {
+                        "id": "141"
+                    },
+                    {
+                        "id": "87"
+                    },
+                    {
+                        "id": "120"
+                    },
+                    {
+                        "id": "107"
+                    },
+                    {
+                        "id": "109"
+                    },
+                    {
+                        "id": "34"
+                    },
+                    {
+                        "id": "122"
+                    },
+                    {
+                        "id": "145"
+                    },
+                    {
+                        "id": "124"
+                    },
+                    {
+                        "id": "143"
+                    },
+                    {
+                        "id": "101"
+                    },
+                    {
+                        "id": "59"
+                    },
+                    {
+                        "id": "103"
+                    },
+                    {
+                        "id": "128"
+                    },
+                    {
+                        "id": "105"
+                    },
+                    {
+                        "id": "126"
+                    },
+                    {
+                        "id": "94"
+                    },
+                    {
+                        "id": "92"
+                    },
+                    {
+                        "id": "52"
+                    },
+                    {
+                        "id": "73"
+                    },
+                    {
+                        "id": "131"
+                    },
+                    {
+                        "id": "54"
+                    },
+                    {
+                        "id": "75"
+                    },
+                    {
+                        "id": "150"
+                    },
+                    {
+                        "id": "90"
+                    },
+                    {
+                        "id": "110"
+                    },
+                    {
+                        "id": "135"
+                    },
+                    {
+                        "id": "68"
+                    },
+                    {
+                        "id": "89"
+                    },
+                    {
+                        "id": "112"
+                    },
+                    {
+                        "id": "133"
+                    },
+                    {
+                        "id": "139"
+                    },
+                    {
+                        "id": "137"
+                    },
+                    {
+                        "id": "158"
+                    },
+                    {
+                        "id": "142"
+                    },
+                    {
+                        "id": "140"
+                    },
+                    {
+                        "id": "129"
+                    },
+                    {
+                        "id": "33"
+                    },
+                    {
+                        "id": "56"
+                    },
+                    {
+                        "id": "77"
+                    },
+                    {
+                        "id": "121"
+                    },
+                    {
+                        "id": "102"
+                    },
+                    {
+                        "id": "123"
+                    },
+                    {
+                        "id": "144"
+                    },
+                    {
+                        "id": "104"
+                    },
+                    {
+                        "id": "127"
+                    },
+                    {
+                        "id": "106"
+                    },
+                    {
+                        "id": "125"
+                    }
+                ]
+            }
+        ],
+        "configuration": {
+            "branding": {},
+            "styles": {
+                "elements": [
+                    {
+                        "tag": "Person",
+                        "background": "#1edce5",
+                        "shape": "Person"
+                    },
+                    {
+                        "tag": "Software System",
+                        "background": "#00ff1c"
+                    },
+                    {
+                        "tag": "Container",
+                        "background": "#00a2f9"
+                    },
+                    {
+                        "tag": "Database",
+                        "background": "#e415e3",
+                        "shape": "Cylinder"
+                    }
+                ],
+                "relationships": []
+            },
+            "terminology": {},
+            "lastSavedView": "container"
+        },
+        "systemLandscapeViews": [],
+        "dynamicViews": [],
+        "deploymentViews": [],
+        "filteredViews": []
+    }
+}
