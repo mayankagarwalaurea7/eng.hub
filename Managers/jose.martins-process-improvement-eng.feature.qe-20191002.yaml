@@ -1,0 +1,16 @@
+manager: José Martins
+teamroom: Eng.Feature.QE
+units:
+    - unit: https://jira.devfactory.com/browse/JVHOPST-10246
+    - unit: https://jira.devfactory.com/browse/DVSP-17243
+    - unit: https://jira.devfactory.com/browse/OCE-7397
+
+recommendation:
+    eliminate waste: true
+    improve quality bar: false 
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Improve feedback details provided on reviews (but not only), to reduce lead time by promoting a better general understanding, and removing further clarifications upfront.
+    effort: 0
+    impact: 5

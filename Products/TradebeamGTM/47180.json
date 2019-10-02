@@ -2,10 +2,10 @@
     "id": 47180,
     "name": "Tradebeam",
     "description": "Tradebeam workspace",
-    "revision": 40,
-    "lastModifiedDate": "2019-09-30T09:13:22Z",
+    "revision": 44,
+    "lastModifiedDate": "2019-10-02T08:34:31Z",
     "lastModifiedUser": "erdem.yilmaz@trilogy.com",
-    "lastModifiedAgent": "structurizr-web/1623",
+    "lastModifiedAgent": "structurizr-web/1624",
     "model": {
         "people": [
             {
@@ -165,12 +165,66 @@
                         "description": "No business logic (eg. change password)",
                         "relationships": [
                             {
+                                "id": "87",
+                                "tags": "Relationship",
+                                "sourceId": "20",
+                                "destinationId": "86",
+                                "description": "uses",
+                                "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "113",
+                                "tags": "Relationship",
+                                "sourceId": "20",
+                                "destinationId": "112",
+                                "description": "depends",
+                                "technology": "RPM",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "92",
+                                "tags": "Relationship",
+                                "sourceId": "20",
+                                "destinationId": "25",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "93",
+                                "tags": "Relationship",
+                                "sourceId": "20",
+                                "destinationId": "37",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "94",
+                                "tags": "Relationship",
+                                "sourceId": "20",
+                                "destinationId": "38",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
                                 "id": "44",
                                 "tags": "Relationship",
                                 "sourceId": "20",
                                 "destinationId": "35",
                                 "description": "uses",
                                 "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "95",
+                                "tags": "Relationship",
+                                "sourceId": "20",
+                                "destinationId": "39",
+                                "description": "read/write data",
+                                "technology": "JDBC",
                                 "interactionStyle": "Synchronous"
                             }
                         ],
@@ -213,12 +267,66 @@
                         "description": "core business logic",
                         "relationships": [
                             {
+                                "id": "88",
+                                "tags": "Relationship",
+                                "sourceId": "33",
+                                "destinationId": "86",
+                                "description": "uses",
+                                "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "96",
+                                "tags": "Relationship",
+                                "sourceId": "33",
+                                "destinationId": "39",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "97",
+                                "tags": "Relationship",
+                                "sourceId": "33",
+                                "destinationId": "38",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "114",
+                                "tags": "Relationship",
+                                "sourceId": "33",
+                                "destinationId": "112",
+                                "description": "depends",
+                                "technology": "RPM",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
                                 "id": "45",
                                 "tags": "Relationship",
                                 "sourceId": "33",
                                 "destinationId": "35",
                                 "description": "uses",
                                 "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "99",
+                                "tags": "Relationship",
+                                "sourceId": "33",
+                                "destinationId": "37",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "98",
+                                "tags": "Relationship",
+                                "sourceId": "33",
+                                "destinationId": "25",
+                                "description": "read/write data",
+                                "technology": "JDBC",
                                 "interactionStyle": "Synchronous"
                             }
                         ],
@@ -271,12 +379,65 @@
                         "description": "Data Feed server",
                         "relationships": [
                             {
+                                "id": "89",
+                                "tags": "Relationship",
+                                "sourceId": "48",
+                                "destinationId": "86",
+                                "description": "uses",
+                                "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "103",
+                                "tags": "Relationship",
+                                "sourceId": "48",
+                                "destinationId": "39",
+                                "description": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "100",
+                                "tags": "Relationship",
+                                "sourceId": "48",
+                                "destinationId": "37",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "115",
+                                "tags": "Relationship",
+                                "sourceId": "48",
+                                "destinationId": "112",
+                                "description": "depends",
+                                "technology": "RPM",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "101",
+                                "tags": "Relationship",
+                                "sourceId": "48",
+                                "destinationId": "25",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
                                 "id": "49",
                                 "tags": "Relationship",
                                 "sourceId": "48",
                                 "destinationId": "35",
                                 "description": "uses",
                                 "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "102",
+                                "tags": "Relationship",
+                                "sourceId": "48",
+                                "destinationId": "38",
+                                "description": "read/write data",
+                                "technology": "JDBC",
                                 "interactionStyle": "Synchronous"
                             }
                         ],
@@ -373,6 +534,15 @@
                                 "description": "uses",
                                 "technology": "HTTPS",
                                 "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "116",
+                                "tags": "Relationship",
+                                "sourceId": "19",
+                                "destinationId": "112",
+                                "description": "depends",
+                                "technology": "RPM",
+                                "interactionStyle": "Synchronous"
                             }
                         ],
                         "technology": "Apache HTTP Server",
@@ -461,6 +631,17 @@
                         "tags": "Element,Container",
                         "name": "JMS Server - App",
                         "description": "Application Queue & Topic",
+                        "relationships": [
+                            {
+                                "id": "117",
+                                "tags": "Relationship",
+                                "sourceId": "35",
+                                "destinationId": "112",
+                                "description": "depends",
+                                "technology": "RPM",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
                         "technology": "JBoss Application Server 5.1.0",
                         "components": [
                             {
@@ -495,7 +676,26 @@
                     {
                         "id": "86",
                         "tags": "Element,Container",
-                        "name": "JMS Server - Msg"
+                        "name": "JMS Server - Msg",
+                        "description": "Messaging Queue & Topic",
+                        "relationships": [
+                            {
+                                "id": "118",
+                                "tags": "Relationship",
+                                "sourceId": "86",
+                                "destinationId": "112",
+                                "description": "depends",
+                                "technology": "RPM",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "112",
+                        "tags": "Element,Container",
+                        "name": "Main",
+                        "description": "Shared Artifact",
+                        "technology": "Java"
                     },
                     {
                         "id": "36",
@@ -510,6 +710,60 @@
                                 "destinationId": "35",
                                 "description": "uses",
                                 "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "106",
+                                "tags": "Relationship",
+                                "sourceId": "36",
+                                "destinationId": "25",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "119",
+                                "tags": "Relationship",
+                                "sourceId": "36",
+                                "destinationId": "112",
+                                "description": "depends",
+                                "technology": "RPM",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "104",
+                                "tags": "Relationship",
+                                "sourceId": "36",
+                                "destinationId": "39",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "91",
+                                "tags": "Relationship",
+                                "sourceId": "36",
+                                "destinationId": "86",
+                                "description": "uses",
+                                "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "105",
+                                "tags": "Relationship",
+                                "sourceId": "36",
+                                "destinationId": "38",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "107",
+                                "tags": "Relationship",
+                                "sourceId": "36",
+                                "destinationId": "37",
+                                "description": "read/write data",
+                                "technology": "JDBC",
                                 "interactionStyle": "Synchronous"
                             }
                         ],
@@ -562,12 +816,66 @@
                         "description": "Scheduled Jobs",
                         "relationships": [
                             {
+                                "id": "90",
+                                "tags": "Relationship",
+                                "sourceId": "34",
+                                "destinationId": "86",
+                                "description": "uses",
+                                "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "108",
+                                "tags": "Relationship",
+                                "sourceId": "34",
+                                "destinationId": "39",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
                                 "id": "46",
                                 "tags": "Relationship",
                                 "sourceId": "34",
                                 "destinationId": "35",
                                 "description": "uses",
                                 "technology": "JMS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "120",
+                                "tags": "Relationship",
+                                "sourceId": "34",
+                                "destinationId": "112",
+                                "description": "depends",
+                                "technology": "RPM",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "109",
+                                "tags": "Relationship",
+                                "sourceId": "34",
+                                "destinationId": "38",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "111",
+                                "tags": "Relationship",
+                                "sourceId": "34",
+                                "destinationId": "37",
+                                "description": "read/write data",
+                                "technology": "JDBC",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "110",
+                                "tags": "Relationship",
+                                "sourceId": "34",
+                                "destinationId": "25",
+                                "description": "read/write data",
+                                "technology": "JDBC",
                                 "interactionStyle": "Synchronous"
                             }
                         ],
@@ -729,7 +1037,7 @@
             {
                 "softwareSystemId": "13",
                 "key": "GTMContainerDiagram",
-                "paperSize": "A4_Landscape",
+                "paperSize": "A3_Landscape",
                 "animations": [
                     {
                         "order": 1,
@@ -742,6 +1050,7 @@
                             "31"
                         ],
                         "relationships": [
+                            "92",
                             "40",
                             "41",
                             "42",
@@ -761,9 +1070,24 @@
                         ],
                         "relationships": [
                             "44",
+                            "99",
                             "45",
                             "46",
-                            "47"
+                            "47",
+                            "110",
+                            "111",
+                            "104",
+                            "105",
+                            "106",
+                            "107",
+                            "108",
+                            "93",
+                            "109",
+                            "94",
+                            "95",
+                            "96",
+                            "97",
+                            "98"
                         ]
                     },
                     {
@@ -772,6 +1096,10 @@
                             "48"
                         ],
                         "relationships": [
+                            "100",
+                            "101",
+                            "102",
+                            "103",
                             "49"
                         ]
                     },
@@ -807,107 +1135,203 @@
                         "elements": [
                             "86"
                         ],
+                        "relationships": [
+                            "88",
+                            "89",
+                            "90",
+                            "91",
+                            "87"
+                        ]
+                    },
+                    {
+                        "order": 8,
+                        "elements": [
+                            "112"
+                        ],
                         "relationships": []
                     }
                 ],
                 "elements": [
                     {
                         "id": "33",
-                        "x": 125,
-                        "y": 965
+                        "x": 955,
+                        "y": 1245
                     },
                     {
                         "id": "34",
-                        "x": 730,
-                        "y": 1370
+                        "x": 950,
+                        "y": 700
                     },
                     {
                         "id": "24",
-                        "x": 1730,
+                        "x": 2440,
                         "y": 20
                     },
                     {
                         "id": "35",
-                        "x": 730,
-                        "y": 965
+                        "x": 1590,
+                        "y": 1640
                     },
                     {
                         "id": "25",
-                        "x": 1675,
-                        "y": 1880
+                        "x": 3065,
+                        "y": 2450
                     },
                     {
                         "id": "36",
-                        "x": 125,
-                        "y": 1370
+                        "x": 955,
+                        "y": 1655
                     },
                     {
                         "id": "48",
-                        "x": 1320,
-                        "y": 1370
+                        "x": 2150,
+                        "y": 1655
                     },
                     {
                         "id": "37",
-                        "x": 625,
-                        "y": 1880
+                        "x": 2015,
+                        "y": 2450
                     },
                     {
                         "id": "26",
-                        "x": 2550,
-                        "y": 1370
+                        "x": 4005,
+                        "y": 1450
                     },
                     {
                         "id": "27",
-                        "x": 945,
+                        "x": 1655,
                         "y": 15
                     },
                     {
                         "id": "38",
-                        "x": 110,
-                        "y": 1880
+                        "x": 1500,
+                        "y": 2450
                     },
                     {
                         "id": "17",
-                        "x": 2550,
-                        "y": 840
+                        "x": 4005,
+                        "y": 920
                     },
                     {
                         "id": "39",
-                        "x": 1145,
-                        "y": 1880
+                        "x": 2535,
+                        "y": 2450
                     },
                     {
                         "id": "19",
-                        "x": 1305,
-                        "y": 510
+                        "x": 2155,
+                        "y": 645
+                    },
+                    {
+                        "id": "112",
+                        "x": 1500,
+                        "y": 705
                     },
                     {
                         "id": "50",
-                        "x": 1905,
-                        "y": 965
+                        "x": 3360,
+                        "y": 1045
                     },
                     {
                         "id": "51",
-                        "x": 1905,
-                        "y": 1370
+                        "x": 3360,
+                        "y": 1450
                     },
                     {
                         "id": "31",
-                        "x": 1345,
+                        "x": 2055,
                         "y": 15
                     },
                     {
                         "id": "20",
-                        "x": 1320,
-                        "y": 965
+                        "x": 2150,
+                        "y": 1250
                     },
                     {
                         "id": "86",
-                        "x": 730,
-                        "y": 620
+                        "x": 1600,
+                        "y": 1240
                     }
                 ],
                 "relationships": [
+                    {
+                        "id": "93"
+                    },
+                    {
+                        "id": "94"
+                    },
+                    {
+                        "id": "91"
+                    },
+                    {
+                        "id": "92"
+                    },
+                    {
+                        "id": "97"
+                    },
+                    {
+                        "id": "98"
+                    },
+                    {
+                        "id": "95"
+                    },
+                    {
+                        "id": "96"
+                    },
+                    {
+                        "id": "30"
+                    },
+                    {
+                        "id": "90"
+                    },
+                    {
+                        "id": "119"
+                    },
+                    {
+                        "id": "118"
+                    },
+                    {
+                        "id": "44"
+                    },
+                    {
+                        "id": "111"
+                    },
+                    {
+                        "id": "45"
+                    },
+                    {
+                        "id": "110"
+                    },
+                    {
+                        "id": "46"
+                    },
+                    {
+                        "id": "88"
+                    },
+                    {
+                        "id": "113"
+                    },
+                    {
+                        "id": "47"
+                    },
+                    {
+                        "id": "89"
+                    },
+                    {
+                        "id": "115"
+                    },
+                    {
+                        "id": "49"
+                    },
+                    {
+                        "id": "114"
+                    },
+                    {
+                        "id": "117"
+                    },
+                    {
+                        "id": "116"
+                    },
                     {
                         "id": "40"
                     },
@@ -915,39 +1339,111 @@
                         "id": "41"
                     },
                     {
+                        "id": "87"
+                    },
+                    {
                         "id": "42"
+                    },
+                    {
+                        "id": "120"
                     },
                     {
                         "id": "43"
                     },
                     {
-                        "id": "30"
+                        "id": "108"
                     },
                     {
-                        "id": "44"
+                        "id": "107"
+                    },
+                    {
+                        "id": "109"
                     },
                     {
                         "id": "55"
                     },
                     {
-                        "id": "45"
+                        "id": "100"
                     },
                     {
                         "id": "56"
                     },
                     {
-                        "id": "46"
+                        "id": "99"
                     },
                     {
-                        "id": "47"
+                        "id": "102"
                     },
                     {
-                        "id": "49"
+                        "id": "101"
+                    },
+                    {
+                        "id": "104"
+                    },
+                    {
+                        "id": "103"
+                    },
+                    {
+                        "id": "106"
+                    },
+                    {
+                        "id": "105"
                     }
                 ]
             }
         ],
         "componentViews": [
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentPublicWebServices",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "35",
+                            "25",
+                            "71",
+                            "72"
+                        ],
+                        "relationships": [
+                            "73",
+                            "75"
+                        ]
+                    }
+                ],
+                "containerId": "36",
+                "elements": [
+                    {
+                        "id": "35",
+                        "x": 170,
+                        "y": 920
+                    },
+                    {
+                        "id": "25",
+                        "x": 735,
+                        "y": 920
+                    },
+                    {
+                        "id": "71",
+                        "x": 735,
+                        "y": 260
+                    },
+                    {
+                        "id": "72",
+                        "x": 170,
+                        "y": 260
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "73"
+                    },
+                    {
+                        "id": "75"
+                    }
+                ]
+            },
             {
                 "softwareSystemId": "13",
                 "key": "GTMComponentJMS",
@@ -980,6 +1476,186 @@
                 "relationships": [
                     {
                         "id": "54"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentDFS",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "35",
+                            "25",
+                            "80",
+                            "81"
+                        ],
+                        "relationships": [
+                            "82",
+                            "83"
+                        ]
+                    }
+                ],
+                "containerId": "48",
+                "elements": [
+                    {
+                        "id": "35",
+                        "x": 1260,
+                        "y": 980
+                    },
+                    {
+                        "id": "25",
+                        "x": 210,
+                        "y": 980
+                    },
+                    {
+                        "id": "80",
+                        "x": 210,
+                        "y": 230
+                    },
+                    {
+                        "id": "81",
+                        "x": 1260,
+                        "y": 230
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "82"
+                    },
+                    {
+                        "id": "83"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentFTP",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "17",
+                            "84"
+                        ],
+                        "relationships": [
+                            "85"
+                        ]
+                    }
+                ],
+                "containerId": "50",
+                "elements": [
+                    {
+                        "id": "17",
+                        "x": 240,
+                        "y": 60
+                    },
+                    {
+                        "id": "84",
+                        "x": 240,
+                        "y": 810
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "85",
+                        "vertices": [
+                            {
+                                "x": 465,
+                                "y": 510
+                            },
+                            {
+                                "x": 465,
+                                "y": 660
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentHttp",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "22",
+                            "24",
+                            "27",
+                            "31",
+                            "20",
+                            "21"
+                        ],
+                        "relationships": []
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "36"
+                        ],
+                        "relationships": []
+                    }
+                ],
+                "containerId": "19",
+                "elements": [
+                    {
+                        "id": "22",
+                        "x": 1085,
+                        "y": 560
+                    },
+                    {
+                        "id": "24",
+                        "x": 65,
+                        "y": 35
+                    },
+                    {
+                        "id": "36",
+                        "x": 870,
+                        "y": 1140
+                    },
+                    {
+                        "id": "27",
+                        "x": 480,
+                        "y": 35
+                    },
+                    {
+                        "id": "31",
+                        "x": 900,
+                        "y": 35
+                    },
+                    {
+                        "id": "20",
+                        "x": 145,
+                        "y": 1140
+                    },
+                    {
+                        "id": "21",
+                        "x": 440,
+                        "y": 560
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "61"
+                    },
+                    {
+                        "id": "60"
+                    },
+                    {
+                        "id": "62"
+                    },
+                    {
+                        "id": "57"
+                    },
+                    {
+                        "id": "58"
+                    },
+                    {
+                        "id": "59"
                     }
                 ]
             },
@@ -1096,186 +1772,6 @@
             },
             {
                 "softwareSystemId": "13",
-                "key": "GTMComponentFTP",
-                "paperSize": "A5_Landscape",
-                "animations": [
-                    {
-                        "order": 1,
-                        "elements": [
-                            "17",
-                            "84"
-                        ],
-                        "relationships": [
-                            "85"
-                        ]
-                    }
-                ],
-                "containerId": "50",
-                "elements": [
-                    {
-                        "id": "17",
-                        "x": 240,
-                        "y": 60
-                    },
-                    {
-                        "id": "84",
-                        "x": 240,
-                        "y": 810
-                    }
-                ],
-                "relationships": [
-                    {
-                        "id": "85",
-                        "vertices": [
-                            {
-                                "x": 465,
-                                "y": 510
-                            },
-                            {
-                                "x": 465,
-                                "y": 660
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "softwareSystemId": "13",
-                "key": "GTMComponentDFS",
-                "paperSize": "A5_Landscape",
-                "animations": [
-                    {
-                        "order": 1,
-                        "elements": [
-                            "35",
-                            "25",
-                            "80",
-                            "81"
-                        ],
-                        "relationships": [
-                            "82",
-                            "83"
-                        ]
-                    }
-                ],
-                "containerId": "48",
-                "elements": [
-                    {
-                        "id": "35",
-                        "x": 1260,
-                        "y": 980
-                    },
-                    {
-                        "id": "25",
-                        "x": 210,
-                        "y": 980
-                    },
-                    {
-                        "id": "80",
-                        "x": 210,
-                        "y": 230
-                    },
-                    {
-                        "id": "81",
-                        "x": 1260,
-                        "y": 230
-                    }
-                ],
-                "relationships": [
-                    {
-                        "id": "82"
-                    },
-                    {
-                        "id": "83"
-                    }
-                ]
-            },
-            {
-                "softwareSystemId": "13",
-                "key": "GTMComponentHttp",
-                "paperSize": "A5_Landscape",
-                "animations": [
-                    {
-                        "order": 1,
-                        "elements": [
-                            "22",
-                            "24",
-                            "27",
-                            "31",
-                            "20",
-                            "21"
-                        ],
-                        "relationships": []
-                    },
-                    {
-                        "order": 2,
-                        "elements": [
-                            "36"
-                        ],
-                        "relationships": []
-                    }
-                ],
-                "containerId": "19",
-                "elements": [
-                    {
-                        "id": "22",
-                        "x": 1085,
-                        "y": 560
-                    },
-                    {
-                        "id": "24",
-                        "x": 65,
-                        "y": 35
-                    },
-                    {
-                        "id": "36",
-                        "x": 870,
-                        "y": 1140
-                    },
-                    {
-                        "id": "27",
-                        "x": 480,
-                        "y": 35
-                    },
-                    {
-                        "id": "31",
-                        "x": 900,
-                        "y": 35
-                    },
-                    {
-                        "id": "20",
-                        "x": 145,
-                        "y": 1140
-                    },
-                    {
-                        "id": "21",
-                        "x": 440,
-                        "y": 560
-                    }
-                ],
-                "relationships": [
-                    {
-                        "id": "61"
-                    },
-                    {
-                        "id": "60"
-                    },
-                    {
-                        "id": "62"
-                    },
-                    {
-                        "id": "57"
-                    },
-                    {
-                        "id": "58"
-                    },
-                    {
-                        "id": "59"
-                    }
-                ]
-            },
-            {
-                "softwareSystemId": "13",
                 "key": "GTMComponentTForm",
                 "paperSize": "A5_Landscape",
                 "animations": [
@@ -1322,57 +1818,6 @@
                     },
                     {
                         "id": "79"
-                    }
-                ]
-            },
-            {
-                "softwareSystemId": "13",
-                "key": "GTMComponentPublicWebServices",
-                "paperSize": "A5_Landscape",
-                "animations": [
-                    {
-                        "order": 1,
-                        "elements": [
-                            "35",
-                            "25",
-                            "71",
-                            "72"
-                        ],
-                        "relationships": [
-                            "73",
-                            "75"
-                        ]
-                    }
-                ],
-                "containerId": "36",
-                "elements": [
-                    {
-                        "id": "35",
-                        "x": 170,
-                        "y": 920
-                    },
-                    {
-                        "id": "25",
-                        "x": 735,
-                        "y": 920
-                    },
-                    {
-                        "id": "71",
-                        "x": 735,
-                        "y": 260
-                    },
-                    {
-                        "id": "72",
-                        "x": 170,
-                        "y": 260
-                    }
-                ],
-                "relationships": [
-                    {
-                        "id": "73"
-                    },
-                    {
-                        "id": "75"
                     }
                 ]
             }

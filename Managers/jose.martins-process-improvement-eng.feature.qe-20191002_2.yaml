@@ -1,0 +1,14 @@
+manager: José Martins
+teamroom: Eng.Feature.QE
+units:
+    - unit: https://jira.devfactory.com/browse/ARCH-1522
+
+recommendation:
+    eliminate waste: false
+    improve quality bar: true 
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Add rule to ensure status of Epic, AU and Spec tickets, is consistent
+    effort: 0
+    impact: 1
