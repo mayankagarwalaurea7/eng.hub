@@ -1,8 +1,8 @@
 ---
 id: 47251
 name: OneSCM Enterprise Workspace
-revision: 59
-lastModifiedDate: '2019-10-01T12:08:52Z'
+revision: 61
+lastModifiedDate: '2019-10-02T14:42:14Z'
 lastModifiedUser: artur.ampilogov@gmail.com
 lastModifiedAgent: structurizr-web/1624
 model:
@@ -133,6 +133,8 @@ model:
         description: confirms the document
         technology: HTTP/RNIF
         interactionStyle: Synchronous
+      technology: ERP (Oracle EBS, Microsoft Dynamics, Custom ERP), FTP server, AS2
+        Server, RNIF server, custom software system
   - id: '62'
     tags: Element,Software System
     name: EasyPost
@@ -164,6 +166,7 @@ model:
       sourceId: '4'
       destinationId: '9'
       description: sends the processed document
+      technology: HTTP/HTTPS, FTP/FTPS/SFTP, AS2, RNIF
       interactionStyle: Synchronous
     location: Internal
     containers:
@@ -612,6 +615,7 @@ model:
         sourceId: '44'
         destinationId: '45'
         description: redirects HTTP/RNIF
+        technology: HTTP/RNIF
         interactionStyle: Synchronous
       technology: ASP.NET ASPX, HTTP, RNIF
     - id: '42'
@@ -823,7 +827,7 @@ model:
       destinationId: '4'
       description: provides documents
       interactionStyle: Synchronous
-    location: Unspecified
+    location: External
     containers:
     - id: '142'
       tags: Element,Container,system
@@ -845,6 +849,8 @@ model:
         description: uploads documents
         technology: SFTP
         interactionStyle: Synchronous
+      technology: ERP (Oracle EBS, Microsoft Dynamics, Custom ERP), AS2 Server, custom
+        software system
   - id: '22'
     tags: Element,Software System
     name: Windows Certificate Store
@@ -917,98 +923,6 @@ views:
     - id: '7'
     - id: '10'
   containerViews:
-  - softwareSystemId: '4'
-    description: OneSCM Web API
-    key: OneSCMWebAPI
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '15'
-      - '19'
-      - '74'
-      - '20'
-      - '21'
-      relationships:
-      - '40'
-      - '30'
-      - '41'
-      - '31'
-    - order: 2
-      elements:
-      - '32'
-      relationships:
-      - '33'
-      - '34'
-    - order: 3
-      elements:
-      - '13'
-      relationships:
-      - '27'
-      - '38'
-      - '118'
-    - order: 4
-      elements:
-      - '154'
-      - '148'
-      - '142'
-      relationships:
-      - '155'
-      - '145'
-      - '150'
-    - order: 5
-      elements:
-      - '139'
-      relationships:
-      - '140'
-    elements:
-    - id: '154'
-      x: 160
-      y: 1925
-    - id: '13'
-      x: 2495
-      y: 1085
-    - id: '15'
-      x: 1300
-      y: 1905
-    - id: '148'
-      x: 2505
-      y: 55
-    - id: '139'
-      x: 3025
-      y: 1875
-    - id: '19'
-      x: 1265
-      y: 555
-    - id: '74'
-      x: 2485
-      y: 550
-    - id: '20'
-      x: 1575
-      y: 1065
-    - id: '21'
-      x: 845
-      y: 1065
-    - id: '32'
-      x: 2245
-      y: 1880
-    - id: '142'
-      x: 80
-      y: 90
-    relationships:
-    - id: '40'
-    - id: '41'
-    - id: '140'
-    - id: '150'
-    - id: '161'
-    - id: '31'
-    - id: '30'
-    - id: '118'
-    - id: '27'
-    - id: '34'
-    - id: '33'
-    - id: '155'
-    - id: '38'
   - softwareSystemId: '4'
     key: OneSCMContainer
     paperSize: A2_Landscape
@@ -1334,60 +1248,6 @@ views:
     - id: '79'
     - id: '39'
   - softwareSystemId: '4'
-    key: OneSCMWorfklowContainer
-    paperSize: A5_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '3'
-      - '15'
-      - '104'
-      - '105'
-      - '106'
-      - '107'
-      relationships:
-      - '110'
-      - '111'
-      - '112'
-      - '113'
-      - '114'
-      - '109'
-    - order: 2
-      elements:
-      - '65'
-      relationships:
-      - '77'
-    elements:
-    - id: '3'
-      x: 15
-      y: 285
-    - id: '15'
-      x: 1320
-      y: 1260
-    - id: '104'
-      x: 1310
-      y: 295
-    - id: '105'
-      x: 1310
-      y: 795
-    - id: '106'
-      x: 615
-      y: 115
-    - id: '107'
-      x: 615
-      y: 570
-    - id: '65'
-      x: 2000
-      y: 1265
-    relationships:
-    - id: '109'
-    - id: '111'
-    - id: '77'
-    - id: '110'
-    - id: '113'
-    - id: '112'
-    - id: '114'
-  - softwareSystemId: '4'
     description: Main Engine
     key: OneSCMEngine
     paperSize: A3_Landscape
@@ -1573,6 +1433,220 @@ views:
     - id: '38'
     - id: '39'
   - softwareSystemId: '4'
+    description: OneSCM Web API
+    key: OneSCMWebAPI
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '15'
+      - '19'
+      - '74'
+      - '20'
+      - '21'
+      relationships:
+      - '40'
+      - '30'
+      - '41'
+      - '31'
+    - order: 2
+      elements:
+      - '32'
+      relationships:
+      - '33'
+      - '34'
+    - order: 3
+      elements:
+      - '13'
+      relationships:
+      - '27'
+      - '38'
+      - '118'
+    - order: 4
+      elements:
+      - '154'
+      - '148'
+      - '142'
+      relationships:
+      - '155'
+      - '145'
+      - '150'
+    - order: 5
+      elements:
+      - '139'
+      relationships:
+      - '140'
+    elements:
+    - id: '154'
+      x: 160
+      y: 1925
+    - id: '13'
+      x: 2495
+      y: 1085
+    - id: '15'
+      x: 1300
+      y: 1905
+    - id: '148'
+      x: 2505
+      y: 55
+    - id: '139'
+      x: 3025
+      y: 1875
+    - id: '19'
+      x: 1265
+      y: 555
+    - id: '74'
+      x: 2485
+      y: 550
+    - id: '20'
+      x: 1575
+      y: 1065
+    - id: '21'
+      x: 845
+      y: 1065
+    - id: '32'
+      x: 2245
+      y: 1880
+    - id: '142'
+      x: 80
+      y: 90
+    relationships:
+    - id: '40'
+    - id: '41'
+    - id: '140'
+    - id: '150'
+    - id: '161'
+    - id: '31'
+    - id: '30'
+    - id: '118'
+    - id: '27'
+    - id: '34'
+    - id: '33'
+    - id: '155'
+    - id: '38'
+  - softwareSystemId: '4'
+    key: OneSCMWorfklowContainer
+    paperSize: A5_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '3'
+      - '15'
+      - '104'
+      - '105'
+      - '106'
+      - '107'
+      relationships:
+      - '110'
+      - '111'
+      - '112'
+      - '113'
+      - '114'
+      - '109'
+    - order: 2
+      elements:
+      - '65'
+      relationships:
+      - '77'
+    elements:
+    - id: '3'
+      x: 15
+      y: 285
+    - id: '15'
+      x: 1320
+      y: 1260
+    - id: '104'
+      x: 1310
+      y: 295
+    - id: '105'
+      x: 1310
+      y: 795
+    - id: '106'
+      x: 615
+      y: 115
+    - id: '107'
+      x: 615
+      y: 570
+    - id: '65'
+      x: 2000
+      y: 1265
+    relationships:
+    - id: '109'
+    - id: '111'
+    - id: '77'
+    - id: '110'
+    - id: '113'
+    - id: '112'
+    - id: '114'
+  - softwareSystemId: '4'
+    key: RNIFContainer
+    paperSize: A4_Landscape
+    animations:
+    - order: 1
+      elements:
+      - '44'
+      - '45'
+      - '13'
+      - '3'
+      - '16'
+      - '42'
+      - '43'
+      relationships:
+      - '55'
+      - '48'
+      - '29'
+      - '51'
+      - '52'
+      - '53'
+    - order: 2
+      elements:
+      - '143'
+      - '151'
+      relationships:
+      - '146'
+      - '147'
+      - '152'
+      - '153'
+    elements:
+    - id: '44'
+      x: 2265
+      y: 820
+    - id: '143'
+      x: 1855
+      y: 130
+    - id: '45'
+      x: 2255
+      y: 1380
+    - id: '13'
+      x: 185
+      y: 705
+    - id: '3'
+      x: 845
+      y: 115
+    - id: '16'
+      x: 680
+      y: 1535
+    - id: '151'
+      x: 1855
+      y: 1950
+    - id: '42'
+      x: 1290
+      y: 1095
+    - id: '43'
+      x: 840
+      y: 705
+    relationships:
+    - id: '29'
+    - id: '51'
+    - id: '153'
+    - id: '52'
+    - id: '152'
+    - id: '53'
+    - id: '55'
+    - id: '146'
+    - id: '48'
+    - id: '147'
+  - softwareSystemId: '4'
     description: OneSCM Web applications
     key: OneSCMWebApplications
     paperSize: A4_Landscape
@@ -1662,74 +1736,6 @@ views:
     - id: '39'
     - id: '117'
     - id: '116'
-  - softwareSystemId: '4'
-    key: RNIFContainer
-    paperSize: A4_Landscape
-    animations:
-    - order: 1
-      elements:
-      - '44'
-      - '45'
-      - '13'
-      - '3'
-      - '16'
-      - '42'
-      - '43'
-      relationships:
-      - '55'
-      - '48'
-      - '29'
-      - '51'
-      - '52'
-      - '53'
-    - order: 2
-      elements:
-      - '143'
-      - '151'
-      relationships:
-      - '146'
-      - '147'
-      - '152'
-      - '153'
-    elements:
-    - id: '44'
-      x: 2265
-      y: 820
-    - id: '143'
-      x: 1855
-      y: 130
-    - id: '45'
-      x: 2255
-      y: 1380
-    - id: '13'
-      x: 185
-      y: 705
-    - id: '3'
-      x: 845
-      y: 115
-    - id: '16'
-      x: 680
-      y: 1535
-    - id: '151'
-      x: 1855
-      y: 1950
-    - id: '42'
-      x: 1290
-      y: 1095
-    - id: '43'
-      x: 840
-      y: 705
-    relationships:
-    - id: '29'
-    - id: '51'
-    - id: '153'
-    - id: '52'
-    - id: '152'
-    - id: '53'
-    - id: '55'
-    - id: '146'
-    - id: '48'
-    - id: '147'
   componentViews:
   - softwareSystemId: '4'
     key: ResonanceErprInqueue
@@ -1828,7 +1834,7 @@ views:
         background: "#fffb4d"
       relationships: []
     terminology: {}
-    lastSavedView: RNIFContainer
+    lastSavedView: ResonanceErprInqueue
   systemLandscapeViews: []
   dynamicViews: []
   deploymentViews: []
