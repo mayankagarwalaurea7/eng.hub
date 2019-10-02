@@ -1,0 +1,11 @@
+manager: Naaliel Mendes
+teamroom: Optiva.Eng.ProductCA
+units: 1
+    - unit: https://jira.optiva.com/jira/browse/RMUC-11250
+automation: 
+    product agnostic: false
+    product specific:
+        - product name: OCE
+    description: Implement automatic monitoring for syncronization solution deployed today between Git Hub and Clear Case, as we are still dependent on Clear Case for media releases. The benefit here is to get faster notification when syncronization stop working. The ultimate goal is to get rid of Clear Case also for media releases.
+    effort: 20
+    impact: 1
