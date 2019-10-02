@@ -4,7 +4,7 @@ direct reports: 3
 ICs:
     - IC:
         IC name: Diego Sal Diaz
-        date: 2019-09-30
+        date: 2019-10-02
         unit: https://jira.devfactory.com/browse/ACID-25619
         coaching: The class has weak assertion. IC coached to enforce a more OOP approach to this problem with concrete examples.
         performance assessment: highPerformer
@@ -18,7 +18,7 @@ ICs:
         continue coaching: true
     - IC:
         IC name: Vasile Irimia
-        date: 2019-09-30
+        date: 2019-10-02
         unit: https://jira.devfactory.com/browse/CSRV-13554
         coaching: Review was correctly done. 
         performance assessment: highPerformer
