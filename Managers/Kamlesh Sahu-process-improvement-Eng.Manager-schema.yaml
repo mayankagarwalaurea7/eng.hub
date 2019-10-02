@@ -1,0 +1,13 @@
+manager: Kamlesh Sahu
+teamroom: Eng.ProductCA
+units: !!seq
+    - unit: !!str #<Jira link>
+recommendation: !!map
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: False
+    product specific: 0
+        - product name: 
+    description: Consider due dates for release specific Eng.Problem tickets for autoranking. Autorank should also consider number items blocked by the Eng.Problem while performing autoranking.
+    effort: 5
+    impact: 5

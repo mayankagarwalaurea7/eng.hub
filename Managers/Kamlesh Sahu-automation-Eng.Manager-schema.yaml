@@ -1,0 +1,11 @@
+manager: Kamlesh Sahu
+teamroom: Eng.ProductCA
+units: 
+    - unit: 
+automation: 
+    product agnostic: false
+    product specific: 0
+        - product name: 
+    description: Create Eng.problem tickets for PCA to build and deploy staging artefacts for testing when SE7 is moved from planning to building. Create Eng.problem tickets for PCA to write the runbook when SE7 is moved from building to testing. Create CR and MW tickets automatically based on user input when SE7 is moved to released status.
+    effort: 1
+    impact: 5

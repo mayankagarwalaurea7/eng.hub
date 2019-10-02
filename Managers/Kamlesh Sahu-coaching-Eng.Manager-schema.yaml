@@ -1,0 +1,12 @@
+manager: Kamlesh Sahu
+teamroom: Eng.ProductCA
+direct reports: 2
+ICs: 2
+    - IC:
+        IC name: Evgeny Shmanev
+        date: 02.10.2019
+        unit: 
+        coaching: Deploy release artefacts to staging first thing on Monday morning every week. 
+        performance assessment: highPerformer
+        continue coaching:  false
+        product: INFER
