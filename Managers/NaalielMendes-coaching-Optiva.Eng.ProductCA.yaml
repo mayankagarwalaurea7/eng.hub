@@ -1,0 +1,54 @@
+manager: Naaliel Mendes
+teamroom: Optiva.Eng.ProductCA
+direct reports: 7
+ICs:
+    - IC:
+        IC name: Aleksandr Borisov
+        date: 2019-10-02
+        unit: https://jira.optiva.com/jira/browse/VDII-5807
+        coaching: You are paying more attention on PR action than on Code review ticket state. Both are equally important and I expect no jira ticket in "Code Review stage" when PR was approved 1-2 days before. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Alexandre Paiva
+        date: 2019-10-02
+        unit: https://jira.optiva.com/jira/browse/COTE-702
+        coaching: Please work with local team to get a list of all needed test cases to close this issue once for all. I am really surprise that we are getting these basic failures on acceptance time. I know that this project comes from legacy team, but we need to close this acceptance phase as soon as possible.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Mohammed BELKHEIRI
+        date: 2019-10-02
+        unit: https://jira.optiva.com/jira/browse/VDII-7606
+        coaching: Please stop joining calls with local team without getting my approval. Updates should be provided via Jira ticket and you should only join on critical meeting (e.g., RCA calls requested by customer) aligned with me.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Leandro Zimmer
+        date: 2019-10-02
+        unit: https://jira.optiva.com/jira/browse/CLRP-485
+        coaching: Please make sure that we have proper QA Architect agreement on test scope for this Hadoop upgrade you are now proposing. We should have no impact on live environment once we upgrade.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Luis Castro
+        date: 2019-10-02
+        unit: https://jira.optiva.com/jira/browse/RMUC-11311
+        coaching: You are not keeping OCE Repository control up to date and I need to have a better view of SAF migration work. This needs to be done by Friday please.
+        performance assessment: averagePerformer
+        continue coaching: true    
+    
+    - IC:
+        IC name: Umut Sahin
+        date: 2019-10-02
+        unit: https://jira.optiva.com/jira/browse/RMUC-11383
+        coaching: Please put VAPC component migration work under CAF Epic, so that we have a better view of repository migration status
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Zeki Yugnak
+        date: 2019-10-02
+        unit: https://jira.optiva.com/jira/browse/AFGW-1495
+        coaching: You should provide detailed view on Protocol Handler OCE migration. This is moving slowly and is extremelly important for OCE product
+        performance assessment: highPerformer
+        continue coaching: true
