@@ -1,0 +1,13 @@
+manager: Denys Skorbenko
+teamroom: Eng.QAManualTesting
+units:
+    - unit: https://confluence.devfactory.com/display/QMT/Test+Writing+Input+Quality+Bar
+recommendation:
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: During deep dive to CSRV-11984 I realized that 10% of test cases had to be re-executed due to incorrect environment usage during initial execution. To inforce correct environment usage I've been working on introduction of new Input QB 4.6: Are there any hardcoded environment URLs in the test steps? There should not be any harcoded environment URLs in the E2E. Such URLs should be presented as placeholder. Those placeholders should be explained in the preconditions section. If the URLs are same irrespective of the environment, such URLs are acceptable.
+    effort: 1
+    impact: 5

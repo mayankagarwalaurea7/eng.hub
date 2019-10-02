@@ -1,0 +1,25 @@
+manager: Denys Skorbenko
+teamroom: Eng.QAManualTesting
+direct reports: 13
+ICs:
+    - IC:
+        IC name: Thiago Maciel
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/SUPSOFT-4003
+        coaching: IC was not using TE tool for test case execution and got a falure due to human error. He's been coached to use the tool for every execution.
+        performance assessment: lowPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Deepa Shammi
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/CODEGRAPH-1648
+        coaching: IC didn't reflect number of results at a screenshot. I've coached her to use a browser search for a uniqe field in an array to get number of entrances for the screenshot
+        performance assessment: lowPerformer
+        continue coaching: true
+    - IC:
+        IC name: Balaji K
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/CSRV-4513
+        coaching: IC didn't reflect number of results at a screenshot. I've coached him to use a browser search for a uniqe field in an array to get number of entrances for the screenshot
+        performance assessment: lowPerformer
+        continue coaching: true
