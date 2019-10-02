@@ -11,4 +11,4 @@ recommendation:
         - product name: N/A
     description: Create a concrete checklist to assert a successful EOM XO API Update, to allow other ICs to ramp up fast on activity.
     effort: 0
-    impact: 1
+    impact: 0.6
