@@ -1,0 +1,13 @@
+manager: Erdem Ergin
+teamroom: Eng.Import.DueDiligence
+units:
+    - unit: https://jira.devfactory.com/browse/ENGDD-2702
+recommendation:
+    eliminate waste: true 
+    improve quality bar: false
+    product agnostic: true
+    product specific: 
+        - product name: Unified
+    description: List the repos scanned in the report so it will be clear for the consume
+    effort: 4
+    impact: 0.1
