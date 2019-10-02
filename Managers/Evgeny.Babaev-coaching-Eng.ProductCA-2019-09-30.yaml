@@ -1,0 +1,25 @@
+manager: Evgeny Babaev
+teamroom: Eng.ProductCA
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Albert Ghukasyan
+        date: 2019-09-30
+        unit: 
+        coaching: To reorganize FA for reporting, so we can execute less tests with same quality
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Aleksey Zvolinsky
+        date: 2019-09-30
+        unit: 
+        coaching: To prepare separate documentation describing monitoring entities (apart from runbooks)
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Luis Machado Reis
+        date: 2019-09-30
+        unit: 
+        coaching: Make sure to check ticket QB before sending (e2e) to review. FTAR is more important than metric number, which is ok for you anyway (even if it seems obvious) for every parameterhe is introducing to E2E. Also, asked him to give examples of values if any specific format is expected.
+        performance assessment: highPerformer
+        continue coaching: true
