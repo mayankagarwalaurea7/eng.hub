@@ -1,0 +1,32 @@
+manager: Konstantin Korotaev
+teamroom: Eng.ProductCA
+direct reports: 4
+ICs: 
+    - IC: 
+        IC name: Alex Balandin
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/NORTHP-18696
+        coaching: Discussed Eng hub usage for YAML diagrams. Asked to use container ids from strukturizv as labels for E2E to generate test plan for every container. 
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: yes
+    - IC: 
+        IC name: Evgeny Udalov
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/ONESPOT-869
+        coaching: Use time for working on C4 component diagram to add health E2E for this container.
+        perfrormanceAssessment: lowPerformer
+        continueCoaching: yes 
+    - IC: 
+        IC name: Kunal Ganglani
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/XINET-10904
+        coaching: Checking with PCA to add Jira project ids to Xinet Portal and Server as they as separate SE7 units.
+        perfrormanceAssessment: averagePerformer
+        continueCoaching: yes
+    - IC: 
+        IC name: Oleg Trofimov
+        date: 2019/10/02
+        unit: https://jira.devfactory.com/browse/NORTHP-20397
+        coaching: Reviewing C4 diagrams and pushing to finish it in the EOW.
+        perfrormanceAssessment: averagePerformer 
+        continueCoaching: yes

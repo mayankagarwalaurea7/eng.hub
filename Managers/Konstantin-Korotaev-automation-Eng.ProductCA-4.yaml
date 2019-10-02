@@ -1,0 +1,11 @@
+manager: Konstantin Korotaev
+teamroom: Eng.ProductCA
+units: 
+    - unit: https://jira.devfactory.com/browse/NORTHP-18696
+automation: 
+    product agnostic: true
+    product specific: 
+        - product name: Northplains Telescope
+    description: Create Health MTP generation for every container by id - QA team can validate YAML team results.
+    effort: 2
+    impact: 1

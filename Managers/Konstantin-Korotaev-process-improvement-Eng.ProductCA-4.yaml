@@ -1,0 +1,13 @@
+manager: Konstantin Korotaev
+teamroom: Eng.ProductCA
+units: 
+    - unit: https://jira.devfactory.com/browse/NORTHP-18696
+recomnmendation: 
+    eliminate waste: true
+    improve quality bar: true 
+    product agnostic: true
+    product specific: 
+        - product name: Northplains Telescope
+    description: Add container ids labels to E2E that cover health and smoke tests for containers - YAML team can get health and smoke tests without requests. 
+    effort: 2
+    impact: 1
