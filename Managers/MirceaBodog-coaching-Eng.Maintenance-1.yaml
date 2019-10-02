@@ -1,0 +1,74 @@
+manager: Mircea Bodog
+teamroom: Eng.Maintenance
+direct reports: 10
+ICs: 
+    - IC: 
+        IC name: Akash Gupta
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/XTP-5574
+        coaching: Focus crosstraining on the area where the first defect to be fixed is located
+        performance assessment: highPerformer
+        continue coaching: true 
+    - IC:
+        IC name: Rustem Zinnatullin
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/EVCID-12073
+        coaching: FAD tickets should nto got to FQB but directly to QE review and escalated to SEM to get metric in the same week
+        performance assessment: highPerformer
+        continue coaching: true 
+    - IC: 
+        IC name: Muhammad Charaf
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/ECPA-7172
+        coaching: Enhancement workflow related to resolution must be followed to get the metric in time - move to PCa review and close as specified in playbook
+        performance assessment: highPerformer
+        continue coaching: true 
+    - IC: 
+        IC name: Pujan Maharjan
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/ECPA-8122
+        coaching: Enhancement workflow related to resolution must be followed to get the metric in time - move to PCA review and close as specified in playbook
+        performance assessment: highPerformer
+        continue coaching: true 
+    - IC: 
+        IC name: Oleg Zhogin
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/DEV-43678
+        coaching: Ticket in state In development for too long - either fix it today max tomorrow or move it back to backlog
+        performance assessment: highPerformer
+        continue coaching: true 
+    - IC: 
+        IC name: Yorty Ruiz Hernandez
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/SNSGCID-65415
+        coaching: keep video with proof of fix to max 5 minutes - 11 minutes is too long for QE team to check - stick to only steps to reproduce in the defect
+        performance assessment: highPerformer
+        continue coaching: true 
+    - IC: 
+        IC name: Yasmeen Farag
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/XTP-5450
+        coaching: when closing a XTP ticket add in the comment the defects that were analyzed and the solution agreed as fix - maint playbook to be updated to include this
+        performance assessment: highPerformer
+        continue coaching: true 
+    - IC: 
+        IC name: Vivek Sharma
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/BIZAPPS-13706
+        coaching: FAD tickets must be closed in the same day they are moved to QE review - add SEM in CC of the comment explaining the FAD to get metric in the same day
+        performance assessment: highPerformer
+        continue coaching: true 
+    - IC: 
+        IC name: Maksim Vakhnik
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/SNSGCID-64815
+        coaching: InputQB validation tickets must be approved by SEM not IC - whenever something is needed notify the SEM
+        performance assessment: highPerformer
+        continue coaching: true 
+    - IC: 
+        IC name: Mirza Amir Majeed Baig
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/XTP-5151
+        coaching: when closing a XTP ticket add in the comment the defects that were analyzed and the solution agreed as fix - maint playbook to be updated to include this
+        performance assessment: highPerformer
+        continue coaching: true 

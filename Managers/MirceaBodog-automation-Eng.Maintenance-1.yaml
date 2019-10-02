@@ -1,0 +1,11 @@
+manager: Mircea Bodog
+teamroom: Eng.Maintenance
+units:
+    - unit: https://jira.devfactory.com/browse/TBGTM-6501?filter=82563
+automation: 
+    product agnostic: true
+    product specific:
+        ##- product name: !!str #product names
+    description: Implement week status dashboard for each IC with backlog, status of each ticket and time spent on each done in order to avoid spending too much time on a ticket or working on lower priority tickets
+    effort: 5
+    impact: 2
