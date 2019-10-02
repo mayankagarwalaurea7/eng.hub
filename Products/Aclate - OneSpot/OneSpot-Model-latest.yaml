@@ -389,6 +389,13 @@ model:
         description: transmits the requests to Insights Web App Backend
         technology: HTTPS
         interactionStyle: Synchronous
+      - id: '220'
+        tags: Relationship
+        sourceId: '166'
+        destinationId: '218'
+        description: get Insights Frontend scripts from S3
+        technology: HTTPS
+        interactionStyle: Synchronous
       - id: '188'
         tags: Relationship
         sourceId: '166'
@@ -403,13 +410,6 @@ model:
         name: Distribution for Insights Backend
         description: Origin - custom; transmits the requests to Insights Web App Backend
         relationships:
-        - id: '200'
-          tags: Relationship
-          sourceId: '191'
-          destinationId: '193'
-          description: transmits the requests to Insights Web App Backend
-          technology: HTTPS
-          interactionStyle: Synchronous
         - id: '205'
           tags: Relationship
           sourceId: '191'
@@ -425,18 +425,11 @@ model:
         description: Custom distribution; takes the Insights Web App Frontend JS scripts
           from the S3 and returns them to the user
         relationships:
-        - id: '196'
+        - id: '222'
           tags: Relationship
           sourceId: '168'
-          destinationId: '194'
-          description: gets the Insight Client App scripts (JS)
-          technology: HTTPS
-          interactionStyle: Synchronous
-        - id: '203'
-          tags: Relationship
-          sourceId: '168'
-          destinationId: '159'
-          description: gets the Insight Client App scripts (JS)
+          destinationId: '218'
+          description: gets the Insight Client App scripts (JS) from S3
           technology: HTTPS
           interactionStyle: Synchronous
         technology: HTTPS
@@ -446,13 +439,6 @@ model:
         name: Distribution for Recomm. Service
         description: Origin - custom; transmits the requests to the Recommending service
         relationships:
-        - id: '199'
-          tags: Relationship
-          sourceId: '190'
-          destinationId: '195'
-          description: transmits the requests to Recomemnding Service
-          technology: HTTPS
-          interactionStyle: Synchronous
         - id: '204'
           tags: Relationship
           sourceId: '190'
@@ -502,6 +488,18 @@ model:
         technology: HTTPS
         interactionStyle: Synchronous
       technology: PhantomJS
+    - id: '218'
+      tags: Element,Container
+      name: 'AWS S3: Insights Frontend'
+      description: Stores the Insights Web App Frontend scripts
+      technology: AWS S3
+      components:
+      - id: '221'
+        tags: Element,Component
+        name: Insights Frontend S3 bucket
+        description: Stores the Insights Web App Frontend scripts
+        technology: AWS S3
+        size: 0
     - id: '14'
       tags: Element,Container,Storage
       name: Configuration Store
@@ -608,18 +606,18 @@ model:
         description: requests the image
         technology: HTTPS
         interactionStyle: Synchronous
-      - id: '216'
-        tags: Relationship
-        sourceId: '159'
-        destinationId: '166'
-        description: provides the Insight Client App scripts (JS)
-        technology: HTTPS
-        interactionStyle: Synchronous
       - id: '212'
         tags: Relationship
         sourceId: '159'
         destinationId: '162'
         description: requests the image
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '219'
+        tags: Relationship
+        sourceId: '159'
+        destinationId: '218'
+        description: stores the application scripts in S3
         technology: HTTPS
         interactionStyle: Synchronous
       - id: '201'
