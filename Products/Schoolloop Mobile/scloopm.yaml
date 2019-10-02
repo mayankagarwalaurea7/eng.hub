@@ -2,8 +2,8 @@
 id: 47091
 name: Schoolloop mobile workspace
 description: Schoolloop mobile workspace
-revision: 73
-lastModifiedDate: '2019-10-02T00:23:32Z'
+revision: 76
+lastModifiedDate: '2019-10-02T14:42:32Z'
 lastModifiedUser: tahmid.mozaffar@aurea.com
 lastModifiedAgent: structurizr-web/1624
 model:
@@ -209,6 +209,7 @@ model:
   - id: '55'
     tags: Element,Person
     name: Parent
+    description: with schedule
     relationships:
     - id: '79'
       tags: Relationship
@@ -435,6 +436,7 @@ model:
   - id: '54'
     tags: Element,Person
     name: Student
+    description: with schedule
     relationships:
     - id: '74'
       tags: Relationship
@@ -753,6 +755,7 @@ model:
   - id: '2'
     tags: Element,Software System,internal
     name: SchoolLoop Mobile App
+    description: Android and iOS apps
     relationships:
     - id: '15'
       tags: Relationship
@@ -766,6 +769,7 @@ model:
     - id: '34'
       tags: Element,Container,internal
       name: Android App
+      description: Android version of Schoolloop Mobile
       relationships:
       - id: '49'
         tags: Relationship
@@ -889,6 +893,7 @@ model:
     - id: '33'
       tags: Element,Container,internal
       name: iOS App
+      description: iOS version of Schoolloop Mobile
       relationships:
       - id: '48'
         tags: Relationship
@@ -1009,6 +1014,8 @@ model:
     - id: '209'
       tags: Element,Container
       name: SchoolLoop Web API
+      description: This is a part of Schoolloop Web, Mobile apps communicate with
+        web server using this API.
       relationships:
       - id: '246'
         tags: Relationship
@@ -1154,6 +1161,8 @@ model:
   - id: '5'
     tags: Element,Software System
     name: SchoolLoop Web API
+    description: This is a part of Schoolloop Web, Mobile apps communicate with web
+      server using this API.
     relationships:
     - id: '21'
       tags: Relationship
@@ -1178,9 +1187,9 @@ model:
     - id: '302'
       tags: Container Instance
       relationships:
-      - id: '303'
+      - id: '342'
         sourceId: '302'
-        destinationId: '272'
+        destinationId: '339'
         description: sends push notifications to Android app users
         interactionStyle: Synchronous
         linkedRelationshipId: '219'
@@ -1198,9 +1207,9 @@ model:
     - id: '306'
       tags: Container Instance
       relationships:
-      - id: '307'
+      - id: '336'
         sourceId: '306'
-        destinationId: '274'
+        destinationId: '333'
         description: sends push notifications to iOS users
         interactionStyle: Synchronous
         linkedRelationshipId: '220'
@@ -1209,42 +1218,56 @@ model:
       instanceId: 1
       properties: {}
     children: []
-  - id: '273'
-    name: Apple Store
+  - id: '337'
+    name: User's Android Device
     environment: Production
+    technology: Android
     instances: 1
-    containerInstances:
-    - id: '274'
-      tags: Container Instance
-      relationships:
-      - id: '282'
-        sourceId: '274'
-        destinationId: '280'
-        interactionStyle: Synchronous
-        linkedRelationshipId: '215'
+    children:
+    - id: '338'
+      name: Google Play Store
       environment: Production
-      containerId: '33'
-      instanceId: 1
-      properties: {}
-    children: []
-  - id: '271'
-    name: Google Play Store
+      instances: 1
+      containerInstances:
+      - id: '339'
+        tags: Container Instance
+        relationships:
+        - id: '340'
+          sourceId: '339'
+          destinationId: '280'
+          interactionStyle: Synchronous
+          linkedRelationshipId: '218'
+        environment: Production
+        containerId: '34'
+        instanceId: 1
+        properties: {}
+      children: []
+    containerInstances: []
+  - id: '331'
+    name: User's iOS Device
     environment: Production
+    technology: iOS
     instances: 1
-    containerInstances:
-    - id: '272'
-      tags: Container Instance
-      relationships:
-      - id: '284'
-        sourceId: '272'
-        destinationId: '280'
-        interactionStyle: Synchronous
-        linkedRelationshipId: '218'
+    children:
+    - id: '332'
+      name: Apple Store
       environment: Production
-      containerId: '34'
-      instanceId: 1
-      properties: {}
-    children: []
+      instances: 1
+      containerInstances:
+      - id: '333'
+        tags: Container Instance
+        relationships:
+        - id: '334'
+          sourceId: '333'
+          destinationId: '280'
+          interactionStyle: Synchronous
+          linkedRelationshipId: '215'
+        environment: Production
+        containerId: '33'
+        instanceId: 1
+        properties: {}
+      children: []
+    containerInstances: []
   - id: '279'
     name: Web Server
     environment: Production
@@ -1267,6 +1290,13 @@ model:
         technology: HTTP
         interactionStyle: Synchronous
         linkedRelationshipId: '238'
+      - id: '335'
+        sourceId: '280'
+        destinationId: '333'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '214'
       - id: '308'
         sourceId: '280'
         destinationId: '306'
@@ -1281,16 +1311,9 @@ model:
         technology: HTTP
         interactionStyle: Synchronous
         linkedRelationshipId: '222'
-      - id: '281'
+      - id: '341'
         sourceId: '280'
-        destinationId: '274'
-        description: communicates with
-        technology: HTTP
-        interactionStyle: Synchronous
-        linkedRelationshipId: '214'
-      - id: '283'
-        sourceId: '280'
-        destinationId: '272'
+        destinationId: '339'
         description: communicates with
         technology: HTTP
         interactionStyle: Synchronous
@@ -1309,44 +1332,14 @@ model:
     - id: '312'
       tags: Container Instance
       relationships:
-      - id: '313'
+      - id: '349'
         sourceId: '312'
-        destinationId: '277'
+        destinationId: '346'
         description: sends push notifications to Android app users
         interactionStyle: Synchronous
         linkedRelationshipId: '219'
       environment: Test
       containerId: '216'
-      instanceId: 1
-      properties: {}
-    children: []
-  - id: '276'
-    name: HockeyApp
-    environment: Test
-    instances: 1
-    containerInstances:
-    - id: '278'
-      tags: Container Instance
-      relationships:
-      - id: '290'
-        sourceId: '278'
-        destinationId: '286'
-        interactionStyle: Synchronous
-        linkedRelationshipId: '215'
-      environment: Test
-      containerId: '33'
-      instanceId: 1
-      properties: {}
-    - id: '277'
-      tags: Container Instance
-      relationships:
-      - id: '288'
-        sourceId: '277'
-        destinationId: '286'
-        interactionStyle: Synchronous
-        linkedRelationshipId: '218'
-      environment: Test
-      containerId: '34'
       instanceId: 1
       properties: {}
     children: []
@@ -1359,9 +1352,9 @@ model:
     - id: '316'
       tags: Container Instance
       relationships:
-      - id: '317'
+      - id: '352'
         sourceId: '316'
-        destinationId: '278'
+        destinationId: '351'
         description: sends push notifications to iOS users
         interactionStyle: Synchronous
         linkedRelationshipId: '220'
@@ -1370,6 +1363,56 @@ model:
       instanceId: 1
       properties: {}
     children: []
+  - id: '344'
+    name: User's Android Device
+    environment: Test
+    technology: Android
+    instances: 1
+    children:
+    - id: '345'
+      name: HockeyApp
+      environment: Test
+      instances: 1
+      containerInstances:
+      - id: '346'
+        tags: Container Instance
+        relationships:
+        - id: '347'
+          sourceId: '346'
+          destinationId: '286'
+          interactionStyle: Synchronous
+          linkedRelationshipId: '218'
+        environment: Test
+        containerId: '34'
+        instanceId: 1
+        properties: {}
+      children: []
+    containerInstances: []
+  - id: '343'
+    name: User's iOS Device
+    environment: Test
+    technology: iOS
+    instances: 1
+    children:
+    - id: '350'
+      name: HockeyApp
+      environment: Test
+      instances: 1
+      containerInstances:
+      - id: '351'
+        tags: Container Instance
+        relationships:
+        - id: '353'
+          sourceId: '351'
+          destinationId: '286'
+          interactionStyle: Synchronous
+          linkedRelationshipId: '215'
+        environment: Test
+        containerId: '33'
+        instanceId: 1
+        properties: {}
+      children: []
+    containerInstances: []
   - id: '285'
     name: Web Server
     environment: Test
@@ -1385,13 +1428,6 @@ model:
         technology: HTTP
         interactionStyle: Synchronous
         linkedRelationshipId: '222'
-      - id: '287'
-        sourceId: '286'
-        destinationId: '277'
-        description: communicates with
-        technology: HTTP
-        interactionStyle: Synchronous
-        linkedRelationshipId: '217'
       - id: '319'
         sourceId: '286'
         destinationId: '316'
@@ -1406,6 +1442,20 @@ model:
         technology: HTTP
         interactionStyle: Synchronous
         linkedRelationshipId: '238'
+      - id: '354'
+        sourceId: '286'
+        destinationId: '351'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '214'
+      - id: '348'
+        sourceId: '286'
+        destinationId: '346'
+        description: communicates with
+        technology: HTTP
+        interactionStyle: Synchronous
+        linkedRelationshipId: '217'
       - id: '318'
         sourceId: '286'
         destinationId: '316'
@@ -1413,13 +1463,6 @@ model:
         technology: HTTP
         interactionStyle: Synchronous
         linkedRelationshipId: '221'
-      - id: '289'
-        sourceId: '286'
-        destinationId: '278'
-        description: communicates with
-        technology: HTTP
-        interactionStyle: Synchronous
-        linkedRelationshipId: '214'
       environment: Test
       containerId: '209'
       instanceId: 1
@@ -1968,6 +2011,18 @@ views:
     paperSize: A4_Landscape
     environment: Production
     elements:
+    - id: '280'
+      x: 1285
+      y: 935
+    - id: '331'
+      x: 0
+      y: 0
+    - id: '332'
+      x: 0
+      y: 0
+    - id: '333'
+      x: 310
+      y: 210
     - id: '300'
       x: 0
       y: 0
@@ -1980,78 +2035,81 @@ views:
     - id: '302'
       x: 2405
       y: 1605
+    - id: '337'
+      x: 0
+      y: 0
+    - id: '338'
+      x: 0
+      y: 0
     - id: '306'
       x: 2370
       y: 235
-    - id: '280'
-      x: 1285
-      y: 935
-    - id: '271'
-      x: 0
-      y: 0
-    - id: '272'
-      x: 200
-      y: 1665
-    - id: '273'
-      x: 0
-      y: 0
-    - id: '274'
-      x: 190
-      y: 235
+    - id: '339'
+      x: 305
+      y: 1585
     relationships:
-    - id: '281'
+    - id: '336'
     - id: '304'
-    - id: '303'
-    - id: '284'
-    - id: '282'
-    - id: '283'
+    - id: '334'
+    - id: '335'
+    - id: '342'
+    - id: '341'
+    - id: '340'
     - id: '309'
     - id: '305'
     - id: '308'
-    - id: '307'
   - softwareSystemId: '2'
     key: testdeploymentview
     paperSize: A4_Landscape
     environment: Test
     elements:
+    - id: '350'
+      x: 0
+      y: 0
+    - id: '351'
+      x: 315
+      y: 1620
+    - id: '285'
+      x: 0
+      y: 0
     - id: '286'
       x: 1415
       y: 920
-    - id: '276'
-      x: 0
-      y: 0
-    - id: '277'
-      x: 245
-      y: 200
     - id: '310'
       x: 0
       y: 0
-    - id: '278'
-      x: 220
-      y: 1655
+    - id: '343'
+      x: 0
+      y: 0
     - id: '311'
+      x: 0
+      y: 0
+    - id: '344'
       x: 0
       y: 0
     - id: '312'
       x: 2475
       y: 220
+    - id: '345'
+      x: 0
+      y: 0
+    - id: '346'
+      x: 265
+      y: 240
     - id: '316'
       x: 2495
       y: 1645
-    - id: '285'
-      x: 0
-      y: 0
     relationships:
-    - id: '313'
-    - id: '290'
+    - id: '348'
+    - id: '347'
     - id: '315'
     - id: '314'
-    - id: '288'
-    - id: '289'
-    - id: '287'
-    - id: '317'
+    - id: '354'
+    - id: '353'
+    - id: '352'
     - id: '319'
     - id: '318'
+    - id: '349'
   configuration:
     branding: {}
     styles:
@@ -2069,7 +2127,7 @@ views:
       relationships:
       - tag: Relationship
     terminology: {}
-    lastSavedView: deployment
+    lastSavedView: '1'
   systemLandscapeViews: []
   dynamicViews: []
   filteredViews: []
