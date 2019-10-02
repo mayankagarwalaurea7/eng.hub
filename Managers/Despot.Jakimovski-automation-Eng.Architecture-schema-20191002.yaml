@@ -1,0 +1,9 @@
+manager: Despot Jakimovski
+teamroom: Eng.Architecture
+units: 
+    - unit: https://jira.devfactory.com/browse/ARCH-1640
+automation: 
+    product agnostic: true
+    description: Made changes to the breakdown matrix formulas so we cover accidently added rows at beginning of sheet in FS breakdown matrix tab which rendered non-inclusion of those rows in FS breakdown matrix tab. I tested it and it doesn't have any issues now.
+    effort: 2
+    impact: 0.025
