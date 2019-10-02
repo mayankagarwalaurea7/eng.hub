@@ -1,0 +1,14 @@
+manager: José Martins
+teamroom: Eng.Feature.QE
+units:
+    - unit: https://jira.devfactory.com/browse/SONIC-20363
+    - unit: https://jira.devfactory.com/browse/DVSP-17243
+    - unit: https://jira.devfactory.com/browse/SONIC-20363
+    - unit: https://jira.devfactory.com/browse/JVHOPST-10246
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Automatically add review comment on tickets, based on review checklist.
+    effort: 10
+    impact: 10
