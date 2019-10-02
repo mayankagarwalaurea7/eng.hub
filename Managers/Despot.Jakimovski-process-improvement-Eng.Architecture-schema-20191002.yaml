@@ -1,0 +1,11 @@
+manager: Despot Jakimovski
+teamroom: Eng.Architecture
+units: 
+    - unit: https://jira.devfactory.com/browse/ARCH-1640
+recommendation: 
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    description: Resolving any missunderstanding of Daily Playbook when new IC comes in teamroom after first day. Not understanding the daily playbook prevents from gaining more speed as you are not properly using the Reason/Solution/Blocker deliverables in order to understand how to improve each day. Although read daily playbook, he still has some issues writing Reasons for missing the daily goal, solutions and Blockers. We discussed during our C&C and clarify any misunderstandings. 
+    effort: 0.025
+    impact: 0.05
