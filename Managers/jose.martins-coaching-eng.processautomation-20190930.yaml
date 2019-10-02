@@ -6,6 +6,6 @@ ICs:
         IC name: Umut Ozkan
         date: 2019-09-30
         unit: https://jira.devfactory.com/browse/PA-689
-        coaching:Improve service design. Do skinny controllers to improve reusability and SRP.
+        coaching: Improve service design. Do skinny controllers to improve re-usability and SRP.
         performance assessment: highPerformer
         continue coaching: true
