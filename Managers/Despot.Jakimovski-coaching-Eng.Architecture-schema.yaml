@@ -16,3 +16,24 @@ ICs:
         coaching: Although "should" keyword in TDDs has been missed in reviews in the past, please don't use it in future as we don't want to give the Feature IC the wrong impression that this is optional.
         performance assessment: highPerformer
         continue coaching: true
+    - IC: 
+        IC name: Mehdi Rizvi
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/ARCH-1321
+        coaching: In order to provide more help to Feature team, look for the E2Es in  FA to E2E traceability matrix sheet https://docs.google.com/spreadsheets/d/1LS-MsjIpIxqAKe9RQspmDvfHVszEHKkP-3k-f1LyhVM/edit#gid=1813750944 , even for new functional changes. Since this was Milestone2, they might have created the E2Es in M1.x, at least maybe some of them. This improves the quality of your delivered unit. 
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Cagatay Kalan
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/ARCH-1640
+        coaching: Spend 25% (4hrs) less time on getting to know the product (reading P2s, various product related docs, apart from P1 and PA doc) in order to push the ticket from FQA Pending -> FQA in Review (create the mapping between P1/AU parts/E2Es and FSs). You can eventually learn the product better and better as you create units for the same product.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Turgay Kivrak
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/ARCH-1628
+        coaching: Although "should" keyword in TDDs has been missed in reviews in the past, please don't use it in future as we don't want to give the Feature IC the wrong impression that this is optional.
+        performance assessment: highPerformer
+        continue coaching: true
