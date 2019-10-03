@@ -1,0 +1,11 @@
+manager: Todd Benson
+teamroom: Eng.ProductCA
+units:
+    - https://jira.devfactory.com/browse/STRONGTEST-77
+automation: 
+    product agnostic: true
+    product specific: false
+        - product name: StrongTest
+    description: Currently when IC needs to complete CI CD tickets, he creates them manually.  But in future, IC could store what he did in a sheet and then highlight it and right click on it and select create JIRA Eng Problme ticket and it would create the ticket for them fine.  This will eliminate waste and improve quality.  All documentation, CICD updates, and environment updates manual data entry should disappear.
+    effort: 5 days
+    impact: 100

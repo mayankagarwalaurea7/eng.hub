@@ -1,0 +1,13 @@
+manager: Todd Benson
+teamroom: Eng.ProductCA
+units: 1
+    - https://jira.devfactory.com/browse/STRONGTEST-93
+recommendation: 
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific:
+        - product name: Strongtest 
+    description: For all environment setup and fixing environment issues, IC must use CI CD ticket type, but this is not a perfect match and so IC must use some mental magic to make it work.  So I think it would be better to have another issue type for PCAs to use for these environment issues.  Also, the QBs have too many items in them and I think a QB should have max 3 items in it.  This keeps it simple and more efficient. 
+    effort: 5
+    impact: 100

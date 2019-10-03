@@ -1,0 +1,18 @@
+manager: Todd Benson
+teamroom: Eng.ProductCA
+direct reports: 2
+ICs: 
+    - IC: 
+        IC name: Hugo Casco
+        date: 10/02/2019
+        unit: https://jira.devfactory.com/browse/CODEALIKE-5417
+        coaching: This E2E is linked to almost all functional areas.  I think it is better to write E2Es so that they are detailed enough that they don't link to most functional areas.  There is no value to linking 1 test case to almost all of the functional areas.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Metin Yarci
+        date: 10/02/2019
+        unit: https://jira.devfactory.com/browse/STRONGTEST-58
+        coaching: Some of the preconditions do not have enough explanation of what needs to be done.  Please make sure all precondition steps are clearly spelled out.  
+        performance assessment: averagePerformer
+        continue coaching: true
