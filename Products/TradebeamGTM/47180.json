@@ -2,8 +2,8 @@
     "id": 47180,
     "name": "Tradebeam",
     "description": "Tradebeam workspace",
-    "revision": 44,
-    "lastModifiedDate": "2019-10-02T08:34:31Z",
+    "revision": 45,
+    "lastModifiedDate": "2019-10-03T07:02:27Z",
     "lastModifiedUser": "erdem.yilmaz@trilogy.com",
     "lastModifiedAgent": "structurizr-web/1624",
     "model": {
@@ -920,6 +920,33 @@
                                 "size": 0
                             }
                         ]
+                    },
+                    {
+                        "id": "121",
+                        "tags": "Element,Container",
+                        "name": "WebMethods Server",
+                        "description": "Third Party Application",
+                        "relationships": [
+                            {
+                                "id": "122",
+                                "tags": "Relationship",
+                                "sourceId": "121",
+                                "destinationId": "48",
+                                "description": "uses",
+                                "technology": "SOAP",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "123",
+                                "tags": "Relationship",
+                                "sourceId": "121",
+                                "destinationId": "51",
+                                "description": "read/wrrite files",
+                                "technology": "NFS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "technology": "EDI"
                     }
                 ]
             },
@@ -1148,6 +1175,22 @@
                         "elements": [
                             "112"
                         ],
+                        "relationships": [
+                            "113",
+                            "114",
+                            "115",
+                            "116",
+                            "117",
+                            "118",
+                            "119",
+                            "120"
+                        ]
+                    },
+                    {
+                        "order": 9,
+                        "elements": [
+                            "121"
+                        ],
                         "relationships": []
                     }
                 ],
@@ -1170,7 +1213,7 @@
                     {
                         "id": "35",
                         "x": 1590,
-                        "y": 1640
+                        "y": 1655
                     },
                     {
                         "id": "25",
@@ -1194,8 +1237,8 @@
                     },
                     {
                         "id": "26",
-                        "x": 4005,
-                        "y": 1450
+                        "x": 3965,
+                        "y": 1255
                     },
                     {
                         "id": "27",
@@ -1209,8 +1252,8 @@
                     },
                     {
                         "id": "17",
-                        "x": 4005,
-                        "y": 920
+                        "x": 3965,
+                        "y": 725
                     },
                     {
                         "id": "39",
@@ -1223,19 +1266,24 @@
                         "y": 645
                     },
                     {
+                        "id": "121",
+                        "x": 3200,
+                        "y": 1655
+                    },
+                    {
                         "id": "112",
                         "x": 1500,
                         "y": 705
                     },
                     {
                         "id": "50",
-                        "x": 3360,
-                        "y": 1045
+                        "x": 3170,
+                        "y": 810
                     },
                     {
                         "id": "51",
-                        "x": 3360,
-                        "y": 1450
+                        "x": 3195,
+                        "y": 1255
                     },
                     {
                         "id": "31",
@@ -1366,6 +1414,9 @@
                         "id": "100"
                     },
                     {
+                        "id": "122"
+                    },
+                    {
                         "id": "56"
                     },
                     {
@@ -1376,6 +1427,9 @@
                     },
                     {
                         "id": "101"
+                    },
+                    {
+                        "id": "123"
                     },
                     {
                         "id": "104"
@@ -1393,6 +1447,149 @@
             }
         ],
         "componentViews": [
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentTForm",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "77",
+                            "35",
+                            "25",
+                            "76"
+                        ],
+                        "relationships": [
+                            "78",
+                            "79"
+                        ]
+                    }
+                ],
+                "containerId": "34",
+                "elements": [
+                    {
+                        "id": "77",
+                        "x": 1370,
+                        "y": 300
+                    },
+                    {
+                        "id": "35",
+                        "x": 1370,
+                        "y": 1050
+                    },
+                    {
+                        "id": "25",
+                        "x": 320,
+                        "y": 1050
+                    },
+                    {
+                        "id": "76",
+                        "x": 320,
+                        "y": 300
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "78"
+                    },
+                    {
+                        "id": "79"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentApp",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "63"
+                        ],
+                        "relationships": []
+                    },
+                    {
+                        "order": 2,
+                        "elements": [
+                            "35",
+                            "25",
+                            "19"
+                        ],
+                        "relationships": []
+                    }
+                ],
+                "containerId": "20",
+                "elements": [
+                    {
+                        "id": "35",
+                        "x": 1070,
+                        "y": 1160
+                    },
+                    {
+                        "id": "25",
+                        "x": 80,
+                        "y": 1165
+                    },
+                    {
+                        "id": "19",
+                        "x": 605,
+                        "y": 70
+                    },
+                    {
+                        "id": "63",
+                        "x": 605,
+                        "y": 515
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "65"
+                    },
+                    {
+                        "id": "64"
+                    },
+                    {
+                        "id": "66"
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentJMS",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "52",
+                            "53"
+                        ],
+                        "relationships": [
+                            "54"
+                        ]
+                    }
+                ],
+                "containerId": "35",
+                "elements": [
+                    {
+                        "id": "52",
+                        "x": 970,
+                        "y": 285
+                    },
+                    {
+                        "id": "53",
+                        "x": 188,
+                        "y": 281
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "54"
+                    }
+                ]
+            },
             {
                 "softwareSystemId": "13",
                 "key": "GTMComponentPublicWebServices",
@@ -1441,137 +1638,6 @@
                     },
                     {
                         "id": "75"
-                    }
-                ]
-            },
-            {
-                "softwareSystemId": "13",
-                "key": "GTMComponentJMS",
-                "paperSize": "A5_Landscape",
-                "animations": [
-                    {
-                        "order": 1,
-                        "elements": [
-                            "52",
-                            "53"
-                        ],
-                        "relationships": [
-                            "54"
-                        ]
-                    }
-                ],
-                "containerId": "35",
-                "elements": [
-                    {
-                        "id": "52",
-                        "x": 970,
-                        "y": 285
-                    },
-                    {
-                        "id": "53",
-                        "x": 188,
-                        "y": 281
-                    }
-                ],
-                "relationships": [
-                    {
-                        "id": "54"
-                    }
-                ]
-            },
-            {
-                "softwareSystemId": "13",
-                "key": "GTMComponentDFS",
-                "paperSize": "A5_Landscape",
-                "animations": [
-                    {
-                        "order": 1,
-                        "elements": [
-                            "35",
-                            "25",
-                            "80",
-                            "81"
-                        ],
-                        "relationships": [
-                            "82",
-                            "83"
-                        ]
-                    }
-                ],
-                "containerId": "48",
-                "elements": [
-                    {
-                        "id": "35",
-                        "x": 1260,
-                        "y": 980
-                    },
-                    {
-                        "id": "25",
-                        "x": 210,
-                        "y": 980
-                    },
-                    {
-                        "id": "80",
-                        "x": 210,
-                        "y": 230
-                    },
-                    {
-                        "id": "81",
-                        "x": 1260,
-                        "y": 230
-                    }
-                ],
-                "relationships": [
-                    {
-                        "id": "82"
-                    },
-                    {
-                        "id": "83"
-                    }
-                ]
-            },
-            {
-                "softwareSystemId": "13",
-                "key": "GTMComponentFTP",
-                "paperSize": "A5_Landscape",
-                "animations": [
-                    {
-                        "order": 1,
-                        "elements": [
-                            "17",
-                            "84"
-                        ],
-                        "relationships": [
-                            "85"
-                        ]
-                    }
-                ],
-                "containerId": "50",
-                "elements": [
-                    {
-                        "id": "17",
-                        "x": 240,
-                        "y": 60
-                    },
-                    {
-                        "id": "84",
-                        "x": 240,
-                        "y": 810
-                    }
-                ],
-                "relationships": [
-                    {
-                        "id": "85",
-                        "vertices": [
-                            {
-                                "x": 465,
-                                "y": 510
-                            },
-                            {
-                                "x": 465,
-                                "y": 660
-                            }
-                        ]
                     }
                 ]
             },
@@ -1661,63 +1727,6 @@
             },
             {
                 "softwareSystemId": "13",
-                "key": "GTMComponentApp",
-                "paperSize": "A5_Landscape",
-                "animations": [
-                    {
-                        "order": 1,
-                        "elements": [
-                            "63"
-                        ],
-                        "relationships": []
-                    },
-                    {
-                        "order": 2,
-                        "elements": [
-                            "35",
-                            "25",
-                            "19"
-                        ],
-                        "relationships": []
-                    }
-                ],
-                "containerId": "20",
-                "elements": [
-                    {
-                        "id": "35",
-                        "x": 1070,
-                        "y": 1160
-                    },
-                    {
-                        "id": "25",
-                        "x": 80,
-                        "y": 1165
-                    },
-                    {
-                        "id": "19",
-                        "x": 605,
-                        "y": 70
-                    },
-                    {
-                        "id": "63",
-                        "x": 605,
-                        "y": 515
-                    }
-                ],
-                "relationships": [
-                    {
-                        "id": "65"
-                    },
-                    {
-                        "id": "64"
-                    },
-                    {
-                        "id": "66"
-                    }
-                ]
-            },
-            {
-                "softwareSystemId": "13",
                 "key": "GTMComponentBiz",
                 "paperSize": "A5_Landscape",
                 "animations": [
@@ -1772,52 +1781,97 @@
             },
             {
                 "softwareSystemId": "13",
-                "key": "GTMComponentTForm",
+                "key": "GTMComponentFTP",
                 "paperSize": "A5_Landscape",
                 "animations": [
                     {
                         "order": 1,
                         "elements": [
-                            "77",
-                            "35",
-                            "25",
-                            "76"
+                            "17",
+                            "84"
                         ],
                         "relationships": [
-                            "78",
-                            "79"
+                            "85"
                         ]
                     }
                 ],
-                "containerId": "34",
+                "containerId": "50",
                 "elements": [
                     {
-                        "id": "77",
-                        "x": 1370,
-                        "y": 300
+                        "id": "17",
+                        "x": 240,
+                        "y": 60
                     },
                     {
-                        "id": "35",
-                        "x": 1370,
-                        "y": 1050
-                    },
-                    {
-                        "id": "25",
-                        "x": 320,
-                        "y": 1050
-                    },
-                    {
-                        "id": "76",
-                        "x": 320,
-                        "y": 300
+                        "id": "84",
+                        "x": 240,
+                        "y": 810
                     }
                 ],
                 "relationships": [
                     {
-                        "id": "78"
+                        "id": "85",
+                        "vertices": [
+                            {
+                                "x": 465,
+                                "y": 510
+                            },
+                            {
+                                "x": 465,
+                                "y": 660
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "softwareSystemId": "13",
+                "key": "GTMComponentDFS",
+                "paperSize": "A5_Landscape",
+                "animations": [
+                    {
+                        "order": 1,
+                        "elements": [
+                            "35",
+                            "25",
+                            "80",
+                            "81"
+                        ],
+                        "relationships": [
+                            "82",
+                            "83"
+                        ]
+                    }
+                ],
+                "containerId": "48",
+                "elements": [
+                    {
+                        "id": "35",
+                        "x": 1260,
+                        "y": 980
                     },
                     {
-                        "id": "79"
+                        "id": "25",
+                        "x": 210,
+                        "y": 980
+                    },
+                    {
+                        "id": "80",
+                        "x": 210,
+                        "y": 230
+                    },
+                    {
+                        "id": "81",
+                        "x": 1260,
+                        "y": 230
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "82"
+                    },
+                    {
+                        "id": "83"
                     }
                 ]
             }
