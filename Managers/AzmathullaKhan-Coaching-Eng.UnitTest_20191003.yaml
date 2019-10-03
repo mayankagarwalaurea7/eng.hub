@@ -1,0 +1,60 @@
+manager: Azmathulla Khan
+teamroom: Eng.UnitTest
+direct reports: 8
+ICs: 
+    - IC: 
+        IC name: Mayur Patel
+        date: 2019-10-03
+        unit: https://jira.devfactory.com/browse/TBGTM-6826
+        coaching: During Gemba Walk review found that this file in PR 1117 of tradebeam 6826 does Not End with a Termination Newline Character. Coached IC in CIC to Consider adding a termination newline at the end of the file to avoid unexpected behavior of different applications that may consume this file.
+        performance assessment: averagePerformer		
+        continue coaching: true
+    - IC: 
+        IC name: Pranati Jaiswal
+        date: 2019-10-03
+        unit: https://jira.devfactory.com/browse/TBGTM-6467
+        coaching: Guided IC during review that this Code Does Unchecked Assignment and an improvement would be to add a diamond <> to the collection/map on the right side of the assignment to avoid an unchecked warning issued by the compiler.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Deepali Kathotia
+        date: 2019-10-03
+        unit: https://jira.devfactory.com/browse/TBGTM-6485
+        coaching: IC is guided on improving the JUnit Test Method Name as prefix is specific to JUnit 3, while @Test is specific to JUnit 4 and deprecates the former. It could be a good approach to remove this prefix and avoid redundancy. It is recommended to follow the Java naming conventions for method's names and remove the underscore characters. For test methods, the underscores can be replaced with BDD format.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Moho Anayetul Samaun
+        date: 2019-10-03
+        unit: https://jira.devfactory.com/browse/OLIVES-13729
+        coaching: In our cic review further guided & revisited on missing Jenkins Code coverage and fixes in the reference PR 28 of Olive.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Amrulla Khan
+        date: 2019-10-03
+        unit: https://jira.devfactory.com/browse/PIVOTAL-8458
+        coaching: In cic review revisited on the Jenkins build that is failing and relevant fixes revisited in the reference PR 25 of Pivotal.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Waleed Mohsin
+        date: 2019-10-03
+        unit: https://jira.devfactory.com/browse/PIVOTAL-6308
+        coaching: Coached IC today to continue manual scanning such errors of left over unused variables despite using UTGenerator till the time fix is made by AUT team. For now Resharper trial version could be used though however long term mitigation is to fix UTGenerator tool. 
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Sibhani Sankar Pradhan
+        date: 2019-10-03
+        unit: https://jira.devfactory.com/browse/TBGTM-6108
+        coaching: Coached in CIC that in T-5108 the method Can Be Marked as Static. Improvement suggestion in this case is private static Set <String> getScreeningFields. Since this method is not using any instance variable, it could be a good idea to mark it as static as well. Static methods are ok when they are functions, i.e. they don't do any I/O, don't have any internal state and only use their parameters to compute their return value. This way the code can call this method even if no object was created yet. 
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Kerem Demirer
+        date: 2019-10-03
+        unit: https://jira.devfactory.com/browse/KMECN-28256
+        coaching: This code uses a single-line to format statements, conditions, or code blocks. It could be a good idea to format the code using separate lines for statements, conditions, or code blocks (Single-line statement rule).This change would increase the readability of the code and will provide a clear picture of the algorithm.
+        performance assessment: highPerformer
+        continue coaching: true		
