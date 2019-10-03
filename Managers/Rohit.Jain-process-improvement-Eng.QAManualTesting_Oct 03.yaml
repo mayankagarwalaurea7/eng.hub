@@ -1,0 +1,13 @@
+manager: Rohit Jain
+teamroom: Eng.QAManualTesting
+units:
+    - unit: All E2Es assignment
+recommendation:
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Working on process to assignment of E2Es to QA team. After first phase release of autoallocator a new proces is defined to not assign any E2E manually. All allocation to be done by the tool only.
+    effort: 1
+    impact: 5 %
