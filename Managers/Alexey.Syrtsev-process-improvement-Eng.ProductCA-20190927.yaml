@@ -1,0 +1,13 @@
+manager: Alexey Syrtsev
+teamroom: Eng.ProductCA,Eng.ProductCA.QE,Eng.ManualQA
+units: 
+    - unit: https://jira.devfactory.com/issues/?jql=type%20%3D%20%22End-to-end%20Test%22%20
+recommendation: 
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    product specific: 
+        # - product name: !!str #product names 
+    description: At the moment E2E review passes PCA QE QBs and QA IQBs which are duplicating each others and are introducing unnessessary delay + consume most time of PCA QE. It is highly recommended to completely replace PCA QE E2E review with QA IQB review and let PCA QE to focus on Arch Docs and RCAs
+    effort: 3
+    impact: 10

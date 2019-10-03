@@ -1,0 +1,11 @@
+manager: Alexey Syrtsev
+teamroom: Eng.Product,Eng.ProductCA
+units: 
+    - unit: jira project meta-data
+automation:
+    product agnostic: true
+    product specific: 
+        ##- product name: !!str #product names
+    description: We should eliminate product technical data duplication in Products Master spreadsheet (this part is not mainteined properly and not trackable at the moment). It can be done in the following way - 1. Neccessary technical summary to bemoved to Arch Docs; 2. Arch doc link is added in Profields in jira 3. Products Master replaces Technical data tab with 'Arch Doc link' column - link is to be taken from jira profields
+    effort: 2 #days
+    impact: 1 #or more - depending on product structure definition

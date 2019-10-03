@@ -1,7 +1,4 @@
-manager: Alexey Syrtsev
-teamroom: Eng.ProductCA
-direct reports: 3
-ICs: 
+ICs:
     - IC: 
         IC name: Alaa Nassef
         date: 2019-10-01
@@ -9,7 +6,7 @@ ICs:
         coaching: This one was rejected by invalid reason after spending 7 days in QE review. PCA is coached to push QE team to perform review immediately
         performance assessment: highPerformer
         continue coaching: true
-    - IC: 
+    - IC:
         IC name: Boris Vanin
         date: 2019-10-01
         unit: https://jira.devfactory.com/browse/CODEGRAPH-5717

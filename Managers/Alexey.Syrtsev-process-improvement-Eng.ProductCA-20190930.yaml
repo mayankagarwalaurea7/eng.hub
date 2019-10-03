@@ -1,0 +1,10 @@
+manager: Alexey Syrtsev
+teamroom: Eng.ProductCA,Eng.ProductCA.QE,Eng.ManualQA
+units:
+    - unit: https://jira.devfactory.com/issues/?jql=type%20%3D%20%22End-to-end%20Test%22%20
+recommendation:
+    product agnostic: true
+    product specific:
+    description: QAs still follow the old approach introduced when they were required to produce a number of TCs for 1 E2E - they write TC and then execute it. It casue later issues reporting and introduces additional gap  because of work queue. Instead, E2E execution should be a part of E2E IQB. PSEM/PCA is responsible for making every E2E in RDS to be executable. QAs are executing E2E before writing a TC and in case of an issue the fail it and report a Defect. Related Eng Problem is to be re-opened - hence, it appears immediately in PCA's work queue. Pros - PCAs are strongly motivated to deliver executable E2Es and execute them before sending them to QE Review; no delay for E2E fixes (QE Review for E2Es should be automated- see my Automation suggestion for Sep'27). Cons - PCA's FTAR might drop for the first time; false issue reports might take place - for this case, an automated rollback might be considered
+    effort: 3
+    impact: 25

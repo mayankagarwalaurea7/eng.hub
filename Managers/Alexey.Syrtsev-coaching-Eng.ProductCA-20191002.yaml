@@ -1,0 +1,25 @@
+manager: Alexey Syrtsev
+teamroom: Eng.ProductCA
+direct reports: 3
+ICs: 
+    - IC: 
+        IC name: Alaa Nassef
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/CSRV-11193
+        coaching: Identified several E2Es which are included into the next release but linked to non-delivered Feature Stories. Provided him a JQL to identify such cases and asked him to erform a cleanup and move them to the following version FAs. Also, asked him to use that JQL on the following version RDS building.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Boris Vanin
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/CODEGRAPH-2312
+        coaching: Access to confuence page specified in E2E preconditions wasn't granted to QA team. Asked him to ensure QAs are having access before he sends an E2E to QE Review
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Nikolai Ligastaev
+        date: 2019-10-02
+        unit: no specific unit
+        coaching: He was blocked because of he is sharing 2 products and their combination gives wrong order in WQ Dashboard (because EPs are sorted by project and then by Autorank while his query should be sorted by Autorank only). This RC was identified and (since WQ Dashboard JQL wasn't changed by our proposal) it was decided that he will adapt the query for his needs and will extend his personal dashboard with the adapted queue. It helped him to identify his WQ correctly.
+        performance assessment: averagePerformer
+        continue coaching: true

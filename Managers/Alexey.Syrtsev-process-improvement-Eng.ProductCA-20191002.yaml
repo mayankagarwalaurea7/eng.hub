@@ -1,0 +1,13 @@
+manager: Alexey Syrtsev
+teamroom: Eng.ProductCA,Eng.ProductCA.QE,Eng.ManualQA
+units: 
+    - unit: https://jira.devfactory.com/issues/?jql=type%20%3D%20%22End-to-end%20Test%22%20
+recommendation: 
+    eliminate waste: true
+    improve quality bar: false
+    product agnostic: true
+    product specific: 
+        # - product name: !!str #product names 
+    description: (a part of this improvement was suggested before). At the moment we have 2 types of E2E blockers - Failed QB and Blocked. Both are affecting PCAs while Blocked status might be caused by ManualQA internal issues. We should clearly separate those statuses and use Failed QB as an external blocker and Blocked as an internalblocker. As it was suggested before, if we move E2E execution forward, as a part of IQB, then all blockers that depennd on PCAs can be detected at this step. Once IQB(+execution) are passed, we may expect that no further PCA's involvement is requred. PROs - E2E TC writing process becomes simple and straightforward (following factory principles); no delays with TC writing because of dependency on PCA - E2E either rejected at the beginning or accepted and delivered without PCA's support; No unneccessary Blocked tasks are to be generated for PCA; no confusion with PCA QE review (when E2E precondition is Blocked then it is not a blocker for QE review, if a precondition is in Failed QB then PCA QE review can be postponed). CONs - it may negatively affect PCA's FTAR (but it also gives a matterof E2E quality improvement); false failures may happen (it can be resolved with granting E2E failure decision to QSEMs only and by introducing some rollbackmechanislm in case if execution failure was caused by QA's mistake)
+    effort: 3
+    impact: 15
