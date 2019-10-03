@@ -7,8 +7,8 @@ ICs:
         date: 2019-10-02
         unit: https://jira.devfactory.com/browse/SLIAO-7710
         coaching: remove circular references and update a few missing technologies, remove duplicate of SVN
-        perfrormanceAssessment: highPerformer
-        continueCoaching: true
+        performance assessment: highPerformer
+        continue coaching: true
     - IC:
         IC name: Haci Burak
         date: 2019-10-02
@@ -16,13 +16,13 @@ ICs:
         coaching: we need to split the operations-rpms repository into containers to do this work
           we should use https://docs.google.com/spreadsheets/d/1jUQ1JObixid4syeDHxnqgU8des6nZAQnFxx0U_jBwQM/edit?pli=1#gid=0
           this will allow us to continue defining containers and reolocate artifacts
-        perfrormanceAssessment: averagePerformer
-        continueCoaching: true
+        performance assessment: averagePerformer
+        continue coaching: true
     - IC:
         IC name: Norman Artavia
         date: 2019-10-02
         unit: https://jira.devfactory.com/browse/SLIFRONT-3606
         coaching: we have identified, that 4 FAs (SLIFRONT-3379, SLIFRONT-3378, SLIFRONT-3392, SLIFRONT-3377) we have defined for the export
           are too small and should be merged into 3 FAs (SLIFRONT-3329, SLIFRONT-3330, SLIFRONT-3328) 
-        perfrormanceAssessment: averagePerformer
-        continueCoaching: true
+        performance assessment: averagePerformer
+        continue coaching: true

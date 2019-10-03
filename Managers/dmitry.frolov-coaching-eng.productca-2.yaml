@@ -9,8 +9,8 @@ ICs:
         coaching: where we find items during the process of attributes writing that 
           require changes for whichever reason please create the Product Request and
           write the case for the change needed (ensure object of change, the change and reason is clear)
-        perfrormanceAssessment: highPerformer
-        continueCoaching: true
+        perfrormance assessment: highPerformer
+        continue coaching: true
     - IC: Haci Burak
         IC name: Haci Burak
         date: 2019-09-27
@@ -21,8 +21,8 @@ ICs:
           3. The background shape for better understanding 
           4. technology should be mentioned for the container
           for anything storage should be the vertical 3d cylinder (coler grey for 3rd party tools / external / color with SE7 color if your own )
-        perfrormanceAssessment: averagePerformer
-        continueCoaching: true
+        performance assessment: averagePerformer
+        continue coaching: true
     - IC: Norman Artavia
         IC name: Norman Artavia
         date: 2019-09-27
@@ -33,5 +33,5 @@ ICs:
           3. The background shape for better understanding 
           4. technology should be mentioned for the container
           for anything storage should be the vertical 3d cylinder (coler grey for 3rd party tools / external / color with SE7 color if your own )
-        perfrormanceAssessment: averagePerformer
-        continueCoaching: true
+        perfrormance assessment: averagePerformer
+        continue coaching: true
