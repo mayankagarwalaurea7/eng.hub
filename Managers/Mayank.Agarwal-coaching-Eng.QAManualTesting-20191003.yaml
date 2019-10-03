@@ -1,0 +1,11 @@
+manager: Mayank Agarwal
+teamroom: Eng.QAManualTesting
+direct reports: 20
+ICs: !!seq
+    - IC: !!map
+        IC name: Amit Papreja
+        date: 2019-10-03
+        unit: The unit is not tracked in JIRA but it is the number of test cases executed in TestRail
+        coaching: !!str #<free text coaching>
+        performance assessment: highPerformerhighPerformer !!str #highPerformer | averagePerformer | lowPerformer
+        continue coaching: true #!!bool #true | false

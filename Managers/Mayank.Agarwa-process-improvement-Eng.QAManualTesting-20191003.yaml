@@ -1,0 +1,13 @@
+manager: Mayank Agarwal
+teamroom: Eng.QAManualTesting
+units: !!seq
+    - unit: !!str #<Jira link>
+recommendation: !!map
+    eliminate waste: !!bool #true | false
+    improve quality bar: !!bool #true | false
+    product agnostic: !!bool #true | false
+    product specific: !!seq
+        - product name: !!str #product names
+    description: !!str #<string>
+    effort: !!int #<int> days
+    impact: !!float #<%> at teamroom level
