@@ -1,0 +1,12 @@
+manager: Mayank Gupta #<manager name>
+teamroom: Eng.Manager #<teamroom name>
+units:
+    - unit: https://testrail.devfactory.com//index.php?/tests/view/1298551662#testChange-41520433
+    - unit: https://testrail.devfactory.com//index.php?/tests/view/1302842578#testChange-41524633
+automation:
+    product agnostic: true #true | false
+    product specific:
+        - product name:  #product names
+    description: Improve the Test Execution Automation Tool to support multiple screenshots being taken  #<string>
+    effort: 5 #days
+    impact: 61 #<%> FTAR at teamroom level
