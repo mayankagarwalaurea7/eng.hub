@@ -1,0 +1,11 @@
+manager: Rohit Jain
+teamroom: Eng.QAManualTesting
+units:
+    - unit: https://jira.devfactory.com/browse/ECPA-8061
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: ICs need to assign E2Es in Jira for test writing purpose. This was a manual task. Worked on automation of E2E AutoAllocator. This tool assigns E2Es to all ICs as per the defined algorithm. This helped in ensuring ICs work on high priority E2Es and they don't have to spend time on finding backlog
+    effort: 3 Days
+    impact: 5% on productivity
