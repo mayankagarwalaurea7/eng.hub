@@ -5,6 +5,7 @@ units: !!seq
 automation: !!map
     product agnostic: !!bool #true | false
     product specific: !!seq 
+    product specific: !!seq
         - product name: !!str #product names
     description: !!str
     effort: !!int #days
