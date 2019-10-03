@@ -1,0 +1,13 @@
+manager: Azmathulla Khan
+teamroom: Eng.UnitTest
+units: 
+    - unit: https://jira.devfactory.com/browse/TBGTM-6485
+recommendation: 
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific: 
+        # - product name: !!str #product names 
+    description: This process improvement shared with the team using this specific example in order to improve the JUnit Test Method Name as prefix is specific to JUnit 3, while @Test is specific to JUnit 4 and deprecates the former. It could be a good approach to remove this prefix and avoid redundancy. It is recommended to follow the Java naming conventions for method's names and remove the underscore characters. For test methods, the underscores can be replaced with BDD format Given, When and Then.  
+    effort: 1
+    impact: 5	

@@ -1,0 +1,25 @@
+manager: Rohit Jain
+teamroom: Eng.QAManualTesting
+direct reports: 8
+ICs:
+    - IC:
+        IC name: Sharidas Haridas
+        date: 2019-10-02
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1308658673#testChange-41968406
+        coaching: Shari got 4 execution failures due to missing one QB. I coached her on QB related to blocking a test execution with an Engg problem. When a defect is raised TC should be marked failed but with an engg prob it should be marked blocked. Coaching to cont on all other QBs as well.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: David Elbeblawy
+        date: 2019-10-02
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1309192265#testChange-42052084
+        coaching: Coached IC on uploading multiple Screenshots to validate execution done. For 3 of his TCs he did added a single screenshot which were not sufficient for QE team to pass the execution.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Meray Wafik
+        date: 2019-10-02
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1312645103#testChange-42064787
+        coaching: IC on track for the week. Coached her to use TE execution tool 100% and not to do any manual execution.
+        performance assessment: highPerformer
+        continue coaching: true

@@ -1,0 +1,29 @@
+manager: !!str Jacek Kaczynski #<manager name>
+teamroom: !!str Eng.Manager #<teamroom name>
+direct reports: 4
+ICs: !!seq
+    - IC: !!map
+        IC name: !!str Ahmet Ercin #<IC name>
+        date: !!str 3-Oct-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/CONTROL-31249 #<Jira link>
+        coaching: !!str Speed up the test scenario updates or the upcoming public release will be at risk #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: !!bool true #true | false
+        IC name: !!str Dmytro Khaynas #<IC name>
+        date: !!str 3-Oct-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/EXMC-3239 #<Jira link>
+        coaching: !!str Besides the issue with deployment pipeline we have knowledge gap related to CLI and activation scripts and we have to address both #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPe$
+        continue coaching: !!bool true #true | false
+        IC name: !!str Ozgun Toptas #<IC name>
+        date: !!str 3-Oct-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/EXOS-12418 #<Jira link>
+        coaching: !!str Improve knowledge of Exinda hardware licensing #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPe$
+        continue coaching: !!bool true #true | false
+        IC name: !!str Zoltan Blenessy #<IC name>
+        date: !!str 3-Oct-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/EXOS-11710 #<Jira link>
+        coaching: !!str The test scenario contains an error and we may have to rerun the test to avoid release delay #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPe$
+        continue coaching: !!bool true #true | false

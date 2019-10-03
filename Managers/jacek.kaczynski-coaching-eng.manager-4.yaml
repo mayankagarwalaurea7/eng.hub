@@ -1,0 +1,29 @@
+manager: !!str Jacek Kaczynski #<manager name>
+teamroom: !!str Eng.Manager #<teamroom name>
+direct reports: 4
+ICs: !!seq
+    - IC: !!map
+        IC name: !!str Ahmet Ercin #<IC name>
+        date: !!str 2-Oct-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/CONTROL-30818 #<Jira link>
+        coaching: !!str Make sure the results of validation of Faster stories get documented in the product architecture documentation #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPerformer
+        continue coaching: !!bool true #true | false
+        IC name: !!str Dmytro Khaynas #<IC name>
+        date: !!str 2-Oct-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/EXMC-3238 #<Jira link>
+        coaching: !!str Improve test coverage by replacing production SW update server with a test instance #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPe$
+        continue coaching: !!bool true #true | false
+        IC name: !!str Ozgun Toptas #<IC name>
+        date: !!str 2-Oct-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/EXOS-12336 #<Jira link>
+        coaching: !!str Optimize lab resource usage accross all VMware server #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPe$
+        continue coaching: !!bool true #true | false
+        IC name: !!str Zoltan Blenessy #<IC name>
+        date: !!str 2-Oct-2019 #<date>
+        unit: !!str https://jira.devfactory.com/browse/EXOS-12333 #<Jira link>
+        coaching: !!str Verify why the test fails since it can be a blocker for the upcoming release #<free text coaching>
+        performance assessment: !!str highPerformer #highPerformer | averagePerformer | lowPe$
+        continue coaching: !!bool true #true | false
