@@ -8,67 +8,67 @@ ICs:
         unit: N/A
         coaching: AWORK should be worked first. As you are struggling with delays on CICD due to not able to reproduble the errors, switch to AWORK which is API based. Reach to 98 as soon as you can. 
         performance assessment: lowPerformer
-        continueCoaching:  true
+        continue coaching:  true
     - IC: 
         IC name: Banjo Mofesola Paul
         date: 2019-09-27
         unit: N/A
         coaching: IC is on vacations
         performance assessment: lowPerformer
-        continueCoaching: false
+        continue coaching: false
     - IC: 
         IC name: Dmitry Zhdakhin
         date: 2019-09-27
         unit: N/A
         coaching: Just one product needs to pass the QB. Focus on it and create tickets related to it.
         performance assessment: highPerformer
-        continueCoaching: true
+        continue coaching: true
     - IC: 
         IC name: Evgeny Astafev
         date: 2019-09-27
         unit: N/A
         coaching: When the PCA states that the coverage of some tests are not longer required our policy is to remove the code.  
         performance assessment: highPerformer
-        continueCoaching: true
+        continue coaching: true
     - IC: 
         IC name: Nabhan Nazar
         date: 2019-09-27
         unit: N/A
         coaching:  SchoolLoop Web is bocked but it does not have a ticket to reflect it. Search on JIRA for the previous assigned IC tickets and create one if it does not exist.
         performance assessment: averagePerformer
-        continueCoaching: true
+        continue coaching: true
     - IC: 
         IC name: Naman Kumar
         date: 2019-09-27
         unit: N/A
         coaching:  Your focus should be on those products that have not reached the EQB, this is where the business value of our team is. Focus on FirstRain and do an failure analysis on the remaining failures
         performance assessment: averagePerformer
-        continueCoaching: true
+        continue coaching: true
     - IC: 
         IC name: Shoaib Mansoor
         date: 2019-09-27
         unit: N/A
         coaching: You have stabilized all your proudcts, but AlertFind does not have builds yet. Make sure it is reported and then help Abdalla with his products.   
         performance assessment: averagePerformer
-        continueCoaching: true
+        continue coaching: true
     - IC: 
         IC name: Sumaiya Kidwai
         date: 2019-09-27
         unit: https://jira.devfactory.com/browse/SKYVERA-8750
         coaching: Next week we will have to support 4 more products. In these situations we should get ahead and start the knownledge transfer early. Talk to Dan and let me know when you are ready to pick these new products. 
         performance assessment: averagePerformer
-        continueCoaching: true
+        continue coaching: true
     - IC: 
         IC name: Vandana Pathak
         date: 2019-09-27
         unit: N/A
         coaching: I assigned you Firm58 to fix the data issues, but yet, no ticket was created for this purpose. Create one based on the analysis and the conversation you had with the PCA and mention me on the ticket. 
         performance assessment: lowPerformer
-        continueCoaching: true
+        continue coaching: true
     - IC: 
         IC name: Zaur Kandokhov
         date: 2019-09-27
         unit: https://jira.devfactory.com/browse/EVCID-13899
         coaching: Focus on delivering business value. Sonic should have been fixed after the environment was fixed, but it wasn't. Dedicate what remains of the week to fix it. 
         performance assessment: highPerformer
-        continueCoaching: true
+        continue coaching: true

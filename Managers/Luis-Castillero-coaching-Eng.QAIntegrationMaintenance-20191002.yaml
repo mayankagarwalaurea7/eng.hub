@@ -1,0 +1,81 @@
+manager: Luis Castillero
+teamroom: Eng.QAIntegrationMaintenance
+direct reports: 10
+ICs: 
+    - IC: 
+        IC name: Abdalla Mahmoud
+        date: 2019-10-02
+        unit: N/A
+        coaching: Having 0 metric at the end of wednesday is a really bad sign. You have 6 in "In Implementation", but none completed. New activities were announced to create metrics, review them on the playbook and use them tomorrow to get to 10 by EoW.
+        performance assessment: lowPerformer
+        continue coaching:  true
+    - IC: 
+        IC name: Banjo Mofesola Paul
+        date: 2019-10-02
+        unit: N/A
+        coaching: IC is on vacations. Marked to S2G
+        performance assessment: lowPerformer
+        continue coaching: false
+    - IC:
+        IC name: Dan Adera
+        date: 2019-10-02
+        unit: https://jira.devfactory.com/browse/MOEMSCID-41482
+        coaching: OneSCM has 1 test that is skipped with xit. This is not allowed. Everytime that you see this, you need to understand why it was skipped and if it is correctly skipped, the code should be removed.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Dmitry Zhdakhin
+        date: 2019-10-02
+        unit: N/A
+        coaching: Just GFIFM is missing to reach the External QB. Fix it and use the new activities implemented to generate metrics.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Evgeny Astafev
+        date: 2019-10-02
+        unit: N/A
+        coaching: Exinda is at the too close to the External QB, we need to avoid that situation as a minimal issue can bring the product down. Check the remaining issues on the product and get it to a stable status.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Nabhan Nazar
+        date: 2019-10-02
+        unit: N/A
+        coaching: BizApps is still not having a constant daily build. This is really important for the team to provide value to our customers in order for them to have a daily sense of their product quality. Please start doing it at the start of your day.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Naman Kumar
+        date: 2019-10-02
+        unit: N/A
+        coaching: You didn't create any ticket today as all your products have high pass rate use the new activities included on the playbook to get to 10 by the end of the week.  
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Shoaib Mansoor
+        date: 2019-10-02
+        unit: N/A
+        coaching: All your products have high pass rate use the new activities included on the playbook to get to 10 by the end of the week.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Sumaiya Kidwai
+        date: 2019-10-02
+        unit: N/A
+        coaching: DNN is dropping fast, create an analysis of the last run to understand the fixes you need to do and start with them.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC: 
+        IC name: Vandana Pathak
+        date: 2019-10-02
+        unit: N/A
+        coaching: As mentioned on the email it was decided to move you to a new Team, this decision was made in order to help you to create value and get the QA Team as a whole to do a better service. 
+        performance assessment: lowPerformer
+        continue coaching: true
+    - IC: 
+        IC name: Zaur Kandokhov
+        date: 2019-10-02
+        unit: N/A
+        coaching: I don't see progress in your products, and it concerns me. Ts Portal issues are now solved and we need to have stable runs. Let's start with a daily email to me at your noon with posible solutions for your products and get those products into a stable runs. 
+        performance assessment: averagePerformer
+        continue coaching: true

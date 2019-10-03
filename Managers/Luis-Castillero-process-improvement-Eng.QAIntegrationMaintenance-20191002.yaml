@@ -1,0 +1,13 @@
+manager: Luis Castillero
+teamroom: Eng.QAIntegrationMaintenance
+units: 
+    - unit: N/A
+recommendation:
+    eliminate waste: true
+    improve quality bar: false 
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Proposed and Implemented new activities for ICs to work when the product is stabilized. Ideas include, removal of static waits, improving test performance, data generation and disposal. This were added to the team's playbook
+    effort: 5
+    impact: 50.0 #50% improvement in productivity
