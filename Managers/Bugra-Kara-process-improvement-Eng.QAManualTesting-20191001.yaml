@@ -1,0 +1,13 @@
+manager: Bugra Kara
+teamroom: Eng.QAManualTesting
+units:
+    - unit: https://testrail.devfactory.com//index.php?/tests/view/1309192323#testChange-42047534
+recommendation:
+    eliminate waste: true
+    improve quality bar: true
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: "This unit was failed QE review by a bot. IC attached 12 SS for a 13 step TC. Upon noticing her mistake within less than an hour, she fixed the execution, adding the missing SS. Now, since the bot reviews TCs in real-time, this gave IC no room to fix her mistake. My process improvement suggestion here is to have a minimum 2 hours of delay for the bot to review test cases. This should help ICs fix minor problems before their units are submitted for review."
+    effort: 1
+    impact: 5

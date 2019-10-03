@@ -1,0 +1,25 @@
+manager: Bugra Kara
+teamroom: Eng.QAManualTesting
+direct reports: 3
+ICs:
+    - IC:
+        IC name: Megha Verma
+        date: 2019-10-03
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1313843870#testChange-42143475
+        coaching: She's been coached to not allocate tickets herself and let autoallocate handle the backlog part. Otherwise, her FTAR for the day is 100% so far with 8 units passed QE review.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Alican Aksoy
+        date: 2019-10-03
+        unit: NA
+        coaching: IC is on leave.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Oindrilla Das
+        date: 2019-10-03
+        unit: NA
+        coaching: IC is on leave.
+        performance assessment: highPerformer
+        continue coaching: true

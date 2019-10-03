@@ -1,0 +1,11 @@
+manager: Bugra Kara
+teamroom: Eng.QAManualTesting
+units:
+    - unit: https://confluence.devfactory.com/display/QMT/QA+Work+Queue+v0.2
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Work Queue (WQ). The WQ, as its name indicates, is an WIP implementation which aim to present all the ICs in the testing team room the units they should be working on in real-time. The specs of this implementation has been written and development is in progress with the first versioned planned for EOW W40.
+    effort: 10
+    impact: 15

@@ -1,0 +1,25 @@
+manager: Bugra Kara
+teamroom: Eng.QAManualTesting
+direct reports: 3
+ICs:
+    - IC:
+        IC name: Amrit Chaswal
+        date: 2019-10-02
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1313029530#testChange-42111277
+        coaching: Coached to continue utilizing TE tool and adhere to the process and the PB. On track for the week with 100% FTAR.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Divya Poddar
+        date: 2019-10-02
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1303386232#testChange-42129305
+        coaching: Keep on working on the auto allocated tickets. On track for the week with 100% FTAR.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Fathima Noorein
+        date: 2019-10-02
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1313041381#testChange-42110364
+        coaching: Do not switch between products frequently. Work in product-specific blocks. On track for the week with 26 units passed on this day with 100% FTAR.
+        performance assessment: highPerformer
+        continue coaching: true

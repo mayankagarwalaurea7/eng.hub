@@ -1,0 +1,11 @@
+manager: Bugra Kara
+teamroom: Eng.QAManualTesting
+units:
+    - unit: https://jira.devfactory.com/browse/ECPA-8109
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: AutoAllocateTC. Configurable autoallocation amount per SEM. This improvement allows QA SEMs to set auto allocation amounts for their own teams individually.
+    effort: 5
+    impact: 3

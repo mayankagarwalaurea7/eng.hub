@@ -1,0 +1,11 @@
+manager: Bugra Kara
+teamroom: Eng.QAManualTesting
+units:
+    - unit: https://jira.devfactory.com/browse/ECPA-8111
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: AutoAllocateTC. Enable hybrid allocation so that AutoAllocateE2E and AutoAllocateTC can read from the same allocation file and perform allocations.
+    effort: 5
+    impact: 3

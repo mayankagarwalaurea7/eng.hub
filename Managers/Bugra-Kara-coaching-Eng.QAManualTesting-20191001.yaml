@@ -1,0 +1,25 @@
+manager: Bugra Kara
+teamroom: Eng.QAManualTesting
+direct reports: 3
+ICs:
+    - IC:
+        IC name: Vridhi R
+        date: 2019-10-01
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1309192323#testChange-42047534
+        coaching: On track for the week with 99% FTAR. A deep dive was performed on T1309192323 and a process improvement has been suggested to avoid this failure occurring again. We want review bot to have a 2-hour delay for ICs to fix minor mistakes.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Nishita Bhatt
+        date: 2019-10-01
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1308892317#testChange-42025372
+        coaching: On track for the week. Good handling of the test process, however with 1 failed unit during the week so far. This unit is still in dispute process for we think the failure is due to the SS limitations of the TE tool. I will provide further updates once our dispute gets reviewed.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Monika Gour
+        date: 2019-10-01
+        unit: https://testrail.devfactory.com//index.php?/tests/view/1312645103#testChange-42064787
+        coaching: On track for the week with 24 units passed on this day with 100% FTAR. Coached to continue utilizing TE tool and adhere to the process and the PB.
+        performance assessment: highPerformer
+        continue coaching: true
