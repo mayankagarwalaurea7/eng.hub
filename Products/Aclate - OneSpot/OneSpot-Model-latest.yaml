@@ -396,6 +396,13 @@ model:
         description: get Insights Frontend scripts from S3
         technology: HTTPS
         interactionStyle: Synchronous
+      - id: '224'
+        tags: Relationship
+        sourceId: '166'
+        destinationId: '221'
+        description: gets Insights Frontend scripts from S3
+        technology: HTTPS
+        interactionStyle: Synchronous
       - id: '188'
         tags: Relationship
         sourceId: '166'
@@ -597,6 +604,13 @@ model:
         sourceId: '159'
         destinationId: '166'
         description: requests Rec-ing Service and Insights Backend via Cloudfront
+        technology: HTTPS
+        interactionStyle: Synchronous
+      - id: '223'
+        tags: Relationship
+        sourceId: '159'
+        destinationId: '221'
+        description: stores the application scripts in S3
         technology: HTTPS
         interactionStyle: Synchronous
       - id: '211'
