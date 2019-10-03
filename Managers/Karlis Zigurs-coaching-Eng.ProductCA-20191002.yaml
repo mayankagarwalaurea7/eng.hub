@@ -1,0 +1,32 @@
+manager: Karlis Zigurs
+teamroom: Eng.ProductCA
+direct reports: 4
+ICs:
+    - IC:
+        IC name: Anatoly Danilov
+        date: 20191002
+        unit: 
+        coaching: Discussed medium term priorities on AWA and CodeFix. Pair work on restoring AWA macOS build agent. Review of work queue - no concerns found.
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Maruthi Janardhan
+        date: 20191002
+        unit: 
+        coaching: Discussion on E2Es breakdown, dependencies and time taken per E2E. Clarified that priority is quality, not fitting in the arbitrary < 1h limit. Intercepted out-of-work-queue escalations, clarified the requirement to focus on WQ and escalate out-of-work-queue issues to me.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Vlad Kuznetsov
+        date: 20191002
+        unit: 
+        coaching: Reviewed progress on ANTP E2Es preparations and clarified Infra team escalations requirements for ANTP dev env migration to another docker host. It wasn't clear that central proxy is self-serve via container labels and does not require SaaS tickets.
+        performance assessment: averagePerformer
+        continue coaching: true
+    - IC:
+        IC name: Stefan Camilleri
+        date: 20191002
+        unit: 
+        coaching: Long discussion on how to approach ongoing issue where CQA are confused on where to verify and where to regression test E2Es. Agreed on simplifying current multi-env setup in DVSP to narrow their testing to Staging only with the only exception being new Feature Stories being verified for the first time.
+        performance assessment: highPerformer
+        continue coaching: true
