@@ -1,0 +1,11 @@
+manager: Denys Skorbenko
+teamroom: Eng.QAManualTesting
+units:
+    - unit: https://confluence.devfactory.com/display/QMT/QA+Work+Queue+v0.2
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: QA Work Queue implementation. In essence, the WQ is the list of prioritized items which an IC in Eng.QAManualTesting should spend their time on. The WQ is intended to be presented daily to the IC in the QBE tool and should refresh near real-time.
+    effort: 5
+    impact: 10
