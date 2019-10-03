@@ -104,3 +104,13 @@ ICs:
         coaching: This can be unblocked. Has to be picked up and start investigation + propose and implement solution
         performance assessment: highPerformer
         continue coaching: true
+
+        #Oct 3 ----------------------------------
+      IC name: Laszlo Robert Albert
+        date: 2019-10-03
+        unit: https://jira.devfactory.com/browse/JCLDALL-34023
+        coaching: Request on QE Review the rteam to review, to make things move faster, as our release depends on this
+        performance assessment: highPerformer
+        continue coaching: true
+
+
