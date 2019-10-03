@@ -1,0 +1,11 @@
+manager: Edouard Napolov
+teamroom: Eng.Manager
+units:
+    - unit: https://jira.devfactory.com/browse/MOAFCID-38046
+automation:
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Automate cration of Change Request/Maintenance Window tickets based on SE7 and runbooks.
+    effort: 10
+    impact: 50

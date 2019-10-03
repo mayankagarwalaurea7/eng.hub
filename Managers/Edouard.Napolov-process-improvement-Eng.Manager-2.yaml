@@ -1,0 +1,13 @@
+manager: Edouard Napolov
+teamroom: Eng.Manager
+units:
+    - unit: https://jira.devfactory.com/projects/MOAFCID/versions/84902
+recommendation:
+    eliminate waste: false
+    improve quality bar: true
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: Give PSEM ability to manually prioritize tickets for PCA to handle urgent work
+    effort: 1
+    impact: 100

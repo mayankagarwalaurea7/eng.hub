@@ -1,0 +1,13 @@
+manager: Edouard Napolov
+teamroom: Eng.Manager
+units:
+    - unit: https://jira.devfactory.com/projects/MOAFCID/versions/84902
+recommendation:
+    eliminate waste: false
+    improve quality bar: true
+    product agnostic: true
+    product specific:
+        - product name: N/A
+    description: We need to prioritize higher work on the next week release tickets - environment/E2Es so PCA has higher chances to finish preparation for the next release by Monday of the release day as required by QA team runbook.
+    effort: 1
+    impact: 100
