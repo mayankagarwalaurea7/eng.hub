@@ -1,0 +1,25 @@
+manager: José Martins
+teamroom: Eng.Feature.QE
+direct reports: 3
+ICs:
+    - IC:
+        IC name: Diego Sal Diaz
+        date: 2019/10/03
+        unit: https://jira.devfactory.com/browse/ORMS-1523
+        coaching: Review was correctly done. 
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Rafael Carlos Rosa
+        date: 2019/10/03
+        unit: https://jira.devfactory.com/browse/CSRV-13632
+        coaching: Review was correctly done. 
+        performance assessment: highPerformer
+        continue coaching: true
+    - IC:
+        IC name: Vasile Irimia
+        date: 2019/10/03
+        unit: https://jira.devfactory.com/browse/CSRV-13697
+        coaching: Description of FS appears unformated. Coached IC to pay more attention to minor details.
+        performance assessment: highPerformer
+        continue coaching: true
